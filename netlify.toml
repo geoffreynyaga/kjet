@@ -1,0 +1,20 @@
+[build]
+  # Base directory for the build
+  base = "code/"
+  
+  # Directory where the build artifacts are located
+  publish = "code/build/"
+  
+  # Build command to run
+  command = "npm run build"
+
+# Redirect all routes to index.html for React Router (SPA)
+# Note: _redirects file in public/ folder is the preferred method
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Optional: Set Node.js version
+[build.environment]
+  NODE_VERSION = "18"
