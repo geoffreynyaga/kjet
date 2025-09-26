@@ -1,0 +1,902 @@
+{
+  "summary_metadata": {
+    "generation_date": "2025-09-24T23:56:49.323415",
+    "total_counties": 47,
+    "evaluation_period": "KJET Program Applications",
+    "rules_version": "rules.md - Annex A & B"
+  },
+  "national_summary": {
+    "total_applications": 555,
+    "total_eligible": 528,
+    "total_ineligible": 27,
+    "national_eligibility_rate": 95.14,
+    "total_scored": 528,
+    "national_average_score": 76.1,
+    "highest_county_score": 81.67,
+    "lowest_county_score": 71.25
+  },
+  "eligibility_breakdown": {
+    "E1_registration_legality_failures": 0,
+    "E2_county_mapping_failures": 27,
+    "E3_priority_value_chain_failures": 0,
+    "E4_financial_evidence_failures": 0,
+    "E5_consent_contactability_failures": 0
+  },
+  "county_summaries": {
+    "Kirinyaga": {
+      "county": "Kirinyaga",
+      "total_applications": 6,
+      "eligible_applications": 6,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 6,
+      "average_score": 73.83,
+      "highest_score": 79.0,
+      "lowest_score": 68.0,
+      "score_distribution": {
+        "excellent_80_100": 0,
+        "good_70_79": 4,
+        "fair_60_69": 2,
+        "poor_below_60": 0
+      }
+    },
+    "Laikipia": {
+      "county": "Laikipia",
+      "total_applications": 15,
+      "eligible_applications": 15,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 15,
+      "average_score": 75.47,
+      "highest_score": 89.0,
+      "lowest_score": 68.0,
+      "score_distribution": {
+        "excellent_80_100": 5,
+        "good_70_79": 6,
+        "fair_60_69": 4,
+        "poor_below_60": 0
+      }
+    },
+    "Machakos": {
+      "county": "Machakos",
+      "total_applications": 9,
+      "eligible_applications": 9,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 9,
+      "average_score": 78.22,
+      "highest_score": 87.0,
+      "lowest_score": 68.0,
+      "score_distribution": {
+        "excellent_80_100": 5,
+        "good_70_79": 3,
+        "fair_60_69": 1,
+        "poor_below_60": 0
+      }
+    },
+    "Nyeri": {
+      "county": "Nyeri",
+      "total_applications": 14,
+      "eligible_applications": 14,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 14,
+      "average_score": 76.43,
+      "highest_score": 89.0,
+      "lowest_score": 68.0,
+      "score_distribution": {
+        "excellent_80_100": 4,
+        "good_70_79": 6,
+        "fair_60_69": 4,
+        "poor_below_60": 0
+      }
+    },
+    "Tharaka Nithi": {
+      "county": "Tharaka Nithi",
+      "total_applications": 9,
+      "eligible_applications": 4,
+      "ineligible_applications": 5,
+      "eligibility_rate": 44.44,
+      "scored_applications": 4,
+      "average_score": 76.5,
+      "highest_score": 85.0,
+      "lowest_score": 70.0,
+      "score_distribution": {
+        "excellent_80_100": 1,
+        "good_70_79": 3,
+        "fair_60_69": 0,
+        "poor_below_60": 0
+      }
+    },
+    "Kakamega": {
+      "county": "Kakamega",
+      "total_applications": 75,
+      "eligible_applications": 75,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 75,
+      "average_score": 72.24,
+      "highest_score": 94.0,
+      "lowest_score": 68.0,
+      "score_distribution": {
+        "excellent_80_100": 6,
+        "good_70_79": 48,
+        "fair_60_69": 21,
+        "poor_below_60": 0
+      }
+    },
+    "Embu": {
+      "county": "Embu",
+      "total_applications": 12,
+      "eligible_applications": 12,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 12,
+      "average_score": 71.58,
+      "highest_score": 81.0,
+      "lowest_score": 68.0,
+      "score_distribution": {
+        "excellent_80_100": 1,
+        "good_70_79": 8,
+        "fair_60_69": 3,
+        "poor_below_60": 0
+      }
+    },
+    "Vihiga": {
+      "county": "Vihiga",
+      "total_applications": 5,
+      "eligible_applications": 5,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 5,
+      "average_score": 76.6,
+      "highest_score": 81.0,
+      "lowest_score": 68.0,
+      "score_distribution": {
+        "excellent_80_100": 2,
+        "good_70_79": 2,
+        "fair_60_69": 1,
+        "poor_below_60": 0
+      }
+    },
+    "Isiolo": {
+      "county": "Isiolo",
+      "total_applications": 4,
+      "eligible_applications": 4,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 4,
+      "average_score": 71.25,
+      "highest_score": 79.0,
+      "lowest_score": 68.0,
+      "score_distribution": {
+        "excellent_80_100": 0,
+        "good_70_79": 2,
+        "fair_60_69": 2,
+        "poor_below_60": 0
+      }
+    },
+    "Turkana": {
+      "county": "Turkana",
+      "total_applications": 10,
+      "eligible_applications": 10,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 10,
+      "average_score": 77.7,
+      "highest_score": 89.0,
+      "lowest_score": 68.0,
+      "score_distribution": {
+        "excellent_80_100": 4,
+        "good_70_79": 4,
+        "fair_60_69": 2,
+        "poor_below_60": 0
+      }
+    },
+    "Nakuru": {
+      "county": "Nakuru",
+      "total_applications": 9,
+      "eligible_applications": 9,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 9,
+      "average_score": 79.44,
+      "highest_score": 95.0,
+      "lowest_score": 68.0,
+      "score_distribution": {
+        "excellent_80_100": 5,
+        "good_70_79": 2,
+        "fair_60_69": 2,
+        "poor_below_60": 0
+      }
+    },
+    "Elgeiyo Marakwet": {
+      "county": "Elgeiyo Marakwet",
+      "total_applications": 8,
+      "eligible_applications": 0,
+      "ineligible_applications": 8,
+      "eligibility_rate": 0.0,
+      "scored_applications": 0,
+      "average_score": 0.0,
+      "highest_score": 0.0,
+      "lowest_score": 0.0,
+      "score_distribution": {
+        "excellent_80_100": 0,
+        "good_70_79": 0,
+        "fair_60_69": 0,
+        "poor_below_60": 0
+      }
+    },
+    "Kiambu": {
+      "county": "Kiambu",
+      "total_applications": 22,
+      "eligible_applications": 22,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 22,
+      "average_score": 77.86,
+      "highest_score": 98.0,
+      "lowest_score": 68.0,
+      "score_distribution": {
+        "excellent_80_100": 8,
+        "good_70_79": 7,
+        "fair_60_69": 7,
+        "poor_below_60": 0
+      }
+    },
+    "Siaya": {
+      "county": "Siaya",
+      "total_applications": 9,
+      "eligible_applications": 9,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 9,
+      "average_score": 79.33,
+      "highest_score": 94.0,
+      "lowest_score": 68.0,
+      "score_distribution": {
+        "excellent_80_100": 3,
+        "good_70_79": 4,
+        "fair_60_69": 2,
+        "poor_below_60": 0
+      }
+    },
+    "Busia": {
+      "county": "Busia",
+      "total_applications": 13,
+      "eligible_applications": 13,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 13,
+      "average_score": 78.0,
+      "highest_score": 85.0,
+      "lowest_score": 68.0,
+      "score_distribution": {
+        "excellent_80_100": 5,
+        "good_70_79": 7,
+        "fair_60_69": 1,
+        "poor_below_60": 0
+      }
+    },
+    "Homa Bay": {
+      "county": "Homa Bay",
+      "total_applications": 13,
+      "eligible_applications": 13,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 13,
+      "average_score": 75.46,
+      "highest_score": 85.0,
+      "lowest_score": 68.0,
+      "score_distribution": {
+        "excellent_80_100": 2,
+        "good_70_79": 9,
+        "fair_60_69": 2,
+        "poor_below_60": 0
+      }
+    },
+    "Bomet": {
+      "county": "Bomet",
+      "total_applications": 4,
+      "eligible_applications": 4,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 4,
+      "average_score": 81.5,
+      "highest_score": 93.0,
+      "lowest_score": 72.0,
+      "score_distribution": {
+        "excellent_80_100": 2,
+        "good_70_79": 2,
+        "fair_60_69": 0,
+        "poor_below_60": 0
+      }
+    },
+    "Garissa": {
+      "county": "Garissa",
+      "total_applications": 9,
+      "eligible_applications": 9,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 9,
+      "average_score": 78.33,
+      "highest_score": 88.0,
+      "lowest_score": 68.0,
+      "score_distribution": {
+        "excellent_80_100": 3,
+        "good_70_79": 5,
+        "fair_60_69": 1,
+        "poor_below_60": 0
+      }
+    },
+    "Kajiado": {
+      "county": "Kajiado",
+      "total_applications": 8,
+      "eligible_applications": 8,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 8,
+      "average_score": 78.25,
+      "highest_score": 89.0,
+      "lowest_score": 68.0,
+      "score_distribution": {
+        "excellent_80_100": 4,
+        "good_70_79": 1,
+        "fair_60_69": 3,
+        "poor_below_60": 0
+      }
+    },
+    "West Pokot": {
+      "county": "West Pokot",
+      "total_applications": 6,
+      "eligible_applications": 6,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 6,
+      "average_score": 72.83,
+      "highest_score": 79.0,
+      "lowest_score": 68.0,
+      "score_distribution": {
+        "excellent_80_100": 0,
+        "good_70_79": 4,
+        "fair_60_69": 2,
+        "poor_below_60": 0
+      }
+    },
+    "Kilifi": {
+      "county": "Kilifi",
+      "total_applications": 9,
+      "eligible_applications": 9,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 9,
+      "average_score": 75.33,
+      "highest_score": 80.0,
+      "lowest_score": 68.0,
+      "score_distribution": {
+        "excellent_80_100": 1,
+        "good_70_79": 7,
+        "fair_60_69": 1,
+        "poor_below_60": 0
+      }
+    },
+    "Trans Nzoia": {
+      "county": "Trans Nzoia",
+      "total_applications": 4,
+      "eligible_applications": 4,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 4,
+      "average_score": 77.75,
+      "highest_score": 79.0,
+      "lowest_score": 76.0,
+      "score_distribution": {
+        "excellent_80_100": 0,
+        "good_70_79": 4,
+        "fair_60_69": 0,
+        "poor_below_60": 0
+      }
+    },
+    "Uasin Gishu": {
+      "county": "Uasin Gishu",
+      "total_applications": 20,
+      "eligible_applications": 20,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 20,
+      "average_score": 79.05,
+      "highest_score": 98.0,
+      "lowest_score": 68.0,
+      "score_distribution": {
+        "excellent_80_100": 7,
+        "good_70_79": 10,
+        "fair_60_69": 3,
+        "poor_below_60": 0
+      }
+    },
+    "Meru": {
+      "county": "Meru",
+      "total_applications": 22,
+      "eligible_applications": 22,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 22,
+      "average_score": 79.82,
+      "highest_score": 98.0,
+      "lowest_score": 70.0,
+      "score_distribution": {
+        "excellent_80_100": 8,
+        "good_70_79": 14,
+        "fair_60_69": 0,
+        "poor_below_60": 0
+      }
+    },
+    "Narok": {
+      "county": "Narok",
+      "total_applications": 3,
+      "eligible_applications": 3,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 3,
+      "average_score": 81.67,
+      "highest_score": 87.0,
+      "lowest_score": 79.0,
+      "score_distribution": {
+        "excellent_80_100": 1,
+        "good_70_79": 2,
+        "fair_60_69": 0,
+        "poor_below_60": 0
+      }
+    },
+    "Mombasa": {
+      "county": "Mombasa",
+      "total_applications": 7,
+      "eligible_applications": 7,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 7,
+      "average_score": 79.71,
+      "highest_score": 91.0,
+      "lowest_score": 72.0,
+      "score_distribution": {
+        "excellent_80_100": 4,
+        "good_70_79": 3,
+        "fair_60_69": 0,
+        "poor_below_60": 0
+      }
+    },
+    "Taita Taveta": {
+      "county": "Taita Taveta",
+      "total_applications": 6,
+      "eligible_applications": 1,
+      "ineligible_applications": 5,
+      "eligibility_rate": 16.67,
+      "scored_applications": 1,
+      "average_score": 79.0,
+      "highest_score": 79.0,
+      "lowest_score": 79.0,
+      "score_distribution": {
+        "excellent_80_100": 0,
+        "good_70_79": 1,
+        "fair_60_69": 0,
+        "poor_below_60": 0
+      }
+    },
+    "Murang'a": {
+      "county": "Murang'a",
+      "total_applications": 9,
+      "eligible_applications": 0,
+      "ineligible_applications": 9,
+      "eligibility_rate": 0.0,
+      "scored_applications": 0,
+      "average_score": 0.0,
+      "highest_score": 0.0,
+      "lowest_score": 0.0,
+      "score_distribution": {
+        "excellent_80_100": 0,
+        "good_70_79": 0,
+        "fair_60_69": 0,
+        "poor_below_60": 0
+      }
+    },
+    "Kisumu": {
+      "county": "Kisumu",
+      "total_applications": 13,
+      "eligible_applications": 13,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 13,
+      "average_score": 75.69,
+      "highest_score": 93.0,
+      "lowest_score": 68.0,
+      "score_distribution": {
+        "excellent_80_100": 3,
+        "good_70_79": 6,
+        "fair_60_69": 4,
+        "poor_below_60": 0
+      }
+    },
+    "Marsabit": {
+      "county": "Marsabit",
+      "total_applications": 4,
+      "eligible_applications": 4,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 4,
+      "average_score": 72.5,
+      "highest_score": 76.0,
+      "lowest_score": 68.0,
+      "score_distribution": {
+        "excellent_80_100": 0,
+        "good_70_79": 3,
+        "fair_60_69": 1,
+        "poor_below_60": 0
+      }
+    },
+    "Kericho": {
+      "county": "Kericho",
+      "total_applications": 19,
+      "eligible_applications": 19,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 19,
+      "average_score": 75.11,
+      "highest_score": 94.0,
+      "lowest_score": 68.0,
+      "score_distribution": {
+        "excellent_80_100": 4,
+        "good_70_79": 10,
+        "fair_60_69": 5,
+        "poor_below_60": 0
+      }
+    },
+    "Baringo": {
+      "county": "Baringo",
+      "total_applications": 8,
+      "eligible_applications": 8,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 8,
+      "average_score": 79.0,
+      "highest_score": 98.0,
+      "lowest_score": 68.0,
+      "score_distribution": {
+        "excellent_80_100": 4,
+        "good_70_79": 3,
+        "fair_60_69": 1,
+        "poor_below_60": 0
+      }
+    },
+    "Nyandarua": {
+      "county": "Nyandarua",
+      "total_applications": 11,
+      "eligible_applications": 11,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 11,
+      "average_score": 79.55,
+      "highest_score": 86.0,
+      "lowest_score": 70.0,
+      "score_distribution": {
+        "excellent_80_100": 5,
+        "good_70_79": 6,
+        "fair_60_69": 0,
+        "poor_below_60": 0
+      }
+    },
+    "Migori": {
+      "county": "Migori",
+      "total_applications": 12,
+      "eligible_applications": 12,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 12,
+      "average_score": 76.33,
+      "highest_score": 89.0,
+      "lowest_score": 70.0,
+      "score_distribution": {
+        "excellent_80_100": 2,
+        "good_70_79": 10,
+        "fair_60_69": 0,
+        "poor_below_60": 0
+      }
+    },
+    "Tana River": {
+      "county": "Tana River",
+      "total_applications": 3,
+      "eligible_applications": 3,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 3,
+      "average_score": 71.67,
+      "highest_score": 79.0,
+      "lowest_score": 68.0,
+      "score_distribution": {
+        "excellent_80_100": 0,
+        "good_70_79": 1,
+        "fair_60_69": 2,
+        "poor_below_60": 0
+      }
+    },
+    "Wajir": {
+      "county": "Wajir",
+      "total_applications": 14,
+      "eligible_applications": 14,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 14,
+      "average_score": 72.71,
+      "highest_score": 81.0,
+      "lowest_score": 68.0,
+      "score_distribution": {
+        "excellent_80_100": 1,
+        "good_70_79": 8,
+        "fair_60_69": 5,
+        "poor_below_60": 0
+      }
+    },
+    "Makueni": {
+      "county": "Makueni",
+      "total_applications": 16,
+      "eligible_applications": 16,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 16,
+      "average_score": 77.88,
+      "highest_score": 89.0,
+      "lowest_score": 68.0,
+      "score_distribution": {
+        "excellent_80_100": 8,
+        "good_70_79": 6,
+        "fair_60_69": 2,
+        "poor_below_60": 0
+      }
+    },
+    "Nandi": {
+      "county": "Nandi",
+      "total_applications": 9,
+      "eligible_applications": 9,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 9,
+      "average_score": 75.89,
+      "highest_score": 85.0,
+      "lowest_score": 68.0,
+      "score_distribution": {
+        "excellent_80_100": 2,
+        "good_70_79": 5,
+        "fair_60_69": 2,
+        "poor_below_60": 0
+      }
+    },
+    "Mandera": {
+      "county": "Mandera",
+      "total_applications": 5,
+      "eligible_applications": 5,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 5,
+      "average_score": 73.4,
+      "highest_score": 79.0,
+      "lowest_score": 68.0,
+      "score_distribution": {
+        "excellent_80_100": 0,
+        "good_70_79": 3,
+        "fair_60_69": 2,
+        "poor_below_60": 0
+      }
+    },
+    "Lamu": {
+      "county": "Lamu",
+      "total_applications": 4,
+      "eligible_applications": 4,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 4,
+      "average_score": 77.75,
+      "highest_score": 83.0,
+      "lowest_score": 70.0,
+      "score_distribution": {
+        "excellent_80_100": 1,
+        "good_70_79": 3,
+        "fair_60_69": 0,
+        "poor_below_60": 0
+      }
+    },
+    "Kwale": {
+      "county": "Kwale",
+      "total_applications": 16,
+      "eligible_applications": 16,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 16,
+      "average_score": 73.31,
+      "highest_score": 95.0,
+      "lowest_score": 68.0,
+      "score_distribution": {
+        "excellent_80_100": 2,
+        "good_70_79": 7,
+        "fair_60_69": 7,
+        "poor_below_60": 0
+      }
+    },
+    "Samburu": {
+      "county": "Samburu",
+      "total_applications": 6,
+      "eligible_applications": 6,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 6,
+      "average_score": 72.0,
+      "highest_score": 76.0,
+      "lowest_score": 68.0,
+      "score_distribution": {
+        "excellent_80_100": 0,
+        "good_70_79": 4,
+        "fair_60_69": 2,
+        "poor_below_60": 0
+      }
+    },
+    "Bungoma": {
+      "county": "Bungoma",
+      "total_applications": 13,
+      "eligible_applications": 13,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 13,
+      "average_score": 75.85,
+      "highest_score": 90.0,
+      "lowest_score": 68.0,
+      "score_distribution": {
+        "excellent_80_100": 2,
+        "good_70_79": 10,
+        "fair_60_69": 1,
+        "poor_below_60": 0
+      }
+    },
+    "Nyamira": {
+      "county": "Nyamira",
+      "total_applications": 4,
+      "eligible_applications": 4,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 4,
+      "average_score": 81.25,
+      "highest_score": 93.0,
+      "lowest_score": 73.0,
+      "score_distribution": {
+        "excellent_80_100": 2,
+        "good_70_79": 2,
+        "fair_60_69": 0,
+        "poor_below_60": 0
+      }
+    },
+    "Nairobi": {
+      "county": "Nairobi",
+      "total_applications": 25,
+      "eligible_applications": 25,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 25,
+      "average_score": 80.0,
+      "highest_score": 91.0,
+      "lowest_score": 68.0,
+      "score_distribution": {
+        "excellent_80_100": 12,
+        "good_70_79": 10,
+        "fair_60_69": 3,
+        "poor_below_60": 0
+      }
+    },
+    "Kitui": {
+      "county": "Kitui",
+      "total_applications": 12,
+      "eligible_applications": 12,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 12,
+      "average_score": 75.67,
+      "highest_score": 84.0,
+      "lowest_score": 68.0,
+      "score_distribution": {
+        "excellent_80_100": 2,
+        "good_70_79": 8,
+        "fair_60_69": 2,
+        "poor_below_60": 0
+      }
+    },
+    "Kisii": {
+      "county": "Kisii",
+      "total_applications": 21,
+      "eligible_applications": 21,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 21,
+      "average_score": 75.05,
+      "highest_score": 81.0,
+      "lowest_score": 70.0,
+      "score_distribution": {
+        "excellent_80_100": 3,
+        "good_70_79": 18,
+        "fair_60_69": 0,
+        "poor_below_60": 0
+      }
+    }
+  },
+  "top_performing_counties": [
+    {
+      "county": "Narok",
+      "average_score": 81.67,
+      "eligibility_rate": 100.0,
+      "total_applications": 3
+    },
+    {
+      "county": "Bomet",
+      "average_score": 81.5,
+      "eligibility_rate": 100.0,
+      "total_applications": 4
+    },
+    {
+      "county": "Nyamira",
+      "average_score": 81.25,
+      "eligibility_rate": 100.0,
+      "total_applications": 4
+    },
+    {
+      "county": "Nairobi",
+      "average_score": 80.0,
+      "eligibility_rate": 100.0,
+      "total_applications": 25
+    },
+    {
+      "county": "Meru",
+      "average_score": 79.82,
+      "eligibility_rate": 100.0,
+      "total_applications": 22
+    },
+    {
+      "county": "Mombasa",
+      "average_score": 79.71,
+      "eligibility_rate": 100.0,
+      "total_applications": 7
+    },
+    {
+      "county": "Nyandarua",
+      "average_score": 79.55,
+      "eligibility_rate": 100.0,
+      "total_applications": 11
+    },
+    {
+      "county": "Nakuru",
+      "average_score": 79.44,
+      "eligibility_rate": 100.0,
+      "total_applications": 9
+    },
+    {
+      "county": "Siaya",
+      "average_score": 79.33,
+      "eligibility_rate": 100.0,
+      "total_applications": 9
+    },
+    {
+      "county": "Uasin Gishu",
+      "average_score": 79.05,
+      "eligibility_rate": 100.0,
+      "total_applications": 20
+    }
+  ],
+  "counties_needing_attention": [
+    {
+      "county": "Taita Taveta",
+      "average_score": 79.0,
+      "eligibility_rate": 16.67,
+      "total_applications": 6
+    },
+    {
+      "county": "Tharaka Nithi",
+      "average_score": 76.5,
+      "eligibility_rate": 44.44,
+      "total_applications": 9
+    }
+  ]
+}

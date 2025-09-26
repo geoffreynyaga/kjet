@@ -1,0 +1,861 @@
+{
+  "evaluation_metadata": {
+    "county": "Migori",
+    "total_applications": 12,
+    "evaluation_date": "2025-09-24T23:56:48.264042",
+    "evaluator_version": "1.0",
+    "rules_version": "rules.md - Annex A & B"
+  },
+  "data_enrichment": {
+    "applications_with_business_name": 12,
+    "applications_with_standardized_business_name": 0,
+    "applications_with_woman_owned_flag": 12,
+    "applications_with_woman_owned_proof": 3
+  },
+  "eligibility_summary": {
+    "total_applications": 12,
+    "eligible_applications": 12,
+    "ineligible_applications": 0,
+    "eligibility_rate": 100.0,
+    "criteria_failure_breakdown": {
+      "E1_registration_legality": 0,
+      "E2_county_mapping": 0,
+      "E3_priority_value_chain": 0,
+      "E4_financial_evidence": 0,
+      "E5_consent_contactability": 0
+    }
+  },
+  "scoring_summary": {
+    "total_scored": 12,
+    "average_score": 76.33,
+    "highest_score": 89.0,
+    "lowest_score": 70.0,
+    "score_distribution": {
+      "excellent_80_100": 2,
+      "good_70_79": 10,
+      "fair_60_69": 0,
+      "poor_below_60": 0
+    }
+  },
+  "application_evaluations": {
+    "Migori_190": {
+      "application_id": "Migori_190",
+      "business_type": "Private company",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "KAMIDA ENTERPRISES LIMITED",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 4,
+          "market_demand_competitiveness": 5,
+          "business_proposal_viability": 4,
+          "value_chain_alignment": 4,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.2,
+            "weighted_score": 16.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 89.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Migori_255": {
+      "application_id": "Migori_255",
+      "business_type": "MSME Association",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "JAMIFOCUS WELFARE",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 2,
+          "market_demand_competitiveness": 5,
+          "business_proposal_viability": 4,
+          "value_chain_alignment": 3,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.1,
+            "weighted_score": 6.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 79.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Migori_276": {
+      "application_id": "Migori_276",
+      "business_type": "MSME Association",
+      "woman_owned": "No",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "Mwangaza Economic Empowerment Association",
+      "woman_owned_proof": "No",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 2,
+          "market_demand_competitiveness": 5,
+          "business_proposal_viability": 3,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 72.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Migori_293": {
+      "application_id": "Migori_293",
+      "business_type": "Private company",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "Apoaro Company Limited",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 2,
+          "market_demand_competitiveness": 4,
+          "business_proposal_viability": 4,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.2,
+            "weighted_score": 16.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 73.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Migori_373": {
+      "application_id": "Migori_373",
+      "business_type": "MSME Association",
+      "woman_owned": "No",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "LELA. JUAKALI ASSOCIATION",
+      "woman_owned_proof": "No",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 2,
+          "market_demand_competitiveness": 5,
+          "business_proposal_viability": 4,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 77.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "": {
+      "application_id": "",
+      "business_type": "MSME Association",
+      "woman_owned": "No",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "MIGORI HECHANICAL a ELECTRIC L ENGINEERING",
+      "woman_owned_proof": "No",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 2,
+          "market_demand_competitiveness": 4,
+          "business_proposal_viability": 3,
+          "value_chain_alignment": 4,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.2,
+            "weighted_score": 16.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 72.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Migori_434": {
+      "application_id": "Migori_434",
+      "business_type": "MSME Association",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "Kanyodero Women Group",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 2,
+          "market_demand_competitiveness": 4,
+          "business_proposal_viability": 3,
+          "value_chain_alignment": 3,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.2,
+            "weighted_score": 16.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.1,
+            "weighted_score": 6.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 70.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Migori_446": {
+      "application_id": "Migori_446",
+      "business_type": "Cooperative",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "RONGO DAIRY COOPERATIVE SOCIETY",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 2,
+          "market_demand_competitiveness": 4,
+          "business_proposal_viability": 3,
+          "value_chain_alignment": 3,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.2,
+            "weighted_score": 16.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.1,
+            "weighted_score": 6.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 70.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Migori_448": {
+      "application_id": "Migori_448",
+      "business_type": "Cooperative",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "AWENDO BUSSINESS COMMUNITY SACCO SOCIETY LIMITED",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 2,
+          "market_demand_competitiveness": 4,
+          "business_proposal_viability": 4,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.2,
+            "weighted_score": 16.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 73.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Migori_579": {
+      "application_id": "Migori_579",
+      "business_type": "Cooperative",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "KAUDENA WOMEN DAIRY ASSOCIATION",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 4,
+          "market_demand_competitiveness": 5,
+          "business_proposal_viability": 4,
+          "value_chain_alignment": 3,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.2,
+            "weighted_score": 16.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.1,
+            "weighted_score": 6.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 87.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Migori_581": {
+      "application_id": "Migori_581",
+      "business_type": "Cooperative",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "Garden of Delight Banana Farmers&#039; Co-operative Society Limited",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 2,
+          "market_demand_competitiveness": 4,
+          "business_proposal_viability": 4,
+          "value_chain_alignment": 3,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.2,
+            "weighted_score": 16.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.1,
+            "weighted_score": 6.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 75.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Migori_656": {
+      "application_id": "Migori_656",
+      "business_type": "Private company",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "Titatoi Foods Delicacies",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 2,
+          "market_demand_competitiveness": 5,
+          "business_proposal_viability": 4,
+          "value_chain_alignment": 3,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.1,
+            "weighted_score": 6.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 79.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    }
+  }
+}

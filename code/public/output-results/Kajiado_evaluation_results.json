@@ -1,0 +1,587 @@
+{
+  "evaluation_metadata": {
+    "county": "Kajiado",
+    "total_applications": 8,
+    "evaluation_date": "2025-09-24T23:56:49.268702",
+    "evaluator_version": "1.0",
+    "rules_version": "rules.md - Annex A & B"
+  },
+  "data_enrichment": {
+    "applications_with_business_name": 8,
+    "applications_with_standardized_business_name": 0,
+    "applications_with_woman_owned_flag": 8,
+    "applications_with_woman_owned_proof": 1
+  },
+  "eligibility_summary": {
+    "total_applications": 8,
+    "eligible_applications": 8,
+    "ineligible_applications": 0,
+    "eligibility_rate": 100.0,
+    "criteria_failure_breakdown": {
+      "E1_registration_legality": 0,
+      "E2_county_mapping": 0,
+      "E3_priority_value_chain": 0,
+      "E4_financial_evidence": 0,
+      "E5_consent_contactability": 0
+    }
+  },
+  "scoring_summary": {
+    "total_scored": 8,
+    "average_score": 78.25,
+    "highest_score": 89.0,
+    "lowest_score": 68.0,
+    "score_distribution": {
+      "excellent_80_100": 4,
+      "good_70_79": 1,
+      "fair_60_69": 3,
+      "poor_below_60": 0
+    }
+  },
+  "application_evaluations": {
+    "": {
+      "application_id": "",
+      "business_type": "Private company",
+      "woman_owned": "No",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "PRECO CONCRETE LIMITED",
+      "woman_owned_proof": "No",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 4,
+          "market_demand_competitiveness": 5,
+          "business_proposal_viability": 4,
+          "value_chain_alignment": 4,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.2,
+            "weighted_score": 16.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 89.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Kajiado_269": {
+      "application_id": "Kajiado_269",
+      "business_type": "Other",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "EMERALD TRIMCUTZ BARBERSHOP AND SALON",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 2,
+          "market_demand_competitiveness": 4,
+          "business_proposal_viability": 3,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.2,
+            "weighted_score": 16.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 68.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Fair"
+      }
+    },
+    "Kajiado_312": {
+      "application_id": "Kajiado_312",
+      "business_type": "Cooperative",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "LOITOKITOK DAIRY FARMERS COOPERATIVE SOCIETY LTD",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 2,
+          "market_demand_competitiveness": 4,
+          "business_proposal_viability": 3,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.2,
+            "weighted_score": 16.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 68.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Fair"
+      }
+    },
+    "Kajiado_407": {
+      "application_id": "Kajiado_407",
+      "business_type": "Cooperative",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "Samli Dairy Cooperative society Ltd",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 2,
+          "market_demand_competitiveness": 4,
+          "business_proposal_viability": 3,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.2,
+            "weighted_score": 16.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 68.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Fair"
+      }
+    },
+    "Kajiado_503": {
+      "application_id": "Kajiado_503",
+      "business_type": "Private company",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "Cereal Soko Limited",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 4,
+          "market_demand_competitiveness": 5,
+          "business_proposal_viability": 4,
+          "value_chain_alignment": 4,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.2,
+            "weighted_score": 16.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 89.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Kajiado_504": {
+      "application_id": "Kajiado_504",
+      "business_type": "Private company",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "Tigwo Limited",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 4,
+          "market_demand_competitiveness": 5,
+          "business_proposal_viability": 3,
+          "value_chain_alignment": 4,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.2,
+            "weighted_score": 16.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 84.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Kajiado_518": {
+      "application_id": "Kajiado_518",
+      "business_type": "Cooperative",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "Afriponics Marketing Cooperative Society Ltd",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 2,
+          "market_demand_competitiveness": 5,
+          "business_proposal_viability": 4,
+          "value_chain_alignment": 4,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 81.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Kajiado_706": {
+      "application_id": "Kajiado_706",
+      "business_type": "Cooperative",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "ILESEKO LIVESTOCK COOPERATIVE",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 2,
+          "market_demand_competitiveness": 5,
+          "business_proposal_viability": 4,
+          "value_chain_alignment": 3,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.1,
+            "weighted_score": 6.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 79.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    }
+  }
+}

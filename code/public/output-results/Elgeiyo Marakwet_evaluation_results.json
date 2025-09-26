@@ -1,0 +1,196 @@
+{
+  "evaluation_metadata": {
+    "county": "Elgeiyo Marakwet",
+    "total_applications": 8,
+    "evaluation_date": "2025-09-24T23:56:49.102823",
+    "evaluator_version": "1.0",
+    "rules_version": "rules.md - Annex A & B"
+  },
+  "data_enrichment": {
+    "applications_with_business_name": 8,
+    "applications_with_standardized_business_name": 0,
+    "applications_with_woman_owned_flag": 8,
+    "applications_with_woman_owned_proof": 2
+  },
+  "eligibility_summary": {
+    "total_applications": 8,
+    "eligible_applications": 0,
+    "ineligible_applications": 8,
+    "eligibility_rate": 0.0,
+    "criteria_failure_breakdown": {
+      "E1_registration_legality": 0,
+      "E2_county_mapping": 8,
+      "E3_priority_value_chain": 0,
+      "E4_financial_evidence": 0,
+      "E5_consent_contactability": 0
+    }
+  },
+  "scoring_summary": {
+    "total_scored": 0,
+    "average_score": 0.0,
+    "highest_score": 0.0,
+    "lowest_score": 0.0,
+    "score_distribution": {
+      "excellent_80_100": 0,
+      "good_70_79": 0,
+      "fair_60_69": 0,
+      "poor_below_60": 0
+    }
+  },
+  "application_evaluations": {
+    "Elgeiyo Marakwet_320": {
+      "application_id": "Elgeiyo Marakwet_320",
+      "business_type": "Other",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": [
+          "E2: County mapping unclear or missing"
+        ]
+      },
+      "business_name": "Chepkorio Dairy LTD"
+    },
+    "Elgeiyo Marakwet_612": {
+      "application_id": "Elgeiyo Marakwet_612",
+      "business_type": "Cooperative",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": [
+          "E2: County mapping unclear or missing"
+        ]
+      },
+      "business_name": "KAPCHEROP INUKA RURAL SAVINGS AND CREDIT CO-OPERATIVE SOCIETY LIMITED"
+    },
+    "Elgeiyo Marakwet_679": {
+      "application_id": "Elgeiyo Marakwet_679",
+      "business_type": "Cooperative",
+      "woman_owned": "No",
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": [
+          "E2: County mapping unclear or missing"
+        ]
+      },
+      "business_name": "KOCHOLWO DAIRY FARMERS COOPERATIVE SOCIETY LIMITED",
+      "woman_owned_proof": "No"
+    },
+    "": {
+      "application_id": "",
+      "business_type": "Cooperative",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": [
+          "E2: County mapping unclear or missing"
+        ]
+      },
+      "business_name": "Kabulwa Farmers Co-operative Society Limited"
+    },
+    "Elgeiyo Marakwet_683": {
+      "application_id": "Elgeiyo Marakwet_683",
+      "business_type": "Cooperative",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": [
+          "E2: County mapping unclear or missing"
+        ]
+      },
+      "business_name": "MOIBEN PYRETHRUM CO-OPERATIVE SOCIETY LTD"
+    },
+    "Elgeiyo Marakwet_686": {
+      "application_id": "Elgeiyo Marakwet_686",
+      "business_type": "Cooperative",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": [
+          "E2: County mapping unclear or missing"
+        ]
+      },
+      "business_name": "Sambirir Dairy and Cooperative society"
+    },
+    "Elgeiyo Marakwet_707": {
+      "application_id": "Elgeiyo Marakwet_707",
+      "business_type": "Cooperative",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": [
+          "E2: County mapping unclear or missing"
+        ]
+      },
+      "business_name": "Chebaror Farmers&#039; Co-operative Society Limited"
+    },
+    "Elgeiyo Marakwet_716": {
+      "application_id": "Elgeiyo Marakwet_716",
+      "business_type": "Cooperative",
+      "woman_owned": "No",
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": [
+          "E2: County mapping unclear or missing"
+        ]
+      },
+      "business_name": "KAPCHEMUTWA FARMERS COOPERATIVE SOCIETY LIMITED",
+      "woman_owned_proof": "No"
+    }
+  }
+}

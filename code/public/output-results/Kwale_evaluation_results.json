@@ -1,0 +1,1134 @@
+{
+  "evaluation_metadata": {
+    "county": "Kwale",
+    "total_applications": 16,
+    "evaluation_date": "2025-09-24T23:56:49.229437",
+    "evaluator_version": "1.0",
+    "rules_version": "rules.md - Annex A & B"
+  },
+  "data_enrichment": {
+    "applications_with_business_name": 16,
+    "applications_with_standardized_business_name": 0,
+    "applications_with_woman_owned_flag": 16,
+    "applications_with_woman_owned_proof": 4
+  },
+  "eligibility_summary": {
+    "total_applications": 16,
+    "eligible_applications": 16,
+    "ineligible_applications": 0,
+    "eligibility_rate": 100.0,
+    "criteria_failure_breakdown": {
+      "E1_registration_legality": 0,
+      "E2_county_mapping": 0,
+      "E3_priority_value_chain": 0,
+      "E4_financial_evidence": 0,
+      "E5_consent_contactability": 0
+    }
+  },
+  "scoring_summary": {
+    "total_scored": 16,
+    "average_score": 73.31,
+    "highest_score": 95.0,
+    "lowest_score": 68.0,
+    "score_distribution": {
+      "excellent_80_100": 2,
+      "good_70_79": 7,
+      "fair_60_69": 7,
+      "poor_below_60": 0
+    }
+  },
+  "application_evaluations": {
+    "Kwale_296": {
+      "application_id": "Kwale_296",
+      "business_type": "Other",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "ONE LOVE WASAFI CBO",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 2,
+          "market_demand_competitiveness": 5,
+          "business_proposal_viability": 4,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 77.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Kwale_303": {
+      "application_id": "Kwale_303",
+      "business_type": "MSME Association",
+      "woman_owned": "No",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "MAKAMINI QUARRY JUA KALI",
+      "woman_owned_proof": "No",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 2,
+          "market_demand_competitiveness": 4,
+          "business_proposal_viability": 3,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.2,
+            "weighted_score": 16.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 68.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Fair"
+      }
+    },
+    "Kwale_443": {
+      "application_id": "Kwale_443",
+      "business_type": "MSME Association",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "Kawili Juakali Association",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 2,
+          "market_demand_competitiveness": 5,
+          "business_proposal_viability": 3,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 72.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Kwale_559": {
+      "application_id": "Kwale_559",
+      "business_type": "MSME Association",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "Kwale student MSE association",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 2,
+          "market_demand_competitiveness": 4,
+          "business_proposal_viability": 3,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.2,
+            "weighted_score": 16.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 68.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Fair"
+      }
+    },
+    "Kwale_603": {
+      "application_id": "Kwale_603",
+      "business_type": "Private company",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "Muafrica Eco Nishati Ltd",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 5,
+          "market_demand_competitiveness": 5,
+          "business_proposal_viability": 4,
+          "value_chain_alignment": 5,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.1,
+            "weighted_score": 10.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 95.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Kwale_607": {
+      "application_id": "Kwale_607",
+      "business_type": "MSME Association",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "KINANGO JUAKALI ASSOCIATION",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 2,
+          "market_demand_competitiveness": 4,
+          "business_proposal_viability": 3,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.2,
+            "weighted_score": 16.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 68.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Fair"
+      }
+    },
+    "Kwale_611": {
+      "application_id": "Kwale_611",
+      "business_type": "MSME Association",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "Hewa Safi Mangroves Association",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 2,
+          "market_demand_competitiveness": 4,
+          "business_proposal_viability": 3,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.2,
+            "weighted_score": 16.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 68.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Fair"
+      }
+    },
+    "Kwale_614": {
+      "application_id": "Kwale_614",
+      "business_type": "Cooperative",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "Kwale Pavi Farmers Cooperative Society",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 2,
+          "market_demand_competitiveness": 5,
+          "business_proposal_viability": 3,
+          "value_chain_alignment": 3,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.1,
+            "weighted_score": 6.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 74.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Kwale_627": {
+      "application_id": "Kwale_627",
+      "business_type": "MSME Association",
+      "woman_owned": "No",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "KWALE TOWNSHIP JUAKALI ASSOSCIATION",
+      "woman_owned_proof": "No",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 2,
+          "market_demand_competitiveness": 5,
+          "business_proposal_viability": 4,
+          "value_chain_alignment": 4,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 81.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Kwale_640": {
+      "application_id": "Kwale_640",
+      "business_type": "MSME Association",
+      "woman_owned": "No",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "LUNGA LUNGA HAND CRAFT JUA KALI ASSOCIATION",
+      "woman_owned_proof": "No",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 2,
+          "market_demand_competitiveness": 4,
+          "business_proposal_viability": 3,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.2,
+            "weighted_score": 16.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 68.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Fair"
+      }
+    },
+    "Kwale_642": {
+      "application_id": "Kwale_642",
+      "business_type": "Cooperative",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "kwale coconut farmers&#039; cooperative society limited",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 2,
+          "market_demand_competitiveness": 4,
+          "business_proposal_viability": 3,
+          "value_chain_alignment": 3,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.2,
+            "weighted_score": 16.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.1,
+            "weighted_score": 6.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 70.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Kwale_647": {
+      "application_id": "Kwale_647",
+      "business_type": "MSME Association",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "hilwa kwale self help group",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 2,
+          "market_demand_competitiveness": 4,
+          "business_proposal_viability": 3,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.2,
+            "weighted_score": 16.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 68.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Fair"
+      }
+    },
+    "Kwale_651": {
+      "application_id": "Kwale_651",
+      "business_type": "MSME Association",
+      "woman_owned": "No",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "BIDII JUAKALI",
+      "woman_owned_proof": "No",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 2,
+          "market_demand_competitiveness": 4,
+          "business_proposal_viability": 3,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.2,
+            "weighted_score": 16.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 68.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Fair"
+      }
+    },
+    "Kwale_670": {
+      "application_id": "Kwale_670",
+      "business_type": "MSME Association",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "KWALE COMMUNITY BASED UTALII ASSOCIATION",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 2,
+          "market_demand_competitiveness": 5,
+          "business_proposal_viability": 3,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 72.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Kwale_689": {
+      "application_id": "Kwale_689",
+      "business_type": "Cooperative",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "TUSHIRIKIANE BLUE EMPOWERMENT SAVINGS AND CREDIT CO - OPERATIVE SOCIETY LIMITED",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 2,
+          "market_demand_competitiveness": 5,
+          "business_proposal_viability": 4,
+          "value_chain_alignment": 3,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.1,
+            "weighted_score": 6.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 79.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Kwale_711": {
+      "application_id": "Kwale_711",
+      "business_type": "Other",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "NIVIDZO CBO",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 2,
+          "market_demand_competitiveness": 5,
+          "business_proposal_viability": 4,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 5
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 77.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    }
+  }
+}

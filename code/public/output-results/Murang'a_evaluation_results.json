@@ -1,0 +1,216 @@
+{
+  "evaluation_metadata": {
+    "county": "Murang'a",
+    "total_applications": 9,
+    "evaluation_date": "2025-09-24T23:56:48.048361",
+    "evaluator_version": "1.0",
+    "rules_version": "rules.md - Annex A & B"
+  },
+  "data_enrichment": {
+    "applications_with_business_name": 9,
+    "applications_with_standardized_business_name": 0,
+    "applications_with_woman_owned_flag": 9,
+    "applications_with_woman_owned_proof": 3
+  },
+  "eligibility_summary": {
+    "total_applications": 9,
+    "eligible_applications": 0,
+    "ineligible_applications": 9,
+    "eligibility_rate": 0.0,
+    "criteria_failure_breakdown": {
+      "E1_registration_legality": 0,
+      "E2_county_mapping": 9,
+      "E3_priority_value_chain": 0,
+      "E4_financial_evidence": 0,
+      "E5_consent_contactability": 0
+    }
+  },
+  "scoring_summary": {
+    "total_scored": 0,
+    "average_score": 0.0,
+    "highest_score": 0.0,
+    "lowest_score": 0.0,
+    "score_distribution": {
+      "excellent_80_100": 0,
+      "good_70_79": 0,
+      "fair_60_69": 0,
+      "poor_below_60": 0
+    }
+  },
+  "application_evaluations": {
+    "Murang'a_177": {
+      "application_id": "Murang'a_177",
+      "business_type": "Cooperative",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": [
+          "E2: County mapping unclear or missing"
+        ]
+      },
+      "business_name": "Kangari United Dairy cooperative society limited"
+    },
+    "Murang'a_226": {
+      "application_id": "Murang'a_226",
+      "business_type": "Cooperative",
+      "woman_owned": "No",
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": [
+          "E2: County mapping unclear or missing"
+        ]
+      },
+      "business_name": "Mbugiti Dairy farmers Co-operative society Limited",
+      "woman_owned_proof": "No"
+    },
+    "Murang'a_239": {
+      "application_id": "Murang'a_239",
+      "business_type": "Cooperative",
+      "woman_owned": "No",
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": [
+          "E2: County mapping unclear or missing"
+        ]
+      },
+      "business_name": "NEW NGINDA DAIRY CO-OP SOCIETY LTD",
+      "woman_owned_proof": "No"
+    },
+    "Murang'a_247": {
+      "application_id": "Murang'a_247",
+      "business_type": "Cooperative",
+      "woman_owned": "No",
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": [
+          "E2: County mapping unclear or missing"
+        ]
+      },
+      "business_name": "GATANGA MWANGAZA DAIRY COOPERATIVE SOCIETY LTD.",
+      "woman_owned_proof": "No"
+    },
+    "Murang'a_273": {
+      "application_id": "Murang'a_273",
+      "business_type": "Cooperative",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": [
+          "E2: County mapping unclear or missing"
+        ]
+      },
+      "business_name": "Kanderendu Amazing Grace Dairy Farmers Co - operative Soceity Limited"
+    },
+    "Murang'a_314": {
+      "application_id": "Murang'a_314",
+      "business_type": "Cooperative",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": [
+          "E2: County mapping unclear or missing"
+        ]
+      },
+      "business_name": "Kigoro Dairy Farmers cooperative society limited"
+    },
+    "Murang'a_325": {
+      "application_id": "Murang'a_325",
+      "business_type": "Cooperative",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": [
+          "E2: County mapping unclear or missing"
+        ]
+      },
+      "business_name": "CENTRAL ABERDARES DAIRY FARMERS COOPERATIVE SOCIETY LIMITED."
+    },
+    "Murang'a_432": {
+      "application_id": "Murang'a_432",
+      "business_type": "Cooperative",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": [
+          "E2: County mapping unclear or missing"
+        ]
+      },
+      "business_name": "Kamahuha dairy farmers cooperative society limited"
+    },
+    "Murang'a_444": {
+      "application_id": "Murang'a_444",
+      "business_type": "Cooperative",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": [
+          "E2: County mapping unclear or missing"
+        ]
+      },
+      "business_name": "Murang a County Creameries Cooperative Union"
+    }
+  }
+}
