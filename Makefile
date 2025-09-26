@@ -1,0 +1,74 @@
+VENV_DIR := $(CURDIR)/venv
+PY := $(VENV_DIR)/bin/python3
+PIP := $(VENV_DIR)/bin/pip
+
+.PHONY: all venv install extraction evaluation summary stats src run build clean help
+
+help:
+	@echo "Available targets:"
+	@echo "  make venv         -> create virtualenv in ./venv"
+	@echo "  make install      -> install Python requirements into venv"
+	@echo "  make extraction   -> run document extraction (long)"
+	@echo "  make analysis     -> run analysis scripts (analyze_kjet_applications.py)"
+	@echo "  make evaluation   -> run county evaluator and generate evaluation summary"
+	@echo "  make stats        -> run generate_stats.py"
+	@echo "  make src          -> copy output-results into src/public/output-results"
+	@echo "  make run          -> full pipeline: extraction -> analysis -> evaluation -> stats -> copy"
+
+venv:
+	@echo "Creating virtualenv at $(VENV_DIR) if missing..."
+	if [ ! -d "$(VENV_DIR)" ]; then python3 -m venv "$(VENV_DIR)"; fi
+
+install: venv
+	@echo "Installing Python packages into venv..."
+	$(PIP) install --upgrade pip
+	$(PIP) install -r requirements.txt
+
+extraction: install
+	@echo "Running extraction: extract_all_documents.py (may be long)..."
+	$(PY) extract_all_documents.py
+
+analysis: install
+	@echo "Running analysis: analyze_kjet_applications.py"
+	$(PY) analyze_kjet_applications.py
+
+evaluation: install
+	@echo "Running county evaluator: county_evaluator.py"
+	$(PY) county_evaluator.py
+	@echo "Generating national evaluation summary"
+	$(PY) generate_evaluation_summary.py
+
+stats: install
+	@echo "Running generate_stats.py"
+	$(PY) generate_stats.py
+
+src:
+	@echo "Copying evaluation outputs to React public folder"
+	@mkdir -p src/public/output-results
+	@cp -v output-results/* src/public/output-results/ || true
+
+run: install
+	@echo "Checking for existing output directory..."
+	@if [ -d "output" ] && [ "$(shell ls -A output)" ]; then \
+		echo "output/ exists and is not empty — skipping extraction."; \
+	else \
+		echo "No output found — running extraction..."; \
+		$(PY) extract_all_documents.py; \
+	fi
+	@echo "Running analysis and evaluation steps..."
+	$(PY) analyze_kjet_applications.py
+	$(PY) county_evaluator.py
+	$(PY) generate_evaluation_summary.py
+	$(PY) generate_stats.py
+	@echo "Copying outputs to React public folder..."
+	@mkdir -p src/public/output-results
+	@cp -v output-results/* src/public/output-results/ || true
+	@echo "Full pipeline complete."
+
+build:
+	@echo "Building React app (inside src/)"
+	@cd src && pnpm build
+
+clean:
+	@echo "Cleaning generated artifacts (output/ output-results/  venv/)"
+	@rm -rf output output-results venv
