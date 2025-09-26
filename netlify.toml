@@ -2,8 +2,8 @@
   # Base directory for the build
   base = "code/"
   
-  # Directory where the build artifacts are located
-  publish = "code/build/"
+  # Directory where the build artifacts are located (relative to base)
+  publish = "build/"
   
   # Build command to run
   command = "npm run build"
