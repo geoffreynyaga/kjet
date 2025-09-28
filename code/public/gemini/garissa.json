@@ -1,0 +1,74 @@
+{
+  "report_title": "KJET Garissa County Application Ranking and Evaluation",
+  "selection_criteria_weights": {
+    "S1_Registration_Track_Record_5%": 0.05,
+    "S2_Financial_Position_20%": 0.20,
+    "S3_Market_Demand_Competitiveness_20%": 0.20,
+    "S4_Business_Proposal_Viability_25%": 0.25,
+    "S5_Value_Chain_Alignment_10%": 0.10,
+    "S6_Inclusivity_Sustainability_20%": 0.20
+  },
+  "ranked_applicants": [
+    {
+      "rank": 1,
+      "application_id": "Garissa_701",
+      "applicant_name": "GARISSA LEATHER WORKS LTD",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.75,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {"score": 5, "reason": "Private company, registered over 3 years, excellent governance."},
+        "S2_Financial_Position_20%": {"score": 5, "reason": "Superior financial health with turnover of KES 12.0M (≥KES 10M range)."},
+        "S3_Market_Demand_Competitiveness_20%": {"score": 5, "reason": "Secured regional and urban market contracts for leather goods."},
+        "S4_Business_Proposal_Viability_25%": {"score": 5, "reason": "Detailed plan to acquire high-efficiency tanning equipment, clear ROI."},
+        "S5_Value_Chain_Alignment_10%": {"score": 4, "reason": "Critical manufacturing role in the Leather value chain (BETA VC)."},
+        "S6_Inclusivity_Sustainability_20%": {"score": 4, "reason": "Qualifies as Woman-led; adopted one green practice (efficient water recycling in tannery)."}
+      }
+    },
+    {
+      "rank": 2,
+      "application_id": "Garissa_400",
+      "applicant_name": "BURA RICE MILLERS COOPERATIVE",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.40,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {"score": 5, "reason": "Cooperative, long-established (>3 years) with excellent track record."},
+        "S2_Financial_Position_20%": {"score": 4, "reason": "Stable financial position, turnover of KES 8.5M (KES 5M–<10M range)."},
+        "S3_Market_Demand_Competitiveness_20%": {"score": 4, "reason": "High local and regional demand for Bura rice."},
+        "S4_Business_Proposal_Viability_25%": {"score": 4, "reason": "Clear proposal for upgrading to a modern grading and packaging line."},
+        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Critical processing node in the Rice Value Chain (BETA VC)."},
+        "S6_Inclusivity_Sustainability_20%": {"score": 5, "reason": "High inclusion of marginalized groups; adopted 2+ green practices (husk-based energy, efficient water use)."}
+      }
+    },
+    {
+      "rank": 3,
+      "application_id": "Garissa_550",
+      "applicant_name": "TANA DAIRY AGGREGATION GROUP",
+      "eligibility_status": "Eligible",
+      "composite_score": 3.55,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {"score": 3, "reason": "MSME Association registered 1-3 years."},
+        "S2_Financial_Position_20%": {"score": 3, "reason": "Small-scale operation, turnover of KES 3.2M (KES 1M–<5M range)."},
+        "S3_Market_Demand_Competitiveness_20%": {"score": 3, "reason": "Supplies local processors, with moderate competition in raw milk aggregation."},
+        "S4_Business_Proposal_Viability_25%": {"score": 4, "reason": "Clear plan to acquire a bulk milk cooler and transport tanks."},
+        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Critical aggregation/cold chain role in the Dairy Value Chain (Priority VC)."},
+        "S6_Inclusivity_Sustainability_20%": {"score": 3, "reason": "Qualifies as Youth-led; adopted one green practice (solar chilling at collection points)."}
+      }
+    }
+  ],
+  "ineligible_applicants": [
+    {
+      "application_id": "Garissa_605",
+      "applicant_name": "Garissa General Trading PLC",
+      "eligibility_status": "Ineligible",
+      "ineligibility_criterion_failed": "E3 - Priority Value Chain",
+      "reason": "The primary value chain is 'General Trading/Retail', which is not a designated manufacturing, processing, or value-addition priority value chain for the KJET program."
+    },
+    {
+      "application_id": "Garissa_710",
+      "applicant_name": "Amu Livestock Trading SACCO",
+      "eligibility_status": "Ineligible",
+      "ineligibility_criterion_failed": "E1 - Registration & Legality AND E3 - Priority Value Chain",
+      "reason": "The entity is registered as a 'SACCO', which is not a legally recognized cluster entity (MSME association, cooperative, or company) for this program (E1). Additionally, the primary business is 'Livestock Trading' (primary production/trading) which is not a target value-addition node (E3)."
+    }
+  ]
+}

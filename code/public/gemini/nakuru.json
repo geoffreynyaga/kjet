@@ -1,0 +1,134 @@
+{
+  "report_title": "KJET Nakuru County Application Ranking and Evaluation",
+  "selection_criteria_weights": {
+    "S1_Registration_Track_Record_5%": 0.05,
+    "S2_Financial_Position_20%": 0.20,
+    "S3_Market_Demand_Competitiveness_20%": 0.20,
+    "S4_Business_Proposal_Viability_25%": 0.25,
+    "S5_Value_Chain_Alignment_10%": 0.10,
+    "S6_Inclusivity_Sustainability_20%": 0.20
+  },
+  "ranked_applicants": [
+    {
+      "rank": 1,
+      "application_id": "485",
+      "applicant_name": "KURESOI NORTH DAIRY COOPERATIVE",
+      "eligibility_status": "Eligible",
+      "composite_score": 5.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {"score": 5, "reason": "Long-standing registration (since 1982) with extensive operational history."},
+        "S2_Financial_Position_20%": {"score": 5, "reason": "Excellent financial health with consistent growth in turnover and net surplus over multiple years."},
+        "S3_Market_Demand_Competitiveness_20%": {"score": 5, "reason": "Proven demand with active offtake agreements and aggressive market share strategy."},
+        "S4_Business_Proposal_Viability_25%": {"score": 5, "reason": "Clear, detailed proposal focused on capacity expansion and logistics improvement with high projected ROI."},
+        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Critical role in Dairy value chain, providing aggregation, processing, and extension services to members."},
+        "S6_Inclusivity_Sustainability_20%": {"score": 5, "reason": "High marks for sustainability (biogas plant, tree-planting) and inclusivity (>30% women in leadership)."}
+      }
+    },
+    {
+      "rank": 2,
+      "application_id": "185",
+      "applicant_name": "Kirima Fresh Dairies Ltd",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.8,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {"score": 5, "reason": "Registered for over three years (since 2021) with clear operational history."},
+        "S2_Financial_Position_20%": {"score": 5, "reason": "Strong financial health with consistent upward trend in turnover and net profit."},
+        "S3_Market_Demand_Competitiveness_20%": {"score": 5, "reason": "Well-defined strategy to diversify into high-value products (cheese, yogurt) for competitive edge."},
+        "S4_Business_Proposal_Viability_25%": {"score": 4, "reason": "Robust plan with clear objectives, but funding proposal detail could be more granular."},
+        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Plays a critical role in milk aggregation, processing, and distribution."},
+        "S6_Inclusivity_Sustainability_20%": {"score": 5, "reason": "Woman-owned, female General Manager, and strong commitment to waste repurposing (whey) and solar exploration."}
+      }
+    },
+    {
+      "rank": 3,
+      "application_id": "389",
+      "applicant_name": "NAKURU CO-OPERATIVE CREAMERIES",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.7,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {"score": 5, "reason": "Long operational history and strong brand recognition."},
+        "S2_Financial_Position_20%": {"score": 4, "reason": "Stable financial performance but with some recent pressure on liquidity."},
+        "S3_Market_Demand_Competitiveness_20%": {"score": 5, "reason": "Established market presence and clear strategy for product innovation."},
+        "S4_Business_Proposal_Viability_25%": {"score": 5, "reason": "Solid, measurable goals for modernizing infrastructure and expanding cold chain logistics."},
+        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Major player in the Dairy value chain, providing critical processing capacity for the region."},
+        "S6_Inclusivity_Sustainability_20%": {"score": 5, "reason": "Utilizes a biogas digester for waste management, demonstrating environmental responsibility."}
+      }
+    },
+    {
+      "rank": 4,
+      "application_id": "200",
+      "applicant_name": "Kerkuc's Co-operative Society Limited",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.5,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {"score": 5, "reason": "Registered cooperative with verifiable history."},
+        "S2_Financial_Position_20%": {"score": 4, "reason": "Positive revenue trend based on bank statements, but profitability data is less clear."},
+        "S3_Market_Demand_Competitiveness_20%": {"score": 4, "reason": "Focus on high-value products (brown cheese) with an initial B2B contract, but limited market depth currently."},
+        "S4_Business_Proposal_Viability_25%": {"score": 5, "reason": "Clear proposal to invest in feed hardware and land acquisition to control input costs and expand services."},
+        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Essential role in member support, milk aggregation, and value addition (cheese)."},
+        "S6_Inclusivity_Sustainability_20%": {"score": 5, "reason": "Qualifies as woman-owned (self-declared) and provides AI services/drought-resistant fodder to farmers."}
+      }
+    },
+    {
+      "rank": 5,
+      "application_id": "233",
+      "applicant_name": "SUKA FARMERS COOPERATIVE SOCIETY LTD",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.5,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {"score": 5, "reason": "Excellent track record, registered since 2008."},
+        "S2_Financial_Position_20%": {"score": 4, "reason": "Shows revenue growth and recently returned to a net surplus, indicating improving financial health."},
+        "S3_Market_Demand_Competitiveness_20%": {"score": 4, "reason": "Strong plan to enter the UHT milk market and expand to the Western Kenya region."},
+        "S4_Business_Proposal_Viability_25%": {"score": 5, "reason": "Proposal is clear, focusing on distribution infrastructure (Vans, warehouses) to support new product lines."},
+        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Central player in aggregation, processing, marketing, and member support in the Dairy value chain."},
+        "S6_Inclusivity_Sustainability_20%": {"score": 5, "reason": "Uses solar power for water pumping and has an existing wastewater management initiative for upgrade."}
+      }
+    },
+    {
+      "rank": 6,
+      "application_id": "643",
+      "applicant_name": "TECH-STYLE RECYCLING DESIGNS",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.4,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {"score": 5, "reason": "Strong track record in the Textiles sector."},
+        "S2_Financial_Position_20%": {"score": 4, "reason": "Consistent turnover and profitability trend."},
+        "S3_Market_Demand_Competitiveness_20%": {"score": 5, "reason": "High competitiveness due to its unique position in textile recycling and multi-channel sales."},
+        "S4_Business_Proposal_Viability_25%": {"score": 5, "reason": "Comprehensive proposal with quantified targets for expansion of recycling and production capacity."},
+        "S5_Value_Chain_Alignment_10%": {"score": 4, "reason": "Strong alignment by promoting circular economy, but the application could better articulate its direct linkage to primary textile manufacturing/processing."},
+        "S6_Inclusivity_Sustainability_20%": {"score": 4, "reason": "Woman-owned, >50% women/youth, but the sustainable practices description was slightly less detailed than top applicants."}
+      }
+    },
+    {
+      "rank": 7,
+      "application_id": "704",
+      "applicant_name": "Baringo Textile Millers Group",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.3,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {"score": 5, "reason": "Registered association with over five years of operation."},
+        "S2_Financial_Position_20%": {"score": 4, "reason": "Positive turnover trend, but relies heavily on grants/external funding for key operations."},
+        "S3_Market_Demand_Competitiveness_20%": {"score": 4, "reason": "Consistent monthly orders with a clear plan to expand into the uniform market."},
+        "S4_Business_Proposal_Viability_25%": {"score": 5, "reason": "Clear plan to upgrade equipment (weaving looms) to increase production volume and quality."},
+        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "A key player in the Textiles value chain, providing spinning and weaving services to local cotton farmers."},
+        "S6_Inclusivity_Sustainability_20%": {"score": 4, "reason": "Strong inclusivity (>50% female workforce), but sustainable practice (solar) is not yet fully implemented across all operations."}
+      }
+    }
+  ],
+  "ineligible_applicants": [
+    {
+      "application_id": "461",
+      "applicant_name": "MWINGI AGRI-BUSINESS COOPERATIVE",
+      "eligibility_status": "Ineligible",
+      "ineligibility_criterion_failed": "E3 - Priority Value Chain",
+      "reason": "The cluster operates in 'Agri-business' which is outside the designated priority value chains (Dairy, Edible Oils, Textiles, Construction, Rice, Tea, Blue Economy)."
+    },
+    {
+      "application_id": "308",
+      "applicant_name": "SHAZON BEAUTY SPA SALON",
+      "eligibility_status": "Ineligible",
+      "ineligibility_criterion_failed": "E1 - Registration & Legality",
+      "reason": "The entity is registered as a 'Business Name' (BN-XXXXXXXX) which is not a recognized legally recognized cluster entity (MSME association, cooperative, or company) for this program."
+    }
+  ]
+}

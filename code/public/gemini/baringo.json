@@ -1,0 +1,103 @@
+{
+  "report_title": "KJET Baringo County Application Ranking and Evaluation",
+  "selection_criteria_weights": {
+    "S1_Registration_Track_Record_5%": 0.05,
+    "S2_Financial_Position_20%": 0.20,
+    "S3_Market_Demand_Competitiveness_20%": 0.20,
+    "S4_Business_Proposal_Viability_25%": 0.25,
+    "S5_Value_Chain_Alignment_10%": 0.10,
+    "S6_Inclusivity_Sustainability_20%": 0.20
+  },
+  "ranked_applicants": [
+    {
+      "rank": 1,
+      "application_id": "Baringo_297",
+      "applicant_name": "BAMSCOS COOPERATIVE UNION LTD",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.6,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {"score": 5, "reason": "Long-standing registration (since 2010) with functioning governance and audited financials."},
+        "S2_Financial_Position_20%": {"score": 5, "reason": "Excellent financial health with Total Assets of KES 73.3M in 2024 and strong capital ratios. Meets the high-end turnover threshold (>KES 10M)."},
+        "S3_Market_Demand_Competitiveness_20%": {"score": 4, "reason": "Established market presence, but detailed active offtake contracts are not explicitly provided in the summary."},
+        "S4_Business_Proposal_Viability_25%": {"score": 5, "reason": "Clear proposal to modernize Dairy infrastructure (storage/processing) with well-defined budget and high projected ROI."},
+        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Fills a critical node in the Dairy value chain as a Union, providing aggregation and processing services."},
+        "S6_Inclusivity_Sustainability_20%": {"score": 4, "reason": "Strong operational inclusion, but women representation on the Board (2 out of 9) is below the 30% target for full points."}
+      }
+    },
+    {
+      "rank": 2,
+      "application_id": "Baringo_426",
+      "applicant_name": "TULWET CONSTRUCTORS",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.3,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {"score": 4, "reason": "Registered 1-3 years as a Private Company."},
+        "S2_Financial_Position_20%": {"score": 4, "reason": "Stable financial position with consistent contract awards, meeting the medium-level turnover threshold."},
+        "S3_Market_Demand_Competitiveness_20%": {"score": 5, "reason": "Strong market evidence with multiple contracts secured from both county and private entities."},
+        "S4_Business_Proposal_Viability_25%": {"score": 4, "reason": "Proposal to acquire heavy machinery (excavators/mixers) is clear and viable for scaling operations."},
+        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Direct and critical role in the Construction value chain (priority VC) as a major service provider."},
+        "S6_Inclusivity_Sustainability_20%": {"score": 4, "reason": "High youth employment (>50%) and adopted a green practice (uses locally sourced, low-emission materials)."}
+      }
+    },
+    {
+      "rank": 3,
+      "application_id": "Baringo_570",
+      "applicant_name": "BESKO INVESTMENTS LIMITED",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.2,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {"score": 5, "reason": "Registered over 3 years with consistent operations and audited financials."},
+        "S2_Financial_Position_20%": {"score": 4, "reason": "Stable finances with consistent turnover and profitability, though in the medium-range."},
+        "S3_Market_Demand_Competitiveness_20%": {"score": 4, "reason": "Diversified contracts (Rice milling/Construction) demonstrating steady market access."},
+        "S4_Business_Proposal_Viability_25%": {"score": 4, "reason": "Viable proposal to invest in a larger rice mill and expand construction tools, though diversification dilutes focus."},
+        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Aligned to two priority/BETA VCs (Rice and Construction)."},
+        "S6_Inclusivity_Sustainability_20%": {"score": 4, "reason": "Qualifies as woman-owned. Limited details provided on sustainable practices."}
+      }
+    },
+    {
+      "rank": 4,
+      "application_id": "Baringo_302",
+      "applicant_name": "KIPTICH RICE FARMERS AND RICE MILLING GROUP",
+      "eligibility_status": "Eligible",
+      "composite_score": 3.5,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {"score": 4, "reason": "Cooperative registered 1-3 years ago."},
+        "S2_Financial_Position_20%": {"score": 3, "reason": "Stable but small-scale operation with turnover under KES 5M."},
+        "S3_Market_Demand_Competitiveness_20%": {"score": 3, "reason": "Regular local sales but products lack significant market differentiation."},
+        "S4_Business_Proposal_Viability_25%": {"score": 4, "reason": "Plan to acquire a small rice hulling machine is clear and achievable for immediate value addition."},
+        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Fills a critical processing/value addition role within the Rice value chain (BETA priority)."},
+        "S6_Inclusivity_Sustainability_20%": {"score": 3, "reason": "Moderate youth and gender inclusion; minimal sustainable practices detailed."}
+      }
+    }
+  ],
+  "ineligible_applicants": [
+    {
+      "application_id": "Baringo_220",
+      "applicant_name": "DYVAN MILK BAR",
+      "eligibility_status": "Ineligible",
+      "ineligibility_criterion_failed": "E1 - Registration & Legality",
+      "reason": "The entity is registered as a 'Business Name' (BN-GVCQXMLZ), which is not a legally recognized cluster entity (MSME association, cooperative, or company) for this program."
+    },
+    {
+      "application_id": "Baringo_257",
+      "applicant_name": "BARINGO COUNTY EDIBLE OILS FARMING GROUP",
+      "eligibility_status": "Ineligible",
+      "ineligibility_criterion_failed": "E3 - Priority Value Chain",
+      "reason": "The application focuses on **primary farming** (Edible Oil seeds), which falls outside the scope of the KJET program's priority for value-addition, processing, or manufacturing nodes."
+    },
+    {
+      "application_id": "Baringo_338",
+      "applicant_name": "EMORON DIVERSIFIED FARMERS",
+      "eligibility_status": "Ineligible",
+      "ineligibility_criterion_failed": "E4 - Minimum Financial Evidence",
+      "reason": "The application explicitly stated that no financial evidence (bank/M-PESA statement, income statement, etc.) was available for verification."
+    },
+    {
+      "application_id": "Baringo_371",
+      "applicant_name": "BARINGO TECH ENTREPRENEURS",
+      "eligibility_status": "Ineligible",
+      "ineligibility_criterion_failed": "E3 - Priority Value Chain",
+      "reason": "The primary value chain is listed as 'Technology/Services', which is not a designated priority value chain (Dairy, Textiles, Edible Oils, Construction, Rice, Tea, Blue Economy, Minerals, Forestry, or Leather) for this program."
+    }
+  ]
+}

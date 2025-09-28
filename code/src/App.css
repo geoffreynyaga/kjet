@@ -913,3 +913,570 @@ tbody tr:hover {
     font-size: 1.5rem;
   }
 }
+
+/* LLM Counties Analysis Styles */
+.criteria-compact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.criteria-compact-item {
+  background: #f8f9fa;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+  text-align: center;
+  min-width: 120px;
+}
+
+.criteria-compact-name {
+  font-weight: 600;
+  color: #495057;
+  font-size: 0.85rem;
+  margin-bottom: 0.25rem;
+}
+
+.criteria-compact-weight {
+  font-weight: 700;
+  color: #007bff;
+  font-size: 1.1rem;
+}
+
+.top-candidates {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.top-candidate-card {
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.top-candidate-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.top-candidate-header {
+  padding: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.candidate-summary {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.rank-badge-small {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.candidate-info h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #495057;
+}
+
+.candidate-score {
+  text-align: right;
+}
+
+.composite-score-small {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  display: inline-block;
+  margin-bottom: 0.2rem;
+}
+
+.score-grade-small {
+  font-size: 0.8rem;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.expand-icon {
+  color: #6c757d;
+  transition: color 0.2s ease;
+}
+
+.top-candidate-header:hover .expand-icon {
+  color: #007bff;
+}
+
+.candidate-details {
+  padding: 1rem;
+  background: white;
+}
+
+.score-breakdown-compact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.criterion-compact {
+  padding: 0.75rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 3px solid #007bff;
+}
+
+.criterion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.criterion-name {
+  font-weight: 600;
+  color: #495057;
+  font-size: 0.9rem;
+}
+
+.criterion-score {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.criterion-reason {
+  color: #6c757d;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.table-header h3 {
+  margin: 0;
+}
+
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pagination-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background: #0056b3;
+}
+
+.pagination-btn:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+.page-info {
+  font-weight: 500;
+  color: #495057;
+}
+
+.applications-table-compact {
+  overflow-x: auto;
+}
+
+.applications-table-compact table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.applications-table-compact th,
+.applications-table-compact td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.applications-table-compact th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #495057;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.applications-table-compact tr:hover {
+  background: #f8f9fa;
+}
+
+.rank-badge-table {
+  background: #007bff;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.applicant-name-cell {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.score-cell {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.grade-cell {
+  font-weight: 500;
+  color: #6c757d;
+}
+
+.ineligible-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.ineligible-item-compact {
+  background: #fff5f5;
+  border: 1px solid #fed7d7;
+  border-radius: 6px;
+  padding: 0.75rem;
+}
+
+.ineligible-info {
+  font-weight: 600;
+  color: #c53030;
+  margin-bottom: 0.25rem;
+}
+
+.ineligibility-reason {
+  color: #744210;
+  font-size: 0.9rem;
+}
+
+/* Responsive adjustments for LLM analysis */
+@media (max-width: 768px) {
+  .criteria-compact-row {
+    justify-content: center;
+  }
+
+  .criteria-compact-item {
+    min-width: 100px;
+  }
+
+  .candidate-summary {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .candidate-score {
+    text-align: left;
+  }
+
+  .table-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .pagination-controls {
+    justify-content: center;
+  }
+
+  .applications-table-compact {
+    font-size: 0.9rem;
+  }
+
+  .applications-table-compact th,
+  .applications-table-compact td {
+    padding: 0.5rem;
+  }
+}
+
+/* LLM Counties Analysis Styles */
+.criteria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.criteria-item {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.criteria-name {
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.criteria-weight {
+  font-weight: 700;
+  color: #007bff;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.criteria-bar {
+  width: 100%;
+  height: 8px;
+  background: #e9ecef;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.criteria-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.ranked-applicants {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.applicant-card {
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.applicant-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.applicant-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.rank-badge {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.applicant-info h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #495057;
+}
+
+.application-id {
+  margin: 0.25rem 0 0 0;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.score-display {
+  margin-left: auto;
+  text-align: right;
+}
+
+.composite-score {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 0.25rem;
+}
+
+.score-grade {
+  font-size: 0.9rem;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.score-breakdown {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.criterion-score {
+  padding: 0.75rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 4px solid #007bff;
+}
+
+.criterion-label {
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.score-reason {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.score-value {
+  font-weight: 700;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  min-width: 45px;
+}
+
+.reason-text {
+  color: #6c757d;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.ineligible-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.ineligible-item {
+  background: #fff5f5;
+  border: 1px solid #fed7d7;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.ineligible-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.ineligible-header h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #c53030;
+  flex: 1;
+}
+
+.ineligibility-badge {
+  background: #e53e3e;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.ineligibility-details {
+  color: #744210;
+}
+
+.failed-criterion {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #c53030;
+}
+
+.ineligibility-details .reason {
+  color: #744210;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Responsive adjustments for LLM analysis */
+@media (max-width: 768px) {
+  .criteria-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .applicant-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .score-display {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .score-reason {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .ineligible-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}

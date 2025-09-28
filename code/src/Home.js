@@ -81,7 +81,15 @@ export default function Home() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Go To Counties
+            Counties Dashboard
+          </motion.a>
+          <motion.a 
+            href="/details"
+            className="bg-purple-600 hover:bg-purple-700 px-6 py-2 rounded-lg font-medium transition-colors duration-200 text-white no-underline"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            AI Analysis
           </motion.a>
         </motion.div>
       </motion.nav>

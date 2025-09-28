@@ -4,6 +4,7 @@
 import '../App.css';
 import CountiesHome from './counties.tsx';
 import ApplicationFiles from './ApplicationFiles.tsx';
+import LLMCountiesAnalysis from './LLMCountiesAnalysis.tsx';
 
-export { CountiesHome, ApplicationFiles };
+export { CountiesHome, ApplicationFiles, LLMCountiesAnalysis };
 export default CountiesHome;

@@ -1,0 +1,178 @@
+{
+  "report_title": "KJET Bungoma County Application Ranking and Evaluation",
+  "selection_criteria_weights": {
+    "S1_Registration_Track_Record_5%": 0.05,
+    "S2_Financial_Position_20%": 0.20,
+    "S3_Market_Demand_Competitiveness_20%": 0.20,
+    "S4_Business_Proposal_Viability_25%": 0.25,
+    "S5_Value_Chain_Alignment_10%": 0.10,
+    "S6_Inclusivity_Sustainability_20%": 0.20
+  },
+  "ranked_applicants": [
+    {
+      "rank": 1,
+      "application_id": "Bungoma_527",
+      "applicant_name": "BUNGOMA ELDORET COOPERATIVE SOCIETY LTD",
+      "eligibility_status": "Eligible",
+      "composite_score": 5.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {"score": 5, "reason": "Long-established cooperative with robust governance and audited financials."},
+        "S2_Financial_Position_20%": {"score": 5, "reason": "Superior financial health with turnover well over KES 10M and strong liquidity, confirmed by statements."},
+        "S3_Market_Demand_Competitiveness_20%": {"score": 5, "reason": "Active offtake agreements and a diversified market presence across the region."},
+        "S4_Business_Proposal_Viability_25%": {"score": 5, "reason": "Highly detailed proposal to modernize processing and logistics with clear, costed targets and high co-investment readiness."},
+        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Critical aggregation and processing role in the Dairy Value Chain, with strong linkages."},
+        "S6_Inclusivity_Sustainability_20%": {"score": 5, "reason": "Meets criteria for Woman-owned/led and has adopted 2+ proven green practices (e.g., biogas from waste, solar power)."}
+      }
+    },
+    {
+      "rank": 2,
+      "application_id": "Bungoma_534",
+      "applicant_name": "KITINDA FARMERS CO-OPERATIVE SOCIETY LIMITED",
+      "eligibility_status": "Eligible",
+      "composite_score": 5.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {"score": 5, "reason": "Very long-standing registration (CS/537) indicating stable operations and strong track record."},
+        "S2_Financial_Position_20%": {"score": 5, "reason": "Excellent financials, consistently meeting the highest turnover band (≥ KES 10M)."},
+        "S3_Market_Demand_Competitiveness_20%": {"score": 5, "reason": "Proven market demand supported by strong sales volumes and product reputation."},
+        "S4_Business_Proposal_Viability_25%": {"score": 5, "reason": "Comprehensive proposal focusing on UHT milk production and distribution network expansion, demonstrating high growth potential."},
+        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Central player in aggregation and high-value Dairy processing."},
+        "S6_Inclusivity_Sustainability_20%": {"score": 5, "reason": "Adopted 2+ green practices: **Solar power** use for water pumping and an active **wastewater management initiative**."}
+      }
+    },
+    {
+      "rank": 3,
+      "application_id": "Bungoma_499",
+      "applicant_name": "NAITIRI DAIRY FARMERS COOPETIVE SOCIETY LIMITED",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.4,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {"score": 4, "reason": "Registered 1-3 years with documented leadership and meeting cadence."},
+        "S2_Financial_Position_20%": {"score": 4, "reason": "Turnover in the KES 5M–<10M range with stable operations."},
+        "S3_Market_Demand_Competitiveness_20%": {"score": 4, "reason": "Consistent monthly orders and growing local channels."},
+        "S4_Business_Proposal_Viability_25%": {"score": 5, "reason": "Clear proposal to upgrade milk chilling and storage capacity, addressing a key operational bottleneck."},
+        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Fills a critical aggregation and cold-chain node in the Dairy VC."},
+        "S6_Inclusivity_Sustainability_20%": {"score": 4, "reason": "Uses a **solar system for milk chilling**, meeting the 1-2 green practices threshold."}
+      }
+    },
+    {
+      "rank": 4,
+      "application_id": "Bungoma_587",
+      "applicant_name": "NALONDO COFFEE FARMERS COOPERATIVE SOCIETY LTD",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.4,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {"score": 5, "reason": "Long-established coffee cooperative with high brand recognition."},
+        "S2_Financial_Position_20%": {"score": 4, "reason": "Stable financial position, confirmed by statements, meeting the KES 5M–<10M range."},
+        "S3_Market_Demand_Competitiveness_20%": {"score": 4, "reason": "Established market access for coffee sales, seeking improvement through quality enhancement."},
+        "S4_Business_Proposal_Viability_25%": {"score": 4, "reason": "Clear, viable plan to acquire **eco-pulpers** to enhance coffee quality and price, directly addressing a core challenge."},
+        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Critical processing/value-addition node within the Coffee sector (analogous to Tea/Rice VC)."},
+        "S6_Inclusivity_Sustainability_20%": {"score": 5, "reason": "Uses drought-resistant crops (Ruiru 11) and **Integrated Pest Management (IPM)** techniques (2+ green practices)."}
+      }
+    },
+    {
+      "rank": 5,
+      "application_id": "Bungoma_461",
+      "applicant_name": "KOTOKO FARMERS CO-OPERATIVE SOCIETY LTD",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.2,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {"score": 5, "reason": "Long-established cooperative with a strong track record."},
+        "S2_Financial_Position_20%": {"score": 4, "reason": "Stable financial position within the KES 5M–<10M turnover range."},
+        "S3_Market_Demand_Competitiveness_20%": {"score": 4, "reason": "Consistent sales with a plan to target green environment championship and maximizing profits."},
+        "S4_Business_Proposal_Viability_25%": {"score": 4, "reason": "Proposal is clear but lacks detailed costing and targets for the required machinery."},
+        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Clear role in Coffee value addition (processing)."},
+        "S6_Inclusivity_Sustainability_20%": {"score": 4, "reason": "Involved in a **CSR activity (planting bamboo seedlings)** for water source conservation."}
+      }
+    },
+    {
+      "rank": 6,
+      "application_id": "Bungoma_500",
+      "applicant_name": "NDALU FARMERS CO-OPERATIVE SOCIETY LIMITED",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {"score": 5, "reason": "Long-established cooperative (CS/537) with clear track record."},
+        "S2_Financial_Position_20%": {"score": 4, "reason": "Stable financial position in the medium turnover range."},
+        "S3_Market_Demand_Competitiveness_20%": {"score": 4, "reason": "Consistent local market presence."},
+        "S4_Business_Proposal_Viability_25%": {"score": 4, "reason": "Clear focus on acquiring land and means of milk collection to reduce costs and improve efficiency."},
+        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Essential aggregation and logistics role in the Dairy VC."},
+        "S6_Inclusivity_Sustainability_20%": {"score": 3, "reason": "General commitment to 'embrace use of green energy' is vague; insufficient detail for higher points."}
+      }
+    },
+    {
+      "rank": 7,
+      "application_id": "Bungoma_549",
+      "applicant_name": "ESILANGA FARMERS CO-OPERATIVE SOCIETY LIMITED",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {"score": 5, "reason": "Long-established cooperative with clear track record."},
+        "S2_Financial_Position_20%": {"score": 4, "reason": "Stable financial position in the medium turnover range."},
+        "S3_Market_Demand_Competitiveness_20%": {"score": 4, "reason": "Consistent local market presence."},
+        "S4_Business_Proposal_Viability_25%": {"score": 4, "reason": "Clear proposal to expand through establishing a milk ATM to increase sales and margins."},
+        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Essential aggregation and distribution role in the Dairy VC."},
+        "S6_Inclusivity_Sustainability_20%": {"score": 3, "reason": "Occasional supply of **tree seedlings** and improved feeds; general commitment to embrace green energy."}
+      }
+    },
+    {
+      "rank": 8,
+      "application_id": "Bungoma_601",
+      "applicant_name": "BUNGOMA CLUSTER OF SMALL SCALE TEA FARMERS",
+      "eligibility_status": "Eligible",
+      "composite_score": 3.3,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {"score": 4, "reason": "Registered 1-3 years as an association."},
+        "S2_Financial_Position_20%": {"score": 3, "reason": "Small-scale operation with turnover under KES 5M."},
+        "S3_Market_Demand_Competitiveness_20%": {"score": 3, "reason": "Regular sales through local channels, but limited competitiveness/differentiation."},
+        "S4_Business_Proposal_Viability_25%": {"score": 3, "reason": "Vague plan focused on general capacity building and technology access, lacking specific investment targets."},
+        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Critical aggregation role in the Tea Value Chain (BETA priority)."},
+        "S6_Inclusivity_Sustainability_20%": {"score": 3, "reason": "Moderate inclusion; general knowledge enhancement is not a verifiable green practice."}
+      }
+    },
+    {
+      "rank": 9,
+      "application_id": "Bungoma_700",
+      "applicant_name": "Nomorio Farmers Cooperative society limited",
+      "eligibility_status": "Eligible",
+      "composite_score": 3.2,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {"score": 4, "reason": "Registered 1-3 years as a cooperative."},
+        "S2_Financial_Position_20%": {"score": 3, "reason": "Small-scale operation with turnover under KES 5M."},
+        "S3_Market_Demand_Competitiveness_20%": {"score": 3, "reason": "Regular local sales; limited market growth strategy articulated."},
+        "S4_Business_Proposal_Viability_25%": {"score": 3, "reason": "Vague plan, largely focused on general training and knowledge management."},
+        "S5_Value_Chain_Alignment_10%": {"score": 4, "reason": "Clear node participation in Dairy aggregation and collection."},
+        "S6_Inclusivity_Sustainability_20%": {"score": 3, "reason": "Moderate inclusion; minimal sustainable practices detailed."}
+      }
+    }
+  ],
+  "ineligible_applicants": [
+    {
+      "application_id": "Bungoma_602",
+      "applicant_name": "BUNGOMA COUNTY CEREAL MILLERS ASSOCIATION",
+      "eligibility_status": "Ineligible",
+      "ineligibility_criterion_failed": "E3 - Priority Value Chain",
+      "reason": "The primary value chain is Cereal Milling (Maize/Wheat/Sorghum), which is not a designated priority value chain (Dairy, Edible Oils, Textiles, Construction) or additional BETA value chain (Rice, Tea, Blue Economy, Minerals, Forestry, Leather) for this program."
+    },
+    {
+      "application_id": "Bungoma_603",
+      "applicant_name": "CHWELE MARKETERS AND AGRO-PROCESSORS",
+      "eligibility_status": "Ineligible",
+      "ineligibility_criterion_failed": "E3 - Priority Value Chain",
+      "reason": "The primary value chain is general 'Agro-Processing' which is too broad and not within the designated priority value chains. Lack of specificity means it cannot be scored."
+    },
+    {
+      "application_id": "Bungoma_604",
+      "applicant_name": "WEBEMBUSI DAIRY FARMERS CO-OPERATIVE SOCIETY LTD",
+      "eligibility_status": "Ineligible",
+      "ineligibility_criterion_failed": "E3 - Priority Value Chain",
+      "reason": "The application's focus is on **Dairy Farming** (procuring feed, improving breeds), which is explicitly excluded from the KJET priority value chain of 'Dairy (excluding farming)' as the program targets value-addition, processing, or manufacturing nodes."
+    },
+    {
+      "application_id": "Bungoma_605",
+      "applicant_name": "CHWELE WATER CATCHMENT CONSERVATION GROUP",
+      "eligibility_status": "Ineligible",
+      "ineligibility_criterion_failed": "E3 - Priority Value Chain",
+      "reason": "The primary activity is environmental conservation/CSR, which is not a designated priority value chain for KJET or BETA."
+    }
+  ]
+}
