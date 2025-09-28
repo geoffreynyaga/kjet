@@ -9,7 +9,7 @@ ROOT_DIR="/Users/geoff/Downloads/Nakuru"
 DATA_DIR="$ROOT_DIR/data"
 OUTPUT_DIR="$ROOT_DIR/output"
 EVAL_OUTPUT_DIR="$ROOT_DIR/output-results"
-REACT_PUBLIC_OUTPUT="$ROOT_DIR/src/public/output-results"
+REACT_PUBLIC_OUTPUT="$ROOT_DIR/code/public/output-results"
 
 echo "Starting full KJET processing pipeline"
 echo "Root: $ROOT_DIR"

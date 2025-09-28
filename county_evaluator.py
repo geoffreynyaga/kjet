@@ -8,6 +8,25 @@ import json
 import os
 from datetime import datetime
 import re
+from tqdm import tqdm
+import signal
+
+class TimeoutError(Exception):
+    pass
+
+def timeout_handler(signum, frame):
+    raise TimeoutError("Evaluation timed out")
+
+def evaluate_with_timeout(func, args, timeout_seconds=30):
+    """Evaluate a function with a timeout"""
+    old_handler = signal.signal(signal.SIGALRM, timeout_handler)
+    signal.alarm(timeout_seconds)
+    try:
+        result = func(*args)
+        return result
+    finally:
+        signal.alarm(0)
+        signal.signal(signal.SIGALRM, old_handler)
 
 class KJETCountyEvaluator:
     def __init__(self):
@@ -48,11 +67,65 @@ class KJETCountyEvaluator:
             "address", "location"
         ]
 
+        # Scoring rubrics from rules.md (A3. Scoring Rubrics)
+        self.scoring_rubrics = {
+            "registration_track_record": {
+                5: "Registered ≥3 yrs; functioning governance (elected officials, minutes), audited handover(s)",
+                4: "Registered 1–3 yrs; documented leadership; meeting cadence",
+                3: "Registered <1 yr; basic structure in place",
+                2: "Registered but dormant/irregular governance",
+                1: "Registration unclear; ad-hoc operations",
+                0: "No registration / unverifiable"
+            },
+            "financial_position": {
+                5: "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof",
+                4: "Turnover 5–<10M; mostly stable; bank/Mpesa + one statement",
+                3: "Turnover 1–<5M; stable or recovering; at least one statement",
+                2: "Turnover <1M; sporadic records",
+                1: "Minimal/irregular transactions; thin evidence",
+                0: "No financial evidence"
+            },
+            "market_demand_competitiveness": {
+                5: "Active offtake/buyer contracts or purchase orders; multi-channel sales; repeat customers; defensible price/quality",
+                4: "Consistent monthly orders; growing channels (incl. digital marketplaces); basic quality assurance",
+                3: "Regular local sales; one channel; emerging quality practices",
+                2: "Intermittent sales; weak channels; limited differentiation",
+                1: "Sporadic sales; no channels; untested products",
+                0: "No market evidence"
+            },
+            "business_proposal_viability": {
+                5: "Clear problem–solution; quantified targets; detailed execution plan; costed budget; risks & mitigations; co-investment readiness",
+                4: "Strong plan with minor gaps; targets & timelines present",
+                3: "Direction clear; targets generic; budget rough",
+                2: "Vague plan; limited targets; unclear resourcing",
+                1: "Aspirational; no plan/targets",
+                0: "Not provided"
+            },
+            "value_chain_alignment": {
+                5: "Priority VC; fills a critical node (e.g., aggregation/processing); documented linkages upstream & downstream",
+                4: "Priority VC; clear node participation; some linkages",
+                3: "Priority VC; weak linkages; potential to upgrade",
+                2: "Peripheral role; unclear node",
+                1: "Marginal link",
+                0: "Not in priority VC"
+            },
+            "inclusivity_sustainability": {
+                5: "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted",
+                4: "Strong gender/youth participation; 1–2 green practices",
+                3: "Moderate inclusion; some intent on sustainability",
+                2: "Low inclusion; ad-hoc green steps",
+                1: "Token inclusion; no green practice",
+                0: "No evidence"
+            }
+        }
+
     def evaluate_county_applications(self, county_data):
         """Evaluate all applications in a county JSON file"""
 
         county_name = county_data["metadata"]["county"]
         applications = county_data.get("applications", [])
+
+        print(f"  🔍 Evaluating {len(applications)} applications in {county_name}...")
 
         evaluation_results = {
             "evaluation_metadata": {
@@ -99,51 +172,79 @@ class KJETCountyEvaluator:
 
         total_scores = []
 
-        for application in applications:
-            app_evaluation = self.evaluate_single_application(application, county_name)
-            app_id = application.get("application_id", f"unknown_{len(evaluation_results['application_evaluations'])}")
-            evaluation_results["application_evaluations"][app_id] = app_evaluation
+        for application in tqdm(applications, desc=f"  Evaluating {county_name} applications", unit="app", leave=False):
+            try:
+                # Evaluate with timeout to prevent hanging
+                app_evaluation = evaluate_with_timeout(
+                    self.evaluate_single_application,
+                    (application, county_name),
+                    timeout_seconds=60  # 60 second timeout per application
+                )
+                app_id = application.get("application_id", f"unknown_{len(evaluation_results['application_evaluations'])}")
+                evaluation_results["application_evaluations"][app_id] = app_evaluation
 
-            # Update data enrichment counts when structured fields are present
-            if app_evaluation.get("business_name"):
-                evaluation_results["data_enrichment"]["applications_with_business_name"] += 1
-            if app_evaluation.get("standardized_business_name"):
-                evaluation_results["data_enrichment"]["applications_with_standardized_business_name"] += 1
-            if app_evaluation.get("woman_owned") is not None:
-                evaluation_results["data_enrichment"]["applications_with_woman_owned_flag"] += 1
-            if app_evaluation.get("woman_owned_proof"):
-                evaluation_results["data_enrichment"]["applications_with_woman_owned_proof"] += 1
+                # Update data enrichment counts when structured fields are present
+                if app_evaluation.get("business_name"):
+                    evaluation_results["data_enrichment"]["applications_with_business_name"] += 1
+                if app_evaluation.get("standardized_business_name"):
+                    evaluation_results["data_enrichment"]["applications_with_standardized_business_name"] += 1
+                if app_evaluation.get("woman_owned") is not None:
+                    evaluation_results["data_enrichment"]["applications_with_woman_owned_flag"] += 1
+                if app_evaluation.get("woman_owned_proof"):
+                    evaluation_results["data_enrichment"]["applications_with_woman_owned_proof"] += 1
 
-            # Update eligibility summary
-            if app_evaluation["eligibility"]["eligible"]:
-                evaluation_results["eligibility_summary"]["eligible_applications"] += 1
-            else:
-                evaluation_results["eligibility_summary"]["ineligible_applications"] += 1
-                # Count criteria failures
-                for criterion, result in app_evaluation["eligibility"]["criteria_results"].items():
-                    if not result:
-                        evaluation_results["eligibility_summary"]["criteria_failure_breakdown"][criterion] += 1
-
-            # Update scoring summary for eligible applications
-            if app_evaluation["eligibility"]["eligible"] and "scoring" in app_evaluation:
-                score = app_evaluation["scoring"]["composite_score"]
-                total_scores.append(score)
-                evaluation_results["scoring_summary"]["total_scored"] += 1
-
-                if score > evaluation_results["scoring_summary"]["highest_score"]:
-                    evaluation_results["scoring_summary"]["highest_score"] = score
-                if score < evaluation_results["scoring_summary"]["lowest_score"]:
-                    evaluation_results["scoring_summary"]["lowest_score"] = score
-
-                # Score distribution
-                if score >= 80:
-                    evaluation_results["scoring_summary"]["score_distribution"]["excellent_80_100"] += 1
-                elif score >= 70:
-                    evaluation_results["scoring_summary"]["score_distribution"]["good_70_79"] += 1
-                elif score >= 60:
-                    evaluation_results["scoring_summary"]["score_distribution"]["fair_60_69"] += 1
+                # Update eligibility summary
+                if app_evaluation["eligibility"]["eligible"]:
+                    evaluation_results["eligibility_summary"]["eligible_applications"] += 1
                 else:
-                    evaluation_results["scoring_summary"]["score_distribution"]["poor_below_60"] += 1
+                    evaluation_results["eligibility_summary"]["ineligible_applications"] += 1
+                    # Count criteria failures
+                    for criterion, result in app_evaluation["eligibility"]["criteria_results"].items():
+                        if not result:
+                            evaluation_results["eligibility_summary"]["criteria_failure_breakdown"][criterion] += 1
+
+                # Update scoring summary for eligible applications
+                if app_evaluation["eligibility"]["eligible"] and "scoring" in app_evaluation:
+                    score = app_evaluation["scoring"]["composite_score"]
+                    total_scores.append(score)
+                    evaluation_results["scoring_summary"]["total_scored"] += 1
+
+                    if score > evaluation_results["scoring_summary"]["highest_score"]:
+                        evaluation_results["scoring_summary"]["highest_score"] = score
+                    if score < evaluation_results["scoring_summary"]["lowest_score"]:
+                        evaluation_results["scoring_summary"]["lowest_score"] = score
+
+                    # Score distribution
+                    if score >= 80:
+                        evaluation_results["scoring_summary"]["score_distribution"]["excellent_80_100"] += 1
+                    elif score >= 70:
+                        evaluation_results["scoring_summary"]["score_distribution"]["good_70_79"] += 1
+                    elif score >= 60:
+                        evaluation_results["scoring_summary"]["score_distribution"]["fair_60_69"] += 1
+                    else:
+                        evaluation_results["scoring_summary"]["score_distribution"]["poor_below_60"] += 1
+
+            except TimeoutError:
+                app_id = application.get("application_id", f"unknown_{len(evaluation_results['application_evaluations'])}")
+                print(f"    ⏰ Timeout: Application {app_id} took too long, marking as failed")
+                evaluation_results["application_evaluations"][app_id] = {
+                    "application_id": app_id,
+                    "error": "Evaluation timed out after 60 seconds",
+                    "eligibility": {"eligible": False, "failure_reasons": ["Evaluation timeout"]}
+                }
+                evaluation_results["eligibility_summary"]["ineligible_applications"] += 1
+                continue
+            except Exception as e:
+                app_id = application.get("application_id", f"unknown_{len(evaluation_results['application_evaluations'])}")
+                print(f"    ⚠️  Failed to evaluate application {app_id}: {str(e)}")
+                # Add failed application with minimal info
+                evaluation_results["application_evaluations"][app_id] = {
+                    "application_id": app_id,
+                    "error": f"Evaluation failed: {str(e)}",
+                    "eligibility": {"eligible": False, "failure_reasons": ["Evaluation error"]}
+                }
+                evaluation_results["eligibility_summary"]["ineligible_applications"] += 1
+                continue
 
         # Calculate averages and rates
         if evaluation_results["eligibility_summary"]["total_applications"] > 0:
@@ -157,28 +258,44 @@ class KJETCountyEvaluator:
         else:
             evaluation_results["scoring_summary"]["lowest_score"] = 0.0
 
+        print(f"  ✅ Completed evaluation: {evaluation_results['eligibility_summary']['eligible_applications']}/{evaluation_results['eligibility_summary']['total_applications']} eligible applications")
+
         return evaluation_results
 
     def evaluate_single_application(self, application, county_name):
         """Evaluate a single application against all criteria"""
 
+        app_id = application.get("application_id", "unknown")
+        print(f"    🔍 Evaluating application {app_id}...")
+
         # Extract content for analysis
         content = self._extract_application_content(application)
+        print(f"    📄 Content extracted: {len(content)} characters")
 
         # E1: Registration & Legality
+        print(f"    🏢 Checking E1: Registration & Legality...")
         e1_result = self._evaluate_registration_legality(application, content)
+        print(f"    ✅ E1 result: {e1_result}")
 
         # E2: County Mapping
+        print(f"    🗺️  Checking E2: County Mapping...")
         e2_result = self._evaluate_county_mapping(application, county_name, content)
+        print(f"    ✅ E2 result: {e2_result}")
 
         # E3: Priority Value Chain
+        print(f"    🔗 Checking E3: Priority Value Chain...")
         e3_result = self._evaluate_value_chain(application, content)
+        print(f"    ✅ E3 result: {e3_result}")
 
         # E4: Financial Evidence
+        print(f"    💰 Checking E4: Financial Evidence...")
         e4_result = self._evaluate_financial_evidence(application, content)
+        print(f"    ✅ E4 result: {e4_result}")
 
         # E5: Consent & Contactability
+        print(f"    📞 Checking E5: Consent & Contactability...")
         e5_result = self._evaluate_contactability(application, content)
+        print(f"    ✅ E5 result: {e5_result}")
 
         eligibility = {
             "eligible": all([e1_result, e2_result, e3_result, e4_result, e5_result]),
@@ -265,7 +382,41 @@ class KJETCountyEvaluator:
                 if "content" in doc_data and isinstance(doc_data["content"], str):
                     content_parts.append(doc_data["content"])
 
-        return " ".join(content_parts).lower()
+        content = " ".join(content_parts)
+
+        # Handle large content by extracting first and last pages
+        MAX_CONTENT_LENGTH = 500000  # ~500KB limit
+        if len(content) > MAX_CONTENT_LENGTH:
+            print(f"    ⚠️  Large content detected ({len(content)} chars), extracting first/last pages")
+            content = self._extract_pages(content)
+
+        return content.lower()
+
+    def _extract_pages(self, content):
+        """Extract first 3 pages and last 3 pages from large content"""
+        # Estimate ~2500 characters per page (rough estimate for typical document pages)
+        CHARS_PER_PAGE = 2500
+        pages_to_extract = 3
+
+        total_chars = len(content)
+
+        if total_chars <= CHARS_PER_PAGE * 6:  # If content is small enough for 6 pages, return all
+            return content
+
+        first_pages = content[:CHARS_PER_PAGE * pages_to_extract]
+
+        # Calculate start position for last pages
+        last_pages_start = max(CHARS_PER_PAGE * pages_to_extract,
+                              total_chars - (CHARS_PER_PAGE * pages_to_extract))
+
+        last_pages = content[last_pages_start:]
+
+        # Combine first and last pages
+        extracted_content = first_pages + " " + last_pages
+
+        print(f"    📄 Extracted {len(first_pages)} chars from first {pages_to_extract} pages + {len(last_pages)} chars from last {pages_to_extract} pages")
+
+        return extracted_content
 
     def _evaluate_registration_legality(self, application, content):
         """E1: Registration & Legality evaluation"""
@@ -379,6 +530,9 @@ class KJETCountyEvaluator:
     def _score_application(self, application, content):
         """Score eligible application according to primary criteria (0-5 scale)"""
 
+        app_id = application.get("application_id", "unknown")
+        # print(f"    📊 Scoring application {app_id}...")
+
         scores = {
             "registration_track_record": self._score_registration_track_record(application, content),
             "financial_position": self._score_financial_position(application, content),
@@ -390,6 +544,7 @@ class KJETCountyEvaluator:
 
         # Calculate weighted scores
         weighted_scores = {}
+        criteria_explanations = {}
         total_weighted_score = 0
 
         for criterion, score in scores.items():
@@ -402,12 +557,18 @@ class KJETCountyEvaluator:
                 "weight": weight,
                 "weighted_score": round(weighted_score, 2)
             }
+            # Add rubric explanation
+            criteria_explanations[criterion] = {
+                "score": score,
+                "rubric_explanation": self.scoring_rubrics[criterion][score]
+            }
             total_weighted_score += weighted_score
 
         composite_score = round(total_weighted_score, 2)
 
         return {
             "criteria_scores": scores,
+            "criteria_explanations": criteria_explanations,
             "weighted_scores": weighted_scores,
             "composite_score": composite_score,
             "scoring_scale": "0-100 (weighted average)",
@@ -418,24 +579,57 @@ class KJETCountyEvaluator:
         """A3.1: Registration & Track Record (5%)"""
         score = 0
 
-        # 5: Registered ≥3 yrs; functioning governance
-        if "3 years" in content or "three years" in content or re.search(r'\d{1,2}.*years', content):
-            if "governance" in content or "board" in content or "directors" in content:
-                score = 5
-            else:
-                score = 4
-        # 4: Registered 1-3 yrs; documented leadership
-        elif "1 year" in content or "two years" in content or "leadership" in content:
-            score = 4
-        # 3: Registered <1 yr; basic structure
-        elif "registered" in content:
-            score = 3
-        # 2: Registered but dormant/irregular
-        elif "registration" in content:
-            score = 2
-        # 1: Registration unclear
-        elif "company" in content or "cooperative" in content:
-            score = 1
+        # Check for years of operation
+        years_patterns = [
+            r'(\d+)\s*years?\s*operational',
+            r'(\d+)\s*years?\s*in\s*business',
+            r'established\s*(\d+)\s*years?\s*ago',
+            r'founded\s*(\d+)\s*years?\s*ago',
+            r'since\s*(\d{4})'  # year founded
+        ]
+
+        years_operational = 0
+        for pattern in years_patterns:
+            match = re.search(pattern, content, re.IGNORECASE)
+            if match:
+                try:
+                    years = int(match.group(1))
+                    if 'since' in pattern and years > 1900:  # year founded
+                        current_year = 2024  # approximate
+                        years_operational = current_year - years
+                    else:
+                        years_operational = years
+                    break
+                except:
+                    continue
+
+        # Check for governance indicators
+        governance_indicators = [
+            "board", "directors", "elected officials", "minutes", "meetings",
+            "governance", "audited", "handover", "constitution", "bylaws"
+        ]
+        has_governance = any(indicator in content for indicator in governance_indicators)
+
+        # Check for leadership documentation
+        leadership_indicators = [
+            "chairman", "chairperson", "secretary", "treasurer", "ceo",
+            "managing director", "executive", "leadership"
+        ]
+        has_leadership = any(indicator in content for indicator in leadership_indicators)
+
+        # Score based on rubric
+        if years_operational >= 3 and has_governance:
+            score = 5  # Registered ≥3 yrs; functioning governance
+        elif years_operational >= 1 and (has_leadership or has_governance):
+            score = 4  # Registered 1–3 yrs; documented leadership
+        elif years_operational >= 1 or "registered" in content:
+            score = 3  # Registered <1 yr; basic structure
+        elif "registration" in content and ("dormant" in content or "irregular" in content):
+            score = 2  # Registered but dormant/irregular governance
+        elif "registration" in content or "company" in content or "cooperative" in content:
+            score = 1  # Registration unclear; ad-hoc operations
+        else:
+            score = 0  # No registration / unverifiable
 
         return min(score, 5)
 
@@ -443,33 +637,56 @@ class KJETCountyEvaluator:
         """A3.2: Financial Position (20%)"""
         score = 0
 
-        # Check for financial amounts (turnover indicators)
-        turnover_patterns = [
-            r'turnover.*\d{1,3}(?:,\d{3})*',  # Turnover amounts
-            r'revenue.*\d{1,3}(?:,\d{3})*',
-            r'sales.*\d{1,3}(?:,\d{3})*'
+        # Extract turnover/revenue amounts
+        currency_patterns = [
+            r'(\d{1,3}(?:,\d{3})*(?:\.\d{2})?)\s*(?:kes|ksh|shillings?|million|m)',
+            r'turnover.*?(\d{1,3}(?:,\d{3})*(?:\.\d{2})?)',
+            r'revenue.*?(\d{1,3}(?:,\d{3})*(?:\.\d{2})?)',
+            r'sales.*?(\d{1,3}(?:,\d{3})*(?:\.\d{2})?)'
         ]
 
-        has_turnover = any(re.search(pattern, content, re.IGNORECASE) for pattern in turnover_patterns)
+        turnover_amount = 0
+        for pattern in currency_patterns:
+            matches = re.findall(pattern, content, re.IGNORECASE)
+            for match in matches:
+                try:
+                    # Clean the amount
+                    amount_str = match.replace(',', '')
+                    if 'million' in content.lower() or 'm' in content.lower():
+                        amount = float(amount_str) * 1000000
+                    else:
+                        amount = float(amount_str)
+                    turnover_amount = max(turnover_amount, amount)
+                except:
+                    continue
 
-        # 5: Turnover ≥ KES 10M; positive trend; statements + proof
-        if "10,000,000" in content or "10m" in content or "10 million" in content:
-            if "positive" in content or "growth" in content:
-                score = 5
-            else:
-                score = 4
-        # 4: Turnover 5-<10M; mostly stable; bank/Mpesa + statement
-        elif "5,000,000" in content or "5m" in content:
-            score = 4
-        # 3: Turnover 1-<5M; stable or recovering; at least one statement
-        elif "1,000,000" in content or "1m" in content:
-            score = 3
-        # 2: Turnover <1M; sporadic records
-        elif has_turnover:
-            score = 2
-        # 1: Minimal/irregular transactions
-        elif "financial" in content or "bank" in content:
-            score = 1
+        # Check for positive trend (2-year)
+        trend_indicators = ["positive", "growth", "increase", "improving", "rising", "up"]
+        has_positive_trend = any(indicator in content for indicator in trend_indicators)
+
+        # Check for statement types
+        statement_types = [
+            "balance sheet", "income statement", "cash flow", "bank statement",
+            "mpesa statement", "financial statement", "audited accounts"
+        ]
+        has_statements = any(stmt in content for stmt in statement_types)
+
+        # Check for financial documents in application
+        has_financial_docs = len(application.get("financial_documents", {})) > 0
+
+        # Score based on rubric
+        if turnover_amount >= 10000000 and has_positive_trend and (has_statements or has_financial_docs):
+            score = 5  # Turnover ≥ KES 10M; positive 2-yr trend; statements + proof
+        elif turnover_amount >= 5000000 and (has_statements or has_financial_docs):
+            score = 4  # Turnover 5–<10M; mostly stable; bank/Mpesa + one statement
+        elif turnover_amount >= 1000000 and (has_statements or has_financial_docs):
+            score = 3  # Turnover 1–<5M; stable or recovering; at least one statement
+        elif turnover_amount >= 1000000 or has_statements or has_financial_docs:
+            score = 2  # Turnover <1M; sporadic records
+        elif "financial" in content or "bank" in content or "transaction" in content:
+            score = 1  # Minimal/irregular transactions; thin evidence
+        else:
+            score = 0  # No financial evidence
 
         return min(score, 5)
 
@@ -477,25 +694,49 @@ class KJETCountyEvaluator:
         """A3.3: Market Demand & Competitiveness (20%)"""
         score = 0
 
-        market_signals = 0
-        if "demand" in content: market_signals += 1
-        if "customers" in content or "buyers" in content: market_signals += 1
-        if "orders" in content or "contracts" in content: market_signals += 1
-        if "sales" in content: market_signals += 1
-        if "market" in content: market_signals += 1
+        # Check for contracts and offtake agreements
+        contract_indicators = [
+            "contract", "purchase order", "offtake agreement", "buyer agreement",
+            "supply agreement", "distribution agreement"
+        ]
+        has_contracts = any(indicator in content for indicator in contract_indicators)
 
-        # 5: Active offtake/buyer contracts; multi-channel; repeat customers
-        if market_signals >= 4:
-            score = 5
-        # 4: Consistent orders; growing channels; basic quality assurance
-        elif market_signals >= 3:
-            score = 4
-        # 3: Regular local sales; one channel; emerging quality
-        elif market_signals >= 2:
-            score = 3
-        # 2: Intermittent sales; weak channels
-        elif market_signals >= 1:
-            score = 2
+        # Check for multi-channel sales
+        channels = ["wholesale", "retail", "digital", "marketplace", "online", "export"]
+        channel_count = sum(1 for channel in channels if channel in content)
+        has_multi_channel = channel_count >= 2
+
+        # Check for repeat customers
+        customer_indicators = [
+            "repeat customers", "regular buyers", "loyal customers", "returning clients",
+            "established relationships", "long-term clients"
+        ]
+        has_repeat_customers = any(indicator in content for indicator in customer_indicators)
+
+        # Check for quality/price positioning
+        quality_indicators = [
+            "quality assurance", "certification", "standards", "premium pricing",
+            "competitive pricing", "brand", "differentiation"
+        ]
+        has_quality_positioning = any(indicator in content for indicator in quality_indicators)
+
+        # Check for consistent orders
+        order_indicators = ["monthly orders", "consistent orders", "regular orders", "steady demand"]
+        has_consistent_orders = any(indicator in content for indicator in order_indicators)
+
+        # Score based on rubric
+        if has_contracts and has_multi_channel and has_repeat_customers and has_quality_positioning:
+            score = 5  # Active offtake/buyer contracts; multi-channel; repeat customers; defensible price/quality
+        elif has_consistent_orders and channel_count >= 1 and has_quality_positioning:
+            score = 4  # Consistent monthly orders; growing channels; basic quality assurance
+        elif ("sales" in content or "customers" in content) and channel_count >= 1:
+            score = 3  # Regular local sales; one channel; emerging quality practices
+        elif "sales" in content or "customers" in content:
+            score = 2  # Intermittent sales; weak channels; limited differentiation
+        elif "market" in content or "demand" in content:
+            score = 1  # Sporadic sales; no channels; untested products
+        else:
+            score = 0  # No market evidence
 
         return min(score, 5)
 
@@ -631,16 +872,18 @@ def main():
 
     print(f"Found {len(county_files)} county files to process")
 
-    for county_file in county_files:
+    for county_file in tqdm(county_files, desc="Processing counties", unit="county"):
         county_path = os.path.join(input_dir, county_file)
         county_name = county_file.replace('_kjet_applications_complete.json', '')
 
-        print(f"Processing {county_name}...")
+        print(f"\n📍 Processing {county_name}...")
 
         try:
             # Load county data
             with open(county_path, 'r', encoding='utf-8') as f:
                 county_data = json.load(f)
+
+            print(f"  📄 Loaded {len(county_data.get('applications', []))} applications")
 
             # Evaluate applications
             evaluation_results = evaluator.evaluate_county_applications(county_data)
@@ -656,8 +899,11 @@ def main():
 
         except Exception as e:
             print(f"✗ Error processing {county_name}: {str(e)}")
+            print(f"  Continuing with next county...")
+            continue
 
-    print(f"\nEvaluation complete! Results saved to {output_dir}")
+    print(f"\n🎉 Evaluation complete! Results saved to {output_dir}")
+    print(f"📊 Processed {len(county_files)} counties total")
 
 if __name__ == "__main__":
     main()

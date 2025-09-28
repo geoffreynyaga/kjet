@@ -12,7 +12,7 @@ help:
 	@echo "  make analysis     -> run analysis scripts (analyze_kjet_applications.py)"
 	@echo "  make evaluation   -> run county evaluator and generate evaluation summary"
 	@echo "  make stats        -> run generate_stats.py"
-	@echo "  make src          -> copy output-results into src/public/output-results"
+	@echo "  make src          -> copy output-results into code/public/output-results"
 	@echo "  make run          -> full pipeline: extraction -> analysis -> evaluation -> stats -> copy"
 
 venv:
@@ -44,8 +44,8 @@ stats: install
 
 src:
 	@echo "Copying evaluation outputs to React public folder"
-	@mkdir -p src/public/output-results
-	@cp -v output-results/* src/public/output-results/ || true
+	@mkdir -p code/public/output-results
+	@cp -v output-results/* code/public/output-results/ || true
 
 run: install
 	@echo "Checking for existing output directory..."
@@ -53,16 +53,13 @@ run: install
 		echo "output/ exists and is not empty — skipping extraction."; \
 	else \
 		echo "No output found — running extraction..."; \
-		$(PY) extract_all_documents.py; \
+		$(MAKE) extraction; \
 	fi
 	@echo "Running analysis and evaluation steps..."
-	$(PY) analyze_kjet_applications.py
-	$(PY) county_evaluator.py
-	$(PY) generate_evaluation_summary.py
-	$(PY) generate_stats.py
-	@echo "Copying outputs to React public folder..."
-	@mkdir -p src/public/output-results
-	@cp -v output-results/* src/public/output-results/ || true
+	$(MAKE) analysis
+	$(MAKE) evaluation
+	$(MAKE) stats
+	$(MAKE) src
 	@echo "Full pipeline complete."
 
 build:

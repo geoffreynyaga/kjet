@@ -3,4 +3,7 @@
 // Ensure styles imported by the TSX file are resolved relative to the src folder
 import '../App.css';
 import CountiesHome from './counties.tsx';
+import ApplicationFiles from './ApplicationFiles.tsx';
+
+export { CountiesHome, ApplicationFiles };
 export default CountiesHome;

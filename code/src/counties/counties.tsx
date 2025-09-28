@@ -1,8 +1,8 @@
-import '../App.css';
-
 import { Award, BarChart3, CheckCircle, FileText, MapPin, PieChart as PieChartIcon, TrendingUp, Users, XCircle } from 'lucide-react';
 import { Bar, BarChart, CartesianGrid, Cell, Legend, Pie, PieChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import React, { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 import BusinessTypePie from './BusinessTypePie.tsx';
 
 // Interfaces for evaluation data
@@ -86,6 +86,8 @@ function CountiesHome() {
   const [countyData, setCountyData] = useState<CountyEvaluation | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [scoreFilter, setScoreFilter] = useState('all');
+  const navigate = useNavigate();
 
   useEffect(() => {
     loadNationalSummary();
@@ -145,77 +147,134 @@ function CountiesHome() {
 
   if (loading) {
     return (
-      <div className="loading">
-        <div className="spinner"></div>
-        <p>Loading KJET Evaluation Dashboard...</p>
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <motion.div 
+          className="text-center"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <div className="loading-spinner mx-auto mb-4"></div>
+          <p className="text-gray-600 text-lg">Loading KJET Evaluation Dashboard...</p>
+        </motion.div>
       </div>
     );
   }
 
   if (error) {
     return (
-      <div className="error">
-        <h2>Error Loading Data</h2>
-        <p>{error}</p>
-      </div>
+      <motion.div 
+        className="min-h-screen bg-gray-50 flex items-center justify-center"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
+        <div className="text-center bg-white p-8 rounded-lg shadow-lg max-w-md">
+          <h2 className="text-2xl font-bold text-red-600 mb-4">Error Loading Data</h2>
+          <p className="text-gray-600">{error}</p>
+        </div>
+      </motion.div>
     );
   }
 
   // Type guard: ensure nationalSummary is present for the main render
   if (!nationalSummary) {
     return (
-      <div className="loading">
-        <p>Preparing dashboard...</p>
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <motion.div 
+          className="text-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <p className="text-gray-600 text-lg">Preparing dashboard...</p>
+        </motion.div>
       </div>
     );
   }
 
  
   return (
-    <div className="app">
-      <header className="header">
-        <h1>KJET County Evaluation Dashboard</h1>
-        <p>Comprehensive evaluation results for Kenya Youth Employment and Talent program</p>
-      </header>
+    <div className="min-h-screen bg-gray-50">
+      <motion.header 
+        className="bg-white shadow-sm border-b border-gray-200 px-8 py-6"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        <div className="max-w-7xl mx-auto">
+          <h1 className="text-4xl font-bold text-gray-900 mb-2">KJET County Evaluation Dashboard</h1>
+          <p className="text-xl text-gray-600">Comprehensive evaluation results for Kenya Youth Employment and Talent program</p>
+        </div>
+      </motion.header>
 
-      <div className="dashboard-container">
+      <div className="flex max-w-7xl mx-auto">
         {/* Sidebar with county list */}
-        <div className="sidebar">
-          <h3>Counties ({countyList.length})</h3>
-          <div className="county-list">
-            {countyList.map(county => {
+        <motion.div 
+          className="w-80 bg-white shadow-lg h-screen sticky top-0 overflow-y-auto"
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.2, duration: 0.6 }}
+        >
+          <div className="p-6 border-b border-gray-200">
+            <h3 className="text-xl font-bold text-gray-900">Counties ({countyList.length})</h3>
+          </div>
+          <div className="p-4 space-y-2">
+            {countyList.map((county, index) => {
               const countyStats = nationalSummary.county_summaries[county];
               const isSelected = selectedCounty === county;
 
               return (
-                <div
+                <motion.div
                   key={county}
-                  className={`county-item ${isSelected ? 'selected' : ''}`}
+                  className={`p-4 rounded-lg cursor-pointer transition-all duration-200 ${
+                    isSelected 
+                      ? 'bg-blue-100 border-2 border-blue-500 shadow-md' 
+                      : 'bg-gray-50 hover:bg-gray-100 border-2 border-transparent hover:border-gray-300'
+                  }`}
                   onClick={() => loadCountyData(county)}
+                  initial={{ opacity: 0, x: -10 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.3 + index * 0.02, duration: 0.3 }}
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
                 >
-                  <div className="county-name">{county}</div>
-                  <div className="county-stats">
-                    <span className="apps">{countyStats.total_applications} apps</span>
-                    <span className="eligible">{countyStats.eligible_applications} eligible</span>
+                  <div className="font-semibold text-gray-900 mb-2">{county}</div>
+                  <div className="space-y-1 text-sm">
+                    <div className="flex justify-between">
+                      <span className="text-gray-600">Applications:</span>
+                      <span className="font-medium text-blue-600">{countyStats.total_applications}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-gray-600">Eligible:</span>
+                      <span className="font-medium text-green-600">{countyStats.eligible_applications}</span>
+                    </div>
                     {countyStats.scored_applications > 0 && (
-                      <span
-                        className="score"
-                        title={`Average score: ${countyStats.average_score.toFixed(1)}`}
-                        aria-label={`Average score ${countyStats.average_score.toFixed(1)}`}
-                        style={{ color: getScoreColor(countyStats.average_score) }}
-                      >
-                        Avg: {countyStats.average_score.toFixed(1)}
-                      </span>
+                      <div className="flex justify-between">
+                        <span className="text-gray-600">Avg Score:</span>
+                        <span 
+                          className="font-medium"
+                          title={`Average score: ${countyStats.average_score.toFixed(1)}`}
+                          style={{ color: getScoreColor(countyStats.average_score) }}
+                        >
+                          {countyStats.average_score.toFixed(1)}
+                        </span>
+                      </div>
                     )}
                   </div>
-                </div>
+                </motion.div>
               );
             })}
           </div>
-        </div>
+        </motion.div>
 
         {/* Main content area */}
-        <div className="main-content">
+        <motion.div 
+          className="flex-1 p-8"
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.4, duration: 0.6 }}
+        >
           {selectedCounty && countyData ? (
             <>
               {/* County Header */}
@@ -359,52 +418,91 @@ function CountiesHome() {
               </div>
 
               {/* Applications Table */}
-              <div className="applications-table">
+                {/* Score Filter */}
+                <div className="mb-4 flex items-center gap-4">
+                <label htmlFor="scoreFilter" className="font-medium text-gray-700">Filter by Score:</label>
+                <select
+                  id="scoreFilter"
+                  className="border rounded px-2 py-1"
+                  value={scoreFilter}
+                  onChange={e => setScoreFilter(e.target.value)}
+                >
+                  <option value="all">All</option>
+                  <option value="excellent">Excellent (80-100)</option>
+                  <option value="good">Good (70-79)</option>
+                  <option value="fair">Fair (60-69)</option>
+                  <option value="poor">Poor (&lt;60)</option>
+                  <option value="scored">Scored Only</option>
+                  <option value="unscored">Unscored Only</option>
+                </select>
+                </div>
+
+                <div className="applications-table">
                 <h3>Application Details</h3>
                 <div className="table-container">
                   <table>
-                    <thead>
-                      <tr>
-                        <th>Application ID</th>
-                        <th>Business Name</th>
-                        <th>Business Category</th>
-                        <th>Eligible</th>
-                        <th>Score</th>
-                        <th>Grade</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {Object.entries(countyData.application_evaluations).map(([appId, appData]) => {
-                        const businessName = appData.standardized_business_name || appData.business_name || appData.cluster_name || 'N/A';
-                        const businessCategory = (appData as any).business_type || (appData as any).business_category || 'Unknown';
+                  <thead>
+                    <tr>
+                    <th>Application ID</th>
+                    <th>Business Name</th>
+                    <th>Business Category</th>
+                    <th>Eligible</th>
+                    <th>Score</th>
+                    <th>Grade</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {Object.entries(countyData.application_evaluations)
+                    .filter(([_, appData]) => {
+                      if (scoreFilter === 'all') return true;
+                      if (scoreFilter === 'scored') return !!appData.scoring;
+                      if (scoreFilter === 'unscored') return !appData.scoring;
+                      if (!appData.scoring) return false;
+                      const score = appData.scoring.composite_score;
+                      if (scoreFilter === 'excellent') return score >= 80;
+                      if (scoreFilter === 'good') return score >= 70 && score < 80;
+                      if (scoreFilter === 'fair') return score >= 60 && score < 70;
+                      if (scoreFilter === 'poor') return score < 60;
+                      return true;
+                    })
+                    .map(([appId, appData]) => {
+                      const businessName = appData.standardized_business_name || appData.business_name || appData.cluster_name || 'N/A';
+                      const businessCategory = (appData as any).business_type || (appData as any).business_category || 'Unknown';
 
-                        return (
-                          <tr key={appId}>
-                            <td>{appId}</td>
-                            <td>{businessName}</td>
-                            <td>{businessCategory}</td>
-                            <td>
-                              <span className={`status ${appData.eligibility.eligible ? 'eligible' : 'ineligible'}`}>
-                                {appData.eligibility.eligible ? '✓' : '✗'}
-                              </span>
-                            </td>
-                            <td>
-                              {appData.scoring ? (
-                                <span style={{ color: getScoreColor(appData.scoring.composite_score) }}>
-                                  {appData.scoring.composite_score.toFixed(1)}
-                                </span>
-                              ) : '-'}
-                            </td>
-                            <td>
-                              {appData.scoring ? getScoreGrade(appData.scoring.composite_score) : '-'}
-                            </td>
-                          </tr>
-                        );
-                      })}
-                    </tbody>
+                      return (
+                      <tr key={appId}>
+                        <td>
+                          <button
+                            onClick={() => navigate(`/counties/${appId}`)}
+                            className="text-blue-600 hover:text-blue-800 underline font-medium"
+                          >
+                            {appId}
+                          </button>
+                        </td>
+                        <td>{businessName}</td>
+                        <td>{businessCategory}</td>
+                        <td>
+                        <span className={`status ${appData.eligibility.eligible ? 'eligible' : 'ineligible'}`}>
+                          {appData.eligibility.eligible ? '✓' : '✗'}
+                        </span>
+                        </td>
+                        <td>
+                        {appData.scoring ? (
+                          <span style={{ color: getScoreColor(appData.scoring.composite_score) }}>
+                          {appData.scoring.composite_score.toFixed(1)}
+                          </span>
+                        ) : '-'}
+                        </td>
+                        <td>
+                        {appData.scoring ? getScoreGrade(appData.scoring.composite_score) : '-'}
+                        </td>
+                      </tr>
+                      );
+                    })}
+                  </tbody>
                   </table>
                 </div>
-              </div>
+                </div>
             </>
           ) : (
             <div className="welcome-message">
@@ -432,7 +530,7 @@ function CountiesHome() {
               </div>
             </div>
           )}
-        </div>
+        </motion.div>
       </div>
     </div>
   );

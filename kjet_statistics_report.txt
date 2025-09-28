@@ -1,0 +1,67 @@
+KJET APPLICATION DATA STATISTICS REPORT
+==================================================
+Generated on: 2025-09-28 17:47:51
+Analysis based on: Eligibility and Scoring Criteria from rules.md
+
+OVERALL SUMMARY
+--------------------
+Total Counties: 47
+Total Applications: 555
+Eligible Applications: 479
+Scored Applications: 479
+Eligibility Rate: 86.3%
+
+BUSINESS TYPE ANALYSIS
+-------------------------
+Private company: 133 (24.0%)
+Cooperative: 195 (35.1%)
+Other: 77 (13.9%)
+MSME Association: 150 (27.0%)
+
+VALUE CHAIN ANALYSIS
+-------------------------
+technology: 1 counties (2.1%)
+retail: 1 counties (2.1%)
+tea: 1 counties (2.1%)
+agriculture: 1 counties (2.1%)
+rice: 1 counties (2.1%)
+livestock: 1 counties (2.1%)
+services: 1 counties (2.1%)
+dairy: 1 counties (2.1%)
+manufacturing: 1 counties (2.1%)
+
+ELIGIBILITY ANALYSIS
+-------------------------
+Total Applications: 555
+Eligible: 479
+Ineligible: 76
+Eligibility Rate: 86.3%
+
+Criteria Failure Analysis:
+E4_financial_evidence: 76 failures
+
+SCORING ANALYSIS
+-------------------------
+Total Scored Applications: 479
+Average Score: 72.08
+Highest Score: 85.0
+Lowest Score: 56.0
+
+Score Distribution:
+Excellent: 21
+Good: 456
+Fair: 2
+Poor: 0
+
+TOP COUNTIES BY AVERAGE SCORE
+----------------------------------------
+1. Nakuru: 76.0 (7 scored apps)
+2. Siaya: 75.33 (6 scored apps)
+3. Trans Nzoia: 75.33 (3 scored apps)
+4. Busia: 74.75 (12 scored apps)
+5. Nyamira: 74.75 (4 scored apps)
+6. Meru: 74.5 (18 scored apps)
+7. Narok: 74.33 (3 scored apps)
+8. Uasin Gishu: 73.94 (18 scored apps)
+9. Nairobi: 73.92 (24 scored apps)
+10. Migori: 73.82 (11 scored apps)

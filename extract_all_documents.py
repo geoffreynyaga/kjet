@@ -76,7 +76,8 @@ progress_tracker = ProgressTracker()
 
 def check_dependencies():
     """Check and install required dependencies using virtual environment if needed"""
-    venv_path = Path("/Users/geoff/Downloads/Nakuru/venv")
+    current_dir = Path(__file__).parent
+    venv_path = current_dir / "venv"
     
     # Check if virtual environment exists, create if not
     if not venv_path.exists():
@@ -112,7 +113,8 @@ def check_dependencies():
 
 def install_package(package):
     """Install a Python package using virtual environment"""
-    venv_pip = Path("/Users/geoff/Downloads/Nakuru/venv/bin/pip")
+    current_dir = Path(__file__).parent
+    venv_pip = current_dir / "venv" / "bin" / "pip"
     if venv_pip.exists():
         subprocess.check_call([str(venv_pip), "install", package])
     else:
@@ -620,6 +622,12 @@ def process_application_folder(folder_path, county_name=None):
             if file_name == ".DS_Store":
                 continue
             
+            # Skip certificates of registration as they're already captured in application forms
+            file_name_lower = file_name.lower()
+            if any(term in file_name_lower for term in ["registration", "certificate", "incorporation"]) and not "application_info" in file_name_lower:
+                application_data["document_summary"]["skipped_certificates"] = application_data["document_summary"].get("skipped_certificates", 0) + 1
+                continue
+            
             # Update progress tracker
             progress_tracker.update_current_file(str(file_path))
             
@@ -632,7 +640,6 @@ def process_application_folder(folder_path, county_name=None):
                 application_data["document_summary"]["image_count"] += 1
             
             # Check document types
-            file_name_lower = file_name.lower()
             if "application_info" in file_name_lower:
                 application_data["document_summary"]["has_application_form"] = True
             if "registration" in file_name_lower or "certificate" in file_name_lower:
@@ -820,7 +827,8 @@ def process_application_folder(folder_path, county_name=None):
 
 def load_selection_criteria():
     """Load and parse the selection criteria from rules.md"""
-    rules_path = Path("/Users/geoff/Downloads/Nakuru/rules.md")
+    current_dir = Path(__file__).parent
+    rules_path = current_dir / "rules.md"
     if rules_path.exists():
         with open(rules_path, 'r', encoding='utf-8') as f:
             return f.read()
@@ -876,7 +884,8 @@ def main():
     check_dependencies()
     
     # Set up paths
-    data_dir = Path("/Users/geoff/Downloads/Nakuru/data")
+    current_dir = Path(__file__).parent
+    data_dir = current_dir / "data"
     if not data_dir.exists():
         print(f"Error: Data directory not found: {data_dir}")
         sys.exit(1)
@@ -932,7 +941,7 @@ def main():
     print()
     
     # Create output directory
-    output_dir = Path("/Users/geoff/Downloads/Nakuru/output")
+    output_dir = current_dir / "output"
     output_dir.mkdir(exist_ok=True)
     print(f"Output directory: {output_dir}")
     print()

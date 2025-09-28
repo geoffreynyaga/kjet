@@ -2,7 +2,7 @@
   "evaluation_metadata": {
     "county": "Kwale",
     "total_applications": 16,
-    "evaluation_date": "2025-09-24T23:56:49.229437",
+    "evaluation_date": "2025-09-28T17:49:01.570253",
     "evaluator_version": "1.0",
     "rules_version": "rules.md - Annex A & B"
   },
@@ -27,13 +27,13 @@
   },
   "scoring_summary": {
     "total_scored": 16,
-    "average_score": 73.31,
-    "highest_score": 95.0,
-    "lowest_score": 68.0,
+    "average_score": 67.88,
+    "highest_score": 84.0,
+    "lowest_score": 60.0,
     "score_distribution": {
       "excellent_80_100": 2,
-      "good_70_79": 7,
-      "fair_60_69": 7,
+      "good_70_79": 3,
+      "fair_60_69": 11,
       "poor_below_60": 0
     }
   },
@@ -56,31 +56,57 @@
       "business_name": "ONE LOVE WASAFI CBO",
       "scoring": {
         "criteria_scores": {
-          "registration_track_record": 5,
-          "financial_position": 2,
-          "market_demand_competitiveness": 5,
+          "registration_track_record": 1,
+          "financial_position": 3,
+          "market_demand_competitiveness": 3,
           "business_proposal_viability": 4,
           "value_chain_alignment": 2,
           "inclusivity_sustainability": 5
         },
-        "weighted_scores": {
+        "criteria_explanations": {
           "registration_track_record": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.05,
-            "weighted_score": 5.0
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
           },
           "financial_position": {
-            "raw_score": 2,
-            "normalized_score": 40,
-            "weight": 0.2,
-            "weighted_score": 8.0
+            "score": 3,
+            "rubric_explanation": "Turnover 1–<5M; stable or recovering; at least one statement"
           },
           "market_demand_competitiveness": {
-            "raw_score": 5,
-            "normalized_score": 100,
+            "score": 3,
+            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
+          },
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan with minor gaps; targets & timelines present"
+          },
+          "value_chain_alignment": {
+            "score": 2,
+            "rubric_explanation": "Peripheral role; unclear node"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
+          }
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 1,
+            "normalized_score": 20,
+            "weight": 0.05,
+            "weighted_score": 1.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
             "weight": 0.2,
-            "weighted_score": 20.0
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
           },
           "business_proposal_viability": {
             "raw_score": 4,
@@ -101,9 +127,9 @@
             "weighted_score": 20.0
           }
         },
-        "composite_score": 77.0,
+        "composite_score": 69.0,
         "scoring_scale": "0-100 (weighted average)",
-        "grade": "Good"
+        "grade": "Fair"
       }
     },
     "Kwale_303": {
@@ -125,19 +151,45 @@
       "woman_owned_proof": "No",
       "scoring": {
         "criteria_scores": {
-          "registration_track_record": 5,
+          "registration_track_record": 1,
           "financial_position": 2,
-          "market_demand_competitiveness": 4,
+          "market_demand_competitiveness": 3,
           "business_proposal_viability": 3,
           "value_chain_alignment": 2,
           "inclusivity_sustainability": 5
         },
+        "criteria_explanations": {
+          "registration_track_record": {
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
+          },
+          "financial_position": {
+            "score": 2,
+            "rubric_explanation": "Turnover <1M; sporadic records"
+          },
+          "market_demand_competitiveness": {
+            "score": 3,
+            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
+          },
+          "business_proposal_viability": {
+            "score": 3,
+            "rubric_explanation": "Direction clear; targets generic; budget rough"
+          },
+          "value_chain_alignment": {
+            "score": 2,
+            "rubric_explanation": "Peripheral role; unclear node"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
+          }
+        },
         "weighted_scores": {
           "registration_track_record": {
-            "raw_score": 5,
-            "normalized_score": 100,
+            "raw_score": 1,
+            "normalized_score": 20,
             "weight": 0.05,
-            "weighted_score": 5.0
+            "weighted_score": 1.0
           },
           "financial_position": {
             "raw_score": 2,
@@ -146,10 +198,10 @@
             "weighted_score": 8.0
           },
           "market_demand_competitiveness": {
-            "raw_score": 4,
-            "normalized_score": 80,
+            "raw_score": 3,
+            "normalized_score": 60,
             "weight": 0.2,
-            "weighted_score": 16.0
+            "weighted_score": 12.0
           },
           "business_proposal_viability": {
             "raw_score": 3,
@@ -170,7 +222,7 @@
             "weighted_score": 20.0
           }
         },
-        "composite_score": 68.0,
+        "composite_score": 60.0,
         "scoring_scale": "0-100 (weighted average)",
         "grade": "Fair"
       }
@@ -193,19 +245,139 @@
       "business_name": "Kawili Juakali Association",
       "scoring": {
         "criteria_scores": {
-          "registration_track_record": 5,
-          "financial_position": 2,
-          "market_demand_competitiveness": 5,
+          "registration_track_record": 1,
+          "financial_position": 3,
+          "market_demand_competitiveness": 3,
           "business_proposal_viability": 3,
           "value_chain_alignment": 2,
           "inclusivity_sustainability": 5
         },
+        "criteria_explanations": {
+          "registration_track_record": {
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–<5M; stable or recovering; at least one statement"
+          },
+          "market_demand_competitiveness": {
+            "score": 3,
+            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
+          },
+          "business_proposal_viability": {
+            "score": 3,
+            "rubric_explanation": "Direction clear; targets generic; budget rough"
+          },
+          "value_chain_alignment": {
+            "score": 2,
+            "rubric_explanation": "Peripheral role; unclear node"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
+          }
+        },
         "weighted_scores": {
           "registration_track_record": {
+            "raw_score": 1,
+            "normalized_score": 20,
+            "weight": 0.05,
+            "weighted_score": 1.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
             "raw_score": 5,
             "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 64.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Fair"
+      }
+    },
+    "Kwale_559": {
+      "application_id": "Kwale_559",
+      "business_type": "MSME Association",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "Kwale student MSE association",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 1,
+          "financial_position": 2,
+          "market_demand_competitiveness": 3,
+          "business_proposal_viability": 3,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 5
+        },
+        "criteria_explanations": {
+          "registration_track_record": {
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
+          },
+          "financial_position": {
+            "score": 2,
+            "rubric_explanation": "Turnover <1M; sporadic records"
+          },
+          "market_demand_competitiveness": {
+            "score": 3,
+            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
+          },
+          "business_proposal_viability": {
+            "score": 3,
+            "rubric_explanation": "Direction clear; targets generic; budget rough"
+          },
+          "value_chain_alignment": {
+            "score": 2,
+            "rubric_explanation": "Peripheral role; unclear node"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
+          }
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 1,
+            "normalized_score": 20,
             "weight": 0.05,
-            "weighted_score": 5.0
+            "weighted_score": 1.0
           },
           "financial_position": {
             "raw_score": 2,
@@ -214,10 +386,198 @@
             "weighted_score": 8.0
           },
           "market_demand_competitiveness": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
             "raw_score": 5,
             "normalized_score": 100,
             "weight": 0.2,
             "weighted_score": 20.0
+          }
+        },
+        "composite_score": 60.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Fair"
+      }
+    },
+    "Kwale_603": {
+      "application_id": "Kwale_603",
+      "business_type": "Private company",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "Muafrica Eco Nishati Ltd",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 2,
+          "financial_position": 5,
+          "market_demand_competitiveness": 3,
+          "business_proposal_viability": 4,
+          "value_chain_alignment": 5,
+          "inclusivity_sustainability": 5
+        },
+        "criteria_explanations": {
+          "registration_track_record": {
+            "score": 2,
+            "rubric_explanation": "Registered but dormant/irregular governance"
+          },
+          "financial_position": {
+            "score": 5,
+            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
+          },
+          "market_demand_competitiveness": {
+            "score": 3,
+            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
+          },
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan with minor gaps; targets & timelines present"
+          },
+          "value_chain_alignment": {
+            "score": 5,
+            "rubric_explanation": "Priority VC; fills a critical node (e.g., aggregation/processing); documented linkages upstream & downstream"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
+          }
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.05,
+            "weighted_score": 2.0
+          },
+          "financial_position": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.1,
+            "weighted_score": 10.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 84.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Kwale_607": {
+      "application_id": "Kwale_607",
+      "business_type": "MSME Association",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "KINANGO JUAKALI ASSOCIATION",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 1,
+          "financial_position": 5,
+          "market_demand_competitiveness": 3,
+          "business_proposal_viability": 3,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 5
+        },
+        "criteria_explanations": {
+          "registration_track_record": {
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
+          },
+          "financial_position": {
+            "score": 5,
+            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
+          },
+          "market_demand_competitiveness": {
+            "score": 3,
+            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
+          },
+          "business_proposal_viability": {
+            "score": 3,
+            "rubric_explanation": "Direction clear; targets generic; budget rough"
+          },
+          "value_chain_alignment": {
+            "score": 2,
+            "rubric_explanation": "Peripheral role; unclear node"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
+          }
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 1,
+            "normalized_score": 20,
+            "weight": 0.05,
+            "weighted_score": 1.0
+          },
+          "financial_position": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
           },
           "business_proposal_viability": {
             "raw_score": 3,
@@ -243,210 +603,6 @@
         "grade": "Good"
       }
     },
-    "Kwale_559": {
-      "application_id": "Kwale_559",
-      "business_type": "MSME Association",
-      "woman_owned": "Yes",
-      "eligibility": {
-        "eligible": true,
-        "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
-          "E4_financial_evidence": true,
-          "E5_consent_contactability": true
-        },
-        "failure_reasons": []
-      },
-      "business_name": "Kwale student MSE association",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 5,
-          "financial_position": 2,
-          "market_demand_competitiveness": 4,
-          "business_proposal_viability": 3,
-          "value_chain_alignment": 2,
-          "inclusivity_sustainability": 5
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.05,
-            "weighted_score": 5.0
-          },
-          "financial_position": {
-            "raw_score": 2,
-            "normalized_score": 40,
-            "weight": 0.2,
-            "weighted_score": 8.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 4,
-            "normalized_score": 80,
-            "weight": 0.2,
-            "weighted_score": 16.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.25,
-            "weighted_score": 15.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 2,
-            "normalized_score": 40,
-            "weight": 0.1,
-            "weighted_score": 4.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 68.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Fair"
-      }
-    },
-    "Kwale_603": {
-      "application_id": "Kwale_603",
-      "business_type": "Private company",
-      "woman_owned": "Yes",
-      "eligibility": {
-        "eligible": true,
-        "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
-          "E4_financial_evidence": true,
-          "E5_consent_contactability": true
-        },
-        "failure_reasons": []
-      },
-      "business_name": "Muafrica Eco Nishati Ltd",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 5,
-          "financial_position": 5,
-          "market_demand_competitiveness": 5,
-          "business_proposal_viability": 4,
-          "value_chain_alignment": 5,
-          "inclusivity_sustainability": 5
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.05,
-            "weighted_score": 5.0
-          },
-          "financial_position": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 4,
-            "normalized_score": 80,
-            "weight": 0.25,
-            "weighted_score": 20.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.1,
-            "weighted_score": 10.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 95.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Excellent"
-      }
-    },
-    "Kwale_607": {
-      "application_id": "Kwale_607",
-      "business_type": "MSME Association",
-      "woman_owned": "Yes",
-      "eligibility": {
-        "eligible": true,
-        "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
-          "E4_financial_evidence": true,
-          "E5_consent_contactability": true
-        },
-        "failure_reasons": []
-      },
-      "business_name": "KINANGO JUAKALI ASSOCIATION",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 5,
-          "financial_position": 2,
-          "market_demand_competitiveness": 4,
-          "business_proposal_viability": 3,
-          "value_chain_alignment": 2,
-          "inclusivity_sustainability": 5
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.05,
-            "weighted_score": 5.0
-          },
-          "financial_position": {
-            "raw_score": 2,
-            "normalized_score": 40,
-            "weight": 0.2,
-            "weighted_score": 8.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 4,
-            "normalized_score": 80,
-            "weight": 0.2,
-            "weighted_score": 16.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.25,
-            "weighted_score": 15.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 2,
-            "normalized_score": 40,
-            "weight": 0.1,
-            "weighted_score": 4.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 68.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Fair"
-      }
-    },
     "Kwale_611": {
       "application_id": "Kwale_611",
       "business_type": "MSME Association",
@@ -465,19 +621,45 @@
       "business_name": "Hewa Safi Mangroves Association",
       "scoring": {
         "criteria_scores": {
-          "registration_track_record": 5,
+          "registration_track_record": 1,
           "financial_position": 2,
-          "market_demand_competitiveness": 4,
+          "market_demand_competitiveness": 3,
           "business_proposal_viability": 3,
           "value_chain_alignment": 2,
           "inclusivity_sustainability": 5
         },
+        "criteria_explanations": {
+          "registration_track_record": {
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
+          },
+          "financial_position": {
+            "score": 2,
+            "rubric_explanation": "Turnover <1M; sporadic records"
+          },
+          "market_demand_competitiveness": {
+            "score": 3,
+            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
+          },
+          "business_proposal_viability": {
+            "score": 3,
+            "rubric_explanation": "Direction clear; targets generic; budget rough"
+          },
+          "value_chain_alignment": {
+            "score": 2,
+            "rubric_explanation": "Peripheral role; unclear node"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
+          }
+        },
         "weighted_scores": {
           "registration_track_record": {
-            "raw_score": 5,
-            "normalized_score": 100,
+            "raw_score": 1,
+            "normalized_score": 20,
             "weight": 0.05,
-            "weighted_score": 5.0
+            "weighted_score": 1.0
           },
           "financial_position": {
             "raw_score": 2,
@@ -486,10 +668,10 @@
             "weighted_score": 8.0
           },
           "market_demand_competitiveness": {
-            "raw_score": 4,
-            "normalized_score": 80,
+            "raw_score": 3,
+            "normalized_score": 60,
             "weight": 0.2,
-            "weighted_score": 16.0
+            "weighted_score": 12.0
           },
           "business_proposal_viability": {
             "raw_score": 3,
@@ -510,7 +692,7 @@
             "weighted_score": 20.0
           }
         },
-        "composite_score": 68.0,
+        "composite_score": 60.0,
         "scoring_scale": "0-100 (weighted average)",
         "grade": "Fair"
       }
@@ -533,31 +715,57 @@
       "business_name": "Kwale Pavi Farmers Cooperative Society",
       "scoring": {
         "criteria_scores": {
-          "registration_track_record": 5,
-          "financial_position": 2,
-          "market_demand_competitiveness": 5,
+          "registration_track_record": 3,
+          "financial_position": 3,
+          "market_demand_competitiveness": 3,
           "business_proposal_viability": 3,
           "value_chain_alignment": 3,
           "inclusivity_sustainability": 5
         },
-        "weighted_scores": {
+        "criteria_explanations": {
           "registration_track_record": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.05,
-            "weighted_score": 5.0
+            "score": 3,
+            "rubric_explanation": "Registered <1 yr; basic structure in place"
           },
           "financial_position": {
-            "raw_score": 2,
-            "normalized_score": 40,
-            "weight": 0.2,
-            "weighted_score": 8.0
+            "score": 3,
+            "rubric_explanation": "Turnover 1–<5M; stable or recovering; at least one statement"
           },
           "market_demand_competitiveness": {
-            "raw_score": 5,
-            "normalized_score": 100,
+            "score": 3,
+            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
+          },
+          "business_proposal_viability": {
+            "score": 3,
+            "rubric_explanation": "Direction clear; targets generic; budget rough"
+          },
+          "value_chain_alignment": {
+            "score": 3,
+            "rubric_explanation": "Priority VC; weak linkages; potential to upgrade"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
+          }
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.05,
+            "weighted_score": 3.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
             "weight": 0.2,
-            "weighted_score": 20.0
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
           },
           "business_proposal_viability": {
             "raw_score": 3,
@@ -578,9 +786,9 @@
             "weighted_score": 20.0
           }
         },
-        "composite_score": 74.0,
+        "composite_score": 68.0,
         "scoring_scale": "0-100 (weighted average)",
-        "grade": "Good"
+        "grade": "Fair"
       }
     },
     "Kwale_627": {
@@ -602,31 +810,57 @@
       "woman_owned_proof": "No",
       "scoring": {
         "criteria_scores": {
-          "registration_track_record": 5,
-          "financial_position": 2,
-          "market_demand_competitiveness": 5,
+          "registration_track_record": 3,
+          "financial_position": 5,
+          "market_demand_competitiveness": 3,
           "business_proposal_viability": 4,
           "value_chain_alignment": 4,
           "inclusivity_sustainability": 5
         },
-        "weighted_scores": {
+        "criteria_explanations": {
           "registration_track_record": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.05,
-            "weighted_score": 5.0
+            "score": 3,
+            "rubric_explanation": "Registered <1 yr; basic structure in place"
           },
           "financial_position": {
-            "raw_score": 2,
-            "normalized_score": 40,
-            "weight": 0.2,
-            "weighted_score": 8.0
+            "score": 5,
+            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
           },
           "market_demand_competitiveness": {
+            "score": 3,
+            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
+          },
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan with minor gaps; targets & timelines present"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node participation; some linkages"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
+          }
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.05,
+            "weighted_score": 3.0
+          },
+          "financial_position": {
             "raw_score": 5,
             "normalized_score": 100,
             "weight": 0.2,
             "weighted_score": 20.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
           },
           "business_proposal_viability": {
             "raw_score": 4,
@@ -647,7 +881,7 @@
             "weighted_score": 20.0
           }
         },
-        "composite_score": 81.0,
+        "composite_score": 83.0,
         "scoring_scale": "0-100 (weighted average)",
         "grade": "Excellent"
       }
@@ -671,19 +905,45 @@
       "woman_owned_proof": "No",
       "scoring": {
         "criteria_scores": {
-          "registration_track_record": 5,
+          "registration_track_record": 1,
           "financial_position": 2,
-          "market_demand_competitiveness": 4,
+          "market_demand_competitiveness": 3,
           "business_proposal_viability": 3,
           "value_chain_alignment": 2,
           "inclusivity_sustainability": 5
         },
+        "criteria_explanations": {
+          "registration_track_record": {
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
+          },
+          "financial_position": {
+            "score": 2,
+            "rubric_explanation": "Turnover <1M; sporadic records"
+          },
+          "market_demand_competitiveness": {
+            "score": 3,
+            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
+          },
+          "business_proposal_viability": {
+            "score": 3,
+            "rubric_explanation": "Direction clear; targets generic; budget rough"
+          },
+          "value_chain_alignment": {
+            "score": 2,
+            "rubric_explanation": "Peripheral role; unclear node"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
+          }
+        },
         "weighted_scores": {
           "registration_track_record": {
-            "raw_score": 5,
-            "normalized_score": 100,
+            "raw_score": 1,
+            "normalized_score": 20,
             "weight": 0.05,
-            "weighted_score": 5.0
+            "weighted_score": 1.0
           },
           "financial_position": {
             "raw_score": 2,
@@ -692,10 +952,10 @@
             "weighted_score": 8.0
           },
           "market_demand_competitiveness": {
-            "raw_score": 4,
-            "normalized_score": 80,
+            "raw_score": 3,
+            "normalized_score": 60,
             "weight": 0.2,
-            "weighted_score": 16.0
+            "weighted_score": 12.0
           },
           "business_proposal_viability": {
             "raw_score": 3,
@@ -716,7 +976,7 @@
             "weighted_score": 20.0
           }
         },
-        "composite_score": 68.0,
+        "composite_score": 60.0,
         "scoring_scale": "0-100 (weighted average)",
         "grade": "Fair"
       }
@@ -739,31 +999,57 @@
       "business_name": "kwale coconut farmers&#039; cooperative society limited",
       "scoring": {
         "criteria_scores": {
-          "registration_track_record": 5,
-          "financial_position": 2,
-          "market_demand_competitiveness": 4,
+          "registration_track_record": 1,
+          "financial_position": 3,
+          "market_demand_competitiveness": 3,
           "business_proposal_viability": 3,
           "value_chain_alignment": 3,
           "inclusivity_sustainability": 5
         },
-        "weighted_scores": {
+        "criteria_explanations": {
           "registration_track_record": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.05,
-            "weighted_score": 5.0
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
           },
           "financial_position": {
-            "raw_score": 2,
-            "normalized_score": 40,
-            "weight": 0.2,
-            "weighted_score": 8.0
+            "score": 3,
+            "rubric_explanation": "Turnover 1–<5M; stable or recovering; at least one statement"
           },
           "market_demand_competitiveness": {
-            "raw_score": 4,
-            "normalized_score": 80,
+            "score": 3,
+            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
+          },
+          "business_proposal_viability": {
+            "score": 3,
+            "rubric_explanation": "Direction clear; targets generic; budget rough"
+          },
+          "value_chain_alignment": {
+            "score": 3,
+            "rubric_explanation": "Priority VC; weak linkages; potential to upgrade"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
+          }
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 1,
+            "normalized_score": 20,
+            "weight": 0.05,
+            "weighted_score": 1.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
             "weight": 0.2,
-            "weighted_score": 16.0
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
           },
           "business_proposal_viability": {
             "raw_score": 3,
@@ -784,9 +1070,9 @@
             "weighted_score": 20.0
           }
         },
-        "composite_score": 70.0,
+        "composite_score": 66.0,
         "scoring_scale": "0-100 (weighted average)",
-        "grade": "Good"
+        "grade": "Fair"
       }
     },
     "Kwale_647": {
@@ -807,19 +1093,45 @@
       "business_name": "hilwa kwale self help group",
       "scoring": {
         "criteria_scores": {
-          "registration_track_record": 5,
+          "registration_track_record": 1,
           "financial_position": 2,
-          "market_demand_competitiveness": 4,
+          "market_demand_competitiveness": 3,
           "business_proposal_viability": 3,
           "value_chain_alignment": 2,
           "inclusivity_sustainability": 5
         },
+        "criteria_explanations": {
+          "registration_track_record": {
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
+          },
+          "financial_position": {
+            "score": 2,
+            "rubric_explanation": "Turnover <1M; sporadic records"
+          },
+          "market_demand_competitiveness": {
+            "score": 3,
+            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
+          },
+          "business_proposal_viability": {
+            "score": 3,
+            "rubric_explanation": "Direction clear; targets generic; budget rough"
+          },
+          "value_chain_alignment": {
+            "score": 2,
+            "rubric_explanation": "Peripheral role; unclear node"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
+          }
+        },
         "weighted_scores": {
           "registration_track_record": {
-            "raw_score": 5,
-            "normalized_score": 100,
+            "raw_score": 1,
+            "normalized_score": 20,
             "weight": 0.05,
-            "weighted_score": 5.0
+            "weighted_score": 1.0
           },
           "financial_position": {
             "raw_score": 2,
@@ -828,10 +1140,10 @@
             "weighted_score": 8.0
           },
           "market_demand_competitiveness": {
-            "raw_score": 4,
-            "normalized_score": 80,
+            "raw_score": 3,
+            "normalized_score": 60,
             "weight": 0.2,
-            "weighted_score": 16.0
+            "weighted_score": 12.0
           },
           "business_proposal_viability": {
             "raw_score": 3,
@@ -852,7 +1164,7 @@
             "weighted_score": 20.0
           }
         },
-        "composite_score": 68.0,
+        "composite_score": 60.0,
         "scoring_scale": "0-100 (weighted average)",
         "grade": "Fair"
       }
@@ -876,31 +1188,57 @@
       "woman_owned_proof": "No",
       "scoring": {
         "criteria_scores": {
-          "registration_track_record": 5,
-          "financial_position": 2,
-          "market_demand_competitiveness": 4,
+          "registration_track_record": 1,
+          "financial_position": 3,
+          "market_demand_competitiveness": 3,
           "business_proposal_viability": 3,
           "value_chain_alignment": 2,
           "inclusivity_sustainability": 5
         },
-        "weighted_scores": {
+        "criteria_explanations": {
           "registration_track_record": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.05,
-            "weighted_score": 5.0
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
           },
           "financial_position": {
-            "raw_score": 2,
-            "normalized_score": 40,
-            "weight": 0.2,
-            "weighted_score": 8.0
+            "score": 3,
+            "rubric_explanation": "Turnover 1–<5M; stable or recovering; at least one statement"
           },
           "market_demand_competitiveness": {
-            "raw_score": 4,
-            "normalized_score": 80,
+            "score": 3,
+            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
+          },
+          "business_proposal_viability": {
+            "score": 3,
+            "rubric_explanation": "Direction clear; targets generic; budget rough"
+          },
+          "value_chain_alignment": {
+            "score": 2,
+            "rubric_explanation": "Peripheral role; unclear node"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
+          }
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 1,
+            "normalized_score": 20,
+            "weight": 0.05,
+            "weighted_score": 1.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
             "weight": 0.2,
-            "weighted_score": 16.0
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
           },
           "business_proposal_viability": {
             "raw_score": 3,
@@ -921,7 +1259,7 @@
             "weighted_score": 20.0
           }
         },
-        "composite_score": 68.0,
+        "composite_score": 64.0,
         "scoring_scale": "0-100 (weighted average)",
         "grade": "Fair"
       }
@@ -944,31 +1282,57 @@
       "business_name": "KWALE COMMUNITY BASED UTALII ASSOCIATION",
       "scoring": {
         "criteria_scores": {
-          "registration_track_record": 5,
-          "financial_position": 2,
-          "market_demand_competitiveness": 5,
+          "registration_track_record": 1,
+          "financial_position": 5,
+          "market_demand_competitiveness": 3,
           "business_proposal_viability": 3,
           "value_chain_alignment": 2,
           "inclusivity_sustainability": 5
         },
-        "weighted_scores": {
+        "criteria_explanations": {
           "registration_track_record": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.05,
-            "weighted_score": 5.0
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
           },
           "financial_position": {
-            "raw_score": 2,
-            "normalized_score": 40,
-            "weight": 0.2,
-            "weighted_score": 8.0
+            "score": 5,
+            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
           },
           "market_demand_competitiveness": {
+            "score": 3,
+            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
+          },
+          "business_proposal_viability": {
+            "score": 3,
+            "rubric_explanation": "Direction clear; targets generic; budget rough"
+          },
+          "value_chain_alignment": {
+            "score": 2,
+            "rubric_explanation": "Peripheral role; unclear node"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
+          }
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 1,
+            "normalized_score": 20,
+            "weight": 0.05,
+            "weighted_score": 1.0
+          },
+          "financial_position": {
             "raw_score": 5,
             "normalized_score": 100,
             "weight": 0.2,
             "weighted_score": 20.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
           },
           "business_proposal_viability": {
             "raw_score": 3,
@@ -1012,19 +1376,45 @@
       "business_name": "TUSHIRIKIANE BLUE EMPOWERMENT SAVINGS AND CREDIT CO - OPERATIVE SOCIETY LIMITED",
       "scoring": {
         "criteria_scores": {
-          "registration_track_record": 5,
+          "registration_track_record": 1,
           "financial_position": 2,
-          "market_demand_competitiveness": 5,
+          "market_demand_competitiveness": 3,
           "business_proposal_viability": 4,
           "value_chain_alignment": 3,
           "inclusivity_sustainability": 5
         },
+        "criteria_explanations": {
+          "registration_track_record": {
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
+          },
+          "financial_position": {
+            "score": 2,
+            "rubric_explanation": "Turnover <1M; sporadic records"
+          },
+          "market_demand_competitiveness": {
+            "score": 3,
+            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
+          },
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan with minor gaps; targets & timelines present"
+          },
+          "value_chain_alignment": {
+            "score": 3,
+            "rubric_explanation": "Priority VC; weak linkages; potential to upgrade"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
+          }
+        },
         "weighted_scores": {
           "registration_track_record": {
-            "raw_score": 5,
-            "normalized_score": 100,
+            "raw_score": 1,
+            "normalized_score": 20,
             "weight": 0.05,
-            "weighted_score": 5.0
+            "weighted_score": 1.0
           },
           "financial_position": {
             "raw_score": 2,
@@ -1033,10 +1423,10 @@
             "weighted_score": 8.0
           },
           "market_demand_competitiveness": {
-            "raw_score": 5,
-            "normalized_score": 100,
+            "raw_score": 3,
+            "normalized_score": 60,
             "weight": 0.2,
-            "weighted_score": 20.0
+            "weighted_score": 12.0
           },
           "business_proposal_viability": {
             "raw_score": 4,
@@ -1057,9 +1447,9 @@
             "weighted_score": 20.0
           }
         },
-        "composite_score": 79.0,
+        "composite_score": 67.0,
         "scoring_scale": "0-100 (weighted average)",
-        "grade": "Good"
+        "grade": "Fair"
       }
     },
     "Kwale_711": {
@@ -1080,31 +1470,57 @@
       "business_name": "NIVIDZO CBO",
       "scoring": {
         "criteria_scores": {
-          "registration_track_record": 5,
-          "financial_position": 2,
-          "market_demand_competitiveness": 5,
+          "registration_track_record": 1,
+          "financial_position": 5,
+          "market_demand_competitiveness": 3,
           "business_proposal_viability": 4,
           "value_chain_alignment": 2,
           "inclusivity_sustainability": 5
         },
-        "weighted_scores": {
+        "criteria_explanations": {
           "registration_track_record": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.05,
-            "weighted_score": 5.0
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
           },
           "financial_position": {
-            "raw_score": 2,
-            "normalized_score": 40,
-            "weight": 0.2,
-            "weighted_score": 8.0
+            "score": 5,
+            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
           },
           "market_demand_competitiveness": {
+            "score": 3,
+            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
+          },
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan with minor gaps; targets & timelines present"
+          },
+          "value_chain_alignment": {
+            "score": 2,
+            "rubric_explanation": "Peripheral role; unclear node"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
+          }
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 1,
+            "normalized_score": 20,
+            "weight": 0.05,
+            "weighted_score": 1.0
+          },
+          "financial_position": {
             "raw_score": 5,
             "normalized_score": 100,
             "weight": 0.2,
             "weighted_score": 20.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
           },
           "business_proposal_viability": {
             "raw_score": 4,
