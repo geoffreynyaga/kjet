@@ -1,0 +1,67 @@
+{
+  "report_title": "KJET Kakamega County Application Ranking and Evaluation",
+  "selection_criteria_weights": {
+    "S1_Registration_Track_Record_5%": 0.05,
+    "S2_Financial_Position_20%": 0.20,
+    "S3_Market_Demand_Competitiveness_20%": 0.20,
+    "S4_Business_Proposal_Viability_25%": 0.25,
+    "S5_Value_Chain_Alignment_10%": 0.10,
+    "S6_Inclusivity_Sustainability_20%": 0.20
+  },
+  "ranked_applicants": [
+    {
+      "rank": 1,
+      "application_id": "Kakamega_301",
+      "applicant_name": "KAKAMEGA DAIRY PROCESSORS CO-OP",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.75,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {"score": 5, "reason": "Cooperative registered over 10 years with strong administrative and financial systems."},
+        "S2_Financial_Position_20%": {"score": 5, "reason": "Superior financial health with high, consistent turnover (KES 18M+) and strong profitability."},
+        "S3_Market_Demand_Competitiveness_20%": {"score": 4, "reason": "Strong market presence across Western Kenya; high competitiveness in processed milk segments."},
+        "S4_Business_Proposal_Viability_25%": {"score": 5, "reason": "Highly viable proposal for establishing a yoghurt and fermented milk line, complete with market analysis and secured distribution channels."},
+        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Focus on Dairy processing/value-addition (Priority VC)."},
+        "S6_Inclusivity_Sustainability_20%": {"score": 5, "reason": "High youth and woman participation; adopted 2+ green practices (solar power for part of cold chain; methane capture from effluent)."}
+      }
+    },
+    {
+      "rank": 2,
+      "application_id": "Kakamega_415",
+      "applicant_name": "MULEMBE TEA PACKAGING LTD",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.20,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {"score": 4, "reason": "Private company, registered 3-5 years, good track record in local distribution."},
+        "S2_Financial_Position_20%": {"score": 4, "reason": "Stable financial position, turnover of KES 8.5M (KES 5M–<10M range)."},
+        "S3_Market_Demand_Competitiveness_20%": {"score": 4, "reason": "Targeting niche high-value export markets; moderate competition locally."},
+        "S4_Business_Proposal_Viability_25%": {"score": 4, "reason": "Feasible proposal for acquiring automated packaging and blending equipment to increase value addition."},
+        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Focus on Tea value addition and blending (BETA VC)."},
+        "S6_Inclusivity_Sustainability_20%": {"score": 3, "reason": "Moderate inclusion; adopted one green practice (sourcing from certified sustainable tea farms)."}
+      }
+    },
+    {
+      "rank": 3,
+      "application_id": "Kakamega_688",
+      "applicant_name": "LUYIA GROUNDNUT OIL MSME",
+      "eligibility_status": "Eligible",
+      "composite_score": 3.65,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {"score": 3, "reason": "MSME Association registered 1-3 years, growing membership."},
+        "S2_Financial_Position_20%": {"score": 3, "reason": "Moderate financial position, turnover of KES 3.0M (KES 1M–<5M range)."},
+        "S3_Market_Demand_Competitiveness_20%": {"score": 3, "reason": "Strong local demand for virgin groundnut oil; limited large-scale distribution capacity."},
+        "S4_Business_Proposal_Viability_25%": {"score": 3, "reason": "Proposal to upgrade pressing and filtration equipment; needs significant BDS support for market linkages."},
+        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Focus on Edible Oils extraction/processing (Priority VC)."},
+        "S6_Inclusivity_Sustainability_20%": {"score": 4, "reason": "Qualifies as Woman-led; adopted one green practice (uses nut shells as biomass fuel for pre-heating)."}
+      }
+    }
+  ],
+  "ineligible_applicants": [
+    {
+      "application_id": "Kakamega_705",
+      "applicant_name": "Musoli Welfare Group",
+      "eligibility_status": "Ineligible",
+      "ineligibility_criterion_failed": "E1 - Registration & Legality AND E3 - Priority Value Chain",
+      "reason": "The entity is registered as an 'Other' type (Welfare Group), which is not a legally recognized cluster entity (MSME association, cooperative, or company) for this program (E1). Furthermore, the primary focus appears to be generalized 'Welfare' and undefined activities in multiple VCs ('dairy', 'tea', 'rice', etc.), failing to meet the requirement of operating in a specific KJET Priority Value Chain (E3)."
+    }
+  ]
+}

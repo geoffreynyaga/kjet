@@ -85,6 +85,8 @@ function LLMCountiesAnalysis() {
         setAnalyses(analyses);
         setSelectedCounty(analyses[0].county);
         setCountyData(analyses[0].data);
+        // Set the first ranked applicant (rank 1) as expanded by default
+        setExpandedApplicants(new Set([1]));
       } else {
         setError('No county data could be loaded');
       }
@@ -154,7 +156,7 @@ function LLMCountiesAnalysis() {
           transition={{ duration: 0.5 }}
         >
           <div className="loading-spinner mx-auto mb-4"></div>
-          <p className="text-gray-600 text-lg">Loading LLM Analysis Dashboard...</p>
+          <p className="text-gray-600 text-lg">Loading AI Analysis Dashboard...</p>
         </motion.div>
       </div>
     );
@@ -243,7 +245,8 @@ function LLMCountiesAnalysis() {
                     setSelectedCounty(analysis.county);
                     setCountyData(analysis.data);
                     setCurrentPage(0);
-                    setExpandedApplicants(new Set());
+                    // Set the first ranked applicant (rank 1) as expanded by default
+                    setExpandedApplicants(new Set([1]));
                   }}
                   initial={{ opacity: 0, x: -10 }}
                   animate={{ opacity: 1, x: 0 }}
