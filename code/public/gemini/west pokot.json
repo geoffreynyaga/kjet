@@ -1,0 +1,135 @@
+{
+  "report_title": "KJET West Pokot County Application Ranking and Evaluation",
+  "selection_criteria_weights": {
+    "S1_Registration_Track_Record_5%": 0.05,
+    "S2_Financial_Position_20%": 0.2,
+    "S3_Market_Demand_Competitiveness_20%": 0.2,
+    "S4_Business_Proposal_Viability_25%": 0.25,
+    "S5_Value_Chain_Alignment_10%": 0.1,
+    "S6_Inclusivity_Sustainability_20%": 0.2
+  },
+  "ranked_applicants": [
+    {
+      "rank": 1,
+      "application_id": "West Pokot_540",
+      "applicant_name": "KAPTABUK FARMERS COOPERATIVE SOCIETY LTD",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 83.5,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Registered more than 3 years (CS7295, operational) and appears to have functioning governance based on structure (Chairperson, Secretary, Manager, Treasurer)."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 20.0,
+          "reason": "Turnover is well above KES 10M (KES 19M in 2024), positive 2-year trend, and explicit Net Profit figures are provided. Meets high-tier financial stability criteria."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 20.0,
+          "reason": "Active offtake agreement (100% B2B sales to BrooKSHide Dairy Limited), multi-channel planned growth, and a defensible quality/freshness strategy."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 20.0,
+          "reason": "Strong plan with clear objectives, quantified targets (10-15% increase in milk volume, <2% spoilage rate), and detailed investment plans."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 10.0,
+          "reason": "Priority VC (Dairy) and fills a critical node (cooling/bulking). Documented linkages upstream (farmers) and downstream (BrooKSHide)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 8.5,
+          "reason": "Strong gender/youth participation (30/593 members are youth), and 2 green practices (Water Harvesting, Biogas Use). Woman-owned is 'No'."
+        }
+      }
+    },
+    {
+      "rank": 2,
+      "application_id": "West Pokot_571",
+      "applicant_name": "KALYA FARMERS CO-OPERATIVE SOCIETY LIMITED",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 81.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Registered >3 years (CS No. 7096) and appears to have functioning governance based on the document."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 16.0,
+          "reason": "Turnover is between KES 5M–<10M (KES 8.4M in 2023), showing stability and has verifiable statements."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 20.0,
+          "reason": "Offtake contract confirmed with a large processor (Brookside), multi-channel sales planned, demonstrating strong demand evidence."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 25.0,
+          "reason": "Clear problem-solution (addressing spoilage), quantified targets (increase from 1500L to 3000L/day), detailed execution plan, and a costed budget for a processing plant."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 8.0,
+          "reason": "Priority VC (Dairy) with clear node participation (bulking/chilling). Some linkages with farmers and a major processor (Brookside) are mentioned."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 7.0,
+          "reason": "Strong youth participation (>50% of membership are youth), and intent on sustainability (e.g., biogas adoption and tree planting)."
+        }
+      }
+    },
+    {
+      "rank": 3,
+      "application_id": "West Pokot_574",
+      "applicant_name": "RIWO RICE FARMERS COOPERATIVE SOCIETY LIMITED",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 79.5,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.0,
+          "reason": "Registered 1-3 years (CS/5007), with documented leadership and meeting cadence."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 12.0,
+          "reason": "Turnover KES 1M–<5M (KES 3.1M in 2023), showing stability, and verifiable statements are present."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 16.0,
+          "reason": "Consistent monthly orders (local market sales) and growing channels (planned entry to urban centers). Basic quality assurance is in place."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 25.0,
+          "reason": "Clear problem-solution (low processing capacity), quantified targets, detailed execution plan (new mill), costed budget, and co-investment readiness."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 10.0,
+          "reason": "Priority VC (Rice) and fills a critical node (processing/milling). Documented linkages upstream (farmers) and downstream (wholesalers/retailers)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 12.5,
+          "reason": "Strong gender/youth participation (>50% female membership), and 1 green practice adopted (efficient water use)."
+        }
+      }
+    }
+  ],
+  "ineligible_applicants": [
+    {
+      "application_id": "KJET-A28F0198",
+      "applicant_name": "SIYOI MULTI-PRODUCE CO-OPERATIVE SOCIETY LIMITED",
+      "eligibility_status": "INELIGIBLE",
+      "ineligibility_criterion_failed": "E4",
+      "reason": "The financial evidence provided was either unreadable (image-based PDF) or did not contain verifiable transaction details, thus failing the Minimum Financial Evidence (E4) criterion. The application cannot proceed to scoring."
+    },
+    {
+      "application_id": "West Pokot_590",
+      "applicant_name": "CHEBARA IRRIGATION SCHEME",
+      "eligibility_status": "INELIGIBLE",
+      "ineligibility_criterion_failed": "E3",
+      "reason": "The cluster operates in the 'Cabbage/Horticulture' value chain, which is not listed as a Priority Value Chain (E3). The application cannot proceed to scoring."
+    },
+    {
+      "application_id": "West Pokot_708",
+      "applicant_name": "Lelan Farmer Sacco Society Limited",
+      "eligibility_status": "INELIGIBLE",
+      "ineligibility_criterion_failed": "E3",
+      "reason": "The cluster is a SACCO (financial service provider), and its primary activity is not one of the designated Priority Value Chains (E3). Although it services the Dairy VC, the core business is not the VC itself. The application cannot proceed to scoring."
+    }
+  ]
+}

@@ -6,7 +6,7 @@ echo "🚀 Starting KJET Statistics Dashboard..."
 # Check if we're in the right directory
 if [ ! -f "package.json" ]; then
     echo "❌ Error: package.json not found. Please run this script from the React app directory."
-    echo "   cd /Users/geoff/Downloads/Nakuru/src"
+    echo "   cd /Users/geoff/Downloads/KJET/src"
     exit 1
 fi
 

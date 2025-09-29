@@ -1,490 +1,641 @@
 {
-  "report_title": "KJET Application Evaluation and Ranking for Kericho County",
-  "total_applications_evaluated": 19,
-  "county": "Kericho",
+  "report_title": "KJET Kericho County Application Ranking and Evaluation",
+  "selection_criteria_weights": {
+    "S1_Registration_Track_Record_5%": 0.05,
+    "S2_Financial_Position_20%": 0.2,
+    "S3_Market_Demand_Competitiveness_20%": 0.2,
+    "S4_Business_Proposal_Viability_25%": 0.25,
+    "S5_Value_Chain_Alignment_10%": 0.1,
+    "S6_Inclusivity_Sustainability_20%": 0.2
+  },
   "ranked_applicants": [
     {
-      "application_id": "Kericho_674",
-      "application_number": "KJET-9B3E0674",
-      "applicant_name": "KENYARIRI DAIRY COOPERATIVE SOCIETY LIMITED",
-      "county": "Kericho",
-      "composite_score": 0.0,
-      "eligibility_status": "Ineligible",
-      "rank": null,
-      "eligibility_details": {
-        "E1_Registration_Pass": true,
-        "E2_County_Pass": true,
-        "E3_Priority_VC_Pass": true,
-        "E4_Financial_Evidence_Pass": false
-      },
+      "rank": 1,
+      "application_id": "Kericho_228",
+      "applicant_name": "KERICHO AVOCADO FARMERS CO-OPERATIVE SOCIETY LIMITED",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 88.0,
       "score_breakdown": {
-        "S1_Registration_Track_Record_5%": 0,
-        "S2_Financial_Position_20%": 0,
-        "S3_Market_Demand_Competitiveness_20%": 0,
-        "S4_Business_Proposal_Viability_25%": 0,
-        "S5_Value_Chain_Alignment_10%": 0,
-        "S6_Inclusivity_Sustainability_20%": 0
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Registered >=3 yrs; functioning governance (elected officials"
+        },
+        "S2_Financial_Position_20%": {
+          "score": 0.0,
+          "reason": " audited handover(s)"
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "Turnover >= KES 10M; positive 2-yr trend; statements + simple income/balance proof."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5.0,
+          "reason": "Active offtake/buyer contracts or purchase orders; multi-channel sales; repeat customers; defensible price/quality."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Clear problem–solution; quantified targets; detailed execution plan; costed budget; risks & mitigations; co-investment readiness."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "Priority VC; clear node participation; some linkages."
+        }
       }
     },
     {
-      "application_id": "Kericho_678",
-      "application_number": "KJET-821B0678",
-      "applicant_name": "KORWA FARMERS CO-OPERATIVE SOCIETY LIMITED",
-      "county": "Kericho",
-      "composite_score": 0.0,
-      "eligibility_status": "Ineligible",
-      "rank": null,
-      "eligibility_details": {
-        "E1_Registration_Pass": true,
-        "E2_County_Pass": true,
-        "E3_Priority_VC_Pass": true,
-        "E4_Financial_Evidence_Pass": false
-      },
+      "rank": 2,
+      "application_id": "Kericho_245",
+      "applicant_name": "KISIAra Dairy Co-operative Society Limited",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 88.0,
       "score_breakdown": {
-        "S1_Registration_Track_Record_5%": 0,
-        "S2_Financial_Position_20%": 0,
-        "S3_Market_Demand_Competitiveness_20%": 0,
-        "S4_Business_Proposal_Viability_25%": 0,
-        "S5_Value_Chain_Alignment_10%": 0,
-        "S6_Inclusivity_Sustainability_20%": 0
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Registered >=3 yrs; functioning governance (elected officials"
+        },
+        "S2_Financial_Position_20%": {
+          "score": 0.0,
+          "reason": " audited handover(s)"
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "Turnover >= KES 10M; positive 2-yr trend; statements + simple income/balance proof."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5.0,
+          "reason": "Active offtake/buyer contracts or purchase orders; multi-channel sales; repeat customers; defensible price/quality."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Strong plan with minor gaps; targets & timelines present."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Priority VC; fills a critical node (e.g."
+        }
       }
     },
     {
-      "application_id": "Kericho_679",
-      "application_number": "KJET-46540679",
-      "applicant_name": "MASHOYA TEA FARMERS SACCO",
-      "county": "Kericho",
-      "composite_score": 0.0,
-      "eligibility_status": "Ineligible",
-      "rank": null,
-      "eligibility_details": {
-        "E1_Registration_Pass": true,
-        "E2_County_Pass": true,
-        "E3_Priority_VC_Pass": false,
-        "E4_Financial_Evidence_Pass": false
-      },
+      "rank": 3,
+      "application_id": "Kericho_666",
+      "applicant_name": "Chelilis New Farmers Co-operative Society",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 88.0,
       "score_breakdown": {
-        "S1_Registration_Track_Record_5%": 0,
-        "S2_Financial_Position_20%": 0,
-        "S3_Market_Demand_Competitiveness_20%": 0,
-        "S4_Business_Proposal_Viability_25%": 0,
-        "S5_Value_Chain_Alignment_10%": 0,
-        "S6_Inclusivity_Sustainability_20%": 0
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Registered >=3 yrs; functioning governance (elected officials"
+        },
+        "S2_Financial_Position_20%": {
+          "score": 0.0,
+          "reason": " audited handover(s)"
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "Turnover >= KES 10M; positive 2-yr trend; statements + simple income/balance proof."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Consistent monthly orders; growing channels (incl. digital marketplaces); basic quality assurance."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Clear problem–solution; quantified targets; detailed execution plan; costed budget; risks & mitigations; co-investment readiness."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Priority VC; fills a critical node (e.g."
+        }
       }
     },
     {
-      "application_id": "Kericho_680",
-      "application_number": "KJET-EDF90680",
-      "applicant_name": "CHESIRE BEEF FEEDLOT",
-      "county": "Kericho",
-      "composite_score": 0.0,
-      "eligibility_status": "Ineligible",
-      "rank": null,
-      "eligibility_details": {
-        "E1_Registration_Pass": true,
-        "E2_County_Pass": true,
-        "E3_Priority_VC_Pass": false,
-        "E4_Financial_Evidence_Pass": false
-      },
+      "rank": 4,
+      "application_id": "Kericho_473",
+      "applicant_name": "Kipchimchim Dairy Farmers Co-operative Society Ltd",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 84.0,
       "score_breakdown": {
-        "S1_Registration_Track_Record_5%": 0,
-        "S2_Financial_Position_20%": 0,
-        "S3_Market_Demand_Competitiveness_20%": 0,
-        "S4_Business_Proposal_Viability_25%": 0,
-        "S5_Value_Chain_Alignment_10%": 0,
-        "S6_Inclusivity_Sustainability_20%": 0
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Registered >=3 yrs; functioning governance (elected officials"
+        },
+        "S2_Financial_Position_20%": {
+          "score": 0.0,
+          "reason": " audited handover(s)"
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "Turnover >= KES 10M; positive 2-yr trend; statements + simple income/balance proof."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Consistent monthly orders; growing channels (incl. digital marketplaces); basic quality assurance."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Clear problem–solution; quantified targets; detailed execution plan; costed budget; risks & mitigations; co-investment readiness."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "Priority VC; clear node participation; some linkages."
+        }
       }
     },
     {
-      "application_id": "Kericho_681",
-      "application_number": "KJET-20290681",
-      "applicant_name": "CHEMUKUWA COOPERATIVE SOCIETY LIMITED",
-      "county": "Kericho",
-      "composite_score": 0.0,
-      "eligibility_status": "Ineligible",
-      "rank": null,
-      "eligibility_details": {
-        "E1_Registration_Pass": true,
-        "E2_County_Pass": true,
-        "E3_Priority_VC_Pass": true,
-        "E4_Financial_Evidence_Pass": false
-      },
+      "rank": 5,
+      "application_id": "Kericho_491",
+      "applicant_name": "Kipkelion District Co-operative Union Limited",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 83.0,
       "score_breakdown": {
-        "S1_Registration_Track_Record_5%": 0,
-        "S2_Financial_Position_20%": 0,
-        "S3_Market_Demand_Competitiveness_20%": 0,
-        "S4_Business_Proposal_Viability_25%": 0,
-        "S5_Value_Chain_Alignment_10%": 0,
-        "S6_Inclusivity_Sustainability_20%": 0
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Registered >=3 yrs; functioning governance (elected officials"
+        },
+        "S2_Financial_Position_20%": {
+          "score": 0.0,
+          "reason": " audited handover(s)"
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.0,
+          "reason": "Turnover 5–<10M; mostly stable; bank/Mpesa + one statement."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5.0,
+          "reason": "Active offtake/buyer contracts or purchase orders; multi-channel sales; repeat customers; defensible price/quality."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Clear problem–solution; quantified targets; detailed execution plan; costed budget; risks & mitigations; co-investment readiness."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "Priority VC; clear node participation; some linkages."
+        }
       }
     },
     {
-      "application_id": "Kericho_685",
-      "application_number": "KJET-79B40685",
-      "applicant_name": "RIIY FARMERS COOPERATIVE SOCIETY LIMITED",
-      "county": "Kericho",
-      "composite_score": 0.0,
-      "eligibility_status": "Ineligible",
-      "rank": null,
-      "eligibility_details": {
-        "E1_Registration_Pass": true,
-        "E2_County_Pass": true,
-        "E3_Priority_VC_Pass": true,
-        "E4_Financial_Evidence_Pass": false
-      },
+      "rank": 6,
+      "application_id": "Kericho_230",
+      "applicant_name": "KAPMOIGI DAIRY FARMERS COOPERATIVE SOCIETY",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 81.0,
       "score_breakdown": {
-        "S1_Registration_Track_Record_5%": 0,
-        "S2_Financial_Position_20%": 0,
-        "S3_Market_Demand_Competitiveness_20%": 0,
-        "S4_Business_Proposal_Viability_25%": 0,
-        "S5_Value_Chain_Alignment_10%": 0,
-        "S6_Inclusivity_Sustainability_20%": 0
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Registered >=3 yrs; functioning governance (elected officials"
+        },
+        "S2_Financial_Position_20%": {
+          "score": 0.0,
+          "reason": " audited handover(s)"
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "Turnover >= KES 10M; positive 2-yr trend; statements + simple income/balance proof."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Consistent monthly orders; growing channels (incl. digital marketplaces); basic quality assurance."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Strong plan with minor gaps; targets & timelines present."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "Priority VC; clear node participation; some linkages."
+        }
       }
     },
     {
-      "application_id": "Kericho_687",
-      "application_number": "KJET-81780687",
-      "applicant_name": "CHEBWAI TEA GROWERS CO-OPERATIVE SOCIETY LIMITED",
-      "county": "Kericho",
-      "composite_score": 0.0,
-      "eligibility_status": "Ineligible",
-      "rank": null,
-      "eligibility_details": {
-        "E1_Registration_Pass": true,
-        "E2_County_Pass": true,
-        "E3_Priority_VC_Pass": false,
-        "E4_Financial_Evidence_Pass": false
-      },
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": 0,
-        "S2_Financial_Position_20%": 0,
-        "S3_Market_Demand_Competitiveness_20%": 0,
-        "S4_Business_Proposal_Viability_25%": 0,
-        "S5_Value_Chain_Alignment_10%": 0,
-        "S6_Inclusivity_Sustainability_20%": 0
-      }
-    },
-    {
-      "application_id": "Kericho_688",
-      "application_number": "KJET-671A0688",
-      "applicant_name": "KENYARIRI DAIRY COOPERATIVE SOCIETY LIMITED",
-      "county": "Kericho",
-      "composite_score": 0.0,
-      "eligibility_status": "Ineligible",
-      "rank": null,
-      "eligibility_details": {
-        "E1_Registration_Pass": true,
-        "E2_County_Pass": true,
-        "E3_Priority_VC_Pass": true,
-        "E4_Financial_Evidence_Pass": false
-      },
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": 0,
-        "S2_Financial_Position_20%": 0,
-        "S3_Market_Demand_Competitiveness_20%": 0,
-        "S4_Business_Proposal_Viability_25%": 0,
-        "S5_Value_Chain_Alignment_10%": 0,
-        "S6_Inclusivity_Sustainability_20%": 0
-      }
-    },
-    {
-      "application_id": "Kericho_689",
-      "application_number": "KJET-04D60689",
-      "applicant_name": "KORWA FARMERS CO-OPERATIVE SOCIETY LIMITED",
-      "county": "Kericho",
-      "composite_score": 0.0,
-      "eligibility_status": "Ineligible",
-      "rank": null,
-      "eligibility_details": {
-        "E1_Registration_Pass": true,
-        "E2_County_Pass": true,
-        "E3_Priority_VC_Pass": true,
-        "E4_Financial_Evidence_Pass": false
-      },
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": 0,
-        "S2_Financial_Position_20%": 0,
-        "S3_Market_Demand_Competitiveness_20%": 0,
-        "S4_Business_Proposal_Viability_25%": 0,
-        "S5_Value_Chain_Alignment_10%": 0,
-        "S6_Inclusivity_Sustainability_20%": 0
-      }
-    },
-    {
-      "application_id": "Kericho_690",
-      "application_number": "KJET-E5C70690",
-      "applicant_name": "MASHOYA TEA FARMERS SACCO",
-      "county": "Kericho",
-      "composite_score": 0.0,
-      "eligibility_status": "Ineligible",
-      "rank": null,
-      "eligibility_details": {
-        "E1_Registration_Pass": true,
-        "E2_County_Pass": true,
-        "E3_Priority_VC_Pass": false,
-        "E4_Financial_Evidence_Pass": false
-      },
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": 0,
-        "S2_Financial_Position_20%": 0,
-        "S3_Market_Demand_Competitiveness_20%": 0,
-        "S4_Business_Proposal_Viability_25%": 0,
-        "S5_Value_Chain_Alignment_10%": 0,
-        "S6_Inclusivity_Sustainability_20%": 0
-      }
-    },
-    {
+      "rank": 7,
       "application_id": "Kericho_692",
-      "application_number": "KJET-D99A0692",
       "applicant_name": "TALATANY DAIRY FARMERS CO-OPERATIVE SOCIETY LTD",
-      "county": "Kericho",
-      "composite_score": 0.0,
-      "eligibility_status": "Ineligible",
-      "rank": null,
-      "eligibility_details": {
-        "E1_Registration_Pass": true,
-        "E2_County_Pass": true,
-        "E3_Priority_VC_Pass": true,
-        "E4_Financial_Evidence_Pass": false
-      },
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 80.0,
       "score_breakdown": {
-        "S1_Registration_Track_Record_5%": 0,
-        "S2_Financial_Position_20%": 0,
-        "S3_Market_Demand_Competitiveness_20%": 0,
-        "S4_Business_Proposal_Viability_25%": 0,
-        "S5_Value_Chain_Alignment_10%": 0,
-        "S6_Inclusivity_Sustainability_20%": 0
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Registered >=3 yrs; functioning governance (elected officials"
+        },
+        "S2_Financial_Position_20%": {
+          "score": 0.0,
+          "reason": " audited handover(s)"
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "Turnover >= KES 10M; positive 2-yr trend; statements + simple income/balance proof."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Consistent monthly orders; growing channels (incl. digital marketplaces); basic quality assurance."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Strong plan with minor gaps; targets & timelines present."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "Priority VC; clear node participation; some linkages."
+        }
       }
     },
     {
-      "application_id": "Kericho_695",
-      "application_number": "KJET-671A0695",
-      "applicant_name": "LITEIN DAIRY CO-OPERATIVE SOCIETY LTD",
-      "county": "Kericho",
-      "composite_score": 0.0,
-      "eligibility_status": "Ineligible",
-      "rank": null,
-      "eligibility_details": {
-        "E1_Registration_Pass": true,
-        "E2_County_Pass": true,
-        "E3_Priority_VC_Pass": true,
-        "E4_Financial_Evidence_Pass": false
-      },
+      "rank": 8,
+      "application_id": "Kericho_435",
+      "applicant_name": "KABIANGA FARMERS' CO-OPERATIVE SOCIETY LTD",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 79.0,
       "score_breakdown": {
-        "S1_Registration_Track_Record_5%": 0,
-        "S2_Financial_Position_20%": 0,
-        "S3_Market_Demand_Competitiveness_20%": 0,
-        "S4_Business_Proposal_Viability_25%": 0,
-        "S5_Value_Chain_Alignment_10%": 0,
-        "S6_Inclusivity_Sustainability_20%": 0
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Registered >=3 yrs; functioning governance (elected officials"
+        },
+        "S2_Financial_Position_20%": {
+          "score": 0.0,
+          "reason": " audited handover(s)"
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "Turnover >= KES 10M; positive 2-yr trend; statements + simple income/balance proof."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Regular local sales; one channel; emerging quality practices."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Strong plan with minor gaps; targets & timelines present."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "Priority VC; clear node participation; some linkages."
+        }
       }
     },
     {
-      "application_id": "Kericho_696",
-      "application_number": "KJET-79B40696",
-      "applicant_name": "RIIY FARMERS COOPERATIVE SOCIETY LIMITED",
-      "county": "Kericho",
-      "composite_score": 0.0,
-      "eligibility_status": "Ineligible",
-      "rank": null,
-      "eligibility_details": {
-        "E1_Registration_Pass": true,
-        "E2_County_Pass": true,
-        "E3_Priority_VC_Pass": true,
-        "E4_Financial_Evidence_Pass": false
-      },
+      "rank": 9,
+      "application_id": "Kericho_196",
+      "applicant_name": "Cheptororiet Dairy Farmers Co-operative Society",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 78.0,
       "score_breakdown": {
-        "S1_Registration_Track_Record_5%": 0,
-        "S2_Financial_Position_20%": 0,
-        "S3_Market_Demand_Competitiveness_20%": 0,
-        "S4_Business_Proposal_Viability_25%": 0,
-        "S5_Value_Chain_Alignment_10%": 0,
-        "S6_Inclusivity_Sustainability_20%": 0
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Registered >=3 yrs; functioning governance (elected officials"
+        },
+        "S2_Financial_Position_20%": {
+          "score": 0.0,
+          "reason": " audited handover(s)"
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "Turnover >= KES 10M; positive 2-yr trend; statements + simple income/balance proof."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Consistent monthly orders; growing channels (incl. digital marketplaces); basic quality assurance."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Strong plan with minor gaps; targets & timelines present."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.0,
+          "reason": "Priority VC; weak linkages; potential to upgrade."
+        }
       }
     },
     {
-      "application_id": "Kericho_697",
-      "application_number": "KJET-81780697",
-      "applicant_name": "CHEBWAI TEA GROWERS CO-OPERATIVE SOCIETY LIMITED",
-      "county": "Kericho",
-      "composite_score": 0.0,
-      "eligibility_status": "Ineligible",
-      "rank": null,
-      "eligibility_details": {
-        "E1_Registration_Pass": true,
-        "E2_County_Pass": true,
-        "E3_Priority_VC_Pass": false,
-        "E4_Financial_Evidence_Pass": false
-      },
+      "rank": 10,
+      "application_id": "Kericho_687",
+      "applicant_name": "UPERLANDS DAIRY FARMERS COPERATIVE SOCIETY",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 77.0,
       "score_breakdown": {
-        "S1_Registration_Track_Record_5%": 0,
-        "S2_Financial_Position_20%": 0,
-        "S3_Market_Demand_Competitiveness_20%": 0,
-        "S4_Business_Proposal_Viability_25%": 0,
-        "S5_Value_Chain_Alignment_10%": 0,
-        "S6_Inclusivity_Sustainability_20%": 0
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Registered >=3 yrs; functioning governance (elected officials"
+        },
+        "S2_Financial_Position_20%": {
+          "score": 0.0,
+          "reason": " audited handover(s)"
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "Turnover >= KES 10M; positive 2-yr trend; statements + simple income/balance proof."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Consistent monthly orders; growing channels (incl. digital marketplaces); basic quality assurance."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Strong plan with minor gaps; targets & timelines present."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "Priority VC; clear node participation; some linkages."
+        }
       }
     },
     {
-      "application_id": "Kericho_699",
-      "application_number": "KJET-715B0699",
-      "applicant_name": "CHESIRE BEEF FEEDLOT",
-      "county": "Kericho",
-      "composite_score": 0.0,
-      "eligibility_status": "Ineligible",
-      "rank": null,
-      "eligibility_details": {
-        "E1_Registration_Pass": true,
-        "E2_County_Pass": true,
-        "E3_Priority_VC_Pass": false,
-        "E4_Financial_Evidence_Pass": false
-      },
+      "rank": 11,
+      "application_id": "Kericho_457",
+      "applicant_name": "Seretut Farmers Cooperative society limited",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 73.0,
       "score_breakdown": {
-        "S1_Registration_Track_Record_5%": 0,
-        "S2_Financial_Position_20%": 0,
-        "S3_Market_Demand_Competitiveness_20%": 0,
-        "S4_Business_Proposal_Viability_25%": 0,
-        "S5_Value_Chain_Alignment_10%": 0,
-        "S6_Inclusivity_Sustainability_20%": 0
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Registered >=3 yrs; functioning governance (elected officials"
+        },
+        "S2_Financial_Position_20%": {
+          "score": 0.0,
+          "reason": " audited handover(s)"
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "Turnover 1–<5M; stable or recovering; at least one statement."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Consistent monthly orders; growing channels (incl. digital marketplaces); basic quality assurance."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Strong plan with minor gaps; targets & timelines present."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "Priority VC; clear node participation; some linkages."
+        }
       }
     },
     {
-      "application_id": "Kericho_702",
-      "application_number": "KJET-1F4F0702",
-      "applicant_name": "CHEMUKUWA COOPERATIVE SOCIETY LIMITED",
-      "county": "Kericho",
-      "composite_score": 0.0,
-      "eligibility_status": "Ineligible",
-      "rank": null,
-      "eligibility_details": {
-        "E1_Registration_Pass": true,
-        "E2_County_Pass": true,
-        "E3_Priority_VC_Pass": true,
-        "E4_Financial_Evidence_Pass": false
-      },
+      "rank": 12,
+      "application_id": "Kericho_221",
+      "applicant_name": "KAMASIAN DAIRY COOPERATIVE SOCIETY",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 73.0,
       "score_breakdown": {
-        "S1_Registration_Track_Record_5%": 0,
-        "S2_Financial_Position_20%": 0,
-        "S3_Market_Demand_Competitiveness_20%": 0,
-        "S4_Business_Proposal_Viability_25%": 0,
-        "S5_Value_Chain_Alignment_10%": 0,
-        "S6_Inclusivity_Sustainability_20%": 0
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Registered >=3 yrs; functioning governance (elected officials"
+        },
+        "S2_Financial_Position_20%": {
+          "score": 0.0,
+          "reason": " audited handover(s)"
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "Turnover >= KES 10M; positive 2-yr trend; statements + simple income/balance proof."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Regular local sales; one channel; emerging quality practices."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 3.0,
+          "reason": "Direction clear; targets generic; budget rough."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "Priority VC; clear node participation; some linkages."
+        }
       }
     },
     {
-      "application_id": "Kericho_703",
-      "application_number": "KJET-9B3E0703",
-      "applicant_name": "KENYARIRI DAIRY COOPERATIVE SOCIETY LIMITED",
-      "county": "Kericho",
-      "composite_score": 0.0,
-      "eligibility_status": "Ineligible",
-      "rank": null,
-      "eligibility_details": {
-        "E1_Registration_Pass": true,
-        "E2_County_Pass": true,
-        "E3_Priority_VC_Pass": true,
-        "E4_Financial_Evidence_Pass": false
-      },
+      "rank": 13,
+      "application_id": "Kericho_330",
+      "applicant_name": "Ainamoi Organic Feeds and Fertilizer Manufacturers",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 70.0,
       "score_breakdown": {
-        "S1_Registration_Track_Record_5%": 0,
-        "S2_Financial_Position_20%": 0,
-        "S3_Market_Demand_Competitiveness_20%": 0,
-        "S4_Business_Proposal_Viability_25%": 0,
-        "S5_Value_Chain_Alignment_10%": 0,
-        "S6_Inclusivity_Sustainability_20%": 0
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.0,
+          "reason": "Registered 1–3 yrs; documented leadership; meeting cadence."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "Turnover 1–<5M; stable or recovering; at least one statement."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.0,
+          "reason": "Consistent monthly orders; growing channels (incl. digital marketplaces); basic quality assurance."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Strong plan with minor gaps; targets & timelines present."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Priority VC; clear node participation; some linkages."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.0,
+          "reason": "Moderate inclusion; some intent on sustainability."
+        }
       }
     },
     {
-      "application_id": "Kericho_704",
-      "application_number": "KJET-821B0704",
-      "applicant_name": "KORWA FARMERS CO-OPERATIVE SOCIETY LIMITED",
-      "county": "Kericho",
-      "composite_score": 0.0,
-      "eligibility_status": "Ineligible",
-      "rank": null,
-      "eligibility_details": {
-        "E1_Registration_Pass": true,
-        "E2_County_Pass": true,
-        "E3_Priority_VC_Pass": true,
-        "E4_Financial_Evidence_Pass": false
-      },
+      "rank": 14,
+      "application_id": "Kericho_335",
+      "applicant_name": "KABIANGA WETLAND BEE KEEPERS ASSOCIATION",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 69.0,
       "score_breakdown": {
-        "S1_Registration_Track_Record_5%": 0,
-        "S2_Financial_Position_20%": 0,
-        "S3_Market_Demand_Competitiveness_20%": 0,
-        "S4_Business_Proposal_Viability_25%": 0,
-        "S5_Value_Chain_Alignment_10%": 0,
-        "S6_Inclusivity_Sustainability_20%": 0
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.0,
+          "reason": "Registered 1–3 yrs; documented leadership; meeting cadence."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "Turnover 1–<5M; stable or recovering; at least one statement."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "Regular local sales; one channel; emerging quality practices."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Strong plan with minor gaps; targets & timelines present."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Priority VC; clear node participation; some linkages."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "Strong gender/youth participation; 1–2 green practices."
+        }
       }
     },
     {
-      "application_id": "Kericho_707",
-      "application_number": "KJET-671A0707",
-      "applicant_name": "LITEIN DAIRY CO-OPERATIVE SOCIETY LTD",
-      "county": "Kericho",
-      "composite_score": 0.0,
-      "eligibility_status": "Ineligible",
-      "rank": null,
-      "eligibility_details": {
-        "E1_Registration_Pass": true,
-        "E2_County_Pass": true,
-        "E3_Priority_VC_Pass": true,
-        "E4_Financial_Evidence_Pass": false
-      },
+      "rank": 15,
+      "application_id": "Kericho_556",
+      "applicant_name": "TEBE FARMERS CO-OPERATIVE SOCIETY",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 69.0,
       "score_breakdown": {
-        "S1_Registration_Track_Record_5%": 0,
-        "S2_Financial_Position_20%": 0,
-        "S3_Market_Demand_Competitiveness_20%": 0,
-        "S4_Business_Proposal_Viability_25%": 0,
-        "S5_Value_Chain_Alignment_10%": 0,
-        "S6_Inclusivity_Sustainability_20%": 0
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Registered >=3 yrs; functioning governance (elected officials"
+        },
+        "S2_Financial_Position_20%": {
+          "score": 0.0,
+          "reason": " audited handover(s)"
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "Turnover 1–<5M; stable or recovering; at least one statement."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Regular local sales; one channel; emerging quality practices."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Strong plan with minor gaps; targets & timelines present."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "Priority VC; clear node participation; some linkages."
+        }
       }
     },
     {
-      "application_id": "Kericho_709",
-      "application_number": "KJET-E5C70709",
-      "applicant_name": "MASHOYA TEA FARMERS SACCO",
-      "county": "Kericho",
-      "composite_score": 0.0,
-      "eligibility_status": "Ineligible",
-      "rank": null,
-      "eligibility_details": {
-        "E1_Registration_Pass": true,
-        "E2_County_Pass": true,
-        "E3_Priority_VC_Pass": false,
-        "E4_Financial_Evidence_Pass": false
-      },
+      "rank": 16,
+      "application_id": "Kericho_218",
+      "applicant_name": "chepsir innovatus",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 66.0,
       "score_breakdown": {
-        "S1_Registration_Track_Record_5%": 0,
-        "S2_Financial_Position_20%": 0,
-        "S3_Market_Demand_Competitiveness_20%": 0,
-        "S4_Business_Proposal_Viability_25%": 0,
-        "S5_Value_Chain_Alignment_10%": 0,
-        "S6_Inclusivity_Sustainability_20%": 0
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.0,
+          "reason": "Registered <1 yr; basic structure in place."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "Turnover 1–<5M; stable or recovering; at least one statement."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.0,
+          "reason": "Consistent monthly orders; growing channels (incl. digital marketplaces); basic quality assurance."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Strong plan with minor gaps; targets & timelines present."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Priority VC; clear node participation; some linkages."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.0,
+          "reason": "Moderate inclusion; some intent on sustainability."
+        }
       }
     },
     {
-      "application_id": "Kericho_712",
-      "application_number": "KJET-EDF90712",
-      "applicant_name": "CHESIRE BEEF FEEDLOT",
-      "county": "Kericho",
-      "composite_score": 0.0,
-      "eligibility_status": "Ineligible",
-      "rank": null,
-      "eligibility_details": {
-        "E1_Registration_Pass": true,
-        "E2_County_Pass": true,
-        "E3_Priority_VC_Pass": false,
-        "E4_Financial_Evidence_Pass": false
-      },
+      "rank": 17,
+      "application_id": "Kericho_430",
+      "applicant_name": "Ararwet Self Help Group",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 65.0,
       "score_breakdown": {
-        "S1_Registration_Track_Record_5%": 0,
-        "S2_Financial_Position_20%": 0,
-        "S3_Market_Demand_Competitiveness_20%": 0,
-        "S4_Business_Proposal_Viability_25%": 0,
-        "S5_Value_Chain_Alignment_10%": 0,
-        "S6_Inclusivity_Sustainability_20%": 0
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.0,
+          "reason": "Registered <1 yr; basic structure in place."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "Turnover 1–<5M; stable or recovering; at least one statement."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "Regular local sales; one channel; emerging quality practices."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Strong plan with minor gaps; targets & timelines present."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Priority VC; clear node participation; some linkages."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "Strong gender/youth participation; 1–2 green practices."
+        }
+      }
+    },
+    {
+      "rank": 18,
+      "application_id": "Kericho_385",
+      "applicant_name": "Name Missing for Kericho_385",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 64.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.0,
+          "reason": "Registered 1–3 yrs; documented leadership; meeting cadence."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "Turnover 1–<5M; stable or recovering; at least one statement."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "Regular local sales; one channel; emerging quality practices."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Direction clear; targets generic; budget rough."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Priority VC; clear node participation; some linkages."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.0,
+          "reason": "Moderate inclusion; some intent on sustainability."
+        }
+      }
+    },
+    {
+      "rank": 19,
+      "application_id": "Kericho_603",
+      "applicant_name": "Name Missing for Kericho_603",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 64.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.0,
+          "reason": "Registered <1 yr; basic structure in place."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "Turnover 1–<5M; stable or recovering; at least one statement."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "Regular local sales; one channel; emerging quality practices."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Strong plan with minor gaps; targets & timelines present."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 3.0,
+          "reason": "Priority VC; weak linkages; potential to upgrade."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "Strong gender/youth participation; 1–2 green practices."
+        }
       }
     }
-  ]
+  ],
+  "ineligible_applicants": []
 }
