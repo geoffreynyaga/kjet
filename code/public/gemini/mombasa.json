@@ -1,0 +1,220 @@
+{
+  "report_title": "KJET Mombasa County Application Ranking and Evaluation",
+  "selection_criteria_weights": {
+    "S1_Registration_Track_Record_5%": 0.05,
+    "S2_Financial_Position_20%": 0.2,
+    "S3_Market_Demand_Competitiveness_20%": 0.2,
+    "S4_Business_Proposal_Viability_25%": 0.25,
+    "S5_Value_Chain_Alignment_10%": 0.1,
+    "S6_Inclusivity_Sustainability_20%": 0.2
+  },
+  "ranked_applicants": [
+    {
+      "rank": 1,
+      "application_id": "Mombasa_301",
+      "applicant_name": "Mombasa Textile Works",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 100.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Association registered >3 yrs; documented governance (Score 5)."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "Turnover ≥ KES 10M (KES 12.0M in 2024); positive trend (Score 5)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "Active B2B contracts; multi-channel sales (Score 5)."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5.0,
+          "reason": "Detailed execution plan; quantified targets; co-investment ready (Score 5)."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VC (Textiles); critical manufacturing node (Score 5)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Strong inclusion (60% youth, 50% women); 2+ green practices (Score 5)."
+        }
+      }
+    },
+    {
+      "rank": 2,
+      "application_id": "Mombasa_412",
+      "applicant_name": "Kisauni Wood Carvers Assoc.",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 83.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Association registered >3 yrs; documented leadership (Score 5)."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 4.0,
+          "reason": "Turnover 5–<10M (KES 8.5M in 2024); stable trend (Score 4)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.0,
+          "reason": "Consistent orders; digital sales channel (Score 4)."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Strong plan for machinery acquisition; targets/timelines present (Score 4)."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VC (Construction); critical fabrication node (Score 5)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "Strong inclusion (50% youth); 1-2 green practices (waste reduction) (Score 4)."
+        }
+      }
+    },
+    {
+      "rank": 3,
+      "application_id": "Mombasa_520",
+      "applicant_name": "Likoni Edible Oil Co-op",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 82.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.0,
+          "reason": "Co-operative registered 1-3 yrs; documented governance (Score 4)."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 4.0,
+          "reason": "Turnover 5–<10M (KES 5.5M in 2024); stable trend (Score 4)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.0,
+          "reason": "Consistent B2C/B2B orders; basic QA (Score 4)."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Strong plan for oil press upgrade; targets present (Score 4)."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VC (Edible Oils); critical processing node (Score 5)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "Strong inclusion (50% women); 1-2 green practices (waste utilization) (Score 4)."
+        }
+      }
+    },
+    {
+      "rank": 4,
+      "application_id": "Mombasa_608",
+      "applicant_name": "Mombasa Marine Group",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 78.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.0,
+          "reason": "Group registered 1-3 yrs; documented leadership (Score 4)."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "Turnover 1–<5M (KES 2.5M in 2024); stable trend (Score 3)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "Regular local sales; one channel (Score 3)."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Strong plan for equipment; targets present (Score 4)."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Additional VC (Blue Economy); critical production node (Score 5)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Strong inclusion (60% youth); 2+ green practices (Score 5)."
+        }
+      }
+    },
+    {
+      "rank": 5,
+      "application_id": "Mombasa_548",
+      "applicant_name": "Mikanjuni Dress Making Ventures",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 69.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.0,
+          "reason": "Group/Other registered 1-3 yrs; documented leadership (Score 4)."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "Turnover 1–<5M (KES 1.5M in 2024); stable trend (Score 3)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "Regular local B2C sales; one channel (Score 3)."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Direction clear; budget rough (Score 3)."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VC (Textiles); critical manufacturing node (Score 5)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "Strong inclusion (80% women); 1-2 green practices (Score 4)."
+        }
+      }
+    },
+    {
+      "rank": 6,
+      "application_id": "Mombasa_210",
+      "applicant_name": "Changamwe Block Makers",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 66.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Association registered >3 yrs; documented leadership (Score 5)."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "Turnover 1–<5M (KES 4.0M in 2024); stable trend (Score 3)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "Regular B2B orders (Score 3)."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Direction clear for block machine; budget rough (Score 3)."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VC (Construction); critical material node (Score 5)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.0,
+          "reason": "Moderate inclusion (30% women); some intent on sustainability (Score 3)."
+        }
+      }
+    }
+  ],
+  "ineligible_applicants": [
+    {
+      "application_id": "Mombasa_105",
+      "applicant_name": "Magogoni Fishing Group",
+      "eligibility_status": "INELIGIBLE",
+      "ineligibility_criterion_failed": "E4",
+      "reason": "Financial evidence provided showed a turnover of <KES 1M with sporadic transactions, failing the Minimum Financial Evidence check (E4)."
+    }
+  ]
+}
