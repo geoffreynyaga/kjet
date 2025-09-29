@@ -278,7 +278,7 @@ function LLMCountiesAnalysis() {
             <>
               {/* County Header */}
               <div className="county-header">
-                <h2>{selectedCounty} County LLM Analysis</h2>
+                <h2>{selectedCounty} County AI Analysis</h2>
               </div>              {/* Top Two Ranked Candidates with Accordion */}
               {countyData.ranked_applicants.length >= 2 && (
                 <div className="bg-white border border-gray-200 rounded-lg shadow-sm mb-8 overflow-hidden">

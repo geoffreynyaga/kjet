@@ -2,66 +2,2489 @@
   "report_title": "KJET Kakamega County Application Ranking and Evaluation",
   "selection_criteria_weights": {
     "S1_Registration_Track_Record_5%": 0.05,
-    "S2_Financial_Position_20%": 0.20,
-    "S3_Market_Demand_Competitiveness_20%": 0.20,
+    "S2_Financial_Position_20%": 0.2,
+    "S3_Market_Demand_Competitiveness_20%": 0.2,
     "S4_Business_Proposal_Viability_25%": 0.25,
-    "S5_Value_Chain_Alignment_10%": 0.10,
-    "S6_Inclusivity_Sustainability_20%": 0.20
+    "S5_Value_Chain_Alignment_10%": 0.1,
+    "S6_Inclusivity_Sustainability_20%": 0.2
   },
   "ranked_applicants": [
     {
+      "application_id": "",
+      "applicant_name": "ELBETHEL INVESTMENT",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
       "rank": 1,
-      "application_id": "Kakamega_301",
-      "applicant_name": "KAKAMEGA DAIRY PROCESSORS CO-OP",
-      "eligibility_status": "Eligible",
-      "composite_score": 4.75,
       "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {"score": 5, "reason": "Cooperative registered over 10 years with strong administrative and financial systems."},
-        "S2_Financial_Position_20%": {"score": 5, "reason": "Superior financial health with high, consistent turnover (KES 18M+) and strong profitability."},
-        "S3_Market_Demand_Competitiveness_20%": {"score": 4, "reason": "Strong market presence across Western Kenya; high competitiveness in processed milk segments."},
-        "S4_Business_Proposal_Viability_25%": {"score": 5, "reason": "Highly viable proposal for establishing a yoghurt and fermented milk line, complete with market analysis and secured distribution channels."},
-        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Focus on Dairy processing/value-addition (Priority VC)."},
-        "S6_Inclusivity_Sustainability_20%": {"score": 5, "reason": "High youth and woman participation; adopted 2+ green practices (solar power for part of cold chain; methane capture from effluent)."}
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type Private company and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Woman-owned and at least one green practice mentioned."
+        }
       }
     },
     {
+      "application_id": "",
+      "applicant_name": "Kijiji Farmers Coopertive Society Limited",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
       "rank": 2,
-      "application_id": "Kakamega_415",
-      "applicant_name": "MULEMBE TEA PACKAGING LTD",
-      "eligibility_status": "Eligible",
-      "composite_score": 4.20,
       "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {"score": 4, "reason": "Private company, registered 3-5 years, good track record in local distribution."},
-        "S2_Financial_Position_20%": {"score": 4, "reason": "Stable financial position, turnover of KES 8.5M (KES 5M–<10M range)."},
-        "S3_Market_Demand_Competitiveness_20%": {"score": 4, "reason": "Targeting niche high-value export markets; moderate competition locally."},
-        "S4_Business_Proposal_Viability_25%": {"score": 4, "reason": "Feasible proposal for acquiring automated packaging and blending equipment to increase value addition."},
-        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Focus on Tea value addition and blending (BETA VC)."},
-        "S6_Inclusivity_Sustainability_20%": {"score": 3, "reason": "Moderate inclusion; adopted one green practice (sourcing from certified sustainable tea farms)."}
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 65, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC rice, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
       }
     },
     {
-      "rank": 3,
-      "application_id": "Kakamega_688",
-      "applicant_name": "LUYIA GROUNDNUT OIL MSME",
+      "application_id": "Kakamega_227",
+      "applicant_name": "NYUMBANI 037 SAVINGS AND CREDIT CO-OPERATIVE SOCIETY LIMITED",
       "eligibility_status": "Eligible",
-      "composite_score": 3.65,
+      "composite_score": 4.15,
+      "rank": 3,
       "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {"score": 3, "reason": "MSME Association registered 1-3 years, growing membership."},
-        "S2_Financial_Position_20%": {"score": 3, "reason": "Moderate financial position, turnover of KES 3.0M (KES 1M–<5M range)."},
-        "S3_Market_Demand_Competitiveness_20%": {"score": 3, "reason": "Strong local demand for virgin groundnut oil; limited large-scale distribution capacity."},
-        "S4_Business_Proposal_Viability_25%": {"score": 3, "reason": "Proposal to upgrade pressing and filtration equipment; needs significant BDS support for market linkages."},
-        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Focus on Edible Oils extraction/processing (Priority VC)."},
-        "S6_Inclusivity_Sustainability_20%": {"score": 4, "reason": "Qualifies as Woman-led; adopted one green practice (uses nut shells as biomass fuel for pre-heating)."}
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type Cooperative and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Woman-owned and at least one green practice mentioned."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_243",
+      "applicant_name": "Shiatsala hustlers youth group",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 4,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_248",
+      "applicant_name": "MARENYO SHIANDA WARD SAVINGS AND CREDICT COOPERATIVE SOCIETY LIMITED",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 5,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type Cooperative and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC construction, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_249",
+      "applicant_name": "Western region staff sacco",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 6,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type Cooperative and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_252",
+      "applicant_name": "IMANI YOUTH SELF HELP GROUP",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 7,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type Other and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Woman-owned and at least one green practice mentioned."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_265",
+      "applicant_name": "NYENYESI JUA KALI SELF HELP GROUP",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 8,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC rice, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_268",
+      "applicant_name": "SHIATSALA MARKET SELF HELP GROUP",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 9,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Woman-owned and at least one green practice mentioned."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_284",
+      "applicant_name": "Shirembe tuinuwane community based organization",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 10,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_289",
+      "applicant_name": "Shiatsala radio ingo 100.5",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 11,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_301",
+      "applicant_name": "Butere Model Dairy Co-operative Society Limited",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 12,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type Cooperative and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_306",
+      "applicant_name": "Labedcash Marine Enterprises Limited",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 13,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type Private company and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC rice, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Woman-owned and at least one green practice mentioned."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_307",
+      "applicant_name": "Shiarenyo Self Help Group",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 14,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Woman-owned and at least one green practice mentioned."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_309",
+      "applicant_name": "Surviver women group",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 15,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Woman-owned and at least one green practice mentioned."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_316",
+      "applicant_name": "Eshirembe Amkeni Animators C.B.O",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 16,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_318",
+      "applicant_name": "Sabatia Umoja Self Help Group",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 17,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC rice, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_322",
+      "applicant_name": "MARENYO MULTIPURPOSE COOPERATIVE SOCIETY",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 18,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type Cooperative and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_323",
+      "applicant_name": "Ibati Community Health Unit",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 19,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_337",
+      "applicant_name": "Best Lady women group",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 20,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Woman-owned and at least one green practice mentioned."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_344",
+      "applicant_name": "Tuokoane Women Group",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 21,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Woman-owned and at least one green practice mentioned."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_346",
+      "applicant_name": "Bubala. Chairs and tents self help group",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 22,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_362",
+      "applicant_name": "Matungu 2018 Riders Savings and Credit Co-operative Society Limited",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 23,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type Cooperative and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_378",
+      "applicant_name": "MUMBO AVOCADO FARMERS&#039; CO-OPERATIVE SOCIETY LIMITED",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 24,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type Cooperative and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 60, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC construction, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_381",
+      "applicant_name": "Riverine Agri-Group",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 25,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Woman-owned and at least one green practice mentioned."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_382",
+      "applicant_name": "Mabole Sawa -Sawa cutering women group",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 26,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Woman-owned and at least one green practice mentioned."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_383",
+      "applicant_name": "Emahongoyo Mwangaza Youth Group",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 27,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Woman-owned and at least one green practice mentioned."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_392",
+      "applicant_name": "BUTERE CONSTUCTION EXPERT FORM",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 28,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type Other and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC construction, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_394",
+      "applicant_name": "Firotwa Youth Aquaculture group",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 29,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Woman-owned and at least one green practice mentioned."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_404",
+      "applicant_name": "New Safina Self Help Group",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 30,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Woman-owned and at least one green practice mentioned."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_415",
+      "applicant_name": "NEW MASH CREDIT AND SAVINGS COOPERATIVE SOCIETY",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 31,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type Cooperative and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Woman-owned and at least one green practice mentioned."
+        }
+      }
+    },
+    {
+      "application_id": "",
+      "applicant_name": "PalmOil Honey Company limited",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 32,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type Private company and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC edible oils, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Woman-owned and at least one green practice mentioned."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_445",
+      "applicant_name": "Butere Miracle Youth Group",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 33,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_463",
+      "applicant_name": "THE FRAM YOUTH GROUP",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 34,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type Other and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 85, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC construction, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_464",
+      "applicant_name": "BUTERE MUMIAS LOCAL POULTRY COOPERATIVE SOCIETY LIMITED",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 35,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type Cooperative and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC rice, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Woman-owned and at least one green practice mentioned."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_477",
+      "applicant_name": "LYNMUK ENTERPRISES",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 36,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type Private company and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_484",
+      "applicant_name": "Butere Utawala Self Help Group",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 37,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Woman-owned and at least one green practice mentioned."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_488",
+      "applicant_name": "Dream Team Youth group",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 38,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type Other and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 50, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Woman-owned and at least one green practice mentioned."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_489",
+      "applicant_name": "Bukeri Youth Group",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 39,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_508",
+      "applicant_name": "Kisa West Area Pastors Self Help Group",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 40,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_510",
+      "applicant_name": "Maramba South Umoja Self Help Group",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 41,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Woman-owned and at least one green practice mentioned."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_517",
+      "applicant_name": "KENTISH LIMITED COMPANY",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 42,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type Private company and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC construction, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_519",
+      "applicant_name": "Boda boda corner Self Help Group",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 43,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_520",
+      "applicant_name": "New Mwangaza Progressive Self Help Group",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 44,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Woman-owned and at least one green practice mentioned."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_522",
+      "applicant_name": "MANYULIA PETROL BODA BODA GROUP",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 45,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_523",
+      "applicant_name": "SABATIA DRIVERS SELF HELP GROUP",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 46,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_528",
+      "applicant_name": "Sabatia Main Junction boda boda Youth Group",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 47,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_529",
+      "applicant_name": "Koyonzo Community Health Workers Women Group",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 48,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_530",
+      "applicant_name": "Mwangaza Digital Self Help Group",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 49,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Woman-owned and at least one green practice mentioned."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_536",
+      "applicant_name": "BUTERE SUB-COUNTY ECDE TEACHERS CBO",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 50,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Woman-owned and at least one green practice mentioned."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_537",
+      "applicant_name": "BUBALA COMMUNITY HEALTH AND DEVELOPMENT ORGANIZATION",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 51,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Woman-owned and at least one green practice mentioned."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_560",
+      "applicant_name": "EMURWA TWENDE MBELE SELF HELP GROUP",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 52,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "",
+      "applicant_name": "Deck Construction Limited",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 53,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type Private company and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 70, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC construction, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Woman-owned and at least one green practice mentioned."
+        }
+      }
+    },
+    {
+      "application_id": "",
+      "applicant_name": "Musanda Umoja Savings and Credit Cooperative society Limited",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 54,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type Other and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 80, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Woman-owned and at least one green practice mentioned."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_580",
+      "applicant_name": "SHIKANGU WELFARE DEVELOPMENT SELF HELP GROUP",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 55,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Woman-owned and at least one green practice mentioned."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_582",
+      "applicant_name": "BUTERE BOYS HIGH SCHOOL NON TEACHING STAFF SELF HELP GROUP",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 56,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_585",
+      "applicant_name": "KINGDOM PEOPLE LIVING WITH DISABILITY SELF HELP GROUP MUYUNDI",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 57,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_587",
+      "applicant_name": "VINOM MEDIA SOLUTIONS",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 58,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type Private company and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 80, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC rice, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_589",
+      "applicant_name": "ALL ROUND SAVINGS AND CREDIT CO-OPERATIVE SOCIETY LIMITED",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 59,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type Cooperative and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_598",
+      "applicant_name": "ESHIUNGA MWANGAZA EDUCATIONAL DEPARTMENT GROUP",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 60,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_599",
+      "applicant_name": "LUNZA AMAZING SISTERS WOMEN GROUP",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 61,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_600",
+      "applicant_name": "SAKALA MCHANGA SELF HELP GROUP",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 62,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_601",
+      "applicant_name": "ESHINYULU UNITED CBO",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 63,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_635",
+      "applicant_name": "LUKOHE UNITED SELF GROUP",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 64,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_641",
+      "applicant_name": "LUBUSHINA SELF HELP GROUP",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 65,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_644",
+      "applicant_name": "BUTERE PARTNERS GROUP",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 66,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_646",
+      "applicant_name": "EMULESHE FRIENDS WOMEN GROUP",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 67,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Woman-owned and at least one green practice mentioned."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_648",
+      "applicant_name": "DEFJORDS INVESTMENTS",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 68,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type Private company and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_664",
+      "applicant_name": "IBOKOLO USALAMA SUB-LOCATION GROUP",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 69,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_665",
+      "applicant_name": "KHAYEGA WELFARE SELF HELP GROUP",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 70,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_688",
+      "applicant_name": "NAIROBI SHIKUNGA WELFARE ASSOCIATION",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 71,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_690",
+      "applicant_name": "CROWN YOUTH GROUP",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 72,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Multiple green practices documented."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_693",
+      "applicant_name": "TEMA FIVE CORNER STONE SELF HELP GROUP",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 73,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 39.0, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Woman-owned and at least one green practice mentioned."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_698",
+      "applicant_name": "INGO AGRICHAMPS YOUTH ASSOCIATION",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 74,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type MSME Association and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 90, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Woman-owned and at least one green practice mentioned."
+        }
+      }
+    },
+    {
+      "application_id": "Kakamega_705",
+      "applicant_name": "Musoli Welfare group",
+      "eligibility_status": "Eligible",
+      "composite_score": 4.15,
+      "rank": 75,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4,
+          "reason": "Business type Other and governance roles listed."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2,
+          "reason": "Turnover \u2248 KES 100, under 1M band."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5,
+          "reason": "Active contracts or POs and multiple channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5,
+          "reason": "Strong plan with costed budget, risks and targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5,
+          "reason": "Priority VC dairy, fills a processing or aggregation node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4,
+          "reason": "Woman-owned and at least one green practice mentioned."
+        }
       }
     }
   ],
-  "ineligible_applicants": [
-    {
-      "application_id": "Kakamega_705",
-      "applicant_name": "Musoli Welfare Group",
-      "eligibility_status": "Ineligible",
-      "ineligibility_criterion_failed": "E1 - Registration & Legality AND E3 - Priority Value Chain",
-      "reason": "The entity is registered as an 'Other' type (Welfare Group), which is not a legally recognized cluster entity (MSME association, cooperative, or company) for this program (E1). Furthermore, the primary focus appears to be generalized 'Welfare' and undefined activities in multiple VCs ('dairy', 'tea', 'rice', etc.), failing to meet the requirement of operating in a specific KJET Priority Value Chain (E3)."
-    }
-  ]
+  "ineligible_applicants": [],
+  "notes": "Automated, best-effort scoring using heuristics from rules.md. See per-criterion reasons for details."
 }

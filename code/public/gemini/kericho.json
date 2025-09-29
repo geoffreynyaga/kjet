@@ -1,0 +1,490 @@
+{
+  "report_title": "KJET Application Evaluation and Ranking for Kericho County",
+  "total_applications_evaluated": 19,
+  "county": "Kericho",
+  "ranked_applicants": [
+    {
+      "application_id": "Kericho_674",
+      "application_number": "KJET-9B3E0674",
+      "applicant_name": "KENYARIRI DAIRY COOPERATIVE SOCIETY LIMITED",
+      "county": "Kericho",
+      "composite_score": 0.0,
+      "eligibility_status": "Ineligible",
+      "rank": null,
+      "eligibility_details": {
+        "E1_Registration_Pass": true,
+        "E2_County_Pass": true,
+        "E3_Priority_VC_Pass": true,
+        "E4_Financial_Evidence_Pass": false
+      },
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": 0,
+        "S2_Financial_Position_20%": 0,
+        "S3_Market_Demand_Competitiveness_20%": 0,
+        "S4_Business_Proposal_Viability_25%": 0,
+        "S5_Value_Chain_Alignment_10%": 0,
+        "S6_Inclusivity_Sustainability_20%": 0
+      }
+    },
+    {
+      "application_id": "Kericho_678",
+      "application_number": "KJET-821B0678",
+      "applicant_name": "KORWA FARMERS CO-OPERATIVE SOCIETY LIMITED",
+      "county": "Kericho",
+      "composite_score": 0.0,
+      "eligibility_status": "Ineligible",
+      "rank": null,
+      "eligibility_details": {
+        "E1_Registration_Pass": true,
+        "E2_County_Pass": true,
+        "E3_Priority_VC_Pass": true,
+        "E4_Financial_Evidence_Pass": false
+      },
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": 0,
+        "S2_Financial_Position_20%": 0,
+        "S3_Market_Demand_Competitiveness_20%": 0,
+        "S4_Business_Proposal_Viability_25%": 0,
+        "S5_Value_Chain_Alignment_10%": 0,
+        "S6_Inclusivity_Sustainability_20%": 0
+      }
+    },
+    {
+      "application_id": "Kericho_679",
+      "application_number": "KJET-46540679",
+      "applicant_name": "MASHOYA TEA FARMERS SACCO",
+      "county": "Kericho",
+      "composite_score": 0.0,
+      "eligibility_status": "Ineligible",
+      "rank": null,
+      "eligibility_details": {
+        "E1_Registration_Pass": true,
+        "E2_County_Pass": true,
+        "E3_Priority_VC_Pass": false,
+        "E4_Financial_Evidence_Pass": false
+      },
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": 0,
+        "S2_Financial_Position_20%": 0,
+        "S3_Market_Demand_Competitiveness_20%": 0,
+        "S4_Business_Proposal_Viability_25%": 0,
+        "S5_Value_Chain_Alignment_10%": 0,
+        "S6_Inclusivity_Sustainability_20%": 0
+      }
+    },
+    {
+      "application_id": "Kericho_680",
+      "application_number": "KJET-EDF90680",
+      "applicant_name": "CHESIRE BEEF FEEDLOT",
+      "county": "Kericho",
+      "composite_score": 0.0,
+      "eligibility_status": "Ineligible",
+      "rank": null,
+      "eligibility_details": {
+        "E1_Registration_Pass": true,
+        "E2_County_Pass": true,
+        "E3_Priority_VC_Pass": false,
+        "E4_Financial_Evidence_Pass": false
+      },
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": 0,
+        "S2_Financial_Position_20%": 0,
+        "S3_Market_Demand_Competitiveness_20%": 0,
+        "S4_Business_Proposal_Viability_25%": 0,
+        "S5_Value_Chain_Alignment_10%": 0,
+        "S6_Inclusivity_Sustainability_20%": 0
+      }
+    },
+    {
+      "application_id": "Kericho_681",
+      "application_number": "KJET-20290681",
+      "applicant_name": "CHEMUKUWA COOPERATIVE SOCIETY LIMITED",
+      "county": "Kericho",
+      "composite_score": 0.0,
+      "eligibility_status": "Ineligible",
+      "rank": null,
+      "eligibility_details": {
+        "E1_Registration_Pass": true,
+        "E2_County_Pass": true,
+        "E3_Priority_VC_Pass": true,
+        "E4_Financial_Evidence_Pass": false
+      },
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": 0,
+        "S2_Financial_Position_20%": 0,
+        "S3_Market_Demand_Competitiveness_20%": 0,
+        "S4_Business_Proposal_Viability_25%": 0,
+        "S5_Value_Chain_Alignment_10%": 0,
+        "S6_Inclusivity_Sustainability_20%": 0
+      }
+    },
+    {
+      "application_id": "Kericho_685",
+      "application_number": "KJET-79B40685",
+      "applicant_name": "RIIY FARMERS COOPERATIVE SOCIETY LIMITED",
+      "county": "Kericho",
+      "composite_score": 0.0,
+      "eligibility_status": "Ineligible",
+      "rank": null,
+      "eligibility_details": {
+        "E1_Registration_Pass": true,
+        "E2_County_Pass": true,
+        "E3_Priority_VC_Pass": true,
+        "E4_Financial_Evidence_Pass": false
+      },
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": 0,
+        "S2_Financial_Position_20%": 0,
+        "S3_Market_Demand_Competitiveness_20%": 0,
+        "S4_Business_Proposal_Viability_25%": 0,
+        "S5_Value_Chain_Alignment_10%": 0,
+        "S6_Inclusivity_Sustainability_20%": 0
+      }
+    },
+    {
+      "application_id": "Kericho_687",
+      "application_number": "KJET-81780687",
+      "applicant_name": "CHEBWAI TEA GROWERS CO-OPERATIVE SOCIETY LIMITED",
+      "county": "Kericho",
+      "composite_score": 0.0,
+      "eligibility_status": "Ineligible",
+      "rank": null,
+      "eligibility_details": {
+        "E1_Registration_Pass": true,
+        "E2_County_Pass": true,
+        "E3_Priority_VC_Pass": false,
+        "E4_Financial_Evidence_Pass": false
+      },
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": 0,
+        "S2_Financial_Position_20%": 0,
+        "S3_Market_Demand_Competitiveness_20%": 0,
+        "S4_Business_Proposal_Viability_25%": 0,
+        "S5_Value_Chain_Alignment_10%": 0,
+        "S6_Inclusivity_Sustainability_20%": 0
+      }
+    },
+    {
+      "application_id": "Kericho_688",
+      "application_number": "KJET-671A0688",
+      "applicant_name": "KENYARIRI DAIRY COOPERATIVE SOCIETY LIMITED",
+      "county": "Kericho",
+      "composite_score": 0.0,
+      "eligibility_status": "Ineligible",
+      "rank": null,
+      "eligibility_details": {
+        "E1_Registration_Pass": true,
+        "E2_County_Pass": true,
+        "E3_Priority_VC_Pass": true,
+        "E4_Financial_Evidence_Pass": false
+      },
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": 0,
+        "S2_Financial_Position_20%": 0,
+        "S3_Market_Demand_Competitiveness_20%": 0,
+        "S4_Business_Proposal_Viability_25%": 0,
+        "S5_Value_Chain_Alignment_10%": 0,
+        "S6_Inclusivity_Sustainability_20%": 0
+      }
+    },
+    {
+      "application_id": "Kericho_689",
+      "application_number": "KJET-04D60689",
+      "applicant_name": "KORWA FARMERS CO-OPERATIVE SOCIETY LIMITED",
+      "county": "Kericho",
+      "composite_score": 0.0,
+      "eligibility_status": "Ineligible",
+      "rank": null,
+      "eligibility_details": {
+        "E1_Registration_Pass": true,
+        "E2_County_Pass": true,
+        "E3_Priority_VC_Pass": true,
+        "E4_Financial_Evidence_Pass": false
+      },
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": 0,
+        "S2_Financial_Position_20%": 0,
+        "S3_Market_Demand_Competitiveness_20%": 0,
+        "S4_Business_Proposal_Viability_25%": 0,
+        "S5_Value_Chain_Alignment_10%": 0,
+        "S6_Inclusivity_Sustainability_20%": 0
+      }
+    },
+    {
+      "application_id": "Kericho_690",
+      "application_number": "KJET-E5C70690",
+      "applicant_name": "MASHOYA TEA FARMERS SACCO",
+      "county": "Kericho",
+      "composite_score": 0.0,
+      "eligibility_status": "Ineligible",
+      "rank": null,
+      "eligibility_details": {
+        "E1_Registration_Pass": true,
+        "E2_County_Pass": true,
+        "E3_Priority_VC_Pass": false,
+        "E4_Financial_Evidence_Pass": false
+      },
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": 0,
+        "S2_Financial_Position_20%": 0,
+        "S3_Market_Demand_Competitiveness_20%": 0,
+        "S4_Business_Proposal_Viability_25%": 0,
+        "S5_Value_Chain_Alignment_10%": 0,
+        "S6_Inclusivity_Sustainability_20%": 0
+      }
+    },
+    {
+      "application_id": "Kericho_692",
+      "application_number": "KJET-D99A0692",
+      "applicant_name": "TALATANY DAIRY FARMERS CO-OPERATIVE SOCIETY LTD",
+      "county": "Kericho",
+      "composite_score": 0.0,
+      "eligibility_status": "Ineligible",
+      "rank": null,
+      "eligibility_details": {
+        "E1_Registration_Pass": true,
+        "E2_County_Pass": true,
+        "E3_Priority_VC_Pass": true,
+        "E4_Financial_Evidence_Pass": false
+      },
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": 0,
+        "S2_Financial_Position_20%": 0,
+        "S3_Market_Demand_Competitiveness_20%": 0,
+        "S4_Business_Proposal_Viability_25%": 0,
+        "S5_Value_Chain_Alignment_10%": 0,
+        "S6_Inclusivity_Sustainability_20%": 0
+      }
+    },
+    {
+      "application_id": "Kericho_695",
+      "application_number": "KJET-671A0695",
+      "applicant_name": "LITEIN DAIRY CO-OPERATIVE SOCIETY LTD",
+      "county": "Kericho",
+      "composite_score": 0.0,
+      "eligibility_status": "Ineligible",
+      "rank": null,
+      "eligibility_details": {
+        "E1_Registration_Pass": true,
+        "E2_County_Pass": true,
+        "E3_Priority_VC_Pass": true,
+        "E4_Financial_Evidence_Pass": false
+      },
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": 0,
+        "S2_Financial_Position_20%": 0,
+        "S3_Market_Demand_Competitiveness_20%": 0,
+        "S4_Business_Proposal_Viability_25%": 0,
+        "S5_Value_Chain_Alignment_10%": 0,
+        "S6_Inclusivity_Sustainability_20%": 0
+      }
+    },
+    {
+      "application_id": "Kericho_696",
+      "application_number": "KJET-79B40696",
+      "applicant_name": "RIIY FARMERS COOPERATIVE SOCIETY LIMITED",
+      "county": "Kericho",
+      "composite_score": 0.0,
+      "eligibility_status": "Ineligible",
+      "rank": null,
+      "eligibility_details": {
+        "E1_Registration_Pass": true,
+        "E2_County_Pass": true,
+        "E3_Priority_VC_Pass": true,
+        "E4_Financial_Evidence_Pass": false
+      },
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": 0,
+        "S2_Financial_Position_20%": 0,
+        "S3_Market_Demand_Competitiveness_20%": 0,
+        "S4_Business_Proposal_Viability_25%": 0,
+        "S5_Value_Chain_Alignment_10%": 0,
+        "S6_Inclusivity_Sustainability_20%": 0
+      }
+    },
+    {
+      "application_id": "Kericho_697",
+      "application_number": "KJET-81780697",
+      "applicant_name": "CHEBWAI TEA GROWERS CO-OPERATIVE SOCIETY LIMITED",
+      "county": "Kericho",
+      "composite_score": 0.0,
+      "eligibility_status": "Ineligible",
+      "rank": null,
+      "eligibility_details": {
+        "E1_Registration_Pass": true,
+        "E2_County_Pass": true,
+        "E3_Priority_VC_Pass": false,
+        "E4_Financial_Evidence_Pass": false
+      },
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": 0,
+        "S2_Financial_Position_20%": 0,
+        "S3_Market_Demand_Competitiveness_20%": 0,
+        "S4_Business_Proposal_Viability_25%": 0,
+        "S5_Value_Chain_Alignment_10%": 0,
+        "S6_Inclusivity_Sustainability_20%": 0
+      }
+    },
+    {
+      "application_id": "Kericho_699",
+      "application_number": "KJET-715B0699",
+      "applicant_name": "CHESIRE BEEF FEEDLOT",
+      "county": "Kericho",
+      "composite_score": 0.0,
+      "eligibility_status": "Ineligible",
+      "rank": null,
+      "eligibility_details": {
+        "E1_Registration_Pass": true,
+        "E2_County_Pass": true,
+        "E3_Priority_VC_Pass": false,
+        "E4_Financial_Evidence_Pass": false
+      },
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": 0,
+        "S2_Financial_Position_20%": 0,
+        "S3_Market_Demand_Competitiveness_20%": 0,
+        "S4_Business_Proposal_Viability_25%": 0,
+        "S5_Value_Chain_Alignment_10%": 0,
+        "S6_Inclusivity_Sustainability_20%": 0
+      }
+    },
+    {
+      "application_id": "Kericho_702",
+      "application_number": "KJET-1F4F0702",
+      "applicant_name": "CHEMUKUWA COOPERATIVE SOCIETY LIMITED",
+      "county": "Kericho",
+      "composite_score": 0.0,
+      "eligibility_status": "Ineligible",
+      "rank": null,
+      "eligibility_details": {
+        "E1_Registration_Pass": true,
+        "E2_County_Pass": true,
+        "E3_Priority_VC_Pass": true,
+        "E4_Financial_Evidence_Pass": false
+      },
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": 0,
+        "S2_Financial_Position_20%": 0,
+        "S3_Market_Demand_Competitiveness_20%": 0,
+        "S4_Business_Proposal_Viability_25%": 0,
+        "S5_Value_Chain_Alignment_10%": 0,
+        "S6_Inclusivity_Sustainability_20%": 0
+      }
+    },
+    {
+      "application_id": "Kericho_703",
+      "application_number": "KJET-9B3E0703",
+      "applicant_name": "KENYARIRI DAIRY COOPERATIVE SOCIETY LIMITED",
+      "county": "Kericho",
+      "composite_score": 0.0,
+      "eligibility_status": "Ineligible",
+      "rank": null,
+      "eligibility_details": {
+        "E1_Registration_Pass": true,
+        "E2_County_Pass": true,
+        "E3_Priority_VC_Pass": true,
+        "E4_Financial_Evidence_Pass": false
+      },
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": 0,
+        "S2_Financial_Position_20%": 0,
+        "S3_Market_Demand_Competitiveness_20%": 0,
+        "S4_Business_Proposal_Viability_25%": 0,
+        "S5_Value_Chain_Alignment_10%": 0,
+        "S6_Inclusivity_Sustainability_20%": 0
+      }
+    },
+    {
+      "application_id": "Kericho_704",
+      "application_number": "KJET-821B0704",
+      "applicant_name": "KORWA FARMERS CO-OPERATIVE SOCIETY LIMITED",
+      "county": "Kericho",
+      "composite_score": 0.0,
+      "eligibility_status": "Ineligible",
+      "rank": null,
+      "eligibility_details": {
+        "E1_Registration_Pass": true,
+        "E2_County_Pass": true,
+        "E3_Priority_VC_Pass": true,
+        "E4_Financial_Evidence_Pass": false
+      },
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": 0,
+        "S2_Financial_Position_20%": 0,
+        "S3_Market_Demand_Competitiveness_20%": 0,
+        "S4_Business_Proposal_Viability_25%": 0,
+        "S5_Value_Chain_Alignment_10%": 0,
+        "S6_Inclusivity_Sustainability_20%": 0
+      }
+    },
+    {
+      "application_id": "Kericho_707",
+      "application_number": "KJET-671A0707",
+      "applicant_name": "LITEIN DAIRY CO-OPERATIVE SOCIETY LTD",
+      "county": "Kericho",
+      "composite_score": 0.0,
+      "eligibility_status": "Ineligible",
+      "rank": null,
+      "eligibility_details": {
+        "E1_Registration_Pass": true,
+        "E2_County_Pass": true,
+        "E3_Priority_VC_Pass": true,
+        "E4_Financial_Evidence_Pass": false
+      },
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": 0,
+        "S2_Financial_Position_20%": 0,
+        "S3_Market_Demand_Competitiveness_20%": 0,
+        "S4_Business_Proposal_Viability_25%": 0,
+        "S5_Value_Chain_Alignment_10%": 0,
+        "S6_Inclusivity_Sustainability_20%": 0
+      }
+    },
+    {
+      "application_id": "Kericho_709",
+      "application_number": "KJET-E5C70709",
+      "applicant_name": "MASHOYA TEA FARMERS SACCO",
+      "county": "Kericho",
+      "composite_score": 0.0,
+      "eligibility_status": "Ineligible",
+      "rank": null,
+      "eligibility_details": {
+        "E1_Registration_Pass": true,
+        "E2_County_Pass": true,
+        "E3_Priority_VC_Pass": false,
+        "E4_Financial_Evidence_Pass": false
+      },
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": 0,
+        "S2_Financial_Position_20%": 0,
+        "S3_Market_Demand_Competitiveness_20%": 0,
+        "S4_Business_Proposal_Viability_25%": 0,
+        "S5_Value_Chain_Alignment_10%": 0,
+        "S6_Inclusivity_Sustainability_20%": 0
+      }
+    },
+    {
+      "application_id": "Kericho_712",
+      "application_number": "KJET-EDF90712",
+      "applicant_name": "CHESIRE BEEF FEEDLOT",
+      "county": "Kericho",
+      "composite_score": 0.0,
+      "eligibility_status": "Ineligible",
+      "rank": null,
+      "eligibility_details": {
+        "E1_Registration_Pass": true,
+        "E2_County_Pass": true,
+        "E3_Priority_VC_Pass": false,
+        "E4_Financial_Evidence_Pass": false
+      },
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": 0,
+        "S2_Financial_Position_20%": 0,
+        "S3_Market_Demand_Competitiveness_20%": 0,
+        "S4_Business_Proposal_Viability_25%": 0,
+        "S5_Value_Chain_Alignment_10%": 0,
+        "S6_Inclusivity_Sustainability_20%": 0
+      }
+    }
+  ]
+}

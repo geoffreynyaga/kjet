@@ -1,0 +1,281 @@
+{
+  "report_title": "KJET Kitui County Application Ranking and Evaluation",
+  "selection_criteria_weights": {
+    "S1_Registration_Track_Record_5%": 0.05,
+    "S2_Financial_Position_20%": 0.2,
+    "S3_Market_Demand_Competitiveness_20%": 0.2,
+    "S4_Business_Proposal_Viability_25%": 0.25,
+    "S5_Value_Chain_Alignment_10%": 0.1,
+    "S6_Inclusivity_Sustainability_20%": 0.2
+  },
+  "ranked_applicants": [
+    {
+      "rank": 1,
+      "application_id": "Kitui_201",
+      "applicant_name": "Mwingi Sand Harvesting Co-operative Society Limited",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 96.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Cooperative registered >3 yrs (CS/11254) with functioning governance (Score 5)."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 4.0,
+          "reason": "Projected KES 20M+ Net Surplus; KES 100k 2024 Turnover, positive trend (Score 4)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "Monopoly (sole sand cooperative); clear B2B strategy (Affordable Housing Project) (Score 5)."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5.0,
+          "reason": "Clear problem/solution (sand value-add/transport); quantified targets (6 lorries, 400 jobs); detailed plan (Score 5)."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VC (Construction-sand/gravel); fills critical extraction, value-add, and logistics node (Score 5)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "High women participation (40% leadership, 33% membership); 2+ green practices (NEMA EIAs, tree planting, riverbank rehab) (Score 5)."
+        }
+      }
+    },
+    {
+      "rank": 2,
+      "application_id": "Kitui_441",
+      "applicant_name": "Kitui Forest Products Producers Group",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 81.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Cooperative registered >3 yrs; documented leadership and operations (Score 5)."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 4.0,
+          "reason": "Turnover 5–<10M (KES 8.2M in 2024); stable trend (Score 4)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.0,
+          "reason": "Consistent sales (B2B furniture makers); basic quality assurance (Score 4)."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Strong plan (kiln acquisition); targets and timelines present (Score 4)."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Additional VC (Forestry); fills critical processing/value addition node (timber treatment) (Score 5)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.0,
+          "reason": "Moderate inclusion (40% youth); some intent on sustainability (replanting, waste reduction) (Score 3)."
+        }
+      }
+    },
+    {
+      "rank": 3,
+      "application_id": "Kitui_591",
+      "applicant_name": "Sosye Goat Keepers Group",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 79.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Group registered >3 yrs; functioning governance (Score 5)."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "Turnover 1–<5M (KES 3.1M in 2024); stable trend (Score 3)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.0,
+          "reason": "Consistent local sales; growing B2C (Score 4)."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Strong plan (milk plant/processing); quantified targets (Score 4)."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VC (Dairy - goat milk); fills critical processing/value addition node (Score 5)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.0,
+          "reason": "Moderate inclusion (40% women, 55% youth); some intent on sustainability (hay/fodder) (Score 3)."
+        }
+      }
+    },
+    {
+      "rank": 4,
+      "application_id": "Kitui_300",
+      "applicant_name": "MYINGI MWOVA SACCO LIMITED",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 77.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "SACCO registered >3 yrs; documented leadership (Score 5)."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "Turnover 1–<5M (KES 4.55M in 2024); stable/recovering trend (Score 3)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "Regular sales (B2C & B2B rentals) (Score 3)."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Plan to acquire stone crusher/cabro block machine; clear objective; targets present (Score 4)."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VC (Construction - rental/material production); fills critical material production node (Score 5)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.0,
+          "reason": "Moderate inclusion (40% youth); some green practices (tree planting, gas use) (Score 3)."
+        }
+      }
+    },
+    {
+      "rank": 5,
+      "application_id": "Kitui_629",
+      "applicant_name": "ENZIU SAND HARVESTING SELF HELP GROUP",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 75.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Self Help Group registered >3 yrs; documented leadership (Score 5)."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "Turnover 1–<5M (KES 250k in 2024); decreasing trend but stable (Score 3)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "Regular sales to contractors/transporters (B2B & B2C) (Score 3)."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Clear problem/solution (formalization/equipment); quantified targets (truck, 2,000 trees) (Score 4)."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VC (Construction-sand); fills critical extraction/logistics node (Score 5)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.0,
+          "reason": "Moderate inclusion (45% women, 55% youth); some green practices (tree planting, riverbank rehab) (Score 3)."
+        }
+      }
+    },
+    {
+      "rank": 6,
+      "application_id": "Kitui_595",
+      "applicant_name": "Kitui Honey Production Association",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 72.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Association registered >3 yrs; documented leadership (Score 5)."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2.0,
+          "reason": "Turnover <1M (KES 950k in 2024); sporadic records (Score 2)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "Regular B2C sales; local market (Score 3)."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Strong plan (processing/packaging); quantified targets (increase apiaries/members) (Score 4)."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Additional VC (Forestry - non-timber products); fills critical processing/value addition node (Score 5)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.0,
+          "reason": "Moderate inclusion (40% women); some intent on sustainability (solar drying, non-toxic preservatives) (Score 3)."
+        }
+      }
+    },
+    {
+      "rank": 7,
+      "application_id": "Kitui_593",
+      "applicant_name": "Kitui Textiles Producers Limited",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 67.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.0,
+          "reason": "Private Company registered <1 yr (since 2024); basic structure (Score 3)."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "Turnover 1–<5M (KES 1.5M in 2024); stable trend (Score 3)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "Regular sales (local B2C & B2B) (Score 3)."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Direction clear (equipment acquisition); targets generic (Score 3)."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VC (Textiles); fills critical manufacturing/value addition node (Score 5)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.0,
+          "reason": "Moderate inclusion (50% youth, 40% women); some intent on sustainability (local sourcing) (Score 3)."
+        }
+      }
+    }
+  ],
+  "ineligible_applicants": [
+    {
+      "application_id": "Kitui_225",
+      "applicant_name": "Mwingi Charcoal Traders Association",
+      "eligibility_status": "INELIGIBLE",
+      "ineligibility_criterion_failed": "E3",
+      "reason": "Charcoal production/trade is not a designated Priority/Additional Value Chain (E3)."
+    },
+    {
+      "application_id": "Kitui_242",
+      "applicant_name": "Mulango Edible Oils Producers Self Help Group",
+      "eligibility_status": "INELIGIBLE",
+      "ineligibility_criterion_failed": "E4",
+      "reason": "Financial documents were not provided/were unreadable 'CamScanner' images (E4)."
+    },
+    {
+      "application_id": "Kitui_368",
+      "applicant_name": "KITUI AGRO-CHEMICALS AND FARM INPUTS ASSOCIATION",
+      "eligibility_status": "INELIGIBLE",
+      "ineligibility_criterion_failed": "E3",
+      "reason": "Value Chain (Farm Inputs/Agro-Chemicals Retail) is not a designated Priority/Additional VC (E3)."
+    },
+    {
+      "application_id": "Kitui_636",
+      "applicant_name": "MYUUNI VISION SELF HELP GROUP",
+      "eligibility_status": "INELIGIBLE",
+      "ineligibility_criterion_failed": "E4",
+      "reason": "Financial documents were corrupted/image-based and unreadable (E4)."
+    },
+    {
+      "application_id": "Kitui_641",
+      "applicant_name": "Kitui Mining Co-operative Society Limited",
+      "eligibility_status": "INELIGIBLE",
+      "ineligibility_criterion_failed": "E4",
+      "reason": "Financial documents were not provided/were unreadable 'CamScanner' images (E4)."
+    }
+  ]
+}

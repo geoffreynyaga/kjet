@@ -1,0 +1,123 @@
+{
+  "report_title": "KJET Kilifi County Application Ranking and Evaluation",
+  "selection_criteria_weights": {
+    "S1_Registration_Track_Record_5%": 0.05,
+    "S2_Financial_Position_20%": 0.2,
+    "S3_Market_Demand_Competitiveness_20%": 0.2,
+    "S4_Business_Proposal_Viability_25%": 0.25,
+    "S5_Value_Chain_Alignment_10%": 0.1,
+    "S6_Inclusivity_Sustainability_20%": 0.2
+  },
+  "ranked_applicants": [
+    {
+      "rank": 1,
+      "application_id": "Kilifi_558",
+      "applicant_name": "UZIMA LIVESTOCK LTD",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 74.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.0,
+          "reason": "Registered, but low and unstable turnover suggests recent operations (Score 3)."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 4.0,
+          "reason": "Turnover (120,000 KES in 2024) and bank balance (KES 756) are minimal/irregular (Score 1)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 16.0,
+          "reason": "Strong potential markets (local village producers, urban/institutional buyers) and clear cooling/processing plan (Score 4)."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 25.0,
+          "reason": "Clear problem/solution, quantified targets (e.g., 500L/day Year 1), detailed execution and co-investment readiness (Score 5)."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 10.0,
+          "reason": "Priority VC (Dairy processing/cooling); fills a critical node (aggregation/cooling) to upgrade the value chain (Score 5)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 16.0,
+          "reason": "Strong gender/youth participation goals (70% youth goal) and multiple green practices planned (Solar, Water Harvesting, Fodder) (Score 4)."
+        }
+      }
+    },
+    {
+      "rank": 2,
+      "application_id": "Kilifi_549",
+      "applicant_name": "COCONUT PRODUCERS CONSORTIUM LIMITED",
+      "eligibility_status": "ELIGIBLE",
+      "composite_score": 57.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.0,
+          "reason": "Registered since 2015 (>3 years), but financial activity shows a heavy reliance on grants/donations rather than commercial track record (Score 4)."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 8.0,
+          "reason": "Turnover dropped from KES 3.9M (2023) to KES 1.4M (2024), showing instability; 2023 revenue was largely donation-based (Score 2)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 12.0,
+          "reason": "Regular sales channels (hotels/restaurants, direct sales) and known competitors, meets basic demand evidence (Score 3)."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 15.0,
+          "reason": "Clear direction (procurement targets for coconuts), but targets are generic and budget is rough/unclear on execution details (Score 3)."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 10.0,
+          "reason": "Priority VC (Edible Oils); clear value-addition role (processing) with documented linkages (members are farmers) (Score 5)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 8.0,
+          "reason": "No specific green practices mentioned in detail; low inclusion of sustainability evidence (Score 2)."
+        }
+      }
+    }
+  ],
+  "ineligible_applicants": [
+    {
+      "application_id": "Kilifi_280",
+      "applicant_name": "Migombani Organics (K) LTD",
+      "eligibility_status": "INELIGIBLE",
+      "ineligibility_criterion_failed": "E3",
+      "reason": "Value Chain (Agriculture/Fresh Produce) is not a designated Priority or Additional Value Chain as per the KJET rules."
+    },
+    {
+      "application_id": "Kilifi_552",
+      "applicant_name": "Mwanganga Nuts Limited",
+      "eligibility_status": "INELIGIBLE",
+      "ineligibility_criterion_failed": "E3",
+      "reason": "Value Chain (Cashew Nuts) is not a designated Priority or Additional Value Chain as per the KJET rules."
+    },
+    {
+      "application_id": "Kilifi_577",
+      "applicant_name": "Bynix Technologies Solutions",
+      "eligibility_status": "INELIGIBLE",
+      "ineligibility_criterion_failed": "E3",
+      "reason": "Value Chain (Technology/Software) is not a designated Priority or Additional Value Chain as per the KJET rules."
+    },
+    {
+      "application_id": "Kilifi_602",
+      "applicant_name": "Pwani Fish Industries Limited",
+      "eligibility_status": "INELIGIBLE",
+      "ineligibility_criterion_failed": "E4",
+      "reason": "No verifiable financial evidence (statement, balance sheet, or income statement) was successfully extracted/provided."
+    },
+    {
+      "application_id": "Kilifi_604",
+      "applicant_name": "Madzibu Virgin Oil Association",
+      "eligibility_status": "INELIGIBLE",
+      "ineligibility_criterion_failed": "E4",
+      "reason": "Financial evidence (Balance Sheet) was provided but was unreadable/corrupted upon extraction, resulting in no verifiable evidence."
+    },
+    {
+      "application_id": "Kilifi_605",
+      "applicant_name": "AMANI NGAMANI SELF HELP GROUP",
+      "eligibility_status": "INELIGIBLE",
+      "ineligibility_criterion_failed": "E4",
+      "reason": "Financial evidence (Cash-Based Books) was provided but was unreadable/corrupted upon extraction, resulting in no verifiable evidence."
+    }
+  ]
+}
