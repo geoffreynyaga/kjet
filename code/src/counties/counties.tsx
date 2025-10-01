@@ -48,6 +48,7 @@ interface ApplicationEvaluation {
   scoring?: {
     composite_score: number;
   };
+  human_score?: number;
 }
 
 interface CountyEvaluation {
@@ -147,15 +148,15 @@ function CountiesHome() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+      <div className="flex items-center justify-center min-h-screen bg-gray-50">
         <motion.div 
           className="text-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="loading-spinner mx-auto mb-4"></div>
-          <p className="text-gray-600 text-lg">Loading KJET Evaluation Dashboard...</p>
+          <div className="mx-auto mb-4 loading-spinner"></div>
+          <p className="text-lg text-gray-600">Loading KJET Evaluation Dashboard...</p>
         </motion.div>
       </div>
     );
@@ -164,13 +165,13 @@ function CountiesHome() {
   if (error) {
     return (
       <motion.div 
-        className="min-h-screen bg-gray-50 flex items-center justify-center"
+        className="flex items-center justify-center min-h-screen bg-gray-50"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="text-center bg-white p-8 rounded-lg shadow-lg max-w-md">
-          <h2 className="text-2xl font-bold text-red-600 mb-4">Error Loading Data</h2>
+        <div className="max-w-md p-8 text-center bg-white rounded-lg shadow-lg">
+          <h2 className="mb-4 text-2xl font-bold text-red-600">Error Loading Data</h2>
           <p className="text-gray-600">{error}</p>
         </div>
       </motion.div>
@@ -180,14 +181,14 @@ function CountiesHome() {
   // Type guard: ensure nationalSummary is present for the main render
   if (!nationalSummary) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+      <div className="flex items-center justify-center min-h-screen bg-gray-50">
         <motion.div 
           className="text-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <p className="text-gray-600 text-lg">Preparing dashboard...</p>
+          <p className="text-lg text-gray-600">Preparing dashboard...</p>
         </motion.div>
       </div>
     );
@@ -197,21 +198,21 @@ function CountiesHome() {
   return (
     <div className="min-h-screen bg-gray-50">
       <motion.header 
-        className="bg-white shadow-sm border-b border-gray-200 px-8 py-6"
+        className="px-8 py-6 bg-white border-b border-gray-200 shadow-sm"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <div className="max-w-7xl mx-auto">
-          <h1 className="text-4xl font-bold text-gray-900 mb-2">KJET County Evaluation Dashboard</h1>
+        <div className="mx-auto max-w-7xl">
+          <h1 className="mb-2 text-4xl font-bold text-gray-900">KJET County Evaluation Dashboard</h1>
           <p className="text-xl text-gray-600">Comprehensive evaluation results for Kenya Youth Employment and Talent program</p>
         </div>
       </motion.header>
 
-      <div className="flex max-w-7xl mx-auto">
+      <div className="flex mx-auto max-w-7xl">
         {/* Sidebar with county list */}
         <motion.div 
-          className="w-80 bg-white shadow-lg h-screen sticky top-0 overflow-y-auto"
+          className="sticky top-0 h-screen overflow-y-auto bg-white shadow-lg w-80"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.2, duration: 0.6 }}
@@ -239,7 +240,7 @@ function CountiesHome() {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
-                  <div className="font-semibold text-gray-900 mb-2">{county}</div>
+                  <div className="mb-2 font-semibold text-gray-900">{county}</div>
                   <div className="space-y-1 text-sm">
                     <div className="flex justify-between">
                       <span className="text-gray-600">Applications:</span>
@@ -419,11 +420,11 @@ function CountiesHome() {
 
               {/* Applications Table */}
                 {/* Score Filter */}
-                <div className="mb-4 flex items-center gap-4">
+                <div className="flex items-center gap-4 mb-4">
                 <label htmlFor="scoreFilter" className="font-medium text-gray-700">Filter by Score:</label>
                 <select
                   id="scoreFilter"
-                  className="border rounded px-2 py-1"
+                  className="px-2 py-1 border rounded"
                   value={scoreFilter}
                   onChange={e => setScoreFilter(e.target.value)}
                 >
@@ -449,6 +450,7 @@ function CountiesHome() {
                     <th>Eligible</th>
                     <th>Score</th>
                     <th>Grade</th>
+                    <th>Human Score</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -474,7 +476,7 @@ function CountiesHome() {
                         <td>
                           <button
                             onClick={() => navigate(`/counties/${appId}`)}
-                            className="text-blue-600 hover:text-blue-800 underline font-medium"
+                            className="font-medium text-blue-600 underline hover:text-blue-800"
                           >
                             {appId}
                           </button>
@@ -495,6 +497,38 @@ function CountiesHome() {
                         </td>
                         <td>
                         {appData.scoring ? getScoreGrade(appData.scoring.composite_score) : '-'}
+                        </td>
+                        <td>
+                          <input
+                            type="number"
+                            className="w-20 px-2 py-1 border rounded"
+                            value={appData.human_score || ''}
+                            onChange={async (e) => {
+                              const newScore = parseFloat(e.target.value);
+                              const updatedAppData = { ...appData, human_score: newScore };
+
+                              // Update the local state
+                              setCountyData((prevData) => {
+                                if (!prevData) return prevData;
+                                const updatedEvaluations = {
+                                  ...prevData.application_evaluations,
+                                  [appId]: updatedAppData,
+                                };
+                                return { ...prevData, application_evaluations: updatedEvaluations };
+                              });
+
+                              // Update the upstream JSON file
+                              try {
+                                await fetch(`/output-results/${selectedCounty}_evaluation_results.json`, {
+                                  method: 'POST',
+                                  headers: { 'Content-Type': 'application/json' },
+                                  body: JSON.stringify(updatedAppData),
+                                });
+                              } catch (err) {
+                                console.error('Failed to update human score:', err);
+                              }
+                            }}
+                          />
                         </td>
                       </tr>
                       );

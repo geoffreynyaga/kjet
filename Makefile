@@ -2,7 +2,7 @@ VENV_DIR := $(CURDIR)/venv
 PY := $(VENV_DIR)/bin/python3
 PIP := $(VENV_DIR)/bin/pip
 
-.PHONY: all venv install extraction evaluation summary stats src run build clean help
+.PHONY: all venv install extraction evaluation summary stats src convert-csv run build clean help
 
 help:
 	@echo "Available targets:"
@@ -12,8 +12,9 @@ help:
 	@echo "  make analysis     -> run analysis scripts (analyze_kjet_applications.py)"
 	@echo "  make evaluation   -> run county evaluator and generate evaluation summary"
 	@echo "  make stats        -> run generate_stats.py"
+	@echo "  make convert-csv  -> convert CSV files to JSON format for dashboard"
 	@echo "  make src          -> copy output-results into code/public/output-results"
-	@echo "  make run          -> full pipeline: extraction -> analysis -> evaluation -> stats -> copy"
+	@echo "  make run          -> full pipeline: extraction -> analysis -> evaluation -> stats -> copy -> convert-csv"
 
 venv:
 	@echo "Creating virtualenv at $(VENV_DIR) if missing..."
@@ -42,10 +43,18 @@ stats: install
 	@echo "Running generate_stats.py"
 	$(PY) generate_stats.py
 
+convert-csv:
+	@echo "Converting CSV files to JSON format for dashboard"
+	python3 convert_csv_to_json.py
+
 src:
 	@echo "Copying evaluation outputs to React public folder"
 	@mkdir -p code/public/output-results
 	@cp -v output-results/* code/public/output-results/ || true
+
+human: install
+	@echo "Running human data extraction and JSON conversion..."
+	$(PY) scripts/human/convert.py
 
 run: install
 	@echo "Checking for existing output directory..."
@@ -56,10 +65,12 @@ run: install
 		$(MAKE) extraction; \
 	fi
 	@echo "Running analysis and evaluation steps..."
+	$(MAKE) extraction
 	$(MAKE) analysis
 	$(MAKE) evaluation
 	$(MAKE) stats
 	$(MAKE) src
+	$(MAKE) convert-csv
 	@echo "Full pipeline complete."
 
 build:
@@ -69,3 +80,4 @@ build:
 clean:
 	@echo "Cleaning generated artifacts (output/ output-results/  venv/)"
 	@rm -rf output output-results venv
+

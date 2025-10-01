@@ -50,7 +50,7 @@ function LLMCountiesAnalysis() {
   const [error, setError] = useState<string | null>(null);
   const [currentPage, setCurrentPage] = useState(0);
   const [expandedApplicants, setExpandedApplicants] = useState<Set<number>>(new Set());
-  const [loadingMessage, setLoadingMessage] = useState<string>('Loading AI Analysis Dashboard...');
+  const [loadingMessage, setLoadingMessage] = useState<string>('Loading Analysis Dashboard...');
   const applicationsPerPage = 5;
 
   useEffect(() => {
@@ -60,7 +60,7 @@ function LLMCountiesAnalysis() {
   const loadLLMAnalyses = async () => {
     try {
       setLoading(true);
-      setLoadingMessage('Loading AI Analysis Dashboard...');
+      setLoadingMessage('Loading  Analysis Dashboard...');
 
       // Fetch the list of available counties
       const countiesResponse = await fetch('/counties.json');
@@ -287,7 +287,7 @@ function LLMCountiesAnalysis() {
             <>
               {/* County Header */}
               <div className="county-header">
-                <h2>{selectedCounty} County AI Analysis</h2>
+                <h2>{selectedCounty} County Analysis</h2>
               </div>              {/* Top Two Ranked Candidates with Accordion */}
               {countyData.ranked_applicants.length >= 2 && (
                 <div className="mb-8 overflow-hidden bg-white border border-gray-200 rounded-lg shadow-sm">

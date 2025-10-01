@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+
 import { motion } from 'framer-motion';
 
 // Clean single Home component
@@ -23,28 +24,28 @@ export default function Home() {
   }, []);
 
   if (loading) return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+    <div className="flex items-center justify-center min-h-screen bg-gray-50">
       <motion.div 
         className="text-center"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="loading-spinner mx-auto mb-4"></div>
-        <p className="text-gray-600 text-lg">Loading KJET Summary...</p>
+        <div className="mx-auto mb-4 loading-spinner"></div>
+        <p className="text-lg text-gray-600">Loading KJET Summary...</p>
       </motion.div>
     </div>
   );
 
   if (error) return (
     <motion.div 
-      className="min-h-screen bg-gray-50 flex items-center justify-center"
+      className="flex items-center justify-center min-h-screen bg-gray-50"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="text-center bg-white p-8 rounded-lg shadow-lg max-w-md">
-        <h2 className="text-2xl font-bold text-red-600 mb-4">Error Loading Data</h2>
+      <div className="max-w-md p-8 text-center bg-white rounded-lg shadow-lg">
+        <h2 className="mb-4 text-2xl font-bold text-red-600">Error Loading Data</h2>
         <p className="text-gray-600">{error}</p>
       </div>
     </motion.div>
@@ -54,15 +55,15 @@ export default function Home() {
   const topCounties = nationalSummary ? Object.entries(nationalSummary.county_summaries).sort((a,b)=>b[1].total_applications-a[1].total_applications).slice(0,6) : [];
 
   return (
-    <div className="min-h-screen bg-gray-50 font-sans">
+    <div className="min-h-screen font-sans bg-gray-50">
       <motion.nav
-        className="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 flex items-center justify-between shadow-lg sticky top-0 z-50"
+        className="sticky top-0 z-50 flex items-center justify-between w-full px-8 py-4 text-white shadow-lg bg-gradient-to-r from-blue-600 to-blue-700"
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
         <motion.div 
-          className="font-bold text-2xl tracking-wide"
+          className="text-2xl font-bold tracking-wide"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.3, duration: 0.5 }}
@@ -77,7 +78,7 @@ export default function Home() {
         >
           <motion.a 
             href="/counties"
-            className="bg-red-600 hover:bg-red-700 px-6 py-2 rounded-lg font-medium transition-colors duration-200 text-white no-underline"
+            className="px-6 py-2 font-medium text-white no-underline transition-colors duration-200 bg-red-600 rounded-lg hover:bg-red-700"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -85,36 +86,45 @@ export default function Home() {
           </motion.a>
           <motion.a 
             href="/details"
-            className="bg-purple-600 hover:bg-purple-700 px-6 py-2 rounded-lg font-medium transition-colors duration-200 text-white no-underline"
+            className="px-6 py-2 font-medium text-white no-underline transition-colors duration-200 bg-purple-600 rounded-lg hover:bg-purple-700"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            AI Analysis
+            Score Analysis
+          </motion.a>
+
+          <motion.a 
+            href="/results"
+            className="px-6 py-2 font-medium text-white no-underline transition-colors duration-200 bg-green-600 rounded-lg hover:bg-green-700"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Final Analysis
           </motion.a>
         </motion.div>
       </motion.nav>
       <motion.header 
-        className="text-center py-16 px-8"
+        className="px-8 py-16 text-center"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4, duration: 0.8 }}
       >
-        <h1 className="text-5xl font-bold text-gray-900 mb-6 gradient-text">
+        <h1 className="mb-6 text-5xl font-bold text-gray-900 gradient-text">
           KJET National Evaluation
         </h1>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        <p className="max-w-3xl mx-auto text-xl leading-relaxed text-gray-600">
           A high-level summary of applications and evaluation outcomes across counties.
         </p>
       </motion.header>
       
-      <main className="max-w-7xl mx-auto px-8 pb-16">
+      <main className="px-8 pb-16 mx-auto max-w-7xl">
         <motion.section 
           className="mb-16"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.8 }}
         >
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             {[
               { title: "Total Applications", value: national.total_applications, color: "from-blue-500 to-blue-600" },
               { title: "National Eligibility Rate", value: `${national.national_eligibility_rate}%`, color: "from-green-500 to-green-600" },
@@ -122,13 +132,13 @@ export default function Home() {
             ].map((item, index) => (
               <motion.div
                 key={item.title}
-                className="bg-white rounded-xl shadow-lg p-8 card-hover"
+                className="p-8 bg-white shadow-lg rounded-xl card-hover"
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8 + index * 0.1, duration: 0.6 }}
                 whileHover={{ y: -5 }}
               >
-                <h4 className="text-lg font-semibold text-gray-700 mb-4">{item.title}</h4>
+                <h4 className="mb-4 text-lg font-semibold text-gray-700">{item.title}</h4>
                 <div className={`text-4xl font-bold bg-gradient-to-r ${item.color} bg-clip-text text-transparent`}>
                   {item.value}
                 </div>
@@ -142,14 +152,14 @@ export default function Home() {
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2, duration: 0.8 }}
         >
-          <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+          <h3 className="mb-8 text-3xl font-bold text-center text-gray-900">
             Top Counties by Applications
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {topCounties.map(([name, stats], index) => (
               <motion.div
                 key={name}
-                className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 p-6 border border-gray-100"
+                className="p-6 transition-all duration-300 bg-white border border-gray-100 rounded-lg shadow-md hover:shadow-xl"
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ 
@@ -160,19 +170,19 @@ export default function Home() {
                 }}
                 whileHover={{ scale: 1.02, y: -2 }}
               >
-                <div className="font-bold text-xl text-gray-900 mb-4 border-b border-gray-200 pb-2">
+                <div className="pb-2 mb-4 text-xl font-bold text-gray-900 border-b border-gray-200">
                   {name}
                 </div>
                 <div className="space-y-3">
-                  <div className="flex justify-between items-center">
+                  <div className="flex items-center justify-between">
                     <span className="text-gray-600">Applications:</span>
                     <span className="font-semibold text-blue-600">{stats.total_applications}</span>
                   </div>
-                  <div className="flex justify-between items-center">
+                  <div className="flex items-center justify-between">
                     <span className="text-gray-600">Eligible:</span>
                     <span className="font-semibold text-green-600">{stats.eligible_applications}</span>
                   </div>
-                  <div className="flex justify-between items-center">
+                  <div className="flex items-center justify-between">
                     <span className="text-gray-600">Avg Score:</span>
                     <span className="font-semibold text-purple-600">{stats.average_score.toFixed(1)}</span>
                   </div>
@@ -184,7 +194,7 @@ export default function Home() {
       </main>
       
       <motion.footer 
-        className="bg-gray-800 text-gray-300 py-8 text-center"
+        className="py-8 text-center text-gray-300 bg-gray-800"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.8, duration: 0.6 }}

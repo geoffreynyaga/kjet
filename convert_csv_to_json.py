@@ -21,8 +21,20 @@ def parse_score_breakdown(row, criteria_prefixes):
         reason_key = f"{prefix} Reason"
 
         if score_key in row and row[score_key].strip():
-            score = float(row[score_key]) if row[score_key] else 0.0
+            # --- START FIX ---
+            try:
+                # 1. Strip whitespace
+                score_str = row[score_key].strip()
+                # 2. Attempt conversion to float
+                score = float(score_str)
+            except ValueError:
+                # 3. Handle non-numeric values (e.g., 'minutes)' or empty strings)
+                # Default to 0.0 if conversion fails
+                score = 0.0
+            # --- END FIX ---
+
             reason = row[reason_key] if reason_key in row else ""
+            
             breakdown[prefix] = {
                 "score": score,
                 "reason": reason
@@ -69,7 +81,14 @@ def convert_csv_to_json(csv_file_path):
                 application_id = row.get('Application ID', '').strip()
                 applicant_name = row.get('Applicant Name', '').strip()
                 eligibility_status = row.get('Eligibility Status', '').strip()
-                composite_score = float(row.get('Composite Score', '0')) if row.get('Composite Score', '').strip() else 0.0
+                # --- FIX FOR COMPOSITE SCORE ---
+                composite_score_str = row.get('Composite Score', '').strip()
+                try:
+                    # Attempt conversion to float
+                    composite_score = float(composite_score_str)
+                except ValueError:
+                    # If conversion fails (e.g., 'MISSING DATA' or ' minutes)'), default to 0.0
+                    composite_score = 0.0
 
                 if eligibility_status.lower() == 'eligible' and rank:
                     # This is a ranked applicant
