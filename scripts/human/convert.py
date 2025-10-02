@@ -38,6 +38,30 @@ def extract_csv_to_json(file_path, output_path):
         # Drop the last column
         df = df.iloc[:, :-1]
 
+        # --- normalize mapping/ county names ---
+        def normalize_county_name(x):
+            if x is None:
+                return None
+            s = str(x)
+            # replace hyphens with space
+            s = s.replace('-', ' ')
+            # remove trailing periods and trailing/leading whitespace
+            s = s.strip().rstrip('.')
+            # collapse multiple spaces into one
+            s = ' '.join(s.split())
+            return s.upper()
+
+        # find a column named "mapping" (case-insensitive) or any column containing 'mapping'
+        mapping_col = None
+        for col in df.columns:
+            if col.lower() == 'mapping' or 'mapping' in col.lower():
+                mapping_col = col
+                break
+
+        if mapping_col:
+            df[mapping_col] = df[mapping_col].apply(lambda v: normalize_county_name(v) if pd.notnull(v) else v)
+        # --- end normalization ---
+
         # Treat empty strings or whitespace-only cells as missing values
         df = df.replace(r'^\s*$', np.nan, regex=True)
 

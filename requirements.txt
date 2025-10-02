@@ -1,4 +1,6 @@
-tqdm
-PyPDF2
+numpy 
+pandas
 Pillow
+PyPDF2
 pytesseract
+tqdm

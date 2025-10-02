@@ -95,7 +95,10 @@ function HumanCountiesAnalysis() {
 
   const currentGroup = groups.find((g) => g.county === selectedCounty) || null;
   const topTwo = currentGroup ? currentGroup.applicants.filter(a => getNumericScore(a) > 0).slice(0, 2) : [];
-  const pending = currentGroup ? currentGroup.applicants.filter(a => getNumericScore(a) === 0) : [];
+  const topTwoIds = new Set(topTwo.map(a => String(a['Application ID'])));
+  const pending = currentGroup ? currentGroup.applicants.filter(a => getNumericScore(a) === 0 && String(a['PASS/FAIL'] || '').toLowerCase() !== 'fail') : [];
+  const failed = currentGroup ? currentGroup.applicants.filter(a => String(a['PASS/FAIL'] || '').toLowerCase() === 'fail') : [];
+  const otherRanked = currentGroup ? currentGroup.applicants.filter(a => getNumericScore(a) > 0 && !topTwoIds.has(String(a['Application ID'])) && String(a['PASS/FAIL'] || '').toLowerCase() !== 'fail') : [];
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -145,13 +148,13 @@ function HumanCountiesAnalysis() {
                 </div>
                 <div className="divide-y divide-gray-100">
                   {topTwo.map((app, idx) => {
-                    const rank = idx + 1;
                     const score = getNumericScore(app);
+                    const globalRank = currentGroup ? currentGroup.applicants.findIndex(a => String(a['Application ID']) === String(app['Application ID'])) + 1 : idx + 1;
                     return (
                       <motion.div key={app['Application ID'] + idx} className="transition-all duration-200" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: idx * 0.1, duration: 0.3 }}>
-                        <div className="flex items-center justify-between p-4 transition-colors cursor-pointer hover:bg-gray-50 group" onClick={() => toggleExpand(rank)}>
+                        <div className="flex items-center justify-between p-4 transition-colors cursor-pointer hover:bg-gray-50 group" onClick={() => toggleExpand(globalRank)}>
                           <div className="flex items-center flex-1 gap-4">
-                            <div className="flex items-center justify-center w-10 h-10 text-sm font-bold text-white rounded-full shadow-sm bg-gradient-to-br from-red-500 to-red-600">#{rank}</div>
+                            <div className="flex items-center justify-center w-10 h-10 text-sm font-bold text-white rounded-full shadow-sm bg-gradient-to-br from-red-500 to-red-600">#{globalRank}</div>
                             <div className="flex-1 min-w-0">
                               <h4 className="font-semibold text-gray-900 truncate">{app['Application ID']}</h4>
                               <p className="text-sm text-gray-600">{app['REASON(Evaluators Comments)'] || ''}</p>
@@ -161,10 +164,10 @@ function HumanCountiesAnalysis() {
                               <div className="text-xs font-medium text-gray-600">Score</div>
                             </div>
                           </div>
-                          <div className="ml-4 text-gray-400 transition-colors group-hover:text-gray-600">{expandedRanks.has(rank) ? <ChevronDown size={20} /> : <ChevronRight size={20} />}</div>
+                          <div className="ml-4 text-gray-400 transition-colors group-hover:text-gray-600">{expandedRanks.has(globalRank) ? <ChevronDown size={20} /> : <ChevronRight size={20} />}</div>
                         </div>
 
-                        {expandedRanks.has(rank) && (
+                        {expandedRanks.has(globalRank) && (
                           <motion.div className="px-4 pb-4 bg-gray-50" initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} transition={{ duration: 0.3 }}>
                             <div className="mt-2 text-sm text-gray-700">
                               <div><strong>County:</strong> {app['E2. County Mapping']}</div>
@@ -180,7 +183,7 @@ function HumanCountiesAnalysis() {
               </div>
 
               {/* Pending Review - applicants with zero score */}
-              {currentGroup.applicants.filter(a => getNumericScore(a) === 0).length > 0 && (
+              {currentGroup.applicants.filter(a => getNumericScore(a) === 0 &&  String(a['PASS/FAIL'] || '').toLowerCase() !== 'fail').length > 0 && (
                 <div className="mb-8 overflow-hidden border border-yellow-200 rounded-lg shadow-sm bg-yellow-50">
                   <div className="px-4 py-3 border-b border-yellow-200 bg-gradient-to-r from-yellow-50 to-yellow-100">
                     <h3 className="flex items-center gap-2 text-lg font-semibold text-yellow-900"><div className="w-2 h-2 bg-yellow-500 rounded-full" />Pending Review</h3>
@@ -199,6 +202,30 @@ function HumanCountiesAnalysis() {
                 </div>
               )}
 
+              {/* Other Ranked Candidates (non-top two, scored >0) */}
+              {otherRanked.length > 0 && (
+                <div className="mb-6 overflow-hidden bg-white border border-yellow-200 rounded-lg shadow-sm">
+                  <div className="px-4 py-3 border-b border-yellow-200 bg-gradient-to-r from-yellow-50 to-yellow-100">
+                    <h3 className="flex items-center gap-2 text-lg font-semibold text-yellow-900"><div className="w-2 h-2 bg-yellow-500 rounded-full" />Other Ranked Candidates</h3>
+                  </div>
+                  <div className="p-4 divide-y divide-yellow-100">
+                    {otherRanked.map((app, idx) => {
+                      const globalRank = currentGroup ? currentGroup.applicants.findIndex(a => String(a['Application ID']) === String(app['Application ID'])) + 1 : idx + 3;
+                      const score = getNumericScore(app);
+                      return (
+                        <div key={app['Application ID'] + '_other_' + idx} className="flex items-center justify-between p-3">
+                          <div>
+                            <div className="font-medium text-yellow-900">#{globalRank} {app['Application ID']}</div>
+                            <div className="text-sm text-yellow-700">{app['REASON(Evaluators Comments)'] || ''}</div>
+                          </div>
+                          <div className="text-sm font-semibold text-yellow-800">{(Number(score) || 0).toFixed(1)}</div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+
               <div className="p-6 bg-white border border-gray-200 rounded-lg shadow-sm chart-card">
                 <h3 className="mb-4">Failed / Ineligible Applicants</h3>
                 <div className="space-y-3">
@@ -209,7 +236,11 @@ function HumanCountiesAnalysis() {
                           <strong className="text-red-900">{app['Application ID']}</strong>
                           <span className="ml-2 text-sm text-red-700">(Reason: {app['REASON(Evaluators Comments)']})</span>
                         </div>
-                        <span className="px-2 py-1 text-xs font-medium text-white bg-red-500 rounded-full">Fail</span>
+                        <div className="text-sm font-semibold text-red-800">N/A</div>
+                      </div>
+                      <div className="text-sm text-gray-700">
+                        <div><strong>County:</strong> {app['E2. County Mapping']}</div>
+                        <div><strong>Composite (sum - penalty):</strong> {app['Sum of weighted scores - Penalty(if any)']}</div>
                       </div>
                     </div>
                   ))}
