@@ -39,7 +39,12 @@ function HumanCountiesAnalysis() {
       const map = new Map<string, HumanApplicant[]>();
       data.forEach((row) => {
         const countyRaw = row['E2. County Mapping'] || row['E2. County Mapping'];
-        const county = (typeof countyRaw === 'string' ? countyRaw.trim() : String(countyRaw || 'Unknown')).toUpperCase();
+        // console.log(countyRaw,"countyRaw")
+        let county = (typeof countyRaw === 'string' ? countyRaw.trim() : String(countyRaw || 'Unknown')).toUpperCase();
+        if (countyRaw === 'NIL' || countyRaw === '') {
+          console.log(countyRaw,"countyRaw is nil")
+           county = "UNKNOWN";
+        }
         if (!map.has(county)) map.set(county, []);
         map.get(county)!.push(row);
       });
@@ -51,11 +56,17 @@ function HumanCountiesAnalysis() {
         groups.push({ county, applicants: sorted });
       });
 
-      // sort groups alphabetically
-      groups.sort((a, b) => a.county.localeCompare(b.county));
+  // sort groups alphabetically, but keep UNKNOWN separate
+  groups.sort((a, b) => a.county.localeCompare(b.county));
 
-      setGroups(groups);
-      setSelectedCounty(groups.length ? groups[0].county : null);
+  // separate out UNKNOWN group if present
+  const known = groups.filter(g => g.county !== 'UNKNOWN');
+  const unknown = groups.find(g => g.county === 'UNKNOWN');
+  const ordered = unknown ? [...known, unknown] : known;
+
+  setGroups(ordered);
+  // prefer first known county as selected; if none, pick UNKNOWN
+  setSelectedCounty(known.length ? known[0].county : (unknown ? unknown.county : null));
       setExpandedRanks(new Set([1, 2]));
       setLoading(false);
     } catch (e: any) {
@@ -114,28 +125,39 @@ function HumanCountiesAnalysis() {
       <div className="flex mx-auto max-w-7xl">
         <motion.div className="sticky top-0 h-screen overflow-y-auto bg-white shadow-lg w-80" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.2, duration: 0.6 }}>
           <div className="p-6 border-b border-gray-200">
-            <h3 className="text-xl font-bold text-gray-900">Counties ({groups.length})</h3>
+            {/* show count of known counties (exclude UNKNOWN) */}
+            {(() => {
+              const knownCount = groups.filter(g => g.county !== 'UNKNOWN').length;
+              return <h3 className="text-xl font-bold text-gray-900">Counties ({knownCount})</h3>;
+            })()}
           </div>
-          <div className="p-4 space-y-2">
-            {groups.map((g, i) => (
-              <div key={g.county} className={`p-4 rounded-lg cursor-pointer transition-all duration-200 ${selectedCounty === g.county ? 'bg-blue-100 border-2 border-blue-500 shadow-md' : 'bg-gray-50 hover:bg-gray-100 border-2 border-transparent hover:border-gray-300'}`} onClick={() => { setSelectedCounty(g.county); setExpandedRanks(new Set([1, 2])); }}>
-                 <div className="mb-2 font-semibold text-gray-900">{g.county}</div>
-                 <div className="space-y-1 text-sm">
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">Total</span>
-                    <span className="font-medium text-blue-600">{g.applicants.length}</span>
+          <div className="p-2 space-y-2">
+            {groups.map((g, i) => {
+              const isUnknown = g.county === 'UNKNOWN';
+              const selected = selectedCounty === g.county;
+              return (
+                <div
+                  key={g.county}
+                  onClick={() => { setSelectedCounty(g.county); setExpandedRanks(new Set([1, 2])); }}
+                  className={`relative flex items-center gap-3 px-3 py-2 rounded-lg cursor-pointer transition-all duration-150 ${selected ? 'bg-blue-100 border-2 border-blue-500 shadow-md' : isUnknown ? 'bg-red-50 hover:bg-red-100 border border-red-100 hover:border-red-200' : 'bg-gray-50 hover:bg-gray-100 border border-transparent hover:border-gray-300'}`}
+                >
+                  {/* applicant count badge (top-right) */}
+                  <div className="absolute top-2 right-3">
+                    <span className={`inline-flex items-center justify-center px-2 py-0.5 text-xs font-semibold rounded-full ${isUnknown ? 'bg-red-600 text-white' : 'bg-blue-100 text-blue-800'}`}>{g.applicants.length}</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">Pass</span>
-                    <span className="font-medium text-green-600">{g.applicants.filter(a => String(a['PASS/FAIL'] || '').toLowerCase() === 'pass').length}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">Fail</span>
-                    <span className="font-medium text-red-600">{g.applicants.filter(a => String(a['PASS/FAIL'] || '').toLowerCase() === 'fail').length}</span>
+
+                
+
+                  <div className="flex-1 min-w-0">
+                    <div className={`truncate ${isUnknown ? 'font-semibold text-red-900' : 'font-medium text-gray-900'} font-sans tracking-tight`}>{g.county}</div>
+                    <div className="flex items-center mt-1 space-x-4 text-xs text-gray-600">
+                      <div className="flex items-center gap-1"><span className="text-gray-500">Pass</span><span className="font-semibold text-green-600">{g.applicants.filter(a => String(a['PASS/FAIL'] || '').toLowerCase() === 'pass').length}</span></div>
+                      <div className="flex items-center gap-1"><span className="text-gray-500">Fail</span><span className="font-semibold text-red-600">{g.applicants.filter(a => String(a['PASS/FAIL'] || '').toLowerCase() === 'fail').length}</span></div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </motion.div>
 

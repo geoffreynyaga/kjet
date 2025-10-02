@@ -2,7 +2,7 @@
   "evaluation_metadata": {
     "county": "Bungoma",
     "total_applications": 13,
-    "evaluation_date": "2025-09-28T17:48:36.387049",
+    "evaluation_date": "2025-10-02T12:08:45.941365",
     "evaluator_version": "1.0",
     "rules_version": "rules.md - Annex A & B"
   },
@@ -1168,8 +1168,8 @@
         "grade": "Good"
       }
     },
-    "": {
-      "application_id": "",
+    "unknown_13": {
+      "application_id": "unknown_13",
       "business_type": "Cooperative",
       "woman_owned": "Yes",
       "eligibility": {

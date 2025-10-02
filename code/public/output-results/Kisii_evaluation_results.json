@@ -2,7 +2,7 @@
   "evaluation_metadata": {
     "county": "Kisii",
     "total_applications": 21,
-    "evaluation_date": "2025-09-28T17:48:51.757031",
+    "evaluation_date": "2025-10-02T12:09:01.609749",
     "evaluator_version": "1.0",
     "rules_version": "rules.md - Annex A & B"
   },
@@ -1825,8 +1825,8 @@
         "grade": "Good"
       }
     },
-    "": {
-      "application_id": "",
+    "unknown_20": {
+      "application_id": "unknown_20",
       "business_type": "Private company",
       "woman_owned": "Yes",
       "eligibility": {

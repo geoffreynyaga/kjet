@@ -2,7 +2,7 @@
   "evaluation_metadata": {
     "county": "Wajir",
     "total_applications": 14,
-    "evaluation_date": "2025-09-28T17:48:59.300020",
+    "evaluation_date": "2025-10-02T12:09:09.321759",
     "evaluator_version": "1.0",
     "rules_version": "rules.md - Annex A & B"
   },
@@ -792,10 +792,10 @@
         "grade": "Fair"
       }
     },
-    "": {
-      "application_id": "",
-      "business_type": "MSME Association",
-      "woman_owned": "Yes",
+    "unknown_9": {
+      "application_id": "unknown_9",
+      "business_type": "Cooperative",
+      "woman_owned": "No",
       "eligibility": {
         "eligible": true,
         "criteria_results": {
@@ -807,11 +807,12 @@
         },
         "failure_reasons": []
       },
-      "business_name": "Wajir Deaf MSME Cluster",
+      "business_name": "Bidii Umoja Farmers Co-operative Society Limited",
+      "woman_owned_proof": "No",
       "scoring": {
         "criteria_scores": {
           "registration_track_record": 1,
-          "financial_position": 5,
+          "financial_position": 3,
           "market_demand_competitiveness": 3,
           "business_proposal_viability": 3,
           "value_chain_alignment": 2,
@@ -823,8 +824,8 @@
             "rubric_explanation": "Registration unclear; ad-hoc operations"
           },
           "financial_position": {
-            "score": 5,
-            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
+            "score": 3,
+            "rubric_explanation": "Turnover 1–<5M; stable or recovering; at least one statement"
           },
           "market_demand_competitiveness": {
             "score": 3,
@@ -851,10 +852,10 @@
             "weighted_score": 1.0
           },
           "financial_position": {
-            "raw_score": 5,
-            "normalized_score": 100,
+            "raw_score": 3,
+            "normalized_score": 60,
             "weight": 0.2,
-            "weighted_score": 20.0
+            "weighted_score": 12.0
           },
           "market_demand_competitiveness": {
             "raw_score": 3,
@@ -881,9 +882,9 @@
             "weighted_score": 20.0
           }
         },
-        "composite_score": 72.0,
+        "composite_score": 64.0,
         "scoring_scale": "0-100 (weighted average)",
-        "grade": "Good"
+        "grade": "Fair"
       }
     },
     "Wajir_476": {
@@ -1164,6 +1165,100 @@
           }
         },
         "composite_score": 74.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "unknown_13": {
+      "application_id": "unknown_13",
+      "business_type": "MSME Association",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "Wajir Deaf MSME Cluster",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 1,
+          "financial_position": 5,
+          "market_demand_competitiveness": 3,
+          "business_proposal_viability": 3,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 5
+        },
+        "criteria_explanations": {
+          "registration_track_record": {
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
+          },
+          "financial_position": {
+            "score": 5,
+            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
+          },
+          "market_demand_competitiveness": {
+            "score": 3,
+            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
+          },
+          "business_proposal_viability": {
+            "score": 3,
+            "rubric_explanation": "Direction clear; targets generic; budget rough"
+          },
+          "value_chain_alignment": {
+            "score": 2,
+            "rubric_explanation": "Peripheral role; unclear node"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
+          }
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 1,
+            "normalized_score": 20,
+            "weight": 0.05,
+            "weighted_score": 1.0
+          },
+          "financial_position": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 72.0,
         "scoring_scale": "0-100 (weighted average)",
         "grade": "Good"
       }

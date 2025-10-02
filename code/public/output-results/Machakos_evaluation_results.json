@@ -2,7 +2,7 @@
   "evaluation_metadata": {
     "county": "Machakos",
     "total_applications": 9,
-    "evaluation_date": "2025-09-28T17:48:36.458761",
+    "evaluation_date": "2025-10-02T12:08:46.013425",
     "evaluator_version": "1.0",
     "rules_version": "rules.md - Annex A & B"
   },
@@ -696,8 +696,8 @@
         "grade": "Fair"
       }
     },
-    "": {
-      "application_id": "",
+    "unknown_8": {
+      "application_id": "unknown_8",
       "business_type": "Private company",
       "woman_owned": "Yes",
       "eligibility": {

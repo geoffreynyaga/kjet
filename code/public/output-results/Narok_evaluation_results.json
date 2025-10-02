@@ -2,7 +2,7 @@
   "evaluation_metadata": {
     "county": "Narok",
     "total_applications": 3,
-    "evaluation_date": "2025-09-28T17:49:01.944661",
+    "evaluation_date": "2025-10-02T12:09:11.887030",
     "evaluator_version": "1.0",
     "rules_version": "rules.md - Annex A & B"
   },
@@ -227,8 +227,8 @@
         "grade": "Good"
       }
     },
-    "": {
-      "application_id": "",
+    "unknown_3": {
+      "application_id": "unknown_3",
       "business_type": "MSME Association",
       "woman_owned": "Yes",
       "eligibility": {

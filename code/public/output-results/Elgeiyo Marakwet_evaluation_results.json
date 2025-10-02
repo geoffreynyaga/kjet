@@ -2,7 +2,7 @@
   "evaluation_metadata": {
     "county": "Elgeiyo Marakwet",
     "total_applications": 8,
-    "evaluation_date": "2025-09-28T17:48:58.455993",
+    "evaluation_date": "2025-10-02T12:09:08.470679",
     "evaluator_version": "1.0",
     "rules_version": "rules.md - Annex A & B"
   },
@@ -96,8 +96,8 @@
       "business_name": "KOCHOLWO DAIRY FARMERS COOPERATIVE SOCIETY LIMITED",
       "woman_owned_proof": "No"
     },
-    "": {
-      "application_id": "",
+    "unknown_4": {
+      "application_id": "unknown_4",
       "business_type": "Cooperative",
       "woman_owned": "Yes",
       "eligibility": {

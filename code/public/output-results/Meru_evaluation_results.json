@@ -2,7 +2,7 @@
   "evaluation_metadata": {
     "county": "Meru",
     "total_applications": 22,
-    "evaluation_date": "2025-09-28T17:48:51.623303",
+    "evaluation_date": "2025-10-02T12:09:01.476904",
     "evaluator_version": "1.0",
     "rules_version": "rules.md - Annex A & B"
   },
@@ -2017,8 +2017,8 @@
         "grade": "Fair"
       }
     },
-    "": {
-      "application_id": "",
+    "unknown_22": {
+      "application_id": "unknown_22",
       "business_type": "Private company",
       "woman_owned": "Yes",
       "eligibility": {

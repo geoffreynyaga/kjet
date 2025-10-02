@@ -2,7 +2,7 @@
   "evaluation_metadata": {
     "county": "Nyandarua",
     "total_applications": 11,
-    "evaluation_date": "2025-09-28T17:48:56.280558",
+    "evaluation_date": "2025-10-02T12:09:06.259244",
     "evaluator_version": "1.0",
     "rules_version": "rules.md - Annex A & B"
   },
@@ -980,8 +980,8 @@
         "grade": "Excellent"
       }
     },
-    "": {
-      "application_id": "",
+    "unknown_11": {
+      "application_id": "unknown_11",
       "business_type": "Private company",
       "woman_owned": "Yes",
       "eligibility": {

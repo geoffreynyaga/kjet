@@ -2,7 +2,7 @@
   "evaluation_metadata": {
     "county": "Kiambu",
     "total_applications": 22,
-    "evaluation_date": "2025-09-28T17:48:52.361944",
+    "evaluation_date": "2025-10-02T12:09:02.213763",
     "evaluator_version": "1.0",
     "rules_version": "rules.md - Annex A & B"
   },
@@ -979,9 +979,9 @@
         "grade": "Good"
       }
     },
-    "": {
-      "application_id": "",
-      "business_type": "Other",
+    "unknown_11": {
+      "application_id": "unknown_11",
+      "business_type": "Private company",
       "woman_owned": "Yes",
       "eligibility": {
         "eligible": true,
@@ -994,24 +994,24 @@
         },
         "failure_reasons": []
       },
-      "business_name": "Banana farming Association (cbo)",
+      "business_name": "Tread ville Company limited",
       "scoring": {
         "criteria_scores": {
-          "registration_track_record": 3,
-          "financial_position": 5,
+          "registration_track_record": 1,
+          "financial_position": 3,
           "market_demand_competitiveness": 3,
           "business_proposal_viability": 4,
-          "value_chain_alignment": 5,
+          "value_chain_alignment": 2,
           "inclusivity_sustainability": 5
         },
         "criteria_explanations": {
           "registration_track_record": {
-            "score": 3,
-            "rubric_explanation": "Registered <1 yr; basic structure in place"
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
           },
           "financial_position": {
-            "score": 5,
-            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
+            "score": 3,
+            "rubric_explanation": "Turnover 1–<5M; stable or recovering; at least one statement"
           },
           "market_demand_competitiveness": {
             "score": 3,
@@ -1022,8 +1022,8 @@
             "rubric_explanation": "Strong plan with minor gaps; targets & timelines present"
           },
           "value_chain_alignment": {
-            "score": 5,
-            "rubric_explanation": "Priority VC; fills a critical node (e.g., aggregation/processing); documented linkages upstream & downstream"
+            "score": 2,
+            "rubric_explanation": "Peripheral role; unclear node"
           },
           "inclusivity_sustainability": {
             "score": 5,
@@ -1032,16 +1032,16 @@
         },
         "weighted_scores": {
           "registration_track_record": {
-            "raw_score": 3,
-            "normalized_score": 60,
+            "raw_score": 1,
+            "normalized_score": 20,
             "weight": 0.05,
-            "weighted_score": 3.0
+            "weighted_score": 1.0
           },
           "financial_position": {
-            "raw_score": 5,
-            "normalized_score": 100,
+            "raw_score": 3,
+            "normalized_score": 60,
             "weight": 0.2,
-            "weighted_score": 20.0
+            "weighted_score": 12.0
           },
           "market_demand_competitiveness": {
             "raw_score": 3,
@@ -1056,10 +1056,10 @@
             "weighted_score": 20.0
           },
           "value_chain_alignment": {
-            "raw_score": 5,
-            "normalized_score": 100,
+            "raw_score": 2,
+            "normalized_score": 40,
             "weight": 0.1,
-            "weighted_score": 10.0
+            "weighted_score": 4.0
           },
           "inclusivity_sustainability": {
             "raw_score": 5,
@@ -1068,9 +1068,9 @@
             "weighted_score": 20.0
           }
         },
-        "composite_score": 85.0,
+        "composite_score": 69.0,
         "scoring_scale": "0-100 (weighted average)",
-        "grade": "Excellent"
+        "grade": "Fair"
       }
     },
     "Kiambu_527": {
@@ -1448,6 +1448,100 @@
         "composite_score": 79.0,
         "scoring_scale": "0-100 (weighted average)",
         "grade": "Good"
+      }
+    },
+    "unknown_16": {
+      "application_id": "unknown_16",
+      "business_type": "Other",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "Banana farming Association (cbo)",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 3,
+          "financial_position": 5,
+          "market_demand_competitiveness": 3,
+          "business_proposal_viability": 4,
+          "value_chain_alignment": 5,
+          "inclusivity_sustainability": 5
+        },
+        "criteria_explanations": {
+          "registration_track_record": {
+            "score": 3,
+            "rubric_explanation": "Registered <1 yr; basic structure in place"
+          },
+          "financial_position": {
+            "score": 5,
+            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
+          },
+          "market_demand_competitiveness": {
+            "score": 3,
+            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
+          },
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan with minor gaps; targets & timelines present"
+          },
+          "value_chain_alignment": {
+            "score": 5,
+            "rubric_explanation": "Priority VC; fills a critical node (e.g., aggregation/processing); documented linkages upstream & downstream"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
+          }
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.05,
+            "weighted_score": 3.0
+          },
+          "financial_position": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.1,
+            "weighted_score": 10.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 85.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
       }
     },
     "Kiambu_578": {
