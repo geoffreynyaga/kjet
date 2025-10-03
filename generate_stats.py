@@ -380,7 +380,7 @@ def main():
     print("=" * 30)
     
     # Set up paths
-    root_dir = Path("/Users/geoff/Downloads/Nakuru")
+    root_dir = Path("/Users/geoff/Downloads/KJET")
     output_dir = root_dir / "output"
     
     if not output_dir.exists():

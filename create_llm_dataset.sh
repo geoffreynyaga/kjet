@@ -3,10 +3,10 @@
 # LLM-optimized extraction script that includes selection criteria and structured data
 # for comprehensive application evaluation
 
-DATA_DIR="/Users/geoff/Downloads/Nakuru/data"
+DATA_DIR="/Users/geoff/Downloads/KJET/data"
 OUTPUT_DIR="/Users/geoff/Downloads/Nakuru"
 OUTPUT_FILE="$OUTPUT_DIR/llm_evaluation_dataset.txt"
-RULES_FILE="/Users/geoff/Downloads/Nakuru/rules.md"
+RULES_FILE="/Users/geoff/Downloads/KJET/rules.md"
 
 echo "KJET APPLICATION EVALUATION DATASET FOR LLM ANALYSIS" > "$OUTPUT_FILE"
 echo "=====================================================" >> "$OUTPUT_FILE"

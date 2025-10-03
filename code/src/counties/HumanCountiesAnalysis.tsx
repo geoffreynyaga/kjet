@@ -1,4 +1,4 @@
-import { ChevronDown, ChevronRight, Target } from 'lucide-react';
+import { ChevronDown, ChevronRight, Home, Target } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
 
 import { motion } from 'framer-motion';
@@ -115,9 +115,20 @@ function HumanCountiesAnalysis() {
     <div className="min-h-screen bg-gray-50">
       <motion.header className="px-8 py-6 bg-white border-b border-gray-200 shadow-sm" initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
         <div className="mx-auto max-w-7xl">
-          <div className="flex-1">
-            <h1 className="mb-2 text-4xl font-bold text-gray-900">Final Evaluations Dashboard</h1>
-            <p className="text-xl text-gray-600">Final-scored applicant results grouped by county</p>
+          <div className="flex items-center justify-between">
+            <div className="flex-1">
+              <h1 className="mb-2 text-4xl font-bold text-gray-900">Final Evaluations Dashboard</h1>
+              <p className="text-xl text-gray-600">Final-scored applicant results grouped by county</p>
+            </div>
+            <div className="flex-shrink-0">
+              <a
+                href="/"
+                className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-100 transition-all duration-150 bg-red-500 border border-gray-300 rounded-lg shadow-sm hover:bg-red-300 hover:border-gray-400"
+              >
+                <Home size={16} />
+                Home
+              </a>
+            </div>
           </div>
         </div>
       </motion.header>
@@ -191,10 +202,27 @@ function HumanCountiesAnalysis() {
 
                         {expandedRanks.has(globalRank) && (
                           <motion.div className="px-4 pb-4 bg-gray-50" initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} transition={{ duration: 0.3 }}>
-                            <div className="mt-2 text-sm text-gray-700">
-                              <div><strong>County:</strong> {app['E2. County Mapping']}</div>
-                              <div><strong>Composite (sum - penalty):</strong> {app['Sum of weighted scores - Penalty(if any)']}</div>
-                              <div className="mt-2"><strong>Comments:</strong> {app['REASON(Evaluators Comments)']}</div>
+                            <div className="mt-2 space-y-3">
+                              <div className="text-sm text-gray-700">
+                                <strong>County:</strong> {app['E2. County Mapping']}
+                              </div>
+                              
+                              {/* Penalty badge if present */}
+                              {app['DQ1: Fraudulent documents or misrepresentation → Immediate disqualification.'] && (
+                                <div className="inline-flex items-center px-2 py-1 text-xs font-semibold text-red-800 bg-red-100 border border-red-200 rounded-full">
+                                  ⚠️ Penalty: {app['DQ1: Fraudulent documents or misrepresentation → Immediate disqualification.']}
+                                </div>
+                              )}
+                              
+                              {/* Comments section with horizontal line */}
+                              {app['REASON(Evaluators Comments)'] && (
+                                <div className="pt-3 border-t border-gray-200">
+                                  <div className="mb-2 text-xs font-medium tracking-wide text-gray-500 uppercase">Evaluator Comments</div>
+                                  <div className="text-sm font-medium leading-relaxed text-gray-800">
+                                    {app['REASON(Evaluators Comments)']}
+                                  </div>
+                                </div>
+                              )}
                             </div>
                           </motion.div>
                         )}

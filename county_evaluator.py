@@ -6,10 +6,11 @@ Processes each county JSON file and applies comprehensive evaluation based on ru
 
 import json
 import os
-from datetime import datetime
+from datetime import datetime, time
 import re
 from tqdm import tqdm
 import signal
+from time import sleep
 
 class TimeoutError(Exception):
     pass
@@ -180,7 +181,47 @@ class KJETCountyEvaluator:
                     (application, county_name),
                     timeout_seconds=60  # 60 second timeout per application
                 )
-                app_id = application.get("application_id", f"unknown_{len(evaluation_results['application_evaluations'])}")
+                # Determine a canonical application id. Prefer the raw application id, then
+                # any id produced during evaluation, and finally generate a unique fallback.
+                raw_id = application.get("application_id") or app_evaluation.get("application_id")
+
+                if county_name.lower() == "migori":
+                    print("Migori application found:", raw_id)
+                    # print("application:", application)
+
+
+                    print("\n")
+                    print("\n")
+                    print("\n")
+                    print("\n")
+                    print("\n")
+                    print("\n")
+                    print("\n")
+                    print("\n")
+                    print("\n")
+                    print("\n")
+                    
+
+                    # sleep(2000000)
+
+
+                if raw_id is None or (isinstance(raw_id, str) and raw_id.strip() == ""):
+                    # create a deterministic unique fallback id
+                    fallback_index = len(evaluation_results['application_evaluations']) + 1
+                    app_id = f"unknown_{fallback_index}"
+                else:
+                    app_id = str(raw_id)
+
+                # Ensure uniqueness (avoid clobbering if duplicate ids are present)
+                if app_id in evaluation_results['application_evaluations']:
+                    suffix = 1
+                    base = app_id
+                    while f"{base}_{suffix}" in evaluation_results['application_evaluations']:
+                        suffix += 1
+                    app_id = f"{base}_{suffix}"
+
+                # record the canonical id on the evaluation object
+                app_evaluation["application_id"] = app_id
                 evaluation_results["application_evaluations"][app_id] = app_evaluation
 
                 # Update data enrichment counts when structured fields are present
@@ -225,7 +266,21 @@ class KJETCountyEvaluator:
                         evaluation_results["scoring_summary"]["score_distribution"]["poor_below_60"] += 1
 
             except TimeoutError:
-                app_id = application.get("application_id", f"unknown_{len(evaluation_results['application_evaluations'])}")
+                raw_id = application.get("application_id")
+                if raw_id is None or (isinstance(raw_id, str) and raw_id.strip() == ""):
+                    fallback_index = len(evaluation_results['application_evaluations']) + 1
+                    app_id = f"unknown_{fallback_index}"
+                else:
+                    app_id = str(raw_id)
+
+                # avoid collisions
+                if app_id in evaluation_results['application_evaluations']:
+                    suffix = 1
+                    base = app_id
+                    while f"{base}_{suffix}" in evaluation_results['application_evaluations']:
+                        suffix += 1
+                    app_id = f"{base}_{suffix}"
+
                 print(f"    ⏰ Timeout: Application {app_id} took too long, marking as failed")
                 evaluation_results["application_evaluations"][app_id] = {
                     "application_id": app_id,
@@ -235,7 +290,21 @@ class KJETCountyEvaluator:
                 evaluation_results["eligibility_summary"]["ineligible_applications"] += 1
                 continue
             except Exception as e:
-                app_id = application.get("application_id", f"unknown_{len(evaluation_results['application_evaluations'])}")
+                raw_id = application.get("application_id")
+                if raw_id is None or (isinstance(raw_id, str) and raw_id.strip() == ""):
+                    fallback_index = len(evaluation_results['application_evaluations']) + 1
+                    app_id = f"unknown_{fallback_index}"
+                else:
+                    app_id = str(raw_id)
+
+                # avoid collisions
+                if app_id in evaluation_results['application_evaluations']:
+                    suffix = 1
+                    base = app_id
+                    while f"{base}_{suffix}" in evaluation_results['application_evaluations']:
+                        suffix += 1
+                    app_id = f"{base}_{suffix}"
+
                 print(f"    ⚠️  Failed to evaluate application {app_id}: {str(e)}")
                 # Add failed application with minimal info
                 evaluation_results["application_evaluations"][app_id] = {

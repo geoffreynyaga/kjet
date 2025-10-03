@@ -1,67 +1,152 @@
 KJET APPLICATION DATA STATISTICS REPORT
 ==================================================
-Generated on: 2025-09-28 17:47:51
-Analysis based on: Eligibility and Scoring Criteria from rules.md
+Generated on: 2025-10-02 12:09:16
+Data source: output/ directory JSON files
 
 OVERALL SUMMARY
 --------------------
 Total Counties: 47
 Total Applications: 555
-Eligible Applications: 479
-Scored Applications: 479
-Eligibility Rate: 86.3%
+Total Documents: 1,396
+  - PDF Documents: 1,307
+  - Image Documents: 0
+Total Processing Errors: 0
+Average Applications per County: 11.8
+Average Documents per Application: 2.5
 
 BUSINESS TYPE ANALYSIS
 -------------------------
-Private company: 133 (24.0%)
-Cooperative: 195 (35.1%)
-Other: 77 (13.9%)
-MSME Association: 150 (27.0%)
+Cooperatives/Co-ops:   0 (0.0%)
+Companies/Limited:     0 (0.0%)
+Groups/Self-Help:      0 (0.0%)
+SACCOs/Savings:        0 (0.0%)
+Unclassified:        555 (100.0%)
 
 VALUE CHAIN ANALYSIS
 -------------------------
-technology: 1 counties (2.1%)
-retail: 1 counties (2.1%)
-tea: 1 counties (2.1%)
-agriculture: 1 counties (2.1%)
-rice: 1 counties (2.1%)
-livestock: 1 counties (2.1%)
-services: 1 counties (2.1%)
-dairy: 1 counties (2.1%)
-manufacturing: 1 counties (2.1%)
+Manufacturing       :  47 counties (100.0%)
+Rice                :  47 counties (100.0%)
+Technology          :  47 counties (100.0%)
+Services            :  47 counties (100.0%)
+Retail              :  47 counties (100.0%)
+Transport           :  47 counties (100.0%)
+Agriculture         :  46 counties (97.9%)
+Dairy               :  45 counties (95.7%)
+Tea                 :  45 counties (95.7%)
+Livestock           :  41 counties (87.2%)
 
-ELIGIBILITY ANALYSIS
--------------------------
-Total Applications: 555
-Eligible: 479
-Ineligible: 76
-Eligibility Rate: 86.3%
+FINANCIAL DOCUMENT COMPLETENESS
+-----------------------------------
+Application Forms:      555 (100.0%)
+Balance Sheets:         104 (18.7%)
+Income Statements:       99 (17.8%)
+Cashflow Statements:     74 (13.3%)
+M-Pesa Statements:       96 (17.3%)
 
-Criteria Failure Analysis:
-E4_financial_evidence: 76 failures
-
-SCORING ANALYSIS
--------------------------
-Total Scored Applications: 479
-Average Score: 72.08
-Highest Score: 85.0
-Lowest Score: 56.0
-
-Score Distribution:
-Excellent: 21
-Good: 456
-Fair: 2
-Poor: 0
-
-TOP COUNTIES BY AVERAGE SCORE
+TOP 10 COUNTIES BY APPLICATION COUNT
 ----------------------------------------
-1. Nakuru: 76.0 (7 scored apps)
-2. Siaya: 75.33 (6 scored apps)
-3. Trans Nzoia: 75.33 (3 scored apps)
-4. Busia: 74.75 (12 scored apps)
-5. Nyamira: 74.75 (4 scored apps)
-6. Meru: 74.5 (18 scored apps)
-7. Narok: 74.33 (3 scored apps)
-8. Uasin Gishu: 73.94 (18 scored apps)
-9. Nairobi: 73.92 (24 scored apps)
-10. Migori: 73.82 (11 scored apps)
+ 1. Kakamega             -  75 apps (0% co-ops, 0% companies)
+ 2. Nairobi              -  25 apps (0% co-ops, 0% companies)
+ 3. Kiambu               -  22 apps (0% co-ops, 0% companies)
+ 4. Meru                 -  22 apps (0% co-ops, 0% companies)
+ 5. Kisii                -  21 apps (0% co-ops, 0% companies)
+ 6. Uasin Gishu          -  20 apps (0% co-ops, 0% companies)
+ 7. Kericho              -  19 apps (0% co-ops, 0% companies)
+ 8. Kwale                -  16 apps (0% co-ops, 0% companies)
+ 9. Makueni              -  16 apps (0% co-ops, 0% companies)
+10. Laikipia             -  15 apps (0% co-ops, 0% companies)
+
+COUNTIES BY BUSINESS TYPE CONCENTRATION
+---------------------------------------------
+Most Cooperative-Heavy Counties:
+  Baringo             :  0/ 8 (0%)
+  Bungoma             :  0/13 (0%)
+  Busia               :  0/13 (0%)
+  Elgeiyo Marakwet    :  0/ 8 (0%)
+  Embu                :  0/12 (0%)
+
+Most Company-Heavy Counties:
+  Baringo             :  0/ 8 (0%)
+  Bungoma             :  0/13 (0%)
+  Busia               :  0/13 (0%)
+  Elgeiyo Marakwet    :  0/ 8 (0%)
+  Embu                :  0/12 (0%)
+
+DOCUMENT COMPLETENESS ANALYSIS
+-----------------------------------
+Applications with Registration Documents:   0 (0.0%)
+Applications with Financial Statements:   177 (31.9%)
+Applications with Bank Statements:       299 (53.9%)
+
+DOCUMENT QUALITY INDICATORS
+------------------------------
+Counties with Best Document Completeness (min 5 applications):
+  Murang'a            : 38.9% completeness (9 apps)
+  Baringo             : 31.2% completeness (8 apps)
+  Bungoma             : 30.8% completeness (13 apps)
+  Machakos            : 30.6% completeness (9 apps)
+  Nakuru              : 30.6% completeness (9 apps)
+
+DETAILED COUNTY BREAKDOWN
+------------------------------
+County               Apps  Co-op Comp  Grp  SACCO Bal  Inc  Cash MPesa Complete%
+-----------------------------------------------------------------------------------------------
+Baringo              8     0     0     0    0     3    2    1    2     31.2     
+Bomet                4     0     0     0    0     0    1    1    0     31.2     
+Bungoma              13    0     0     0    0     5    6    2    0     30.8     
+Busia                13    0     0     0    0     2    3    3    2     26.9     
+Elgeiyo Marakwet     8     0     0     0    0     3    1    1    0     28.1     
+Embu                 12    0     0     0    0     2    2    0    1     16.7     
+Garissa              9     0     0     0    0     0    0    0    1     16.7     
+Homa Bay             13    0     0     0    0     0    1    0    4     13.5     
+Isiolo               4     0     0     0    0     1    0    0    0     18.8     
+Kajiado              8     0     0     0    0     0    2    1    3     12.5     
+Kakamega             75    0     0     0    0     1    2    1    4     23.7     
+Kericho              19    0     0     0    0     8    7    8    3     28.9     
+Kiambu               22    0     0     0    0     11   8    8    8     29.5     
+Kilifi               9     0     0     0    0     2    4    2    1     25.0     
+Kirinyaga            6     0     0     0    0     1    2    1    1     20.8     
+Kisii                21    0     0     0    0     9    2    2    2     20.2     
+Kisumu               13    0     0     0    0     0    1    0    4     13.5     
+Kitui                12    0     0     0    0     2    1    0    0     25.0     
+Kwale                16    0     0     0    0     1    1    1    3     14.1     
+Laikipia             15    0     0     0    0     6    4    2    1     21.7     
+Lamu                 4     0     0     0    0     0    0    0    0     18.8     
+Machakos             9     0     0     0    0     3    1    1    2     30.6     
+Makueni              16    0     0     0    0     1    3    1    7     20.3     
+Mandera              5     0     0     0    0     0    0    1    2     10.0     
+Marsabit             4     0     0     0    0     1    0    0    1     6.2      
+Meru                 22    0     0     0    0     5    7    5    5     22.7     
+Migori               12    0     0     0    0     3    2    2    3     27.1     
+Mombasa              7     0     0     0    0     0    0    0    5     10.7     
+Murang'a             9     0     0     0    0     5    4    3    1     38.9     
+Nairobi              25    0     0     0    0     3    6    4    7     24.0     
+Nakuru               9     0     0     0    0     3    4    3    0     30.6     
+Nandi                9     0     0     0    0     4    2    3    3     22.2     
+Narok                3     0     0     0    0     0    0    0    1     25.0     
+Nyamira              4     0     0     0    0     1    0    1    1     25.0     
+Nyandarua            11    0     0     0    0     3    1    5    0     25.0     
+Nyeri                14    0     0     0    0     4    5    2    1     28.6     
+Samburu              6     0     0     0    0     0    0    0    2     20.8     
+Siaya                9     0     0     0    0     1    1    1    1     16.7     
+Taita Taveta         6     0     0     0    0     0    1    1    0     12.5     
+Tana River           3     0     0     0    0     0    0    0    1     8.3      
+Tharaka Nithi        9     0     0     0    0     1    4    2    0     30.6     
+Trans Nzoia          4     0     0     0    0     1    2    2    0     25.0     
+Turkana              10    0     0     0    0     1    0    0    4     15.0     
+Uasin Gishu          20    0     0     0    0     6    3    2    5     23.8     
+Vihiga               5     0     0     0    0     0    1    0    1     20.0     
+Wajir                14    0     0     0    0     1    1    0    3     12.5     
+West Pokot           6     0     0     0    0     0    1    1    0     25.0     
+
+Column Legend:
+Apps = Number of Applications
+Co-op = Cooperatives
+Comp = Companies/Limited
+Grp = Groups/Self-Help
+SACCO = SACCOs/Savings
+Bal = Balance Sheets
+Inc = Income Statements
+Cash = Cashflow Statements
+MPesa = M-Pesa Statements
+Complete% = Document Completeness Score

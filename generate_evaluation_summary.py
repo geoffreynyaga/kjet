@@ -11,7 +11,9 @@ from datetime import datetime
 def generate_evaluation_summary():
     """Generate comprehensive summary of all county evaluations"""
 
-    output_dir = "/Users/geoff/Downloads/Nakuru/output-results"
+    output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "output-results")
+
+
     summary = {
         "summary_metadata": {
             "generation_date": datetime.now().isoformat(),

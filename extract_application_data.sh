@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Script to extract key information from all application PDFs
-cd "/Users/geoff/Downloads/Nakuru/data"
+cd "/Users/geoff/Downloads/KJET/data"
 
 echo "Extracting key data from all applications..."
 echo "=========================================="

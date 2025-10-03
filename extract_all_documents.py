@@ -121,68 +121,107 @@ def install_package(package):
         # Fallback to system installation with --user flag
         subprocess.check_call([sys.executable, "-m", "pip", "install", "--user", package])
 
-def extract_pdf_text(pdf_path):
-    """Extract text from PDF file using PyPDF2 or system pdftotext with enhanced error handling"""
-    try:
-        # Try PyPDF2 first with strict error handling disabled
-        import PyPDF2
-        with open(pdf_path, 'rb') as file:
-            # Try with strict=False to handle corrupted PDFs
+def extract_with_pypdf2_lenient(pdf_path):
+    """Extract text using PyPDF2 with lenient error handling."""
+    import PyPDF2
+    with open(pdf_path, 'rb') as file:
+        reader = PyPDF2.PdfReader(file, strict=False)
+        
+        text = ""
+        total_pages = len(reader.pages)
+        
+        for page_num, page in enumerate(reader.pages):
             try:
-                reader = PyPDF2.PdfReader(file, strict=False)
-            except Exception:
-                # If that fails, try with strict=True but catch specific errors
-                file.seek(0)
-                reader = PyPDF2.PdfReader(file, strict=True)
-            
-            text = ""
-            total_pages = len(reader.pages)
-            
-            for page_num, page in enumerate(reader.pages):
-                try:
-                    page_text = page.extract_text()
-                    if page_text and page_text.strip():  # Only add non-empty pages
-                        text += f"\n--- PAGE {page_num + 1} of {total_pages} ---\n{page_text}\n"
-                except Exception as page_error:
-                    # Log page-specific errors but continue with other pages
-                    text += f"\n--- PAGE {page_num + 1} of {total_pages} ---\n[ERROR: Could not extract text from this page: {str(page_error)}]\n"
-            
-            # Clean and normalize text
-            if text.strip():
-                text = clean_extracted_text(text)
-                return text.strip()
-            else:
-                return "PDF appears to be image-based or corrupted - no extractable text found"
-            
-    except Exception as pdf_error:
-        # Enhanced fallback to system pdftotext with better error handling
-        error_msg = str(pdf_error).lower()
+                page_text = page.extract_text()
+                if page_text and page_text.strip():  # Only add non-empty pages
+                    text += f"\n--- PAGE {page_num + 1} of {total_pages} ---\n{page_text}\n"
+            except Exception as page_error:
+                # Log page-specific errors but continue with other pages
+                text += f"\n--- PAGE {page_num + 1} of {total_pages} ---\n[ERROR: Could not extract text from this page: {str(page_error)}]\n"
         
-        # Log the specific PDF error type for debugging
-        if "floatobject" in error_msg:
-            fallback_reason = "corrupted float values in PDF structure"
-        elif "multiple definitions" in error_msg:
-            fallback_reason = "duplicate dictionary keys in PDF"
-        elif "startxref" in error_msg:
-            fallback_reason = "corrupted cross-reference table"
-        elif "trailer" in error_msg:
-            fallback_reason = "missing or corrupted PDF trailer"
+        # Clean and normalize text
+        if text.strip():
+            text = clean_extracted_text(text)
+            return text.strip()
         else:
-            fallback_reason = f"PDF parsing error: {str(pdf_error)[:100]}"
+            return "PDF appears to be image-based or corrupted - no extractable text found"
+
+
+def extract_with_pypdf2_strict(pdf_path):
+    """Extract text using PyPDF2 with strict error handling."""
+    import PyPDF2
+    with open(pdf_path, 'rb') as file:
+        reader = PyPDF2.PdfReader(file, strict=True)
         
-        # Try system pdftotext as fallback
+        text = ""
+        total_pages = len(reader.pages)
+        
+        for page_num, page in enumerate(reader.pages):
+            try:
+                page_text = page.extract_text()
+                if page_text and page_text.strip():  # Only add non-empty pages
+                    text += f"\n--- PAGE {page_num + 1} of {total_pages} ---\n{page_text}\n"
+            except Exception as page_error:
+                # Log page-specific errors but continue with other pages
+                text += f"\n--- PAGE {page_num + 1} of {total_pages} ---\n[ERROR: Could not extract text from this page: {str(page_error)}]\n"
+        
+        # Clean and normalize text
+        if text.strip():
+            text = clean_extracted_text(text)
+            return text.strip()
+        else:
+            return "PDF appears to be image-based or corrupted - no extractable text found"
+
+
+def extract_with_pdftotext(pdf_path):
+    """Extract text using system pdftotext command."""
+    result = subprocess.run(['pdftotext', '-layout', '-enc', 'UTF-8', str(pdf_path), '-'], 
+                          capture_output=True, text=True, timeout=60)
+    if result.returncode == 0 and result.stdout.strip():
+        cleaned_text = clean_extracted_text(result.stdout.strip())
+        return cleaned_text
+    else:
+        raise Exception(f"pdftotext failed: {result.stderr[:200]}")
+
+
+def extract_pdf_text(pdf_path):
+    """Extract text from PDF with multiple fallback strategies."""
+    extractors = [
+        ('PyPDF2-lenient', extract_with_pypdf2_lenient),
+        ('PyPDF2-strict', extract_with_pypdf2_strict),
+        ('pdftotext', extract_with_pdftotext),
+    ]
+    
+    errors = []
+    
+    for name, extractor in extractors:
         try:
-            result = subprocess.run(['pdftotext', '-layout', '-enc', 'UTF-8', str(pdf_path), '-'], 
-                                  capture_output=True, text=True, timeout=60)
-            if result.returncode == 0 and result.stdout.strip():
-                cleaned_text = clean_extracted_text(result.stdout.strip())
-                return f"[EXTRACTED VIA PDFTOTEXT - PyPDF2 failed due to {fallback_reason}]\n\n{cleaned_text}"
-            else:
-                return f"ERROR: Both PyPDF2 and pdftotext failed - {fallback_reason}. pdftotext error: {result.stderr[:200]}"
-        except (FileNotFoundError, subprocess.TimeoutExpired) as fallback_error:
-            return f"ERROR: PyPDF2 failed ({fallback_reason}) and pdftotext not available: {str(fallback_error)}"
-        except Exception as fallback_error:
-            return f"ERROR: Both PyPDF2 ({fallback_reason}) and pdftotext failed: {str(fallback_error)}"
+            result = extractor(pdf_path)
+            if result and result.strip():
+                # Add error context if this is a fallback method
+                if errors and "PyPDF2" not in name:
+                    error_msg = str(errors[0]).lower()
+                    # Categorize the PyPDF2 error for better debugging
+                    if "floatobject" in error_msg:
+                        fallback_reason = "corrupted float values in PDF structure"
+                    elif "multiple definitions" in error_msg:
+                        fallback_reason = "duplicate dictionary keys in PDF"
+                    elif "startxref" in error_msg:
+                        fallback_reason = "corrupted cross-reference table"
+                    elif "trailer" in error_msg:
+                        fallback_reason = "missing or corrupted PDF trailer"
+                    else:
+                        fallback_reason = f"PDF parsing error: {str(errors[0])[:100]}"
+                    
+                    return f"[EXTRACTED VIA {name.upper()} - PyPDF2 failed due to {fallback_reason}]\n\n{result}"
+                return result
+        except Exception as e:
+            errors.append(e)
+            continue
+    
+    # All methods failed
+    error_details = "; ".join([f"{extractors[i][0]}: {str(e)}" for i, e in enumerate(errors)])
+    return f"ERROR: All extraction methods failed - {error_details}"
 
 def clean_extracted_text(text):
     """Clean and normalize extracted text for better LLM processing"""
@@ -391,7 +430,7 @@ def extract_structured_data(content, doc_type, file_name):
         if emails:
             structured_data["email_addresses"] = list(set(emails))
         if phones:
-            structured_data["phone_numbers"] = list(set(phones))
+            structured_data["phone_numbers"] = list(set(phones[:2]))
         
         # Extract financial amounts (KSH, USD)
         money_pattern = r'(?:KSH|USD|Ksh|ksh|\$)\s*[\d,]+(?:\.\d{2})?'

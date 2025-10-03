@@ -3,8 +3,8 @@
 # Simple bash script to extract all document contents
 # Uses available system tools for text extraction and OCR
 
-DATA_DIR="/Users/geoff/Downloads/Nakuru/data"
-OUTPUT_DIR="/Users/geoff/Downloads/Nakuru"
+DATA_DIR="/Users/geoff/Downloads/KJET/data"
+OUTPUT_DIR="/Users/geoff/Downloads/KJET"
 OUTPUT_FILE="$OUTPUT_DIR/all_applications_extracted.txt"
 
 echo "KJET Application Document Extraction" > "$OUTPUT_FILE"

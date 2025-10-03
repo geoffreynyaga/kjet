@@ -1,0 +1,1549 @@
+{
+  "evaluation_metadata": {
+    "county": "Makueni",
+    "total_applications": 16,
+    "evaluation_date": "2025-10-02T12:08:56.548654",
+    "evaluator_version": "1.0",
+    "rules_version": "rules.md - Annex A & B"
+  },
+  "data_enrichment": {
+    "applications_with_business_name": 16,
+    "applications_with_standardized_business_name": 0,
+    "applications_with_woman_owned_flag": 16,
+    "applications_with_woman_owned_proof": 3
+  },
+  "eligibility_summary": {
+    "total_applications": 16,
+    "eligible_applications": 16,
+    "ineligible_applications": 0,
+    "eligibility_rate": 100.0,
+    "criteria_failure_breakdown": {
+      "E1_registration_legality": 0,
+      "E2_county_mapping": 0,
+      "E3_priority_value_chain": 0,
+      "E4_financial_evidence": 0,
+      "E5_consent_contactability": 0
+    }
+  },
+  "scoring_summary": {
+    "total_scored": 16,
+    "average_score": 71.88,
+    "highest_score": 85.0,
+    "lowest_score": 64.0,
+    "score_distribution": {
+      "excellent_80_100": 3,
+      "good_70_79": 5,
+      "fair_60_69": 8,
+      "poor_below_60": 0
+    }
+  },
+  "application_evaluations": {
+    "Makueni_164": {
+      "application_id": "Makueni_164",
+      "business_type": "MSME Association",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "Gracious kaiani women Group",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 1,
+          "financial_position": 2,
+          "market_demand_competitiveness": 3,
+          "business_proposal_viability": 4,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 5
+        },
+        "criteria_explanations": {
+          "registration_track_record": {
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
+          },
+          "financial_position": {
+            "score": 2,
+            "rubric_explanation": "Turnover <1M; sporadic records"
+          },
+          "market_demand_competitiveness": {
+            "score": 3,
+            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
+          },
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan with minor gaps; targets & timelines present"
+          },
+          "value_chain_alignment": {
+            "score": 2,
+            "rubric_explanation": "Peripheral role; unclear node"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
+          }
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 1,
+            "normalized_score": 20,
+            "weight": 0.05,
+            "weighted_score": 1.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 65.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Fair"
+      }
+    },
+    "Makueni_204": {
+      "application_id": "Makueni_204",
+      "business_type": "Private company",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "MUEN PACKLINEYS INVESTMENTS LRD",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 1,
+          "financial_position": 5,
+          "market_demand_competitiveness": 3,
+          "business_proposal_viability": 3,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 5
+        },
+        "criteria_explanations": {
+          "registration_track_record": {
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
+          },
+          "financial_position": {
+            "score": 5,
+            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
+          },
+          "market_demand_competitiveness": {
+            "score": 3,
+            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
+          },
+          "business_proposal_viability": {
+            "score": 3,
+            "rubric_explanation": "Direction clear; targets generic; budget rough"
+          },
+          "value_chain_alignment": {
+            "score": 2,
+            "rubric_explanation": "Peripheral role; unclear node"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
+          }
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 1,
+            "normalized_score": 20,
+            "weight": 0.05,
+            "weighted_score": 1.0
+          },
+          "financial_position": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 72.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Makueni_290": {
+      "application_id": "Makueni_290",
+      "business_type": "Other",
+      "woman_owned": "No",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "WOTE ORGANIZATION FOR SUSTAINABLE COMMUNITY DEVELOPMENT",
+      "woman_owned_proof": "No",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 1,
+          "financial_position": 5,
+          "market_demand_competitiveness": 3,
+          "business_proposal_viability": 4,
+          "value_chain_alignment": 4,
+          "inclusivity_sustainability": 5
+        },
+        "criteria_explanations": {
+          "registration_track_record": {
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
+          },
+          "financial_position": {
+            "score": 5,
+            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
+          },
+          "market_demand_competitiveness": {
+            "score": 3,
+            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
+          },
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan with minor gaps; targets & timelines present"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node participation; some linkages"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
+          }
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 1,
+            "normalized_score": 20,
+            "weight": 0.05,
+            "weighted_score": 1.0
+          },
+          "financial_position": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 81.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Makueni_317": {
+      "application_id": "Makueni_317",
+      "business_type": "MSME Association",
+      "woman_owned": "No",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "EMALI JUAKALI ASSOCIATION",
+      "woman_owned_proof": "No",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 1,
+          "financial_position": 3,
+          "market_demand_competitiveness": 3,
+          "business_proposal_viability": 3,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 5
+        },
+        "criteria_explanations": {
+          "registration_track_record": {
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–<5M; stable or recovering; at least one statement"
+          },
+          "market_demand_competitiveness": {
+            "score": 3,
+            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
+          },
+          "business_proposal_viability": {
+            "score": 3,
+            "rubric_explanation": "Direction clear; targets generic; budget rough"
+          },
+          "value_chain_alignment": {
+            "score": 2,
+            "rubric_explanation": "Peripheral role; unclear node"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
+          }
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 1,
+            "normalized_score": 20,
+            "weight": 0.05,
+            "weighted_score": 1.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 64.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Fair"
+      }
+    },
+    "Makueni_329": {
+      "application_id": "Makueni_329",
+      "business_type": "MSME Association",
+      "woman_owned": "No",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "SULTAN HAMUD JUAKALI ASSOCIATION",
+      "woman_owned_proof": "No",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 1,
+          "financial_position": 3,
+          "market_demand_competitiveness": 3,
+          "business_proposal_viability": 3,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 5
+        },
+        "criteria_explanations": {
+          "registration_track_record": {
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–<5M; stable or recovering; at least one statement"
+          },
+          "market_demand_competitiveness": {
+            "score": 3,
+            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
+          },
+          "business_proposal_viability": {
+            "score": 3,
+            "rubric_explanation": "Direction clear; targets generic; budget rough"
+          },
+          "value_chain_alignment": {
+            "score": 2,
+            "rubric_explanation": "Peripheral role; unclear node"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
+          }
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 1,
+            "normalized_score": 20,
+            "weight": 0.05,
+            "weighted_score": 1.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 64.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Fair"
+      }
+    },
+    "Makueni_365": {
+      "application_id": "Makueni_365",
+      "business_type": "Cooperative",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "MAKIOU DAIRY FARMERS COOPERATIVE SOCIETY",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 1,
+          "financial_position": 3,
+          "market_demand_competitiveness": 3,
+          "business_proposal_viability": 3,
+          "value_chain_alignment": 3,
+          "inclusivity_sustainability": 5
+        },
+        "criteria_explanations": {
+          "registration_track_record": {
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–<5M; stable or recovering; at least one statement"
+          },
+          "market_demand_competitiveness": {
+            "score": 3,
+            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
+          },
+          "business_proposal_viability": {
+            "score": 3,
+            "rubric_explanation": "Direction clear; targets generic; budget rough"
+          },
+          "value_chain_alignment": {
+            "score": 3,
+            "rubric_explanation": "Priority VC; weak linkages; potential to upgrade"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
+          }
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 1,
+            "normalized_score": 20,
+            "weight": 0.05,
+            "weighted_score": 1.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.1,
+            "weighted_score": 6.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 66.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Fair"
+      }
+    },
+    "Makueni_406": {
+      "application_id": "Makueni_406",
+      "business_type": "Other",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "SOCIO-ECONOMIC GROUPS",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 1,
+          "financial_position": 3,
+          "market_demand_competitiveness": 3,
+          "business_proposal_viability": 4,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 5
+        },
+        "criteria_explanations": {
+          "registration_track_record": {
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–<5M; stable or recovering; at least one statement"
+          },
+          "market_demand_competitiveness": {
+            "score": 3,
+            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
+          },
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan with minor gaps; targets & timelines present"
+          },
+          "value_chain_alignment": {
+            "score": 2,
+            "rubric_explanation": "Peripheral role; unclear node"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
+          }
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 1,
+            "normalized_score": 20,
+            "weight": 0.05,
+            "weighted_score": 1.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 69.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Fair"
+      }
+    },
+    "unknown_8": {
+      "application_id": "unknown_8",
+      "business_type": "Other",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "ANGELMAA ENTERPRISES",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 1,
+          "financial_position": 5,
+          "market_demand_competitiveness": 3,
+          "business_proposal_viability": 3,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 5
+        },
+        "criteria_explanations": {
+          "registration_track_record": {
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
+          },
+          "financial_position": {
+            "score": 5,
+            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
+          },
+          "market_demand_competitiveness": {
+            "score": 3,
+            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
+          },
+          "business_proposal_viability": {
+            "score": 3,
+            "rubric_explanation": "Direction clear; targets generic; budget rough"
+          },
+          "value_chain_alignment": {
+            "score": 2,
+            "rubric_explanation": "Peripheral role; unclear node"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
+          }
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 1,
+            "normalized_score": 20,
+            "weight": 0.05,
+            "weighted_score": 1.0
+          },
+          "financial_position": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 72.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "unknown_9": {
+      "application_id": "unknown_9",
+      "business_type": "Private company",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "Molten Solutions Limited",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 1,
+          "financial_position": 2,
+          "market_demand_competitiveness": 3,
+          "business_proposal_viability": 4,
+          "value_chain_alignment": 4,
+          "inclusivity_sustainability": 5
+        },
+        "criteria_explanations": {
+          "registration_track_record": {
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
+          },
+          "financial_position": {
+            "score": 2,
+            "rubric_explanation": "Turnover <1M; sporadic records"
+          },
+          "market_demand_competitiveness": {
+            "score": 3,
+            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
+          },
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan with minor gaps; targets & timelines present"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node participation; some linkages"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
+          }
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 1,
+            "normalized_score": 20,
+            "weight": 0.05,
+            "weighted_score": 1.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 69.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Fair"
+      }
+    },
+    "Makueni_425": {
+      "application_id": "Makueni_425",
+      "business_type": "Private company",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "limua farm",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 1,
+          "financial_position": 5,
+          "market_demand_competitiveness": 3,
+          "business_proposal_viability": 3,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 5
+        },
+        "criteria_explanations": {
+          "registration_track_record": {
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
+          },
+          "financial_position": {
+            "score": 5,
+            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
+          },
+          "market_demand_competitiveness": {
+            "score": 3,
+            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
+          },
+          "business_proposal_viability": {
+            "score": 3,
+            "rubric_explanation": "Direction clear; targets generic; budget rough"
+          },
+          "value_chain_alignment": {
+            "score": 2,
+            "rubric_explanation": "Peripheral role; unclear node"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
+          }
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 1,
+            "normalized_score": 20,
+            "weight": 0.05,
+            "weighted_score": 1.0
+          },
+          "financial_position": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 72.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Makueni_458": {
+      "application_id": "Makueni_458",
+      "business_type": "Cooperative",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "Kitise Farmers Cooperative Society Ltd",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 5,
+          "financial_position": 5,
+          "market_demand_competitiveness": 3,
+          "business_proposal_viability": 4,
+          "value_chain_alignment": 4,
+          "inclusivity_sustainability": 5
+        },
+        "criteria_explanations": {
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance (elected officials, minutes), audited handover(s)"
+          },
+          "financial_position": {
+            "score": 5,
+            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
+          },
+          "market_demand_competitiveness": {
+            "score": 3,
+            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
+          },
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan with minor gaps; targets & timelines present"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node participation; some linkages"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
+          }
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          },
+          "financial_position": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 85.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Makueni_490": {
+      "application_id": "Makueni_490",
+      "business_type": "MSME Association",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "MUMAKE MERCHANTS TO BE THE FIRST",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 1,
+          "financial_position": 3,
+          "market_demand_competitiveness": 3,
+          "business_proposal_viability": 3,
+          "value_chain_alignment": 3,
+          "inclusivity_sustainability": 5
+        },
+        "criteria_explanations": {
+          "registration_track_record": {
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–<5M; stable or recovering; at least one statement"
+          },
+          "market_demand_competitiveness": {
+            "score": 3,
+            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
+          },
+          "business_proposal_viability": {
+            "score": 3,
+            "rubric_explanation": "Direction clear; targets generic; budget rough"
+          },
+          "value_chain_alignment": {
+            "score": 3,
+            "rubric_explanation": "Priority VC; weak linkages; potential to upgrade"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
+          }
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 1,
+            "normalized_score": 20,
+            "weight": 0.05,
+            "weighted_score": 1.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.1,
+            "weighted_score": 6.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 66.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Fair"
+      }
+    },
+    "Makueni_505": {
+      "application_id": "Makueni_505",
+      "business_type": "Private company",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "mui chemist",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 1,
+          "financial_position": 5,
+          "market_demand_competitiveness": 3,
+          "business_proposal_viability": 4,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 5
+        },
+        "criteria_explanations": {
+          "registration_track_record": {
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
+          },
+          "financial_position": {
+            "score": 5,
+            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
+          },
+          "market_demand_competitiveness": {
+            "score": 3,
+            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
+          },
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan with minor gaps; targets & timelines present"
+          },
+          "value_chain_alignment": {
+            "score": 2,
+            "rubric_explanation": "Peripheral role; unclear node"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
+          }
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 1,
+            "normalized_score": 20,
+            "weight": 0.05,
+            "weighted_score": 1.0
+          },
+          "financial_position": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 77.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Makueni_526": {
+      "application_id": "Makueni_526",
+      "business_type": "Private company",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "WECECI VENTURES",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 3,
+          "financial_position": 5,
+          "market_demand_competitiveness": 3,
+          "business_proposal_viability": 3,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 5
+        },
+        "criteria_explanations": {
+          "registration_track_record": {
+            "score": 3,
+            "rubric_explanation": "Registered <1 yr; basic structure in place"
+          },
+          "financial_position": {
+            "score": 5,
+            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
+          },
+          "market_demand_competitiveness": {
+            "score": 3,
+            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
+          },
+          "business_proposal_viability": {
+            "score": 3,
+            "rubric_explanation": "Direction clear; targets generic; budget rough"
+          },
+          "value_chain_alignment": {
+            "score": 2,
+            "rubric_explanation": "Peripheral role; unclear node"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
+          }
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.05,
+            "weighted_score": 3.0
+          },
+          "financial_position": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 74.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Makueni_531": {
+      "application_id": "Makueni_531",
+      "business_type": "Private company",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "MINERALS CLUSTER",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 1,
+          "financial_position": 2,
+          "market_demand_competitiveness": 3,
+          "business_proposal_viability": 4,
+          "value_chain_alignment": 4,
+          "inclusivity_sustainability": 5
+        },
+        "criteria_explanations": {
+          "registration_track_record": {
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
+          },
+          "financial_position": {
+            "score": 2,
+            "rubric_explanation": "Turnover <1M; sporadic records"
+          },
+          "market_demand_competitiveness": {
+            "score": 3,
+            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
+          },
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan with minor gaps; targets & timelines present"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node participation; some linkages"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
+          }
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 1,
+            "normalized_score": 20,
+            "weight": 0.05,
+            "weighted_score": 1.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 69.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Fair"
+      }
+    },
+    "Makueni_539": {
+      "application_id": "Makueni_539",
+      "business_type": "Private company",
+      "woman_owned": "Yes",
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "business_name": "FOOD AND BEVERAGE",
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 1,
+          "financial_position": 5,
+          "market_demand_competitiveness": 5,
+          "business_proposal_viability": 4,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 5
+        },
+        "criteria_explanations": {
+          "registration_track_record": {
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
+          },
+          "financial_position": {
+            "score": 5,
+            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts or purchase orders; multi-channel sales; repeat customers; defensible price/quality"
+          },
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan with minor gaps; targets & timelines present"
+          },
+          "value_chain_alignment": {
+            "score": 2,
+            "rubric_explanation": "Peripheral role; unclear node"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
+          }
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 1,
+            "normalized_score": 20,
+            "weight": 0.05,
+            "weighted_score": 1.0
+          },
+          "financial_position": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          }
+        },
+        "composite_score": 85.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    }
+  }
+}

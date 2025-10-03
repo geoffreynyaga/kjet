@@ -7,6 +7,7 @@ import ApplicationFiles from './ApplicationFiles.tsx';
 import CountiesHome from './counties.tsx';
 import HumanCountiesAnalysis from './HumanCountiesAnalysis.tsx';
 import LLMCountiesAnalysis from './LLMCountiesAnalysis.tsx';
+import StatisticsDashboard from './StatisticsDashboard.tsx';
 
-export { CountiesHome, ApplicationFiles, LLMCountiesAnalysis, HumanCountiesAnalysis };
+export { CountiesHome, ApplicationFiles, LLMCountiesAnalysis, HumanCountiesAnalysis, StatisticsDashboard };
 export default CountiesHome;
