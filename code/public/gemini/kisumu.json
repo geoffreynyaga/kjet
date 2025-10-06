@@ -8,12 +8,12 @@
     "S5_Value_Chain_Alignment_10%": 0.1,
     "S6_Inclusivity_Sustainability_20%": 0.2
   },
-  "ranked_applicants": [
+  "applications": [
     {
-      "rank": 1,
       "application_id": "Kisumu_525",
       "applicant_name": "Kisumu Central Tea Factory Outgrowers SACCO",
       "eligibility_status": "ELIGIBLE",
+      "rank": 1,
       "composite_score": 91.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -43,10 +43,10 @@
       }
     },
     {
-      "rank": 2,
       "application_id": "Kisumu_167",
       "applicant_name": "Miya Ywech Association",
       "eligibility_status": "ELIGIBLE",
+      "rank": 2,
       "composite_score": 82.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -76,10 +76,10 @@
       }
     },
     {
-      "rank": 3,
       "application_id": "Kisumu_450",
       "applicant_name": "OTIENO OKELO JUA KALI ASSOCIATION",
       "eligibility_status": "ELIGIBLE",
+      "rank": 3,
       "composite_score": 79.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -109,10 +109,10 @@
       }
     },
     {
-      "rank": 4,
       "application_id": "Kisumu_494",
       "applicant_name": "Nyakach Central Rice Farmers Co-operative Society Ltd",
       "eligibility_status": "ELIGIBLE",
+      "rank": 4,
       "composite_score": 79.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -142,10 +142,10 @@
       }
     },
     {
-      "rank": 5,
       "application_id": "Kisumu_487",
       "applicant_name": "KISUMU YOUTH IN TEXTILE AND DESIGN",
       "eligibility_status": "ELIGIBLE",
+      "rank": 5,
       "composite_score": 74.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -175,10 +175,10 @@
       }
     },
     {
-      "rank": 6,
       "application_id": "Kisumu_181",
       "applicant_name": "NYATI RICE FARMERS CO-OPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
+      "rank": 6,
       "composite_score": 66.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -208,10 +208,10 @@
       }
     },
     {
-      "rank": 7,
       "application_id": "Kisumu_486",
       "applicant_name": "KISUMU EAST FISHING AND AQUACULTURE ASSOCIATION",
       "eligibility_status": "ELIGIBLE",
+      "rank": 7,
       "composite_score": 66.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -241,10 +241,10 @@
       }
     },
     {
-      "rank": 8,
       "application_id": "Kisumu_586",
       "applicant_name": "Nyakach East Rice Millers Limited",
       "eligibility_status": "ELIGIBLE",
+      "rank": 8,
       "composite_score": 65.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -274,10 +274,10 @@
       }
     },
     {
-      "rank": 9,
       "application_id": "Kisumu_568",
       "applicant_name": "DREAMS BUILDERS CONSTRUCTION LIMITED",
       "eligibility_status": "ELIGIBLE",
+      "rank": 9,
       "composite_score": 64.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -307,10 +307,10 @@
       }
     },
     {
-      "rank": 10,
       "application_id": "Kisumu_572",
       "applicant_name": "NYAKACH HANDICRAFT AND WEAVING CO-OPERATIVE",
       "eligibility_status": "ELIGIBLE",
+      "rank": 10,
       "composite_score": 62.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -338,13 +338,14 @@
           "reason": "Very high women participation (95% W); no green practices mentioned (Score 3)."
         }
       }
-    }
-  ],
-  "ineligible_applicants": [
+    },
     {
       "application_id": "Kisumu_159",
       "applicant_name": "Benedicts Media Solutions",
       "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
       "ineligibility_criterion_failed": "E3",
       "reason": "E4"
     },
@@ -352,6 +353,9 @@
       "application_id": "Kisumu_714",
       "applicant_name": "Lake National Savings and Credit Cooperative Society Ltd",
       "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
       "ineligibility_criterion_failed": "E3",
       "reason": "Value Chain (Financial Services/SACCO) is not a designated Priority/Additional VC (E3)."
     }

@@ -8,12 +8,12 @@
     "S5_Value_Chain_Alignment_10%": 0.1,
     "S6_Inclusivity_Sustainability_20%": 0.2
   },
-  "ranked_applicants": [
+  "applications": [
     {
-      "rank": 1,
       "application_id": "West Pokot_540",
       "applicant_name": "KAPTABUK FARMERS COOPERATIVE SOCIETY LTD",
       "eligibility_status": "ELIGIBLE",
+      "rank": 1,
       "composite_score": 83.5,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -43,10 +43,10 @@
       }
     },
     {
-      "rank": 2,
       "application_id": "West Pokot_571",
       "applicant_name": "KALYA FARMERS CO-OPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
+      "rank": 2,
       "composite_score": 81.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -76,10 +76,10 @@
       }
     },
     {
-      "rank": 3,
       "application_id": "West Pokot_574",
       "applicant_name": "RIWO RICE FARMERS COOPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
+      "rank": 3,
       "composite_score": 79.5,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -107,13 +107,14 @@
           "reason": "Strong gender/youth participation (>50% female membership), and 1 green practice adopted (efficient water use)."
         }
       }
-    }
-  ],
-  "ineligible_applicants": [
+    },
     {
       "application_id": "KJET-A28F0198",
       "applicant_name": "SIYOI MULTI-PRODUCE CO-OPERATIVE SOCIETY LIMITED",
       "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
       "ineligibility_criterion_failed": "E4",
       "reason": "The financial evidence provided was either unreadable (image-based PDF) or did not contain verifiable transaction details, thus failing the Minimum Financial Evidence (E4) criterion. The application cannot proceed to scoring."
     },
@@ -121,6 +122,9 @@
       "application_id": "West Pokot_590",
       "applicant_name": "CHEBARA IRRIGATION SCHEME",
       "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
       "ineligibility_criterion_failed": "E3",
       "reason": "The cluster operates in the 'Cabbage/Horticulture' value chain, which is not listed as a Priority Value Chain (E3). The application cannot proceed to scoring."
     },
@@ -128,6 +132,9 @@
       "application_id": "West Pokot_708",
       "applicant_name": "Lelan Farmer Sacco Society Limited",
       "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
       "ineligibility_criterion_failed": "E3",
       "reason": "The cluster is a SACCO (financial service provider), and its primary activity is not one of the designated Priority Value Chains (E3). Although it services the Dairy VC, the core business is not the VC itself. The application cannot proceed to scoring."
     }

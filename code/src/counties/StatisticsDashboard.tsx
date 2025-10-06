@@ -389,7 +389,7 @@ function StatisticsDashboard() {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-sm font-medium text-gray-600">Counties Covered</p>
-                  <p className="text-3xl font-bold text-orange-600">{nationalStats.countyDistribution.length}</p>
+                  <p className="text-3xl font-bold text-orange-600">47</p>
                   <p className="text-sm text-gray-500">Across Kenya</p>
                 </div>
                 <MapPin className="w-8 h-8 text-orange-600" />

@@ -8,12 +8,12 @@
     "S5_Value_Chain_Alignment_10%": 0.1,
     "S6_Inclusivity_Sustainability_20%": 0.2
   },
-  "ranked_applicants": [
+  "applications": [
     {
-      "rank": 1,
       "application_id": "Mandera_235",
       "applicant_name": "Mandera Leather Tanning Association",
       "eligibility_status": "ELIGIBLE",
+      "rank": 1,
       "composite_score": 89.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -43,10 +43,10 @@
       }
     },
     {
-      "rank": 2,
       "application_id": "Mandera_350",
       "applicant_name": "Elwak Construction Materials Group",
       "eligibility_status": "ELIGIBLE",
+      "rank": 2,
       "composite_score": 78.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -74,13 +74,14 @@
           "reason": "Moderate inclusion; some intent on sustainability (Score 3)."
         }
       }
-    }
-  ],
-  "ineligible_applicants": [
+    },
     {
       "application_id": "Mandera_111",
       "applicant_name": "Bulla Panga Milk Producers",
       "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
       "ineligibility_criterion_failed": "E3",
       "reason": "Value Chain (Dairy - Farming/Milk Production) is specifically excluded from the priority VC (E3)."
     },
@@ -88,6 +89,9 @@
       "application_id": "Mandera_567",
       "applicant_name": "Mandera Youth Technology Hub",
       "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
       "ineligibility_criterion_failed": "E3",
       "reason": "Value Chain (Technology/Services) is not a designated Priority/Additional VC (E3)."
     },
@@ -95,6 +99,9 @@
       "application_id": "Mandera_691",
       "applicant_name": "Mandera jua marketing co-operative society limited",
       "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
       "ineligibility_criterion_failed": "E4",
       "reason": "No verifiable financial evidence was provided (E4)."
     }

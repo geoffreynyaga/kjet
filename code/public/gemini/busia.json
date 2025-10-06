@@ -2,161 +2,349 @@
   "report_title": "KJET Busia County Application Ranking and Evaluation",
   "selection_criteria_weights": {
     "S1_Registration_Track_Record_5%": 0.05,
-    "S2_Financial_Position_20%": 0.20,
-    "S3_Market_Demand_Competitiveness_20%": 0.20,
+    "S2_Financial_Position_20%": 0.2,
+    "S3_Market_Demand_Competitiveness_20%": 0.2,
     "S4_Business_Proposal_Viability_25%": 0.25,
-    "S5_Value_Chain_Alignment_10%": 0.10,
-    "S6_Inclusivity_Sustainability_20%": 0.20
+    "S5_Value_Chain_Alignment_10%": 0.1,
+    "S6_Inclusivity_Sustainability_20%": 0.2
   },
-  "ranked_applicants": [
+  "applications": [
     {
+      "application_id": "Busia_163",
+      "applicant_name": "West Health Solution Youth Group",
+      "eligibility_status": "ELIGIBLE",
       "rank": 1,
-      "application_id": "Busia_608",
-      "applicant_name": "SAMIA CONSTRUCTION EQUIPMENT LTD",
-      "eligibility_status": "Eligible",
-      "composite_score": 4.80,
+      "composite_score": 100.0,
       "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {"score": 5, "reason": "Private company, over 3 years operational."},
-        "S2_Financial_Position_20%": {"score": 5, "reason": "Excellent financial health with turnover over KES 10M."},
-        "S3_Market_Demand_Competitiveness_20%": {"score": 5, "reason": "Active rental contracts with county and private developers."},
-        "S4_Business_Proposal_Viability_25%": {"score": 5, "reason": "Detailed plan to acquire new heavy machinery with clear ROI projections."},
-        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Critical service provider role in the Construction value chain (Priority VC)."},
-        "S6_Inclusivity_Sustainability_20%": {"score": 4, "reason": "Moderate inclusion; adopted one green practice (dust suppression technology)."}
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Registered >3 yrs, strong governance implied by detailed ownership structure."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 4.0,
+          "reason": "Turnover KES 5M-<10M, stable/growing trend. Meets threshold."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "Active MOUs/Offtake mentioned, multi-channel sales, clear price/quality positioning."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5.0,
+          "reason": "Clear problem–solution (training gap, clothing needs), detailed execution plan, quantified targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VC (Textiles), critical node (manufacturing/training), documented linkages."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "High participation (50%+ youth, 40% women board), 2+ green practices (solar, organic sourcing, recycling)."
+        }
       }
     },
     {
+      "application_id": "Busia_340",
+      "applicant_name": "BUMAMU RICE FARMERS COOPERATIVE SOCIETY LIMITED",
+      "eligibility_status": "ELIGIBLE",
       "rank": 2,
-      "application_id": "Busia_390",
-      "applicant_name": "BUYENDE CO-OPERATIVE SOCIETY LTD",
-      "eligibility_status": "Eligible",
-      "composite_score": 4.60,
+      "composite_score": 87.0,
       "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {"score": 5, "reason": "Cooperative registered over 3 years (since 2008)."},
-        "S2_Financial_Position_20%": {"score": 5, "reason": "Turnover over KES 10M, verified by audited financials."},
-        "S3_Market_Demand_Competitiveness_20%": {"score": 4, "reason": "Active milling and packaging contracts; strong retail presence."},
-        "S4_Business_Proposal_Viability_25%": {"score": 5, "reason": "Highly viable proposal to acquire modern milling/grading machinery to improve quality (Value Addition)."},
-        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Fills a critical processing/milling node in the Rice value chain (BETA priority)."},
-        "S6_Inclusivity_Sustainability_20%": {"score": 4, "reason": "40% youth members; adopted one green practice (uses rice husk briquettes for energy)."}
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Cooperative, long-term nature, strong governance implied."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 4.0,
+          "reason": "Turnover 5–<10M ($100K+ / KES 14M+) - mostly stable records, mixed currency documentation."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.0,
+          "reason": "Consistent sales, growing channels implied (B2B, retail), basic quality assurance."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Strong plan with minor gaps; targets and timelines present."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Additional VC (Rice), critical node (mechanization/storage), documented linkages."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Strong inclusion implied by farmer coop, 2+ green practices (AWD, gravity water, no burning, agrochemicals integration)."
+        }
       }
-    },
-    {
-      "rank": 3,
-      "application_id": "Busia_610",
-      "applicant_name": "BUSIA TEXTILE AND APPAREL ASSOCIATION",
-      "eligibility_status": "Eligible",
-      "composite_score": 4.60,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {"score": 5, "reason": "MSME Association over 3 years operational."},
-        "S2_Financial_Position_20%": {"score": 4, "reason": "Stable turnover in the KES 5M–<10M range (KES 6.8M)."},
-        "S3_Market_Demand_Competitiveness_20%": {"score": 4, "reason": "Bulk contracts for school uniforms and private labels."},
-        "S4_Business_Proposal_Viability_25%": {"score": 5, "reason": "Highly viable plan to acquire specialized industrial machinery and software."},
-        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Critical manufacturing role in the Textiles value chain (Priority VC)."},
-        "S6_Inclusivity_Sustainability_20%": {"score": 5, "reason": "High women employment (>70%); adopted 2+ green practices (water recycling in dyeing + organic cotton)."}
-      }
-    },
-    {
-      "rank": 4,
-      "application_id": "Busia_607",
-      "applicant_name": "BUNYALA BLUE ECONOMY CLUSTER",
-      "eligibility_status": "Eligible",
-      "composite_score": 4.40,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {"score": 5, "reason": "MSME Association over 3 years operational."},
-        "S2_Financial_Position_20%": {"score": 4, "reason": "Stable financial position with turnover of KES 7.2M (KES 5M–<10M range)."},
-        "S3_Market_Demand_Competitiveness_20%": {"score": 4, "reason": "Consistent supply contracts with three major hotels/markets."},
-        "S4_Business_Proposal_Viability_25%": {"score": 5, "reason": "Detailed plan to establish a modern blast freezer for export-quality production (Value Addition)."},
-        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Critical processing/value-addition node in the Blue Economy VC (BETA priority)."},
-        "S6_Inclusivity_Sustainability_20%": {"score": 4, "reason": "High youth participation; adopted one green practice (uses solar driers for processing)."}
-      }
-    },
-    {
-      "rank": 5,
-      "application_id": "Busia_611",
-      "applicant_name": "TULA CONSTRUCTION COMPANY LTD",
-      "eligibility_status": "Eligible",
-      "composite_score": 4.15,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {"score": 5, "reason": "Private company over 3 years operational."},
-        "S2_Financial_Position_20%": {"score": 4, "reason": "Stable turnover of KES 9.5M (KES 5M–<10M range)."},
-        "S3_Market_Demand_Competitiveness_20%": {"score": 4, "reason": "Consistent sales, strong growth in specialized materials (interlocking bricks)."},
-        "S4_Business_Proposal_Viability_25%": {"score": 4, "reason": "Clear plan to install a new brick-making plant with clear ROI."},
-        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Essential materials production role in the Construction value chain (Priority VC)."},
-        "S6_Inclusivity_Sustainability_20%": {"score": 4, "reason": "Moderate inclusion; adopted one green practice (uses recycled/renewable materials)."}
-      }
-    },
-    {
-      "rank": 6,
-      "application_id": "Busia_609",
-      "applicant_name": "FUNYULA LEATHER PRODUCTS GROUP",
-      "eligibility_status": "Eligible",
-      "composite_score": 4.10,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {"score": 4, "reason": "Cooperative registered 1-3 years."},
-        "S2_Financial_Position_20%": {"score": 3, "reason": "Small-scale operation with turnover of KES 2.5M (KES 1M–<5M range)."},
-        "S3_Market_Demand_Competitiveness_20%": {"score": 4, "reason": "Consistent sales through local craft markets and digital channels (Jumia)."},
-        "S4_Business_Proposal_Viability_25%": {"score": 4, "reason": "Clear plan to purchase advanced stitching/cutting machinery to increase production."},
-        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Fills a critical manufacturing/value-addition role in the Leather value chain (BETA priority)."},
-        "S6_Inclusivity_Sustainability_20%": {"score": 5, "reason": "Qualifies as Woman-owned/led; adopted one green practice (uses only vegetable-tanned leather)."}
-      }
-    },
-    {
-      "rank": 7,
-      "application_id": "Busia_415",
-      "applicant_name": "ADUKO EDIBLE OILS PROCESSORS GROUP",
-      "eligibility_status": "Eligible",
-      "composite_score": 3.90,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {"score": 4, "reason": "MSME Association registered 1-3 years."},
-        "S2_Financial_Position_20%": {"score": 3, "reason": "Small-scale operation with growing turnover under KES 5M."},
-        "S3_Market_Demand_Competitiveness_20%": {"score": 4, "reason": "Regular sales to local schools and small retailers."},
-        "S4_Business_Proposal_Viability_25%": {"score": 4, "reason": "Clear plan to buy high-capacity press and filter system to double output."},
-        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Critical processing role in the Edible Oils value chain (Priority VC)."},
-        "S6_Inclusivity_Sustainability_20%": {"score": 4, "reason": "Majority women members (60%); adopted one green practice (organic waste composting)."}
-      }
-    }
-  ],
-  "ineligible_applicants": [
-    {
-      "application_id": "Busia_550",
-      "applicant_name": "NAMBALE RICE AND CEREALS ASSOCIATION",
-      "eligibility_status": "Ineligible",
-      "ineligibility_criterion_failed": "E4 - Minimum Financial Evidence",
-      "reason": "No verifiable financial evidence (bank/M-PESA statement, income statement, etc.) was submitted for verification."
-    },
-    {
-      "application_id": "Busia_555",
-      "applicant_name": "Teso North Dairy Processors Group",
-      "eligibility_status": "Ineligible",
-      "ineligibility_criterion_failed": "E1 - Registration & Legality",
-      "reason": "The entity is registered as a 'Self-Help Group', which is not a legally recognized cluster entity (MSME association, cooperative, or company) for this program."
-    },
-    {
-      "application_id": "Busia_709",
-      "applicant_name": "BUSIA TRADERS COOPERATIVE SOCIETY",
-      "eligibility_status": "Ineligible",
-      "ineligibility_criterion_failed": "E3 - Priority Value Chain",
-      "reason": "The primary value chain is 'Retail & Trade', which is not a designated priority value chain (Dairy, Textiles, Edible Oils, Construction) or additional BETA value chain."
-    },
-    {
-      "application_id": "Busia_710",
-      "applicant_name": "WEST KENYA EDIBLE OIL FARMERS",
-      "eligibility_status": "Ineligible",
-      "ineligibility_criterion_failed": "E3 - Priority Value Chain",
-      "reason": "The application's focus is on **primary farming** (Edible Oils), which is explicitly excluded from the KJET priority as the program targets value-addition, processing, or manufacturing nodes."
-    },
-    {
-      "application_id": "Busia_712",
-      "applicant_name": "SAMIA AQUACULTURE GROUP",
-      "eligibility_status": "Ineligible",
-      "ineligibility_criterion_failed": "E3 - Priority Value Chain",
-      "reason": "The application's focus is on **primary production/farming** (Aquaculture/Fingerlings), which is outside the scope of the Blue Economy priority for value-addition, processing, or manufacturing nodes."
     },
     {
       "application_id": "Busia_713",
       "applicant_name": "Jenivy Enterprises",
-      "eligibility_status": "Ineligible",
-      "ineligibility_criterion_failed": "E1 - Registration & Legality",
-      "reason": "The entity is registered as a 'Sole Proprietorship'/'Other', which is not a legally recognized cluster entity (MSME association, cooperative, or company) for this program."
+      "eligibility_status": "ELIGIBLE",
+      "rank": 3,
+      "composite_score": 86.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.0,
+          "reason": "Registered 1–3 yrs, documented leadership."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 4.0,
+          "reason": "Turnover 5–<10M, mostly stable records."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "Active MOUs with funeral homes, public/private sector sales, multi-channel sales."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Strong plan with minor gaps; targets and timelines present."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VC (Textiles), critical node (garment manufacturing/training), documented linkages."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "Strong gender/youth participation, 1-2 green practices (solar power, proper waste management)."
+        }
+      }
+    },
+    {
+      "application_id": "Busia_240",
+      "applicant_name": "Mukwano Housing Cooperative Society Ltd",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 4,
+      "composite_score": 84.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Cooperative, Registered >3 yrs, functioning governance implied."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 4.0,
+          "reason": "Turnover 5–<10M, mostly stable records."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "Consistent demand implied by student housing needs, single channel (rental/sales)."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5.0,
+          "reason": "Clear problem–solution (student housing shortage), detailed execution plan, quantified targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VC (Construction), critical node (housing development), documented linkages."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "Strong gender/youth participation assumed, 1-2 green practices (recycled/renewable materials, energy efficiency)."
+        }
+      }
+    },
+    {
+      "application_id": "Busia_398",
+      "applicant_name": "BUTULA SME SACCO SOCIETY LTD",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 5,
+      "composite_score": 83.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Cooperative/SACCO, Registered >3 yrs, strong governance implied."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "Bank statement shows large, active current account balance, suggesting Turnover ≥ KES 10M stability and liquidity."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "Regular local sales/loans; one channel focus on members; emerging quality practices."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Strong plan with minor gaps: to procure coolants, process yogurt, expand loans; targets clear."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VC (Dairy), critical node (aggregation/processing/finance), strong linkages."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "Strong gender/youth participation (87 women, 45 men), 1-2 green practices (AI service loans/heifer loans promoting better dairy methods)."
+        }
+      }
+    },
+    {
+      "application_id": "Busia_515",
+      "applicant_name": "WANDERA CONTRACTORS LIMITED",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 6,
+      "composite_score": 82.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.0,
+          "reason": "Registered 1–3 yrs, documented leadership."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 4.0,
+          "reason": "Turnover 5–<10M, mostly stable records."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.0,
+          "reason": "Consistent monthly orders, growing channels, B2B focus (Public works), basic quality assurance."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Strong plan with minor gaps; targets and timelines present."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VC (Construction), critical node (contracting/supply), documented linkages."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "Strong gender/youth participation assumed, 1-2 green practices (proper waste disposal, drought-resistant plants, local sourcing)."
+        }
+      }
+    },
+    {
+      "application_id": "Busia_513",
+      "applicant_name": "TAREEN INITIATIVE CBO",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 7,
+      "composite_score": 82.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.0,
+          "reason": "Registered 1–3 yrs, documented leadership."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "Turnover 1–<5M, stable records."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.0,
+          "reason": "Consistent monthly orders/MOUs, growing channels, basic quality assurance."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Strong plan with minor gaps; targets and timelines present."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VC (Textiles), critical node (silk reeling/processing), strong linkages."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "High participation, 2+ green practices (mulberry tree planting, organic sericulture, composting waste)."
+        }
+      }
+    },
+    {
+      "application_id": "Busia_468",
+      "applicant_name": "BUSIA MECHTRADERS",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 8,
+      "composite_score": 74.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.0,
+          "reason": "Registered 1–3 yrs, documented leadership."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "Turnover 1–<5M, stable records."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "Regular local sales; one channel focus (local market); emerging quality practices."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Strong plan with minor gaps: purchase another block making machine, trucks; targets present."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VC (Construction), critical node (supply/production), documented linkages."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "Strong gender/youth participation implied, 1-2 green practices (tree planting)."
+        }
+      }
+    },
+    {
+      "application_id": "Busia_660",
+      "applicant_name": "Luanda Farmers cooperative Union Ltd",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 9,
+      "composite_score": 70.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Cooperative Union, Registered >3 yrs, functioning governance implied."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "Turnover 1–<5M, stable records."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "Regular local sales; one channel focus; emerging quality practices."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Direction clear; targets generic; budget rough."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VC (Edible Oils), critical node (processing/marketing), documented linkages."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "Strong inclusion implied by farmer coop, 1-2 green practices (intergreted pest management, organic fertilizer)."
+        }
+      }
+    },
+    {
+      "application_id": "Busia_158",
+      "applicant_name": "JAHASI ELECTRICALS AND SOLAR",
+      "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
+      "ineligibility_criterion_failed": "E3: Priority Value Chain (Pass/Fail)",
+      "reason": "The primary value chain is Solar Energy Services (Technology/Services) which is not one of the KJET Priority (Edible Oils, Dairy, Textiles, Construction) or Additional (Rice, Tea, Blue Economy, Minerals, Forestry, Leather) value chains."
+    },
+    {
+      "application_id": "Busia_339",
+      "applicant_name": "Farmers marketing Cooperative society",
+      "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
+      "ineligibility_criterion_failed": "E4: Minimum Financial Evidence (Pass/Fail)",
+      "reason": "The application claims KES 0 turnover/profit for all 3 years (2022-2024) and thus fails to provide verifiable financial evidence of operation."
+    },
+    {
+      "application_id": "Busia_391",
+      "applicant_name": "Mariachi foundation",
+      "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
+      "ineligibility_criterion_failed": "E4: Minimum Financial Evidence (Pass/Fail)",
+      "reason": "The provided bank statement document is corrupted/unreadable (image-based or encrypted), failing to meet the minimum threshold for verifiable financial evidence."
+    },
+    {
+      "application_id": "Busia_538",
+      "applicant_name": "NAMAHINGA FARMERS COOPERATIVE SOCIETY LIMITED",
+      "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
+      "ineligibility_criterion_failed": "E4: Minimum Financial Evidence (Pass/Fail)",
+      "reason": "The provided financial documents (Cashflow/Income Statements) are for 2016-2018, which is outside the required 'last 12 months' for verifiable financial evidence."
     }
   ]
 }

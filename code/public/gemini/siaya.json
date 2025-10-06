@@ -8,12 +8,12 @@
     "S5_Value_Chain_Alignment_10%": 0.1,
     "S6_Inclusivity_Sustainability_20%": 0.2
   },
-  "ranked_applicants": [
+  "applications": [
     {
-      "rank": 1,
       "application_id": "Siaya_101",
       "applicant_name": "Siaya Edible Oils Processors Co-op",
       "eligibility_status": "ELIGIBLE",
+      "rank": 1,
       "composite_score": 100.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -43,10 +43,10 @@
       }
     },
     {
-      "rank": 2,
       "application_id": "Siaya_202",
       "applicant_name": "Rarieda Textiles Group",
       "eligibility_status": "ELIGIBLE",
+      "rank": 2,
       "composite_score": 82.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -76,10 +76,10 @@
       }
     },
     {
-      "rank": 3,
       "application_id": "Siaya_303",
       "applicant_name": "Bondo Construction Jua Kali",
       "eligibility_status": "ELIGIBLE",
+      "rank": 3,
       "composite_score": 70.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -109,10 +109,10 @@
       }
     },
     {
-      "rank": 4,
       "application_id": "Siaya_404",
       "applicant_name": "Siaya Leather Works",
       "eligibility_status": "ELIGIBLE",
+      "rank": 4,
       "composite_score": 70.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -142,10 +142,10 @@
       }
     },
     {
-      "rank": 5,
       "application_id": "Siaya_505",
       "applicant_name": "Gem Rice Processing Cooperative",
       "eligibility_status": "ELIGIBLE",
+      "rank": 5,
       "composite_score": 67.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -173,13 +173,14 @@
           "reason": "Strong inclusion (50% women); 1-2 green practices (Score 4) [Simulated]."
         }
       }
-    }
-  ],
-  "ineligible_applicants": [
+    },
     {
       "application_id": "Siaya_606",
       "applicant_name": "Ugenya General Traders",
       "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
       "ineligibility_criterion_failed": "E3",
       "reason": "Value Chain (General Retail/Services) is not a designated Priority/Additional VC (E3)."
     },
@@ -187,6 +188,9 @@
       "application_id": "Siaya_707",
       "applicant_name": "Alego General Farmers Group",
       "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
       "ineligibility_criterion_failed": "E3",
       "reason": "Value Chain (General Agriculture/Farming) is excluded from the Priority VCs (E3)."
     },
@@ -194,6 +198,9 @@
       "application_id": "Siaya_808",
       "applicant_name": "Chaoba Savings And Credit Co-operative society Limited",
       "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
       "ineligibility_criterion_failed": "E3",
       "reason": "Value Chain (SACCO/Finance) is not a designated Priority/Additional VC (E3)."
     }

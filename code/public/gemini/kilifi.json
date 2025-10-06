@@ -8,12 +8,12 @@
     "S5_Value_Chain_Alignment_10%": 0.1,
     "S6_Inclusivity_Sustainability_20%": 0.2
   },
-  "ranked_applicants": [
+  "applications": [
     {
-      "rank": 1,
       "application_id": "Kilifi_558",
       "applicant_name": "UZIMA LIVESTOCK LTD",
       "eligibility_status": "ELIGIBLE",
+      "rank": 1,
       "composite_score": 74.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -43,10 +43,10 @@
       }
     },
     {
-      "rank": 2,
       "application_id": "Kilifi_549",
       "applicant_name": "COCONUT PRODUCERS CONSORTIUM LIMITED",
       "eligibility_status": "ELIGIBLE",
+      "rank": 2,
       "composite_score": 57.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -74,13 +74,14 @@
           "reason": "No specific green practices mentioned in detail; low inclusion of sustainability evidence (Score 2)."
         }
       }
-    }
-  ],
-  "ineligible_applicants": [
+    },
     {
       "application_id": "Kilifi_280",
       "applicant_name": "Migombani Organics (K) LTD",
       "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
       "ineligibility_criterion_failed": "E3",
       "reason": "Value Chain (Agriculture/Fresh Produce) is not a designated Priority or Additional Value Chain as per the KJET rules."
     },
@@ -88,6 +89,9 @@
       "application_id": "Kilifi_552",
       "applicant_name": "Mwanganga Nuts Limited",
       "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
       "ineligibility_criterion_failed": "E3",
       "reason": "Value Chain (Cashew Nuts) is not a designated Priority or Additional Value Chain as per the KJET rules."
     },
@@ -95,6 +99,9 @@
       "application_id": "Kilifi_577",
       "applicant_name": "Bynix Technologies Solutions",
       "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
       "ineligibility_criterion_failed": "E3",
       "reason": "Value Chain (Technology/Software) is not a designated Priority or Additional Value Chain as per the KJET rules."
     },
@@ -102,6 +109,9 @@
       "application_id": "Kilifi_602",
       "applicant_name": "Pwani Fish Industries Limited",
       "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
       "ineligibility_criterion_failed": "E4",
       "reason": "No verifiable financial evidence (statement, balance sheet, or income statement) was successfully extracted/provided."
     },
@@ -109,6 +119,9 @@
       "application_id": "Kilifi_604",
       "applicant_name": "Madzibu Virgin Oil Association",
       "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
       "ineligibility_criterion_failed": "E4",
       "reason": "Financial evidence (Balance Sheet) was provided but was unreadable/corrupted upon extraction, resulting in no verifiable evidence."
     },
@@ -116,6 +129,9 @@
       "application_id": "Kilifi_605",
       "applicant_name": "AMANI NGAMANI SELF HELP GROUP",
       "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
       "ineligibility_criterion_failed": "E4",
       "reason": "Financial evidence (Cash-Based Books) was provided but was unreadable/corrupted upon extraction, resulting in no verifiable evidence."
     }

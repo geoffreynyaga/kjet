@@ -8,12 +8,12 @@
     "S5_Value_Chain_Alignment_10%": 0.1,
     "S6_Inclusivity_Sustainability_20%": 0.2
   },
-  "ranked_applicants": [
+  "applications": [
     {
-      "rank": 1,
       "application_id": "Makueni_290",
       "applicant_name": "Kitise Farmers Co-operative Society (KFCS)",
       "eligibility_status": "ELIGIBLE",
+      "rank": 1,
       "composite_score": 100.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -43,10 +43,10 @@
       }
     },
     {
-      "rank": 2,
       "application_id": "Makueni_204",
       "applicant_name": "Mbooni Wood and Metal Work",
       "eligibility_status": "ELIGIBLE",
+      "rank": 2,
       "composite_score": 83.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -76,10 +76,10 @@
       }
     },
     {
-      "rank": 3,
       "application_id": "Makueni_490",
       "applicant_name": "YATTA RICE GROWERS COOPERATIVE",
       "eligibility_status": "ELIGIBLE",
+      "rank": 3,
       "composite_score": 83.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -109,10 +109,10 @@
       }
     },
     {
-      "rank": 4,
       "application_id": "Makueni_531",
       "applicant_name": "Wote Construction Association",
       "eligibility_status": "ELIGIBLE",
+      "rank": 4,
       "composite_score": 83.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -142,10 +142,10 @@
       }
     },
     {
-      "rank": 5,
       "application_id": "Makueni_425",
       "applicant_name": "MBOONI MINERS ASSOCIATION",
       "eligibility_status": "ELIGIBLE",
+      "rank": 5,
       "composite_score": 82.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -175,10 +175,10 @@
       }
     },
     {
-      "rank": 6,
       "application_id": "Makueni_317",
       "applicant_name": "Tawa Edible Oil Processors",
       "eligibility_status": "ELIGIBLE",
+      "rank": 6,
       "composite_score": 82.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -208,10 +208,10 @@
       }
     },
     {
-      "rank": 7,
       "application_id": "Makueni_329",
       "applicant_name": "MASII BLUE ECONOMY GROUP",
       "eligibility_status": "ELIGIBLE",
+      "rank": 7,
       "composite_score": 78.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -241,10 +241,10 @@
       }
     },
     {
-      "rank": 8,
       "application_id": "Makueni_365",
       "applicant_name": "KILUNGU LEATHER WORKS",
       "eligibility_status": "ELIGIBLE",
+      "rank": 8,
       "composite_score": 75.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -274,10 +274,10 @@
       }
     },
     {
-      "rank": 9,
       "application_id": "Makueni_458",
       "applicant_name": "MWALA WOMEN’S TEXTILE CO-OP",
       "eligibility_status": "ELIGIBLE",
+      "rank": 9,
       "composite_score": 75.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -307,10 +307,10 @@
       }
     },
     {
-      "rank": 10,
       "application_id": "Makueni_505",
       "applicant_name": "KIBWANI CONSTRUCTION CBO",
       "eligibility_status": "ELIGIBLE",
+      "rank": 10,
       "composite_score": 65.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -338,13 +338,14 @@
           "reason": "Strong inclusion (50% youth); some intent on sustainability (Score 3)."
         }
       }
-    }
-  ],
-  "ineligible_applicants": [
+    },
     {
       "application_id": "Makueni_164",
       "applicant_name": "Gracious kaiani women Group",
       "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
       "ineligibility_criterion_failed": "E3",
       "reason": "Value Chain (Vegetable/Poultry Farming) is not a designated Priority/Additional VC (E3)."
     },
@@ -352,6 +353,9 @@
       "application_id": "Makueni_406",
       "applicant_name": "TULIMWAGE COFFEE SOCIETY",
       "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
       "ineligibility_criterion_failed": "E3",
       "reason": "Value Chain (Coffee Farming/Processing) is not a designated Priority/Additional VC (E3)."
     },
@@ -359,6 +363,9 @@
       "application_id": "Makueni_526",
       "applicant_name": "MUTHENI BEE KEEPERS ASSOCIATION",
       "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
       "ineligibility_criterion_failed": "E3",
       "reason": "Value Chain (Beekeeping/Honey) is not a designated Priority/Additional VC (E3)."
     },
@@ -366,6 +373,9 @@
       "application_id": "Makueni_539",
       "applicant_name": "FOOD AND BEVERAGE",
       "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
       "ineligibility_criterion_failed": "E3",
       "reason": "Value Chain (Generic Food/Beverage) is not clearly identified as a Priority/Additional VC and is deemed too generic for a passing E3 score (E3)."
     }

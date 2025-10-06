@@ -8,12 +8,12 @@
     "S5_Value_Chain_Alignment_10%": 0.1,
     "S6_Inclusivity_Sustainability_20%": 0.2
   },
-  "ranked_applicants": [
+  "applications": [
     {
-      "rank": 1,
       "application_id": "Kericho_228",
       "applicant_name": "KERICHO AVOCADO FARMERS CO-OPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
+      "rank": 1,
       "composite_score": 88.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -43,10 +43,10 @@
       }
     },
     {
-      "rank": 2,
       "application_id": "Kericho_245",
       "applicant_name": "KISIAra Dairy Co-operative Society Limited",
       "eligibility_status": "ELIGIBLE",
+      "rank": 2,
       "composite_score": 88.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -76,10 +76,10 @@
       }
     },
     {
-      "rank": 3,
       "application_id": "Kericho_666",
       "applicant_name": "Chelilis New Farmers Co-operative Society",
       "eligibility_status": "ELIGIBLE",
+      "rank": 3,
       "composite_score": 88.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -109,10 +109,10 @@
       }
     },
     {
-      "rank": 4,
       "application_id": "Kericho_473",
       "applicant_name": "Kipchimchim Dairy Farmers Co-operative Society Ltd",
       "eligibility_status": "ELIGIBLE",
+      "rank": 4,
       "composite_score": 84.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -142,10 +142,10 @@
       }
     },
     {
-      "rank": 5,
       "application_id": "Kericho_491",
       "applicant_name": "Kipkelion District Co-operative Union Limited",
       "eligibility_status": "ELIGIBLE",
+      "rank": 5,
       "composite_score": 83.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -175,10 +175,10 @@
       }
     },
     {
-      "rank": 6,
       "application_id": "Kericho_230",
       "applicant_name": "KAPMOIGI DAIRY FARMERS COOPERATIVE SOCIETY",
       "eligibility_status": "ELIGIBLE",
+      "rank": 6,
       "composite_score": 81.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -208,10 +208,10 @@
       }
     },
     {
-      "rank": 7,
       "application_id": "Kericho_692",
       "applicant_name": "TALATANY DAIRY FARMERS CO-OPERATIVE SOCIETY LTD",
       "eligibility_status": "ELIGIBLE",
+      "rank": 7,
       "composite_score": 80.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -241,10 +241,10 @@
       }
     },
     {
-      "rank": 8,
       "application_id": "Kericho_435",
       "applicant_name": "KABIANGA FARMERS' CO-OPERATIVE SOCIETY LTD",
       "eligibility_status": "ELIGIBLE",
+      "rank": 8,
       "composite_score": 79.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -274,10 +274,10 @@
       }
     },
     {
-      "rank": 9,
       "application_id": "Kericho_196",
       "applicant_name": "Cheptororiet Dairy Farmers Co-operative Society",
       "eligibility_status": "ELIGIBLE",
+      "rank": 9,
       "composite_score": 78.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -307,10 +307,10 @@
       }
     },
     {
-      "rank": 10,
       "application_id": "Kericho_687",
       "applicant_name": "UPERLANDS DAIRY FARMERS COPERATIVE SOCIETY",
       "eligibility_status": "ELIGIBLE",
+      "rank": 10,
       "composite_score": 77.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -340,10 +340,10 @@
       }
     },
     {
-      "rank": 11,
       "application_id": "Kericho_457",
       "applicant_name": "Seretut Farmers Cooperative society limited",
       "eligibility_status": "ELIGIBLE",
+      "rank": 11,
       "composite_score": 73.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -373,10 +373,10 @@
       }
     },
     {
-      "rank": 12,
       "application_id": "Kericho_221",
       "applicant_name": "KAMASIAN DAIRY COOPERATIVE SOCIETY",
       "eligibility_status": "ELIGIBLE",
+      "rank": 12,
       "composite_score": 73.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -406,10 +406,10 @@
       }
     },
     {
-      "rank": 13,
       "application_id": "Kericho_330",
       "applicant_name": "Ainamoi Organic Feeds and Fertilizer Manufacturers",
       "eligibility_status": "ELIGIBLE",
+      "rank": 13,
       "composite_score": 70.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -439,10 +439,10 @@
       }
     },
     {
-      "rank": 14,
       "application_id": "Kericho_335",
       "applicant_name": "KABIANGA WETLAND BEE KEEPERS ASSOCIATION",
       "eligibility_status": "ELIGIBLE",
+      "rank": 14,
       "composite_score": 69.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -472,10 +472,10 @@
       }
     },
     {
-      "rank": 15,
       "application_id": "Kericho_556",
       "applicant_name": "TEBE FARMERS CO-OPERATIVE SOCIETY",
       "eligibility_status": "ELIGIBLE",
+      "rank": 15,
       "composite_score": 69.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -505,10 +505,10 @@
       }
     },
     {
-      "rank": 16,
       "application_id": "Kericho_218",
       "applicant_name": "chepsir innovatus",
       "eligibility_status": "ELIGIBLE",
+      "rank": 16,
       "composite_score": 66.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -538,10 +538,10 @@
       }
     },
     {
-      "rank": 17,
       "application_id": "Kericho_430",
       "applicant_name": "Ararwet Self Help Group",
       "eligibility_status": "ELIGIBLE",
+      "rank": 17,
       "composite_score": 65.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -571,10 +571,10 @@
       }
     },
     {
-      "rank": 18,
       "application_id": "Kericho_385",
       "applicant_name": "Name Missing for Kericho_385",
       "eligibility_status": "ELIGIBLE",
+      "rank": 18,
       "composite_score": 64.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -604,10 +604,10 @@
       }
     },
     {
-      "rank": 19,
       "application_id": "Kericho_603",
       "applicant_name": "Name Missing for Kericho_603",
       "eligibility_status": "ELIGIBLE",
+      "rank": 19,
       "composite_score": 64.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -636,6 +636,5 @@
         }
       }
     }
-  ],
-  "ineligible_applicants": []
+  ]
 }

@@ -8,12 +8,12 @@
     "S5_Value_Chain_Alignment_10%": 0.1,
     "S6_Inclusivity_Sustainability_20%": 0.2
   },
-  "ranked_applicants": [
+  "applications": [
     {
-      "rank": 1,
       "application_id": "Nandi_201",
       "applicant_name": "Nandi Edible Oils Cooperative",
       "eligibility_status": "ELIGIBLE",
+      "rank": 1,
       "composite_score": 100.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -43,10 +43,10 @@
       }
     },
     {
-      "rank": 2,
       "application_id": "Nandi_600",
       "applicant_name": "Nandi Agro-Processor Ltd",
       "eligibility_status": "ELIGIBLE",
+      "rank": 2,
       "composite_score": 92.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -76,10 +76,10 @@
       }
     },
     {
-      "rank": 3,
       "application_id": "Nandi_310",
       "applicant_name": "Tinderet Dairy Processors Ltd",
       "eligibility_status": "ELIGIBLE",
+      "rank": 3,
       "composite_score": 82.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -109,10 +109,10 @@
       }
     },
     {
-      "rank": 4,
       "application_id": "Nandi_520",
       "applicant_name": "Kapsabet Leather Craftsmen Group",
       "eligibility_status": "ELIGIBLE",
+      "rank": 4,
       "composite_score": 72.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -142,10 +142,10 @@
       }
     },
     {
-      "rank": 5,
       "application_id": "Nandi_405",
       "applicant_name": "Nandi Block Makers Association",
       "eligibility_status": "ELIGIBLE",
+      "rank": 5,
       "composite_score": 71.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -175,10 +175,10 @@
       }
     },
     {
-      "rank": 6,
       "application_id": "Nandi_777",
       "applicant_name": "Blue Economy Fish Farmers Assoc.",
       "eligibility_status": "ELIGIBLE",
+      "rank": 6,
       "composite_score": 71.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -208,10 +208,10 @@
       }
     },
     {
-      "rank": 7,
       "application_id": "Nandi_800",
       "applicant_name": "Nandi Jua Kali Artisans",
       "eligibility_status": "ELIGIBLE",
+      "rank": 7,
       "composite_score": 70.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -239,13 +239,14 @@
           "reason": "Moderate inclusion; some intent on sustainability (Score 3)."
         }
       }
-    }
-  ],
-  "ineligible_applicants": [
+    },
     {
       "application_id": "Nandi_901",
       "applicant_name": "Nandi General Retailers Group",
       "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
       "ineligibility_criterion_failed": "E3",
       "reason": "Value Chain (General Retail/Services) is not a designated Priority/Additional VC (E3)."
     },
@@ -253,6 +254,9 @@
       "application_id": "Nandi_999",
       "applicant_name": "Nandi Coffee Growers SACCO",
       "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
       "ineligibility_criterion_failed": "E3",
       "reason": "Value Chain (General Farming/Agriculture - Coffee Farming) is excluded from the Priority VCs (E3)."
     }

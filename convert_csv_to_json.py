@@ -45,8 +45,7 @@ def convert_csv_to_json(csv_file_path):
     """Convert a single CSV file to JSON format"""
     county_name = extract_county_name(os.path.basename(csv_file_path))
 
-    ranked_applicants = []
-    ineligible_applicants = []
+    applications = []
 
     # Define the criteria prefixes
     criteria_prefixes = [
@@ -81,52 +80,67 @@ def convert_csv_to_json(csv_file_path):
                 application_id = row.get('Application ID', '').strip()
                 applicant_name = row.get('Applicant Name', '').strip()
                 eligibility_status = row.get('Eligibility Status', '').strip()
+                
+                # Skip rows with missing data
+                if (not application_id or application_id.upper() == 'MISSING DATA' or
+                    not applicant_name or applicant_name.upper() == 'MISSING DATA' or
+                    not eligibility_status or eligibility_status.upper() == 'MISSING DATA'):
+                    continue
+                
                 # --- FIX FOR COMPOSITE SCORE ---
                 composite_score_str = row.get('Composite Score', '').strip()
                 try:
                     # Attempt conversion to float
-                    composite_score = float(composite_score_str)
+                    composite_score = float(composite_score_str) if composite_score_str.upper() != 'MISSING DATA' else 0.0
                 except ValueError:
                     # If conversion fails (e.g., 'MISSING DATA' or ' minutes)'), default to 0.0
                     composite_score = 0.0
 
-                if eligibility_status.lower() == 'eligible' and rank:
-                    # This is a ranked applicant
-                    score_breakdown = parse_score_breakdown(row, criteria_prefixes)
+                # Create a unified applicant record for all applications
+                applicant = {
+                    "application_id": application_id,
+                    "applicant_name": applicant_name,
+                    "eligibility_status": eligibility_status,
+                }
 
-                    applicant = {
-                        "rank": int(float(rank)),
-                        "application_id": application_id,
-                        "applicant_name": applicant_name,
-                        "eligibility_status": eligibility_status,
+                if eligibility_status.lower() == 'eligible' and rank and rank.upper() != 'MISSING DATA':
+                    # This is a ranked applicant - add ranking and scoring details
+                    score_breakdown = parse_score_breakdown(row, criteria_prefixes)
+                    
+                    try:
+                        rank_value = int(float(rank))
+                    except ValueError:
+                        rank_value = None
+                    
+                    applicant.update({
+                        "rank": rank_value,
                         "composite_score": composite_score,
                         "score_breakdown": score_breakdown
-                    }
-                    ranked_applicants.append(applicant)
+                    })
 
                 elif eligibility_status.lower() == 'ineligible':
-                    # This is an ineligible applicant
+                    # This is an ineligible applicant - add ineligibility details
                     ineligibility_criterion = row.get('Ineligibility Criterion Failed', '').strip()
                     reason = row.get('Reason', '').strip()
-
-                    ineligible_applicant = {
-                        "application_id": application_id,
-                        "applicant_name": applicant_name,
-                        "eligibility_status": eligibility_status,
+                    
+                    applicant.update({
+                        "rank": None,
+                        "composite_score": None,
+                        "score_breakdown": None,
                         "ineligibility_criterion_failed": ineligibility_criterion,
                         "reason": reason
-                    }
-                    ineligible_applicants.append(ineligible_applicant)
+                    })
 
-        # Sort ranked applicants by rank
-        ranked_applicants.sort(key=lambda x: x['rank'])
+                applications.append(applicant)
+
+        # Sort applications: ranked applicants first (by rank), then ineligible applicants
+        applications.sort(key=lambda x: (x['rank'] is None, x['rank'] if x['rank'] is not None else 0))
 
         # Create the JSON structure
         json_data = {
             "report_title": f"KJET {county_name} County Application Ranking and Evaluation",
             "selection_criteria_weights": selection_criteria_weights,
-            "ranked_applicants": ranked_applicants,
-            "ineligible_applicants": ineligible_applicants
+            "applications": applications
         }
 
         return json_data
