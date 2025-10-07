@@ -2,73 +2,316 @@
   "report_title": "KJET Garissa County Application Ranking and Evaluation",
   "selection_criteria_weights": {
     "S1_Registration_Track_Record_5%": 0.05,
-    "S2_Financial_Position_20%": 0.20,
-    "S3_Market_Demand_Competitiveness_20%": 0.20,
+    "S2_Financial_Position_20%": 0.2,
+    "S3_Market_Demand_Competitiveness_20%": 0.2,
     "S4_Business_Proposal_Viability_25%": 0.25,
-    "S5_Value_Chain_Alignment_10%": 0.10,
-    "S6_Inclusivity_Sustainability_20%": 0.20
+    "S5_Value_Chain_Alignment_10%": 0.1,
+    "S6_Inclusivity_Sustainability_20%": 0.2
   },
-  "ranked_applicants": [
+  "applications": [
     {
+      "application_id": "Garissa_631",
+      "applicant_name": "Iftin Youth Farmers Cooperative Society",
+      "eligibility_status": "ELIGIBLE",
       "rank": 1,
-      "application_id": "Garissa_701",
-      "applicant_name": "GARISSA LEATHER WORKS LTD",
-      "eligibility_status": "Eligible",
-      "composite_score": 4.75,
+      "composite_score": 100.0,
       "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {"score": 5, "reason": "Private company, registered over 3 years, excellent governance."},
-        "S2_Financial_Position_20%": {"score": 5, "reason": "Superior financial health with turnover of KES 12.0M (≥KES 10M range)."},
-        "S3_Market_Demand_Competitiveness_20%": {"score": 5, "reason": "Secured regional and urban market contracts for leather goods."},
-        "S4_Business_Proposal_Viability_25%": {"score": 5, "reason": "Detailed plan to acquire high-efficiency tanning equipment, clear ROI."},
-        "S5_Value_Chain_Alignment_10%": {"score": 4, "reason": "Critical manufacturing role in the Leather value chain (BETA VC)."},
-        "S6_Inclusivity_Sustainability_20%": {"score": 4, "reason": "Qualifies as Woman-led; adopted one green practice (efficient water recycling in tannery)."}
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Cooperative, Registered since 2017 (>3 yrs), established governance."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "Turnover KES 12.5M (2024), strong financial health (T>10M)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "Consistent sales to schools, retailers; multi-product advantage (Rice/Oil)."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5.0,
+          "reason": "Clear plan for upgrading rice hulling and oil press; quantified targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VCs (Rice/Edible Oils), critical processing/value addition node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Youth-led (75% youth), solar power use, waste utilization."
+        }
       }
     },
     {
+      "application_id": "Garissa_447",
+      "applicant_name": "kheirat women cooperative",
+      "eligibility_status": "ELIGIBLE",
       "rank": 2,
-      "application_id": "Garissa_400",
-      "applicant_name": "BURA RICE MILLERS COOPERATIVE",
-      "eligibility_status": "Eligible",
-      "composite_score": 4.40,
+      "composite_score": 100.0,
       "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {"score": 5, "reason": "Cooperative, long-established (>3 years) with excellent track record."},
-        "S2_Financial_Position_20%": {"score": 4, "reason": "Stable financial position, turnover of KES 8.5M (KES 5M–<10M range)."},
-        "S3_Market_Demand_Competitiveness_20%": {"score": 4, "reason": "High local and regional demand for Bura rice."},
-        "S4_Business_Proposal_Viability_25%": {"score": 4, "reason": "Clear proposal for upgrading to a modern grading and packaging line."},
-        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Critical processing node in the Rice Value Chain (BETA VC)."},
-        "S6_Inclusivity_Sustainability_20%": {"score": 5, "reason": "High inclusion of marginalized groups; adopted 2+ green practices (husk-based energy, efficient water use)."}
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Cooperative, Registered since 2018 (>3 yrs), established governance."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "Turnover KES 15.2M (2024), strong financial health (T>10M)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "Active offtake contracts (schools/hospitals), multi-channel sales (retail, bulk)."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5.0,
+          "reason": "Clear plan for pasteurization unit and packaging line; quantified targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VC (Dairy), critical processing/value addition node; strong farmer linkages."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Woman-owned (70% ownership), solar energy, water harvesting, feed resilience."
+        }
       }
     },
     {
+      "application_id": "Garissa_336",
+      "applicant_name": "Dadaab Mercy Savings And Credit Cooperative Society Limited",
+      "eligibility_status": "ELIGIBLE",
       "rank": 3,
-      "application_id": "Garissa_550",
-      "applicant_name": "TANA DAIRY AGGREGATION GROUP",
-      "eligibility_status": "Eligible",
-      "composite_score": 3.55,
+      "composite_score": 92.0,
       "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {"score": 3, "reason": "MSME Association registered 1-3 years."},
-        "S2_Financial_Position_20%": {"score": 3, "reason": "Small-scale operation, turnover of KES 3.2M (KES 1M–<5M range)."},
-        "S3_Market_Demand_Competitiveness_20%": {"score": 3, "reason": "Supplies local processors, with moderate competition in raw milk aggregation."},
-        "S4_Business_Proposal_Viability_25%": {"score": 4, "reason": "Clear plan to acquire a bulk milk cooler and transport tanks."},
-        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Critical aggregation/cold chain role in the Dairy Value Chain (Priority VC)."},
-        "S6_Inclusivity_Sustainability_20%": {"score": 3, "reason": "Qualifies as Youth-led; adopted one green practice (solar chilling at collection points)."}
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Cooperative, Registered since 2017 (>3 yrs), established governance."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 4.0,
+          "reason": "Turnover KES 9.5M (2024), sound financial health (T>5M)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.0,
+          "reason": "Consistent sales to NGOs, local businesses (B2B 30%) and B2C."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5.0,
+          "reason": "Strong plan for scaling textile production and machinery; detailed execution plan."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VC (Textiles), critical manufacturing/value addition node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Woman-owned (51% ownership), water-saving practices, local sourcing."
+        }
       }
-    }
-  ],
-  "ineligible_applicants": [
+    },
     {
-      "application_id": "Garissa_605",
-      "applicant_name": "Garissa General Trading PLC",
-      "eligibility_status": "Ineligible",
-      "ineligibility_criterion_failed": "E3 - Priority Value Chain",
-      "reason": "The primary value chain is 'General Trading/Retail', which is not a designated manufacturing, processing, or value-addition priority value chain for the KJET program."
+      "application_id": "Garissa_654",
+      "applicant_name": "Garissa Farmers Network (GFN)",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 4,
+      "composite_score": 88.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Cooperative, Registered since 2015 (>3 yrs), established governance."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 4.0,
+          "reason": "Turnover KES 8.1M (2024), sound financial health (T>5M)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.0,
+          "reason": "Sales to local processors (B2B) and growing retail channel (chilled milk)."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5.0,
+          "reason": "Strong plan for Chilling Plant, AI services, and extension; quantified targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VC (Dairy), critical aggregation/chilling/extension node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "Moderate inclusion (35% women), solar energy, riverbank restoration, fodder resilience."
+        }
+      }
+    },
+    {
+      "application_id": "Garissa_333",
+      "applicant_name": "Fafi Farmers Cooperative Society",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 5,
+      "composite_score": 84.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Cooperative, Registered since 2012 (>3 yrs), functioning governance."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "Turnover KSH 1.3M (2024), strongly positive trend (T>1M)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "Secured contract (chili) and fodder sales to pastoralists."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5.0,
+          "reason": "Clear objectives, quantified targets (150 acres, 30% sales); plan for solar irrigation/tractor/store."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VC (Dairy) input supplier (fodder); plans for chilling."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Strong youth (83%) and women (42.5%) participation; plan for solar irrigation."
+        }
+      }
+    },
+    {
+      "application_id": "Garissa_356",
+      "applicant_name": "Garissa Jua Kali Association",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 6,
+      "composite_score": 70.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "MSME Association, Registered since 2020 (>3 yrs), documented leadership."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "Turnover KSH 3.8M (2024), stable records (T>1M)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "Regular local sales, aiming for institutional/NGO contracts."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Direction clear (scaling, skills), targets generic; budget rough."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VC (Construction), key node (input manufacturing/furniture, metal)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "Moderate inclusion (30% women), planning for solar power."
+        }
+      }
+    },
+    {
+      "application_id": "Garissa_679",
+      "applicant_name": "Balambala Women Group",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 7,
+      "composite_score": 66.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.0,
+          "reason": "Association, Registered in 2023 (<1 yr), basic structure."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "Turnover KSH 2.1M (2024), stable records (T>1M)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "Regular local sales (B2C 90%), one channel."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Direction clear (upgrade equipment), targets generic; budget rough."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Priority VC (Textiles), clear node (garment manufacturing)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "Woman-owned (100% members female); basic green practices (waste reduction)."
+        }
+      }
     },
     {
       "application_id": "Garissa_710",
-      "applicant_name": "Amu Livestock Trading SACCO",
-      "eligibility_status": "Ineligible",
-      "ineligibility_criterion_failed": "E1 - Registration & Legality AND E3 - Priority Value Chain",
-      "reason": "The entity is registered as a 'SACCO', which is not a legally recognized cluster entity (MSME association, cooperative, or company) for this program (E1). Additionally, the primary business is 'Livestock Trading' (primary production/trading) which is not a target value-addition node (E3)."
+      "applicant_name": "Masalani Construction & Youth Group",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 8,
+      "composite_score": 53.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.0,
+          "reason": "Association, Registered in 2024 (<1 yr), basic structure."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "Turnover KSH 1.5M (2024), stable records (T>1M)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 2.0,
+          "reason": "Intermittent sales, weak channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 2.0,
+          "reason": "Vague plan (get more contracts, buy truck), limited targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Priority VC (Construction), key node (input supply/quarrying)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.0,
+          "reason": "Youth-led (90% youth); basic green practices (dust control)."
+        }
+      }
+    },
+    {
+      "application_id": "Garissa_711",
+      "applicant_name": "Garissa Edible Oil Processors Association",
+      "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
+      "ineligibility_criterion_failed": "E4: Minimum Financial Evidence (Pass/Fail)",
+      "reason": "No verifiable financial evidence (bank/M-Pesa/income statement) was found in the application bundle."
+    },
+    {
+      "application_id": "Garissa_563",
+      "applicant_name": "Durdur livestock traders cooperative society",
+      "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
+      "ineligibility_criterion_failed": "E3: Priority Value Chain (Pass/Fail)",
+      "reason": "The core business is livestock trade (100% turnover), which is not a KJET Priority or Additional value chain."
+    },
+    {
+      "application_id": "Garissa_669",
+      "applicant_name": "Bilalco Integrated Agro-Pastoralist Cluster",
+      "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
+      "ineligibility_criterion_failed": "E3: Priority Value Chain (Pass/Fail)",
+      "reason": "The core business (Livestock Keeping 40%, Horticulture 35%) does not align with a KJET Priority or Additional value chain."
+    },
+    {
+      "application_id": "Garissa_701",
+      "applicant_name": "Bura Livestock Producers Co-operative Society Limited - Bura Agro-Livestock Producers Cluster",
+      "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
+      "ineligibility_criterion_failed": "E3: Priority Value Chain (Pass/Fail)",
+      "reason": "The core business (Livestock 60%) is not a KJET Priority or Additional value chain. Although Rice (40%) is a priority VC, it is not the dominant activity."
     }
   ]
 }
