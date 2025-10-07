@@ -1,5 +1,5 @@
 {
-  "report_title": "KJET Murang'A County Application Ranking and Evaluation",
+  "report_title": "KJET Muranga County Application Ranking and Evaluation",
   "selection_criteria_weights": {
     "S1_Registration_Track_Record_5%": 0.05,
     "S2_Financial_Position_20%": 0.2,
@@ -10,7 +10,7 @@
   },
   "applications": [
     {
-      "application_id": "Murang'a_444",
+      "application_id": "Muranga_444",
       "applicant_name": "Murang'a County Creameries Coop Union",
       "eligibility_status": "ELIGIBLE",
       "rank": 1,
@@ -43,7 +43,7 @@
       }
     },
     {
-      "application_id": "Murang'a_201",
+      "application_id": "Muranga_201",
       "applicant_name": "Kagumo Textiles Group",
       "eligibility_status": "ELIGIBLE",
       "rank": 2,
@@ -76,7 +76,7 @@
       }
     },
     {
-      "application_id": "Murang'a_110",
+      "application_id": "Muranga_110",
       "applicant_name": "Thika Edible Oils Ltd",
       "eligibility_status": "ELIGIBLE",
       "rank": 3,
@@ -109,7 +109,7 @@
       }
     },
     {
-      "application_id": "Murang'a_315",
+      "application_id": "Muranga_315",
       "applicant_name": "Murang'a Construction Materials Assoc.",
       "eligibility_status": "ELIGIBLE",
       "rank": 4,
@@ -142,7 +142,7 @@
       }
     },
     {
-      "application_id": "Murang'a_600",
+      "application_id": "Muranga_600",
       "applicant_name": "Maragwa Blue Economy Group",
       "eligibility_status": "ELIGIBLE",
       "rank": 5,
@@ -175,7 +175,7 @@
       }
     },
     {
-      "application_id": "Murang'a_777",
+      "application_id": "Muranga_777",
       "applicant_name": "Sabasaba Tea Packers Ltd",
       "eligibility_status": "ELIGIBLE",
       "rank": 6,
@@ -208,7 +208,7 @@
       }
     },
     {
-      "application_id": "Murang'a_509",
+      "application_id": "Muranga_509",
       "applicant_name": "Murang'a Leather Tanners",
       "eligibility_status": "ELIGIBLE",
       "rank": 7,
@@ -241,7 +241,7 @@
       }
     },
     {
-      "application_id": "Murang'a_901",
+      "application_id": "Muranga_901",
       "applicant_name": "Murang'a General Traders",
       "eligibility_status": "INELIGIBLE",
       "rank": null,
@@ -251,7 +251,7 @@
       "reason": "Value Chain (General Retail/Services) is not a designated Priority/Additional VC (E3)."
     },
     {
-      "application_id": "Murang'a_800",
+      "application_id": "Muranga_800",
       "applicant_name": "Murang'a Agricultural Farmers",
       "eligibility_status": "INELIGIBLE",
       "rank": null,

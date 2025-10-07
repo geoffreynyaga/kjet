@@ -1,22 +1,22 @@
-import { HumanApplicant, LLMRankedApplicant, LLMIneligibleApplicant, CriterionComparison, AgreementType } from './types';
+import { AgreementType, CriterionComparison, HumanApplicant, LLMIneligibleApplicant, LLMRankedApplicant } from './types';
 
 // Helper function to extract numeric ID from different formats
 export const extractNumericId = (applicationId: string): string => {
   // For human format: "Applicant_158" -> "158" or "applicant 302" -> "302"
   // For LLM format: "Baringo_297" -> "297"
-  
+
   // First try underscore pattern
   const underscoreMatch = applicationId.match(/_(\d+)$/);
   if (underscoreMatch) {
     return underscoreMatch[1];
   }
-  
+
   // Then try space pattern
   const spaceMatch = applicationId.match(/\s(\d+)$/);
   if (spaceMatch) {
     return spaceMatch[1];
   }
-  
+
   // Finally try just extracting all digits
   const digitMatch = applicationId.match(/(\d+)/);
   return digitMatch ? digitMatch[1] : applicationId;
@@ -76,13 +76,13 @@ export const createCriterionComparisons = (
   criteriaMapping.forEach(criteria => {
     const humanScore = Number(humanApp[criteria.human.scoreField]) || null;
     const humanReason = humanApp[criteria.human.reasonField] || 'No reason provided';
-    
+
     const llmBreakdown = llmRankedApp?.score_breakdown?.[criteria.llm];
     const llmScore = llmBreakdown?.score || null;
     const llmReason = llmBreakdown?.reason || 'No LLM analysis';
 
     const scoreDifference = humanScore !== null && llmScore !== null ? llmScore - humanScore : null;
-    
+
     let agreement: AgreementType = 'unknown';
     if (humanScore !== null && llmScore !== null) {
       const diff = Math.abs(scoreDifference!);
@@ -125,7 +125,7 @@ export const getHumanRank = (targetApp: HumanApplicant, allApps: HumanApplicant[
   const passedApps = allApps
     .filter(app => (app['PASS/FAIL'] || '').toLowerCase() === 'pass')
     .sort((a, b) => (Number(b['Sum of weighted scores - Penalty(if any)']) || 0) - (Number(a['Sum of weighted scores - Penalty(if any)']) || 0));
-  
+
   const rank = passedApps.findIndex(app => app['Application ID'] === targetApp['Application ID']);
   return rank >= 0 ? rank + 1 : passedApps.length + 1;
 };
@@ -177,19 +177,32 @@ export const determineAgreement = (
   }
 };
 
+// Helper function to normalize county names for comparison
+const normalizeCountyName = (countyName: string): string => {
+  return countyName
+    .toLowerCase()
+    .replace(/['`'']/g, "'") // Normalize different apostrophe characters to standard single quote
+    .replace(/\s+/g, ' ') // Normalize whitespace
+    .trim();
+};
+
 // Helper function to filter human data by county
 export const filterHumanDataByCounty = (humanData: HumanApplicant[], county: string): HumanApplicant[] => {
+  const normalizedTargetCounty = normalizeCountyName(county);
+
   return humanData.filter(app => {
     const appCounty = app['mapping'] || app['E2. County Mapping'] || '';
-    return appCounty.toLowerCase() === county.toLowerCase();
+    const normalizedAppCounty = normalizeCountyName(appCounty);
+    return normalizedAppCounty === normalizedTargetCounty;
   });
 };
 
 // Helper function to load LLM data for a specific county
 export const loadLLMDataForCounty = async (county: string): Promise<any | null> => {
   try {
-    // Convert county name to filename format
-    const filename = county.toLowerCase().replace('\'', '');
+    // Convert county name to filename format - normalize apostrophes and remove them for filename
+    const filename = normalizeCountyName(county).replace(/['`'']/g, '');
+    console.log(filename, 'normalized filename for', county);
     const response = await fetch(`/gemini/${filename}.json`);
     if (response.ok) {
       return await response.json();

@@ -1,19 +1,20 @@
-import React, { useState, useEffect } from 'react';
-import { Users } from 'lucide-react';
-import { motion } from 'framer-motion';
-import { HumanApplicant, CountyComparison, ComparisonRow, SortField, SortDirection } from './types.ts';
-import { 
-  filterHumanDataByCounty, 
-  loadLLMDataForCounty, 
-  findMatchingApplication,
-  createCriterionComparisons,
+import { ComparisonRow, CountyComparison, HumanApplicant, SortDirection, SortField } from './types.ts';
+import React, { useEffect, useState } from 'react';
+import {
   checkPenalties,
+  createCriterionComparisons,
+  determineAgreement,
+  extractNumericId,
+  filterHumanDataByCounty,
+  findMatchingApplication,
   getHumanRank,
   getLLMReason,
-  determineAgreement,
-  extractNumericId
+  loadLLMDataForCounty
 } from './utils.ts';
+
 import ApplicantComparisonCard from './ApplicantComparisonCard.tsx';
+import { Users } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 interface CountyComparisonViewProps {
   county: string;
@@ -31,16 +32,23 @@ const CountyComparisonView: React.FC<CountyComparisonViewProps> = ({ county, hum
     loadCountyComparison();
   }, [county, humanData]);
 
+  console.log(county,"county at CountyComparisonView")
+
 //   console.log(humanData,"humanData at CountyComparisonView")
 
   const loadCountyComparison = async () => {
     try {
       setLoading(true);
       setError(null);
-      
+
       // Filter human data for this specific county
       const humanCountyData = filterHumanDataByCounty(humanData, county);
-      
+
+      console.log(`County filtering: "${county}" -> ${humanCountyData.length} human applications found`);
+      if (humanCountyData.length > 0) {
+        console.log('Sample human county values:', humanCountyData.slice(0, 3).map(app => app['E2. County Mapping'] || app['mapping']));
+      }
+
       if (humanCountyData.length === 0) {
         setError(`No human evaluation data found for ${county}`);
         setLoading(false);
@@ -50,12 +58,10 @@ const CountyComparisonView: React.FC<CountyComparisonViewProps> = ({ county, hum
       // Load LLM data for this county
       const llmData = await loadLLMDataForCounty(county);
 
-      console.log(llmData,"llmData at CountyComparisonView")
-      
-      // Create comparison
+      console.log(llmData,"llmData at CountyComparisonView")      // Create comparison
       const comparison = createCountyComparison(county, humanCountyData, llmData);
 
-    //   console.log(comparison,"jsjsjjsjs")
+      console.log(comparison,"jsjsjjsjs")
       setCountyComparison(comparison);
       setLoading(false);
     } catch (err) {
@@ -146,7 +152,7 @@ const CountyComparisonView: React.FC<CountyComparisonViewProps> = ({ county, hum
       // Custom agreement logic for pass/fail scenarios
       const humanPassed = humanStatus?.toLowerCase() === 'pass';
       const llmPassed = llmStatus === 'Ranked';
-      
+
       const agreement = (humanPassed === llmPassed) ? 'full' : 'disagreement';
       const penaltyInfo = checkPenalties(humanApp);
       const criterionComparisons = createCriterionComparisons(humanApp, isEligible ? llmApp : undefined);
@@ -164,8 +170,8 @@ const CountyComparisonView: React.FC<CountyComparisonViewProps> = ({ county, hum
         rankDifference,
         scoreDifference,
         humanReason: humanApp['REASON(Evaluators Comments)'] || 'No reason provided',
-        llmReason: isEligible 
-          ? (llmApp.score_breakdown ? 
+        llmReason: isEligible
+          ? (llmApp.score_breakdown ?
               Object.values(llmApp.score_breakdown)
                 .sort((a: any, b: any) => b.score - a.score)
                 .slice(0, 2)
@@ -187,17 +193,17 @@ const CountyComparisonView: React.FC<CountyComparisonViewProps> = ({ county, hum
     const perfectMatches = comparisonRows.filter(row => row.agreement === 'full').length;
     const partialMatches = comparisonRows.filter(row => row.agreement === 'partial').length;
     const disagreements = comparisonRows.filter(row => row.agreement === 'disagreement').length;
-    
+
     const rankDifferences = comparisonRows
       .filter(row => row.rankDifference !== null)
       .map(row => Math.abs(row.rankDifference!));
-    const averageRankDifference = rankDifferences.length > 0 ? 
+    const averageRankDifference = rankDifferences.length > 0 ?
       rankDifferences.reduce((a, b) => a + b, 0) / rankDifferences.length : 0;
 
     const scoreDifferences = comparisonRows
       .filter(row => row.scoreDifference !== null)
       .map(row => Math.abs(row.scoreDifference!));
-    const averageScoreDifference = scoreDifferences.length > 0 ? 
+    const averageScoreDifference = scoreDifferences.length > 0 ?
       scoreDifferences.reduce((a, b) => a + b, 0) / scoreDifferences.length : 0;
 
     return {
@@ -219,7 +225,7 @@ const CountyComparisonView: React.FC<CountyComparisonViewProps> = ({ county, hum
     return [...rows].sort((a, b) => {
       // Handle sorting for both matched comparisons and mismatched applications
       let aVal, bVal;
-      
+
       switch (sortField) {
         case 'humanRank':
           aVal = a.humanRank || 999;
@@ -245,15 +251,15 @@ const CountyComparisonView: React.FC<CountyComparisonViewProps> = ({ county, hum
           aVal = a[sortField] || '';
           bVal = b[sortField] || '';
       }
-      
+
       if (aVal === null && bVal === null) return 0;
       if (aVal === null) return 1;
       if (bVal === null) return -1;
-      
+
       if (typeof aVal === 'number' && typeof bVal === 'number') {
         return sortDirection === 'asc' ? aVal - bVal : bVal - aVal;
       }
-      
+
       const strA = String(aVal).toLowerCase();
       const strB = String(bVal).toLowerCase();
       return sortDirection === 'asc' ? strA.localeCompare(strB) : strB.localeCompare(strA);
@@ -314,8 +320,8 @@ const CountyComparisonView: React.FC<CountyComparisonViewProps> = ({ county, hum
           <div>
             <h2 className="text-2xl font-bold text-gray-900">{county} County</h2>
             <p className="text-gray-600">
-              {countyComparison.totalApplications} applications • 
-              {countyComparison.comparisonRows.length} with LLM comparison • 
+              {countyComparison.totalApplications} applications •
+              {countyComparison.comparisonRows.length} with LLM comparison •
               {countyComparison.mismatchedApplications.length} without LLM data
             </p>
           </div>

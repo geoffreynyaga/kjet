@@ -1,8 +1,9 @@
+import { AlertTriangle, ArrowDown, ArrowUp, CheckCircle, ChevronDown, ChevronRight, Minus, XCircle } from 'lucide-react';
 import React, { useState } from 'react';
-import { ChevronDown, ChevronRight, ArrowDown, ArrowUp, Minus, CheckCircle, XCircle, AlertTriangle } from 'lucide-react';
-import { motion } from 'framer-motion';
+
 import { ComparisonRow } from './types.ts';
 import CriterionComparisonRow from './CriterionComparisonRow.tsx';
+import { motion } from 'framer-motion';
 
 interface ApplicantComparisonCardProps {
   comparison: ComparisonRow | any; // Allow for both matched and mismatched applications
@@ -15,7 +16,7 @@ const ApplicantComparisonCard: React.FC<ApplicantComparisonCardProps> = ({ compa
   const [expandedCriterion, setExpandedCriterion] = useState<Set<string>>(new Set());
 
 
-  console.log(comparison,"comparison in ApplicantComparisonCard")
+  // console.log(comparison,"comparison in ApplicantComparisonCard")
 
   // Check if this is a matched comparison (has LLM data) or a mismatched application
   const isMatched = comparison.llmStatus && comparison.llmStatus !== 'County Not Found' && comparison.llmStatus !== 'Not Found in LLM' && comparison.llmStatus !== 'No Analysis';
@@ -26,7 +27,7 @@ const ApplicantComparisonCard: React.FC<ApplicantComparisonCardProps> = ({ compa
   const llmPassed = comparison.llmStatus === 'Ranked';
   const bothFailed = !humanPassed && !llmPassed && isMatched;
   const hasPassFailDisagreement = isMatched && (humanPassed !== llmPassed);
-  const disagreementType = hasPassFailDisagreement 
+  const disagreementType = hasPassFailDisagreement
     ? (humanPassed ? 'llm-failed-human-passed' : 'human-failed-llm-passed')
     : null;
 
@@ -82,8 +83,8 @@ const ApplicantComparisonCard: React.FC<ApplicantComparisonCardProps> = ({ compa
                 onClick={toggleCriterionSection}
                 className="text-gray-400 transition-colors hover:text-gray-600"
               >
-                {isCriterionExpanded ? 
-                  <ChevronDown size={16} /> : 
+                {isCriterionExpanded ?
+                  <ChevronDown size={16} /> :
                   <ChevronRight size={16} />
                 }
               </button>
@@ -180,7 +181,7 @@ const ApplicantComparisonCard: React.FC<ApplicantComparisonCardProps> = ({ compa
             {hasPassFailDisagreement ? (
               <span className="flex items-center gap-1 font-medium">
                 <AlertTriangle size={14} className="text-red-500" />
-                {disagreementType === 'human-failed-llm-passed' 
+                {disagreementType === 'human-failed-llm-passed'
                   ? 'Human failed but LLM disagreed. Click to see details.'
                   : 'LLM failed but human disagreed. Click to see details.'
                 }
@@ -199,7 +200,7 @@ const ApplicantComparisonCard: React.FC<ApplicantComparisonCardProps> = ({ compa
           </button>
         </td>
       </tr>
-      
+
       {/* Expanded reasons row */}
       {isReasonsExpanded && (
         <tr className={index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
@@ -217,7 +218,7 @@ const ApplicantComparisonCard: React.FC<ApplicantComparisonCardProps> = ({ compa
                     <span className="font-medium text-red-700">Disagreement Detected</span>
                   </div>
                   <p className="text-sm leading-relaxed text-red-600">
-                    {disagreementType === 'human-failed-llm-passed' 
+                    {disagreementType === 'human-failed-llm-passed'
                       ? `Human evaluation: FAIL (${comparison.humanStatus}) | LLM evaluation: PASS (${comparison.llmStatus})`
                       : `Human evaluation: PASS (${comparison.humanStatus}) | LLM evaluation: FAIL (${comparison.llmStatus})`
                     }
@@ -235,7 +236,7 @@ const ApplicantComparisonCard: React.FC<ApplicantComparisonCardProps> = ({ compa
                   </p>
                 </div>
               )}
-              
+
               <div className="grid gap-4 md:grid-cols-2">
                 {/* Human Reason */}
                 <div className="p-4 bg-white border border-gray-200 rounded-lg">
@@ -275,7 +276,7 @@ const ApplicantComparisonCard: React.FC<ApplicantComparisonCardProps> = ({ compa
           </td>
         </tr>
       )}
-      
+
       {/* Expanded detailed criterion comparison row */}
       {isCriterionExpanded && hasDetailedComparison && (
         <tr className={index % 2 === 0 ? 'bg-blue-50' : 'bg-blue-25'}>

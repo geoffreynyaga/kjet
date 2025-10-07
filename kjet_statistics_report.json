@@ -1,7 +1,7 @@
 {
   "analysis_results": {
     "metadata": {
-      "analysis_date": "2025-10-02T12:08:38.724377",
+      "analysis_date": "2025-10-07T12:40:16.796531",
       "total_counties": 47,
       "total_applications": 555,
       "eligible_applications": 479,
@@ -2662,15 +2662,15 @@
           "Other": 2
         },
         "value_chains": [
+          "technology",
           "retail",
-          "tea",
-          "livestock",
           "rice",
+          "tea",
           "agriculture",
-          "manufacturing",
-          "dairy",
           "services",
-          "technology"
+          "livestock",
+          "manufacturing",
+          "dairy"
         ],
         "applications": [
           {
@@ -13395,21 +13395,14 @@
       }
     },
     "value_chain_analysis": {
+      "technology": {
+        "counties": 1,
+        "percentage": 2.1,
+        "county_list": [
+          "Nakuru"
+        ]
+      },
       "retail": {
-        "counties": 1,
-        "percentage": 2.1,
-        "county_list": [
-          "Nakuru"
-        ]
-      },
-      "tea": {
-        "counties": 1,
-        "percentage": 2.1,
-        "county_list": [
-          "Nakuru"
-        ]
-      },
-      "livestock": {
         "counties": 1,
         "percentage": 2.1,
         "county_list": [
@@ -13423,7 +13416,28 @@
           "Nakuru"
         ]
       },
+      "tea": {
+        "counties": 1,
+        "percentage": 2.1,
+        "county_list": [
+          "Nakuru"
+        ]
+      },
       "agriculture": {
+        "counties": 1,
+        "percentage": 2.1,
+        "county_list": [
+          "Nakuru"
+        ]
+      },
+      "services": {
+        "counties": 1,
+        "percentage": 2.1,
+        "county_list": [
+          "Nakuru"
+        ]
+      },
+      "livestock": {
         "counties": 1,
         "percentage": 2.1,
         "county_list": [
@@ -13438,20 +13452,6 @@
         ]
       },
       "dairy": {
-        "counties": 1,
-        "percentage": 2.1,
-        "county_list": [
-          "Nakuru"
-        ]
-      },
-      "services": {
-        "counties": 1,
-        "percentage": 2.1,
-        "county_list": [
-          "Nakuru"
-        ]
-      },
-      "technology": {
         "counties": 1,
         "percentage": 2.1,
         "county_list": [
@@ -26130,7 +26130,7 @@
     ]
   },
   "analysis_metadata": {
-    "analysis_completed": "2025-10-02T12:08:39.480537",
+    "analysis_completed": "2025-10-07T12:40:17.829200",
     "analyzer_version": "KJET Analysis Engine v1.0",
     "rules_version": "rules.md - Eligibility & Scoring Criteria"
   }
