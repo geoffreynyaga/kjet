@@ -70,7 +70,9 @@ run: install
 	$(MAKE) evaluation
 	$(MAKE) stats
 	$(MAKE) src
+	$(MAKE) human
 	$(MAKE) convert-csv
+	
 	@echo "Full pipeline complete."
 
 build:

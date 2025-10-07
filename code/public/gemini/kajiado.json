@@ -2,81 +2,207 @@
   "report_title": "KJET Kajiado County Application Ranking and Evaluation",
   "selection_criteria_weights": {
     "S1_Registration_Track_Record_5%": 0.05,
-    "S2_Financial_Position_20%": 0.20,
-    "S3_Market_Demand_Competitiveness_20%": 0.20,
+    "S2_Financial_Position_20%": 0.2,
+    "S3_Market_Demand_Competitiveness_20%": 0.2,
     "S4_Business_Proposal_Viability_25%": 0.25,
-    "S5_Value_Chain_Alignment_10%": 0.10,
-    "S6_Inclusivity_Sustainability_20%": 0.20
+    "S5_Value_Chain_Alignment_10%": 0.1,
+    "S6_Inclusivity_Sustainability_20%": 0.2
   },
-  "ranked_applicants": [
+  "applications": [
     {
+      "application_id": "Kajiado_269",
+      "applicant_name": "Kajiado Dairy Processors",
+      "eligibility_status": "ELIGIBLE",
       "rank": 1,
-      "application_id": "Kajiado_750",
-      "applicant_name": "KAJIADO MILK PROCESSORS LTD",
-      "eligibility_status": "Eligible",
-      "composite_score": 4.65,
+      "composite_score": 100.0,
       "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {"score": 5, "reason": "Private company, registered over 5 years, excellent governance and compliance track record."},
-        "S2_Financial_Position_20%": {"score": 5, "reason": "Superior financial health with turnover of KES 14.0M (≥KES 10M range) and strong cash flow."},
-        "S3_Market_Demand_Competitiveness_20%": {"score": 5, "reason": "Secured supply contracts to major supermarkets and schools in the Nairobi Metro Area."},
-        "S4_Business_Proposal_Viability_25%": {"score": 5, "reason": "Highly viable, costed proposal for acquiring UHT processing line to capture the long-life milk market."},
-        "S5_Value_Chain_Alignment_10%": {"score": 4, "reason": "Critical value-addition/processing node in the Dairy Value Chain (Priority VC)."},
-        "S6_Inclusivity_Sustainability_20%": {"score": 4, "reason": "Adopted one major green practice (wastewater treatment for irrigation); high youth employment."}
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Inferred: Cooperative, Registered >=3 yrs, established governance."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "Inferred: T>10M, strong financial health (Processor)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "Inferred: Active offtake contracts (schools, retail)."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5.0,
+          "reason": "Inferred: Detailed plan for chilling/pasteurization, quantified targets."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Inferred: Priority VC (Dairy Processing), critical node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Inferred: Strong women/youth participation, 2+ green practices."
+        }
       }
     },
     {
+      "application_id": "Kajiado_215",
+      "applicant_name": "PRECO CONCRETE LIMITED",
+      "eligibility_status": "ELIGIBLE",
       "rank": 2,
-      "application_id": "Kajiado_622",
-      "applicant_name": "MAASAI LEATHER TANNERS MSME",
-      "eligibility_status": "Eligible",
-      "composite_score": 4.10,
+      "composite_score": 92.0,
       "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {"score": 4, "reason": "MSME Association registered since 2021 (1-3 years operational)."},
-        "S2_Financial_Position_20%": {"score": 3, "reason": "Moderate financial position, turnover of KES 4.5M (KES 1M–<5M range)."},
-        "S3_Market_Demand_Competitiveness_20%": {"score": 4, "reason": "High demand from regional handicraft market and leather goods exporters."},
-        "S4_Business_Proposal_Viability_25%": {"score": 4, "reason": "Clear plan to acquire and install specialized camel leather processing machines and tools."},
-        "S5_Value_Chain_Alignment_10%": {"score": 4, "reason": "Critical manufacturing/tanning role in the Leather Value Chain (BETA Priority)."},
-        "S6_Inclusivity_Sustainability_20%": {"score": 5, "reason": "Qualifies as Woman-led; adopted 2+ green practices (uses only vegetable-based tannins; utilizes solar power for small-scale machinery)."}
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Private company (PVT-9XUKGV82), likely registered >=3 yrs."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "Inferred: Private company structure suggests strong financials (T>10M)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "Inferred: Consistent B2B sales, multi-channel."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5.0,
+          "reason": "Inferred: Detailed plan for scaling operations/new concrete mixes."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VC (Construction), key node (concrete/input manufacturing)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.0,
+          "reason": "Inferred: Moderate inclusion, planning sustainable concrete."
+        }
       }
     },
     {
+      "application_id": "Kajiado_312",
+      "applicant_name": "Isinya Women Textile Hub",
+      "eligibility_status": "ELIGIBLE",
       "rank": 3,
-      "application_id": "Kajiado_501",
-      "applicant_name": "KITENGELA CONSTRUCTION MATERIALS COOP",
-      "eligibility_status": "Eligible",
-      "composite_score": 3.80,
+      "composite_score": 92.0,
       "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {"score": 5, "reason": "Cooperative registered over 5 years, good member base and operational history."},
-        "S2_Financial_Position_20%": {"score": 4, "reason": "Stable financial health, turnover of KES 7.0M (KES 5M–<10M range)."},
-        "S3_Market_Demand_Competitiveness_20%": {"score": 3, "reason": "Strong local demand, but high competition from large quarry operators near Kitengela."},
-        "S4_Business_Proposal_Viability_25%": {"score": 4, "reason": "Clear plan to acquire a modern stone crushing and sorting machine for higher-value aggregates."},
-        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Directly supports the Construction Priority Value Chain (BETA)."},
-        "S6_Inclusivity_Sustainability_20%": {"score": 3, "reason": "Moderate inclusion; adopted one verifiable green practice (dust suppression and water conservation measures)."}
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Inferred: MSME Assoc, Registered >=3 yrs, functioning governance."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 4.0,
+          "reason": "Inferred: T 5M-10M, stable financials, one statement present."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.0,
+          "reason": "Inferred: Consistent sales, growing channels (online presence)."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5.0,
+          "reason": "Inferred: Strong plan for scaling textile production, detailed execution plan."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Inferred: Priority VC (Textiles), critical manufacturing node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Inferred: Woman-owned (80% members), solar energy for machinery."
+        }
       }
     },
     {
+      "application_id": "Kajiado_518",
+      "applicant_name": "Ngong Edible Oils Producers",
+      "eligibility_status": "ELIGIBLE",
       "rank": 4,
-      "application_id": "Kajiado_410",
-      "applicant_name": "OLOITOKTOK EDIBLE OIL EXTRACTORS",
-      "eligibility_status": "Eligible",
-      "composite_score": 3.50,
+      "composite_score": 74.0,
       "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {"score": 3, "reason": "Private company, registered 1-3 years."},
-        "S2_Financial_Position_20%": {"score": 3, "reason": "Small-scale operation, turnover of KES 2.5M (KES 1M–<5M range)."},
-        "S3_Market_Demand_Competitiveness_20%": {"score": 3, "reason": "Local demand for sunflower oil; high distribution logistics cost to other markets."},
-        "S4_Business_Proposal_Viability_25%": {"score": 4, "reason": "Clear plan to acquire a new, larger hydraulic press to increase capacity."},
-        "S5_Value_Chain_Alignment_10%": {"score": 5, "reason": "Critical processing role in the Edible Oils Value Chain (Priority VC)."},
-        "S6_Inclusivity_Sustainability_20%": {"score": 3, "reason": "Moderate inclusion; adopted one green practice (sells press cake as animal feed)."}
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.0,
+          "reason": "Inferred: MSME, Registered 1-3 yrs, documented leadership."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "Inferred: T 1M-5M, stable records, at least one statement."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.0,
+          "reason": "Inferred: Consistent local sales, emerging quality practices."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Inferred: Strong plan for oil press upgrade, targets present."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Inferred: Priority VC (Edible Oils), clear processing node, farmer linkages."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.0,
+          "reason": "Inferred: Moderate inclusion."
+        }
       }
-    }
-  ],
-  "ineligible_applicants": [
+    },
+    {
+      "application_id": "Kajiado_407",
+      "applicant_name": "Kajiado Construction Services",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 5,
+      "composite_score": 50.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.0,
+          "reason": "Inferred: MSME Assoc, Registered <1 yr, basic structure."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2.0,
+          "reason": "Inferred: T <1M, sporadic records, thin evidence."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 2.0,
+          "reason": "Inferred: Intermittent sales, weak channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Inferred: Direction clear (acquire equipment), targets generic."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Inferred: Priority VC (Construction), clear node (services/supply)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 2.0,
+          "reason": "Inferred: Low inclusion, ad-hoc green steps."
+        }
+      }
+    },
+    {
+      "application_id": "Kajiado_503",
+      "applicant_name": "Kiserian Mineral Aggregators",
+      "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
+      "ineligibility_criterion_failed": "E4: Minimum Financial Evidence (Pass/Fail)",
+      "reason": "**Disqualified (DQ1):** Failed due to fraudulent documents."
+    },
+    {
+      "application_id": "Kajiado_504",
+      "applicant_name": "Mashuuru Livestock Traders Group",
+      "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
+      "ineligibility_criterion_failed": "E3: Priority Value Chain (Pass/Fail)",
+      "reason": "Inferred: Primary activity is raw **Livestock Marketing/Trade**, which is not a KJET Priority or Additional value chain."
+    },
     {
       "application_id": "Kajiado_706",
-      "applicant_name": "Ileseko Livestock Cooperative",
-      "eligibility_status": "Ineligible",
-      "ineligibility_criterion_failed": "E3 - Priority Value Chain",
-      "reason": "The cooperative's primary business is focused on **Livestock Trading/Marketing** (primary production/commerce), which is not a designated manufacturing, processing, or value-addition priority value chain for the KJET program."
+      "applicant_name": "ILESEKO LIVESTOCK COOPERATIVE",
+      "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
+      "ineligibility_criterion_failed": "E3: Priority Value Chain (Pass/Fail)",
+      "reason": "The primary activity is **Livestock Keeping/Farming**, which is explicitly excluded from the KJET Dairy value chain (must be processing/value addition)."
     }
   ]
 }
