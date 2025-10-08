@@ -34,7 +34,7 @@ def parse_score_breakdown(row, criteria_prefixes):
             # --- END FIX ---
 
             reason = row[reason_key] if reason_key in row else ""
-            
+
             breakdown[prefix] = {
                 "score": score,
                 "reason": reason
@@ -71,7 +71,9 @@ def convert_csv_to_json(csv_file_path):
         with open(csv_file_path, 'r', encoding='utf-8') as csvfile:
             reader = csv.DictReader(csvfile)
 
+            row_count = 0
             for row in reader:
+                row_count += 1
                 # Skip empty rows
                 if not row.get('Application ID', '').strip():
                     continue
@@ -80,13 +82,16 @@ def convert_csv_to_json(csv_file_path):
                 application_id = row.get('Application ID', '').strip()
                 applicant_name = row.get('Applicant Name', '').strip()
                 eligibility_status = row.get('Eligibility Status', '').strip()
-                
-                # Skip rows with missing data
+
+                # Skip rows with missing essential data
                 if (not application_id or application_id.upper() == 'MISSING DATA' or
                     not applicant_name or applicant_name.upper() == 'MISSING DATA' or
                     not eligibility_status or eligibility_status.upper() == 'MISSING DATA'):
                     continue
-                
+
+                # Handle eligibility status case variations
+                eligibility_status = eligibility_status.upper()
+
                 # --- FIX FOR COMPOSITE SCORE ---
                 composite_score_str = row.get('Composite Score', '').strip()
                 try:
@@ -103,26 +108,26 @@ def convert_csv_to_json(csv_file_path):
                     "eligibility_status": eligibility_status,
                 }
 
-                if eligibility_status.lower() == 'eligible' and rank and rank.upper() != 'MISSING DATA':
+                if eligibility_status == 'ELIGIBLE' and rank and rank.upper() != 'MISSING DATA':
                     # This is a ranked applicant - add ranking and scoring details
                     score_breakdown = parse_score_breakdown(row, criteria_prefixes)
-                    
+
                     try:
                         rank_value = int(float(rank))
                     except ValueError:
                         rank_value = None
-                    
+
                     applicant.update({
                         "rank": rank_value,
                         "composite_score": composite_score,
                         "score_breakdown": score_breakdown
                     })
 
-                elif eligibility_status.lower() == 'ineligible':
+                elif eligibility_status == 'INELIGIBLE':
                     # This is an ineligible applicant - add ineligibility details
                     ineligibility_criterion = row.get('Ineligibility Criterion Failed', '').strip()
                     reason = row.get('Reason', '').strip()
-                    
+
                     applicant.update({
                         "rank": None,
                         "composite_score": None,
@@ -134,7 +139,7 @@ def convert_csv_to_json(csv_file_path):
                 applications.append(applicant)
 
         # Sort applications: ranked applicants first (by rank), then ineligible applicants
-        applications.sort(key=lambda x: (x['rank'] is None, x['rank'] if x['rank'] is not None else 0))
+        applications.sort(key=lambda x: (x.get('rank') is None, x.get('rank') if x.get('rank') is not None else 0))
 
         # Create the JSON structure
         json_data = {

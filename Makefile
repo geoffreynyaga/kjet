@@ -2,13 +2,14 @@ VENV_DIR := $(CURDIR)/venv
 PY := $(VENV_DIR)/bin/python3
 PIP := $(VENV_DIR)/bin/pip
 
-.PHONY: all venv install extraction evaluation summary stats src convert-csv run build clean help
+.PHONY: all venv install extraction financials evaluation summary stats src convert-csv run build clean help
 
 help:
 	@echo "Available targets:"
 	@echo "  make venv         -> create virtualenv in ./venv"
 	@echo "  make install      -> install Python requirements into venv"
 	@echo "  make extraction   -> run document extraction (long)"
+	@echo "  make financials   -> extract financial documents to TXT files"
 	@echo "  make analysis     -> run analysis scripts (analyze_kjet_applications.py)"
 	@echo "  make evaluation   -> run county evaluator and generate evaluation summary"
 	@echo "  make stats        -> run generate_stats.py"
@@ -26,8 +27,12 @@ install: venv
 	$(PIP) install -r requirements.txt
 
 extraction: install
-	@echo "Running extraction: extract_all_documents.py (may be long)..."
-	$(PY) extract_all_documents.py
+	@echo "Running extraction: scripts/extraction/extract_all_documents.py (may be long)..."
+	$(PY) scripts/extraction/extract_all_documents.py
+	$(PY) scripts/extraction/forms_to_csv.py
+	@echo "Extracting financial documents to TXT files..."
+# 	$(PY) scripts/extraction/financial_docs_to_txt.py
+
 
 analysis: install
 	@echo "Running analysis: analyze_kjet_applications.py"
@@ -38,6 +43,7 @@ evaluation: install
 	$(PY) county_evaluator.py
 	@echo "Generating national evaluation summary"
 	$(PY) generate_evaluation_summary.py
+
 
 stats: install
 	@echo "Running generate_stats.py"
@@ -72,7 +78,7 @@ run: install
 	$(MAKE) src
 	$(MAKE) human
 	$(MAKE) convert-csv
-	
+
 	@echo "Full pipeline complete."
 
 build:

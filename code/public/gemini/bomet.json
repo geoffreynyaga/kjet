@@ -12,7 +12,7 @@
     {
       "application_id": "Bomet_534",
       "applicant_name": "BALEK CENTRAL DAIRY COOPERATIVE SOCIETY LTD",
-      "eligibility_status": "Eligible",
+      "eligibility_status": "ELIGIBLE",
       "rank": 1,
       "composite_score": 5.0,
       "score_breakdown": {
@@ -45,7 +45,7 @@
     {
       "application_id": "Bomet_442",
       "applicant_name": "KAPKOROS DAIRY COOPERATIVE SOCIETY LTD",
-      "eligibility_status": "Eligible",
+      "eligibility_status": "ELIGIBLE",
       "rank": 2,
       "composite_score": 4.0,
       "score_breakdown": {
@@ -78,7 +78,7 @@
     {
       "application_id": "Bomet_352",
       "applicant_name": "ENSLEY COMPANY LIMITED",
-      "eligibility_status": "Eligible",
+      "eligibility_status": "ELIGIBLE",
       "rank": 3,
       "composite_score": 2.5,
       "score_breakdown": {
@@ -111,7 +111,7 @@
     {
       "application_id": "Bomet_424",
       "applicant_name": "BOMET DAIRY FARMERS' CO-OPERATIVE SOCIETY LTD",
-      "eligibility_status": "Ineligible",
+      "eligibility_status": "INELIGIBLE",
       "rank": null,
       "composite_score": null,
       "score_breakdown": null,

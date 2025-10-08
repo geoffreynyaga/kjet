@@ -2,2395 +2,566 @@
   "evaluation_metadata": {
     "county": "Nairobi",
     "total_applications": 25,
-    "evaluation_date": "2025-10-07T12:40:20.161164",
+    "evaluation_date": "2025-10-08T10:26:24.095156",
     "evaluator_version": "1.0",
     "rules_version": "rules.md - Annex A & B"
   },
   "data_enrichment": {
-    "applications_with_business_name": 25,
+    "applications_with_business_name": 0,
     "applications_with_standardized_business_name": 0,
     "applications_with_woman_owned_flag": 25,
-    "applications_with_woman_owned_proof": 5
+    "applications_with_woman_owned_proof": 0
   },
   "eligibility_summary": {
     "total_applications": 25,
-    "eligible_applications": 25,
-    "ineligible_applications": 0,
-    "eligibility_rate": 100.0,
+    "eligible_applications": 0,
+    "ineligible_applications": 25,
+    "eligibility_rate": 0.0,
     "criteria_failure_breakdown": {
-      "E1_registration_legality": 0,
-      "E2_county_mapping": 0,
-      "E3_priority_value_chain": 0,
-      "E4_financial_evidence": 0,
-      "E5_consent_contactability": 0
+      "E1_registration_legality": 25,
+      "E2_county_mapping": 25,
+      "E3_priority_value_chain": 25,
+      "E4_financial_evidence": 1,
+      "E5_consent_contactability": 25
     }
   },
   "scoring_summary": {
-    "total_scored": 25,
-    "average_score": 75.84,
-    "highest_score": 93.0,
-    "lowest_score": 64.0,
+    "total_scored": 0,
+    "average_score": 0.0,
+    "highest_score": 0.0,
+    "lowest_score": 0.0,
     "score_distribution": {
-      "excellent_80_100": 4,
-      "good_70_79": 17,
-      "fair_60_69": 4,
+      "excellent_80_100": 0,
+      "good_70_79": 0,
+      "fair_60_69": 0,
       "poor_below_60": 0
     }
   },
   "application_evaluations": {
     "Nairobi_172": {
       "application_id": "Nairobi_172",
-      "business_type": "Private company",
-      "woman_owned": "Yes",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "Quantic Solutions Limited",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 1,
-          "financial_position": 3,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 5,
-          "value_chain_alignment": 2,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 1,
-            "rubric_explanation": "Registration unclear; ad-hoc operations"
-          },
-          "financial_position": {
-            "score": 3,
-            "rubric_explanation": "Turnover 1–<5M; stable or recovering; at least one statement"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 5,
-            "rubric_explanation": "Clear problem–solution; quantified targets; detailed execution plan; costed budget; risks & mitigations; co-investment readiness"
-          },
-          "value_chain_alignment": {
-            "score": 2,
-            "rubric_explanation": "Peripheral role; unclear node"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 1,
-            "normalized_score": 20,
-            "weight": 0.05,
-            "weighted_score": 1.0
-          },
-          "financial_position": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.25,
-            "weighted_score": 25.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 2,
-            "normalized_score": 40,
-            "weight": 0.1,
-            "weighted_score": 4.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 74.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Good"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
     "Nairobi_176": {
       "application_id": "Nairobi_176",
-      "business_type": "Private company",
-      "woman_owned": "Yes",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "FOOD EMPORIUM",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 1,
-          "financial_position": 5,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 5,
-          "value_chain_alignment": 4,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 1,
-            "rubric_explanation": "Registration unclear; ad-hoc operations"
-          },
-          "financial_position": {
-            "score": 5,
-            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 5,
-            "rubric_explanation": "Clear problem–solution; quantified targets; detailed execution plan; costed budget; risks & mitigations; co-investment readiness"
-          },
-          "value_chain_alignment": {
-            "score": 4,
-            "rubric_explanation": "Priority VC; clear node participation; some linkages"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 1,
-            "normalized_score": 20,
-            "weight": 0.05,
-            "weighted_score": 1.0
-          },
-          "financial_position": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.25,
-            "weighted_score": 25.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 4,
-            "normalized_score": 80,
-            "weight": 0.1,
-            "weighted_score": 8.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 86.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Excellent"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
     "Nairobi_179": {
       "application_id": "Nairobi_179",
-      "business_type": "Private company",
-      "woman_owned": "Yes",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "Lenel Leather Ltd",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 1,
-          "financial_position": 3,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 3,
-          "value_chain_alignment": 2,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 1,
-            "rubric_explanation": "Registration unclear; ad-hoc operations"
-          },
-          "financial_position": {
-            "score": 3,
-            "rubric_explanation": "Turnover 1–<5M; stable or recovering; at least one statement"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 3,
-            "rubric_explanation": "Direction clear; targets generic; budget rough"
-          },
-          "value_chain_alignment": {
-            "score": 2,
-            "rubric_explanation": "Peripheral role; unclear node"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 1,
-            "normalized_score": 20,
-            "weight": 0.05,
-            "weighted_score": 1.0
-          },
-          "financial_position": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.25,
-            "weighted_score": 15.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 2,
-            "normalized_score": 40,
-            "weight": 0.1,
-            "weighted_score": 4.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 64.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Fair"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
     "Nairobi_191": {
       "application_id": "Nairobi_191",
-      "business_type": "Other",
-      "woman_owned": "Yes",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "Amazing Yummies",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 1,
-          "financial_position": 5,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 4,
-          "value_chain_alignment": 3,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 1,
-            "rubric_explanation": "Registration unclear; ad-hoc operations"
-          },
-          "financial_position": {
-            "score": 5,
-            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 4,
-            "rubric_explanation": "Strong plan with minor gaps; targets & timelines present"
-          },
-          "value_chain_alignment": {
-            "score": 3,
-            "rubric_explanation": "Priority VC; weak linkages; potential to upgrade"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 1,
-            "normalized_score": 20,
-            "weight": 0.05,
-            "weighted_score": 1.0
-          },
-          "financial_position": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 4,
-            "normalized_score": 80,
-            "weight": 0.25,
-            "weighted_score": 20.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.1,
-            "weighted_score": 6.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 79.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Good"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
-    "unknown_5": {
-      "application_id": "unknown_5",
-      "business_type": "MSME Association",
-      "woman_owned": "Yes",
+    "Nairobi_199": {
+      "application_id": "Nairobi_199",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "YOMEDA",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 1,
-          "financial_position": 3,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 3,
-          "value_chain_alignment": 2,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 1,
-            "rubric_explanation": "Registration unclear; ad-hoc operations"
-          },
-          "financial_position": {
-            "score": 3,
-            "rubric_explanation": "Turnover 1–<5M; stable or recovering; at least one statement"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 3,
-            "rubric_explanation": "Direction clear; targets generic; budget rough"
-          },
-          "value_chain_alignment": {
-            "score": 2,
-            "rubric_explanation": "Peripheral role; unclear node"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 1,
-            "normalized_score": 20,
-            "weight": 0.05,
-            "weighted_score": 1.0
-          },
-          "financial_position": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.25,
-            "weighted_score": 15.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 2,
-            "normalized_score": 40,
-            "weight": 0.1,
-            "weighted_score": 4.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 64.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Fair"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
     "Nairobi_288": {
       "application_id": "Nairobi_288",
-      "business_type": "MSME Association",
-      "woman_owned": "Yes",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "Jua Kali Contractors National Umbrella Organization",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 1,
-          "financial_position": 3,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 3,
-          "value_chain_alignment": 3,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 1,
-            "rubric_explanation": "Registration unclear; ad-hoc operations"
-          },
-          "financial_position": {
-            "score": 3,
-            "rubric_explanation": "Turnover 1–<5M; stable or recovering; at least one statement"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 3,
-            "rubric_explanation": "Direction clear; targets generic; budget rough"
-          },
-          "value_chain_alignment": {
-            "score": 3,
-            "rubric_explanation": "Priority VC; weak linkages; potential to upgrade"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 1,
-            "normalized_score": 20,
-            "weight": 0.05,
-            "weighted_score": 1.0
-          },
-          "financial_position": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.25,
-            "weighted_score": 15.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.1,
-            "weighted_score": 6.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 66.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Fair"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
     "Nairobi_305": {
       "application_id": "Nairobi_305",
-      "business_type": "Cooperative",
-      "woman_owned": "No",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "SIC Investment Co-operative Society limited",
-      "woman_owned_proof": "No",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 1,
-          "financial_position": 5,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 4,
-          "value_chain_alignment": 3,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 1,
-            "rubric_explanation": "Registration unclear; ad-hoc operations"
-          },
-          "financial_position": {
-            "score": 5,
-            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 4,
-            "rubric_explanation": "Strong plan with minor gaps; targets & timelines present"
-          },
-          "value_chain_alignment": {
-            "score": 3,
-            "rubric_explanation": "Priority VC; weak linkages; potential to upgrade"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 1,
-            "normalized_score": 20,
-            "weight": 0.05,
-            "weighted_score": 1.0
-          },
-          "financial_position": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 4,
-            "normalized_score": 80,
-            "weight": 0.25,
-            "weighted_score": 20.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.1,
-            "weighted_score": 6.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 79.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Good"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
     "Nairobi_332": {
       "application_id": "Nairobi_332",
-      "business_type": "Cooperative",
-      "woman_owned": "Yes",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "FundiTech Service Cooperative Society Limited",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 3,
-          "financial_position": 5,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 4,
-          "value_chain_alignment": 3,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 3,
-            "rubric_explanation": "Registered <1 yr; basic structure in place"
-          },
-          "financial_position": {
-            "score": 5,
-            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 4,
-            "rubric_explanation": "Strong plan with minor gaps; targets & timelines present"
-          },
-          "value_chain_alignment": {
-            "score": 3,
-            "rubric_explanation": "Priority VC; weak linkages; potential to upgrade"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.05,
-            "weighted_score": 3.0
-          },
-          "financial_position": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 4,
-            "normalized_score": 80,
-            "weight": 0.25,
-            "weighted_score": 20.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.1,
-            "weighted_score": 6.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 81.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Excellent"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
-    "unknown_9": {
-      "application_id": "unknown_9",
-      "business_type": "Private company",
-      "woman_owned": "Yes",
+    "Nairobi_401": {
+      "application_id": "Nairobi_401",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "LIVE GREAT AGRI LIFE LTD",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 1,
-          "financial_position": 5,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 3,
-          "value_chain_alignment": 3,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 1,
-            "rubric_explanation": "Registration unclear; ad-hoc operations"
-          },
-          "financial_position": {
-            "score": 5,
-            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 3,
-            "rubric_explanation": "Direction clear; targets generic; budget rough"
-          },
-          "value_chain_alignment": {
-            "score": 3,
-            "rubric_explanation": "Priority VC; weak linkages; potential to upgrade"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 1,
-            "normalized_score": 20,
-            "weight": 0.05,
-            "weighted_score": 1.0
-          },
-          "financial_position": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.25,
-            "weighted_score": 15.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.1,
-            "weighted_score": 6.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 74.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Good"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
     "Nairobi_408": {
       "application_id": "Nairobi_408",
-      "business_type": "Other",
-      "woman_owned": "Yes",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "EL-POID CONSULTANTS",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 1,
-          "financial_position": 5,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 4,
-          "value_chain_alignment": 3,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 1,
-            "rubric_explanation": "Registration unclear; ad-hoc operations"
-          },
-          "financial_position": {
-            "score": 5,
-            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 4,
-            "rubric_explanation": "Strong plan with minor gaps; targets & timelines present"
-          },
-          "value_chain_alignment": {
-            "score": 3,
-            "rubric_explanation": "Priority VC; weak linkages; potential to upgrade"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 1,
-            "normalized_score": 20,
-            "weight": 0.05,
-            "weighted_score": 1.0
-          },
-          "financial_position": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 4,
-            "normalized_score": 80,
-            "weight": 0.25,
-            "weighted_score": 20.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.1,
-            "weighted_score": 6.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 79.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Good"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
-    "unknown_11": {
-      "application_id": "unknown_11",
-      "business_type": "Private company",
-      "woman_owned": "Yes",
+    "Nairobi_411": {
+      "application_id": "Nairobi_411",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "WHALES ENGINEERING COMPANY\nLIMITED",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 1,
-          "financial_position": 5,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 4,
-          "value_chain_alignment": 3,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 1,
-            "rubric_explanation": "Registration unclear; ad-hoc operations"
-          },
-          "financial_position": {
-            "score": 5,
-            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 4,
-            "rubric_explanation": "Strong plan with minor gaps; targets & timelines present"
-          },
-          "value_chain_alignment": {
-            "score": 3,
-            "rubric_explanation": "Priority VC; weak linkages; potential to upgrade"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 1,
-            "normalized_score": 20,
-            "weight": 0.05,
-            "weighted_score": 1.0
-          },
-          "financial_position": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 4,
-            "normalized_score": 80,
-            "weight": 0.25,
-            "weighted_score": 20.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.1,
-            "weighted_score": 6.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 79.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Good"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
     "Nairobi_470": {
       "application_id": "Nairobi_470",
-      "business_type": "MSME Association",
-      "woman_owned": "Yes",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
-          "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": false,
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "LEATHER ARTICLES ENTREPRENEURS ASSOCIATION",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 3,
-          "financial_position": 2,
-          "market_demand_competitiveness": 4,
-          "business_proposal_viability": 4,
-          "value_chain_alignment": 3,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 3,
-            "rubric_explanation": "Registered <1 yr; basic structure in place"
-          },
-          "financial_position": {
-            "score": 2,
-            "rubric_explanation": "Turnover <1M; sporadic records"
-          },
-          "market_demand_competitiveness": {
-            "score": 4,
-            "rubric_explanation": "Consistent monthly orders; growing channels (incl. digital marketplaces); basic quality assurance"
-          },
-          "business_proposal_viability": {
-            "score": 4,
-            "rubric_explanation": "Strong plan with minor gaps; targets & timelines present"
-          },
-          "value_chain_alignment": {
-            "score": 3,
-            "rubric_explanation": "Priority VC; weak linkages; potential to upgrade"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.05,
-            "weighted_score": 3.0
-          },
-          "financial_position": {
-            "raw_score": 2,
-            "normalized_score": 40,
-            "weight": 0.2,
-            "weighted_score": 8.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 4,
-            "normalized_score": 80,
-            "weight": 0.2,
-            "weighted_score": 16.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 4,
-            "normalized_score": 80,
-            "weight": 0.25,
-            "weighted_score": 20.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.1,
-            "weighted_score": 6.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 73.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Good"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E4: Insufficient financial evidence",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
     "Nairobi_482": {
       "application_id": "Nairobi_482",
-      "business_type": "Private company",
-      "woman_owned": "Yes",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "Food and beverage processing",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 3,
-          "financial_position": 5,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 4,
-          "value_chain_alignment": 4,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 3,
-            "rubric_explanation": "Registered <1 yr; basic structure in place"
-          },
-          "financial_position": {
-            "score": 5,
-            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 4,
-            "rubric_explanation": "Strong plan with minor gaps; targets & timelines present"
-          },
-          "value_chain_alignment": {
-            "score": 4,
-            "rubric_explanation": "Priority VC; clear node participation; some linkages"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.05,
-            "weighted_score": 3.0
-          },
-          "financial_position": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 4,
-            "normalized_score": 80,
-            "weight": 0.25,
-            "weighted_score": 20.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 4,
-            "normalized_score": 80,
-            "weight": 0.1,
-            "weighted_score": 8.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 83.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Excellent"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
     "Nairobi_483": {
       "application_id": "Nairobi_483",
-      "business_type": "MSME Association",
-      "woman_owned": "No",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "Kamkunji Jua Kali Association",
-      "woman_owned_proof": "No",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 3,
-          "financial_position": 5,
-          "market_demand_competitiveness": 5,
-          "business_proposal_viability": 4,
-          "value_chain_alignment": 5,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 3,
-            "rubric_explanation": "Registered <1 yr; basic structure in place"
-          },
-          "financial_position": {
-            "score": 5,
-            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
-          },
-          "market_demand_competitiveness": {
-            "score": 5,
-            "rubric_explanation": "Active offtake/buyer contracts or purchase orders; multi-channel sales; repeat customers; defensible price/quality"
-          },
-          "business_proposal_viability": {
-            "score": 4,
-            "rubric_explanation": "Strong plan with minor gaps; targets & timelines present"
-          },
-          "value_chain_alignment": {
-            "score": 5,
-            "rubric_explanation": "Priority VC; fills a critical node (e.g., aggregation/processing); documented linkages upstream & downstream"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.05,
-            "weighted_score": 3.0
-          },
-          "financial_position": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 4,
-            "normalized_score": 80,
-            "weight": 0.25,
-            "weighted_score": 20.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.1,
-            "weighted_score": 10.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 93.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Excellent"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
     "Nairobi_493": {
       "application_id": "Nairobi_493",
-      "business_type": "MSME Association",
-      "woman_owned": "Yes",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "FOMM DECOR CREATIVE COOPERATIVE",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 1,
-          "financial_position": 5,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 4,
-          "value_chain_alignment": 3,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 1,
-            "rubric_explanation": "Registration unclear; ad-hoc operations"
-          },
-          "financial_position": {
-            "score": 5,
-            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 4,
-            "rubric_explanation": "Strong plan with minor gaps; targets & timelines present"
-          },
-          "value_chain_alignment": {
-            "score": 3,
-            "rubric_explanation": "Priority VC; weak linkages; potential to upgrade"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 1,
-            "normalized_score": 20,
-            "weight": 0.05,
-            "weighted_score": 1.0
-          },
-          "financial_position": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 4,
-            "normalized_score": 80,
-            "weight": 0.25,
-            "weighted_score": 20.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.1,
-            "weighted_score": 6.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 79.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Good"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
     "Nairobi_497": {
       "application_id": "Nairobi_497",
-      "business_type": "MSME Association",
-      "woman_owned": "Yes",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "Hotplate-Food worKSH",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 1,
-          "financial_position": 5,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 3,
-          "value_chain_alignment": 3,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 1,
-            "rubric_explanation": "Registration unclear; ad-hoc operations"
-          },
-          "financial_position": {
-            "score": 5,
-            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 3,
-            "rubric_explanation": "Direction clear; targets generic; budget rough"
-          },
-          "value_chain_alignment": {
-            "score": 3,
-            "rubric_explanation": "Priority VC; weak linkages; potential to upgrade"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 1,
-            "normalized_score": 20,
-            "weight": 0.05,
-            "weighted_score": 1.0
-          },
-          "financial_position": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.25,
-            "weighted_score": 15.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.1,
-            "weighted_score": 6.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 74.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Good"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
     "Nairobi_541": {
       "application_id": "Nairobi_541",
-      "business_type": "MSME Association",
-      "woman_owned": "Yes",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "PRECIOUS VICTORIOUS 2018 WOMEN GROUP",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 1,
-          "financial_position": 3,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 3,
-          "value_chain_alignment": 3,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 1,
-            "rubric_explanation": "Registration unclear; ad-hoc operations"
-          },
-          "financial_position": {
-            "score": 3,
-            "rubric_explanation": "Turnover 1–<5M; stable or recovering; at least one statement"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 3,
-            "rubric_explanation": "Direction clear; targets generic; budget rough"
-          },
-          "value_chain_alignment": {
-            "score": 3,
-            "rubric_explanation": "Priority VC; weak linkages; potential to upgrade"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 1,
-            "normalized_score": 20,
-            "weight": 0.05,
-            "weighted_score": 1.0
-          },
-          "financial_position": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.25,
-            "weighted_score": 15.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.1,
-            "weighted_score": 6.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 66.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Fair"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
     "Nairobi_546": {
       "application_id": "Nairobi_546",
-      "business_type": "Private company",
-      "woman_owned": "No",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "GALANA DEVELOPERS &amp;ELECTRICALS LIMITED",
-      "woman_owned_proof": "No",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 1,
-          "financial_position": 5,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 4,
-          "value_chain_alignment": 2,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 1,
-            "rubric_explanation": "Registration unclear; ad-hoc operations"
-          },
-          "financial_position": {
-            "score": 5,
-            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 4,
-            "rubric_explanation": "Strong plan with minor gaps; targets & timelines present"
-          },
-          "value_chain_alignment": {
-            "score": 2,
-            "rubric_explanation": "Peripheral role; unclear node"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 1,
-            "normalized_score": 20,
-            "weight": 0.05,
-            "weighted_score": 1.0
-          },
-          "financial_position": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 4,
-            "normalized_score": 80,
-            "weight": 0.25,
-            "weighted_score": 20.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 2,
-            "normalized_score": 40,
-            "weight": 0.1,
-            "weighted_score": 4.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 77.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Good"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
     "Nairobi_550": {
       "application_id": "Nairobi_550",
-      "business_type": "MSME Association",
-      "woman_owned": "Yes",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "Team Destiny Self Help Group",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 3,
-          "financial_position": 5,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 4,
-          "value_chain_alignment": 2,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 3,
-            "rubric_explanation": "Registered <1 yr; basic structure in place"
-          },
-          "financial_position": {
-            "score": 5,
-            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 4,
-            "rubric_explanation": "Strong plan with minor gaps; targets & timelines present"
-          },
-          "value_chain_alignment": {
-            "score": 2,
-            "rubric_explanation": "Peripheral role; unclear node"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.05,
-            "weighted_score": 3.0
-          },
-          "financial_position": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 4,
-            "normalized_score": 80,
-            "weight": 0.25,
-            "weighted_score": 20.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 2,
-            "normalized_score": 40,
-            "weight": 0.1,
-            "weighted_score": 4.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 79.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Good"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
-    "unknown_20": {
-      "application_id": "unknown_20",
-      "business_type": "Private company",
-      "woman_owned": "Yes",
+    "Nairobi_569": {
+      "application_id": "Nairobi_569",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "Wow! Kids Toys",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 1,
-          "financial_position": 5,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 4,
-          "value_chain_alignment": 3,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 1,
-            "rubric_explanation": "Registration unclear; ad-hoc operations"
-          },
-          "financial_position": {
-            "score": 5,
-            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 4,
-            "rubric_explanation": "Strong plan with minor gaps; targets & timelines present"
-          },
-          "value_chain_alignment": {
-            "score": 3,
-            "rubric_explanation": "Priority VC; weak linkages; potential to upgrade"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 1,
-            "normalized_score": 20,
-            "weight": 0.05,
-            "weighted_score": 1.0
-          },
-          "financial_position": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 4,
-            "normalized_score": 80,
-            "weight": 0.25,
-            "weighted_score": 20.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.1,
-            "weighted_score": 6.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 79.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Good"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
     "Nairobi_588": {
       "application_id": "Nairobi_588",
-      "business_type": "MSME Association",
-      "woman_owned": "Yes",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "Westlands Centre for Youth Empowerment",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 1,
-          "financial_position": 5,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 3,
-          "value_chain_alignment": 4,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 1,
-            "rubric_explanation": "Registration unclear; ad-hoc operations"
-          },
-          "financial_position": {
-            "score": 5,
-            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 3,
-            "rubric_explanation": "Direction clear; targets generic; budget rough"
-          },
-          "value_chain_alignment": {
-            "score": 4,
-            "rubric_explanation": "Priority VC; clear node participation; some linkages"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 1,
-            "normalized_score": 20,
-            "weight": 0.05,
-            "weighted_score": 1.0
-          },
-          "financial_position": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.25,
-            "weighted_score": 15.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 4,
-            "normalized_score": 80,
-            "weight": 0.1,
-            "weighted_score": 8.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 76.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Good"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
     "Nairobi_621": {
       "application_id": "Nairobi_621",
-      "business_type": "MSME Association",
-      "woman_owned": "Yes",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "USAFI ASSOCIATION",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 1,
-          "financial_position": 5,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 3,
-          "value_chain_alignment": 2,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 1,
-            "rubric_explanation": "Registration unclear; ad-hoc operations"
-          },
-          "financial_position": {
-            "score": 5,
-            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 3,
-            "rubric_explanation": "Direction clear; targets generic; budget rough"
-          },
-          "value_chain_alignment": {
-            "score": 2,
-            "rubric_explanation": "Peripheral role; unclear node"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 1,
-            "normalized_score": 20,
-            "weight": 0.05,
-            "weighted_score": 1.0
-          },
-          "financial_position": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.25,
-            "weighted_score": 15.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 2,
-            "normalized_score": 40,
-            "weight": 0.1,
-            "weighted_score": 4.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 72.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Good"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
     "Nairobi_625": {
       "application_id": "Nairobi_625",
-      "business_type": "Private company",
-      "woman_owned": "No",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "WOWZI TECHNOLOGIES LIMITED",
-      "woman_owned_proof": "No",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 1,
-          "financial_position": 5,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 4,
-          "value_chain_alignment": 2,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 1,
-            "rubric_explanation": "Registration unclear; ad-hoc operations"
-          },
-          "financial_position": {
-            "score": 5,
-            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 4,
-            "rubric_explanation": "Strong plan with minor gaps; targets & timelines present"
-          },
-          "value_chain_alignment": {
-            "score": 2,
-            "rubric_explanation": "Peripheral role; unclear node"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 1,
-            "normalized_score": 20,
-            "weight": 0.05,
-            "weighted_score": 1.0
-          },
-          "financial_position": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 4,
-            "normalized_score": 80,
-            "weight": 0.25,
-            "weighted_score": 20.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 2,
-            "normalized_score": 40,
-            "weight": 0.1,
-            "weighted_score": 4.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 77.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Good"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
-    "unknown_24": {
-      "application_id": "unknown_24",
-      "business_type": "Private company",
-      "woman_owned": "No",
+    "Nairobi_650": {
+      "application_id": "Nairobi_650",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "PWANITECH VENTURES LIMITED",
-      "woman_owned_proof": "No",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 1,
-          "financial_position": 5,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 3,
-          "value_chain_alignment": 2,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 1,
-            "rubric_explanation": "Registration unclear; ad-hoc operations"
-          },
-          "financial_position": {
-            "score": 5,
-            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 3,
-            "rubric_explanation": "Direction clear; targets generic; budget rough"
-          },
-          "value_chain_alignment": {
-            "score": 2,
-            "rubric_explanation": "Peripheral role; unclear node"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 1,
-            "normalized_score": 20,
-            "weight": 0.05,
-            "weighted_score": 1.0
-          },
-          "financial_position": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.25,
-            "weighted_score": 15.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 2,
-            "normalized_score": 40,
-            "weight": 0.1,
-            "weighted_score": 4.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 72.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Good"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
-    "unknown_25": {
-      "application_id": "unknown_25",
-      "business_type": "Other",
-      "woman_owned": "Yes",
+    "Nairobi_717": {
+      "application_id": "Nairobi_717",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "LENSYS CONSULTANCY & OFFICE SOLUTIONS",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 3,
-          "financial_position": 3,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 4,
-          "value_chain_alignment": 2,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 3,
-            "rubric_explanation": "Registered <1 yr; basic structure in place"
-          },
-          "financial_position": {
-            "score": 3,
-            "rubric_explanation": "Turnover 1–<5M; stable or recovering; at least one statement"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 4,
-            "rubric_explanation": "Strong plan with minor gaps; targets & timelines present"
-          },
-          "value_chain_alignment": {
-            "score": 2,
-            "rubric_explanation": "Peripheral role; unclear node"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.05,
-            "weighted_score": 3.0
-          },
-          "financial_position": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 4,
-            "normalized_score": 80,
-            "weight": 0.25,
-            "weighted_score": 20.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 2,
-            "normalized_score": 40,
-            "weight": 0.1,
-            "weighted_score": 4.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 71.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Good"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
       }
     }
   }

@@ -104,7 +104,7 @@ const ApplicantComparisonCard: React.FC<ApplicantComparisonCardProps> = ({ compa
               )}
               {!isMatched && (
                 <div className="px-2 py-1 mt-1 text-xs text-orange-600 rounded bg-orange-50">
-                  No LLM Analysis Available
+                  No computer analysis available
                 </div>
               )}
               {bothFailed && (
@@ -264,7 +264,7 @@ const ApplicantComparisonCard: React.FC<ApplicantComparisonCardProps> = ({ compa
                   <div className="p-4 border border-orange-200 rounded-lg bg-orange-50">
                     <div className="flex items-center gap-2 mb-3">
                       <AlertTriangle size={16} className="flex-shrink-0 text-orange-500" />
-                      <h4 className="font-medium text-orange-700">LLM Analysis Status</h4>
+                      <h4 className="font-medium text-orange-700">Machine Analysis Status</h4>
                     </div>
                     <p className="text-sm leading-relaxed text-orange-600">
                       {comparison.llmStatus || 'No LLM analysis found for this application'}

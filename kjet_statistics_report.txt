@@ -1,6 +1,6 @@
 KJET APPLICATION DATA STATISTICS REPORT
 ==================================================
-Generated on: 2025-10-07 12:41:04
+Generated on: 2025-10-08 10:26:25
 Data source: output/ directory JSON files
 
 OVERALL SUMMARY
@@ -24,16 +24,10 @@ Unclassified:        555 (100.0%)
 
 VALUE CHAIN ANALYSIS
 -------------------------
-Rice                :  47 counties (100.0%)
-Technology          :  47 counties (100.0%)
-Manufacturing       :  47 counties (100.0%)
-Services            :  47 counties (100.0%)
-Retail              :  47 counties (100.0%)
-Transport           :  47 counties (100.0%)
-Agriculture         :  46 counties (97.9%)
-Tea                 :  45 counties (95.7%)
-Dairy               :  45 counties (95.7%)
-Livestock           :  41 counties (87.2%)
+Dairy               :   2 counties (4.3%)
+Livestock           :   1 counties (2.1%)
+Services            :   1 counties (2.1%)
+Manufacturing       :   1 counties (2.1%)
 
 FINANCIAL DOCUMENT COMPLETENESS
 -----------------------------------

@@ -2,1359 +2,339 @@
   "evaluation_metadata": {
     "county": "Wajir",
     "total_applications": 14,
-    "evaluation_date": "2025-10-07T12:40:55.625531",
+    "evaluation_date": "2025-10-08T10:26:24.198810",
     "evaluator_version": "1.0",
     "rules_version": "rules.md - Annex A & B"
   },
   "data_enrichment": {
-    "applications_with_business_name": 14,
+    "applications_with_business_name": 0,
     "applications_with_standardized_business_name": 0,
     "applications_with_woman_owned_flag": 14,
-    "applications_with_woman_owned_proof": 3
+    "applications_with_woman_owned_proof": 0
   },
   "eligibility_summary": {
     "total_applications": 14,
-    "eligible_applications": 14,
-    "ineligible_applications": 0,
-    "eligibility_rate": 100.0,
+    "eligible_applications": 0,
+    "ineligible_applications": 14,
+    "eligibility_rate": 0.0,
     "criteria_failure_breakdown": {
-      "E1_registration_legality": 0,
-      "E2_county_mapping": 0,
-      "E3_priority_value_chain": 0,
-      "E4_financial_evidence": 0,
-      "E5_consent_contactability": 0
+      "E1_registration_legality": 14,
+      "E2_county_mapping": 14,
+      "E3_priority_value_chain": 14,
+      "E4_financial_evidence": 5,
+      "E5_consent_contactability": 14
     }
   },
   "scoring_summary": {
-    "total_scored": 14,
-    "average_score": 69.93,
-    "highest_score": 81.0,
-    "lowest_score": 60.0,
+    "total_scored": 0,
+    "average_score": 0.0,
+    "highest_score": 0.0,
+    "lowest_score": 0.0,
     "score_distribution": {
-      "excellent_80_100": 2,
-      "good_70_79": 6,
-      "fair_60_69": 6,
+      "excellent_80_100": 0,
+      "good_70_79": 0,
+      "fair_60_69": 0,
       "poor_below_60": 0
     }
   },
   "application_evaluations": {
     "Wajir_349": {
       "application_id": "Wajir_349",
-      "business_type": "Cooperative",
-      "woman_owned": "No",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "WAJIR COUNTY FARMERS SAVING AND CREDIT COOPERATIVE SOCIETY LIMITED",
-      "woman_owned_proof": "No",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 1,
-          "financial_position": 5,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 3,
-          "value_chain_alignment": 3,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 1,
-            "rubric_explanation": "Registration unclear; ad-hoc operations"
-          },
-          "financial_position": {
-            "score": 5,
-            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 3,
-            "rubric_explanation": "Direction clear; targets generic; budget rough"
-          },
-          "value_chain_alignment": {
-            "score": 3,
-            "rubric_explanation": "Priority VC; weak linkages; potential to upgrade"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 1,
-            "normalized_score": 20,
-            "weight": 0.05,
-            "weighted_score": 1.0
-          },
-          "financial_position": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.25,
-            "weighted_score": 15.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.1,
-            "weighted_score": 6.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 74.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Good"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
     "Wajir_350": {
       "application_id": "Wajir_350",
-      "business_type": "Other",
-      "woman_owned": "Yes",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
-          "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": false,
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "RURAL PLUS ORGANIZATION",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 1,
-          "financial_position": 2,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 3,
-          "value_chain_alignment": 2,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 1,
-            "rubric_explanation": "Registration unclear; ad-hoc operations"
-          },
-          "financial_position": {
-            "score": 2,
-            "rubric_explanation": "Turnover <1M; sporadic records"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 3,
-            "rubric_explanation": "Direction clear; targets generic; budget rough"
-          },
-          "value_chain_alignment": {
-            "score": 2,
-            "rubric_explanation": "Peripheral role; unclear node"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 1,
-            "normalized_score": 20,
-            "weight": 0.05,
-            "weighted_score": 1.0
-          },
-          "financial_position": {
-            "raw_score": 2,
-            "normalized_score": 40,
-            "weight": 0.2,
-            "weighted_score": 8.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.25,
-            "weighted_score": 15.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 2,
-            "normalized_score": 40,
-            "weight": 0.1,
-            "weighted_score": 4.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 60.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Fair"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E4: Insufficient financial evidence",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
     "Wajir_355": {
       "application_id": "Wajir_355",
-      "business_type": "Cooperative",
-      "woman_owned": "Yes",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "Bute Dairy Marketing Cooperative Society Limited",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 1,
-          "financial_position": 5,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 4,
-          "value_chain_alignment": 4,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 1,
-            "rubric_explanation": "Registration unclear; ad-hoc operations"
-          },
-          "financial_position": {
-            "score": 5,
-            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 4,
-            "rubric_explanation": "Strong plan with minor gaps; targets & timelines present"
-          },
-          "value_chain_alignment": {
-            "score": 4,
-            "rubric_explanation": "Priority VC; clear node participation; some linkages"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 1,
-            "normalized_score": 20,
-            "weight": 0.05,
-            "weighted_score": 1.0
-          },
-          "financial_position": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 4,
-            "normalized_score": 80,
-            "weight": 0.25,
-            "weighted_score": 20.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 4,
-            "normalized_score": 80,
-            "weight": 0.1,
-            "weighted_score": 8.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 81.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Excellent"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
     "Wajir_358": {
       "application_id": "Wajir_358",
-      "business_type": "Other",
-      "woman_owned": "No",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "MIZAAJ DESIGNS AND SPORTS CENTER",
-      "woman_owned_proof": "No",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 1,
-          "financial_position": 5,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 4,
-          "value_chain_alignment": 2,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 1,
-            "rubric_explanation": "Registration unclear; ad-hoc operations"
-          },
-          "financial_position": {
-            "score": 5,
-            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 4,
-            "rubric_explanation": "Strong plan with minor gaps; targets & timelines present"
-          },
-          "value_chain_alignment": {
-            "score": 2,
-            "rubric_explanation": "Peripheral role; unclear node"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 1,
-            "normalized_score": 20,
-            "weight": 0.05,
-            "weighted_score": 1.0
-          },
-          "financial_position": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 4,
-            "normalized_score": 80,
-            "weight": 0.25,
-            "weighted_score": 20.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 2,
-            "normalized_score": 40,
-            "weight": 0.1,
-            "weighted_score": 4.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 77.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Good"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
     "Wajir_366": {
       "application_id": "Wajir_366",
-      "business_type": "Other",
-      "woman_owned": "Yes",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
-          "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": false,
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "JAGAHIR WATER RESOURCE USERS ASSOCIATION",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 1,
-          "financial_position": 2,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 3,
-          "value_chain_alignment": 3,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 1,
-            "rubric_explanation": "Registration unclear; ad-hoc operations"
-          },
-          "financial_position": {
-            "score": 2,
-            "rubric_explanation": "Turnover <1M; sporadic records"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 3,
-            "rubric_explanation": "Direction clear; targets generic; budget rough"
-          },
-          "value_chain_alignment": {
-            "score": 3,
-            "rubric_explanation": "Priority VC; weak linkages; potential to upgrade"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 1,
-            "normalized_score": 20,
-            "weight": 0.05,
-            "weighted_score": 1.0
-          },
-          "financial_position": {
-            "raw_score": 2,
-            "normalized_score": 40,
-            "weight": 0.2,
-            "weighted_score": 8.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.25,
-            "weighted_score": 15.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.1,
-            "weighted_score": 6.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 62.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Fair"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E4: Insufficient financial evidence",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
     "Wajir_375": {
       "application_id": "Wajir_375",
-      "business_type": "Cooperative",
-      "woman_owned": "Yes",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "BISHARO WAJIR BOR MARKET CO-ORATIVE SOCIETY LIMITED",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 1,
-          "financial_position": 5,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 4,
-          "value_chain_alignment": 3,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 1,
-            "rubric_explanation": "Registration unclear; ad-hoc operations"
-          },
-          "financial_position": {
-            "score": 5,
-            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 4,
-            "rubric_explanation": "Strong plan with minor gaps; targets & timelines present"
-          },
-          "value_chain_alignment": {
-            "score": 3,
-            "rubric_explanation": "Priority VC; weak linkages; potential to upgrade"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 1,
-            "normalized_score": 20,
-            "weight": 0.05,
-            "weighted_score": 1.0
-          },
-          "financial_position": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 4,
-            "normalized_score": 80,
-            "weight": 0.25,
-            "weighted_score": 20.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.1,
-            "weighted_score": 6.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 79.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Good"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
     "Wajir_384": {
       "application_id": "Wajir_384",
-      "business_type": "Cooperative",
-      "woman_owned": "Yes",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "ALHAMDU ADEMASAJIDA SAVINGS AND CREDIT CO-OPERATIVE SOCIETY LIMITED",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 2,
-          "financial_position": 5,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 4,
-          "value_chain_alignment": 3,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 2,
-            "rubric_explanation": "Registered but dormant/irregular governance"
-          },
-          "financial_position": {
-            "score": 5,
-            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 4,
-            "rubric_explanation": "Strong plan with minor gaps; targets & timelines present"
-          },
-          "value_chain_alignment": {
-            "score": 3,
-            "rubric_explanation": "Priority VC; weak linkages; potential to upgrade"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 2,
-            "normalized_score": 40,
-            "weight": 0.05,
-            "weighted_score": 2.0
-          },
-          "financial_position": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 4,
-            "normalized_score": 80,
-            "weight": 0.25,
-            "weighted_score": 20.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.1,
-            "weighted_score": 6.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 80.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Excellent"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
     "Wajir_455": {
       "application_id": "Wajir_455",
-      "business_type": "Other",
-      "woman_owned": "Yes",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
-          "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": false,
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "WAJIR AGRICULTURAL DRYLAND DEVELOPMENT ORGANIZATION",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 1,
-          "financial_position": 2,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 3,
-          "value_chain_alignment": 2,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 1,
-            "rubric_explanation": "Registration unclear; ad-hoc operations"
-          },
-          "financial_position": {
-            "score": 2,
-            "rubric_explanation": "Turnover <1M; sporadic records"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 3,
-            "rubric_explanation": "Direction clear; targets generic; budget rough"
-          },
-          "value_chain_alignment": {
-            "score": 2,
-            "rubric_explanation": "Peripheral role; unclear node"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 1,
-            "normalized_score": 20,
-            "weight": 0.05,
-            "weighted_score": 1.0
-          },
-          "financial_position": {
-            "raw_score": 2,
-            "normalized_score": 40,
-            "weight": 0.2,
-            "weighted_score": 8.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.25,
-            "weighted_score": 15.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 2,
-            "normalized_score": 40,
-            "weight": 0.1,
-            "weighted_score": 4.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 60.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Fair"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E4: Insufficient financial evidence",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
-    "unknown_9": {
-      "application_id": "unknown_9",
-      "business_type": "Cooperative",
-      "woman_owned": "No",
+    "Wajir_469": {
+      "application_id": "Wajir_469",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "Bidii Umoja Farmers Co-operative Society Limited",
-      "woman_owned_proof": "No",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 1,
-          "financial_position": 3,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 3,
-          "value_chain_alignment": 2,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 1,
-            "rubric_explanation": "Registration unclear; ad-hoc operations"
-          },
-          "financial_position": {
-            "score": 3,
-            "rubric_explanation": "Turnover 1–<5M; stable or recovering; at least one statement"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 3,
-            "rubric_explanation": "Direction clear; targets generic; budget rough"
-          },
-          "value_chain_alignment": {
-            "score": 2,
-            "rubric_explanation": "Peripheral role; unclear node"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 1,
-            "normalized_score": 20,
-            "weight": 0.05,
-            "weighted_score": 1.0
-          },
-          "financial_position": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.25,
-            "weighted_score": 15.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 2,
-            "normalized_score": 40,
-            "weight": 0.1,
-            "weighted_score": 4.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 64.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Fair"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
     "Wajir_476": {
       "application_id": "Wajir_476",
-      "business_type": "Cooperative",
-      "woman_owned": "Yes",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
-          "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": false,
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "GIRIFTU JUAKALI SAVINGS AND CREDIT CO-OPERATIVE SOCIETY LIMITED",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 1,
-          "financial_position": 2,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 3,
-          "value_chain_alignment": 2,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 1,
-            "rubric_explanation": "Registration unclear; ad-hoc operations"
-          },
-          "financial_position": {
-            "score": 2,
-            "rubric_explanation": "Turnover <1M; sporadic records"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 3,
-            "rubric_explanation": "Direction clear; targets generic; budget rough"
-          },
-          "value_chain_alignment": {
-            "score": 2,
-            "rubric_explanation": "Peripheral role; unclear node"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 1,
-            "normalized_score": 20,
-            "weight": 0.05,
-            "weighted_score": 1.0
-          },
-          "financial_position": {
-            "raw_score": 2,
-            "normalized_score": 40,
-            "weight": 0.2,
-            "weighted_score": 8.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.25,
-            "weighted_score": 15.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 2,
-            "normalized_score": 40,
-            "weight": 0.1,
-            "weighted_score": 4.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 60.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Fair"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E4: Insufficient financial evidence",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
     "Wajir_512": {
       "application_id": "Wajir_512",
-      "business_type": "Private company",
-      "woman_owned": "Yes",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
-          "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": false,
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "MANSOUR GRIFTU WOMEN GROUP",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 1,
-          "financial_position": 2,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 3,
-          "value_chain_alignment": 2,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 1,
-            "rubric_explanation": "Registration unclear; ad-hoc operations"
-          },
-          "financial_position": {
-            "score": 2,
-            "rubric_explanation": "Turnover <1M; sporadic records"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 3,
-            "rubric_explanation": "Direction clear; targets generic; budget rough"
-          },
-          "value_chain_alignment": {
-            "score": 2,
-            "rubric_explanation": "Peripheral role; unclear node"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 1,
-            "normalized_score": 20,
-            "weight": 0.05,
-            "weighted_score": 1.0
-          },
-          "financial_position": {
-            "raw_score": 2,
-            "normalized_score": 40,
-            "weight": 0.2,
-            "weighted_score": 8.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.25,
-            "weighted_score": 15.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 2,
-            "normalized_score": 40,
-            "weight": 0.1,
-            "weighted_score": 4.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 60.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Fair"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E4: Insufficient financial evidence",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
     "Wajir_609": {
       "application_id": "Wajir_609",
-      "business_type": "MSME Association",
-      "woman_owned": "Yes",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "GRIFTU KULMIYE MILK MARKETING",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 1,
-          "financial_position": 5,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 3,
-          "value_chain_alignment": 3,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 1,
-            "rubric_explanation": "Registration unclear; ad-hoc operations"
-          },
-          "financial_position": {
-            "score": 5,
-            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 3,
-            "rubric_explanation": "Direction clear; targets generic; budget rough"
-          },
-          "value_chain_alignment": {
-            "score": 3,
-            "rubric_explanation": "Priority VC; weak linkages; potential to upgrade"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 1,
-            "normalized_score": 20,
-            "weight": 0.05,
-            "weighted_score": 1.0
-          },
-          "financial_position": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.25,
-            "weighted_score": 15.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.1,
-            "weighted_score": 6.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 74.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Good"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
-    "unknown_13": {
-      "application_id": "unknown_13",
-      "business_type": "MSME Association",
-      "woman_owned": "Yes",
+    "Wajir_628": {
+      "application_id": "Wajir_628",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "Wajir Deaf MSME Cluster",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 1,
-          "financial_position": 5,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 3,
-          "value_chain_alignment": 2,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 1,
-            "rubric_explanation": "Registration unclear; ad-hoc operations"
-          },
-          "financial_position": {
-            "score": 5,
-            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 3,
-            "rubric_explanation": "Direction clear; targets generic; budget rough"
-          },
-          "value_chain_alignment": {
-            "score": 2,
-            "rubric_explanation": "Peripheral role; unclear node"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 1,
-            "normalized_score": 20,
-            "weight": 0.05,
-            "weighted_score": 1.0
-          },
-          "financial_position": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.25,
-            "weighted_score": 15.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 2,
-            "normalized_score": 40,
-            "weight": 0.1,
-            "weighted_score": 4.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 72.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Good"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
       }
     },
     "Wajir_696": {
       "application_id": "Wajir_696",
-      "business_type": "Cooperative",
-      "woman_owned": "Yes",
+      "business_type": "unknown",
+      "woman_owned": false,
       "eligibility": {
-        "eligible": true,
+        "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
-          "E3_priority_value_chain": true,
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
-        "failure_reasons": []
-      },
-      "business_name": "CRESCENT TAKAFUL SACCO SOCIETY LTD (CTS)",
-      "scoring": {
-        "criteria_scores": {
-          "registration_track_record": 1,
-          "financial_position": 5,
-          "market_demand_competitiveness": 3,
-          "business_proposal_viability": 3,
-          "value_chain_alignment": 4,
-          "inclusivity_sustainability": 5
-        },
-        "criteria_explanations": {
-          "registration_track_record": {
-            "score": 1,
-            "rubric_explanation": "Registration unclear; ad-hoc operations"
-          },
-          "financial_position": {
-            "score": 5,
-            "rubric_explanation": "Turnover ≥ KES 10M; positive 2-yr trend; statements + simple income/balance proof"
-          },
-          "market_demand_competitiveness": {
-            "score": 3,
-            "rubric_explanation": "Regular local sales; one channel; emerging quality practices"
-          },
-          "business_proposal_viability": {
-            "score": 3,
-            "rubric_explanation": "Direction clear; targets generic; budget rough"
-          },
-          "value_chain_alignment": {
-            "score": 4,
-            "rubric_explanation": "Priority VC; clear node participation; some linkages"
-          },
-          "inclusivity_sustainability": {
-            "score": 5,
-            "rubric_explanation": "≥50% women or ≥50% youth participation (or ≥30% women leadership); PWD inclusion; 2+ green practices adopted"
-          }
-        },
-        "weighted_scores": {
-          "registration_track_record": {
-            "raw_score": 1,
-            "normalized_score": 20,
-            "weight": 0.05,
-            "weighted_score": 1.0
-          },
-          "financial_position": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          },
-          "market_demand_competitiveness": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.2,
-            "weighted_score": 12.0
-          },
-          "business_proposal_viability": {
-            "raw_score": 3,
-            "normalized_score": 60,
-            "weight": 0.25,
-            "weighted_score": 15.0
-          },
-          "value_chain_alignment": {
-            "raw_score": 4,
-            "normalized_score": 80,
-            "weight": 0.1,
-            "weighted_score": 8.0
-          },
-          "inclusivity_sustainability": {
-            "raw_score": 5,
-            "normalized_score": 100,
-            "weight": 0.2,
-            "weighted_score": 20.0
-          }
-        },
-        "composite_score": 76.0,
-        "scoring_scale": "0-100 (weighted average)",
-        "grade": "Good"
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
       }
     }
   }

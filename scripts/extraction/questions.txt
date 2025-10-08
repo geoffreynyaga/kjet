@@ -1,0 +1,63 @@
+1. Application ID
+2. Application Number
+3. What is the name of your cluster?
+4. What is your registration status?
+5. Registration Status (Other)
+6. What is your registration number?
+7. Which county are you located in?
+8. What constituency are you in?
+9. What ward are you in?
+10. What is your location? Please specify the nearest landmark or village.
+11. What is your phone number?
+12. What is your alternate phone number?
+13. What is your email address?
+14. Who is the Chairperson?
+15. Who is the Secretary?
+16. Who is the CEO?
+17. Who is the Director?
+18. Who is the Manager?
+19. Who is the Treasurer?
+20. Does your enterprise qualify as a woman-owned enterprise based on the following criteria: At least 51% owned by woman/women; OR At least 20% owned by woman/women AND: Has at least one woman as CEO/COO/President/Vice President; AND At least 30% of the board of directors composed of women (if a board exists).
+21. If yes, please explain how your enterprise meets the criteria:
+22. Where is your place of operation?
+23. Place of Operation (Other)
+24. What is the name of the place of operation specified above?
+25. Number of members in 2022
+26. Number of members in 2023
+27. Number of members in 2024
+28. Number of employees in 2022
+29. Number of employees in 2023
+30. Number of employees in 2024
+31. Number of males:
+32. Number of females:
+33. How many members are aged 18-35?
+34. How many members are aged 36-50?
+35. How many members are above 50?
+36. What is your value chain?
+37. Other Value Chain
+38. Please describe your economic activities and participation along the value chain. Include: What products/services you offer and their approximate % contribution to annual turnover. The steps of the supply chain you occupy (e.g., what you procure, produce, process, and who you sell to). (200 words or less):
+39. 2022 Annual Turnover (Ksh)
+40. 2022 Net (After-Tax) Profit (Ksh)
+41. 2023 Annual Turnover (Ksh)
+42. 2023 Net (After-Tax) Profit (Ksh)
+43. 2024 Annual Turnover (Ksh)
+44. 2024 Net (After-Tax) Profit (Ksh)
+45. Business Objectives
+46. Main Competitors
+47. Success Factors
+48. What key pieces of equipment and technology are most critical to your business? What investment plans do you have in the next 2-3 years?
+49. Do you know your price-cost margins by product? Please specify.
+50. Does your organization use an accounting package? If so, which one?
+51. Other Accounting Package
+52. Please describe your backward linkages – current suppliers of raw materials. Specify the main items your organization procures. For each item, indicate: - Whether it is locally sourced or imported - Whether it is procured from large firms, MSMEs, cooperatives, or other types of suppliers - Any notable challenges or dependencies in your supply chain
+53. Do you sell through digital e-commerce channels (for example, online digital marketplaces such as Jumia, Kilimall, etc.)?
+54. Sales to domestic firms (i.e., domestic B2B)
+55. B2B Description
+56. Direct sales to domestic consumers/individuals (i.e., domestic B2C)
+57. B2C Description
+58. Exports
+59. Exports Description
+60. What is your marketing plan for future market expansion? Please describe the markets you aim to grow in, the reasons for targeting them, and your strategies for achieving this growth. Include details such as: Customer outreach methods, Operational enhancements, Planned investments, Progress made so far (e.g., discussions or MOUs with potential customers)
+61. What is the problem statement - description of the current challenges of the clusters business activities and the needs to be addressed? Additionally, specify specific areas where project Business Development Services support could be helpful.
+62. What sustainable practices have you adopted? Sustainable practices refer to environmentally friendly initiatives or actions taken by your cluster to minimize negative impacts on the environment and impacts from the environment (e.g., resilience to drought). Please describe any green initiatives implemented by the cluster, if any.
+63. Submitted At

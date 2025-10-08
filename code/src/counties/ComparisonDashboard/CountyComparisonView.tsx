@@ -25,8 +25,8 @@ const CountyComparisonView: React.FC<CountyComparisonViewProps> = ({ county, hum
   const [countyComparison, setCountyComparison] = useState<CountyComparison | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [sortField, setSortField] = useState<SortField>('rankDifference');
-  const [sortDirection, setSortDirection] = useState<SortDirection>('desc');
+  const [sortField, setSortField] = useState<SortField>('humanRank');
+  const [sortDirection, setSortDirection] = useState<SortDirection>('asc');
 
   useEffect(() => {
     loadCountyComparison();
@@ -321,8 +321,8 @@ const CountyComparisonView: React.FC<CountyComparisonViewProps> = ({ county, hum
             <h2 className="text-2xl font-bold text-gray-900">{county} County</h2>
             <p className="text-gray-600">
               {countyComparison.totalApplications} applications •
-              {countyComparison.comparisonRows.length} with LLM comparison •
-              {countyComparison.mismatchedApplications.length} without LLM data
+              {countyComparison.comparisonRows.length} with machine comparison •
+              {countyComparison.mismatchedApplications.length} without machine data
             </p>
           </div>
           <select
@@ -353,11 +353,11 @@ const CountyComparisonView: React.FC<CountyComparisonViewProps> = ({ county, hum
             <thead className="bg-gray-50">
               <tr>
                 <th className="px-4 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase">Applicant</th>
-                <th className="px-4 py-3 text-xs font-medium tracking-wider text-center text-gray-500 uppercase">Human Rank</th>
-                <th className="px-4 py-3 text-xs font-medium tracking-wider text-center text-gray-500 uppercase">Human Score</th>
-                <th className="px-4 py-3 text-xs font-medium tracking-wider text-center text-gray-500 uppercase">Human Status</th>
-                <th className="px-4 py-3 text-xs font-medium tracking-wider text-center text-gray-500 uppercase">LLM Rank</th>
-                <th className="px-4 py-3 text-xs font-medium tracking-wider text-center text-gray-500 uppercase">LLM Status</th>
+                <th className="px-4 py-3 text-xs font-medium tracking-wider text-center text-green-500 uppercase">Human Rank</th>
+                <th className="px-4 py-3 text-xs font-medium tracking-wider text-center text-green-500 uppercase">Human Score</th>
+                <th className="px-4 py-3 text-xs font-medium tracking-wider text-center text-green-500 uppercase">Human Status</th>
+                <th className="px-4 py-3 text-xs font-medium tracking-wider text-center text-orange-500 uppercase">Algorithm Rank</th>
+                <th className="px-4 py-3 text-xs font-medium tracking-wider text-center text-orange-500 uppercase">Algorithm Status</th>
                 <th className="px-4 py-3 text-xs font-medium tracking-wider text-center text-gray-500 uppercase">Agreement</th>
                 <th className="px-4 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase">Actions</th>
               </tr>
