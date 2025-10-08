@@ -1,8 +1,8 @@
 {
   "evaluation_metadata": {
-    "county": "Garissa",
+    "county": "Kilifi",
     "total_applications": 9,
-    "evaluation_date": "2025-10-08T10:26:24.103414",
+    "evaluation_date": "2025-10-08T10:26:24.221125",
     "evaluator_version": "1.0",
     "rules_version": "rules.md - Annex A & B"
   },
@@ -21,7 +21,7 @@
       "E1_registration_legality": 9,
       "E2_county_mapping": 9,
       "E3_priority_value_chain": 9,
-      "E4_financial_evidence": 2,
+      "E4_financial_evidence": 1,
       "E5_consent_contactability": 9
     }
   },
@@ -38,8 +38,8 @@
     }
   },
   "application_evaluations": {
-    "Garissa_333": {
-      "application_id": "Garissa_333",
+    "Kilifi_280": {
+      "application_id": "Kilifi_280",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -59,8 +59,8 @@
         ]
       }
     },
-    "Garissa_336": {
-      "application_id": "Garissa_336",
+    "Kilifi_549": {
+      "application_id": "Kilifi_549",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -80,8 +80,8 @@
         ]
       }
     },
-    "Garissa_356": {
-      "application_id": "Garissa_356",
+    "Kilifi_552": {
+      "application_id": "Kilifi_552",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -101,8 +101,8 @@
         ]
       }
     },
-    "Garissa_447": {
-      "application_id": "Garissa_447",
+    "Kilifi_558": {
+      "application_id": "Kilifi_558",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -122,8 +122,8 @@
         ]
       }
     },
-    "Garissa_563": {
-      "application_id": "Garissa_563",
+    "Kilifi_564": {
+      "application_id": "Kilifi_564",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -143,8 +143,8 @@
         ]
       }
     },
-    "Garissa_631": {
-      "application_id": "Garissa_631",
+    "Kilifi_577": {
+      "application_id": "Kilifi_577",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -164,29 +164,8 @@
         ]
       }
     },
-    "Garissa_654": {
-      "application_id": "Garissa_654",
-      "business_type": "unknown",
-      "woman_owned": false,
-      "eligibility": {
-        "eligible": false,
-        "criteria_results": {
-          "E1_registration_legality": false,
-          "E2_county_mapping": false,
-          "E3_priority_value_chain": false,
-          "E4_financial_evidence": true,
-          "E5_consent_contactability": false
-        },
-        "failure_reasons": [
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E5: Missing contact information or consent"
-        ]
-      }
-    },
-    "Garissa_669": {
-      "application_id": "Garissa_669",
+    "Kilifi_602": {
+      "application_id": "Kilifi_602",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -207,8 +186,8 @@
         ]
       }
     },
-    "Garissa_701": {
-      "application_id": "Garissa_701",
+    "Kilifi_604": {
+      "application_id": "Kilifi_604",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -217,14 +196,34 @@
           "E1_registration_legality": false,
           "E2_county_mapping": false,
           "E3_priority_value_chain": false,
-          "E4_financial_evidence": false,
+          "E4_financial_evidence": true,
           "E5_consent_contactability": false
         },
         "failure_reasons": [
           "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
           "E3: Not operating in priority value chain",
-          "E4: Insufficient financial evidence",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Kilifi_605": {
+      "application_id": "Kilifi_605",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
           "E5: Missing contact information or consent"
         ]
       }

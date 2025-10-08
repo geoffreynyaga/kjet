@@ -1,28 +1,28 @@
 {
   "evaluation_metadata": {
-    "county": "Garissa",
-    "total_applications": 9,
-    "evaluation_date": "2025-10-08T10:26:24.103414",
+    "county": "Nyandarua",
+    "total_applications": 11,
+    "evaluation_date": "2025-10-08T10:26:24.154803",
     "evaluator_version": "1.0",
     "rules_version": "rules.md - Annex A & B"
   },
   "data_enrichment": {
     "applications_with_business_name": 0,
     "applications_with_standardized_business_name": 0,
-    "applications_with_woman_owned_flag": 9,
+    "applications_with_woman_owned_flag": 11,
     "applications_with_woman_owned_proof": 0
   },
   "eligibility_summary": {
-    "total_applications": 9,
+    "total_applications": 11,
     "eligible_applications": 0,
-    "ineligible_applications": 9,
+    "ineligible_applications": 11,
     "eligibility_rate": 0.0,
     "criteria_failure_breakdown": {
-      "E1_registration_legality": 9,
-      "E2_county_mapping": 9,
-      "E3_priority_value_chain": 9,
-      "E4_financial_evidence": 2,
-      "E5_consent_contactability": 9
+      "E1_registration_legality": 11,
+      "E2_county_mapping": 11,
+      "E3_priority_value_chain": 11,
+      "E4_financial_evidence": 1,
+      "E5_consent_contactability": 11
     }
   },
   "scoring_summary": {
@@ -38,155 +38,8 @@
     }
   },
   "application_evaluations": {
-    "Garissa_333": {
-      "application_id": "Garissa_333",
-      "business_type": "unknown",
-      "woman_owned": false,
-      "eligibility": {
-        "eligible": false,
-        "criteria_results": {
-          "E1_registration_legality": false,
-          "E2_county_mapping": false,
-          "E3_priority_value_chain": false,
-          "E4_financial_evidence": true,
-          "E5_consent_contactability": false
-        },
-        "failure_reasons": [
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E5: Missing contact information or consent"
-        ]
-      }
-    },
-    "Garissa_336": {
-      "application_id": "Garissa_336",
-      "business_type": "unknown",
-      "woman_owned": false,
-      "eligibility": {
-        "eligible": false,
-        "criteria_results": {
-          "E1_registration_legality": false,
-          "E2_county_mapping": false,
-          "E3_priority_value_chain": false,
-          "E4_financial_evidence": true,
-          "E5_consent_contactability": false
-        },
-        "failure_reasons": [
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E5: Missing contact information or consent"
-        ]
-      }
-    },
-    "Garissa_356": {
-      "application_id": "Garissa_356",
-      "business_type": "unknown",
-      "woman_owned": false,
-      "eligibility": {
-        "eligible": false,
-        "criteria_results": {
-          "E1_registration_legality": false,
-          "E2_county_mapping": false,
-          "E3_priority_value_chain": false,
-          "E4_financial_evidence": true,
-          "E5_consent_contactability": false
-        },
-        "failure_reasons": [
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E5: Missing contact information or consent"
-        ]
-      }
-    },
-    "Garissa_447": {
-      "application_id": "Garissa_447",
-      "business_type": "unknown",
-      "woman_owned": false,
-      "eligibility": {
-        "eligible": false,
-        "criteria_results": {
-          "E1_registration_legality": false,
-          "E2_county_mapping": false,
-          "E3_priority_value_chain": false,
-          "E4_financial_evidence": true,
-          "E5_consent_contactability": false
-        },
-        "failure_reasons": [
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E5: Missing contact information or consent"
-        ]
-      }
-    },
-    "Garissa_563": {
-      "application_id": "Garissa_563",
-      "business_type": "unknown",
-      "woman_owned": false,
-      "eligibility": {
-        "eligible": false,
-        "criteria_results": {
-          "E1_registration_legality": false,
-          "E2_county_mapping": false,
-          "E3_priority_value_chain": false,
-          "E4_financial_evidence": true,
-          "E5_consent_contactability": false
-        },
-        "failure_reasons": [
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E5: Missing contact information or consent"
-        ]
-      }
-    },
-    "Garissa_631": {
-      "application_id": "Garissa_631",
-      "business_type": "unknown",
-      "woman_owned": false,
-      "eligibility": {
-        "eligible": false,
-        "criteria_results": {
-          "E1_registration_legality": false,
-          "E2_county_mapping": false,
-          "E3_priority_value_chain": false,
-          "E4_financial_evidence": true,
-          "E5_consent_contactability": false
-        },
-        "failure_reasons": [
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E5: Missing contact information or consent"
-        ]
-      }
-    },
-    "Garissa_654": {
-      "application_id": "Garissa_654",
-      "business_type": "unknown",
-      "woman_owned": false,
-      "eligibility": {
-        "eligible": false,
-        "criteria_results": {
-          "E1_registration_legality": false,
-          "E2_county_mapping": false,
-          "E3_priority_value_chain": false,
-          "E4_financial_evidence": true,
-          "E5_consent_contactability": false
-        },
-        "failure_reasons": [
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E5: Missing contact information or consent"
-        ]
-      }
-    },
-    "Garissa_669": {
-      "application_id": "Garissa_669",
+    "Nyandarua_183": {
+      "application_id": "Nyandarua_183",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -207,8 +60,8 @@
         ]
       }
     },
-    "Garissa_701": {
-      "application_id": "Garissa_701",
+    "Nyandarua_184": {
+      "application_id": "Nyandarua_184",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -217,14 +70,202 @@
           "E1_registration_legality": false,
           "E2_county_mapping": false,
           "E3_priority_value_chain": false,
-          "E4_financial_evidence": false,
+          "E4_financial_evidence": true,
           "E5_consent_contactability": false
         },
         "failure_reasons": [
           "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
           "E3: Not operating in priority value chain",
-          "E4: Insufficient financial evidence",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Nyandarua_195": {
+      "application_id": "Nyandarua_195",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Nyandarua_202": {
+      "application_id": "Nyandarua_202",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Nyandarua_211": {
+      "application_id": "Nyandarua_211",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Nyandarua_224": {
+      "application_id": "Nyandarua_224",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Nyandarua_235": {
+      "application_id": "Nyandarua_235",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Nyandarua_244": {
+      "application_id": "Nyandarua_244",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Nyandarua_261": {
+      "application_id": "Nyandarua_261",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Nyandarua_606": {
+      "application_id": "Nyandarua_606",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Nyandarua_637": {
+      "application_id": "Nyandarua_637",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
           "E5: Missing contact information or consent"
         ]
       }

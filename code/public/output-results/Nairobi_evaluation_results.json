@@ -1,28 +1,28 @@
 {
   "evaluation_metadata": {
-    "county": "Wajir",
-    "total_applications": 14,
-    "evaluation_date": "2025-10-08T10:26:24.198810",
+    "county": "Nairobi",
+    "total_applications": 25,
+    "evaluation_date": "2025-10-08T10:26:24.095156",
     "evaluator_version": "1.0",
     "rules_version": "rules.md - Annex A & B"
   },
   "data_enrichment": {
     "applications_with_business_name": 0,
     "applications_with_standardized_business_name": 0,
-    "applications_with_woman_owned_flag": 14,
+    "applications_with_woman_owned_flag": 25,
     "applications_with_woman_owned_proof": 0
   },
   "eligibility_summary": {
-    "total_applications": 14,
+    "total_applications": 25,
     "eligible_applications": 0,
-    "ineligible_applications": 14,
+    "ineligible_applications": 25,
     "eligibility_rate": 0.0,
     "criteria_failure_breakdown": {
-      "E1_registration_legality": 14,
-      "E2_county_mapping": 14,
-      "E3_priority_value_chain": 14,
-      "E4_financial_evidence": 5,
-      "E5_consent_contactability": 14
+      "E1_registration_legality": 25,
+      "E2_county_mapping": 25,
+      "E3_priority_value_chain": 25,
+      "E4_financial_evidence": 1,
+      "E5_consent_contactability": 25
     }
   },
   "scoring_summary": {
@@ -38,8 +38,8 @@
     }
   },
   "application_evaluations": {
-    "Wajir_349": {
-      "application_id": "Wajir_349",
+    "Nairobi_172": {
+      "application_id": "Nairobi_172",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -59,8 +59,218 @@
         ]
       }
     },
-    "Wajir_350": {
-      "application_id": "Wajir_350",
+    "Nairobi_176": {
+      "application_id": "Nairobi_176",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Nairobi_179": {
+      "application_id": "Nairobi_179",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Nairobi_191": {
+      "application_id": "Nairobi_191",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Nairobi_199": {
+      "application_id": "Nairobi_199",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Nairobi_288": {
+      "application_id": "Nairobi_288",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Nairobi_305": {
+      "application_id": "Nairobi_305",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Nairobi_332": {
+      "application_id": "Nairobi_332",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Nairobi_401": {
+      "application_id": "Nairobi_401",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Nairobi_408": {
+      "application_id": "Nairobi_408",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Nairobi_411": {
+      "application_id": "Nairobi_411",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Nairobi_470": {
+      "application_id": "Nairobi_470",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -81,8 +291,8 @@
         ]
       }
     },
-    "Wajir_355": {
-      "application_id": "Wajir_355",
+    "Nairobi_482": {
+      "application_id": "Nairobi_482",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -102,8 +312,8 @@
         ]
       }
     },
-    "Wajir_358": {
-      "application_id": "Wajir_358",
+    "Nairobi_483": {
+      "application_id": "Nairobi_483",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -123,30 +333,8 @@
         ]
       }
     },
-    "Wajir_366": {
-      "application_id": "Wajir_366",
-      "business_type": "unknown",
-      "woman_owned": false,
-      "eligibility": {
-        "eligible": false,
-        "criteria_results": {
-          "E1_registration_legality": false,
-          "E2_county_mapping": false,
-          "E3_priority_value_chain": false,
-          "E4_financial_evidence": false,
-          "E5_consent_contactability": false
-        },
-        "failure_reasons": [
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E4: Insufficient financial evidence",
-          "E5: Missing contact information or consent"
-        ]
-      }
-    },
-    "Wajir_375": {
-      "application_id": "Wajir_375",
+    "Nairobi_493": {
+      "application_id": "Nairobi_493",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -166,8 +354,8 @@
         ]
       }
     },
-    "Wajir_384": {
-      "application_id": "Wajir_384",
+    "Nairobi_497": {
+      "application_id": "Nairobi_497",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -187,30 +375,8 @@
         ]
       }
     },
-    "Wajir_455": {
-      "application_id": "Wajir_455",
-      "business_type": "unknown",
-      "woman_owned": false,
-      "eligibility": {
-        "eligible": false,
-        "criteria_results": {
-          "E1_registration_legality": false,
-          "E2_county_mapping": false,
-          "E3_priority_value_chain": false,
-          "E4_financial_evidence": false,
-          "E5_consent_contactability": false
-        },
-        "failure_reasons": [
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E4: Insufficient financial evidence",
-          "E5: Missing contact information or consent"
-        ]
-      }
-    },
-    "Wajir_469": {
-      "application_id": "Wajir_469",
+    "Nairobi_541": {
+      "application_id": "Nairobi_541",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -230,52 +396,8 @@
         ]
       }
     },
-    "Wajir_476": {
-      "application_id": "Wajir_476",
-      "business_type": "unknown",
-      "woman_owned": false,
-      "eligibility": {
-        "eligible": false,
-        "criteria_results": {
-          "E1_registration_legality": false,
-          "E2_county_mapping": false,
-          "E3_priority_value_chain": false,
-          "E4_financial_evidence": false,
-          "E5_consent_contactability": false
-        },
-        "failure_reasons": [
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E4: Insufficient financial evidence",
-          "E5: Missing contact information or consent"
-        ]
-      }
-    },
-    "Wajir_512": {
-      "application_id": "Wajir_512",
-      "business_type": "unknown",
-      "woman_owned": false,
-      "eligibility": {
-        "eligible": false,
-        "criteria_results": {
-          "E1_registration_legality": false,
-          "E2_county_mapping": false,
-          "E3_priority_value_chain": false,
-          "E4_financial_evidence": false,
-          "E5_consent_contactability": false
-        },
-        "failure_reasons": [
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E4: Insufficient financial evidence",
-          "E5: Missing contact information or consent"
-        ]
-      }
-    },
-    "Wajir_609": {
-      "application_id": "Wajir_609",
+    "Nairobi_546": {
+      "application_id": "Nairobi_546",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -295,8 +417,8 @@
         ]
       }
     },
-    "Wajir_628": {
-      "application_id": "Wajir_628",
+    "Nairobi_550": {
+      "application_id": "Nairobi_550",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -316,8 +438,113 @@
         ]
       }
     },
-    "Wajir_696": {
-      "application_id": "Wajir_696",
+    "Nairobi_569": {
+      "application_id": "Nairobi_569",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Nairobi_588": {
+      "application_id": "Nairobi_588",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Nairobi_621": {
+      "application_id": "Nairobi_621",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Nairobi_625": {
+      "application_id": "Nairobi_625",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Nairobi_650": {
+      "application_id": "Nairobi_650",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Nairobi_717": {
+      "application_id": "Nairobi_717",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {

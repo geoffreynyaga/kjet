@@ -1,8 +1,8 @@
 {
   "evaluation_metadata": {
-    "county": "Bomet",
+    "county": "Nyamira",
     "total_applications": 4,
-    "evaluation_date": "2025-10-08T10:26:24.083857",
+    "evaluation_date": "2025-10-08T10:26:24.114029",
     "evaluator_version": "1.0",
     "rules_version": "rules.md - Annex A & B"
   },
@@ -38,8 +38,8 @@
     }
   },
   "application_evaluations": {
-    "Bomet_352": {
-      "application_id": "Bomet_352",
+    "Nyamira_364": {
+      "application_id": "Nyamira_364",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -59,8 +59,8 @@
         ]
       }
     },
-    "Bomet_424": {
-      "application_id": "Bomet_424",
+    "Nyamira_423": {
+      "application_id": "Nyamira_423",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -80,8 +80,8 @@
         ]
       }
     },
-    "Bomet_442": {
-      "application_id": "Bomet_442",
+    "Nyamira_565": {
+      "application_id": "Nyamira_565",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -101,8 +101,8 @@
         ]
       }
     },
-    "Bomet_534": {
-      "application_id": "Bomet_534",
+    "Nyamira_649": {
+      "application_id": "Nyamira_649",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {

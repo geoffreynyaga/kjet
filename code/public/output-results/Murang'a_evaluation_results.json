@@ -1,8 +1,8 @@
 {
   "evaluation_metadata": {
-    "county": "Garissa",
+    "county": "Murang'a",
     "total_applications": 9,
-    "evaluation_date": "2025-10-08T10:26:24.103414",
+    "evaluation_date": "2025-10-08T10:26:24.114738",
     "evaluator_version": "1.0",
     "rules_version": "rules.md - Annex A & B"
   },
@@ -21,7 +21,7 @@
       "E1_registration_legality": 9,
       "E2_county_mapping": 9,
       "E3_priority_value_chain": 9,
-      "E4_financial_evidence": 2,
+      "E4_financial_evidence": 0,
       "E5_consent_contactability": 9
     }
   },
@@ -38,8 +38,8 @@
     }
   },
   "application_evaluations": {
-    "Garissa_333": {
-      "application_id": "Garissa_333",
+    "Murang'a_177": {
+      "application_id": "Murang'a_177",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -59,8 +59,8 @@
         ]
       }
     },
-    "Garissa_336": {
-      "application_id": "Garissa_336",
+    "Murang'a_226": {
+      "application_id": "Murang'a_226",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -80,8 +80,8 @@
         ]
       }
     },
-    "Garissa_356": {
-      "application_id": "Garissa_356",
+    "Murang'a_239": {
+      "application_id": "Murang'a_239",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -101,8 +101,8 @@
         ]
       }
     },
-    "Garissa_447": {
-      "application_id": "Garissa_447",
+    "Murang'a_247": {
+      "application_id": "Murang'a_247",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -122,8 +122,8 @@
         ]
       }
     },
-    "Garissa_563": {
-      "application_id": "Garissa_563",
+    "Murang'a_273": {
+      "application_id": "Murang'a_273",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -143,8 +143,8 @@
         ]
       }
     },
-    "Garissa_631": {
-      "application_id": "Garissa_631",
+    "Murang'a_314": {
+      "application_id": "Murang'a_314",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -164,8 +164,8 @@
         ]
       }
     },
-    "Garissa_654": {
-      "application_id": "Garissa_654",
+    "Murang'a_325": {
+      "application_id": "Murang'a_325",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -185,8 +185,8 @@
         ]
       }
     },
-    "Garissa_669": {
-      "application_id": "Garissa_669",
+    "Murang'a_432": {
+      "application_id": "Murang'a_432",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -195,20 +195,19 @@
           "E1_registration_legality": false,
           "E2_county_mapping": false,
           "E3_priority_value_chain": false,
-          "E4_financial_evidence": false,
+          "E4_financial_evidence": true,
           "E5_consent_contactability": false
         },
         "failure_reasons": [
           "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
           "E3: Not operating in priority value chain",
-          "E4: Insufficient financial evidence",
           "E5: Missing contact information or consent"
         ]
       }
     },
-    "Garissa_701": {
-      "application_id": "Garissa_701",
+    "Murang'a_444": {
+      "application_id": "Murang'a_444",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -217,14 +216,13 @@
           "E1_registration_legality": false,
           "E2_county_mapping": false,
           "E3_priority_value_chain": false,
-          "E4_financial_evidence": false,
+          "E4_financial_evidence": true,
           "E5_consent_contactability": false
         },
         "failure_reasons": [
           "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
           "E3: Not operating in priority value chain",
-          "E4: Insufficient financial evidence",
           "E5: Missing contact information or consent"
         ]
       }

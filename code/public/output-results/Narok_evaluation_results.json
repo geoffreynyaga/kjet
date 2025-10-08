@@ -1,28 +1,28 @@
 {
   "evaluation_metadata": {
-    "county": "Bomet",
-    "total_applications": 4,
-    "evaluation_date": "2025-10-08T10:26:24.083857",
+    "county": "Narok",
+    "total_applications": 3,
+    "evaluation_date": "2025-10-08T10:26:24.239625",
     "evaluator_version": "1.0",
     "rules_version": "rules.md - Annex A & B"
   },
   "data_enrichment": {
     "applications_with_business_name": 0,
     "applications_with_standardized_business_name": 0,
-    "applications_with_woman_owned_flag": 4,
+    "applications_with_woman_owned_flag": 3,
     "applications_with_woman_owned_proof": 0
   },
   "eligibility_summary": {
-    "total_applications": 4,
+    "total_applications": 3,
     "eligible_applications": 0,
-    "ineligible_applications": 4,
+    "ineligible_applications": 3,
     "eligibility_rate": 0.0,
     "criteria_failure_breakdown": {
-      "E1_registration_legality": 4,
-      "E2_county_mapping": 4,
-      "E3_priority_value_chain": 4,
+      "E1_registration_legality": 3,
+      "E2_county_mapping": 3,
+      "E3_priority_value_chain": 3,
       "E4_financial_evidence": 0,
-      "E5_consent_contactability": 4
+      "E5_consent_contactability": 3
     }
   },
   "scoring_summary": {
@@ -38,8 +38,8 @@
     }
   },
   "application_evaluations": {
-    "Bomet_352": {
-      "application_id": "Bomet_352",
+    "Narok_363": {
+      "application_id": "Narok_363",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -59,8 +59,8 @@
         ]
       }
     },
-    "Bomet_424": {
-      "application_id": "Bomet_424",
+    "Narok_557": {
+      "application_id": "Narok_557",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -80,29 +80,8 @@
         ]
       }
     },
-    "Bomet_442": {
-      "application_id": "Bomet_442",
-      "business_type": "unknown",
-      "woman_owned": false,
-      "eligibility": {
-        "eligible": false,
-        "criteria_results": {
-          "E1_registration_legality": false,
-          "E2_county_mapping": false,
-          "E3_priority_value_chain": false,
-          "E4_financial_evidence": true,
-          "E5_consent_contactability": false
-        },
-        "failure_reasons": [
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E5: Missing contact information or consent"
-        ]
-      }
-    },
-    "Bomet_534": {
-      "application_id": "Bomet_534",
+    "Narok_619": {
+      "application_id": "Narok_619",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {

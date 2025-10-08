@@ -21,7 +21,7 @@ function ComparisonDashboard() {
   const loadHumanData = async () => {
     try {
       setLoading(true);
-      
+
       // Load human data
       const humanResponse = await fetch('/kjet-human.json');
       const data: HumanApplicant[] = await humanResponse.json();
@@ -38,7 +38,7 @@ function ComparisonDashboard() {
 
       const countiesList = Array.from(counties).sort();
       setAvailableCounties(countiesList);
-      
+
       if (countiesList.length > 0) {
         setSelectedCounty(countiesList[0]);
       }
@@ -54,10 +54,10 @@ function ComparisonDashboard() {
   const getCountyStats = (county: string) => {
     const countyData = filterHumanDataByCounty(humanData, county);
     const totalApplications = countyData.length;
-    const passedApplications = countyData.filter(app => 
+    const passedApplications = countyData.filter(app =>
       (app['PASS/FAIL'] || '').toLowerCase() === 'pass'
     ).length;
-    
+
     return {
       totalApplications,
       passedApplications,
@@ -104,8 +104,8 @@ function ComparisonDashboard() {
         <div className="mx-auto max-w-7xl">
           <div className="flex items-center justify-between">
             <div>
-              <h1 className="mb-2 text-4xl font-bold text-gray-900">Human vs LLM Comparison</h1>
-              <p className="text-xl text-gray-600">Compare human evaluations with AI-generated results</p>
+              <h1 className="mb-2 text-4xl font-bold text-gray-900">Human vs Algorithm Comparison</h1>
+              <p className="text-xl text-gray-600">Compare human evaluations with machine-generated results</p>
             </div>
             <button
               onClick={() => navigate('/')}

@@ -1,28 +1,28 @@
 {
   "evaluation_metadata": {
-    "county": "Garissa",
-    "total_applications": 9,
-    "evaluation_date": "2025-10-08T10:26:24.103414",
+    "county": "Turkana",
+    "total_applications": 10,
+    "evaluation_date": "2025-10-08T10:26:24.110970",
     "evaluator_version": "1.0",
     "rules_version": "rules.md - Annex A & B"
   },
   "data_enrichment": {
     "applications_with_business_name": 0,
     "applications_with_standardized_business_name": 0,
-    "applications_with_woman_owned_flag": 9,
+    "applications_with_woman_owned_flag": 10,
     "applications_with_woman_owned_proof": 0
   },
   "eligibility_summary": {
-    "total_applications": 9,
+    "total_applications": 10,
     "eligible_applications": 0,
-    "ineligible_applications": 9,
+    "ineligible_applications": 10,
     "eligibility_rate": 0.0,
     "criteria_failure_breakdown": {
-      "E1_registration_legality": 9,
-      "E2_county_mapping": 9,
-      "E3_priority_value_chain": 9,
-      "E4_financial_evidence": 2,
-      "E5_consent_contactability": 9
+      "E1_registration_legality": 10,
+      "E2_county_mapping": 10,
+      "E3_priority_value_chain": 10,
+      "E4_financial_evidence": 0,
+      "E5_consent_contactability": 10
     }
   },
   "scoring_summary": {
@@ -38,8 +38,8 @@
     }
   },
   "application_evaluations": {
-    "Garissa_333": {
-      "application_id": "Garissa_333",
+    "Turkana_182": {
+      "application_id": "Turkana_182",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -59,8 +59,8 @@
         ]
       }
     },
-    "Garissa_336": {
-      "application_id": "Garissa_336",
+    "Turkana_219": {
+      "application_id": "Turkana_219",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -80,8 +80,8 @@
         ]
       }
     },
-    "Garissa_356": {
-      "application_id": "Garissa_356",
+    "Turkana_229": {
+      "application_id": "Turkana_229",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -101,8 +101,8 @@
         ]
       }
     },
-    "Garissa_447": {
-      "application_id": "Garissa_447",
+    "Turkana_287": {
+      "application_id": "Turkana_287",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -122,8 +122,8 @@
         ]
       }
     },
-    "Garissa_563": {
-      "application_id": "Garissa_563",
+    "Turkana_345": {
+      "application_id": "Turkana_345",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -143,8 +143,8 @@
         ]
       }
     },
-    "Garissa_631": {
-      "application_id": "Garissa_631",
+    "Turkana_516": {
+      "application_id": "Turkana_516",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -164,8 +164,8 @@
         ]
       }
     },
-    "Garissa_654": {
-      "application_id": "Garissa_654",
+    "Turkana_620": {
+      "application_id": "Turkana_620",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -185,8 +185,8 @@
         ]
       }
     },
-    "Garissa_669": {
-      "application_id": "Garissa_669",
+    "Turkana_652": {
+      "application_id": "Turkana_652",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -195,20 +195,19 @@
           "E1_registration_legality": false,
           "E2_county_mapping": false,
           "E3_priority_value_chain": false,
-          "E4_financial_evidence": false,
+          "E4_financial_evidence": true,
           "E5_consent_contactability": false
         },
         "failure_reasons": [
           "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
           "E3: Not operating in priority value chain",
-          "E4: Insufficient financial evidence",
           "E5: Missing contact information or consent"
         ]
       }
     },
-    "Garissa_701": {
-      "application_id": "Garissa_701",
+    "Turkana_674": {
+      "application_id": "Turkana_674",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -217,14 +216,34 @@
           "E1_registration_legality": false,
           "E2_county_mapping": false,
           "E3_priority_value_chain": false,
-          "E4_financial_evidence": false,
+          "E4_financial_evidence": true,
           "E5_consent_contactability": false
         },
         "failure_reasons": [
           "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
           "E3: Not operating in priority value chain",
-          "E4: Insufficient financial evidence",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Turkana_674_1": {
+      "application_id": "Turkana_674_1",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
           "E5: Missing contact information or consent"
         ]
       }

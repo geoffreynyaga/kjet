@@ -1,8 +1,8 @@
 {
   "evaluation_metadata": {
-    "county": "Bomet",
+    "county": "Trans Nzoia",
     "total_applications": 4,
-    "evaluation_date": "2025-10-08T10:26:24.083857",
+    "evaluation_date": "2025-10-08T10:26:24.273529",
     "evaluator_version": "1.0",
     "rules_version": "rules.md - Annex A & B"
   },
@@ -21,7 +21,7 @@
       "E1_registration_legality": 4,
       "E2_county_mapping": 4,
       "E3_priority_value_chain": 4,
-      "E4_financial_evidence": 0,
+      "E4_financial_evidence": 1,
       "E5_consent_contactability": 4
     }
   },
@@ -38,8 +38,8 @@
     }
   },
   "application_evaluations": {
-    "Bomet_352": {
-      "application_id": "Bomet_352",
+    "Trans Nzoia_203": {
+      "application_id": "Trans Nzoia_203",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -59,8 +59,30 @@
         ]
       }
     },
-    "Bomet_424": {
-      "application_id": "Bomet_424",
+    "Trans Nzoia_454": {
+      "application_id": "Trans Nzoia_454",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": false,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E4: Insufficient financial evidence",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Trans Nzoia_555": {
+      "application_id": "Trans Nzoia_555",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -80,29 +102,8 @@
         ]
       }
     },
-    "Bomet_442": {
-      "application_id": "Bomet_442",
-      "business_type": "unknown",
-      "woman_owned": false,
-      "eligibility": {
-        "eligible": false,
-        "criteria_results": {
-          "E1_registration_legality": false,
-          "E2_county_mapping": false,
-          "E3_priority_value_chain": false,
-          "E4_financial_evidence": true,
-          "E5_consent_contactability": false
-        },
-        "failure_reasons": [
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E5: Missing contact information or consent"
-        ]
-      }
-    },
-    "Bomet_534": {
-      "application_id": "Bomet_534",
+    "Trans Nzoia_645": {
+      "application_id": "Trans Nzoia_645",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {

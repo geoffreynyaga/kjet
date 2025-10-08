@@ -1,28 +1,28 @@
 {
   "evaluation_metadata": {
-    "county": "Wajir",
-    "total_applications": 14,
-    "evaluation_date": "2025-10-08T10:26:24.198810",
+    "county": "Meru",
+    "total_applications": 22,
+    "evaluation_date": "2025-10-08T10:26:24.123362",
     "evaluator_version": "1.0",
     "rules_version": "rules.md - Annex A & B"
   },
   "data_enrichment": {
     "applications_with_business_name": 0,
     "applications_with_standardized_business_name": 0,
-    "applications_with_woman_owned_flag": 14,
+    "applications_with_woman_owned_flag": 22,
     "applications_with_woman_owned_proof": 0
   },
   "eligibility_summary": {
-    "total_applications": 14,
+    "total_applications": 22,
     "eligible_applications": 0,
-    "ineligible_applications": 14,
+    "ineligible_applications": 22,
     "eligibility_rate": 0.0,
     "criteria_failure_breakdown": {
-      "E1_registration_legality": 14,
-      "E2_county_mapping": 14,
-      "E3_priority_value_chain": 14,
-      "E4_financial_evidence": 5,
-      "E5_consent_contactability": 14
+      "E1_registration_legality": 22,
+      "E2_county_mapping": 22,
+      "E3_priority_value_chain": 22,
+      "E4_financial_evidence": 4,
+      "E5_consent_contactability": 22
     }
   },
   "scoring_summary": {
@@ -38,8 +38,8 @@
     }
   },
   "application_evaluations": {
-    "Wajir_349": {
-      "application_id": "Wajir_349",
+    "Meru_209": {
+      "application_id": "Meru_209",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -59,8 +59,29 @@
         ]
       }
     },
-    "Wajir_350": {
-      "application_id": "Wajir_350",
+    "Meru_210": {
+      "application_id": "Meru_210",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Meru_214": {
+      "application_id": "Meru_214",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -81,8 +102,8 @@
         ]
       }
     },
-    "Wajir_355": {
-      "application_id": "Wajir_355",
+    "Meru_231": {
+      "application_id": "Meru_231",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -102,29 +123,8 @@
         ]
       }
     },
-    "Wajir_358": {
-      "application_id": "Wajir_358",
-      "business_type": "unknown",
-      "woman_owned": false,
-      "eligibility": {
-        "eligible": false,
-        "criteria_results": {
-          "E1_registration_legality": false,
-          "E2_county_mapping": false,
-          "E3_priority_value_chain": false,
-          "E4_financial_evidence": true,
-          "E5_consent_contactability": false
-        },
-        "failure_reasons": [
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E5: Missing contact information or consent"
-        ]
-      }
-    },
-    "Wajir_366": {
-      "application_id": "Wajir_366",
+    "Meru_292": {
+      "application_id": "Meru_292",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -145,8 +145,8 @@
         ]
       }
     },
-    "Wajir_375": {
-      "application_id": "Wajir_375",
+    "Meru_327": {
+      "application_id": "Meru_327",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -166,8 +166,8 @@
         ]
       }
     },
-    "Wajir_384": {
-      "application_id": "Wajir_384",
+    "Meru_342": {
+      "application_id": "Meru_342",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -187,8 +187,176 @@
         ]
       }
     },
-    "Wajir_455": {
-      "application_id": "Wajir_455",
+    "Meru_348": {
+      "application_id": "Meru_348",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Meru_427": {
+      "application_id": "Meru_427",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Meru_438": {
+      "application_id": "Meru_438",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Meru_449": {
+      "application_id": "Meru_449",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Meru_452": {
+      "application_id": "Meru_452",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Meru_460": {
+      "application_id": "Meru_460",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Meru_471": {
+      "application_id": "Meru_471",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Meru_474": {
+      "application_id": "Meru_474",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Meru_478": {
+      "application_id": "Meru_478",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -209,8 +377,8 @@
         ]
       }
     },
-    "Wajir_469": {
-      "application_id": "Wajir_469",
+    "Meru_481": {
+      "application_id": "Meru_481",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -230,8 +398,71 @@
         ]
       }
     },
-    "Wajir_476": {
-      "application_id": "Wajir_476",
+    "Meru_610": {
+      "application_id": "Meru_610",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Meru_658": {
+      "application_id": "Meru_658",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Meru_659": {
+      "application_id": "Meru_659",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Meru_678": {
+      "application_id": "Meru_678",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -252,72 +483,8 @@
         ]
       }
     },
-    "Wajir_512": {
-      "application_id": "Wajir_512",
-      "business_type": "unknown",
-      "woman_owned": false,
-      "eligibility": {
-        "eligible": false,
-        "criteria_results": {
-          "E1_registration_legality": false,
-          "E2_county_mapping": false,
-          "E3_priority_value_chain": false,
-          "E4_financial_evidence": false,
-          "E5_consent_contactability": false
-        },
-        "failure_reasons": [
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E4: Insufficient financial evidence",
-          "E5: Missing contact information or consent"
-        ]
-      }
-    },
-    "Wajir_609": {
-      "application_id": "Wajir_609",
-      "business_type": "unknown",
-      "woman_owned": false,
-      "eligibility": {
-        "eligible": false,
-        "criteria_results": {
-          "E1_registration_legality": false,
-          "E2_county_mapping": false,
-          "E3_priority_value_chain": false,
-          "E4_financial_evidence": true,
-          "E5_consent_contactability": false
-        },
-        "failure_reasons": [
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E5: Missing contact information or consent"
-        ]
-      }
-    },
-    "Wajir_628": {
-      "application_id": "Wajir_628",
-      "business_type": "unknown",
-      "woman_owned": false,
-      "eligibility": {
-        "eligible": false,
-        "criteria_results": {
-          "E1_registration_legality": false,
-          "E2_county_mapping": false,
-          "E3_priority_value_chain": false,
-          "E4_financial_evidence": true,
-          "E5_consent_contactability": false
-        },
-        "failure_reasons": [
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E5: Missing contact information or consent"
-        ]
-      }
-    },
-    "Wajir_696": {
-      "application_id": "Wajir_696",
+    "Meru_718": {
+      "application_id": "Meru_718",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {

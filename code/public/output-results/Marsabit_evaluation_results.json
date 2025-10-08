@@ -1,8 +1,8 @@
 {
   "evaluation_metadata": {
-    "county": "Bomet",
+    "county": "Marsabit",
     "total_applications": 4,
-    "evaluation_date": "2025-10-08T10:26:24.083857",
+    "evaluation_date": "2025-10-08T10:26:24.210753",
     "evaluator_version": "1.0",
     "rules_version": "rules.md - Annex A & B"
   },
@@ -21,7 +21,7 @@
       "E1_registration_legality": 4,
       "E2_county_mapping": 4,
       "E3_priority_value_chain": 4,
-      "E4_financial_evidence": 0,
+      "E4_financial_evidence": 2,
       "E5_consent_contactability": 4
     }
   },
@@ -38,8 +38,8 @@
     }
   },
   "application_evaluations": {
-    "Bomet_352": {
-      "application_id": "Bomet_352",
+    "Marsabit_262": {
+      "application_id": "Marsabit_262",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -59,8 +59,8 @@
         ]
       }
     },
-    "Bomet_424": {
-      "application_id": "Bomet_424",
+    "Marsabit_279": {
+      "application_id": "Marsabit_279",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -80,8 +80,8 @@
         ]
       }
     },
-    "Bomet_442": {
-      "application_id": "Bomet_442",
+    "Marsabit_386": {
+      "application_id": "Marsabit_386",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -90,19 +90,20 @@
           "E1_registration_legality": false,
           "E2_county_mapping": false,
           "E3_priority_value_chain": false,
-          "E4_financial_evidence": true,
+          "E4_financial_evidence": false,
           "E5_consent_contactability": false
         },
         "failure_reasons": [
           "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
           "E3: Not operating in priority value chain",
+          "E4: Insufficient financial evidence",
           "E5: Missing contact information or consent"
         ]
       }
     },
-    "Bomet_534": {
-      "application_id": "Bomet_534",
+    "Marsabit_437": {
+      "application_id": "Marsabit_437",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -111,13 +112,14 @@
           "E1_registration_legality": false,
           "E2_county_mapping": false,
           "E3_priority_value_chain": false,
-          "E4_financial_evidence": true,
+          "E4_financial_evidence": false,
           "E5_consent_contactability": false
         },
         "failure_reasons": [
           "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
           "E3: Not operating in priority value chain",
+          "E4: Insufficient financial evidence",
           "E5: Missing contact information or consent"
         ]
       }

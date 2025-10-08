@@ -1,8 +1,8 @@
 {
   "evaluation_metadata": {
-    "county": "Garissa",
+    "county": "Machakos",
     "total_applications": 9,
-    "evaluation_date": "2025-10-08T10:26:24.103414",
+    "evaluation_date": "2025-10-08T10:26:24.101251",
     "evaluator_version": "1.0",
     "rules_version": "rules.md - Annex A & B"
   },
@@ -21,7 +21,7 @@
       "E1_registration_legality": 9,
       "E2_county_mapping": 9,
       "E3_priority_value_chain": 9,
-      "E4_financial_evidence": 2,
+      "E4_financial_evidence": 0,
       "E5_consent_contactability": 9
     }
   },
@@ -38,8 +38,8 @@
     }
   },
   "application_evaluations": {
-    "Garissa_333": {
-      "application_id": "Garissa_333",
+    "Machakos_250": {
+      "application_id": "Machakos_250",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -59,8 +59,8 @@
         ]
       }
     },
-    "Garissa_336": {
-      "application_id": "Garissa_336",
+    "Machakos_259": {
+      "application_id": "Machakos_259",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -80,8 +80,8 @@
         ]
       }
     },
-    "Garissa_356": {
-      "application_id": "Garissa_356",
+    "Machakos_266": {
+      "application_id": "Machakos_266",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -101,8 +101,8 @@
         ]
       }
     },
-    "Garissa_447": {
-      "application_id": "Garissa_447",
+    "Machakos_275": {
+      "application_id": "Machakos_275",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -122,8 +122,8 @@
         ]
       }
     },
-    "Garissa_563": {
-      "application_id": "Garissa_563",
+    "Machakos_304": {
+      "application_id": "Machakos_304",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -143,8 +143,8 @@
         ]
       }
     },
-    "Garissa_631": {
-      "application_id": "Garissa_631",
+    "Machakos_436": {
+      "application_id": "Machakos_436",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -164,8 +164,8 @@
         ]
       }
     },
-    "Garissa_654": {
-      "application_id": "Garissa_654",
+    "Machakos_498": {
+      "application_id": "Machakos_498",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -185,8 +185,8 @@
         ]
       }
     },
-    "Garissa_669": {
-      "application_id": "Garissa_669",
+    "Machakos_663": {
+      "application_id": "Machakos_663",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -195,20 +195,19 @@
           "E1_registration_legality": false,
           "E2_county_mapping": false,
           "E3_priority_value_chain": false,
-          "E4_financial_evidence": false,
+          "E4_financial_evidence": true,
           "E5_consent_contactability": false
         },
         "failure_reasons": [
           "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
           "E3: Not operating in priority value chain",
-          "E4: Insufficient financial evidence",
           "E5: Missing contact information or consent"
         ]
       }
     },
-    "Garissa_701": {
-      "application_id": "Garissa_701",
+    "Machakos_672": {
+      "application_id": "Machakos_672",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -217,14 +216,13 @@
           "E1_registration_legality": false,
           "E2_county_mapping": false,
           "E3_priority_value_chain": false,
-          "E4_financial_evidence": false,
+          "E4_financial_evidence": true,
           "E5_consent_contactability": false
         },
         "failure_reasons": [
           "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
           "E3: Not operating in priority value chain",
-          "E4: Insufficient financial evidence",
           "E5: Missing contact information or consent"
         ]
       }

@@ -2,7 +2,7 @@
   "evaluation_metadata": {
     "county": "Tharaka Nithi",
     "total_applications": 9,
-    "evaluation_date": "2025-10-07T23:21:10.518375",
+    "evaluation_date": "2025-10-08T10:26:24.129828",
     "evaluator_version": "1.0",
     "rules_version": "rules.md - Annex A & B"
   },
@@ -18,11 +18,11 @@
     "ineligible_applications": 9,
     "eligibility_rate": 0.0,
     "criteria_failure_breakdown": {
-      "E1_registration_legality": 0,
-      "E2_county_mapping": 8,
-      "E3_priority_value_chain": 7,
+      "E1_registration_legality": 9,
+      "E2_county_mapping": 9,
+      "E3_priority_value_chain": 9,
       "E4_financial_evidence": 0,
-      "E5_consent_contactability": 0
+      "E5_consent_contactability": 9
     }
   },
   "scoring_summary": {
@@ -45,14 +45,17 @@
       "eligibility": {
         "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
+          "E1_registration_legality": false,
           "E2_county_mapping": false,
-          "E3_priority_value_chain": true,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
         "failure_reasons": [
-          "E2: County mapping unclear or missing"
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
         ]
       }
     },
@@ -63,15 +66,17 @@
       "eligibility": {
         "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
+          "E1_registration_legality": false,
           "E2_county_mapping": false,
           "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
         "failure_reasons": [
+          "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain"
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
         ]
       }
     },
@@ -82,14 +87,17 @@
       "eligibility": {
         "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
           "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
         "failure_reasons": [
-          "E3: Not operating in priority value chain"
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
         ]
       }
     },
@@ -100,15 +108,17 @@
       "eligibility": {
         "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
+          "E1_registration_legality": false,
           "E2_county_mapping": false,
           "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
         "failure_reasons": [
+          "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain"
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
         ]
       }
     },
@@ -119,15 +129,17 @@
       "eligibility": {
         "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
+          "E1_registration_legality": false,
           "E2_county_mapping": false,
           "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
         "failure_reasons": [
+          "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain"
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
         ]
       }
     },
@@ -138,15 +150,17 @@
       "eligibility": {
         "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
+          "E1_registration_legality": false,
           "E2_county_mapping": false,
           "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
         "failure_reasons": [
+          "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain"
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
         ]
       }
     },
@@ -157,15 +171,17 @@
       "eligibility": {
         "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
+          "E1_registration_legality": false,
           "E2_county_mapping": false,
           "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
         "failure_reasons": [
+          "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain"
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
         ]
       }
     },
@@ -176,14 +192,17 @@
       "eligibility": {
         "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
+          "E1_registration_legality": false,
           "E2_county_mapping": false,
-          "E3_priority_value_chain": true,
+          "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
         "failure_reasons": [
-          "E2: County mapping unclear or missing"
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
         ]
       }
     },
@@ -194,15 +213,17 @@
       "eligibility": {
         "eligible": false,
         "criteria_results": {
-          "E1_registration_legality": true,
+          "E1_registration_legality": false,
           "E2_county_mapping": false,
           "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
-          "E5_consent_contactability": true
+          "E5_consent_contactability": false
         },
         "failure_reasons": [
+          "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain"
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
         ]
       }
     }
