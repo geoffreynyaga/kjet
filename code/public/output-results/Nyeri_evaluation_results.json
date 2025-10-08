@@ -2,7 +2,11 @@
   "evaluation_metadata": {
     "county": "Nyeri",
     "total_applications": 14,
+<<<<<<< HEAD
     "evaluation_date": "2025-10-08T10:26:24.216556",
+=======
+    "evaluation_date": "2025-10-07T23:21:10.524591",
+>>>>>>> 29719d4 (more changes)
     "evaluator_version": "1.0",
     "rules_version": "rules.md - Annex A & B"
   },
@@ -14,6 +18,7 @@
   },
   "eligibility_summary": {
     "total_applications": 14,
+<<<<<<< HEAD
     "eligible_applications": 0,
     "ineligible_applications": 14,
     "eligibility_rate": 0.0,
@@ -21,20 +26,40 @@
       "E1_registration_legality": 14,
       "E2_county_mapping": 14,
       "E3_priority_value_chain": 14,
+=======
+    "eligible_applications": 6,
+    "ineligible_applications": 8,
+    "eligibility_rate": 42.86,
+    "criteria_failure_breakdown": {
+      "E1_registration_legality": 0,
+      "E2_county_mapping": 0,
+      "E3_priority_value_chain": 8,
+>>>>>>> 29719d4 (more changes)
       "E4_financial_evidence": 0,
       "E5_consent_contactability": 14
     }
   },
   "scoring_summary": {
+<<<<<<< HEAD
     "total_scored": 0,
     "average_score": 0.0,
     "highest_score": 0.0,
     "lowest_score": 0.0,
+=======
+    "total_scored": 6,
+    "average_score": 14.33,
+    "highest_score": 21.0,
+    "lowest_score": 13.0,
+>>>>>>> 29719d4 (more changes)
     "score_distribution": {
       "excellent_80_100": 0,
       "good_70_79": 0,
       "fair_60_69": 0,
+<<<<<<< HEAD
       "poor_below_60": 0
+=======
+      "poor_below_60": 6
+>>>>>>> 29719d4 (more changes)
     }
   },
   "application_evaluations": {
@@ -45,17 +70,26 @@
       "eligibility": {
         "eligible": false,
         "criteria_results": {
+<<<<<<< HEAD
           "E1_registration_legality": false,
           "E2_county_mapping": false,
+=======
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+>>>>>>> 29719d4 (more changes)
           "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
           "E5_consent_contactability": false
         },
         "failure_reasons": [
+<<<<<<< HEAD
           "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
           "E3: Not operating in priority value chain",
           "E5: Missing contact information or consent"
+=======
+          "E3: Not operating in priority value chain"
+>>>>>>> 29719d4 (more changes)
         ]
       }
     },
@@ -72,12 +106,93 @@
           "E4_financial_evidence": true,
           "E5_consent_contactability": false
         },
+<<<<<<< HEAD
         "failure_reasons": [
           "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
           "E3: Not operating in priority value chain",
           "E5: Missing contact information or consent"
         ]
+=======
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 1,
+          "financial_position": 4,
+          "market_demand_competitiveness": 0,
+          "business_proposal_viability": 0,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 0
+        },
+        "criteria_explanations": {
+          "registration_track_record": {
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
+          },
+          "financial_position": {
+            "score": 4,
+            "rubric_explanation": "Turnover 5–<10M; mostly stable; bank/Mpesa + one statement"
+          },
+          "market_demand_competitiveness": {
+            "score": 0,
+            "rubric_explanation": "No market evidence"
+          },
+          "business_proposal_viability": {
+            "score": 0,
+            "rubric_explanation": "Not provided"
+          },
+          "value_chain_alignment": {
+            "score": 2,
+            "rubric_explanation": "Peripheral role; unclear node"
+          },
+          "inclusivity_sustainability": {
+            "score": 0,
+            "rubric_explanation": "No evidence"
+          }
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 1,
+            "normalized_score": 20,
+            "weight": 0.05,
+            "weighted_score": 1.0
+          },
+          "financial_position": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.2,
+            "weighted_score": 16.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 0,
+            "normalized_score": 0,
+            "weight": 0.2,
+            "weighted_score": 0.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 0,
+            "normalized_score": 0,
+            "weight": 0.25,
+            "weighted_score": 0.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 0,
+            "normalized_score": 0,
+            "weight": 0.2,
+            "weighted_score": 0.0
+          }
+        },
+        "composite_score": 21.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Poor"
+>>>>>>> 29719d4 (more changes)
       }
     },
     "Nyeri_396": {
@@ -87,17 +202,26 @@
       "eligibility": {
         "eligible": false,
         "criteria_results": {
+<<<<<<< HEAD
           "E1_registration_legality": false,
           "E2_county_mapping": false,
+=======
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+>>>>>>> 29719d4 (more changes)
           "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
           "E5_consent_contactability": false
         },
         "failure_reasons": [
+<<<<<<< HEAD
           "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
           "E3: Not operating in priority value chain",
           "E5: Missing contact information or consent"
+=======
+          "E3: Not operating in priority value chain"
+>>>>>>> 29719d4 (more changes)
         ]
       }
     },
@@ -114,12 +238,93 @@
           "E4_financial_evidence": true,
           "E5_consent_contactability": false
         },
+<<<<<<< HEAD
         "failure_reasons": [
           "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
           "E3: Not operating in priority value chain",
           "E5: Missing contact information or consent"
         ]
+=======
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 1,
+          "financial_position": 2,
+          "market_demand_competitiveness": 0,
+          "business_proposal_viability": 0,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 0
+        },
+        "criteria_explanations": {
+          "registration_track_record": {
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
+          },
+          "financial_position": {
+            "score": 2,
+            "rubric_explanation": "Turnover <1M; sporadic records"
+          },
+          "market_demand_competitiveness": {
+            "score": 0,
+            "rubric_explanation": "No market evidence"
+          },
+          "business_proposal_viability": {
+            "score": 0,
+            "rubric_explanation": "Not provided"
+          },
+          "value_chain_alignment": {
+            "score": 2,
+            "rubric_explanation": "Peripheral role; unclear node"
+          },
+          "inclusivity_sustainability": {
+            "score": 0,
+            "rubric_explanation": "No evidence"
+          }
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 1,
+            "normalized_score": 20,
+            "weight": 0.05,
+            "weighted_score": 1.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 0,
+            "normalized_score": 0,
+            "weight": 0.2,
+            "weighted_score": 0.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 0,
+            "normalized_score": 0,
+            "weight": 0.25,
+            "weighted_score": 0.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 0,
+            "normalized_score": 0,
+            "weight": 0.2,
+            "weighted_score": 0.0
+          }
+        },
+        "composite_score": 13.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Poor"
+>>>>>>> 29719d4 (more changes)
       }
     },
     "Nyeri_409": {
@@ -129,17 +334,26 @@
       "eligibility": {
         "eligible": false,
         "criteria_results": {
+<<<<<<< HEAD
           "E1_registration_legality": false,
           "E2_county_mapping": false,
+=======
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+>>>>>>> 29719d4 (more changes)
           "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
           "E5_consent_contactability": false
         },
         "failure_reasons": [
+<<<<<<< HEAD
           "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
           "E3: Not operating in priority value chain",
           "E5: Missing contact information or consent"
+=======
+          "E3: Not operating in priority value chain"
+>>>>>>> 29719d4 (more changes)
         ]
       }
     },
@@ -147,6 +361,27 @@
       "application_id": "Nyeri_413",
       "business_type": "unknown",
       "woman_owned": false,
+<<<<<<< HEAD
+=======
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": [
+          "E3: Not operating in priority value chain"
+        ]
+      }
+    },
+    "Nyeri_419": {
+      "application_id": "Nyeri_419",
+      "business_type": "unknown",
+      "woman_owned": false,
+>>>>>>> 29719d4 (more changes)
       "eligibility": {
         "eligible": false,
         "criteria_results": {
@@ -156,6 +391,7 @@
           "E4_financial_evidence": true,
           "E5_consent_contactability": false
         },
+<<<<<<< HEAD
         "failure_reasons": [
           "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
@@ -183,6 +419,86 @@
           "E3: Not operating in priority value chain",
           "E5: Missing contact information or consent"
         ]
+=======
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 1,
+          "financial_position": 2,
+          "market_demand_competitiveness": 0,
+          "business_proposal_viability": 0,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 0
+        },
+        "criteria_explanations": {
+          "registration_track_record": {
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
+          },
+          "financial_position": {
+            "score": 2,
+            "rubric_explanation": "Turnover <1M; sporadic records"
+          },
+          "market_demand_competitiveness": {
+            "score": 0,
+            "rubric_explanation": "No market evidence"
+          },
+          "business_proposal_viability": {
+            "score": 0,
+            "rubric_explanation": "Not provided"
+          },
+          "value_chain_alignment": {
+            "score": 2,
+            "rubric_explanation": "Peripheral role; unclear node"
+          },
+          "inclusivity_sustainability": {
+            "score": 0,
+            "rubric_explanation": "No evidence"
+          }
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 1,
+            "normalized_score": 20,
+            "weight": 0.05,
+            "weighted_score": 1.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 0,
+            "normalized_score": 0,
+            "weight": 0.2,
+            "weighted_score": 0.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 0,
+            "normalized_score": 0,
+            "weight": 0.25,
+            "weighted_score": 0.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 0,
+            "normalized_score": 0,
+            "weight": 0.2,
+            "weighted_score": 0.0
+          }
+        },
+        "composite_score": 13.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Poor"
+>>>>>>> 29719d4 (more changes)
       }
     },
     "Nyeri_428": {
@@ -192,17 +508,26 @@
       "eligibility": {
         "eligible": false,
         "criteria_results": {
+<<<<<<< HEAD
           "E1_registration_legality": false,
           "E2_county_mapping": false,
+=======
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+>>>>>>> 29719d4 (more changes)
           "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
           "E5_consent_contactability": false
         },
         "failure_reasons": [
+<<<<<<< HEAD
           "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
           "E3: Not operating in priority value chain",
           "E5: Missing contact information or consent"
+=======
+          "E3: Not operating in priority value chain"
+>>>>>>> 29719d4 (more changes)
         ]
       }
     },
@@ -219,12 +544,93 @@
           "E4_financial_evidence": true,
           "E5_consent_contactability": false
         },
+<<<<<<< HEAD
         "failure_reasons": [
           "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
           "E3: Not operating in priority value chain",
           "E5: Missing contact information or consent"
         ]
+=======
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 1,
+          "financial_position": 2,
+          "market_demand_competitiveness": 0,
+          "business_proposal_viability": 0,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 0
+        },
+        "criteria_explanations": {
+          "registration_track_record": {
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
+          },
+          "financial_position": {
+            "score": 2,
+            "rubric_explanation": "Turnover <1M; sporadic records"
+          },
+          "market_demand_competitiveness": {
+            "score": 0,
+            "rubric_explanation": "No market evidence"
+          },
+          "business_proposal_viability": {
+            "score": 0,
+            "rubric_explanation": "Not provided"
+          },
+          "value_chain_alignment": {
+            "score": 2,
+            "rubric_explanation": "Peripheral role; unclear node"
+          },
+          "inclusivity_sustainability": {
+            "score": 0,
+            "rubric_explanation": "No evidence"
+          }
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 1,
+            "normalized_score": 20,
+            "weight": 0.05,
+            "weighted_score": 1.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 0,
+            "normalized_score": 0,
+            "weight": 0.2,
+            "weighted_score": 0.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 0,
+            "normalized_score": 0,
+            "weight": 0.25,
+            "weighted_score": 0.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 0,
+            "normalized_score": 0,
+            "weight": 0.2,
+            "weighted_score": 0.0
+          }
+        },
+        "composite_score": 13.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Poor"
+>>>>>>> 29719d4 (more changes)
       }
     },
     "Nyeri_465": {
@@ -240,12 +646,93 @@
           "E4_financial_evidence": true,
           "E5_consent_contactability": false
         },
+<<<<<<< HEAD
         "failure_reasons": [
           "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
           "E3: Not operating in priority value chain",
           "E5: Missing contact information or consent"
         ]
+=======
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 1,
+          "financial_position": 2,
+          "market_demand_competitiveness": 0,
+          "business_proposal_viability": 0,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 0
+        },
+        "criteria_explanations": {
+          "registration_track_record": {
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
+          },
+          "financial_position": {
+            "score": 2,
+            "rubric_explanation": "Turnover <1M; sporadic records"
+          },
+          "market_demand_competitiveness": {
+            "score": 0,
+            "rubric_explanation": "No market evidence"
+          },
+          "business_proposal_viability": {
+            "score": 0,
+            "rubric_explanation": "Not provided"
+          },
+          "value_chain_alignment": {
+            "score": 2,
+            "rubric_explanation": "Peripheral role; unclear node"
+          },
+          "inclusivity_sustainability": {
+            "score": 0,
+            "rubric_explanation": "No evidence"
+          }
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 1,
+            "normalized_score": 20,
+            "weight": 0.05,
+            "weighted_score": 1.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 0,
+            "normalized_score": 0,
+            "weight": 0.2,
+            "weighted_score": 0.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 0,
+            "normalized_score": 0,
+            "weight": 0.25,
+            "weighted_score": 0.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 0,
+            "normalized_score": 0,
+            "weight": 0.2,
+            "weighted_score": 0.0
+          }
+        },
+        "composite_score": 13.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Poor"
+>>>>>>> 29719d4 (more changes)
       }
     },
     "Nyeri_466": {
@@ -255,17 +742,26 @@
       "eligibility": {
         "eligible": false,
         "criteria_results": {
+<<<<<<< HEAD
           "E1_registration_legality": false,
           "E2_county_mapping": false,
+=======
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+>>>>>>> 29719d4 (more changes)
           "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
           "E5_consent_contactability": false
         },
         "failure_reasons": [
+<<<<<<< HEAD
           "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
           "E3: Not operating in priority value chain",
           "E5: Missing contact information or consent"
+=======
+          "E3: Not operating in priority value chain"
+>>>>>>> 29719d4 (more changes)
         ]
       }
     },
@@ -282,12 +778,93 @@
           "E4_financial_evidence": true,
           "E5_consent_contactability": false
         },
+<<<<<<< HEAD
         "failure_reasons": [
           "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
           "E3: Not operating in priority value chain",
           "E5: Missing contact information or consent"
         ]
+=======
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "registration_track_record": 1,
+          "financial_position": 2,
+          "market_demand_competitiveness": 0,
+          "business_proposal_viability": 0,
+          "value_chain_alignment": 2,
+          "inclusivity_sustainability": 0
+        },
+        "criteria_explanations": {
+          "registration_track_record": {
+            "score": 1,
+            "rubric_explanation": "Registration unclear; ad-hoc operations"
+          },
+          "financial_position": {
+            "score": 2,
+            "rubric_explanation": "Turnover <1M; sporadic records"
+          },
+          "market_demand_competitiveness": {
+            "score": 0,
+            "rubric_explanation": "No market evidence"
+          },
+          "business_proposal_viability": {
+            "score": 0,
+            "rubric_explanation": "Not provided"
+          },
+          "value_chain_alignment": {
+            "score": 2,
+            "rubric_explanation": "Peripheral role; unclear node"
+          },
+          "inclusivity_sustainability": {
+            "score": 0,
+            "rubric_explanation": "No evidence"
+          }
+        },
+        "weighted_scores": {
+          "registration_track_record": {
+            "raw_score": 1,
+            "normalized_score": 20,
+            "weight": 0.05,
+            "weighted_score": 1.0
+          },
+          "financial_position": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.2,
+            "weighted_score": 8.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 0,
+            "normalized_score": 0,
+            "weight": 0.2,
+            "weighted_score": 0.0
+          },
+          "business_proposal_viability": {
+            "raw_score": 0,
+            "normalized_score": 0,
+            "weight": 0.25,
+            "weighted_score": 0.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 2,
+            "normalized_score": 40,
+            "weight": 0.1,
+            "weighted_score": 4.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 0,
+            "normalized_score": 0,
+            "weight": 0.2,
+            "weighted_score": 0.0
+          }
+        },
+        "composite_score": 13.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Poor"
+>>>>>>> 29719d4 (more changes)
       }
     },
     "Nyeri_630": {
@@ -297,6 +874,7 @@
       "eligibility": {
         "eligible": false,
         "criteria_results": {
+<<<<<<< HEAD
           "E1_registration_legality": false,
           "E2_county_mapping": false,
           "E3_priority_value_chain": false,
@@ -308,6 +886,16 @@
           "E2: County mapping unclear or missing",
           "E3: Not operating in priority value chain",
           "E5: Missing contact information or consent"
+=======
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": [
+          "E3: Not operating in priority value chain"
+>>>>>>> 29719d4 (more changes)
         ]
       }
     },
@@ -318,17 +906,26 @@
       "eligibility": {
         "eligible": false,
         "criteria_results": {
+<<<<<<< HEAD
           "E1_registration_legality": false,
           "E2_county_mapping": false,
+=======
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+>>>>>>> 29719d4 (more changes)
           "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
           "E5_consent_contactability": false
         },
         "failure_reasons": [
+<<<<<<< HEAD
           "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
           "E3: Not operating in priority value chain",
           "E5: Missing contact information or consent"
+=======
+          "E3: Not operating in priority value chain"
+>>>>>>> 29719d4 (more changes)
         ]
       }
     }

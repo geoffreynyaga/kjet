@@ -2,7 +2,11 @@
   "evaluation_metadata": {
     "county": "Tharaka Nithi",
     "total_applications": 9,
+<<<<<<< HEAD
     "evaluation_date": "2025-10-08T10:26:24.129828",
+=======
+    "evaluation_date": "2025-10-07T23:21:10.518375",
+>>>>>>> 29719d4 (more changes)
     "evaluator_version": "1.0",
     "rules_version": "rules.md - Annex A & B"
   },
@@ -18,9 +22,15 @@
     "ineligible_applications": 9,
     "eligibility_rate": 0.0,
     "criteria_failure_breakdown": {
+<<<<<<< HEAD
       "E1_registration_legality": 9,
       "E2_county_mapping": 9,
       "E3_priority_value_chain": 9,
+=======
+      "E1_registration_legality": 0,
+      "E2_county_mapping": 8,
+      "E3_priority_value_chain": 7,
+>>>>>>> 29719d4 (more changes)
       "E4_financial_evidence": 0,
       "E5_consent_contactability": 9
     }
@@ -73,10 +83,15 @@
           "E5_consent_contactability": false
         },
         "failure_reasons": [
+<<<<<<< HEAD
           "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
           "E3: Not operating in priority value chain",
           "E5: Missing contact information or consent"
+=======
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain"
+>>>>>>> 29719d4 (more changes)
         ]
       }
     },
@@ -87,17 +102,26 @@
       "eligibility": {
         "eligible": false,
         "criteria_results": {
+<<<<<<< HEAD
           "E1_registration_legality": false,
           "E2_county_mapping": false,
+=======
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+>>>>>>> 29719d4 (more changes)
           "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
           "E5_consent_contactability": false
         },
         "failure_reasons": [
+<<<<<<< HEAD
           "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
           "E3: Not operating in priority value chain",
           "E5: Missing contact information or consent"
+=======
+          "E3: Not operating in priority value chain"
+>>>>>>> 29719d4 (more changes)
         ]
       }
     },
@@ -115,10 +139,15 @@
           "E5_consent_contactability": false
         },
         "failure_reasons": [
+<<<<<<< HEAD
           "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
           "E3: Not operating in priority value chain",
           "E5: Missing contact information or consent"
+=======
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain"
+>>>>>>> 29719d4 (more changes)
         ]
       }
     },
@@ -129,6 +158,7 @@
       "eligibility": {
         "eligible": false,
         "criteria_results": {
+<<<<<<< HEAD
           "E1_registration_legality": false,
           "E2_county_mapping": false,
           "E3_priority_value_chain": false,
@@ -140,6 +170,17 @@
           "E2: County mapping unclear or missing",
           "E3: Not operating in priority value chain",
           "E5: Missing contact information or consent"
+=======
+          "E1_registration_legality": true,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": [
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain"
+>>>>>>> 29719d4 (more changes)
         ]
       }
     },
@@ -157,10 +198,15 @@
           "E5_consent_contactability": false
         },
         "failure_reasons": [
+<<<<<<< HEAD
           "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
           "E3: Not operating in priority value chain",
           "E5: Missing contact information or consent"
+=======
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain"
+>>>>>>> 29719d4 (more changes)
         ]
       }
     },
@@ -171,17 +217,26 @@
       "eligibility": {
         "eligible": false,
         "criteria_results": {
+<<<<<<< HEAD
           "E1_registration_legality": false,
+=======
+          "E1_registration_legality": true,
+>>>>>>> 29719d4 (more changes)
           "E2_county_mapping": false,
           "E3_priority_value_chain": false,
           "E4_financial_evidence": true,
           "E5_consent_contactability": false
         },
         "failure_reasons": [
+<<<<<<< HEAD
           "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
           "E3: Not operating in priority value chain",
           "E5: Missing contact information or consent"
+=======
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain"
+>>>>>>> 29719d4 (more changes)
         ]
       }
     },
@@ -189,6 +244,7 @@
       "application_id": "Tharaka Nithi_615",
       "business_type": "unknown",
       "woman_owned": false,
+<<<<<<< HEAD
       "eligibility": {
         "eligible": false,
         "criteria_results": {
@@ -210,6 +266,8 @@
       "application_id": "Tharaka Nithi_623",
       "business_type": "unknown",
       "woman_owned": false,
+=======
+>>>>>>> 29719d4 (more changes)
       "eligibility": {
         "eligible": false,
         "criteria_results": {
@@ -226,6 +284,28 @@
           "E5: Missing contact information or consent"
         ]
       }
+<<<<<<< HEAD
+=======
+    },
+    "Tharaka Nithi_623": {
+      "application_id": "Tharaka Nithi_623",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": [
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain"
+        ]
+      }
+>>>>>>> 29719d4 (more changes)
     }
   }
 }
