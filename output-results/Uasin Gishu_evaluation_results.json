@@ -1,48 +1,28 @@
 {
   "evaluation_metadata": {
-    "county": "Tharaka Nithi",
-    "total_applications": 9,
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "evaluation_date": "2025-10-08T10:26:24.129828",
-=======
-    "evaluation_date": "2025-10-07T23:21:10.518375",
->>>>>>> 29719d4 (more changes)
-=======
-    "evaluation_date": "2025-10-08T10:26:24.129828",
->>>>>>> 591b827 (more editds)
+    "county": "Uasin Gishu",
+    "total_applications": 20,
+    "evaluation_date": "2025-10-13T13:53:21.269959",
     "evaluator_version": "1.0",
     "rules_version": "rules.md - Annex A & B"
   },
   "data_enrichment": {
     "applications_with_business_name": 0,
     "applications_with_standardized_business_name": 0,
-    "applications_with_woman_owned_flag": 9,
+    "applications_with_woman_owned_flag": 20,
     "applications_with_woman_owned_proof": 0
   },
   "eligibility_summary": {
-    "total_applications": 9,
+    "total_applications": 20,
     "eligible_applications": 0,
-    "ineligible_applications": 9,
+    "ineligible_applications": 20,
     "eligibility_rate": 0.0,
     "criteria_failure_breakdown": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "E1_registration_legality": 9,
-      "E2_county_mapping": 9,
-      "E3_priority_value_chain": 9,
-=======
-      "E1_registration_legality": 0,
-      "E2_county_mapping": 8,
-      "E3_priority_value_chain": 7,
->>>>>>> 29719d4 (more changes)
-=======
-      "E1_registration_legality": 9,
-      "E2_county_mapping": 9,
-      "E3_priority_value_chain": 9,
->>>>>>> 591b827 (more editds)
-      "E4_financial_evidence": 0,
-      "E5_consent_contactability": 9
+      "E1_registration_legality": 20,
+      "E2_county_mapping": 20,
+      "E3_priority_value_chain": 20,
+      "E4_financial_evidence": 2,
+      "E5_consent_contactability": 20
     }
   },
   "scoring_summary": {
@@ -58,8 +38,8 @@
     }
   },
   "application_evaluations": {
-    "Tharaka Nithi_186": {
-      "application_id": "Tharaka Nithi_186",
+    "Uasin Gishu_162": {
+      "application_id": "Uasin Gishu_162",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -79,235 +59,10 @@
         ]
       }
     },
-    "Tharaka Nithi_278": {
-      "application_id": "Tharaka Nithi_278",
+    "Uasin Gishu_193": {
+      "application_id": "Uasin Gishu_193",
       "business_type": "unknown",
       "woman_owned": false,
-      "eligibility": {
-        "eligible": false,
-        "criteria_results": {
-          "E1_registration_legality": false,
-          "E2_county_mapping": false,
-          "E3_priority_value_chain": false,
-          "E4_financial_evidence": true,
-          "E5_consent_contactability": false
-        },
-        "failure_reasons": [
-<<<<<<< HEAD
-<<<<<<< HEAD
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E5: Missing contact information or consent"
-=======
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain"
->>>>>>> 29719d4 (more changes)
-=======
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E5: Missing contact information or consent"
->>>>>>> 591b827 (more editds)
-        ]
-      }
-    },
-    "Tharaka Nithi_321": {
-      "application_id": "Tharaka Nithi_321",
-      "business_type": "unknown",
-      "woman_owned": false,
-      "eligibility": {
-        "eligible": false,
-        "criteria_results": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-          "E1_registration_legality": false,
-          "E2_county_mapping": false,
-=======
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
->>>>>>> 29719d4 (more changes)
-=======
-          "E1_registration_legality": false,
-          "E2_county_mapping": false,
->>>>>>> 591b827 (more editds)
-          "E3_priority_value_chain": false,
-          "E4_financial_evidence": true,
-          "E5_consent_contactability": false
-        },
-        "failure_reasons": [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 591b827 (more editds)
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E5: Missing contact information or consent"
-<<<<<<< HEAD
-=======
-          "E3: Not operating in priority value chain"
->>>>>>> 29719d4 (more changes)
-=======
->>>>>>> 591b827 (more editds)
-        ]
-      }
-    },
-    "Tharaka Nithi_354": {
-      "application_id": "Tharaka Nithi_354",
-      "business_type": "unknown",
-      "woman_owned": false,
-      "eligibility": {
-        "eligible": false,
-        "criteria_results": {
-          "E1_registration_legality": false,
-          "E2_county_mapping": false,
-          "E3_priority_value_chain": false,
-          "E4_financial_evidence": true,
-          "E5_consent_contactability": false
-        },
-        "failure_reasons": [
-<<<<<<< HEAD
-<<<<<<< HEAD
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E5: Missing contact information or consent"
-=======
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain"
->>>>>>> 29719d4 (more changes)
-=======
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E5: Missing contact information or consent"
->>>>>>> 591b827 (more editds)
-        ]
-      }
-    },
-    "Tharaka Nithi_387": {
-      "application_id": "Tharaka Nithi_387",
-      "business_type": "unknown",
-      "woman_owned": false,
-      "eligibility": {
-        "eligible": false,
-        "criteria_results": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-          "E1_registration_legality": false,
-          "E2_county_mapping": false,
-          "E3_priority_value_chain": false,
-          "E4_financial_evidence": true,
-          "E5_consent_contactability": false
-        },
-        "failure_reasons": [
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E5: Missing contact information or consent"
-=======
-          "E1_registration_legality": true,
-=======
-          "E1_registration_legality": false,
->>>>>>> 591b827 (more editds)
-          "E2_county_mapping": false,
-          "E3_priority_value_chain": false,
-          "E4_financial_evidence": true,
-          "E5_consent_contactability": false
-        },
-        "failure_reasons": [
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-<<<<<<< HEAD
-          "E3: Not operating in priority value chain"
->>>>>>> 29719d4 (more changes)
-=======
-          "E3: Not operating in priority value chain",
-          "E5: Missing contact information or consent"
->>>>>>> 591b827 (more editds)
-        ]
-      }
-    },
-    "Tharaka Nithi_535": {
-      "application_id": "Tharaka Nithi_535",
-      "business_type": "unknown",
-      "woman_owned": false,
-      "eligibility": {
-        "eligible": false,
-        "criteria_results": {
-          "E1_registration_legality": false,
-          "E2_county_mapping": false,
-          "E3_priority_value_chain": false,
-          "E4_financial_evidence": true,
-          "E5_consent_contactability": false
-        },
-        "failure_reasons": [
-<<<<<<< HEAD
-<<<<<<< HEAD
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E5: Missing contact information or consent"
-=======
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain"
->>>>>>> 29719d4 (more changes)
-=======
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E5: Missing contact information or consent"
->>>>>>> 591b827 (more editds)
-        ]
-      }
-    },
-    "Tharaka Nithi_613": {
-      "application_id": "Tharaka Nithi_613",
-      "business_type": "unknown",
-      "woman_owned": false,
-      "eligibility": {
-        "eligible": false,
-        "criteria_results": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-          "E1_registration_legality": false,
-=======
-          "E1_registration_legality": true,
->>>>>>> 29719d4 (more changes)
-=======
-          "E1_registration_legality": false,
->>>>>>> 591b827 (more editds)
-          "E2_county_mapping": false,
-          "E3_priority_value_chain": false,
-          "E4_financial_evidence": true,
-          "E5_consent_contactability": false
-        },
-        "failure_reasons": [
-<<<<<<< HEAD
-<<<<<<< HEAD
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E5: Missing contact information or consent"
-=======
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain"
->>>>>>> 29719d4 (more changes)
-=======
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E5: Missing contact information or consent"
->>>>>>> 591b827 (more editds)
-        ]
-      }
-    },
-    "Tharaka Nithi_615": {
-      "application_id": "Tharaka Nithi_615",
-      "business_type": "unknown",
-      "woman_owned": false,
-<<<<<<< HEAD
       "eligibility": {
         "eligible": false,
         "criteria_results": {
@@ -325,12 +80,10 @@
         ]
       }
     },
-    "Tharaka Nithi_623": {
-      "application_id": "Tharaka Nithi_623",
+    "Uasin Gishu_194": {
+      "application_id": "Uasin Gishu_194",
       "business_type": "unknown",
       "woman_owned": false,
-=======
->>>>>>> 29719d4 (more changes)
       "eligibility": {
         "eligible": false,
         "criteria_results": {
@@ -347,11 +100,9 @@
           "E5: Missing contact information or consent"
         ]
       }
-<<<<<<< HEAD
-=======
     },
-    "Tharaka Nithi_623": {
-      "application_id": "Tharaka Nithi_623",
+    "Uasin Gishu_206": {
+      "application_id": "Uasin Gishu_206",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -370,7 +121,344 @@
           "E5: Missing contact information or consent"
         ]
       }
->>>>>>> 29719d4 (more changes)
+    },
+    "Uasin Gishu_216": {
+      "application_id": "Uasin Gishu_216",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Uasin Gishu_217": {
+      "application_id": "Uasin Gishu_217",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Uasin Gishu_264": {
+      "application_id": "Uasin Gishu_264",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Uasin Gishu_324": {
+      "application_id": "Uasin Gishu_324",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Uasin Gishu_334": {
+      "application_id": "Uasin Gishu_334",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": false,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E4: Insufficient financial evidence",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Uasin Gishu_341": {
+      "application_id": "Uasin Gishu_341",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Uasin Gishu_370": {
+      "application_id": "Uasin Gishu_370",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": false,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E4: Insufficient financial evidence",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Uasin Gishu_372": {
+      "application_id": "Uasin Gishu_372",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Uasin Gishu_377": {
+      "application_id": "Uasin Gishu_377",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Uasin Gishu_390": {
+      "application_id": "Uasin Gishu_390",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Uasin Gishu_521": {
+      "application_id": "Uasin Gishu_521",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Uasin Gishu_551": {
+      "application_id": "Uasin Gishu_551",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Uasin Gishu_661": {
+      "application_id": "Uasin Gishu_661",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Uasin Gishu_668": {
+      "application_id": "Uasin Gishu_668",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Uasin Gishu_694": {
+      "application_id": "Uasin Gishu_694",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Uasin Gishu_709": {
+      "application_id": "Uasin Gishu_709",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
     }
   }
 }

@@ -1,23 +1,11 @@
 {
   "summary_metadata": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "generation_date": "2025-10-08T10:26:24.366409",
-=======
-    "generation_date": "2025-10-07T23:21:10.567197",
->>>>>>> 29719d4 (more changes)
-=======
-    "generation_date": "2025-10-08T10:26:24.366409",
->>>>>>> 591b827 (more editds)
+    "generation_date": "2025-10-13T13:53:21.474098",
     "total_counties": 47,
     "evaluation_period": "KJET Program Applications",
     "rules_version": "rules.md - Annex A & B"
   },
   "national_summary": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 591b827 (more editds)
     "total_applications": 555,
     "total_eligible": 0,
     "total_ineligible": 555,
@@ -26,7 +14,6 @@
     "national_average_score": 0.0,
     "highest_county_score": 0.0,
     "lowest_county_score": 100.0
-<<<<<<< HEAD
   },
   "eligibility_breakdown": {
     "E1_registration_legality_failures": 555,
@@ -97,114 +84,11 @@
       "average_score": 0.0,
       "highest_score": 0.0,
       "lowest_score": 0.0,
-=======
-    "total_applications": 148,
-    "total_eligible": 18,
-    "total_ineligible": 130,
-    "national_eligibility_rate": 12.16,
-    "total_scored": 18,
-    "national_average_score": 13.66,
-    "highest_county_score": 17.0,
-    "lowest_county_score": 12.11
-=======
->>>>>>> 591b827 (more editds)
-  },
-  "eligibility_breakdown": {
-    "E1_registration_legality_failures": 555,
-    "E2_county_mapping_failures": 555,
-    "E3_priority_value_chain_failures": 555,
-    "E4_financial_evidence_failures": 78,
-    "E5_consent_contactability_failures": 555
-  },
-  "county_summaries": {
-<<<<<<< HEAD
-    "Nyeri": {
-      "county": "Nyeri",
-      "total_applications": 14,
-      "eligible_applications": 6,
-      "ineligible_applications": 8,
-      "eligibility_rate": 42.86,
-      "scored_applications": 6,
-      "average_score": 14.33,
-      "highest_score": 21.0,
-      "lowest_score": 13.0,
->>>>>>> 29719d4 (more changes)
-=======
-    "Kirinyaga": {
-      "county": "Kirinyaga",
-      "total_applications": 6,
-      "eligible_applications": 0,
-      "ineligible_applications": 6,
-      "eligibility_rate": 0.0,
-      "scored_applications": 0,
-      "average_score": 0.0,
-      "highest_score": 0.0,
-      "lowest_score": 0.0,
->>>>>>> 591b827 (more editds)
-      "score_distribution": {
-        "excellent_80_100": 0,
-        "good_70_79": 0,
-        "fair_60_69": 0,
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "poor_below_60": 0
-=======
-        "poor_below_60": 6
->>>>>>> 29719d4 (more changes)
-=======
-        "poor_below_60": 0
-      }
-    },
-    "Laikipia": {
-      "county": "Laikipia",
-      "total_applications": 15,
-      "eligible_applications": 0,
-      "ineligible_applications": 15,
-      "eligibility_rate": 0.0,
-      "scored_applications": 0,
-      "average_score": 0.0,
-      "highest_score": 0.0,
-      "lowest_score": 0.0,
       "score_distribution": {
         "excellent_80_100": 0,
         "good_70_79": 0,
         "fair_60_69": 0,
         "poor_below_60": 0
-      }
-    },
-    "Machakos": {
-      "county": "Machakos",
-      "total_applications": 9,
-      "eligible_applications": 0,
-      "ineligible_applications": 9,
-      "eligibility_rate": 0.0,
-      "scored_applications": 0,
-      "average_score": 0.0,
-      "highest_score": 0.0,
-      "lowest_score": 0.0,
-      "score_distribution": {
-        "excellent_80_100": 0,
-        "good_70_79": 0,
-        "fair_60_69": 0,
-        "poor_below_60": 0
-      }
-    },
-    "Nyeri": {
-      "county": "Nyeri",
-      "total_applications": 14,
-      "eligible_applications": 0,
-      "ineligible_applications": 14,
-      "eligibility_rate": 0.0,
-      "scored_applications": 0,
-      "average_score": 0.0,
-      "highest_score": 0.0,
-      "lowest_score": 0.0,
-      "score_distribution": {
-        "excellent_80_100": 0,
-        "good_70_79": 0,
-        "fair_60_69": 0,
-        "poor_below_60": 0
->>>>>>> 591b827 (more editds)
       }
     },
     "Tharaka Nithi": {
@@ -221,26 +105,6 @@
         "excellent_80_100": 0,
         "good_70_79": 0,
         "fair_60_69": 0,
-<<<<<<< HEAD
-        "poor_below_60": 0
-      }
-    },
-    "Kakamega": {
-      "county": "Kakamega",
-      "total_applications": 75,
-      "eligible_applications": 0,
-      "ineligible_applications": 75,
-      "eligibility_rate": 0.0,
-      "scored_applications": 0,
-      "average_score": 0.0,
-      "highest_score": 0.0,
-      "lowest_score": 0.0,
-      "score_distribution": {
-        "excellent_80_100": 0,
-        "good_70_79": 0,
-        "fair_60_69": 0,
-=======
->>>>>>> 29719d4 (more changes)
         "poor_below_60": 0
       }
     },
@@ -274,7 +138,6 @@
       "score_distribution": {
         "excellent_80_100": 0,
         "good_70_79": 0,
-<<<<<<< HEAD
         "fair_60_69": 0,
         "poor_below_60": 0
       }
@@ -292,19 +155,10 @@
       "score_distribution": {
         "excellent_80_100": 0,
         "good_70_79": 0,
-<<<<<<< HEAD
-=======
->>>>>>> 29719d4 (more changes)
-=======
->>>>>>> 591b827 (more editds)
         "fair_60_69": 0,
         "poor_below_60": 0
       }
     },
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 591b827 (more editds)
     "Isiolo": {
       "county": "Isiolo",
       "total_applications": 4,
@@ -356,11 +210,6 @@
         "poor_below_60": 0
       }
     },
-<<<<<<< HEAD
-=======
->>>>>>> 29719d4 (more changes)
-=======
->>>>>>> 591b827 (more editds)
     "Elgeiyo Marakwet": {
       "county": "Elgeiyo Marakwet",
       "total_applications": 8,
@@ -378,10 +227,6 @@
         "poor_below_60": 0
       }
     },
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 591b827 (more editds)
     "Kiambu": {
       "county": "Kiambu",
       "total_applications": 22,
@@ -416,11 +261,6 @@
         "poor_below_60": 0
       }
     },
-<<<<<<< HEAD
-=======
->>>>>>> 29719d4 (more changes)
-=======
->>>>>>> 591b827 (more editds)
     "Busia": {
       "county": "Busia",
       "total_applications": 13,
@@ -475,7 +315,6 @@
     "Garissa": {
       "county": "Garissa",
       "total_applications": 9,
-<<<<<<< HEAD
       "eligible_applications": 0,
       "ineligible_applications": 9,
       "eligibility_rate": 0.0,
@@ -500,239 +339,10 @@
       "average_score": 0.0,
       "highest_score": 0.0,
       "lowest_score": 0.0,
-<<<<<<< HEAD
       "score_distribution": {
         "excellent_80_100": 0,
         "good_70_79": 0,
         "fair_60_69": 0,
-        "poor_below_60": 0
-      }
-    },
-    "West Pokot": {
-      "county": "West Pokot",
-      "total_applications": 6,
-      "eligible_applications": 0,
-      "ineligible_applications": 6,
-      "eligibility_rate": 0.0,
-      "scored_applications": 0,
-      "average_score": 0.0,
-      "highest_score": 0.0,
-      "lowest_score": 0.0,
-      "score_distribution": {
-        "excellent_80_100": 0,
-        "good_70_79": 0,
-        "fair_60_69": 0,
-        "poor_below_60": 0
-      }
-    },
-    "Kilifi": {
-      "county": "Kilifi",
-      "total_applications": 9,
-      "eligible_applications": 0,
-      "ineligible_applications": 9,
-      "eligibility_rate": 0.0,
-      "scored_applications": 0,
-      "average_score": 0.0,
-      "highest_score": 0.0,
-      "lowest_score": 0.0,
-      "score_distribution": {
-        "excellent_80_100": 0,
-        "good_70_79": 0,
-        "fair_60_69": 0,
-        "poor_below_60": 0
-      }
-    },
-    "Trans Nzoia": {
-      "county": "Trans Nzoia",
-      "total_applications": 4,
-      "eligible_applications": 0,
-      "ineligible_applications": 4,
-      "eligibility_rate": 0.0,
-      "scored_applications": 0,
-      "average_score": 0.0,
-      "highest_score": 0.0,
-      "lowest_score": 0.0,
-      "score_distribution": {
-        "excellent_80_100": 0,
-        "good_70_79": 0,
-        "fair_60_69": 0,
-        "poor_below_60": 0
-      }
-    },
-    "Uasin Gishu": {
-      "county": "Uasin Gishu",
-      "total_applications": 20,
-      "eligible_applications": 0,
-      "ineligible_applications": 20,
-      "eligibility_rate": 0.0,
-      "scored_applications": 0,
-      "average_score": 0.0,
-      "highest_score": 0.0,
-      "lowest_score": 0.0,
-      "score_distribution": {
-        "excellent_80_100": 0,
-        "good_70_79": 0,
-        "fair_60_69": 0,
-        "poor_below_60": 0
-      }
-    },
-    "Meru": {
-      "county": "Meru",
-      "total_applications": 22,
-      "eligible_applications": 0,
-      "ineligible_applications": 22,
-      "eligibility_rate": 0.0,
-      "scored_applications": 0,
-      "average_score": 0.0,
-      "highest_score": 0.0,
-      "lowest_score": 0.0,
-      "score_distribution": {
-        "excellent_80_100": 0,
-        "good_70_79": 0,
-        "fair_60_69": 0,
-        "poor_below_60": 0
-      }
-    },
-    "Narok": {
-      "county": "Narok",
-      "total_applications": 3,
-      "eligible_applications": 0,
-      "ineligible_applications": 3,
-      "eligibility_rate": 0.0,
-      "scored_applications": 0,
-      "average_score": 0.0,
-      "highest_score": 0.0,
-      "lowest_score": 0.0,
-      "score_distribution": {
-        "excellent_80_100": 0,
-        "good_70_79": 0,
-        "fair_60_69": 0,
-        "poor_below_60": 0
-      }
-    },
-    "Mombasa": {
-      "county": "Mombasa",
-      "total_applications": 7,
-      "eligible_applications": 0,
-      "ineligible_applications": 7,
-      "eligibility_rate": 0.0,
-      "scored_applications": 0,
-      "average_score": 0.0,
-      "highest_score": 0.0,
-      "lowest_score": 0.0,
-      "score_distribution": {
-        "excellent_80_100": 0,
-        "good_70_79": 0,
-        "fair_60_69": 0,
-        "poor_below_60": 0
-      }
-    },
-    "Taita Taveta": {
-      "county": "Taita Taveta",
-      "total_applications": 6,
-      "eligible_applications": 0,
-      "ineligible_applications": 6,
-      "eligibility_rate": 0.0,
-      "scored_applications": 0,
-      "average_score": 0.0,
-      "highest_score": 0.0,
-      "lowest_score": 0.0,
-      "score_distribution": {
-        "excellent_80_100": 0,
-        "good_70_79": 0,
-        "fair_60_69": 0,
-        "poor_below_60": 0
-      }
-    },
-    "Murang'a": {
-      "county": "Murang'a",
-      "total_applications": 9,
-=======
->>>>>>> 29719d4 (more changes)
-      "eligible_applications": 0,
-      "ineligible_applications": 9,
-      "eligibility_rate": 0.0,
-      "scored_applications": 0,
-      "average_score": 0.0,
-      "highest_score": 0.0,
-      "lowest_score": 0.0,
-      "score_distribution": {
-        "excellent_80_100": 0,
-        "good_70_79": 0,
-        "fair_60_69": 0,
-        "poor_below_60": 0
-      }
-    },
-<<<<<<< HEAD
-    "Kisumu": {
-      "county": "Kisumu",
-      "total_applications": 13,
-      "eligible_applications": 0,
-      "ineligible_applications": 13,
-      "eligibility_rate": 0.0,
-      "scored_applications": 0,
-      "average_score": 0.0,
-      "highest_score": 0.0,
-      "lowest_score": 0.0,
-      "score_distribution": {
-        "excellent_80_100": 0,
-        "good_70_79": 0,
-        "fair_60_69": 0,
-        "poor_below_60": 0
-      }
-    },
-    "Marsabit": {
-      "county": "Marsabit",
-      "total_applications": 4,
-      "eligible_applications": 0,
-      "ineligible_applications": 4,
-      "eligibility_rate": 0.0,
-      "scored_applications": 0,
-      "average_score": 0.0,
-      "highest_score": 0.0,
-      "lowest_score": 0.0,
-      "score_distribution": {
-        "excellent_80_100": 0,
-        "good_70_79": 0,
-        "fair_60_69": 0,
-        "poor_below_60": 0
-      }
-    },
-    "Kericho": {
-      "county": "Kericho",
-      "total_applications": 19,
-      "eligible_applications": 0,
-      "ineligible_applications": 19,
-      "eligibility_rate": 0.0,
-      "scored_applications": 0,
-      "average_score": 0.0,
-      "highest_score": 0.0,
-      "lowest_score": 0.0,
-=======
-    "Kericho": {
-      "county": "Kericho",
-      "total_applications": 19,
-      "eligible_applications": 9,
-      "ineligible_applications": 10,
-      "eligibility_rate": 47.37,
-      "scored_applications": 9,
-      "average_score": 12.11,
-      "highest_score": 13.0,
-      "lowest_score": 5.0,
->>>>>>> 29719d4 (more changes)
-=======
->>>>>>> 591b827 (more editds)
-      "score_distribution": {
-        "excellent_80_100": 0,
-        "good_70_79": 0,
-        "fair_60_69": 0,
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "poor_below_60": 0
-=======
-        "poor_below_60": 9
->>>>>>> 29719d4 (more changes)
-=======
         "poor_below_60": 0
       }
     },
@@ -938,7 +548,6 @@
         "good_70_79": 0,
         "fair_60_69": 0,
         "poor_below_60": 0
->>>>>>> 591b827 (more editds)
       }
     },
     "Baringo": {
@@ -955,7 +564,6 @@
         "excellent_80_100": 0,
         "good_70_79": 0,
         "fair_60_69": 0,
-<<<<<<< HEAD
         "poor_below_60": 0
       }
     },
@@ -973,70 +581,6 @@
         "excellent_80_100": 0,
         "good_70_79": 0,
         "fair_60_69": 0,
-=======
->>>>>>> 29719d4 (more changes)
-        "poor_below_60": 0
-      }
-    },
-<<<<<<< HEAD
-    "Migori": {
-      "county": "Migori",
-      "total_applications": 12,
-<<<<<<< HEAD
-      "eligible_applications": 0,
-      "ineligible_applications": 12,
-=======
-    "Nyandarua": {
-      "county": "Nyandarua",
-      "total_applications": 11,
-      "eligible_applications": 0,
-      "ineligible_applications": 11,
->>>>>>> 591b827 (more editds)
-      "eligibility_rate": 0.0,
-      "scored_applications": 0,
-      "average_score": 0.0,
-      "highest_score": 0.0,
-      "lowest_score": 0.0,
-<<<<<<< HEAD
-      "score_distribution": {
-        "excellent_80_100": 0,
-        "good_70_79": 0,
-        "fair_60_69": 0,
-        "poor_below_60": 0
-      }
-    },
-    "Tana River": {
-      "county": "Tana River",
-      "total_applications": 3,
-      "eligible_applications": 0,
-      "ineligible_applications": 3,
-      "eligibility_rate": 0.0,
-      "scored_applications": 0,
-      "average_score": 0.0,
-      "highest_score": 0.0,
-      "lowest_score": 0.0,
-=======
-      "eligible_applications": 2,
-      "ineligible_applications": 10,
-      "eligibility_rate": 16.67,
-      "scored_applications": 2,
-      "average_score": 17.0,
-      "highest_score": 21.0,
-      "lowest_score": 13.0,
->>>>>>> 29719d4 (more changes)
-=======
->>>>>>> 591b827 (more editds)
-      "score_distribution": {
-        "excellent_80_100": 0,
-        "good_70_79": 0,
-        "fair_60_69": 0,
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "poor_below_60": 0
-=======
-        "poor_below_60": 2
->>>>>>> 29719d4 (more changes)
-=======
         "poor_below_60": 0
       }
     },
@@ -1072,16 +616,11 @@
         "good_70_79": 0,
         "fair_60_69": 0,
         "poor_below_60": 0
->>>>>>> 591b827 (more editds)
       }
     },
     "Wajir": {
       "county": "Wajir",
       "total_applications": 14,
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 591b827 (more editds)
       "eligible_applications": 0,
       "ineligible_applications": 14,
       "eligibility_rate": 0.0,
@@ -1089,7 +628,6 @@
       "average_score": 0.0,
       "highest_score": 0.0,
       "lowest_score": 0.0,
-<<<<<<< HEAD
       "score_distribution": {
         "excellent_80_100": 0,
         "good_70_79": 0,
@@ -1158,93 +696,10 @@
       "average_score": 0.0,
       "highest_score": 0.0,
       "lowest_score": 0.0,
-=======
-      "eligible_applications": 1,
-      "ineligible_applications": 13,
-      "eligibility_rate": 7.14,
-      "scored_applications": 1,
-      "average_score": 17.0,
-      "highest_score": 17.0,
-      "lowest_score": 17.0,
->>>>>>> 29719d4 (more changes)
-=======
->>>>>>> 591b827 (more editds)
       "score_distribution": {
         "excellent_80_100": 0,
         "good_70_79": 0,
         "fair_60_69": 0,
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-        "poor_below_60": 0
-      }
-    },
-    "Makueni": {
-      "county": "Makueni",
-      "total_applications": 16,
-      "eligible_applications": 0,
-      "ineligible_applications": 16,
-      "eligibility_rate": 0.0,
-      "scored_applications": 0,
-      "average_score": 0.0,
-      "highest_score": 0.0,
-      "lowest_score": 0.0,
-      "score_distribution": {
-        "excellent_80_100": 0,
-        "good_70_79": 0,
-        "fair_60_69": 0,
-        "poor_below_60": 0
-      }
-    },
-    "Nandi": {
-      "county": "Nandi",
-      "total_applications": 9,
-      "eligible_applications": 0,
-      "ineligible_applications": 9,
-      "eligibility_rate": 0.0,
-      "scored_applications": 0,
-      "average_score": 0.0,
-      "highest_score": 0.0,
-      "lowest_score": 0.0,
-      "score_distribution": {
-        "excellent_80_100": 0,
-        "good_70_79": 0,
-        "fair_60_69": 0,
-        "poor_below_60": 0
-      }
-    },
-    "Mandera": {
-      "county": "Mandera",
-      "total_applications": 5,
-      "eligible_applications": 0,
-      "ineligible_applications": 5,
-      "eligibility_rate": 0.0,
-      "scored_applications": 0,
-      "average_score": 0.0,
-      "highest_score": 0.0,
-      "lowest_score": 0.0,
-      "score_distribution": {
-        "excellent_80_100": 0,
-        "good_70_79": 0,
-        "fair_60_69": 0,
-        "poor_below_60": 0
-      }
-    },
-    "Lamu": {
-      "county": "Lamu",
-      "total_applications": 4,
-      "eligible_applications": 0,
-      "ineligible_applications": 4,
-      "eligibility_rate": 0.0,
-      "scored_applications": 0,
-      "average_score": 0.0,
-      "highest_score": 0.0,
-      "lowest_score": 0.0,
-      "score_distribution": {
-        "excellent_80_100": 0,
-        "good_70_79": 0,
-        "fair_60_69": 0,
->>>>>>> 591b827 (more editds)
         "poor_below_60": 0
       }
     },
@@ -1280,12 +735,6 @@
         "good_70_79": 0,
         "fair_60_69": 0,
         "poor_below_60": 0
-<<<<<<< HEAD
-=======
-        "poor_below_60": 1
->>>>>>> 29719d4 (more changes)
-=======
->>>>>>> 591b827 (more editds)
       }
     },
     "Bungoma": {
@@ -1302,77 +751,6 @@
         "excellent_80_100": 0,
         "good_70_79": 0,
         "fair_60_69": 0,
-<<<<<<< HEAD
-        "poor_below_60": 0
-      }
-    },
-    "Nyamira": {
-      "county": "Nyamira",
-      "total_applications": 4,
-      "eligible_applications": 0,
-      "ineligible_applications": 4,
-      "eligibility_rate": 0.0,
-      "scored_applications": 0,
-      "average_score": 0.0,
-      "highest_score": 0.0,
-      "lowest_score": 0.0,
-      "score_distribution": {
-        "excellent_80_100": 0,
-        "good_70_79": 0,
-        "fair_60_69": 0,
-        "poor_below_60": 0
-      }
-    },
-    "Nairobi": {
-      "county": "Nairobi",
-      "total_applications": 25,
-      "eligible_applications": 0,
-      "ineligible_applications": 25,
-      "eligibility_rate": 0.0,
-      "scored_applications": 0,
-      "average_score": 0.0,
-      "highest_score": 0.0,
-      "lowest_score": 0.0,
-      "score_distribution": {
-        "excellent_80_100": 0,
-        "good_70_79": 0,
-        "fair_60_69": 0,
-        "poor_below_60": 0
-      }
-    },
-    "Kitui": {
-      "county": "Kitui",
-      "total_applications": 12,
-      "eligible_applications": 0,
-      "ineligible_applications": 12,
-      "eligibility_rate": 0.0,
-      "scored_applications": 0,
-      "average_score": 0.0,
-      "highest_score": 0.0,
-      "lowest_score": 0.0,
-      "score_distribution": {
-        "excellent_80_100": 0,
-        "good_70_79": 0,
-        "fair_60_69": 0,
-        "poor_below_60": 0
-      }
-    },
-    "Kisii": {
-      "county": "Kisii",
-      "total_applications": 21,
-      "eligible_applications": 0,
-      "ineligible_applications": 21,
-      "eligibility_rate": 0.0,
-      "scored_applications": 0,
-      "average_score": 0.0,
-      "highest_score": 0.0,
-      "lowest_score": 0.0,
-      "score_distribution": {
-        "excellent_80_100": 0,
-        "good_70_79": 0,
-        "fair_60_69": 0,
-=======
->>>>>>> 29719d4 (more changes)
         "poor_below_60": 0
       }
     },
@@ -1445,66 +823,6 @@
       }
     }
   },
-<<<<<<< HEAD
-<<<<<<< HEAD
   "top_performing_counties": [],
   "counties_needing_attention": []
-=======
-  "top_performing_counties": [
-    {
-      "county": "Migori",
-      "average_score": 17.0,
-      "eligibility_rate": 16.67,
-      "total_applications": 12
-    },
-    {
-      "county": "Wajir",
-      "average_score": 17.0,
-      "eligibility_rate": 7.14,
-      "total_applications": 14
-    },
-    {
-      "county": "Nyeri",
-      "average_score": 14.33,
-      "eligibility_rate": 42.86,
-      "total_applications": 14
-    },
-    {
-      "county": "Kericho",
-      "average_score": 12.11,
-      "eligibility_rate": 47.37,
-      "total_applications": 19
-    }
-  ],
-  "counties_needing_attention": [
-    {
-      "county": "Migori",
-      "average_score": 17.0,
-      "eligibility_rate": 16.67,
-      "total_applications": 12
-    },
-    {
-      "county": "Wajir",
-      "average_score": 17.0,
-      "eligibility_rate": 7.14,
-      "total_applications": 14
-    },
-    {
-      "county": "Nyeri",
-      "average_score": 14.33,
-      "eligibility_rate": 42.86,
-      "total_applications": 14
-    },
-    {
-      "county": "Kericho",
-      "average_score": 12.11,
-      "eligibility_rate": 47.37,
-      "total_applications": 19
-    }
-  ]
->>>>>>> 29719d4 (more changes)
-=======
-  "top_performing_counties": [],
-  "counties_needing_attention": []
->>>>>>> 591b827 (more editds)
 }
