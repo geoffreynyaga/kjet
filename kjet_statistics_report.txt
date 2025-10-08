@@ -1,6 +1,6 @@
 KJET APPLICATION DATA STATISTICS REPORT
 ==================================================
-Generated on: 2025-10-08 10:26:25
+Generated on: 2025-10-13 14:23:25
 Data source: output/ directory JSON files
 
 OVERALL SUMMARY
@@ -25,9 +25,9 @@ Unclassified:        555 (100.0%)
 VALUE CHAIN ANALYSIS
 -------------------------
 Dairy               :   2 counties (4.3%)
-Livestock           :   1 counties (2.1%)
 Services            :   1 counties (2.1%)
 Manufacturing       :   1 counties (2.1%)
+Livestock           :   1 counties (2.1%)
 
 FINANCIAL DOCUMENT COMPLETENESS
 -----------------------------------
