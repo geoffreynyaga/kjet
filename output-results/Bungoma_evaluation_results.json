@@ -1,48 +1,28 @@
 {
   "evaluation_metadata": {
-    "county": "Tharaka Nithi",
-    "total_applications": 9,
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "evaluation_date": "2025-10-08T10:26:24.129828",
-=======
-    "evaluation_date": "2025-10-07T23:21:10.518375",
->>>>>>> 29719d4 (more changes)
-=======
-    "evaluation_date": "2025-10-08T10:26:24.129828",
->>>>>>> 591b827 (more editds)
+    "county": "Bungoma",
+    "total_applications": 13,
+    "evaluation_date": "2025-10-13T13:53:21.239204",
     "evaluator_version": "1.0",
     "rules_version": "rules.md - Annex A & B"
   },
   "data_enrichment": {
     "applications_with_business_name": 0,
     "applications_with_standardized_business_name": 0,
-    "applications_with_woman_owned_flag": 9,
+    "applications_with_woman_owned_flag": 13,
     "applications_with_woman_owned_proof": 0
   },
   "eligibility_summary": {
-    "total_applications": 9,
+    "total_applications": 13,
     "eligible_applications": 0,
-    "ineligible_applications": 9,
+    "ineligible_applications": 13,
     "eligibility_rate": 0.0,
     "criteria_failure_breakdown": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "E1_registration_legality": 9,
-      "E2_county_mapping": 9,
-      "E3_priority_value_chain": 9,
-=======
-      "E1_registration_legality": 0,
-      "E2_county_mapping": 8,
-      "E3_priority_value_chain": 7,
->>>>>>> 29719d4 (more changes)
-=======
-      "E1_registration_legality": 9,
-      "E2_county_mapping": 9,
-      "E3_priority_value_chain": 9,
->>>>>>> 591b827 (more editds)
-      "E4_financial_evidence": 0,
-      "E5_consent_contactability": 9
+      "E1_registration_legality": 13,
+      "E2_county_mapping": 13,
+      "E3_priority_value_chain": 13,
+      "E4_financial_evidence": 3,
+      "E5_consent_contactability": 13
     }
   },
   "scoring_summary": {
@@ -58,8 +38,8 @@
     }
   },
   "application_evaluations": {
-    "Tharaka Nithi_186": {
-      "application_id": "Tharaka Nithi_186",
+    "Bungoma_165": {
+      "application_id": "Bungoma_165",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -79,8 +59,8 @@
         ]
       }
     },
-    "Tharaka Nithi_278": {
-      "application_id": "Tharaka Nithi_278",
+    "Bungoma_170": {
+      "application_id": "Bungoma_170",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -89,72 +69,20 @@
           "E1_registration_legality": false,
           "E2_county_mapping": false,
           "E3_priority_value_chain": false,
-          "E4_financial_evidence": true,
+          "E4_financial_evidence": false,
           "E5_consent_contactability": false
         },
         "failure_reasons": [
-<<<<<<< HEAD
-<<<<<<< HEAD
           "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
           "E3: Not operating in priority value chain",
+          "E4: Insufficient financial evidence",
           "E5: Missing contact information or consent"
-=======
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain"
->>>>>>> 29719d4 (more changes)
-=======
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E5: Missing contact information or consent"
->>>>>>> 591b827 (more editds)
         ]
       }
     },
-    "Tharaka Nithi_321": {
-      "application_id": "Tharaka Nithi_321",
-      "business_type": "unknown",
-      "woman_owned": false,
-      "eligibility": {
-        "eligible": false,
-        "criteria_results": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-          "E1_registration_legality": false,
-          "E2_county_mapping": false,
-=======
-          "E1_registration_legality": true,
-          "E2_county_mapping": true,
->>>>>>> 29719d4 (more changes)
-=======
-          "E1_registration_legality": false,
-          "E2_county_mapping": false,
->>>>>>> 591b827 (more editds)
-          "E3_priority_value_chain": false,
-          "E4_financial_evidence": true,
-          "E5_consent_contactability": false
-        },
-        "failure_reasons": [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 591b827 (more editds)
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E5: Missing contact information or consent"
-<<<<<<< HEAD
-=======
-          "E3: Not operating in priority value chain"
->>>>>>> 29719d4 (more changes)
-=======
->>>>>>> 591b827 (more editds)
-        ]
-      }
-    },
-    "Tharaka Nithi_354": {
-      "application_id": "Tharaka Nithi_354",
+    "Bungoma_174": {
+      "application_id": "Bungoma_174",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -163,151 +91,22 @@
           "E1_registration_legality": false,
           "E2_county_mapping": false,
           "E3_priority_value_chain": false,
-          "E4_financial_evidence": true,
+          "E4_financial_evidence": false,
           "E5_consent_contactability": false
         },
         "failure_reasons": [
-<<<<<<< HEAD
-<<<<<<< HEAD
           "E1: No valid registration/legal status found",
           "E2: County mapping unclear or missing",
           "E3: Not operating in priority value chain",
+          "E4: Insufficient financial evidence",
           "E5: Missing contact information or consent"
-=======
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain"
->>>>>>> 29719d4 (more changes)
-=======
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E5: Missing contact information or consent"
->>>>>>> 591b827 (more editds)
         ]
       }
     },
-    "Tharaka Nithi_387": {
-      "application_id": "Tharaka Nithi_387",
+    "Bungoma_178": {
+      "application_id": "Bungoma_178",
       "business_type": "unknown",
       "woman_owned": false,
-      "eligibility": {
-        "eligible": false,
-        "criteria_results": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-          "E1_registration_legality": false,
-          "E2_county_mapping": false,
-          "E3_priority_value_chain": false,
-          "E4_financial_evidence": true,
-          "E5_consent_contactability": false
-        },
-        "failure_reasons": [
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E5: Missing contact information or consent"
-=======
-          "E1_registration_legality": true,
-=======
-          "E1_registration_legality": false,
->>>>>>> 591b827 (more editds)
-          "E2_county_mapping": false,
-          "E3_priority_value_chain": false,
-          "E4_financial_evidence": true,
-          "E5_consent_contactability": false
-        },
-        "failure_reasons": [
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-<<<<<<< HEAD
-          "E3: Not operating in priority value chain"
->>>>>>> 29719d4 (more changes)
-=======
-          "E3: Not operating in priority value chain",
-          "E5: Missing contact information or consent"
->>>>>>> 591b827 (more editds)
-        ]
-      }
-    },
-    "Tharaka Nithi_535": {
-      "application_id": "Tharaka Nithi_535",
-      "business_type": "unknown",
-      "woman_owned": false,
-      "eligibility": {
-        "eligible": false,
-        "criteria_results": {
-          "E1_registration_legality": false,
-          "E2_county_mapping": false,
-          "E3_priority_value_chain": false,
-          "E4_financial_evidence": true,
-          "E5_consent_contactability": false
-        },
-        "failure_reasons": [
-<<<<<<< HEAD
-<<<<<<< HEAD
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E5: Missing contact information or consent"
-=======
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain"
->>>>>>> 29719d4 (more changes)
-=======
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E5: Missing contact information or consent"
->>>>>>> 591b827 (more editds)
-        ]
-      }
-    },
-    "Tharaka Nithi_613": {
-      "application_id": "Tharaka Nithi_613",
-      "business_type": "unknown",
-      "woman_owned": false,
-      "eligibility": {
-        "eligible": false,
-        "criteria_results": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-          "E1_registration_legality": false,
-=======
-          "E1_registration_legality": true,
->>>>>>> 29719d4 (more changes)
-=======
-          "E1_registration_legality": false,
->>>>>>> 591b827 (more editds)
-          "E2_county_mapping": false,
-          "E3_priority_value_chain": false,
-          "E4_financial_evidence": true,
-          "E5_consent_contactability": false
-        },
-        "failure_reasons": [
-<<<<<<< HEAD
-<<<<<<< HEAD
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E5: Missing contact information or consent"
-=======
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain"
->>>>>>> 29719d4 (more changes)
-=======
-          "E1: No valid registration/legal status found",
-          "E2: County mapping unclear or missing",
-          "E3: Not operating in priority value chain",
-          "E5: Missing contact information or consent"
->>>>>>> 591b827 (more editds)
-        ]
-      }
-    },
-    "Tharaka Nithi_615": {
-      "application_id": "Tharaka Nithi_615",
-      "business_type": "unknown",
-      "woman_owned": false,
-<<<<<<< HEAD
       "eligibility": {
         "eligible": false,
         "criteria_results": {
@@ -325,12 +124,10 @@
         ]
       }
     },
-    "Tharaka Nithi_623": {
-      "application_id": "Tharaka Nithi_623",
+    "Bungoma_385": {
+      "application_id": "Bungoma_385",
       "business_type": "unknown",
       "woman_owned": false,
-=======
->>>>>>> 29719d4 (more changes)
       "eligibility": {
         "eligible": false,
         "criteria_results": {
@@ -347,11 +144,31 @@
           "E5: Missing contact information or consent"
         ]
       }
-<<<<<<< HEAD
-=======
     },
-    "Tharaka Nithi_623": {
-      "application_id": "Tharaka Nithi_623",
+    "Bungoma_499": {
+      "application_id": "Bungoma_499",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": false,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E4: Insufficient financial evidence",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Bungoma_542": {
+      "application_id": "Bungoma_542",
       "business_type": "unknown",
       "woman_owned": false,
       "eligibility": {
@@ -370,7 +187,132 @@
           "E5: Missing contact information or consent"
         ]
       }
->>>>>>> 29719d4 (more changes)
+    },
+    "Bungoma_543": {
+      "application_id": "Bungoma_543",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Bungoma_544": {
+      "application_id": "Bungoma_544",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Bungoma_545": {
+      "application_id": "Bungoma_545",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Bungoma_626": {
+      "application_id": "Bungoma_626",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Bungoma_633": {
+      "application_id": "Bungoma_633",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Bungoma_700": {
+      "application_id": "Bungoma_700",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
     }
   }
 }

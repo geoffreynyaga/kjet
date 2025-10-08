@@ -1,0 +1,190 @@
+{
+  "evaluation_metadata": {
+    "county": "Mombasa",
+    "total_applications": 7,
+    "evaluation_date": "2025-10-13T13:53:21.324384",
+    "evaluator_version": "1.0",
+    "rules_version": "rules.md - Annex A & B"
+  },
+  "data_enrichment": {
+    "applications_with_business_name": 0,
+    "applications_with_standardized_business_name": 0,
+    "applications_with_woman_owned_flag": 7,
+    "applications_with_woman_owned_proof": 0
+  },
+  "eligibility_summary": {
+    "total_applications": 7,
+    "eligible_applications": 0,
+    "ineligible_applications": 7,
+    "eligibility_rate": 0.0,
+    "criteria_failure_breakdown": {
+      "E1_registration_legality": 7,
+      "E2_county_mapping": 7,
+      "E3_priority_value_chain": 7,
+      "E4_financial_evidence": 1,
+      "E5_consent_contactability": 7
+    }
+  },
+  "scoring_summary": {
+    "total_scored": 0,
+    "average_score": 0.0,
+    "highest_score": 0.0,
+    "lowest_score": 0.0,
+    "score_distribution": {
+      "excellent_80_100": 0,
+      "good_70_79": 0,
+      "fair_60_69": 0,
+      "poor_below_60": 0
+    }
+  },
+  "application_evaluations": {
+    "Mombasa_232": {
+      "application_id": "Mombasa_232",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Mombasa_263": {
+      "application_id": "Mombasa_263",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Mombasa_351": {
+      "application_id": "Mombasa_351",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Mombasa_416": {
+      "application_id": "Mombasa_416",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Mombasa_500": {
+      "application_id": "Mombasa_500",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": false,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E4: Insufficient financial evidence",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Mombasa_507": {
+      "application_id": "Mombasa_507",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    },
+    "Mombasa_548": {
+      "application_id": "Mombasa_548",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": false,
+          "E2_county_mapping": false,
+          "E3_priority_value_chain": false,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": false
+        },
+        "failure_reasons": [
+          "E1: No valid registration/legal status found",
+          "E2: County mapping unclear or missing",
+          "E3: Not operating in priority value chain",
+          "E5: Missing contact information or consent"
+        ]
+      }
+    }
+  }
+}
