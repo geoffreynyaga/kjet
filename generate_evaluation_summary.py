@@ -143,7 +143,11 @@ def generate_evaluation_summary():
     print(f"📊 Total Applications: {summary['national_summary']['total_applications']}")
     print(f"✅ Eligible Applications: {summary['national_summary']['total_eligible']} ({summary['national_summary']['national_eligibility_rate']}%)")
     print(f"📈 National Average Score: {summary['national_summary']['national_average_score']}")
-    print(f"🏆 Top County: {summary['top_performing_counties'][0]['county']} ({summary['top_performing_counties'][0]['average_score']})")
+
+    if summary['top_performing_counties']:
+        print(f"🏆 Top County: {summary['top_performing_counties'][0]['county']} ({summary['top_performing_counties'][0]['average_score']})")
+    else:
+        print("🏆 Top County: No counties with scored applications found")
 
     return summary
 
