@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ResponsiveContainer, ComposedChart, CartesianGrid, XAxis, YAxis, Tooltip, Legend, Bar, Line } from 'recharts';
 import { NationalStats } from '../types/index.ts';
@@ -8,6 +8,20 @@ interface TopPerformingCountiesProps {
 }
 
 export const TopPerformingCounties: React.FC<TopPerformingCountiesProps> = ({ nationalStats }) => {
+  const [showBars, setShowBars] = useState(false);
+  const [showLine, setShowLine] = useState(false);
+
+  useEffect(() => {
+    // Show bars first
+    const barTimer = setTimeout(() => setShowBars(true), 800);
+    // Show line after bars
+    const lineTimer = setTimeout(() => setShowLine(true), 1600);
+
+    return () => {
+      clearTimeout(barTimer);
+      clearTimeout(lineTimer);
+    };
+  }, []);
   return (
     <motion.div
       className="p-6 bg-white rounded-lg shadow-sm"
@@ -30,8 +44,33 @@ export const TopPerformingCounties: React.FC<TopPerformingCountiesProps> = ({ na
             }}
           />
           <Legend />
-          <Bar yAxisId="left" dataKey="applications" fill="#3b82f6" name="Applications" />
-          <Line yAxisId="right" type="monotone" dataKey="avgScore" stroke="#ef4444" strokeWidth={3} name="Avg Score" dot={{ fill: '#ef4444', strokeWidth: 2, r: 4 }} />
+          {showBars && (
+            <Bar
+              yAxisId="left"
+              dataKey="applications"
+              fill="#3b82f6"
+              name="Applications"
+              animationDuration={1200}
+              isAnimationActive={true}
+            />
+          )}
+          {showLine && (
+            <Line
+              yAxisId="right"
+              type="monotone"
+              dataKey="avgScore"
+              stroke="#ef4444"
+              strokeWidth={3}
+              name="Avg Score"
+              dot={{
+                fill: '#ef4444',
+                strokeWidth: 2,
+                r: 4
+              }}
+              animationDuration={1000}
+              isAnimationActive={true}
+            />
+          )}
         </ComposedChart>
       </ResponsiveContainer>
     </motion.div>
