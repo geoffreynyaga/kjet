@@ -43,17 +43,17 @@ const FirstandSecond: React.FC = () => {
 
     // Apply filter
     if (filterStatus === 'first-round-pass') {
-      // Show only those who had positive scores in first round
-      filtered = data.filter(item => item["ALL SCORED"] > 0);
+      // Show only those who had positive scores in first round (ONLY PASS)
+      filtered = data.filter(item => typeof item["ONLY PASS"] === 'number' && item["ONLY PASS"] > 0);
     } else if (filterStatus === 'low-to-high') {
       // Show only those who had low scores in first round but improved in second round
-      filtered = data.filter(item => item["ALL SCORED"] > 0 && typeof item["ONLY PASS"] === 'number' && item["ONLY PASS"] > 0 && item["ONLY PASS"] > item["ALL SCORED"]);
+      filtered = data.filter(item => typeof item["ONLY PASS"] === 'number' && item["ONLY PASS"] > 0 && item["ALL SCORED"] > 0 && item["ALL SCORED"] > item["ONLY PASS"]);
     } else if (filterStatus === 'high-to-low') {
       // Show only those who had high scores in first round but got lower scores in second round
-      filtered = data.filter(item => item["ALL SCORED"] > 0 && typeof item["ONLY PASS"] === 'number' && item["ONLY PASS"] > 0 && item["ONLY PASS"] < item["ALL SCORED"]);
+      filtered = data.filter(item => typeof item["ONLY PASS"] === 'number' && item["ONLY PASS"] > 0 && item["ALL SCORED"] > 0 && item["ALL SCORED"] < item["ONLY PASS"]);
     } else if (filterStatus === 'pass-to-disqualified') {
-      // Show only those who passed first round but were disqualified in second round
-      filtered = data.filter(item => item["ALL SCORED"] > 0 && item["ONLY PASS"] === "DQ");
+      // Show only those who were disqualified in first round (DQ only appears in first round)
+      filtered = data.filter(item => item["ONLY PASS"] === "DQ");
     }
 
     // Apply sorting
@@ -83,19 +83,30 @@ const FirstandSecond: React.FC = () => {
   const startIndex = (currentPage - 1) * itemsPerPage;
   const paginatedData = filteredAndSortedData.slice(startIndex, startIndex + itemsPerPage);
 
-  // Statistics
+    // Statistics
   const stats = useMemo(() => {
     const totalApplicants = data.length;
-    const firstRoundPassed = data.filter(item => item["ALL SCORED"] > 0).length;
-    const secondRoundEvaluated = data.filter(item => typeof item["ONLY PASS"] === 'number' && item["ONLY PASS"] > 0).length;
-    const improved = data.filter(item => item["ALL SCORED"] > 0 && typeof item["ONLY PASS"] === 'number' && item["ONLY PASS"] > 0 && item["ONLY PASS"] > item["ALL SCORED"]).length;
-    const declined = data.filter(item => item["ALL SCORED"] > 0 && typeof item["ONLY PASS"] === 'number' && item["ONLY PASS"] > 0 && item["ONLY PASS"] < item["ALL SCORED"]).length;
-    const disqualified = data.filter(item => item["ALL SCORED"] > 0 && item["ONLY PASS"] === "DQ").length;
-    const noChange = data.filter(item => item["ALL SCORED"] > 0 && item["ONLY PASS"] === 0).length;
-    const averageFirstRound = data.reduce((sum, item) => sum + item["ALL SCORED"], 0) / totalApplicants;
-    const averageSecondRound = data.reduce((sum, item) => {
-      return sum + (typeof item["ONLY PASS"] === 'number' ? item["ONLY PASS"] : 0);
-    }, 0) / totalApplicants;
+    // First round is "ONLY PASS" - can be number or "DQ"
+    const firstRoundPassed = data.filter(item => typeof item["ONLY PASS"] === 'number' && item["ONLY PASS"] > 0).length;
+    // Second round is "ALL SCORED" - always a number
+    const secondRoundEvaluated = data.filter(item => item["ALL SCORED"] > 0).length;
+    // Improved: second round score > first round score (when both are positive numbers)
+    const improved = data.filter(item => typeof item["ONLY PASS"] === 'number' && item["ONLY PASS"] > 0 && item["ALL SCORED"] > 0 && item["ALL SCORED"] > item["ONLY PASS"]).length;
+    // Declined: second round score < first round score (when both are positive numbers)
+    const declined = data.filter(item => typeof item["ONLY PASS"] === 'number' && item["ONLY PASS"] > 0 && item["ALL SCORED"] > 0 && item["ALL SCORED"] < item["ONLY PASS"]).length;
+    // Disqualified: "DQ" in first round ("ONLY PASS")
+    const disqualified = data.filter(item => item["ONLY PASS"] === "DQ").length;
+    // No change: positive first round score but zero second round score
+    const noChange = data.filter(item => typeof item["ONLY PASS"] === 'number' && item["ONLY PASS"] > 0 && item["ALL SCORED"] === 0).length;
+    // Average first round (only include numerical scores, exclude "DQ")
+    const averageFirstRound = data.reduce((sum, item) => {
+      if (typeof item["ONLY PASS"] === 'number') {
+        return sum + item["ONLY PASS"];
+      }
+      return sum;
+    }, 0) / data.filter(item => typeof item["ONLY PASS"] === 'number').length;
+    // Average second round (all participants get scored)
+    const averageSecondRound = data.reduce((sum, item) => sum + item["ALL SCORED"], 0) / totalApplicants;
 
     return {
       totalApplicants,
@@ -125,15 +136,21 @@ const FirstandSecond: React.FC = () => {
     return sortDirection === 'asc' ? '↑' : '↓';
   };
 
-  const getStatusBadges = (firstRound: number, secondRound: number | "DQ") => {
+  const getStatusBadges = (firstRound: number | "DQ", secondRound: number) => {
     const badges = [];
 
     // Check for improvement and decline cases
-    const isImprovement = firstRound > 0 && typeof secondRound === 'number' && secondRound > 0 && secondRound > firstRound;
-    const isDecline = firstRound > 0 && typeof secondRound === 'number' && secondRound > 0 && secondRound < firstRound;
+    const isImprovement = typeof firstRound === 'number' && firstRound > 0 && secondRound > 0 && secondRound > firstRound;
+    const isDecline = typeof firstRound === 'number' && firstRound > 0 && secondRound > 0 && secondRound < firstRound;
 
     // First round status
-    if (firstRound > 0) {
+    if (firstRound === "DQ") {
+      badges.push(
+        <span key="first" className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800 mr-1">
+          Disqualified
+        </span>
+      );
+    } else if (typeof firstRound === 'number' && firstRound > 0) {
       badges.push(
         <span key="first" className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium mr-1 ${
           isImprovement ? 'bg-yellow-100 text-yellow-800' :
@@ -156,13 +173,7 @@ const FirstandSecond: React.FC = () => {
     );
 
     // Second round status
-    if (secondRound === "DQ") {
-      badges.push(
-        <span key="second" className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800 ml-1">
-          Disqualified
-        </span>
-      );
-    } else if (typeof secondRound === 'number' && secondRound > 0) {
+    if (secondRound > 0) {
       if (isImprovement) {
         badges.push(
           <span key="second" className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 ml-1">
@@ -182,7 +193,7 @@ const FirstandSecond: React.FC = () => {
           </span>
         );
       }
-    } else if (firstRound > 0) {
+    } else if (typeof firstRound === 'number' && firstRound > 0) {
       // Had marks in first round, zero in second means no change
       badges.push(
         <span key="second" className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800 ml-1">
@@ -190,7 +201,7 @@ const FirstandSecond: React.FC = () => {
         </span>
       );
     } else {
-      // Zero in both rounds
+      // Zero in both rounds or DQ in first round
       badges.push(
         <span key="second" className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800 ml-1">
           Fail
@@ -367,16 +378,16 @@ const FirstandSecond: React.FC = () => {
                   Application ID {getSortIcon('Application ID')}
                 </th>
                 <th
-                  onClick={() => handleSort('ALL SCORED')}
-                  className="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase cursor-pointer hover:bg-gray-100"
-                >
-                  First Round Score {getSortIcon('ALL SCORED')}
-                </th>
-                <th
                   onClick={() => handleSort('ONLY PASS')}
                   className="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase cursor-pointer hover:bg-gray-100"
                 >
-                  Second Round Score {getSortIcon('ONLY PASS')}
+                  First Round Score {getSortIcon('ONLY PASS')}
+                </th>
+                <th
+                  onClick={() => handleSort('ALL SCORED')}
+                  className="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase cursor-pointer hover:bg-gray-100"
+                >
+                  Second Round Score {getSortIcon('ALL SCORED')}
                 </th>
                 <th className="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase">
                   Status
@@ -394,11 +405,6 @@ const FirstandSecond: React.FC = () => {
                       {item["Application ID"]}
                     </td>
                     <td className="px-6 py-4 text-sm text-gray-900 whitespace-nowrap">
-                      <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
-                        {item["ALL SCORED"]}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 text-sm text-gray-900 whitespace-nowrap">
                       <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
                         item["ONLY PASS"] === "DQ" ? 'bg-red-100 text-red-800' :
                         typeof item["ONLY PASS"] === 'number' && item["ONLY PASS"] > 0 ? 'bg-green-100 text-green-800' : 'bg-gray-100 text-gray-800'
@@ -407,32 +413,37 @@ const FirstandSecond: React.FC = () => {
                       </span>
                     </td>
                     <td className="px-6 py-4 text-sm text-gray-900 whitespace-nowrap">
-                      {getStatusBadges(item["ALL SCORED"], item["ONLY PASS"])}
+                      <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                        {item["ALL SCORED"]}
+                      </span>
+                    </td>
+                    <td className="px-6 py-4 text-sm text-gray-900 whitespace-nowrap">
+                      {getStatusBadges(item["ONLY PASS"], item["ALL SCORED"])}
                     </td>
                     <td className="px-6 py-4 text-sm text-gray-900 whitespace-nowrap">
                       {(() => {
-                        const firstRound = item["ALL SCORED"];
-                        const secondRound = item["ONLY PASS"];
+                        const firstRound = item["ONLY PASS"];  // First round is ONLY PASS
+                        const secondRound = item["ALL SCORED"]; // Second round is ALL SCORED
 
-                        if (secondRound === "DQ") {
+                        if (firstRound === "DQ") {
                           return (
                             <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800">
                               Disqualified
                             </span>
                           );
-                        } else if (firstRound === 0 && typeof secondRound === 'number' && secondRound > 0) {
+                        } else if (typeof firstRound === 'number' && firstRound === 0 && secondRound > 0) {
                           return (
                             <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
                               Reconsidered (+{secondRound})
                             </span>
                           );
-                        } else if (firstRound > 0 && secondRound === 0) {
+                        } else if (typeof firstRound === 'number' && firstRound > 0 && secondRound === 0) {
                           return (
                             <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
                               No Change
                             </span>
                           );
-                        } else if (firstRound > 0 && typeof secondRound === 'number' && secondRound > 0) {
+                        } else if (typeof firstRound === 'number' && firstRound > 0 && secondRound > 0) {
                           const change = secondRound - firstRound;
                           return (
                             <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${

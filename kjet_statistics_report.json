@@ -1,7 +1,7 @@
 {
   "analysis_results": {
     "metadata": {
-      "analysis_date": "2025-10-08T10:26:22.652356",
+      "analysis_date": "2025-10-13T15:04:51.792172",
       "total_counties": 47,
       "total_applications": 555,
       "eligible_applications": 0,
@@ -17309,7 +17309,7 @@
     ]
   },
   "analysis_metadata": {
-    "analysis_completed": "2025-10-08T10:26:22.695867",
+    "analysis_completed": "2025-10-13T15:04:51.834337",
     "analyzer_version": "KJET Analysis Engine v1.0",
     "rules_version": "rules.md - Eligibility & Scoring Criteria"
   }
