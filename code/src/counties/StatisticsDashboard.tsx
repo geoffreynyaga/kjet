@@ -1,5 +1,5 @@
 import { AlertTriangle, Award, Building, MapPin, Star, Target, TrendingUp, Users } from 'lucide-react';
-import { Bar, BarChart, CartesianGrid, Cell, Legend, Line, LineChart, Pie, PieChart, ResponsiveContainer, Scatter, ScatterChart, Tooltip, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, CartesianGrid, Cell, ComposedChart, Legend, Line, LineChart, Pie, PieChart, ResponsiveContainer, Scatter, ScatterChart, Tooltip, XAxis, YAxis } from 'recharts';
 import React, { useEffect, useState } from 'react';
 
 import { motion } from 'framer-motion';
@@ -34,7 +34,7 @@ interface NationalStats {
   scoreDistribution: { range: string; count: number }[];
   womenOwnedStats: { owned: number; notOwned: number; percentage: number };
   tierDistribution: { tier1: number; tier2: number; untiered: number };
-  topPerformingCounties: { county: string; passRate: number; avgScore: number }[];
+  topPerformingCounties: { county: string; passRate: number; avgScore: number; applications: number }[];
 }
 
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884D8', '#82CA9D'];
@@ -56,20 +56,20 @@ function StatisticsDashboard() {
       setLoading(true);
       const resp = await fetch('/kjet-human.json');
       const data: StatisticsApplicant[] = await resp.json();
-      
+
       // Load women-owned data from county JSON files
       const womenOwnedData = await loadWomenOwnedData();
-      
+
       setData(data);
-      
+
       // Calculate national statistics with women-owned data
       const nationalStats = calculateNationalStats(data, womenOwnedData);
       setNationalStats(nationalStats);
-      
+
       // Calculate county statistics with women-owned data
       const countyStats = calculateCountyStats(data, womenOwnedData);
       setCountyStats(countyStats);
-      
+
       setLoading(false);
     } catch (e: any) {
       console.error('Error loading statistics data:', e);
@@ -80,7 +80,7 @@ function StatisticsDashboard() {
 
   const loadWomenOwnedData = async (): Promise<{ [key: string]: string }> => {
     const womenOwnedMap: { [key: string]: string } = {};
-    
+
     // List of counties to load data from
     const counties = [
       'Baringo', 'Bomet', 'Bungoma', 'Busia', 'Elgeiyo Marakwet', 'Embu', 'Garissa',
@@ -97,10 +97,10 @@ function StatisticsDashboard() {
         try {
           const response = await fetch(`/output-results/${county}_evaluation_results.json`);
           if (!response.ok) return;
-          
+
           const countyData = await response.json();
           const applications = countyData.application_evaluations || {};
-          
+
           Object.entries(applications).forEach(([appId, appData]: [string, any]) => {
             if (appData.woman_owned) {
               // Map from county format (e.g., "Busia_158") to applicant format (e.g., "Applicant_158")
@@ -130,10 +130,8 @@ function StatisticsDashboard() {
     const totalFailed = totalApplications - totalPassed;
     const overallPassRate = totalApplications > 0 ? (totalPassed / totalApplications) * 100 : 0;
 
-    // Average score calculation
-    const scores = passedApps
-      .map(app => Number(app['Sum of weighted scores - Penalty(if any)']) || 0)
-      .filter(score => score > 0);
+    // Average score calculation - using all applicants including zeros
+    const scores = data.map(app => Number(app['Sum of weighted scores - Penalty(if any)']) || 0);
     const averageScore = scores.length > 0 ? scores.reduce((a, b) => a + b, 0) / scores.length : 0;
 
     // Business type distribution
@@ -142,7 +140,7 @@ function StatisticsDashboard() {
       const type = app['E3. Priority Value Chain'] || 'Unknown';
       businessTypes[type] = (businessTypes[type] || 0) + 1;
     });
-    
+
     const businessTypeDistribution = Object.entries(businessTypes)
       .map(([name, value]) => ({
         name,
@@ -172,7 +170,7 @@ function StatisticsDashboard() {
       }))
       .sort((a, b) => b.applications - a.applications);
 
-    // Score distribution
+    // Score distribution - using all scores including zeros
     const scoreRanges = [
       { range: '90-100', count: 0 },
       { range: '80-89', count: 0 },
@@ -181,17 +179,15 @@ function StatisticsDashboard() {
       { range: '50-59', count: 0 },
       { range: '0-49', count: 0 }
     ];
-    
+
     scores.forEach(score => {
       if (score >= 90) scoreRanges[0].count++;
       else if (score >= 80) scoreRanges[1].count++;
       else if (score >= 70) scoreRanges[2].count++;
       else if (score >= 60) scoreRanges[3].count++;
       else if (score >= 50) scoreRanges[4].count++;
-      else scoreRanges[5].count++;
-    });
-
-    // Women owned statistics using county JSON data
+      else scoreRanges[5].count++; // This will now include all zeros and low scores
+    });    // Women owned statistics using county JSON data
     const womenOwnedApps = data.filter(app => {
       const appId = app['Application ID'];
       if (appId && womenOwnedData[appId]) {
@@ -220,20 +216,18 @@ function StatisticsDashboard() {
     const topPerformingCounties = countyDistribution
       .filter(county => county.applications >= 5) // Minimum threshold
       .map(county => {
-        const countyApps = data.filter(app => 
+        const countyApps = data.filter(app =>
           (app['mapping'] || app['E2. County Mapping'] || 'Unknown') === county.county
         );
-        const countyScores = countyApps
-          .filter(app => String(app['PASS/FAIL'] || '').toLowerCase() === 'pass')
-          .map(app => Number(app['Sum of weighted scores - Penalty(if any)']) || 0)
-          .filter(score => score > 0);
-        const avgScore = countyScores.length > 0 ? 
+        const countyScores = countyApps.map(app => Number(app['Sum of weighted scores - Penalty(if any)']) || 0);
+        const avgScore = countyScores.length > 0 ?
           countyScores.reduce((a, b) => a + b, 0) / countyScores.length : 0;
-        
+
         return {
           county: county.county,
           passRate: county.passRate,
-          avgScore
+          avgScore,
+          applications: county.applications
         };
       })
       .sort((a, b) => b.passRate - a.passRate)
@@ -256,7 +250,7 @@ function StatisticsDashboard() {
 
   const calculateCountyStats = (data: StatisticsApplicant[], womenOwnedData: { [key: string]: string } = {}): CountyStats[] => {
     const countyGroups: { [key: string]: StatisticsApplicant[] } = {};
-    
+
     data.forEach(app => {
       const county = app['mapping'] || app['E2. County Mapping'] || 'Unknown';
       if (!countyGroups[county]) {
@@ -272,9 +266,7 @@ function StatisticsDashboard() {
       const failedApplications = totalApplications - passedApplications;
       const passRate = totalApplications > 0 ? (passedApplications / totalApplications) * 100 : 0;
 
-      const scores = passedApps
-        .map(app => Number(app['Sum of weighted scores - Penalty(if any)']) || 0)
-        .filter(score => score > 0);
+      const scores = apps.map(app => Number(app['Sum of weighted scores - Penalty(if any)']) || 0);
       const averageScore = scores.length > 0 ? scores.reduce((a, b) => a + b, 0) / scores.length : 0;
       const topScore = scores.length > 0 ? Math.max(...scores) : 0;
 
@@ -337,20 +329,20 @@ function StatisticsDashboard() {
     );
   }
 
-  const selectedCountyData = selectedCounty ? 
+  const selectedCountyData = selectedCounty ?
     countyStats.find(county => county.county === selectedCounty) : null;
 
   return (
     <div className="min-h-screen bg-gray-50">
-     
+
 
       <div className="p-8 mx-auto max-w-7xl">
         {/* National Overview Cards */}
         {nationalStats && (
-          <motion.div 
+          <motion.div
             className="grid grid-cols-1 gap-6 mb-8 md:grid-cols-2 lg:grid-cols-4"
-            initial={{ opacity: 0, y: 20 }} 
-            animate={{ opacity: 1, y: 0 }} 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
             <div className="p-6 bg-white rounded-lg shadow-sm">
@@ -379,7 +371,7 @@ function StatisticsDashboard() {
                 <div>
                   <p className="text-sm font-medium text-gray-600">Average Score</p>
                   <p className="text-3xl font-bold text-purple-600">{nationalStats.averageScore.toFixed(1)}</p>
-                  <p className="text-sm text-gray-500">Among passed applications</p>
+                  <p className="text-sm text-gray-500">Among all applications</p>
                 </div>
                 <Star className="w-8 h-8 text-purple-600" />
               </div>
@@ -402,41 +394,66 @@ function StatisticsDashboard() {
         <div className="grid grid-cols-1 gap-8 mb-8 lg:grid-cols-3">
           {/* Business Type Distribution */}
           {nationalStats && (
-            <motion.div 
+            <motion.div
               className="p-6 bg-white rounded-lg shadow-sm"
-              initial={{ opacity: 0, x: -20 }} 
-              animate={{ opacity: 1, x: 0 }} 
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.4, duration: 0.6 }}
             >
               <h3 className="mb-4 text-lg font-semibold text-gray-900">Business Type Distribution</h3>
-              <ResponsiveContainer width="100%" height={300}>
-                <PieChart>
-                  <Pie
-                    data={nationalStats.businessTypeDistribution}
-                    cx="50%"
-                    cy="50%"
-                    labelLine={false}
-                    label={({ name, percentage }) => `${name}: ${percentage.toFixed(1)}%`}
-                    outerRadius={80}
-                    fill="#8884d8"
-                    dataKey="value"
-                  >
-                    {nationalStats.businessTypeDistribution.map((entry, index) => (
-                      <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                    ))}
-                  </Pie>
-                  <Tooltip />
-                </PieChart>
-              </ResponsiveContainer>
+
+              {/* Debug output */}
+              {/* <div className="p-2 mb-4 text-xs bg-gray-100 rounded">
+                <p><strong>Debug - Business Type Data:</strong></p>
+                {nationalStats.businessTypeDistribution.slice(0, 5).map((item, index) => (
+                  <p key={index}>
+                    {item.name}: {item.value} applications ({item.percentage.toFixed(1)}%)
+                  </p>
+                ))}
+                <p><strong>Total items:</strong> {nationalStats.businessTypeDistribution.length}</p>
+
+                <p>
+                {JSON.stringify(nationalStats.businessTypeDistribution)}
+                </p>
+              </div> */}
+
+
+              <div className="space-y-3">
+                {nationalStats.businessTypeDistribution.map((item, index) => {
+                  const maxValue = Math.max(...nationalStats.businessTypeDistribution.map(d => d.value));
+                  const percentage = (item.value / maxValue) * 100;
+
+                  return (
+                    <div key={index} className="flex items-center space-x-3">
+                      <div className="flex-shrink-0 w-24 text-sm font-medium text-right text-gray-700">
+                        {item.name}
+                      </div>
+                      <div className="relative flex-1 h-6 bg-gray-200 rounded-full">
+                        <div
+                          className="flex items-center justify-end h-6 pr-2 transition-all duration-500 ease-out bg-blue-500 rounded-full"
+                          style={{ width: `${percentage}%` }}
+                        >
+                          <span className="text-xs font-medium text-white">
+                            {item.value}
+                          </span>
+                        </div>
+                      </div>
+                      <div className="flex-shrink-0 w-12 text-xs text-gray-500">
+                        {item.percentage.toFixed(1)}%
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
             </motion.div>
           )}
 
           {/* Score Distribution */}
           {nationalStats && (
-            <motion.div 
+            <motion.div
               className="p-6 bg-white rounded-lg shadow-sm"
-              initial={{ opacity: 0, x: 20 }} 
-              animate={{ opacity: 1, x: 0 }} 
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.4, duration: 0.6 }}
             >
               <h3 className="mb-4 text-lg font-semibold text-gray-900">Score Distribution</h3>
@@ -454,21 +471,30 @@ function StatisticsDashboard() {
 
           {/* Top Performing Counties */}
           {nationalStats && (
-            <motion.div 
+            <motion.div
               className="p-6 bg-white rounded-lg shadow-sm"
-              initial={{ opacity: 0, y: 20 }} 
-              animate={{ opacity: 1, y: 0 }} 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.6 }}
             >
               <h3 className="mb-4 text-lg font-semibold text-gray-900">Top Performing Counties</h3>
               <ResponsiveContainer width="100%" height={300}>
-                <BarChart data={nationalStats.topPerformingCounties}>
+                <ComposedChart data={nationalStats.topPerformingCounties}>
                   <CartesianGrid strokeDasharray="3 3" />
                   <XAxis dataKey="county" angle={-45} textAnchor="end" height={100} />
-                  <YAxis />
-                  <Tooltip />
-                  <Bar dataKey="passRate" fill="#10B981" name="Pass Rate %" />
-                </BarChart>
+                  <YAxis yAxisId="left" orientation="left" label={{ value: 'Applications', angle: -90, position: 'insideLeft' }} />
+                  <YAxis yAxisId="right" orientation="right" label={{ value: 'Avg Score', angle: 90, position: 'insideRight' }} />
+                  <Tooltip
+                    formatter={(value, name) => {
+                      if (name === 'Applications') return [value, 'Applications'];
+                      if (name === 'Avg Score') return [`${Number(value).toFixed(1)}`, 'Avg Score'];
+                      return [`${Number(value).toFixed(1)}%`, 'Pass Rate'];
+                    }}
+                  />
+                  <Legend />
+                  <Bar yAxisId="left" dataKey="applications" fill="#3b82f6" name="Applications" />
+                  <Line yAxisId="right" type="monotone" dataKey="avgScore" stroke="#ef4444" strokeWidth={3} name="Avg Score" dot={{ fill: '#ef4444', strokeWidth: 2, r: 4 }} />
+                </ComposedChart>
               </ResponsiveContainer>
             </motion.div>
           )}
@@ -476,10 +502,10 @@ function StatisticsDashboard() {
 
         {/* Second Row - County Analysis (75% width) */}
         <div className="flex justify-center">
-          <motion.div 
+          <motion.div
             className="w-full max-w-6xl p-6 bg-white rounded-lg shadow-sm"
-            initial={{ opacity: 0, y: 20 }} 
-            animate={{ opacity: 1, y: 0 }} 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.6 }}
             style={{ width: '75%' }}
           >
@@ -544,7 +570,7 @@ function StatisticsDashboard() {
                       <div className="p-3 rounded-lg bg-blue-50">
                         <p className="text-sm text-gray-600">Women-Owned Businesses</p>
                         <p className="text-xl font-bold text-blue-600">
-                          {selectedCountyData.womenOwnedCount} 
+                          {selectedCountyData.womenOwnedCount}
                           <span className="ml-2 text-sm font-normal text-gray-500">
                             ({((selectedCountyData.womenOwnedCount / selectedCountyData.totalApplications) * 100).toFixed(1)}%)
                           </span>
