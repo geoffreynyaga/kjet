@@ -176,14 +176,15 @@ function StatisticsDashboard() {
       }))
       .sort((a, b) => b.applications - a.applications);
 
-    // Score distribution - using all scores including zeros
+    // Score distribution - with separate categories for 0 and 1-49
     const scoreRanges = [
       { range: '90-100', count: 0 },
       { range: '80-89', count: 0 },
       { range: '70-79', count: 0 },
       { range: '60-69', count: 0 },
       { range: '50-59', count: 0 },
-      { range: '0-49', count: 0 }
+      { range: '1-49', count: 0 },
+      { range: '0', count: 0 }
     ];
 
     scores.forEach(score => {
@@ -192,7 +193,8 @@ function StatisticsDashboard() {
       else if (score >= 70) scoreRanges[2].count++;
       else if (score >= 60) scoreRanges[3].count++;
       else if (score >= 50) scoreRanges[4].count++;
-      else scoreRanges[5].count++; // This will now include all zeros and low scores
+      else if (score >= 1) scoreRanges[5].count++; // Scores from 1-49
+      else scoreRanges[6].count++; // Zero scores only
     });    // Women owned statistics using county JSON data
     const womenOwnedApps = data.filter(app => {
       const appId = app['Application ID'];

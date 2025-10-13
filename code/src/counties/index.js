@@ -7,7 +7,7 @@ import ApplicationFiles from './ApplicationFiles.tsx';
 import ComparisonDashboard from './ComparisonDashboard/index.tsx';
 import CountiesHome from './counties.tsx';
 import FirstandSecond from './FirstandSecond/index.tsx';
-import HumanCountiesAnalysis from './HumanCountiesAnalysis.tsx';
+import HumanCountiesAnalysis from './HumanCountiesAnalysis/index.tsx';
 import LLMCountiesAnalysis from './LLMCountiesAnalysis.tsx';
 import StatisticsDashboard from './StatisticsDashboard.tsx';
 
