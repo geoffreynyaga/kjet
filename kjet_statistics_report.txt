@@ -1,6 +1,6 @@
 KJET APPLICATION DATA STATISTICS REPORT
 ==================================================
-Generated on: 2025-10-13 15:04:55
+Generated on: 2025-10-13 22:03:19
 Data source: output/ directory JSON files
 
 OVERALL SUMMARY
@@ -26,7 +26,6 @@ VALUE CHAIN ANALYSIS
 -------------------------
 Dairy               :   2 counties (4.3%)
 Services            :   1 counties (2.1%)
-Livestock           :   1 counties (2.1%)
 Manufacturing       :   1 counties (2.1%)
 Livestock           :   1 counties (2.1%)
 
@@ -86,53 +85,53 @@ DETAILED COUNTY BREAKDOWN
 ------------------------------
 County               Apps  Co-op Comp  Grp  SACCO Bal  Inc  Cash MPesa Complete%
 -----------------------------------------------------------------------------------------------
-Baringo              8     0     0     0    0     3    2    1    2     31.2
-Bomet                4     0     0     0    0     0    1    1    0     31.2
-Bungoma              13    0     0     0    0     5    6    2    0     30.8
-Busia                13    0     0     0    0     2    3    3    2     26.9
-Elgeiyo Marakwet     8     0     0     0    0     3    1    1    0     28.1
-Embu                 12    0     0     0    0     2    2    0    1     16.7
-Garissa              9     0     0     0    0     0    0    0    1     16.7
-Homa Bay             13    0     0     0    0     0    1    0    4     13.5
-Isiolo               4     0     0     0    0     1    0    0    0     18.8
-Kajiado              8     0     0     0    0     0    2    1    3     12.5
-Kakamega             75    0     0     0    0     1    2    1    4     23.7
-Kericho              19    0     0     0    0     8    7    8    3     28.9
-Kiambu               22    0     0     0    0     11   8    8    8     29.5
-Kilifi               9     0     0     0    0     2    4    2    1     25.0
-Kirinyaga            6     0     0     0    0     1    2    1    1     20.8
-Kisii                21    0     0     0    0     9    2    2    2     20.2
-Kisumu               13    0     0     0    0     0    1    0    4     13.5
-Kitui                12    0     0     0    0     2    1    0    0     25.0
-Kwale                16    0     0     0    0     1    1    1    3     14.1
-Laikipia             15    0     0     0    0     6    4    2    1     21.7
-Lamu                 4     0     0     0    0     0    0    0    0     18.8
-Machakos             9     0     0     0    0     3    1    1    2     30.6
-Makueni              16    0     0     0    0     1    3    1    7     20.3
-Mandera              5     0     0     0    0     0    0    1    2     10.0
-Marsabit             4     0     0     0    0     1    0    0    1     6.2
-Meru                 22    0     0     0    0     5    7    5    5     22.7
-Migori               12    0     0     0    0     3    2    2    3     27.1
-Mombasa              7     0     0     0    0     0    0    0    5     10.7
-Murang'a             9     0     0     0    0     5    4    3    1     38.9
-Nairobi              25    0     0     0    0     3    6    4    7     24.0
-Nakuru               9     0     0     0    0     3    4    3    0     30.6
-Nandi                9     0     0     0    0     4    2    3    3     22.2
-Narok                3     0     0     0    0     0    0    0    1     25.0
-Nyamira              4     0     0     0    0     1    0    1    1     25.0
-Nyandarua            11    0     0     0    0     3    1    5    0     25.0
-Nyeri                14    0     0     0    0     4    5    2    1     28.6
-Samburu              6     0     0     0    0     0    0    0    2     20.8
-Siaya                9     0     0     0    0     1    1    1    1     16.7
-Taita Taveta         6     0     0     0    0     0    1    1    0     12.5
-Tana River           3     0     0     0    0     0    0    0    1     8.3
-Tharaka Nithi        9     0     0     0    0     1    4    2    0     30.6
-Trans Nzoia          4     0     0     0    0     1    2    2    0     25.0
-Turkana              10    0     0     0    0     1    0    0    4     15.0
-Uasin Gishu          20    0     0     0    0     6    3    2    5     23.8
-Vihiga               5     0     0     0    0     0    1    0    1     20.0
-Wajir                14    0     0     0    0     1    1    0    3     12.5
-West Pokot           6     0     0     0    0     0    1    1    0     25.0
+Baringo              8     0     0     0    0     3    2    1    2     31.2     
+Bomet                4     0     0     0    0     0    1    1    0     31.2     
+Bungoma              13    0     0     0    0     5    6    2    0     30.8     
+Busia                13    0     0     0    0     2    3    3    2     26.9     
+Elgeiyo Marakwet     8     0     0     0    0     3    1    1    0     28.1     
+Embu                 12    0     0     0    0     2    2    0    1     16.7     
+Garissa              9     0     0     0    0     0    0    0    1     16.7     
+Homa Bay             13    0     0     0    0     0    1    0    4     13.5     
+Isiolo               4     0     0     0    0     1    0    0    0     18.8     
+Kajiado              8     0     0     0    0     0    2    1    3     12.5     
+Kakamega             75    0     0     0    0     1    2    1    4     23.7     
+Kericho              19    0     0     0    0     8    7    8    3     28.9     
+Kiambu               22    0     0     0    0     11   8    8    8     29.5     
+Kilifi               9     0     0     0    0     2    4    2    1     25.0     
+Kirinyaga            6     0     0     0    0     1    2    1    1     20.8     
+Kisii                21    0     0     0    0     9    2    2    2     20.2     
+Kisumu               13    0     0     0    0     0    1    0    4     13.5     
+Kitui                12    0     0     0    0     2    1    0    0     25.0     
+Kwale                16    0     0     0    0     1    1    1    3     14.1     
+Laikipia             15    0     0     0    0     6    4    2    1     21.7     
+Lamu                 4     0     0     0    0     0    0    0    0     18.8     
+Machakos             9     0     0     0    0     3    1    1    2     30.6     
+Makueni              16    0     0     0    0     1    3    1    7     20.3     
+Mandera              5     0     0     0    0     0    0    1    2     10.0     
+Marsabit             4     0     0     0    0     1    0    0    1     6.2      
+Meru                 22    0     0     0    0     5    7    5    5     22.7     
+Migori               12    0     0     0    0     3    2    2    3     27.1     
+Mombasa              7     0     0     0    0     0    0    0    5     10.7     
+Murang'a             9     0     0     0    0     5    4    3    1     38.9     
+Nairobi              25    0     0     0    0     3    6    4    7     24.0     
+Nakuru               9     0     0     0    0     3    4    3    0     30.6     
+Nandi                9     0     0     0    0     4    2    3    3     22.2     
+Narok                3     0     0     0    0     0    0    0    1     25.0     
+Nyamira              4     0     0     0    0     1    0    1    1     25.0     
+Nyandarua            11    0     0     0    0     3    1    5    0     25.0     
+Nyeri                14    0     0     0    0     4    5    2    1     28.6     
+Samburu              6     0     0     0    0     0    0    0    2     20.8     
+Siaya                9     0     0     0    0     1    1    1    1     16.7     
+Taita Taveta         6     0     0     0    0     0    1    1    0     12.5     
+Tana River           3     0     0     0    0     0    0    0    1     8.3      
+Tharaka Nithi        9     0     0     0    0     1    4    2    0     30.6     
+Trans Nzoia          4     0     0     0    0     1    2    2    0     25.0     
+Turkana              10    0     0     0    0     1    0    0    4     15.0     
+Uasin Gishu          20    0     0     0    0     6    3    2    5     23.8     
+Vihiga               5     0     0     0    0     0    1    0    1     20.0     
+Wajir                14    0     0     0    0     1    1    0    3     12.5     
+West Pokot           6     0     0     0    0     0    1    1    0     25.0     
 
 Column Legend:
 Apps = Number of Applications

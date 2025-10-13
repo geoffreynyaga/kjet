@@ -54,7 +54,7 @@ function StatisticsDashboard() {
   const loadStatisticsData = async () => {
     try {
       setLoading(true);
-      const resp = await fetch('/kjet-human.json');
+      const resp = await fetch('/kjet-human-final.json');
       const data: StatisticsApplicant[] = await resp.json();
 
       // Load women-owned data from county JSON files
@@ -125,7 +125,11 @@ function StatisticsDashboard() {
 
   const calculateNationalStats = (data: StatisticsApplicant[], womenOwnedData: { [key: string]: string } = {}): NationalStats => {
     const totalApplications = data.length;
-    const passedApps = data.filter(app => String(app['PASS/FAIL'] || '').toLowerCase() === 'pass');
+    // Updated: Include all applicants with scores greater than zero
+    const passedApps = data.filter(app => {
+      const score = Number(app['Sum of weighted scores - Penalty(if any)']) || 0;
+      return score > 0;
+    });
     const totalPassed = passedApps.length;
     const totalFailed = totalApplications - totalPassed;
     const overallPassRate = totalApplications > 0 ? (totalPassed / totalApplications) * 100 : 0;
@@ -157,7 +161,9 @@ function StatisticsDashboard() {
         countyApps[county] = { total: 0, passed: 0 };
       }
       countyApps[county].total++;
-      if (String(app['PASS/FAIL'] || '').toLowerCase() === 'pass') {
+      // Updated: Include all applicants with scores greater than zero
+      const score = Number(app['Sum of weighted scores - Penalty(if any)']) || 0;
+      if (score > 0) {
         countyApps[county].passed++;
       }
     });
@@ -203,9 +209,26 @@ function StatisticsDashboard() {
       percentage: totalApplications > 0 ? (womenOwnedApps.length / totalApplications) * 100 : 0
     };
 
-    // Tier distribution
-    const tier1 = data.filter(app => String(app['TIERS'] || '').includes('Tier 1')).length;
-    const tier2 = data.filter(app => String(app['TIERS'] || '').includes('Tier 2')).length;
+    // Tier distribution - using the correct column name with Unicode characters
+    const tierColumn = "Tier 1 \u2013 Clusters functioning as integrated businesses (e.g. cooperatives or consortia that jointly market or aggregate their members\u2019 output).\nTier 2 \u2013 Clusters where member MSMEs operate more independently and the cluster is less integrated, indicating capacity gaps in joint operations. \n";
+
+    // Debug: Check what values exist in this column
+    const tierValues = data.map(app => app[tierColumn]).filter(val => val !== null && val !== undefined);
+    // console.log("Tier column values found:", [...new Set(tierValues)]);
+
+    // Count applications with tier classifications
+    const tier1 = data.filter(app => {
+      const tierValue = String(app[tierColumn] || '').toLowerCase();
+      return tierValue.includes('tier 1') || tierValue.includes('tier1');
+    }).length;
+
+    const tier2 = data.filter(app => {
+      const tierValue = String(app[tierColumn] || '').toLowerCase();
+      return tierValue.includes('tier 2') || tierValue.includes('tier2');
+    }).length;
+
+    // console.log("Tier 1 count:", tier1, "Tier 2 count:", tier2);
+
     const tierDistribution = {
       tier1,
       tier2,
@@ -261,7 +284,11 @@ function StatisticsDashboard() {
 
     return Object.entries(countyGroups).map(([county, apps]) => {
       const totalApplications = apps.length;
-      const passedApps = apps.filter(app => String(app['PASS/FAIL'] || '').toLowerCase() === 'pass');
+      // Updated: Include all applicants with scores greater than zero
+      const passedApps = apps.filter(app => {
+        const score = Number(app['Sum of weighted scores - Penalty(if any)']) || 0;
+        return score > 0;
+      });
       const passedApplications = passedApps.length;
       const failedApplications = totalApplications - passedApplications;
       const passRate = totalApplications > 0 ? (passedApplications / totalApplications) * 100 : 0;
@@ -287,8 +314,18 @@ function StatisticsDashboard() {
                String(app['Women Owned'] || app['woman_owned'] || '').toLowerCase() === 'true';
       }).length;
 
-      const tier1Count = apps.filter(app => String(app['TIERS'] || '').includes('Tier 1')).length;
-      const tier2Count = apps.filter(app => String(app['TIERS'] || '').includes('Tier 2')).length;
+      // Use the correct tier column name with Unicode characters
+      const tierColumn = "Tier 1 \u2013 Clusters functioning as integrated businesses (e.g. cooperatives or consortia that jointly market or aggregate their members\u2019 output).\nTier 2 \u2013 Clusters where member MSMEs operate more independently and the cluster is less integrated, indicating capacity gaps in joint operations. \n";
+
+      const tier1Count = apps.filter(app => {
+        const tierValue = String(app[tierColumn] || '').toLowerCase();
+        return tierValue.includes('tier 1') || tierValue.includes('tier1');
+      }).length;
+
+      const tier2Count = apps.filter(app => {
+        const tierValue = String(app[tierColumn] || '').toLowerCase();
+        return tierValue.includes('tier 2') || tierValue.includes('tier2');
+      }).length;
 
       return {
         county,
@@ -357,12 +394,25 @@ function StatisticsDashboard() {
 
             <div className="p-6 bg-white rounded-lg shadow-sm">
               <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-sm font-medium text-gray-600">Overall Pass Rate</p>
-                  <p className="text-3xl font-bold text-green-600">{nationalStats.overallPassRate.toFixed(1)}%</p>
-                  <p className="text-sm text-gray-500">{nationalStats.totalPassed} passed</p>
+                <div className="flex-1">
+                  <p className="mb-3 text-sm font-medium text-gray-600">Business Tiers</p>
+                  <div className="space-y-2">
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm text-gray-600">Tier 1:</span>
+                      <div className="text-right">
+                        <span className="text-xl font-bold text-indigo-600">{nationalStats.tierDistribution.tier1.toLocaleString()}</span>
+                        <span className="ml-1 text-xs text-gray-500">({((nationalStats.tierDistribution.tier1 / nationalStats.totalApplications) * 100).toFixed(1)}%)</span>
+                      </div>
+                    </div>
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm text-gray-600">Tier 2:</span>
+                      <div className="text-right">
+                        <span className="text-xl font-bold text-purple-600">{nationalStats.tierDistribution.tier2.toLocaleString()}</span>
+                        <span className="ml-1 text-xs text-gray-500">({((nationalStats.tierDistribution.tier2 / nationalStats.totalApplications) * 100).toFixed(1)}%)</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <Award className="w-8 h-8 text-green-600" />
               </div>
             </div>
 
@@ -391,7 +441,7 @@ function StatisticsDashboard() {
         )}
 
         {/* First Row - Charts */}
-        <div className="grid grid-cols-1 gap-8 mb-8 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 mb-8 lg:grid-cols-2">
           {/* Business Type Distribution */}
           {nationalStats && (
             <motion.div
@@ -472,7 +522,7 @@ function StatisticsDashboard() {
           {/* Top Performing Counties */}
           {nationalStats && (
             <motion.div
-              className="p-6 bg-white rounded-lg shadow-sm"
+              className="bg-white rounded-lg shadow-sm "
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.6 }}
@@ -498,22 +548,20 @@ function StatisticsDashboard() {
               </ResponsiveContainer>
             </motion.div>
           )}
-        </div>
 
-        {/* Second Row - County Analysis (75% width) */}
-        <div className="flex justify-center">
+          <div className="flex justify-center w-full ">
           <motion.div
-            className="w-full max-w-6xl p-6 bg-white rounded-lg shadow-sm"
+            className="w-full p-2 bg-white rounded-lg shadow-sm"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.6 }}
-            style={{ width: '75%' }}
+
           >
             <h3 className="mb-4 text-lg font-semibold text-gray-900">County Analysis</h3>
             <select
               value={selectedCounty || ''}
               onChange={(e) => setSelectedCounty(e.target.value || null)}
-              className="w-full max-w-md p-2 mb-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full max-w-2xl p-4 mb-6 text-base border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             >
               <option value="">Select a county...</option>
               {countyStats.map(county => (
@@ -530,10 +578,7 @@ function StatisticsDashboard() {
                     <p className="text-sm text-gray-600">Applications</p>
                     <p className="text-2xl font-bold">{selectedCountyData.totalApplications}</p>
                   </div>
-                  <div className="p-4 rounded-lg bg-green-50">
-                    <p className="text-sm text-gray-600">Pass Rate</p>
-                    <p className="text-2xl font-bold text-green-600">{selectedCountyData.passRate.toFixed(1)}%</p>
-                  </div>
+
                   <div className="p-4 rounded-lg bg-purple-50">
                     <p className="text-sm text-gray-600">Avg Score</p>
                     <p className="text-2xl font-bold text-purple-600">{selectedCountyData.averageScore.toFixed(1)}</p>
@@ -567,15 +612,7 @@ function StatisticsDashboard() {
                   <div>
                     <h4 className="mb-3 text-lg font-medium text-gray-900">Additional Metrics</h4>
                     <div className="space-y-3">
-                      <div className="p-3 rounded-lg bg-blue-50">
-                        <p className="text-sm text-gray-600">Women-Owned Businesses</p>
-                        <p className="text-xl font-bold text-blue-600">
-                          {selectedCountyData.womenOwnedCount}
-                          <span className="ml-2 text-sm font-normal text-gray-500">
-                            ({((selectedCountyData.womenOwnedCount / selectedCountyData.totalApplications) * 100).toFixed(1)}%)
-                          </span>
-                        </p>
-                      </div>
+
                       <div className="p-3 rounded-lg bg-indigo-50">
                         <p className="text-sm text-gray-600">Tier 1 Businesses</p>
                         <p className="text-xl font-bold text-indigo-600">
@@ -601,6 +638,9 @@ function StatisticsDashboard() {
             )}
           </motion.div>
         </div>
+        </div>
+
+
       </div>
     </div>
   );

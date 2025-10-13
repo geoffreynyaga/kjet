@@ -65,6 +65,8 @@ src:
 human: install
 	@echo "Running human data extraction and JSON conversion..."
 	$(PY) scripts/human/convert.py
+	${PY} scripts/human/baseline.py
+	${PY} scripts/human/combine_baseline.py
 
 run: install
 	@echo "Checking for existing output directory..."

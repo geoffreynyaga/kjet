@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react';
 import { Home, Users } from 'lucide-react';
-import { motion } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+
+import CountyComparisonView from './CountyComparisonView.tsx';
 import { HumanApplicant } from './types.ts';
 import { filterHumanDataByCounty } from './utils.ts';
-import CountyComparisonView from './CountyComparisonView.tsx';
+import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 function ComparisonDashboard() {
   const navigate = useNavigate();
@@ -23,7 +24,7 @@ function ComparisonDashboard() {
       setLoading(true);
 
       // Load human data
-      const humanResponse = await fetch('/kjet-human.json');
+      const humanResponse = await fetch('/kjet-human-final.json');
       const data: HumanApplicant[] = await humanResponse.json();
       setHumanData(data);
 

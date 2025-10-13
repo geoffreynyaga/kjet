@@ -125,9 +125,14 @@ def extract_csv_to_json(file_path, output_path):
 if __name__ == "__main__":
     # Define the input CSV file and output JSON file paths relative to the base directory
     base_dir = os.getcwd()
-    input_csv = os.path.join(base_dir, "scripts/human/kjet-human.csv")
-    output_json = os.path.join(base_dir, "code/public/kjet-human.json")
+    input_csv_final_result = os.path.join(base_dir, "scripts/human/kjet-human-final-results.csv")
+    input_csv_first_result = os.path.join(base_dir, "scripts/human/kjet-human-first-results.csv")
+    output_json_first_result = os.path.join(base_dir, "code/public/kjet-human-first-result.json")
+
+    output_json_fin = os.path.join(base_dir, "code/public/kjet-human-final.json")
+    output_json_first = os.path.join(base_dir, "code/public/kjet-human-first.json")
 
     # Extract data from CSV and save it as JSON
-    extract_csv_to_json(input_csv, output_json)
+    extract_csv_to_json(input_csv_final_result, output_json_fin)
+    extract_csv_to_json(input_csv_first_result, output_json_first)
 

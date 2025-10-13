@@ -1,4 +1,4 @@
-import { ChevronDown, ChevronRight, Home, Target } from 'lucide-react';
+import { ChevronDown, ChevronRight, Home } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
 
 import { motion } from 'framer-motion';
@@ -32,7 +32,7 @@ function HumanCountiesAnalysis() {
   const loadHumanData = async () => {
     try {
       setLoading(true);
-      const resp = await fetch('/kjet-human.json');
+      const resp = await fetch('/kjet-human-final.json');
       const data: HumanApplicant[] = await resp.json();
 
       // Group by county (E2. County Mapping)
@@ -104,12 +104,24 @@ function HumanCountiesAnalysis() {
     );
   }
 
+  // Utility function for pass/fail status
+  const getPassFailStatus = (app: any) => String(app['PASS/FAIL'] || '').toLowerCase();
+
   const currentGroup = groups.find((g) => g.county === selectedCounty) || null;
-  const topTwo = currentGroup ? currentGroup.applicants.filter(a => getNumericScore(a) > 0).slice(0, 2) : [];
-  const topTwoIds = new Set(topTwo.map(a => String(a['Application ID'])));
-  const pending = currentGroup ? currentGroup.applicants.filter(a => getNumericScore(a) === 0 && String(a['PASS/FAIL'] || '').toLowerCase() !== 'fail') : [];
-  const failed = currentGroup ? currentGroup.applicants.filter(a => String(a['PASS/FAIL'] || '').toLowerCase() === 'fail') : [];
-  const otherRanked = currentGroup ? currentGroup.applicants.filter(a => getNumericScore(a) > 0 && !topTwoIds.has(String(a['Application ID'])) && String(a['PASS/FAIL'] || '').toLowerCase() !== 'fail') : [];
+
+  // Optimized filtering logic - single pass through applicants
+  const { topTwo, pending, failed, otherRanked } = currentGroup ? (() => {
+    const scored = currentGroup.applicants.filter(a => getNumericScore(a) > 0 && getPassFailStatus(a) !== 'fail');
+    const topTwo = scored.slice(0, 2);
+    const topTwoIds = new Set(topTwo.map(a => String(a['Application ID'])));
+
+    return {
+      topTwo,
+      pending: currentGroup.applicants.filter(a => getNumericScore(a) === 0 && getPassFailStatus(a) !== 'fail'),
+      failed: currentGroup.applicants.filter(a => getPassFailStatus(a) === 'fail'),
+      otherRanked: scored.filter(a => !topTwoIds.has(String(a['Application ID'])))
+    };
+  })() : { topTwo: [], pending: [], failed: [], otherRanked: [] };
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -136,11 +148,7 @@ function HumanCountiesAnalysis() {
       <div className="flex mx-auto max-w-7xl">
         <motion.div className="sticky top-0 h-screen overflow-y-auto bg-white shadow-lg w-80" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.2, duration: 0.6 }}>
           <div className="p-6 border-b border-gray-200">
-            {/* show count of known counties (exclude UNKNOWN) */}
-            {(() => {
-              const knownCount = groups.filter(g => g.county !== 'UNKNOWN').length;
-              return <h3 className="text-xl font-bold text-gray-900">Counties ({knownCount})</h3>;
-            })()}
+            <h3 className="text-xl font-bold text-gray-900">Counties ({groups.filter(g => g.county !== 'UNKNOWN').length})</h3>
           </div>
           <div className="p-2 space-y-2">
             {groups.map((g, i) => {
@@ -157,13 +165,13 @@ function HumanCountiesAnalysis() {
                     <span className={`inline-flex items-center justify-center px-2 py-0.5 text-xs font-semibold rounded-full ${isUnknown ? 'bg-red-600 text-white' : 'bg-blue-100 text-blue-800'}`}>{g.applicants.length}</span>
                   </div>
 
-                
+
 
                   <div className="flex-1 min-w-0">
                     <div className={`truncate ${isUnknown ? 'font-semibold text-red-900' : 'font-medium text-gray-900'} font-sans tracking-tight`}>{g.county}</div>
                     <div className="flex items-center mt-1 space-x-4 text-xs text-gray-600">
-                      <div className="flex items-center gap-1"><span className="text-gray-500">Pass</span><span className="font-semibold text-green-600">{g.applicants.filter(a => String(a['PASS/FAIL'] || '').toLowerCase() === 'pass').length}</span></div>
-                      <div className="flex items-center gap-1"><span className="text-gray-500">Fail</span><span className="font-semibold text-red-600">{g.applicants.filter(a => String(a['PASS/FAIL'] || '').toLowerCase() === 'fail').length}</span></div>
+                      <div className="flex items-center gap-1"><span className="text-gray-500">Pass</span><span className="font-semibold text-green-600">{g.applicants.filter(a => getPassFailStatus(a) === 'pass').length}</span></div>
+                      <div className="flex items-center gap-1"><span className="text-gray-500">Fail</span><span className="font-semibold text-red-600">{g.applicants.filter(a => getPassFailStatus(a) === 'fail').length}</span></div>
                     </div>
                   </div>
                 </div>
@@ -184,17 +192,15 @@ function HumanCountiesAnalysis() {
                     const score = getNumericScore(app);
                     const globalRank = currentGroup ? currentGroup.applicants.findIndex(a => String(a['Application ID']) === String(app['Application ID'])) + 1 : idx + 1;
                     return (
-                      <motion.div key={app['Application ID'] + idx} className="transition-all duration-200" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: idx * 0.1, duration: 0.3 }}>
+                      <motion.div key={`${app['Application ID']}-top-${idx}`} className="transition-all duration-200" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: idx * 0.1, duration: 0.3 }}>
                         <div className="flex items-center justify-between p-4 transition-colors cursor-pointer hover:bg-gray-50 group" onClick={() => toggleExpand(globalRank)}>
                           <div className="flex items-center flex-1 gap-4">
                             <div className="flex items-center justify-center w-10 h-10 text-sm font-bold text-white rounded-full shadow-sm bg-gradient-to-br from-red-500 to-red-600">#{globalRank}</div>
                             <div className="flex-1 min-w-0">
                               <h4 className="font-semibold text-gray-900 truncate">{app['Application ID']}</h4>
-                              <p className="text-sm text-gray-600">{app['REASON(Evaluators Comments)'] || ''}</p>
                             </div>
                             <div className="text-right">
-                              <div className="inline-block px-3 py-1 mb-1 text-sm font-bold text-white rounded-lg shadow-sm" style={{ backgroundColor: '#10B981' }}>{(Number(score) || 0).toFixed(1)}</div>
-                              <div className="text-xs font-medium text-gray-600">Score</div>
+                              <div className="inline-block px-3 py-1 mb-1 text-sm font-bold text-white bg-green-500 rounded-lg shadow-sm">{(Number(score) || 0).toFixed(1)}</div>
                             </div>
                           </div>
                           <div className="ml-4 text-gray-400 transition-colors group-hover:text-gray-600">{expandedRanks.has(globalRank) ? <ChevronDown size={20} /> : <ChevronRight size={20} />}</div>
@@ -202,27 +208,284 @@ function HumanCountiesAnalysis() {
 
                         {expandedRanks.has(globalRank) && (
                           <motion.div className="px-4 pb-4 bg-gray-50" initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} transition={{ duration: 0.3 }}>
-                            <div className="mt-2 space-y-3">
-                              <div className="text-sm text-gray-700">
-                                <strong>County:</strong> {app['E2. County Mapping']}
-                              </div>
-                              
+                            <div className="mt-2 space-y-4">
+
                               {/* Penalty badge if present */}
                               {app['DQ1: Fraudulent documents or misrepresentation → Immediate disqualification.'] && (
                                 <div className="inline-flex items-center px-2 py-1 text-xs font-semibold text-red-800 bg-red-100 border border-red-200 rounded-full">
                                   ⚠️ Penalty: {app['DQ1: Fraudulent documents or misrepresentation → Immediate disqualification.']}
                                 </div>
                               )}
-                              
-                              {/* Comments section with horizontal line */}
-                              {app['REASON(Evaluators Comments)'] && (
-                                <div className="pt-3 border-t border-gray-200">
-                                  <div className="mb-2 text-xs font-medium tracking-wide text-gray-500 uppercase">Evaluator Comments</div>
-                                  <div className="text-sm font-medium leading-relaxed text-gray-800">
-                                    {app['REASON(Evaluators Comments)']}
-                                  </div>
+
+                              {/* Detailed Scoring Breakdown */}
+                              <div className="pt-2 order-gray-200 b">
+                                <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+                                  {/* Registration & Track Record */}
+                                  <motion.div
+                                    className="p-3 bg-white border border-gray-200 rounded-lg"
+                                    initial={{ opacity: 0, scale: 0.95, y: 20 }}
+                                    animate={{ opacity: 1, scale: 1, y: 0 }}
+                                    transition={{
+                                      duration: 0.4,
+                                      delay: 0.1,
+                                      ease: "easeOut"
+                                    }}
+                                    whileHover={{
+                                      scale: 1.02,
+                                      boxShadow: "0 4px 12px rgba(59, 130, 246, 0.15)",
+                                      borderColor: "rgb(59, 130, 246)"
+                                    }}
+                                  >
+                                    <div className="flex items-center justify-between mb-2">
+                                      <span className="text-xs font-medium text-gray-600">Registration & Track Record</span>
+                                      <div className="flex items-center gap-1">
+                                        <motion.span
+                                          className="text-sm font-bold text-blue-600"
+                                          initial={{ scale: 0 }}
+                                          animate={{ scale: 1 }}
+                                          transition={{ delay: 0.3, type: "spring", stiffness: 500 }}
+                                        >
+                                          {app['A3.1 Registration & Track Record '] || 0}
+                                        </motion.span>
+                                        <span className="text-xs text-gray-400">/5</span>
+                                      </div>
+                                    </div>
+                                    {app['Logic'] && (
+                                      <motion.p
+                                        className="text-xs leading-relaxed text-gray-700"
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        transition={{ delay: 0.4 }}
+                                      >
+                                        {app['Logic']}
+                                      </motion.p>
+                                    )}
+                                  </motion.div>
+
+                                  {/* Financial Position */}
+                                  <motion.div
+                                    className="p-3 bg-white border border-gray-200 rounded-lg"
+                                    initial={{ opacity: 0, scale: 0.95, y: 20 }}
+                                    animate={{ opacity: 1, scale: 1, y: 0 }}
+                                    transition={{
+                                      duration: 0.4,
+                                      delay: 0.15,
+                                      ease: "easeOut"
+                                    }}
+                                    whileHover={{
+                                      scale: 1.02,
+                                      boxShadow: "0 4px 12px rgba(34, 197, 94, 0.15)",
+                                      borderColor: "rgb(34, 197, 94)"
+                                    }}
+                                  >
+                                    <div className="flex items-center justify-between mb-2">
+                                      <span className="text-xs font-medium text-gray-600">Financial Position</span>
+                                      <div className="flex items-center gap-1">
+                                        <motion.span
+                                          className="text-sm font-bold text-green-600"
+                                          initial={{ scale: 0 }}
+                                          animate={{ scale: 1 }}
+                                          transition={{ delay: 0.35, type: "spring", stiffness: 500 }}
+                                        >
+                                          {app['A3.2 Financial Position '] || 0}
+                                        </motion.span>
+                                        <span className="text-xs text-gray-400">/5</span>
+                                      </div>
+                                    </div>
+                                    {app['Logic.1'] && (
+                                      <motion.p
+                                        className="text-xs leading-relaxed text-gray-700"
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        transition={{ delay: 0.45 }}
+                                      >
+                                        {app['Logic.1']}
+                                      </motion.p>
+                                    )}
+                                  </motion.div>
+
+                                  {/* Market Demand & Competitiveness */}
+                                  <motion.div
+                                    className="p-3 bg-white border border-gray-200 rounded-lg"
+                                    initial={{ opacity: 0, scale: 0.95, y: 20 }}
+                                    animate={{ opacity: 1, scale: 1, y: 0 }}
+                                    transition={{
+                                      duration: 0.4,
+                                      delay: 0.2,
+                                      ease: "easeOut"
+                                    }}
+                                    whileHover={{
+                                      scale: 1.02,
+                                      boxShadow: "0 4px 12px rgba(147, 51, 234, 0.15)",
+                                      borderColor: "rgb(147, 51, 234)"
+                                    }}
+                                  >
+                                    <div className="flex items-center justify-between mb-2">
+                                      <span className="text-xs font-medium text-gray-600">Market Demand & Competitiveness</span>
+                                      <div className="flex items-center gap-1">
+                                        <motion.span
+                                          className="text-sm font-bold text-purple-600"
+                                          initial={{ scale: 0 }}
+                                          animate={{ scale: 1 }}
+                                          transition={{ delay: 0.4, type: "spring", stiffness: 500 }}
+                                        >
+                                          {app['A3.3 Market Demand & Competitiveness'] || 0}
+                                        </motion.span>
+                                        <span className="text-xs text-gray-400">/5</span>
+                                      </div>
+                                    </div>
+                                    {app['Logic.2'] && (
+                                      <motion.p
+                                        className="text-xs leading-relaxed text-gray-700"
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        transition={{ delay: 0.5 }}
+                                      >
+                                        {app['Logic.2']}
+                                      </motion.p>
+                                    )}
+                                  </motion.div>
+
+                                  {/* Business Proposal / Growth Viability */}
+                                  <motion.div
+                                    className="p-3 bg-white border border-gray-200 rounded-lg"
+                                    initial={{ opacity: 0, scale: 0.95, y: 20 }}
+                                    animate={{ opacity: 1, scale: 1, y: 0 }}
+                                    transition={{
+                                      duration: 0.4,
+                                      delay: 0.25,
+                                      ease: "easeOut"
+                                    }}
+                                    whileHover={{
+                                      scale: 1.02,
+                                      boxShadow: "0 4px 12px rgba(251, 146, 60, 0.15)",
+                                      borderColor: "rgb(251, 146, 60)"
+                                    }}
+                                  >
+                                    <div className="flex items-center justify-between mb-2">
+                                      <span className="text-xs font-medium text-gray-600">Business Proposal / Growth Viability</span>
+                                      <div className="flex items-center gap-1">
+                                        <motion.span
+                                          className="text-sm font-bold text-orange-600"
+                                          initial={{ scale: 0 }}
+                                          animate={{ scale: 1 }}
+                                          transition={{ delay: 0.45, type: "spring", stiffness: 500 }}
+                                        >
+                                          {app['A3.4 Business Proposal / Growth Viability'] || 0}
+                                        </motion.span>
+                                        <span className="text-xs text-gray-400">/5</span>
+                                      </div>
+                                    </div>
+                                    {app['Logic.3'] && (
+                                      <motion.p
+                                        className="text-xs leading-relaxed text-gray-700"
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        transition={{ delay: 0.55 }}
+                                      >
+                                        {app['Logic.3']}
+                                      </motion.p>
+                                    )}
+                                  </motion.div>
+
+                                  {/* Value Chain Alignment & Role */}
+                                  <motion.div
+                                    className="p-3 bg-white border border-gray-200 rounded-lg"
+                                    initial={{ opacity: 0, scale: 0.95, y: 20 }}
+                                    animate={{ opacity: 1, scale: 1, y: 0 }}
+                                    transition={{
+                                      duration: 0.4,
+                                      delay: 0.3,
+                                      ease: "easeOut"
+                                    }}
+                                    whileHover={{
+                                      scale: 1.02,
+                                      boxShadow: "0 4px 12px rgba(99, 102, 241, 0.15)",
+                                      borderColor: "rgb(99, 102, 241)"
+                                    }}
+                                  >
+                                    <div className="flex items-center justify-between mb-2">
+                                      <span className="text-xs font-medium text-gray-600">Value Chain Alignment & Role</span>
+                                      <div className="flex items-center gap-1">
+                                        <motion.span
+                                          className="text-sm font-bold text-indigo-600"
+                                          initial={{ scale: 0 }}
+                                          animate={{ scale: 1 }}
+                                          transition={{ delay: 0.5, type: "spring", stiffness: 500 }}
+                                        >
+                                          {app['A3.5 Value Chain Alignment & Role'] || 0}
+                                        </motion.span>
+                                        <span className="text-xs text-gray-400">/5</span>
+                                      </div>
+                                    </div>
+                                    {app['Logic.4'] && (
+                                      <motion.p
+                                        className="text-xs leading-relaxed text-gray-700"
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        transition={{ delay: 0.6 }}
+                                      >
+                                        {app['Logic.4']}
+                                      </motion.p>
+                                    )}
+                                  </motion.div>
+
+                                  {/* Inclusivity & Sustainability */}
+                                  <motion.div
+                                    className="p-3 bg-white border border-gray-200 rounded-lg"
+                                    initial={{ opacity: 0, scale: 0.95, y: 20 }}
+                                    animate={{ opacity: 1, scale: 1, y: 0 }}
+                                    transition={{
+                                      duration: 0.4,
+                                      delay: 0.35,
+                                      ease: "easeOut"
+                                    }}
+                                    whileHover={{
+                                      scale: 1.02,
+                                      boxShadow: "0 4px 12px rgba(20, 184, 166, 0.15)",
+                                      borderColor: "rgb(20, 184, 166)"
+                                    }}
+                                  >
+                                    <div className="flex items-center justify-between mb-2">
+                                      <span className="text-xs font-medium text-gray-600">Inclusivity & Sustainability</span>
+                                      <div className="flex items-center gap-1">
+                                        <motion.span
+                                          className="text-sm font-bold text-teal-600"
+                                          initial={{ scale: 0 }}
+                                          animate={{ scale: 1 }}
+                                          transition={{ delay: 0.55, type: "spring", stiffness: 500 }}
+                                        >
+                                          {app['A3.6 Inclusivity & Sustainability '] || 0}
+                                        </motion.span>
+                                        <span className="text-xs text-gray-400">/5</span>
+                                      </div>
+                                    </div>
+                                    {app['Logic.5'] && (
+                                      <motion.p
+                                        className="text-xs leading-relaxed text-gray-700"
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        transition={{ delay: 0.65 }}
+                                      >
+                                        {app['Logic.5']}
+                                      </motion.p>
+                                    )}
+                                  </motion.div>
                                 </div>
-                              )}
+
+                                {/* Overall Summary */}
+                                <div className="pt-2 mt-2 border-t border-gray-200">
+
+                                  {app['REASON(Evaluators Comments)'] && (
+                                    <div className="mt-1">
+                                      <div className="mb-2 text-xs font-medium tracking-wide text-gray-500 uppercase">Overall Evaluator Comments</div>
+                                      <div className="text-sm leading-relaxed text-gray-800">
+                                        {app['REASON(Evaluators Comments)']}
+                                      </div>
+                                    </div>
+                                  )}
+                                </div>
+                              </div>
                             </div>
                           </motion.div>
                         )}
@@ -233,14 +496,14 @@ function HumanCountiesAnalysis() {
               </div>
 
               {/* Pending Review - applicants with zero score */}
-              {currentGroup.applicants.filter(a => getNumericScore(a) === 0 &&  String(a['PASS/FAIL'] || '').toLowerCase() !== 'fail').length > 0 && (
+              {pending.length > 0 && (
                 <div className="mb-8 overflow-hidden border border-yellow-200 rounded-lg shadow-sm bg-yellow-50">
                   <div className="px-4 py-3 border-b border-yellow-200 bg-gradient-to-r from-yellow-50 to-yellow-100">
                     <h3 className="flex items-center gap-2 text-lg font-semibold text-yellow-900"><div className="w-2 h-2 bg-yellow-500 rounded-full" />Pending Review</h3>
                   </div>
                   <div className="p-4 divide-y divide-yellow-100">
                     {pending.map((app, idx) => (
-                      <div key={app['Application ID'] + '_pending_' + idx} className="flex items-center justify-between p-3">
+                      <div key={`${app['Application ID']}-pending-${idx}`} className="flex items-center justify-between p-3">
                         <div>
                           <div className="font-medium text-yellow-900">{app['Application ID']}</div>
                           <div className="text-sm text-yellow-700">{app['REASON(Evaluators Comments)'] || ''}</div>
@@ -263,7 +526,7 @@ function HumanCountiesAnalysis() {
                       const globalRank = currentGroup ? currentGroup.applicants.findIndex(a => String(a['Application ID']) === String(app['Application ID'])) + 1 : idx + 3;
                       const score = getNumericScore(app);
                       return (
-                        <div key={app['Application ID'] + '_other_' + idx} className="flex items-center justify-between p-3">
+                        <div key={`${app['Application ID']}-other-${idx}`} className="flex items-center justify-between p-3">
                           <div>
                             <div className="font-medium text-yellow-900">#{globalRank} {app['Application ID']}</div>
                             <div className="text-sm text-yellow-700">{app['REASON(Evaluators Comments)'] || ''}</div>
@@ -279,7 +542,7 @@ function HumanCountiesAnalysis() {
               <div className="p-6 bg-white border border-gray-200 rounded-lg shadow-sm chart-card">
                 <h3 className="mb-4">Failed / Ineligible Applicants</h3>
                 <div className="space-y-3">
-                  {currentGroup.applicants.filter(a => String(a['PASS/FAIL'] || '').toLowerCase() === 'fail').map((app) => (
+                  {failed.map((app) => (
                     <div key={app['Application ID']} className="p-4 border border-red-200 rounded-lg bg-red-50">
                       <div className="flex items-start justify-between mb-2">
                         <div>
@@ -299,7 +562,11 @@ function HumanCountiesAnalysis() {
             </>
           ) : (
             <div className="text-center text-gray-600 welcome-message">
-              <Target size={48} />
+              <div className="flex items-center justify-center w-12 h-12 mx-auto mb-4 text-gray-400 bg-gray-100 rounded-full">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                </svg>
+              </div>
               <h2 className="mt-4 text-2xl font-semibold">Select a County</h2>
               <p className="mt-2">Choose a county from the list on the left to view final-scored top applicants and failed applicants.</p>
             </div>
