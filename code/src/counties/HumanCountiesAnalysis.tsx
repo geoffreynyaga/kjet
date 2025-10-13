@@ -155,26 +155,79 @@ function HumanCountiesAnalysis() {
               const isUnknown = g.county === 'UNKNOWN';
               const selected = selectedCounty === g.county;
               return (
-                <div
+                <motion.div
                   key={g.county}
+                  initial={{ opacity: 0, x: -20, scale: 0.95 }}
+                  animate={{ opacity: 1, x: 0, scale: 1 }}
+                  transition={{
+                    duration: 0.4,
+                    delay: i * 0.05,
+                    ease: "easeOut"
+                  }}
+                  whileHover={{
+                    scale: 1.02,
+                    x: 4,
+                    boxShadow: selected
+                      ? "0 8px 25px rgba(59, 130, 246, 0.25)"
+                      : isUnknown
+                        ? "0 6px 20px rgba(239, 68, 68, 0.15)"
+                        : "0 6px 20px rgba(0, 0, 0, 0.1)",
+                    transition: { duration: 0.2, ease: "easeOut" }
+                  }}
+                  whileTap={{ scale: 0.98 }}
                   onClick={() => { setSelectedCounty(g.county); setExpandedRanks(new Set([1, 2])); }}
-                  className={`relative flex items-center gap-3 px-3 py-2 rounded-lg cursor-pointer transition-all duration-150 ${selected ? 'bg-blue-100 border-2 border-blue-500 shadow-md' : isUnknown ? 'bg-red-50 hover:bg-red-100 border border-red-100 hover:border-red-200' : 'bg-gray-50 hover:bg-gray-100 border border-transparent hover:border-gray-300'}`}
+                  className={`relative flex items-center gap-3 px-3 py-2 rounded-lg cursor-pointer transition-all duration-200 ${selected ? 'bg-blue-100 border-2 border-blue-500 shadow-lg' : isUnknown ? 'bg-red-50 hover:bg-red-100 border border-red-100 hover:border-red-300' : 'bg-gray-50 hover:bg-gray-100 border border-transparent hover:border-gray-400'}`}
                 >
                   {/* applicant count badge (top-right) */}
-                  <div className="absolute top-2 right-3">
-                    <span className={`inline-flex items-center justify-center px-2 py-0.5 text-xs font-semibold rounded-full ${isUnknown ? 'bg-red-600 text-white' : 'bg-blue-100 text-blue-800'}`}>{g.applicants.length}</span>
-                  </div>
-
-
+                  <motion.div
+                    className="absolute top-2 right-3"
+                    initial={{ opacity: 0, scale: 0 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: i * 0.05 + 0.2, type: "spring", stiffness: 500 }}
+                  >
+                    <span className={`inline-flex items-center justify-center px-2 py-0.5 text-xs font-semibold rounded-full transition-all duration-200 ${isUnknown ? 'bg-red-600 text-white' : selected ? 'bg-blue-600 text-white' : 'bg-blue-100 text-blue-800 group-hover:bg-blue-200'}`}>
+                      {g.applicants.length}
+                    </span>
+                  </motion.div>
 
                   <div className="flex-1 min-w-0">
-                    <div className={`truncate ${isUnknown ? 'font-semibold text-red-900' : 'font-medium text-gray-900'} font-sans tracking-tight`}>{g.county}</div>
-                    <div className="flex items-center mt-1 space-x-4 text-xs text-gray-600">
-                      <div className="flex items-center gap-1"><span className="text-gray-500">Pass</span><span className="font-semibold text-green-600">{g.applicants.filter(a => getPassFailStatus(a) === 'pass').length}</span></div>
-                      <div className="flex items-center gap-1"><span className="text-gray-500">Fail</span><span className="font-semibold text-red-600">{g.applicants.filter(a => getPassFailStatus(a) === 'fail').length}</span></div>
-                    </div>
+                    <motion.div
+                      className={`truncate ${isUnknown ? 'font-semibold text-red-900' : 'font-medium text-gray-900'} font-sans tracking-tight transition-colors duration-200`}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ delay: i * 0.05 + 0.1 }}
+                    >
+                      {g.county}
+                    </motion.div>
+                    <motion.div
+                      className="flex items-center mt-1 space-x-4 text-xs text-gray-600"
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: i * 0.05 + 0.15 }}
+                    >
+                      <div className="flex items-center gap-1">
+                        <span className="text-gray-500">Pass</span>
+                        <motion.span
+                          className="font-semibold text-green-600"
+                          whileHover={{ scale: 1.1 }}
+                          transition={{ type: "spring", stiffness: 400 }}
+                        >
+                          {g.applicants.filter(a => getPassFailStatus(a) === 'pass').length}
+                        </motion.span>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <span className="text-gray-500">Fail</span>
+                        <motion.span
+                          className="font-semibold text-red-600"
+                          whileHover={{ scale: 1.1 }}
+                          transition={{ type: "spring", stiffness: 400 }}
+                        >
+                          {g.applicants.filter(a => getPassFailStatus(a) === 'fail').length}
+                        </motion.span>
+                      </div>
+                    </motion.div>
                   </div>
-                </div>
+                </motion.div>
               );
             })}
           </div>
@@ -184,7 +237,7 @@ function HumanCountiesAnalysis() {
           {currentGroup ? (
             <>
               <div className="mb-8 overflow-hidden bg-white border border-gray-200 rounded-lg shadow-sm">
-                <div className="px-4 py-3 border-b border-green-200 bg-gradient-to-r from-green-50 to-emerald-50">
+                <div className="px-4 py-3 border-b border-green-200 bg-gradient-to-r from-[#2cb978] to-[#83e85a]">
                   <h3 className="flex items-center gap-2 text-lg font-semibold text-green-900"><div className="w-2 h-2 bg-green-500 rounded-full" />Top Ranked Candidates</h3>
                 </div>
                 <div className="divide-y divide-gray-100">
@@ -518,8 +571,8 @@ function HumanCountiesAnalysis() {
               {/* Other Ranked Candidates (non-top two, scored >0) */}
               {otherRanked.length > 0 && (
                 <div className="mb-6 overflow-hidden bg-white border border-yellow-200 rounded-lg shadow-sm">
-                  <div className="px-4 py-3 border-b border-yellow-200 bg-gradient-to-r from-yellow-50 to-yellow-100">
-                    <h3 className="flex items-center gap-2 text-lg font-semibold text-yellow-900"><div className="w-2 h-2 bg-yellow-500 rounded-full" />Other Ranked Candidates</h3>
+                  <div className="px-4 py-3 border-b border-yellow-200 bg-gradient-to-r from-[#f3ce7a] to-[#feb062]">
+                    <h3 className="flex items-center gap-2 text-lg font-semibold text-yellow-900"><div className="w-2 h-2 bg-[#f3ce7a] rounded-full" />Other Ranked Candidates</h3>
                   </div>
                   <div className="p-4 divide-y divide-yellow-100">
                     {otherRanked.map((app, idx) => {
@@ -543,17 +596,17 @@ function HumanCountiesAnalysis() {
                 <h3 className="mb-4">Failed / Ineligible Applicants</h3>
                 <div className="space-y-3">
                   {failed.map((app) => (
-                    <div key={app['Application ID']} className="p-4 border border-red-200 rounded-lg bg-red-50">
+                    <div key={app['Application ID']} className="p-4 border border-red-300 rounded-lg shadow-lg bg-gradient-to-br from-red-500 via-red-600 to-pink-600">
                       <div className="flex items-start justify-between mb-2">
                         <div>
-                          <strong className="text-red-900">{app['Application ID']}</strong>
-                          <span className="ml-2 text-sm text-red-700">(Reason: {app['REASON(Evaluators Comments)']})</span>
+                          <strong className="font-bold text-white">{app['Application ID']}</strong>
+                          <span className="ml-2 text-sm text-red-100">(Reason: {app['REASON(Evaluators Comments)']})</span>
                         </div>
-                        <div className="text-sm font-semibold text-red-800">N/A</div>
+                        <div className="px-2 py-1 text-sm font-semibold text-white bg-red-800 bg-opacity-50 rounded">N/A</div>
                       </div>
-                      <div className="text-sm text-gray-700">
-                        <div><strong>County:</strong> {app['E2. County Mapping']}</div>
-                        <div><strong>Composite (sum - penalty):</strong> {app['Sum of weighted scores - Penalty(if any)']}</div>
+                      <div className="text-sm text-red-50">
+                        <div><strong className="text-white">County:</strong> <span className="text-red-100">{app['E2. County Mapping']}</span></div>
+                        <div><strong className="text-white">Composite (sum - penalty):</strong> <span className="text-red-100">{app['Sum of weighted scores - Penalty(if any)']}</span></div>
                       </div>
                     </div>
                   ))}
