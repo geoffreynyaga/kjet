@@ -53,6 +53,10 @@ convert-csv:
 	@echo "Converting CSV files to JSON format for dashboard"
 	python3 convert_csv_to_json.py
 
+comparison:
+	@echo "Running comparison script"
+	$(PY) scripts/compare_old_and_new/extract_comparison_data.py
+
 src:
 	@echo "Copying evaluation outputs to React public folder"
 	@mkdir -p code/public/output-results
@@ -78,6 +82,7 @@ run: install
 	$(MAKE) src
 	$(MAKE) human
 	$(MAKE) convert-csv
+	$(MAKE) comparison
 
 	@echo "Full pipeline complete."
 

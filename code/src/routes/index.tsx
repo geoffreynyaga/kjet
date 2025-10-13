@@ -1,4 +1,4 @@
-import { ApplicationFiles, ComparisonDashboard, HumanCountiesAnalysis, LLMCountiesAnalysis, StatisticsDashboard } from '../counties';
+import { ApplicationFiles, ComparisonDashboard, FirstandSecond, HumanCountiesAnalysis, LLMCountiesAnalysis, StatisticsDashboard } from '../counties';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import CountiesHome from '../counties';
@@ -15,6 +15,7 @@ export default function RoutesApp() {
                <Route path="/results" element={<HumanCountiesAnalysis />} />
                <Route path="/statistics" element={<StatisticsDashboard />} />
                <Route path="/comparison" element={<ComparisonDashboard />} />
+                <Route path="/firstandsecond" element={<FirstandSecond />} />
             </Routes>
         </BrowserRouter>
     )
