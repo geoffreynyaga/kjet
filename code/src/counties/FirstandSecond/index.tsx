@@ -94,7 +94,16 @@ const FirstandSecond: React.FC = () => {
     const noChange = data.filter(item => item["ALL SCORED"] > 0 && item["ONLY PASS"] === 0).length;
     const averageFirstRound = data.reduce((sum, item) => sum + item["ALL SCORED"], 0) / totalApplicants;
     const averageSecondRound = data.reduce((sum, item) => {
-      return sum + (typeof item["ONLY PASS"] === 'number' ? item["ONLY PASS"] : 0);
+      // If second round is a positive number, use it
+      if (typeof item["ONLY PASS"] === 'number' && item["ONLY PASS"] > 0) {
+        return sum + item["ONLY PASS"];
+      }
+      // If second round is 0 (no change) or "DQ", use first round score
+      else if (item["ONLY PASS"] === 0 || item["ONLY PASS"] === "DQ") {
+        return sum + item["ALL SCORED"];
+      }
+      // Fallback (shouldn't happen but just in case)
+      return sum + item["ALL SCORED"];
     }, 0) / totalApplicants;
 
     return {
