@@ -9,7 +9,7 @@ import CountiesHome from './counties.tsx';
 import FirstandSecond from './FirstandSecond/index.tsx';
 import HumanCountiesAnalysis from './HumanCountiesAnalysis/index.tsx';
 import LLMCountiesAnalysis from './LLMCountiesAnalysis.tsx';
-import StatisticsDashboard from './StatisticsDashboard.tsx';
+import StatisticsDashboard from './StatisticsDashboard/index.tsx';
 
 export { CountiesHome, ApplicationFiles, LLMCountiesAnalysis, HumanCountiesAnalysis, StatisticsDashboard, ComparisonDashboard,FirstandSecond };
 export default CountiesHome;
