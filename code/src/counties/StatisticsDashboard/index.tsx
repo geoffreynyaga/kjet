@@ -23,7 +23,7 @@ function StatisticsDashboard() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen ">
       <div className="p-8 mx-auto max-w-7xl">
         {/* National Overview Cards */}
         {nationalStats && <NationalOverviewCards nationalStats={nationalStats} />}
