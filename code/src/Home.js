@@ -104,13 +104,21 @@ export default function Home() {
           >
             Final Analysis
           </motion.a>
-          <motion.a
+          {/* <motion.a
             href="/comparison"
             className="px-6 py-2 font-medium text-white no-underline transition-colors duration-200 bg-indigo-600 rounded-lg hover:bg-indigo-700"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             Human vs Algorithm
+          </motion.a> */}
+          <motion.a
+            href="/firstandsecond"
+            className="px-6 py-2 font-medium text-white no-underline transition-colors duration-200 bg-indigo-600 rounded-lg hover:bg-indigo-700"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            First vs Second
           </motion.a>
         </motion.div>
       </motion.nav>
