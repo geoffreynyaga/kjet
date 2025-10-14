@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import { CountyGroup } from '../types/index.ts';
 import { getNumericScore } from '../utils/index.ts';
@@ -10,8 +10,53 @@ interface CountyListProps {
 }
 
 export default function CountyList({ groups, selectedCounty, onCountySelect }: CountyListProps) {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const countyRefs = useRef<Map<string, HTMLDivElement>>(new Map());
+
+  // Function to set ref for each county item
+  const setCountyRef = useCallback((county: string, element: HTMLDivElement | null) => {
+    if (element) {
+      countyRefs.current.set(county, element);
+    } else {
+      countyRefs.current.delete(county);
+    }
+  }, []);
+
+  // Scroll to selected county when it changes
+  useEffect(() => {
+    if (selectedCounty && containerRef.current) {
+      const selectedElement = countyRefs.current.get(selectedCounty);
+      if (selectedElement) {
+        // Get container dimensions
+        const container = containerRef.current;
+        const containerTop = container.scrollTop;
+        const containerHeight = container.clientHeight;
+        const containerBottom = containerTop + containerHeight;
+
+        // Get element position relative to container
+        const elementTop = selectedElement.offsetTop;
+        const elementHeight = selectedElement.clientHeight;
+        const elementBottom = elementTop + elementHeight;
+
+        // Check if element is not fully visible
+        const isAbove = elementTop < containerTop + 100; // Add some padding
+        const isBelow = elementBottom > containerBottom - 100; // Add some padding
+
+        if (isAbove || isBelow) {
+          // Scroll to center the element in the container
+          const scrollTo = elementTop - (containerHeight / 2) + (elementHeight / 2);
+          container.scrollTo({
+            top: Math.max(0, scrollTo),
+            behavior: 'smooth'
+          });
+        }
+      }
+    }
+  }, [selectedCounty]);
+
   return (
     <motion.div
+      ref={containerRef}
       className="sticky top-0 h-screen overflow-y-auto bg-white shadow-lg w-80"
       initial={{ opacity: 0, x: -20 }}
       animate={{ opacity: 1, x: 0 }}
@@ -29,6 +74,7 @@ export default function CountyList({ groups, selectedCounty, onCountySelect }: C
           return (
             <motion.div
               key={g.county}
+              ref={(el) => setCountyRef(g.county, el)}
               initial={{ opacity: 0, x: -20, scale: 0.95 }}
               animate={{ opacity: 1, x: 0, scale: 1 }}
               transition={{

@@ -149,7 +149,7 @@ function CountiesHome() {
   if (loading) {
     return (
       <div className="flex items-center justify-center min-h-screen bg-gray-50">
-        <motion.div 
+        <motion.div
           className="text-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -164,7 +164,7 @@ function CountiesHome() {
 
   if (error) {
     return (
-      <motion.div 
+      <motion.div
         className="flex items-center justify-center min-h-screen bg-gray-50"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -182,7 +182,7 @@ function CountiesHome() {
   if (!nationalSummary) {
     return (
       <div className="flex items-center justify-center min-h-screen bg-gray-50">
-        <motion.div 
+        <motion.div
           className="text-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -194,10 +194,10 @@ function CountiesHome() {
     );
   }
 
- 
+
   return (
     <div className="min-h-screen bg-gray-50">
-      <motion.header 
+      <motion.header
         className="px-8 py-6 bg-white border-b border-gray-200 shadow-sm"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -211,7 +211,7 @@ function CountiesHome() {
 
       <div className="flex mx-auto max-w-7xl">
         {/* Sidebar with county list */}
-        <motion.div 
+        <motion.div
           className="sticky top-0 h-screen overflow-y-auto bg-white shadow-lg w-80"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -229,8 +229,8 @@ function CountiesHome() {
                 <motion.div
                   key={county}
                   className={`p-4 rounded-lg cursor-pointer transition-all duration-200 ${
-                    isSelected 
-                      ? 'bg-blue-100 border-2 border-blue-500 shadow-md' 
+                    isSelected
+                      ? 'bg-blue-100 border-2 border-blue-500 shadow-md'
                       : 'bg-gray-50 hover:bg-gray-100 border-2 border-transparent hover:border-gray-300'
                   }`}
                   onClick={() => loadCountyData(county)}
@@ -253,7 +253,7 @@ function CountiesHome() {
                     {countyStats.scored_applications > 0 && (
                       <div className="flex justify-between">
                         <span className="text-gray-600">Avg Score:</span>
-                        <span 
+                        <span
                           className="font-medium"
                           title={`Average score: ${countyStats.average_score.toFixed(1)}`}
                           style={{ color: getScoreColor(countyStats.average_score) }}
@@ -270,7 +270,7 @@ function CountiesHome() {
         </motion.div>
 
         {/* Main content area */}
-        <motion.div 
+        <motion.div
           className="flex-1 p-8"
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}

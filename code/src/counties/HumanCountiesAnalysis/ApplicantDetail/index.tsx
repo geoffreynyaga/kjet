@@ -14,7 +14,7 @@ function ApplicantDetail() {
   const { applicant, countyApplicants, loading: applicantLoading, error: applicantError } = useApplicantData(applicationId);
   const { files, loading: filesLoading } = useApplicationFiles(applicationId);
 
-  const handleBack = () => navigate('/results');
+  const handleBack = () => navigate(-1);
 
   if (applicantLoading) {
     return <LoadingState />;

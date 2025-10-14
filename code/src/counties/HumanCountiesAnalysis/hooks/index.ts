@@ -57,14 +57,76 @@ export function useCountySelection(groups: CountyGroup[]) {
   const [selectedCounty, setSelectedCounty] = useState<string | null>(null);
   const [expandedRanks, setExpandedRanks] = useState<Set<number>>(new Set());
 
+  // Function to get county from URL hash
+  const getCountyFromHash = (): string | null => {
+    const hash = window.location.hash.replace('#', '');
+    if (!hash) return null;
+
+    // Decode URL-encoded characters (like %20 for spaces)
+    const decodedHash = decodeURIComponent(hash);
+    return decodedHash.toUpperCase();
+  };
+
+  // Function to set county in URL hash
+  const setCountyInHash = (county: string | null) => {
+    if (county) {
+      // Encode the county name to handle spaces and special characters
+      const encodedCounty = encodeURIComponent(county.toLowerCase());
+      window.location.hash = encodedCounty;
+    } else {
+      window.location.hash = '';
+    }
+  };
+
+  // Function to update selected county and URL hash
+  const updateSelectedCounty = (county: string | null) => {
+    setSelectedCounty(county);
+    setCountyInHash(county);
+  };
+
+  // Initialize county selection on component mount
   useEffect(() => {
     if (groups.length > 0) {
-      const known = groups.filter(g => g.county !== 'UNKNOWN');
-      const unknown = groups.find(g => g.county === 'UNKNOWN');
-      setSelectedCounty(known.length ? known[0].county : (unknown ? unknown.county : null));
-      setExpandedRanks(new Set([1, 2]));
+      const hashCounty = getCountyFromHash();
+
+      // Check if hash county exists in the groups
+      const validHashCounty = hashCounty && groups.find(g =>
+        g.county.toUpperCase() === hashCounty.toUpperCase()
+      );
+
+      if (validHashCounty) {
+        // Use county from hash if valid
+        setSelectedCounty(validHashCounty.county);
+        setExpandedRanks(new Set([1, 2]));
+      } else {
+        // Default to first known county
+        const known = groups.filter(g => g.county !== 'UNKNOWN');
+        const unknown = groups.find(g => g.county === 'UNKNOWN');
+        const defaultCounty = known.length ? known[0].county : (unknown ? unknown.county : null);
+        updateSelectedCounty(defaultCounty);
+        setExpandedRanks(new Set([1, 2]));
+      }
     }
   }, [groups]);
+
+  // Listen for hash changes
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hashCounty = getCountyFromHash();
+      if (hashCounty && groups.length > 0) {
+        const validHashCounty = groups.find(g =>
+          g.county.toUpperCase() === hashCounty.toUpperCase()
+        );
+        if (validHashCounty && validHashCounty.county !== selectedCounty) {
+          setSelectedCounty(validHashCounty.county);
+          setExpandedRanks(new Set([1, 2]));
+        }
+      }
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, [groups, selectedCounty]);
 
   const toggleExpand = (rank: number) => {
     const s = new Set(expandedRanks);
@@ -74,7 +136,7 @@ export function useCountySelection(groups: CountyGroup[]) {
 
   return {
     selectedCounty,
-    setSelectedCounty,
+    setSelectedCounty: updateSelectedCounty,
     expandedRanks,
     setExpandedRanks,
     toggleExpand
