@@ -69,24 +69,71 @@ function LLMCountiesAnalysis() {
 
       // Load all county data
       const analyses: CountyAnalysis[] = [];
+      const failedCounties: string[] = [];
 
       for (let i = 0; i < availableCounties.length; i++) {
         const county = availableCounties[i];
         setLoadingMessage(`Loading ${county} County... (${i + 1}/${availableCounties.length})`);
         try {
-          // Convert county name to filename format (lowercase, spaces preserved, apostrophes preserved)
-          const filename = county.toLowerCase().replace('\'', '');
+          // Convert county name to filename format (lowercase, spaces preserved, apostrophes removed)
+          const filename = county.toLowerCase().replace(/'/g, '');
+          console.log(`Attempting to fetch: /gemini/${filename}.json for county: ${county}`);
+
           const response = await fetch(`/gemini/${filename}.json`);
-          const data: LLMAnalysisData = await response.json();
+
+          // Check if response is ok and content type is JSON
+          if (!response.ok) {
+            throw new Error(`HTTP ${response.status}: ${response.statusText} for /gemini/${filename}.json`);
+          }
+
+          const contentType = response.headers.get('content-type');
+          if (contentType && contentType.includes('text/html')) {
+            // This is likely a 404 page or error page
+            throw new Error(`Received HTML instead of JSON for /gemini/${filename}.json - file may not exist`);
+          }
+
+          const rawData = await response.json();
+
+          // Transform the data structure to match our interface
+          let data: LLMAnalysisData;
+
+          if (rawData.applications) {
+            // New format: has 'applications' array with mixed eligible/ineligible
+            const eligible = rawData.applications.filter((app: any) => app.eligibility_status === 'ELIGIBLE');
+            const ineligible = rawData.applications.filter((app: any) => app.eligibility_status === 'INELIGIBLE');
+
+            data = {
+              report_title: rawData.report_title || '',
+              selection_criteria_weights: rawData.selection_criteria_weights || {},
+              ranked_applicants: eligible,
+              ineligible_applicants: ineligible
+            };
+          } else {
+            // Old format: already has separate arrays
+            data = rawData as LLMAnalysisData;
+          }
+
+          // Ensure the data has the expected structure
+          if (!data.ranked_applicants) {
+            data.ranked_applicants = [];
+          }
+          if (!data.ineligible_applicants) {
+            data.ineligible_applicants = [];
+          }
+
           analyses.push({
             county: county,
             data: data
           });
+          console.log(`Successfully loaded data for ${county}`);
         } catch (err) {
           console.warn(`Failed to load data for ${county}:`, err);
+          failedCounties.push(county);
           // Continue with other counties even if one fails
         }
       }
+
+      console.log(`Successfully loaded ${analyses.length} counties, failed: ${failedCounties.length}`, failedCounties);
 
       setLoadingMessage('Finalizing dashboard...');
 
@@ -97,7 +144,8 @@ function LLMCountiesAnalysis() {
         // Set the first ranked applicant (rank 1) as expanded by default
         setExpandedApplicants(new Set([1]));
       } else {
-        setError('No county data could be loaded');
+        console.error('No county data could be loaded. Please check that JSON files exist in /public/gemini/');
+        setError(`No county data could be loaded. Failed counties: ${failedCounties.join(', ')}`);
       }
 
       setLoading(false);
@@ -137,7 +185,7 @@ function LLMCountiesAnalysis() {
   };
 
   const nextPage = () => {
-    if (countyData && (currentPage + 1) * applicationsPerPage < countyData.ranked_applicants.length) {
+    if (countyData && countyData.ranked_applicants && (currentPage + 1) * applicationsPerPage < countyData.ranked_applicants.length) {
       setCurrentPage(currentPage + 1);
     }
   };
@@ -148,8 +196,8 @@ function LLMCountiesAnalysis() {
     }
   };
 
-  const getCurrentPageApplications = () => {
-    if (!countyData) return [];
+  const getCurrentPageApplicants = () => {
+    if (!countyData || !countyData.ranked_applicants) return [];
     const startIndex = currentPage * applicationsPerPage;
     const endIndex = startIndex + applicationsPerPage;
     return countyData.ranked_applicants.slice(startIndex, endIndex);
@@ -267,7 +315,7 @@ function LLMCountiesAnalysis() {
                   <div className="space-y-1 text-sm">
                     <div className="flex justify-between">
                       <span className="text-gray-600">Total:</span>
-                      <span className="font-medium text-blue-600">{analysis.data.ranked_applicants.length}</span>
+                      <span className="font-medium text-blue-600">{analysis.data.ranked_applicants?.length || 0}</span>
                     </div>
                   </div>
                 </motion.div>
@@ -289,7 +337,7 @@ function LLMCountiesAnalysis() {
               <div className="county-header">
                 <h2>{selectedCounty} County Analysis</h2>
               </div>              {/* Top Two Ranked Candidates with Accordion */}
-              {countyData.ranked_applicants.length >= 2 && (
+              {countyData.ranked_applicants && countyData.ranked_applicants.length >= 2 && (
                 <div className="mb-8 overflow-hidden bg-white border border-gray-200 rounded-lg shadow-sm">
                   <div className="px-4 py-3 border-b border-green-200 bg-gradient-to-r from-green-50 to-emerald-50">
                     <h3 className="flex items-center gap-2 text-lg font-semibold text-green-900">
@@ -298,7 +346,7 @@ function LLMCountiesAnalysis() {
                     </h3>
                   </div>
                   <div className="divide-y divide-gray-100">
-                    {countyData.ranked_applicants.slice(0, 2).map((applicant, index) => (
+                    {countyData.ranked_applicants?.slice(0, 2).map((applicant, index) => (
                       <motion.div
                         key={applicant.application_id}
                         className="transition-all duration-200"
@@ -383,11 +431,11 @@ function LLMCountiesAnalysis() {
                       Previous
                     </button>
                     <span className="text-sm font-medium text-gray-600">
-                      Page {currentPage + 1} of {Math.ceil(countyData.ranked_applicants.length / applicationsPerPage)}
+                      Page {currentPage + 1} of {Math.ceil((countyData.ranked_applicants?.length || 0) / applicationsPerPage)}
                     </span>
                     <button
                       onClick={nextPage}
-                      disabled={(currentPage + 1) * applicationsPerPage >= countyData.ranked_applicants.length}
+                      disabled={(currentPage + 1) * applicationsPerPage >= (countyData.ranked_applicants?.length || 0)}
                       className="px-4 py-2 text-sm font-medium text-white transition-all duration-200 rounded-lg shadow-sm bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 disabled:from-gray-300 disabled:to-gray-400 disabled:cursor-not-allowed"
                     >
                       Next
@@ -396,7 +444,7 @@ function LLMCountiesAnalysis() {
                 </div>
 
                 <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-                  {getCurrentPageApplications().map((applicant) => (
+                  {getCurrentPageApplicants().map((applicant) => (
                     <div key={applicant.application_id} className="p-4 transition-shadow duration-200 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md">
                       <div className="flex items-start justify-between mb-3">
                         <div className="flex items-center gap-3">
@@ -428,11 +476,11 @@ function LLMCountiesAnalysis() {
               </div>
 
               {/* Ineligible Applicants */}
-              {countyData.ineligible_applicants.length > 0 && (
+              {countyData.ineligible_applicants && countyData.ineligible_applicants.length > 0 && (
                 <div className="chart-card">
-                  <h3>Ineligible Applicants ({countyData.ineligible_applicants.length})</h3>
+                  <h3>Ineligible Applicants ({countyData.ineligible_applicants?.length || 0})</h3>
                   <div className="mt-4 space-y-3">
-                    {countyData.ineligible_applicants.map((applicant) => (
+                    {countyData.ineligible_applicants?.map((applicant) => (
                       <div key={applicant.application_id} className="p-4 border border-red-200 rounded-lg bg-red-50">
                         <div className="flex items-start justify-between mb-2">
                           <div>

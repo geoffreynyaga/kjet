@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CountyGroup } from '../types/index.ts';
-import { getPassFailStatus } from '../utils/index.ts';
+import { getNumericScore } from '../utils/index.ts';
 
 interface CountyListProps {
   groups: CountyGroup[];
@@ -92,23 +92,33 @@ export default function CountyList({ groups, selectedCounty, onCountySelect }: C
                   transition={{ delay: i * 0.05 + 0.15 }}
                 >
                   <div className="flex items-center gap-1">
-                    <span className="text-gray-500">Pass</span>
+                    <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                    <span className="text-gray-500">Avg Score</span>
                     <motion.span
-                      className="font-semibold text-green-600"
+                      className="font-semibold text-blue-600"
                       whileHover={{ scale: 1.1 }}
                       transition={{ type: "spring", stiffness: 400 }}
                     >
-                      {g.applicants.filter(a => getPassFailStatus(a) === 'pass').length}
+                      {(() => {
+                        const scoredApplicants = g.applicants.filter(a => getNumericScore(a) > 0);
+                        if (scoredApplicants.length === 0) return '0';
+                        const avgScore = scoredApplicants.reduce((sum, a) => sum + getNumericScore(a), 0) / scoredApplicants.length;
+                        return Math.round(avgScore * 10) / 10;
+                      })()}
                     </motion.span>
                   </div>
                   <div className="flex items-center gap-1">
-                    <span className="text-gray-500">Fail</span>
+                    <div className="w-2 h-2 rounded-full bg-amber-500"></div>
+                    <span className="text-gray-500">Top Score</span>
                     <motion.span
-                      className="font-semibold text-red-600"
+                      className="font-semibold text-amber-600"
                       whileHover={{ scale: 1.1 }}
                       transition={{ type: "spring", stiffness: 400 }}
                     >
-                      {g.applicants.filter(a => getPassFailStatus(a) === 'fail').length}
+                      {g.applicants.length > 0
+                        ? Math.round(getNumericScore(g.applicants[0]) * 10) / 10
+                        : '0'
+                      }
                     </motion.span>
                   </div>
                 </motion.div>

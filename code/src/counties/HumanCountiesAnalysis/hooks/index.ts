@@ -83,15 +83,25 @@ export function useCountySelection(groups: CountyGroup[]) {
 
 export function useApplicantCategories(currentGroup: CountyGroup | null): ApplicantCategories {
   return currentGroup ? (() => {
-    const scored = currentGroup.applicants.filter(a => getNumericScore(a) > 0 && getPassFailStatus(a) !== 'fail');
-    const topTwo = scored.slice(0, 2);
-    const topTwoIds = new Set(topTwo.map(a => String(a['Application ID'])));
+    // All applicants with positive scores (above zero)
+    const positiveScored = currentGroup.applicants.filter(a => getNumericScore(a) > 0);
+
+    // Top two candidates (first two from the already sorted list)
+    const topTwo = positiveScored.slice(0, 2);
+
+    // Other ranked candidates (exclude top two)
+    const otherRanked = positiveScored.slice(2);
+
+    // Failed candidates (zero score or DQ status)
+    const failed = currentGroup.applicants.filter(a =>
+      getNumericScore(a) === 0
+    );
 
     return {
       topTwo,
-      pending: currentGroup.applicants.filter(a => getNumericScore(a) === 0 && getPassFailStatus(a) !== 'fail'),
-      failed: currentGroup.applicants.filter(a => getPassFailStatus(a) === 'fail'),
-      otherRanked: scored.filter(a => !topTwoIds.has(String(a['Application ID'])))
+      pending: [], // No longer needed
+      failed,
+      otherRanked
     };
   })() : { topTwo: [], pending: [], failed: [], otherRanked: [] };
 }

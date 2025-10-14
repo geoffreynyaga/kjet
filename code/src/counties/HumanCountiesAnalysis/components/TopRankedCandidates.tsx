@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ChevronDown, ChevronRight } from 'lucide-react';
+import { ChevronDown, ChevronRight, ExternalLink } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import { HumanApplicant, CountyGroup } from '../types/index.ts';
 import { getNumericScore, formatScore } from '../utils/index.ts';
 import ScoringBreakdown from './ScoringBreakdown.tsx';
@@ -18,6 +19,8 @@ export default function TopRankedCandidates({
   expandedRanks,
   onToggleExpand
 }: TopRankedCandidatesProps) {
+  const navigate = useNavigate();
+
   if (topTwo.length === 0) return null;
 
   return (
@@ -52,8 +55,21 @@ export default function TopRankedCandidates({
                   <div className="flex-1 min-w-0">
                     <h4 className="font-semibold text-gray-900 truncate">{app['Application ID']}</h4>
                   </div>
-                  <div className="text-right">
-                    <div className="inline-block px-3 py-1 mb-1 text-sm font-bold text-white bg-green-500 rounded-lg shadow-sm">
+                  <div className="flex items-center gap-3">
+
+                    <motion.button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        navigate(`/results/${app['Application ID']}`);
+                      }}
+                      className="flex items-center gap-2 px-3 py-1.5 text-xs font-medium text-white transition-all duration-300 bg-gradient-to-r from-sky-400 to-blue-400 rounded-lg shadow-sm hover:shadow-md hover:from-sky-500 hover:to-blue-500"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <ExternalLink size={14} />
+                      Details
+                    </motion.button>
+                    <div className="inline-block px-3 py-1 text-sm font-bold text-white bg-green-500 rounded-lg shadow-sm">
                       {formatScore(score)}
                     </div>
                   </div>
@@ -80,7 +96,14 @@ export default function TopRankedCandidates({
                     )}
 
                     {/* Detailed Scoring Breakdown */}
-                    <ScoringBreakdown app={app} />
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 0.3, duration: 0.4 }}
+                    >
+                      <ScoringBreakdown app={app} />
+                    </motion.div>
+
                   </div>
                 </motion.div>
               )}
