@@ -206,17 +206,20 @@ export const TopPerformingCounties: React.FC<TopPerformingCountiesProps> = ({ na
       </motion.div>
 
       {/* Bottom gradient accent */}
-      <motion.div
-        className="h-1 mt-0 rounded-full bg-gradient-to-r from-blue-500 via-orange-500 to-red-500 opacity-40"
-        initial={{ scaleX: 0, originX: 0 }}
-        animate={{ scaleX: 1 }}
-        transition={{
-          delay: 2.4,
-          duration: 1.0,
-          ease: "easeOut"
-        }}
-      />
-
+       <motion.div
+              className="h-1 mt-6 rounded-full"
+              style={{
+                background: 'linear-gradient(to right, #3B82F6, #A855F7, #EC4899)',
+                opacity: 0.3
+              }}
+              initial={{ scaleX: 0 }}
+              animate={{ scaleX: 1 }}
+              transition={{
+                delay: 2.0,
+                duration: 1.0,
+                ease: "easeOut"
+              }}
+            />
       {/* Performance insights */}
       <motion.div
         className="flex items-center justify-between mt-4 text-xs"

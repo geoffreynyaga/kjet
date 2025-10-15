@@ -159,16 +159,20 @@ export const ScoreDistribution: React.FC<ScoreDistributionProps> = ({ nationalSt
       </motion.div>
 
       {/* Bottom accent with animation */}
-      <motion.div
-        className="h-1 mt-6 rounded-full bg-gradient-to-r from-green-500 via-blue-500 via-purple-500 to-red-500 opacity-40"
-        initial={{ scaleX: 0 }}
-        animate={{ scaleX: 1 }}
-        transition={{
-          delay: 1.8,
-          duration: 1.2,
-          ease: "easeOut"
-        }}
-      />
+     <motion.div
+            className="h-1 mt-6 rounded-full"
+            style={{
+              background: 'linear-gradient(to right, #3B82F6, #A855F7, #EC4899)',
+              opacity: 0.3
+            }}
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{
+              delay: 2.0,
+              duration: 1.0,
+              ease: "easeOut"
+            }}
+          />
 
       {/* Legend dots */}
       <motion.div

@@ -4,6 +4,7 @@ import { formatScore, getNumericScore } from '../utils/index.ts';
 import { ArrowLeft } from 'lucide-react';
 import { HumanApplicant } from '../types/index.ts';
 import { motion } from 'framer-motion';
+import { s3BaseUrl } from '../../../utils';
 
 // Simple county ranking calculation (same as parent components)
 const getCountyRank = (applicant: HumanApplicant, allCountyApplicants: HumanApplicant[]): number => {
@@ -16,7 +17,7 @@ const fetchApplicantName = async (applicationId: string, county: string): Promis
     // Normalize county name to match file naming convention
     const normalizedCounty = county.toLowerCase().replace(/'/g, '');
     // console.log(normalizedCounty,"normalized county")
-    const response = await fetch(`/static/data/gemini/${normalizedCounty}.json`);
+    const response = await fetch(`${s3BaseUrl}/static/data/gemini/${normalizedCounty}.json`);
 
     if (!response.ok) {
       console.warn(`Failed to fetch data for county: ${county}`);

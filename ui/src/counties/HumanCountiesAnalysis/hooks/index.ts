@@ -2,6 +2,8 @@ import { ApplicantCategories, CountyGroup, HumanApplicant } from '../types/index
 import { getNumericScore, getPassFailStatus, processCountyName } from '../utils/index.ts';
 import { useEffect, useState } from 'react';
 
+import { s3BaseUrl } from '../../../utils';
+
 export function useHumanData() {
   const [groups, setGroups] = useState<CountyGroup[]>([]);
   const [loading, setLoading] = useState(true);
@@ -10,7 +12,7 @@ export function useHumanData() {
   const loadHumanData = async () => {
     try {
       setLoading(true);
-      const resp = await fetch('/static/data/kjet-human-final.json');
+      const resp = await fetch(`${s3BaseUrl}/static/data/kjet-human-final.json`);
       const data: HumanApplicant[] = await resp.json();
 
       // Group by county (E2. County Mapping)

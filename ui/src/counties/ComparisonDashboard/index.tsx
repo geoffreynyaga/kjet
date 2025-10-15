@@ -6,6 +6,7 @@ import { HumanApplicant } from './types.ts';
 import { filterHumanDataByCounty } from './utils.ts';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import { s3BaseUrl } from '../../utils';
 
 function ComparisonDashboard() {
   const navigate = useNavigate();
@@ -24,7 +25,7 @@ function ComparisonDashboard() {
       setLoading(true);
 
       // Load human data
-      const humanResponse = await fetch('/kjet-human-final.json');
+      const humanResponse = await fetch(`${s3BaseUrl}/kjet-human-final.json`);
       const data: HumanApplicant[] = await humanResponse.json();
       setHumanData(data);
 
@@ -69,7 +70,7 @@ function ComparisonDashboard() {
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center min-h-screen bg-gray-50">
+      <div className="flex items-center justify-center w-full min-h-screen bg-gray-50">
         <motion.div className="text-center" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
           <div className="mx-auto mb-4 loading-spinner" />
           <p className="text-lg text-gray-600">Loading comparison data...</p>
@@ -81,7 +82,7 @@ function ComparisonDashboard() {
   if (error) {
     return (
       <motion.div
-        className="flex items-center justify-center min-h-screen bg-gray-50"
+        className="flex items-center justify-center w-full min-h-screen bg-gray-50"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >

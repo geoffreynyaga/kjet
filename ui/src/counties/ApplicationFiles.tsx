@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 
 import { motion } from 'framer-motion';
+import { s3BaseUrl } from '../utils';
 
 interface ApplicationFile {
   filename: string;
@@ -35,7 +36,7 @@ function ApplicationFiles() {
   const loadApplicationFiles = async () => {
     try {
       setLoading(true);
-      const response = await fetch('/static/data/data_file_inventory.json');
+      const response = await fetch(`${s3BaseUrl}/static/data/data_file_inventory.json`);
       const data: ApplicationFilesData = await response.json();
 
       console.log(data,"data")
@@ -116,7 +117,7 @@ function ApplicationFiles() {
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center min-h-screen bg-gray-50">
+      <div className="flex items-center justify-center w-full min-h-screen bg-gray-50">
         <motion.div
           className="text-center"
           initial={{ opacity: 0, y: 20 }}
@@ -133,7 +134,7 @@ function ApplicationFiles() {
   if (error) {
     return (
       <motion.div
-        className="flex items-center justify-center min-h-screen bg-gray-50"
+        className="flex items-center justify-center w-full min-h-screen bg-gray-50"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
@@ -153,7 +154,7 @@ function ApplicationFiles() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="w-full min-h-screen bg-gray-50">
       <motion.header
         className="px-8 py-6 bg-white border-b border-gray-200 shadow-sm"
         initial={{ opacity: 0, y: -20 }}

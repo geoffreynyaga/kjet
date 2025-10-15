@@ -3,6 +3,7 @@ import { Bar, BarChart, CartesianGrid, Cell, Legend, Pie, PieChart, ResponsiveCo
 import React, { useEffect, useState } from 'react';
 
 import { motion } from 'framer-motion';
+import { s3BaseUrl } from '../utils';
 
 interface ScoreBreakdown {
   score: number;
@@ -63,7 +64,7 @@ function LLMCountiesAnalysis() {
       setLoadingMessage('Loading  Analysis Dashboard...');
 
       // Fetch the list of available counties
-      const countiesResponse = await fetch('/static/data/counties.json');
+      const countiesResponse = await fetch(`${s3BaseUrl}/static/data/counties.json`);
       const countiesData = await countiesResponse.json();
       const availableCounties = countiesData.counties;
 
@@ -79,7 +80,7 @@ function LLMCountiesAnalysis() {
           const filename = county.toLowerCase().replace(/'/g, '');
           console.log(`Attempting to fetch: /gemini/${filename}.json for county: ${county}`);
 
-          const response = await fetch(`/static/data/gemini/${filename}.json`);
+          const response = await fetch(`${s3BaseUrl}/static/data/gemini/${filename}.json`);
 
           // Check if response is ok and content type is JSON
           if (!response.ok) {
@@ -205,7 +206,7 @@ function LLMCountiesAnalysis() {
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center min-h-screen bg-gray-50">
+      <div className="flex items-center justify-center w-full min-h-screen bg-gray-50">
         <motion.div
           className="text-center"
           initial={{ opacity: 0, y: 20 }}
@@ -222,7 +223,7 @@ function LLMCountiesAnalysis() {
   if (error) {
     return (
       <motion.div
-        className="flex items-center justify-center min-h-screen bg-gray-50"
+        className="flex items-center justify-center w-full min-h-screen bg-gray-50"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
@@ -236,7 +237,7 @@ function LLMCountiesAnalysis() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="w-full min-h-screen bg-gray-50">
             <motion.header
         className="px-8 py-6 bg-white border-b border-gray-200 shadow-sm"
         initial={{ opacity: 0, y: -20 }}

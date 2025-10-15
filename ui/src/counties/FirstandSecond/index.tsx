@@ -11,6 +11,7 @@ import StatisticsGrid from './components/StatisticsGrid.tsx';
 import TableHeader from './components/TableHeader.tsx';
 import TableRow from './components/TableRow.tsx';
 import { useStatistics } from './hooks/useStatistics.ts';
+import { s3BaseUrl } from '../../utils';
 
 const FirstandSecond: React.FC = () => {
   const [data, setData] = useState<ComparisonData[]>([]);
@@ -31,7 +32,7 @@ const FirstandSecond: React.FC = () => {
   const fetchData = async () => {
     try {
       setLoading(true);
-      const response = await fetch('/static/data/baseline-combined.json');
+      const response = await fetch(`${s3BaseUrl}/static/data/baseline-combined.json`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }

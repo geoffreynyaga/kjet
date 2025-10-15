@@ -9,18 +9,18 @@ interface BusinessTypeDistributionProps {
 export const BusinessTypeDistribution: React.FC<BusinessTypeDistributionProps> = ({ nationalStats }) => {
   const maxValue = Math.max(...nationalStats.businessTypeDistribution.map(d => d.value));
 
-  // Modern gradient colors for each bar
-  const gradientColors = [
-    'from-blue-500 to-blue-600',
-    'from-purple-500 to-purple-600',
-    'from-green-500 to-green-600',
-    'from-orange-500 to-orange-600',
-    'from-pink-500 to-pink-600',
-    'from-indigo-500 to-indigo-600',
-    'from-teal-500 to-teal-600',
-    'from-red-500 to-red-600',
-    'from-yellow-500 to-yellow-600',
-    'from-cyan-500 to-cyan-600'
+  // Simple solid colors for each bar
+  const barColors = [
+    '#3B82F6', // blue
+    '#A855F7', // purple
+    '#10B981', // green
+    '#F97316', // orange
+    '#EC4899', // pink
+    '#6366F1', // indigo
+    '#14B8A6', // teal
+    '#EF4444', // red
+    '#EAB308', // yellow
+    '#06B6D4', // cyan
   ];
 
   return (
@@ -36,7 +36,12 @@ export const BusinessTypeDistribution: React.FC<BusinessTypeDistributionProps> =
         transition={{ delay: 0.6, duration: 0.5 }}
       >
         <h3 className="flex items-center mb-6 text-xl font-bold text-gray-900">
-          <div className="w-1 h-6 mr-3 rounded-full bg-gradient-to-b from-blue-500 to-purple-600"></div>
+          <div
+            className="w-1 h-6 mr-3 rounded-full"
+            style={{
+              background: 'linear-gradient(to bottom, #3B82F6, #A855F7)'
+            }}
+          ></div>
           Business Type Distribution
         </h3>
       </motion.div>
@@ -44,7 +49,7 @@ export const BusinessTypeDistribution: React.FC<BusinessTypeDistributionProps> =
       <div className="space-y-2">
         {nationalStats.businessTypeDistribution.map((item, index) => {
           const percentage = (item.value / maxValue) * 100;
-          const gradientClass = gradientColors[index % gradientColors.length];
+          const barColor = barColors[index % barColors.length];
 
           return (
             <motion.div
@@ -65,7 +70,8 @@ export const BusinessTypeDistribution: React.FC<BusinessTypeDistributionProps> =
 
                 <div className="relative flex-1 h-5 overflow-hidden bg-gray-100 rounded-full shadow-inner">
                   <motion.div
-                    className={`absolute inset-y-0 left-0 bg-gradient-to-r ${gradientClass} rounded-full shadow-sm`}
+                    className="absolute inset-y-0 left-0 rounded-full shadow-sm"
+                    style={{ backgroundColor: barColor }}
                     initial={{ width: 0 }}
                     animate={{ width: `${percentage}%` }}
                     transition={{
@@ -75,7 +81,8 @@ export const BusinessTypeDistribution: React.FC<BusinessTypeDistributionProps> =
                     }}
                   >
                     <motion.div
-                      className="absolute inset-0 bg-white rounded-full bg-opacity-20"
+                      className="absolute inset-0 bg-white rounded-full"
+                      style={{ opacity: 0.2 }}
                       initial={{ x: '-100%' }}
                       animate={{ x: '100%' }}
                       transition={{
@@ -95,7 +102,7 @@ export const BusinessTypeDistribution: React.FC<BusinessTypeDistributionProps> =
                       duration: 0.4
                     }}
                   >
-                    <span className="text-xs font-bold text-black-500 drop-shadow-sm">
+                    <span className="text-xs font-bold text-gray-900 drop-shadow-sm">
                       {item.value}
                     </span>
                   </motion.div>
@@ -121,7 +128,11 @@ export const BusinessTypeDistribution: React.FC<BusinessTypeDistributionProps> =
 
       {/* Subtle bottom accent */}
       <motion.div
-        className="h-1 mt-6 rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-30"
+        className="h-1 mt-6 rounded-full"
+        style={{
+          background: 'linear-gradient(to right, #3B82F6, #A855F7, #EC4899)',
+          opacity: 0.3
+        }}
         initial={{ scaleX: 0 }}
         animate={{ scaleX: 1 }}
         transition={{

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 
 import { HumanApplicant } from '../types/index.ts';
 import { getNumericScore } from '../utils/index.ts';
+import { s3BaseUrl } from '../../../utils';
 
 export interface ApplicationFile {
   filename: string;
@@ -33,7 +34,7 @@ export const useApplicantData = (applicationId: string | undefined) => {
         setLoading(true);
         setError(null);
 
-        const response = await fetch('/static/data/kjet-human-final.json');
+        const response = await fetch(`${s3BaseUrl}/static/data/kjet-human-final.json`);
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -84,7 +85,7 @@ export const useApplicationFiles = (applicationId: string | undefined) => {
         setLoading(true);
         setError(null);
 
-        const response = await fetch('/static/data/data_file_inventory.json');
+        const response = await fetch(`${s3BaseUrl}/static/data/data_file_inventory.json`);
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }

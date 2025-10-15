@@ -1,6 +1,7 @@
 import { COUNTIES, TIER_COLUMN } from '../utils/index.ts';
 import { CountyStats, NationalStats, StatisticsApplicant } from '../types/index.ts';
 import { useEffect, useState } from 'react';
+import { s3BaseUrl } from '../../../utils';
 
 export const useStatisticsData = () => {
   const [data, setData] = useState<StatisticsApplicant[]>([]);
@@ -16,7 +17,7 @@ export const useStatisticsData = () => {
   const loadStatisticsData = async () => {
     try {
       setLoading(true);
-      const resp = await fetch('/static/data/kjet-human-final.json');
+      const resp = await fetch(`${s3BaseUrl}/static/data/kjet-human-final.json`);
       const data: StatisticsApplicant[] = await resp.json();
 
       // Load women-owned data from county JSON files
@@ -46,7 +47,7 @@ export const useStatisticsData = () => {
     try {
       const promises = COUNTIES.map(async (county) => {
         try {
-          const response = await fetch(`/static/data/output-results/${county}_evaluation_results.json`);
+          const response = await fetch(`${s3BaseUrl}/static/data/output-results/${county}_evaluation_results.json`);
           if (!response.ok) return;
 
           const countyData = await response.json();

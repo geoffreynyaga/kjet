@@ -4,6 +4,9 @@ const { rspack } = require('@rspack/core');
 const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
+// Load environment variables from .env file
+require('dotenv').config();
+
 module.exports = defineConfig({
   entry: './src/index.tsx',
 
@@ -76,7 +79,8 @@ module.exports = defineConfig({
 
   plugins: [
     new rspack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development'),
+      'process.env.REACT_APP_S3_ENDPOINT_URL': JSON.stringify(process.env.REACT_APP_S3_ENDPOINT_URL || '')
     }),
 
     new WebpackManifestPlugin({
