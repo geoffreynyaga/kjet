@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block title %}KJET Analytics Dashboard – Kenya Jobs and Economic Transformation{% endblock %}
+
 {% block head %}
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,20 +13,24 @@
     <meta name="author" content="Government of Kenya, World Bank" />
 
     <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kjet.leadedgeconsults.com" />
+    <meta property="og:site_name" content="KJET Analytics" />
     <meta property="og:title" content="KJET Analytics Dashboard – Kenya Jobs and Economic Transformation" />
     <meta property="og:description" content="Analytics dashboard for Kenya Jobs and Economic Transformation (KJET) project. Track progress on creating and improving jobs for 45,000+ Kenyans through private sector investments and sustainable finance." />
     <meta property="og:image" content="https://kjet.s3.eu-west-1.amazonaws.com/static/logo/kjet.jpg" />
-
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="#" />
-    <meta property="og:site_name" content="KJET Analytics" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="KJET - Kenya Jobs and Economic Transformation Dashboard" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@LeadEdgeConsults" />
+    <meta name="twitter:creator" content="@LeadEdgeConsults" />
     <meta name="twitter:title" content="KJET Analytics – Kenya Jobs and Economic Transformation Dashboard" />
     <meta name="twitter:description" content="Government of Kenya project funded by World Bank to create jobs for 45,000+ Kenyans through private sector investments and sustainable finance." />
     <meta name="twitter:image" content="https://kjet.s3.eu-west-1.amazonaws.com/static/logo/kjet.jpg" />
-    <meta name="twitter:creator" content="@LeadEdgeConsults" />
+    <meta name="twitter:image:alt" content="KJET - Kenya Jobs and Economic Transformation Dashboard" />
 
     <!--  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css"/>
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css"/>
