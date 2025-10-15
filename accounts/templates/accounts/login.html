@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block title %}Log In{% endblock %}
+
+{% block content %}
+<div class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="w-full max-w-md p-8 bg-white rounded-lg shadow-lg">
+        <h2 class="mb-6 text-3xl font-bold text-center text-gray-800">Welcome Back</h2>
+
+        <!-- Show non-field errors (authentication errors) -->
+        {% if form.non_field_errors %}
+            <div class="p-4 mb-4 text-red-700 bg-red-100 border border-red-400 rounded-lg">
+                {% for error in form.non_field_errors %}
+                    <p>{{ error }}</p>
+                {% endfor %}
+            </div>
+        {% endif %}        <form method="post" class="space-y-6">
+            {% csrf_token %}
+            <div>
+                <label for="id_username" class="block text-sm font-medium text-gray-700">Username</label>
+                <input type="text" name="username" id="id_username" value="{{ form.username.value|default_if_none:'' }}"
+                       class="block w-full px-4 py-2 mt-1 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500" required>
+                {% if form.username.errors %}
+                    <div class="mt-1 text-sm text-red-600">
+                        {% for error in form.username.errors %}
+                            <p>{{ error }}</p>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+            <div>
+                <label for="id_password" class="block text-sm font-medium text-gray-700">Password</label>
+                <input type="password" name="password" id="id_password"
+                       class="block w-full px-4 py-2 mt-1 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500" required>
+                {% if form.password.errors %}
+                    <div class="mt-1 text-sm text-red-600">
+                        {% for error in form.password.errors %}
+                            <p>{{ error }}</p>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+            <button type="submit" class="w-full py-3 text-white transition bg-black rounded-lg hover:bg-gray-800">Log In</button>
+        </form>
+        <p class="mt-4 text-center text-gray-600">
+            Don't have an account? <a href="/accounts/signup/" class="text-blue-500 hover:underline">Sign Up</a>
+        </p>
+    </div>
+</div>
+{% endblock %}

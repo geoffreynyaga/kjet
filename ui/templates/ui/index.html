@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Kenya Jobs and Economic Transformation (KJET) Analytics Dashboard - A 5-year Government of Kenya project funded by the World Bank (2024-2029) to increase private sector investments, access to markets and sustainable finance to create and improve jobs for at least 45,000 Kenyans." />
+    <meta name="keywords" content="KJET, Kenya Jobs Economic Transformation, World Bank Kenya, MSME clusters, value chains, job creation, economic transformation, private sector investment, sustainable finance, Bottom-Up Economic Transformation Agenda" />
+    <meta name="author" content="Government of Kenya, World Bank" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="KJET Analytics Dashboard – Kenya Jobs and Economic Transformation" />
+    <meta property="og:description" content="Analytics dashboard for Kenya Jobs and Economic Transformation (KJET) project. Track progress on creating and improving jobs for 45,000+ Kenyans through private sector investments and sustainable finance." />
+    <meta property="og:image" content="{% static 'images/kjet-logo.png' %}" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="#" />
+    <meta property="og:site_name" content="KJET Analytics" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="KJET Analytics – Kenya Jobs and Economic Transformation Dashboard" />
+    <meta name="twitter:description" content="Government of Kenya project funded by World Bank to create jobs for 45,000+ Kenyans through private sector investments and sustainable finance." />
+    <meta name="twitter:image" content="{% static 'images/kjet-logo.png' %}" />
+    <meta name="twitter:creator" content="@LeadEdgeConsults" />
+
+ <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css"/>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
+
+
+    <style>
+        #loading-screen {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: white;
+            z-index: 9999;
+        }
+        #root {
+            display: none;
+        }
+          .sr-only {
+    display: none;
+  }
+
+
+    </style>
+{% endblock %}
+
+{% block body %}
+    <script>
+        window.djangoAuthenticated = '{{ user.is_authenticated|lower }}'
+        window.djangoUserPhoneNumber = '{{ user.phone_number |safe }}'
+        window.djangoUserPollingCenterCode = '{{ user.polling_center.code |safe }}'
+        window.djangoUserPollingCenterName = '{{ user.polling_center.name |safe }}'
+
+        window.djangoUserWardNumber = '{{ user.polling_center.ward.number |safe}}'
+        window.djangoUserWardName = '{{ user.polling_center.ward.name |safe}}'
+
+        window.djangoUserConstName = '{{ user.polling_center.ward.constituency.name |safe}}'
+        window.djangoUserConstNumber = '{{ user.polling_center.ward.constituency.number |safe}}'
+
+        window.djangoUserCountyName =
+            '{{ user.polling_center.ward.constituency.county.name |safe}}'
+        window.djangoUserCountyNumber =
+            '{{ user.polling_center.ward.constituency.county.number |safe}}'
+    </script>
+
+    {% comment %}For some reason if the above script is moved down, the variables are not passed{% endcomment %}
+
+    <div id="loading-screen" class="fixed inset-0 z-50 flex items-center justify-center bg-gray-50">
+        <div class="flex flex-col items-center space-y-8">
+            <!-- Loading SVG -->
+            <div class="relative">
+                <svg class="w-16 h-16 text-green-500 animate-spin" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="m4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+            </div>
+
+            <!-- Title -->
+            <div class="space-y-4 text-center">
+                <h2 class="text-3xl font-bold text-gray-900">Launching KJET Applications Data</h2>
+                <p class="text-lg text-gray-500">Setting things up...</p>
+            </div>
+
+            <div class="mx-auto">
+                <p class="text-xs text-center text-gray-600 md:text-sm">
+                    This may take a moment the first time as we set things up.<br />
+                    Future visits will be much faster!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex w-full" id="root"></div>
+
+    <script>
+        // When the JS bundle is loaded, hide loading and show root
+        function hideLoadingShowRoot() {
+            document.getElementById('loading-screen').style.display = 'none'
+            document.getElementById('root').style.display = 'flex'
+        }
+    </script>
+
+    <script src="{% static 'ui' %}{{ js_bundle }}" onload="hideLoadingShowRoot()"></script>
+{% endblock body %}
