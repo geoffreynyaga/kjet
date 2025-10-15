@@ -163,10 +163,10 @@
     "application_id": "Applicant_177",
     "county": "Murang'a",
     "first_weighted_score": 88.0,
-    "first_ranking": 36,
+    "first_ranking": 35,
     "first_county_rank": 1,
     "final_weighted_score": 88.0,
-    "final_ranking": 39,
+    "final_ranking": 37,
     "final_county_rank": 1
   },
   {
@@ -186,7 +186,7 @@
     "first_ranking": 157,
     "first_county_rank": 11,
     "final_weighted_score": 85.0,
-    "final_ranking": 54,
+    "final_ranking": 52,
     "final_county_rank": 2
   },
   {
@@ -246,7 +246,7 @@
     "first_ranking": 10,
     "first_county_rank": 1,
     "final_weighted_score": 95.0,
-    "final_ranking": 11,
+    "final_ranking": 10,
     "final_county_rank": 1
   },
   {
@@ -293,11 +293,11 @@
     "application_id": "Applicant_193",
     "county": "Uasin Gishu",
     "first_weighted_score": 92.0,
-    "first_ranking": 22,
+    "first_ranking": 20,
     "first_county_rank": 2,
     "final_weighted_score": 92.0,
-    "final_ranking": 23,
-    "final_county_rank": 2
+    "final_ranking": 20,
+    "final_county_rank": 1
   },
   {
     "application_id": "Applicant_194",
@@ -326,7 +326,7 @@
     "first_ranking": 5,
     "first_county_rank": 2,
     "final_weighted_score": 98.0,
-    "final_ranking": 6,
+    "final_ranking": 5,
     "final_county_rank": 2
   },
   {
@@ -453,21 +453,21 @@
     "application_id": "Applicant_209",
     "county": "Meru",
     "first_weighted_score": 85.0,
-    "first_ranking": 49,
+    "first_ranking": 48,
     "first_county_rank": 6,
     "final_weighted_score": 85.0,
-    "final_ranking": 54,
+    "final_ranking": 52,
     "final_county_rank": 7
   },
   {
     "application_id": "Applicant_210",
     "county": "Meru",
     "first_weighted_score": 91.0,
-    "first_ranking": 24,
-    "first_county_rank": 4,
+    "first_ranking": 22,
+    "first_county_rank": 3,
     "final_weighted_score": 91.0,
-    "final_ranking": 25,
-    "final_county_rank": 4
+    "final_ranking": 22,
+    "final_county_rank": 3
   },
   {
     "application_id": "Applicant_211",
@@ -504,19 +504,19 @@
     "county": "Meru",
     "first_weighted_score": 0.0,
     "first_ranking": 157,
-    "first_county_rank": 9,
+    "first_county_rank": 10,
     "final_weighted_score": 48.0,
     "final_ranking": 410,
-    "final_county_rank": 21
+    "final_county_rank": 22
   },
   {
     "application_id": "Applicant_215",
     "county": "Kajiado",
     "first_weighted_score": 85.0,
-    "first_ranking": 49,
+    "first_ranking": 48,
     "first_county_rank": 1,
     "final_weighted_score": 85.0,
-    "final_ranking": 54,
+    "final_ranking": 52,
     "final_county_rank": 1
   },
   {
@@ -613,10 +613,10 @@
     "application_id": "Applicant_225",
     "county": "Kitui",
     "first_weighted_score": 88.0,
-    "first_ranking": 36,
+    "first_ranking": 35,
     "first_county_rank": 1,
     "final_weighted_score": 88.0,
-    "final_ranking": 39,
+    "final_ranking": 37,
     "final_county_rank": 1
   },
   {
@@ -674,10 +674,10 @@
     "county": "Meru",
     "first_weighted_score": 0.0,
     "first_ranking": 157,
-    "first_county_rank": 10,
+    "first_county_rank": 11,
     "final_weighted_score": 52.0,
     "final_ranking": 366,
-    "final_county_rank": 19
+    "final_county_rank": 20
   },
   {
     "application_id": "Applicant_232",
@@ -703,20 +703,20 @@
     "application_id": "Applicant_234",
     "county": "Samburu",
     "first_weighted_score": 88.0,
-    "first_ranking": 36,
+    "first_ranking": 35,
     "first_county_rank": 1,
     "final_weighted_score": 88.0,
-    "final_ranking": 39,
+    "final_ranking": 37,
     "final_county_rank": 1
   },
   {
     "application_id": "Applicant_235",
     "county": "Nyandarua",
     "first_weighted_score": 89.0,
-    "first_ranking": 31,
+    "first_ranking": 30,
     "first_county_rank": 2,
     "final_weighted_score": 89.0,
-    "final_ranking": 34,
+    "final_ranking": 32,
     "final_county_rank": 2
   },
   {
@@ -1086,7 +1086,7 @@
     "first_ranking": 5,
     "first_county_rank": 2,
     "final_weighted_score": 98.0,
-    "final_ranking": 6,
+    "final_ranking": 5,
     "final_county_rank": 2
   },
   {
@@ -1196,7 +1196,7 @@
     "first_ranking": 157,
     "first_county_rank": 14,
     "final_weighted_score": 86.0,
-    "final_ranking": 46,
+    "final_ranking": 44,
     "final_county_rank": 2
   },
   {
@@ -1284,10 +1284,10 @@
     "county": "Meru",
     "first_weighted_score": 0.0,
     "first_ranking": 157,
-    "first_county_rank": 11,
+    "first_county_rank": 12,
     "final_weighted_score": 75.0,
     "final_ranking": 127,
-    "final_county_rank": 13
+    "final_county_rank": 14
   },
   {
     "application_id": "Applicant_293",
@@ -1306,7 +1306,7 @@
     "first_ranking": 157,
     "first_county_rank": 9,
     "final_weighted_score": 85.0,
-    "final_ranking": 54,
+    "final_ranking": 52,
     "final_county_rank": 2
   },
   {
@@ -1333,10 +1333,10 @@
     "application_id": "Applicant_297",
     "county": "Baringo",
     "first_weighted_score": 93.0,
-    "first_ranking": 17,
+    "first_ranking": 16,
     "first_county_rank": 1,
     "final_weighted_score": 93.0,
-    "final_ranking": 18,
+    "final_ranking": 16,
     "final_county_rank": 1
   },
   {
@@ -1493,20 +1493,20 @@
     "application_id": "Applicant_313",
     "county": "Nandi",
     "first_weighted_score": 89.0,
-    "first_ranking": 31,
+    "first_ranking": 30,
     "first_county_rank": 2,
     "final_weighted_score": 89.0,
-    "final_ranking": 34,
+    "final_ranking": 32,
     "final_county_rank": 2
   },
   {
     "application_id": "Applicant_314",
     "county": "Murang'a",
     "first_weighted_score": 86.0,
-    "first_ranking": 42,
+    "first_ranking": 41,
     "first_county_rank": 2,
     "final_weighted_score": 86.0,
-    "final_ranking": 46,
+    "final_ranking": 44,
     "final_county_rank": 3
   },
   {
@@ -1563,10 +1563,10 @@
     "application_id": "Applicant_320",
     "county": "Elgeiyo Marakwet",
     "first_weighted_score": 91.0,
-    "first_ranking": 24,
+    "first_ranking": 22,
     "first_county_rank": 1,
     "final_weighted_score": 91.0,
-    "final_ranking": 25,
+    "final_ranking": 22,
     "final_county_rank": 1
   },
   {
@@ -1634,10 +1634,10 @@
     "county": "Meru",
     "first_weighted_score": 0.0,
     "first_ranking": 157,
-    "first_county_rank": 12,
+    "first_county_rank": 13,
     "final_weighted_score": 64.0,
     "final_ranking": 230,
-    "final_county_rank": 16
+    "final_county_rank": 17
   },
   {
     "application_id": "Applicant_328",
@@ -1673,10 +1673,10 @@
     "application_id": "Applicant_331",
     "county": "Laikipia",
     "first_weighted_score": 87.0,
-    "first_ranking": 40,
+    "first_ranking": 39,
     "first_county_rank": 1,
     "final_weighted_score": 87.0,
-    "final_ranking": 43,
+    "final_ranking": 41,
     "final_county_rank": 1
   },
   {
@@ -1776,18 +1776,18 @@
     "first_ranking": 157,
     "first_county_rank": 17,
     "final_weighted_score": 85.0,
-    "final_ranking": 54,
-    "final_county_rank": 4
+    "final_ranking": 52,
+    "final_county_rank": 3
   },
   {
     "application_id": "Applicant_342",
     "county": "Meru",
     "first_weighted_score": 0.0,
     "first_ranking": 157,
-    "first_county_rank": 13,
+    "first_county_rank": 14,
     "final_weighted_score": 52.0,
     "final_ranking": 366,
-    "final_county_rank": 20
+    "final_county_rank": 21
   },
   {
     "application_id": "Applicant_343",
@@ -1842,12 +1842,12 @@
   {
     "application_id": "Applicant_348",
     "county": "Meru",
-    "first_weighted_score": 94.0,
-    "first_ranking": 11,
-    "first_county_rank": 1,
-    "final_weighted_score": 94.0,
-    "final_ranking": 12,
-    "final_county_rank": 1
+    "first_weighted_score": 85.0,
+    "first_ranking": 48,
+    "first_county_rank": 7,
+    "final_weighted_score": 85.0,
+    "final_ranking": 52,
+    "final_county_rank": 8
   },
   {
     "application_id": "Applicant_349",
@@ -1883,10 +1883,10 @@
     "application_id": "Applicant_352",
     "county": "Bomet",
     "first_weighted_score": 92.0,
-    "first_ranking": 22,
+    "first_ranking": 20,
     "first_county_rank": 1,
     "final_weighted_score": 92.0,
-    "final_ranking": 23,
+    "final_ranking": 20,
     "final_county_rank": 1
   },
   {
@@ -1913,10 +1913,10 @@
     "application_id": "Applicant_355",
     "county": "Wajir",
     "first_weighted_score": 89.0,
-    "first_ranking": 31,
+    "first_ranking": 30,
     "first_county_rank": 1,
     "final_weighted_score": 89.0,
-    "final_ranking": 34,
+    "final_ranking": 32,
     "final_county_rank": 1
   },
   {
@@ -2003,10 +2003,10 @@
     "application_id": "Applicant_364",
     "county": "Nyamira",
     "first_weighted_score": 90.0,
-    "first_ranking": 30,
+    "first_ranking": 29,
     "first_county_rank": 1,
     "final_weighted_score": 90.0,
-    "final_ranking": 31,
+    "final_ranking": 29,
     "final_county_rank": 1
   },
   {
@@ -2056,7 +2056,7 @@
     "first_ranking": 8,
     "first_county_rank": 2,
     "final_weighted_score": 96.0,
-    "final_ranking": 9,
+    "final_ranking": 8,
     "final_county_rank": 2
   },
   {
@@ -2083,11 +2083,11 @@
     "application_id": "Applicant_372",
     "county": "Uasin Gishu",
     "first_weighted_score": 85.0,
-    "first_ranking": 49,
+    "first_ranking": 48,
     "first_county_rank": 4,
     "final_weighted_score": 85.0,
-    "final_ranking": 54,
-    "final_county_rank": 5
+    "final_ranking": 52,
+    "final_county_rank": 4
   },
   {
     "application_id": "Applicant_373",
@@ -2133,11 +2133,11 @@
     "application_id": "Applicant_377",
     "county": "Uasin Gishu",
     "first_weighted_score": 87.0,
-    "first_ranking": 40,
+    "first_ranking": 39,
     "first_county_rank": 3,
     "final_weighted_score": 87.0,
-    "final_ranking": 43,
-    "final_county_rank": 3
+    "final_ranking": 41,
+    "final_county_rank": 2
   },
   {
     "application_id": "Applicant_378",
@@ -2153,10 +2153,10 @@
     "application_id": "Applicant_379",
     "county": "Siaya",
     "first_weighted_score": 91.0,
-    "first_ranking": 24,
+    "first_ranking": 22,
     "first_county_rank": 2,
     "final_weighted_score": 91.0,
-    "final_ranking": 25,
+    "final_ranking": 22,
     "final_county_rank": 2
   },
   {
@@ -2463,10 +2463,10 @@
     "application_id": "Applicant_410",
     "county": "Homa Bay",
     "first_weighted_score": 91.0,
-    "first_ranking": 24,
+    "first_ranking": 22,
     "first_county_rank": 1,
     "final_weighted_score": 91.0,
-    "final_ranking": 25,
+    "final_ranking": 22,
     "final_county_rank": 1
   },
   {
@@ -2573,10 +2573,10 @@
     "application_id": "Applicant_421",
     "county": "Embu",
     "first_weighted_score": 89.0,
-    "first_ranking": 31,
+    "first_ranking": 30,
     "first_county_rank": 1,
     "final_weighted_score": 89.0,
-    "final_ranking": 34,
+    "final_ranking": 32,
     "final_county_rank": 1
   },
   {
@@ -2634,19 +2634,19 @@
     "county": "Meru",
     "first_weighted_score": 0.0,
     "first_ranking": 232,
-    "first_county_rank": 14,
+    "first_county_rank": 15,
     "final_weighted_score": 90.0,
-    "final_ranking": 31,
+    "final_ranking": 29,
     "final_county_rank": 5
   },
   {
     "application_id": "Applicant_428",
     "county": "Nyeri",
     "first_weighted_score": 86.0,
-    "first_ranking": 42,
+    "first_ranking": 41,
     "first_county_rank": 4,
     "final_weighted_score": 86.0,
-    "final_ranking": 46,
+    "final_ranking": 44,
     "final_county_rank": 5
   },
   {
@@ -2703,10 +2703,10 @@
     "application_id": "Applicant_434",
     "county": "Migori",
     "first_weighted_score": 88.0,
-    "first_ranking": 36,
+    "first_ranking": 35,
     "first_county_rank": 1,
     "final_weighted_score": 88.0,
-    "final_ranking": 39,
+    "final_ranking": 37,
     "final_county_rank": 1
   },
   {
@@ -2744,10 +2744,10 @@
     "county": "Meru",
     "first_weighted_score": 82.0,
     "first_ranking": 62,
-    "first_county_rank": 7,
+    "first_county_rank": 8,
     "final_weighted_score": 82.0,
     "final_ranking": 72,
-    "final_county_rank": 8
+    "final_county_rank": 9
   },
   {
     "application_id": "Applicant_439",
@@ -2756,7 +2756,7 @@
     "first_ranking": 5,
     "first_county_rank": 1,
     "final_weighted_score": 98.0,
-    "final_ranking": 6,
+    "final_ranking": 5,
     "final_county_rank": 1
   },
   {
@@ -2783,10 +2783,10 @@
     "application_id": "Applicant_442",
     "county": "Bomet",
     "first_weighted_score": 85.0,
-    "first_ranking": 49,
+    "first_ranking": 48,
     "first_county_rank": 2,
     "final_weighted_score": 85.0,
-    "final_ranking": 54,
+    "final_ranking": 52,
     "final_county_rank": 2
   },
   {
@@ -2806,7 +2806,7 @@
     "first_ranking": 232,
     "first_county_rank": 9,
     "final_weighted_score": 87.0,
-    "final_ranking": 43,
+    "final_ranking": 41,
     "final_county_rank": 2
   },
   {
@@ -2843,20 +2843,20 @@
     "application_id": "Applicant_448",
     "county": "Migori",
     "first_weighted_score": 86.0,
-    "first_ranking": 42,
+    "first_ranking": 41,
     "first_county_rank": 2,
     "final_weighted_score": 86.0,
-    "final_ranking": 46,
+    "final_ranking": 44,
     "final_county_rank": 2
   },
   {
     "application_id": "Applicant_449",
     "county": "Meru",
     "first_weighted_score": 86.0,
-    "first_ranking": 42,
+    "first_ranking": 41,
     "first_county_rank": 5,
     "final_weighted_score": 86.0,
-    "final_ranking": 46,
+    "final_ranking": 44,
     "final_county_rank": 6
   },
   {
@@ -2876,7 +2876,7 @@
     "first_ranking": 11,
     "first_county_rank": 1,
     "final_weighted_score": 94.0,
-    "final_ranking": 12,
+    "final_ranking": 11,
     "final_county_rank": 1
   },
   {
@@ -2884,10 +2884,10 @@
     "county": "Meru",
     "first_weighted_score": 81.0,
     "first_ranking": 70,
-    "first_county_rank": 8,
+    "first_county_rank": 9,
     "final_weighted_score": 81.0,
     "final_ranking": 80,
-    "final_county_rank": 9
+    "final_county_rank": 10
   },
   {
     "application_id": "Applicant_453",
@@ -2964,10 +2964,10 @@
     "county": "Meru",
     "first_weighted_score": 0.0,
     "first_ranking": 157,
-    "first_county_rank": 15,
+    "first_county_rank": 16,
     "final_weighted_score": 81.0,
     "final_ranking": 80,
-    "final_county_rank": 10
+    "final_county_rank": 11
   },
   {
     "application_id": "Applicant_461",
@@ -3026,7 +3026,7 @@
     "first_ranking": 174,
     "first_county_rank": 8,
     "final_weighted_score": 90.0,
-    "final_ranking": 31,
+    "final_ranking": 29,
     "final_county_rank": 4
   },
   {
@@ -3072,12 +3072,12 @@
   {
     "application_id": "Applicant_471",
     "county": "Meru",
-    "first_weighted_score": 93.0,
-    "first_ranking": 17,
-    "first_county_rank": 3,
-    "final_weighted_score": 93.0,
-    "final_ranking": 18,
-    "final_county_rank": 3
+    "first_weighted_score": 91.0,
+    "first_ranking": 22,
+    "first_county_rank": 4,
+    "final_weighted_score": 91.0,
+    "final_ranking": 22,
+    "final_county_rank": 4
   },
   {
     "application_id": "Applicant_472",
@@ -3104,10 +3104,10 @@
     "county": "Meru",
     "first_weighted_score": 94.0,
     "first_ranking": 11,
-    "first_county_rank": 2,
+    "first_county_rank": 1,
     "final_weighted_score": 94.0,
-    "final_ranking": 12,
-    "final_county_rank": 2
+    "final_ranking": 11,
+    "final_county_rank": 1
   },
   {
     "application_id": "Applicant_475",
@@ -3144,10 +3144,10 @@
     "county": "Meru",
     "first_weighted_score": 0.0,
     "first_ranking": 157,
-    "first_county_rank": 16,
+    "first_county_rank": 17,
     "final_weighted_score": 54.0,
     "final_ranking": 346,
-    "final_county_rank": 18
+    "final_county_rank": 19
   },
   {
     "application_id": "Applicant_479",
@@ -3174,10 +3174,10 @@
     "county": "Meru",
     "first_weighted_score": 0.0,
     "first_ranking": 157,
-    "first_county_rank": 17,
+    "first_county_rank": 18,
     "final_weighted_score": 76.0,
     "final_ranking": 121,
-    "final_county_rank": 12
+    "final_county_rank": 13
   },
   {
     "application_id": "Applicant_482",
@@ -4013,10 +4013,10 @@
     "application_id": "Applicant_565",
     "county": "Nairobi",
     "first_weighted_score": 86.0,
-    "first_ranking": 42,
+    "first_ranking": 41,
     "first_county_rank": 1,
     "final_weighted_score": 86.0,
-    "final_ranking": 46,
+    "final_ranking": 44,
     "final_county_rank": 1
   },
   {
@@ -4063,10 +4063,10 @@
     "application_id": "Applicant_570",
     "county": "Baringo",
     "first_weighted_score": 93.0,
-    "first_ranking": 17,
+    "first_ranking": 16,
     "first_county_rank": 2,
     "final_weighted_score": 93.0,
-    "final_ranking": 18,
+    "final_ranking": 16,
     "final_county_rank": 2
   },
   {
@@ -4286,7 +4286,7 @@
     "first_ranking": 8,
     "first_county_rank": 1,
     "final_weighted_score": 96.0,
-    "final_ranking": 9,
+    "final_ranking": 8,
     "final_county_rank": 1
   },
   {
@@ -4464,10 +4464,10 @@
     "county": "Meru",
     "first_weighted_score": 0.0,
     "first_ranking": 157,
-    "first_county_rank": 18,
+    "first_county_rank": 19,
     "final_weighted_score": 56.0,
     "final_ranking": 319,
-    "final_county_rank": 17
+    "final_county_rank": 18
   },
   {
     "application_id": "Applicant_611",
@@ -4503,20 +4503,20 @@
     "application_id": "Applicant_614",
     "county": "Kwale",
     "first_weighted_score": 93.0,
-    "first_ranking": 17,
+    "first_ranking": 16,
     "first_county_rank": 1,
     "final_weighted_score": 93.0,
-    "final_ranking": 18,
+    "final_ranking": 16,
     "final_county_rank": 1
   },
   {
     "application_id": "Applicant_615",
     "county": "Tharaka Nithi",
     "first_weighted_score": 89.0,
-    "first_ranking": 31,
+    "first_ranking": 30,
     "first_county_rank": 2,
     "final_weighted_score": 89.0,
-    "final_ranking": 34,
+    "final_ranking": 32,
     "final_county_rank": 2
   },
   {
@@ -4553,10 +4553,10 @@
     "application_id": "Applicant_619",
     "county": "Narok",
     "first_weighted_score": 86.0,
-    "first_ranking": 42,
+    "first_ranking": 41,
     "first_county_rank": 1,
     "final_weighted_score": 86.0,
-    "final_ranking": 46,
+    "final_ranking": 44,
     "final_county_rank": 1
   },
   {
@@ -4596,7 +4596,7 @@
     "first_ranking": 11,
     "first_county_rank": 1,
     "final_weighted_score": 94.0,
-    "final_ranking": 12,
+    "final_ranking": 11,
     "final_county_rank": 1
   },
   {
@@ -4663,10 +4663,10 @@
     "application_id": "Applicant_630",
     "county": "Nyeri",
     "first_weighted_score": 91.0,
-    "first_ranking": 24,
+    "first_ranking": 22,
     "first_county_rank": 3,
     "final_weighted_score": 91.0,
-    "final_ranking": 25,
+    "final_ranking": 22,
     "final_county_rank": 3
   },
   {
@@ -4703,10 +4703,10 @@
     "application_id": "Applicant_634",
     "county": "Laikipia",
     "first_weighted_score": 86.0,
-    "first_ranking": 42,
+    "first_ranking": 41,
     "first_county_rank": 2,
     "final_weighted_score": 86.0,
-    "final_ranking": 46,
+    "final_ranking": 44,
     "final_county_rank": 3
   },
   {
@@ -4743,10 +4743,10 @@
     "application_id": "Applicant_638",
     "county": "Kericho",
     "first_weighted_score": 91.0,
-    "first_ranking": 24,
+    "first_ranking": 22,
     "first_county_rank": 3,
     "final_weighted_score": 91.0,
-    "final_ranking": 25,
+    "final_ranking": 22,
     "final_county_rank": 3
   },
   {
@@ -4756,7 +4756,7 @@
     "first_ranking": 11,
     "first_county_rank": 1,
     "final_weighted_score": 94.0,
-    "final_ranking": 12,
+    "final_ranking": 11,
     "final_county_rank": 1
   },
   {
@@ -4883,10 +4883,10 @@
     "application_id": "Applicant_652",
     "county": "Turkana",
     "first_weighted_score": 93.0,
-    "first_ranking": 17,
+    "first_ranking": 16,
     "first_county_rank": 1,
     "final_weighted_score": 93.0,
-    "final_ranking": 18,
+    "final_ranking": 16,
     "final_county_rank": 1
   },
   {
@@ -4944,20 +4944,20 @@
     "county": "Meru",
     "first_weighted_score": 0.0,
     "first_ranking": 157,
-    "first_county_rank": 19,
+    "first_county_rank": 20,
     "final_weighted_score": 74.0,
     "final_ranking": 132,
-    "final_county_rank": 14
+    "final_county_rank": 15
   },
   {
     "application_id": "Applicant_659",
     "county": "Meru",
     "first_weighted_score": 0.0,
     "first_ranking": 157,
-    "first_county_rank": 20,
+    "first_county_rank": 21,
     "final_weighted_score": 81.0,
     "final_ranking": 80,
-    "final_county_rank": 11
+    "final_county_rank": 12
   },
   {
     "application_id": "Applicant_660",
@@ -5126,7 +5126,7 @@
     "first_ranking": 11,
     "first_county_rank": 1,
     "final_weighted_score": 94.0,
-    "final_ranking": 12,
+    "final_ranking": 11,
     "final_county_rank": 1
   },
   {
@@ -5144,10 +5144,10 @@
     "county": "Meru",
     "first_weighted_score": 0.0,
     "first_ranking": null,
-    "first_county_rank": 21,
+    "first_county_rank": 22,
     "final_weighted_score": 24.0,
     "final_ranking": 539,
-    "final_county_rank": 22
+    "final_county_rank": 23
   },
   {
     "application_id": "Applicant_679",
@@ -5534,10 +5534,10 @@
     "county": "Meru",
     "first_weighted_score": 0.0,
     "first_ranking": 157,
-    "first_county_rank": 22,
+    "first_county_rank": 23,
     "final_weighted_score": 73.0,
     "final_ranking": 139,
-    "final_county_rank": 15
+    "final_county_rank": 16
   },
   {
     "application_id": "Applicant_719",
@@ -5545,8 +5545,18 @@
     "first_weighted_score": 100.0,
     "first_ranking": 1,
     "first_county_rank": 1,
-    "final_weighted_score": 100.0,
-    "final_ranking": 1,
-    "final_county_rank": 1
+    "final_weighted_score": 85.0,
+    "final_ranking": 52,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_721",
+    "county": "Meru",
+    "first_weighted_score": 92.0,
+    "first_ranking": 20,
+    "first_county_rank": 2,
+    "final_weighted_score": 92.0,
+    "final_ranking": 20,
+    "final_county_rank": 2
   }
 ]
