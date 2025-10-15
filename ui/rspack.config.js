@@ -113,5 +113,7 @@ module.exports = defineConfig({
   },
 
   // Enable source maps for development
-  devtool: process.env.NODE_ENV === 'production' ? 'source-map' : 'eval-cheap-module-source-map'
+  // Production: 'hidden-source-map' = generates .map files but doesn't link them in JS (keep locally, don't deploy)
+  // Development: 'eval-cheap-module-source-map' = fast rebuilds with line numbers
+  devtool: process.env.NODE_ENV === 'production' ? 'hidden-source-map' : 'eval-cheap-module-source-map'
 });
