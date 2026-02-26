@@ -1,8 +1,12 @@
 [build]
   # Base directory for the build
+  base = "code/"
+
   base = "ui/"
 
   # Directory where the build artifacts are located (relative to base)
+  publish = "build/"
+
   publish = "build"
 
   # Build command to run
