@@ -2,6 +2,51 @@ import { AgreementType, CriterionComparison, HumanApplicant, LLMIneligibleApplic
 
 import { buildStaticDataUrl } from '../../utils';
 
+const HUMAN_SCORE_FIELD = 'Sum of weighted scores - Penalty(if any)';
+const HUMAN_RANK_FIELD = 'Ranking from composite score';
+
+const parseNumericValue = (value: unknown): number | null => {
+  if (value === null || value === undefined) return null;
+  if (typeof value === 'number') return Number.isFinite(value) ? value : null;
+
+  const normalized = String(value).trim().replace(/,/g, '');
+  if (!normalized) return null;
+
+  const parsed = Number(normalized);
+  return Number.isFinite(parsed) ? parsed : null;
+};
+
+export const getHumanScore = (humanApp: HumanApplicant): number | null => {
+  return parseNumericValue(humanApp[HUMAN_SCORE_FIELD]);
+};
+
+const getHumanCompositeRank = (humanApp: HumanApplicant): number | null => {
+  return parseNumericValue(humanApp[HUMAN_RANK_FIELD]);
+};
+
+export const getHumanStatus = (humanApp: HumanApplicant): string => {
+  const explicitStatus = String(humanApp['PASS/FAIL'] || '').trim();
+  if (explicitStatus) {
+    return explicitStatus;
+  }
+
+  const rankRaw = String(humanApp[HUMAN_RANK_FIELD] || '').toLowerCase();
+  if (rankRaw.includes('dq') || rankRaw.includes('fail') || rankRaw.includes('ineligible')) {
+    return 'Fail';
+  }
+
+  if (getHumanCompositeRank(humanApp) !== null) {
+    return 'Pass';
+  }
+
+  const score = getHumanScore(humanApp);
+  if (score !== null && score > 0) {
+    return 'Pass';
+  }
+
+  return 'Unknown';
+};
+
 // Helper function to extract numeric ID from different formats
 export const extractNumericId = (applicationId: string): string => {
   // For human format: "Applicant_158" -> "158" or "applicant 302" -> "302"
@@ -139,13 +184,24 @@ export const checkPenalties = (humanApp: HumanApplicant): { hasPenalty: boolean;
 };
 
 // Helper function to get human rank within county
-export const getHumanRank = (targetApp: HumanApplicant, allApps: HumanApplicant[]): number => {
-  const passedApps = allApps
-    .filter(app => (app['PASS/FAIL'] || '').toLowerCase() === 'pass')
-    .sort((a, b) => (Number(b['Sum of weighted scores - Penalty(if any)']) || 0) - (Number(a['Sum of weighted scores - Penalty(if any)']) || 0));
+export const getHumanRank = (targetApp: HumanApplicant, allApps: HumanApplicant[]): number | null => {
+  const explicitRank = getHumanCompositeRank(targetApp);
+  if (explicitRank !== null) {
+    return explicitRank;
+  }
 
-  const rank = passedApps.findIndex(app => app['Application ID'] === targetApp['Application ID']);
-  return rank >= 0 ? rank + 1 : passedApps.length + 1;
+  const rankableApps = allApps
+    .filter(app => getHumanStatus(app).toLowerCase() === 'pass')
+    .sort((a, b) => {
+      const scoreDiff = (getHumanScore(b) ?? -Infinity) - (getHumanScore(a) ?? -Infinity);
+      if (scoreDiff !== 0) {
+        return scoreDiff;
+      }
+      return String(a['Application ID'] || '').localeCompare(String(b['Application ID'] || ''));
+    });
+
+  const rank = rankableApps.findIndex(app => app['Application ID'] === targetApp['Application ID']);
+  return rank >= 0 ? rank + 1 : null;
 };
 
 // Helper function to get LLM reasoning
