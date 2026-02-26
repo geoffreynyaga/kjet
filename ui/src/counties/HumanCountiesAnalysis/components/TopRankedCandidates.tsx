@@ -1,10 +1,10 @@
 import { ChevronDown, ChevronRight, ExternalLink } from 'lucide-react';
 import { CountyGroup, HumanApplicant } from '../types/index.ts';
 import { formatScore, getNumericScore } from '../utils/index.ts';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 import ScoringBreakdown from './ScoringBreakdown.tsx';
 import { motion } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
 
 interface TopRankedCandidatesProps {
   topTwo: HumanApplicant[];
@@ -20,6 +20,7 @@ export default function TopRankedCandidates({
   onToggleExpand
 }: TopRankedCandidatesProps) {
   const navigate = useNavigate();
+  const location = useLocation();
 
   if (topTwo.length === 0) return null;
 
@@ -60,7 +61,7 @@ export default function TopRankedCandidates({
                     <motion.button
                       onClick={(e) => {
                         e.stopPropagation();
-                        navigate(`/results/${app['Application ID']}`);
+                        navigate(`/results/${app['Application ID']}${location.search}`);
                       }}
                       className="flex items-center gap-2 px-3 py-1.5 text-xs font-medium text-white transition-all duration-300 bg-blue-500 rounded-lg shadow-sm hover:shadow-md hover:bg-blue-600"
                       whileHover={{ scale: 1.05 }}

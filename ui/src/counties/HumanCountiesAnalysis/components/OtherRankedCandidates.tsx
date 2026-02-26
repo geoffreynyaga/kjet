@@ -1,9 +1,10 @@
+import { CountyGroup, HumanApplicant } from '../types/index.ts';
+import { formatScore, getNumericScore } from '../utils/index.ts';
+import { useLocation, useNavigate } from 'react-router-dom';
+
+import { ExternalLink } from 'lucide-react';
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
-import { HumanApplicant, CountyGroup } from '../types/index.ts';
-import { getNumericScore, formatScore } from '../utils/index.ts';
 
 interface OtherRankedCandidatesProps {
   otherRanked: HumanApplicant[];
@@ -12,6 +13,7 @@ interface OtherRankedCandidatesProps {
 
 export default function OtherRankedCandidates({ otherRanked, currentGroup }: OtherRankedCandidatesProps) {
   const navigate = useNavigate();
+  const location = useLocation();
 
   if (otherRanked.length === 0) return null;
 
@@ -46,7 +48,7 @@ export default function OtherRankedCandidates({ otherRanked, currentGroup }: Oth
                   {formatScore(score)}
                 </div>
                 <motion.button
-                  onClick={() => navigate(`/results/${app['Application ID']}`)}
+                  onClick={() => navigate(`/results/${app['Application ID']}${location.search}`)}
                   className="flex items-center gap-2 px-4 py-2 font-medium text-white transition-all duration-200 bg-yellow-500 rounded-lg opacity-0 group-hover:opacity-100 hover:bg-yellow-600"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}

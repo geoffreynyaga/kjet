@@ -62,6 +62,7 @@ const CountyComparisonView: React.FC<CountyComparisonViewProps> = ({ county, hum
       const comparison = createCountyComparison(county, humanCountyData, llmData);
 
       console.log(comparison,"jsjsjjsjs")
+      console.log(county,"county")
       setCountyComparison(comparison);
       setLoading(false);
     } catch (err) {
@@ -91,7 +92,7 @@ const CountyComparisonView: React.FC<CountyComparisonViewProps> = ({ county, hum
         // No LLM data available for this county - add to mismatched
         const penaltyInfo = checkPenalties(humanApp);
         mismatchedApplications.push({
-          applicationId: numericId,
+          applicationId: humanId || numericId,
           applicantName: humanApp['E1. Applicant Name'] || 'Unknown',
           county: countyName,
           humanRank,
@@ -119,7 +120,7 @@ const CountyComparisonView: React.FC<CountyComparisonViewProps> = ({ county, hum
         // Human application not found in LLM data - add to mismatched
         const penaltyInfo = checkPenalties(humanApp);
         mismatchedApplications.push({
-          applicationId: numericId,
+          applicationId: humanId || numericId,
           applicantName: humanApp['E1. Applicant Name'] || 'Unknown',
           county: countyName,
           humanRank,
@@ -158,7 +159,7 @@ const CountyComparisonView: React.FC<CountyComparisonViewProps> = ({ county, hum
       const criterionComparisons = createCriterionComparisons(humanApp, isEligible ? llmApp : undefined);
 
       comparisonRows.push({
-        applicationId: numericId,
+        applicationId: humanId || numericId,
         applicantName: llmApp?.applicant_name || humanApp['E1. Applicant Name'] || 'Unknown',
         county: countyName,
         humanRank,

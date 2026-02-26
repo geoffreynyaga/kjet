@@ -1,7 +1,7 @@
 import { COUNTIES, TIER_COLUMN } from '../utils/index.ts';
 import { CountyStats, NationalStats, StatisticsApplicant } from '../types/index.ts';
+import { buildStaticDataUrl, s3BaseUrl } from '../../../utils';
 import { useEffect, useState } from 'react';
-import { s3BaseUrl } from '../../../utils';
 
 export const useStatisticsData = () => {
   const [data, setData] = useState<StatisticsApplicant[]>([]);
@@ -9,6 +9,7 @@ export const useStatisticsData = () => {
   const [countyStats, setCountyStats] = useState<CountyStats[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const cohort = new URLSearchParams(window.location.search).get('cohort') || 'latest';
 
   useEffect(() => {
     loadStatisticsData();
@@ -17,7 +18,21 @@ export const useStatisticsData = () => {
   const loadStatisticsData = async () => {
     try {
       setLoading(true);
-      const resp = await fetch(`${s3BaseUrl}/static/data/kjet-human-final.json`);
+
+      // fetch national summary for this cohort if available
+      let summaryData: any = null;
+      try {
+        const summaryUrl = buildStaticDataUrl('output-results/national_evaluation_summary.json', cohort);
+        const summaryResp = await fetch(summaryUrl);
+        if (summaryResp.ok) {
+          summaryData = await summaryResp.json();
+        }
+      } catch (err) {
+        console.warn('Could not load national summary for cohort', cohort, err);
+      }
+
+      const url = buildStaticDataUrl('kjet-human-final.json', cohort);
+      const resp = await fetch(url);
       const data: StatisticsApplicant[] = await resp.json();
 
       // Load women-owned data from county JSON files
@@ -26,7 +41,15 @@ export const useStatisticsData = () => {
       setData(data);
 
       // Calculate national statistics with women-owned data
-      const nationalStats = calculateNationalStats(data, womenOwnedData);
+      let nationalStats = calculateNationalStats(data, womenOwnedData);
+
+      // if summary data exists, override key fields for accuracy
+      if (summaryData && summaryData.national_summary) {
+        nationalStats.totalApplications = summaryData.national_summary.total_applications || nationalStats.totalApplications;
+        nationalStats.averageScore = summaryData.national_summary.national_average_score || nationalStats.averageScore;
+        // eligibility rate not part of NationalStats but could be used elsewhere
+      }
+
       setNationalStats(nationalStats);
 
       // Calculate county statistics with women-owned data
@@ -47,7 +70,8 @@ export const useStatisticsData = () => {
     try {
       const promises = COUNTIES.map(async (county) => {
         try {
-          const response = await fetch(`${s3BaseUrl}/static/data/output-results/${county}_evaluation_results.json`);
+          const url = buildStaticDataUrl(`output-results/${county}_evaluation_results.json`, cohort);
+          const response = await fetch(url);
           if (!response.ok) return;
 
           const countyData = await response.json();
@@ -76,6 +100,7 @@ export const useStatisticsData = () => {
   };
 
   const calculateNationalStats = (data: StatisticsApplicant[], womenOwnedData: { [key: string]: string } = {}): NationalStats => {
+    console.log('Calculating national stats with data:', data);
     const totalApplications = data.length;
     // Include all applicants with scores greater than zero
     const passedApps = data.filter(app => {

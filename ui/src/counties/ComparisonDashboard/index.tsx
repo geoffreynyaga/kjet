@@ -1,12 +1,12 @@
 import { Home, Users } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
+import { buildStaticDataUrls, fetchJsonWithFallback } from '../../utils';
 
 import CountyComparisonView from './CountyComparisonView.tsx';
 import { HumanApplicant } from './types.ts';
 import { filterHumanDataByCounty } from './utils.ts';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { s3BaseUrl } from '../../utils';
 
 function ComparisonDashboard() {
   const navigate = useNavigate();
@@ -25,8 +25,9 @@ function ComparisonDashboard() {
       setLoading(true);
 
       // Load human data
-      const humanResponse = await fetch(`${s3BaseUrl}/kjet-human-final.json`);
-      const data: HumanApplicant[] = await humanResponse.json();
+      const cohort = new URLSearchParams(window.location.search).get('cohort');
+      const humanDataUrls = buildStaticDataUrls('kjet-human-final.json', cohort);
+      const data = await fetchJsonWithFallback<HumanApplicant[]>(humanDataUrls);
       setHumanData(data);
 
       // Get unique counties from human data

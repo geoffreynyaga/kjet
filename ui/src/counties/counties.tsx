@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 import BusinessTypePie from './BusinessTypePie.tsx';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { s3BaseUrl } from '../utils';
+import { buildStaticDataUrl, s3BaseUrl } from '../utils';
 
 // Interfaces for evaluation data
 interface ScoringSummary {
@@ -98,7 +98,8 @@ function CountiesHome() {
 
   const loadNationalSummary = async () => {
     try {
-      const response = await fetch(`${s3BaseUrl}/static/data/output-results/national_evaluation_summary.json`);
+      const url = buildStaticDataUrl('output-results/national_evaluation_summary.json');
+      const response = await fetch(url);
       const data: NationalSummary = await response.json();
       setNationalSummary(data);
       setLoading(false);
@@ -111,7 +112,8 @@ function CountiesHome() {
 
   const loadCountyData = async (countyName: string) => {
     try {
-      const response = await fetch(`${s3BaseUrl}/static/data/output-results/${countyName}_evaluation_results.json`);
+      const url = buildStaticDataUrl(`output-results/${countyName}_evaluation_results.json`);
+      const response = await fetch(url);
       const data: CountyEvaluation = await response.json();
       console.log(data,"county data")
       setCountyData(data);
@@ -521,7 +523,8 @@ function CountiesHome() {
 
                               // Update the upstream JSON file
                               try {
-                                await fetch(`${s3BaseUrl}/static/data/output-results/${selectedCounty}_evaluation_results.json`, {
+                                const updateUrl = buildStaticDataUrl(`output-results/${selectedCounty}_evaluation_results.json`);
+                                await fetch(updateUrl, {
                                   method: 'POST',
                                   headers: { 'Content-Type': 'application/json' },
                                   body: JSON.stringify(updatedAppData),

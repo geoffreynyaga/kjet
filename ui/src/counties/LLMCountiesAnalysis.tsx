@@ -3,7 +3,7 @@ import { Bar, BarChart, CartesianGrid, Cell, Legend, Pie, PieChart, ResponsiveCo
 import React, { useEffect, useState } from 'react';
 
 import { motion } from 'framer-motion';
-import { s3BaseUrl } from '../utils';
+import { buildStaticDataUrl, s3BaseUrl } from '../utils';
 
 interface ScoreBreakdown {
   score: number;
@@ -53,6 +53,7 @@ function LLMCountiesAnalysis() {
   const [expandedApplicants, setExpandedApplicants] = useState<Set<number>>(new Set());
   const [loadingMessage, setLoadingMessage] = useState<string>('Loading Analysis Dashboard...');
   const applicationsPerPage = 5;
+  const cohort = new URLSearchParams(window.location.search).get('cohort');
 
   useEffect(() => {
     loadLLMAnalyses();
@@ -64,7 +65,8 @@ function LLMCountiesAnalysis() {
       setLoadingMessage('Loading  Analysis Dashboard...');
 
       // Fetch the list of available counties
-      const countiesResponse = await fetch(`${s3BaseUrl}/static/data/counties.json`);
+      const countiesUrl = buildStaticDataUrl('counties.json', cohort);
+      const countiesResponse = await fetch(countiesUrl);
       const countiesData = await countiesResponse.json();
       const availableCounties = countiesData.counties;
 
@@ -80,7 +82,8 @@ function LLMCountiesAnalysis() {
           const filename = county.toLowerCase().replace(/'/g, '');
           console.log(`Attempting to fetch: /gemini/${filename}.json for county: ${county}`);
 
-          const response = await fetch(`${s3BaseUrl}/static/data/gemini/${filename}.json`);
+          const geminiUrl = buildStaticDataUrl(`gemini/${filename}.json`, cohort);
+          const response = await fetch(geminiUrl);
 
           // Check if response is ok and content type is JSON
           if (!response.ok) {

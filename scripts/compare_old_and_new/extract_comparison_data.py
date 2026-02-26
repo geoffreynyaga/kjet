@@ -9,6 +9,7 @@ import json
 import os
 import re
 from pathlib import Path
+from argparse import Namespace
 
 def extract_applicant_id(bundle_link):
     """Extract applicant ID from bundle link."""
@@ -25,9 +26,9 @@ def extract_comparison_data():
     script_dir = Path(__file__).parent
     csv_file = script_dir / "comparison.csv"
 
-    # Save output to code/public/ folder
+    # Save output to code/public/ folder with cohort name
     workspace_root = script_dir.parent.parent  # Go up two levels from scripts/compare_old_and_new/
-    output_dir = workspace_root / "code" / "public"
+    output_dir = workspace_root / "ui" / "public" / args.cohort
     output_dir.mkdir(parents=True, exist_ok=True)  # Create directory if it doesn't exist
     output_file = output_dir / "comparison_data.json"
 
@@ -99,4 +100,5 @@ def extract_comparison_data():
         return None
 
 if __name__ == "__main__":
+    args = Namespace(cohort="latest")
     extract_comparison_data()

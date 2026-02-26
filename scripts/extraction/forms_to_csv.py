@@ -1,3 +1,4 @@
+import argparse
 import csv
 import re
 from pathlib import Path
@@ -45,11 +46,212 @@ def load_questions():
 
     return questions
 
+
+def extract_application_data_c2(text_content):
+    """
+    Extract data from Cohort 2 application format.
+    Uses keyword and pattern matching for the new PDF structure.
+    """
+    data = {col: "" for col in COLUMN_ORDER}
+
+    # Helper to extract value after a prompt
+    def get_value(prompt, text, end_prompts=None, multi_line=False):
+        # Use a pattern that doesn't cross newlines for the separator unless multi_line is True
+        separator = r"[: \t\?]*"
+        pattern = re.escape(prompt) + separator
+        
+        if multi_line:
+            pattern += r"(.*?)"
+        else:
+            # Allow matching the same line, or if the rest of the line is empty, the next line
+            pattern += r"([^\n\r]*)"
+        
+        if end_prompts:
+            # Look for the nearest end prompt
+            start_pos = -1
+            match = re.search(pattern, text, re.IGNORECASE | re.DOTALL if multi_line else re.IGNORECASE)
+            if match:
+                start_pos = match.start(1)
+                
+                end_pos = len(text)
+                for end_p in end_prompts:
+                    p_pos = text.lower().find(end_p.lower(), start_pos)
+                    if p_pos != -1 and p_pos < end_pos:
+                        end_pos = p_pos
+                
+                val = text[start_pos:end_pos].strip()
+                # Clean up multiple spaces and strip separators
+                val = re.sub(r'\s+', ' ', val)
+                if ' | ' in val:
+                    val = val.split(' | ')[0].strip()
+                return val
+        else:
+            match = re.search(pattern, text, re.IGNORECASE | re.DOTALL if multi_line else re.IGNORECASE)
+            if match:
+                val = match.group(1).strip()
+                # If result is empty and not multi_line, try looking at the next line
+                if not val and not multi_line:
+                    # Search again but allow one newline
+                    next_line_pattern = re.escape(prompt) + separator + r"\n\s*([^\n\r]+)"
+                    next_match = re.search(next_line_pattern, text, re.IGNORECASE)
+                    if next_match:
+                        val = next_match.group(1).strip()
+                
+                # Strip artifacts like | Constituency...
+                if ' | ' in val:
+                    val = val.split(' | ')[0].strip()
+                return val
+        return ""
+
+    # Basic Info
+    data["app_number"] = get_value("Application No", text_content)
+    data["cluster_name"] = get_value("What is the name of your cluster?", text_content)
+    if not data["cluster_name"]:
+        data["cluster_name"] = get_value("Cluster / Enterprise", text_content)
+    
+    data["registration_status"] = get_value("What is your registration status?", text_content)
+    data["registration_number"] = get_value("What is your registration number?", text_content)
+    
+    # Location
+    data["county"] = get_value("Which county are you located in?", text_content)
+    if not data["county"]:
+        data["county"] = get_value("County", text_content)
+    
+    data["constituency"] = get_value("What constituency are you in?", text_content)
+    if not data["constituency"]:
+        data["constituency"] = get_value("Constituency", text_content)
+        
+    data["ward"] = get_value("What ward are you in?", text_content)
+    if not data["ward"]:
+        data["ward"] = get_value("Ward", text_content)
+        
+    data["location"] = get_value("What is your location / nearest landmark or village?", text_content)
+    data["place_of_operation"] = get_value("Where is your place of operation?", text_content)
+
+    # Business Information
+    data["value_chain"] = get_value("Which value chain do you operate in?", text_content)
+    data["economic_activities_description"] = get_value("Briefly describe your main economic activities", text_content, 
+                                                       end_prompts=["4. CONTACT INFORMATION", "Primary phone number"])
+
+    # Contact Info
+    data["phone_number"] = get_value("Primary phone number for the cluster", text_content)
+    data["alternate_phone"] = get_value("Alternate phone number", text_content)
+    data["email"] = get_value("Official email address for the cluster", text_content)
+
+    # Leadership
+    data["chairperson"] = get_value("Name of the Chairperson", text_content)
+    data["secretary"] = get_value("Name of the Secretary", text_content)
+    data["ceo"] = get_value("Name of the CEO", text_content)
+    data["director"] = get_value("Name of the Director", text_content)
+    data["manager"] = get_value("Name of the Manager", text_content)
+    data["treasurer"] = get_value("Name of the Treasurer", text_content)
+
+    # Woman Owned
+    data["woman_owned_enterprise"] = get_value("Is this a women-owned enterprise?", text_content)
+
+    # Membership & Employment
+    # These are in blocks like:
+    # 2022
+    # Total members in 2022: 2349
+    # Total employees in 2022: 7
+    for year in ["2022", "2023", "2024"]:
+        data[f"members_{year}"] = get_value(f"Total members in {year}", text_content)
+        data[f"employees_{year}"] = get_value(f"Total employees in {year}", text_content)
+
+    # Demographics (taking latest year for parity)
+    for year in ["2024", "2023", "2022"]:
+        if not data["members_male"]:
+            data["members_male"] = get_value(f"Male members in {year}", text_content)
+            data["members_female"] = get_value(f"Female members in {year}", text_content)
+            data["members_age_18_35"] = get_value(f"Members aged 18 35 in {year}", text_content)
+            data["members_age_36_50"] = get_value(f"Members aged 36 50 in {year}", text_content)
+            data["members_age_above_50"] = get_value(f"Members aged over 50 in {year}", text_content)
+
+    # Financial Info
+    for year in ["2022", "2023", "2024"]:
+        data[f"turnover_{year}"] = get_value(fr"Total revenue in {year} \(KES\)", text_content)
+        data[f"net_profit_{year}"] = get_value(fr"Total profits in {year} \(KES\)", text_content)
+
+    # Operations
+    data["critical_equipment_investment_plans"] = get_value("List your most critical equipment for operations", text_content, 
+                                                           end_prompts=["Describe your price / cost margins"])
+    data["price_cost_margins"] = get_value("Describe your price / cost margins", text_content)
+    data["accounting_package"] = get_value("Which accounting package or system do you use?", text_content)
+
+    # E-commerce
+    data["ecommerce_channels"] = get_value("Which e-commerce or digital channels do you use?", text_content)
+    data["sales_domestic_b2b_percent"] = get_value("Roughly what percentage of your sales are B2B?", text_content)
+    data["sales_domestic_b2c_percent"] = get_value("Roughly what percentage of your sales are B2C?", text_content)
+    data["exports_percent"] = get_value("Roughly what percentage of your sales are exports?", text_content)
+
+    # Strategy & Challenges
+    data["business_objectives"] = get_value("Does the organization have clear objectives and performance targets in place?", text_content, 
+                                           end_prompts=["Who are your organization's main competitors?"])
+    data["main_competitors"] = get_value("Who are your organization's main competitors?", text_content, 
+                                        end_prompts=["What are critical success factors in your industry?"])
+    data["success_factors"] = get_value("What are critical success factors in your industry?", text_content, 
+                                       end_prompts=["Please describe your backward linkages"])
+    data["backward_linkages"] = get_value("Please describe your backward linkages", text_content, 
+                                         end_prompts=["What is your marketing plan for future market expansion?"])
+    data["marketing_expansion_plan"] = get_value("What is your marketing plan for future market expansion?", text_content, 
+                                                end_prompts=["What is the problem statement", "15. "])
+    data["problem_statement"] = get_value("What is the problem statement(.*?)Additionally, specify specific areas where project Business Development Services support could be helpful", text_content, 
+                                         end_prompts=["What sustainable practices have you adopted?", "Describe the challenges your cluster is currently facing"])
+    if not data["problem_statement"]:
+        data["problem_statement"] = get_value("Describe the challenges your cluster is currently facing", text_content, 
+                                             end_prompts=["15. ", "What sustainable practices have you adopted?"])
+    
+    data["sustainable_practices"] = get_value("What sustainable practices have you adopted?", text_content, 
+                                             end_prompts=["Describe any green initiatives", "Generated on"])
+    if not data["sustainable_practices"]:
+        data["sustainable_practices"] = get_value("Describe any green initiatives or sustainable practices your cluster has implemented", text_content, 
+                                                 end_prompts=["Generated on"])
+
+    # Submitted At
+    data["submitted_at"] = get_value("Submitted", text_content)
+
+    # --- Cleanup captured prompts and status strings ---
+    if data["app_number"]:
+        data["app_number"] = data["app_number"].split(" Status:")[0].split(" Status")[0].strip()
+    
+    prompts_to_remove = {
+        "business_objectives": "Please specify the targets and how they are reviewed: (200 words or less)",
+        "main_competitors": "(If this differs by product/sales channel, please specify): (200 words or less)",
+        "success_factors": "What makes your organization unique versus competitors?: (200 words or less)",
+        "backward_linkages": "current suppliers of raw materials. Specify the main items your organization procures. For each item, indicate: Whether it is locally sourced or imported, Whether it is procured from large firms, MSMEs, cooperatives, or other types of suppliers, Any notable challenges or dependencies in your supply chain: (200 words or less)",
+        "marketing_expansion_plan": "Please describe the markets you aim to grow in, the reasons for targeting them, and your strategies for achieving this growth. Include details such as: Customer outreach methods, Operational enhancements, Planned investments, Progress made so far (e.g., discussions or MOUs with potential customers): (200 words or less)",
+        "problem_statement": "and the specific needs to be addressed. Highlight areas where project Business Development Services support could be beneficial: (200 words or less)",
+        "sustainable_practices": "Sustainable practices refer to environmentally friendly initiatives or actions taken by your cluster to minimize negative impacts on the environment and impacts from the environment (e.g., resilience to drought). Please",
+    }
+    
+    for field, prompt in prompts_to_remove.items():
+        if data.get(field):
+            # Remove the prompt if it exists at the start or within the text
+            # Handling potential slight variations in whitespace
+            val = data[field]
+            if prompt.lower() in val.lower():
+                # Use regex to replace case-insensitively and handle potential 'n' or whitespace after prompt
+                val = re.sub(re.escape(prompt) + r"[\s\n]*", "", val, flags=re.IGNORECASE).strip()
+            data[field] = val
+
+    if data["submitted_at"]:
+        data["submitted_at"] = data["submitted_at"].replace("Cohort:", "").replace("Chort:", "").strip()
+
+    return data
 def extract_application_data(text_content):
     """
     Extract question-answer pairs from application text using reference questions.
     Returns a dictionary with snake_case keys.
     """
+
+    # Detect cohort
+    is_c2 = (
+        ("Republic of Kenya" in text_content or "REPUBLIC OF KENYA" in text_content) and 
+        ("KJET" in text_content) and
+        ("Cluster / Enterprise" in text_content or "ORGANISATION DETAILS" in text_content)
+    )
+    if is_c2:
+        return extract_application_data_c2(text_content)
 
     # Remove page headers and clean up text
     text_content = text_content.replace("Application Details\n", "")
@@ -233,11 +435,21 @@ def process_application_info_pdf(pdf_path, output_dir, county_name, app_id):
 
         # Use global consistent column order
 
-        # Add county and app_id to data if not present
-        if "county" not in app_data or not app_data["county"]:
+        # Ensure county and app_id are correctly set relative to structure
+        if not app_data.get("county") or len(app_data["county"]) > 30:
             app_data["county"] = county_name
-        if "app_id" not in app_data or not app_data["app_id"]:
+        
+        # For app_id, prioritize the folder-based ID if the extracted one is messy or missing
+        if not app_data.get("app_id") or len(str(app_data["app_id"])) > 20:
             app_data["app_id"] = app_id
+        
+        # Ensure app_number is present
+        if not app_data.get("app_number"):
+            # If C2, the full folder name (without suffixes) might be the app number
+            if app_id and len(app_id) == 4 and "KJET" in str(pdf_path):
+                 # We can't easily reconstruct the full KJET number here without regex 
+                 # but we can at least try to use the app_id
+                 pass
 
         # Write to CSV
         with open(output_file, 'w', newline='', encoding='utf-8') as f:
@@ -383,7 +595,39 @@ def merge_county_csvs(output_base_dir, counties_data):
         print(f"  📄 {merged_file.name}: {row_count} applications ({file_size:,} bytes)")
 
 
-def process_all_counties():
+def find_application_form_pdfs(app_folder: Path):
+    """Return PDFs that look like the main application form, preferring legacy names."""
+    search_patterns = ["application_info_*.pdf", "application_*.pdf"]
+    for pattern in search_patterns:
+        matches = sorted(app_folder.glob(pattern))
+        if matches:
+            return matches
+    return []
+
+
+def parse_args():
+    parser = argparse.ArgumentParser(description="Convert application_info PDFs into CSV per cohort")
+    parser.add_argument(
+        "--data-dir",
+        help="Relative path to the data directory (defaults to repository/data/<cohort>)",
+    )
+    parser.add_argument(
+        "--cohort",
+        choices=["latest", "c1", "c2"],
+        default="latest",
+        help="Optional cohort folder under data/ when --data-dir is not provided",
+    )
+    return parser.parse_args()
+
+
+def resolve_data_directory(args):
+    repo_root = Path(__file__).resolve().parent.parent.parent
+    if args.data_dir:
+        return (repo_root / args.data_dir).resolve()
+    return (repo_root / "data" / args.cohort).resolve()
+
+
+def process_all_counties(args):
     """
     Process all counties and convert application_info_*.pdf files to CSV.
     """
@@ -391,9 +635,10 @@ def process_all_counties():
     print("=" * 40)
 
     # Set up paths
-    current_dir = Path(__file__).parent.parent.parent  # Go up from scripts/extraction/ to project root
-    data_dir = current_dir / "data"
-    output_base_dir = current_dir / "output"
+    current_dir = Path(__file__).resolve().parent.parent.parent  # Go up from scripts/extraction/ to project root
+    data_dir = resolve_data_directory(args)
+    output_base_dir = current_dir / "output" / data_dir.name
+    output_base_dir.mkdir(parents=True, exist_ok=True)
 
     if not data_dir.exists():
         print(f"❌ Error: Data directory not found: {data_dir}")
@@ -435,8 +680,8 @@ def process_all_counties():
                 county_failed += 1
                 continue
 
-            # Look for application_info_*.pdf file
-            app_info_files = list(app_folder.glob("application_info_*.pdf"))
+            # Look for application_info_*.pdf file (fall back to application_*.pdf for new data)
+            app_info_files = find_application_form_pdfs(app_folder)
 
             if not app_info_files:
                 print(f"⚠️  {county_name}/{app_id}: No application_info_*.pdf found")
@@ -467,7 +712,9 @@ def process_all_counties():
     print()
     print("=" * 40)
     print("CONVERSION COMPLETE")
-    print(f"📊 Total: {total_success}/{total_processed} successful ({(total_success/total_processed)*100:.1f}%)")
+    total_success_rate = (total_success / total_processed) * 100 if total_processed else None
+    success_rate_text = f"{total_success_rate:.1f}%" if total_success_rate is not None else "N/A"
+    print(f"📊 Total: {total_success}/{total_processed} successful ({success_rate_text})")
     print(f"✅ Success: {total_success}")
     print(f"❌ Failed: {total_failed}")
     print(f"📁 Output directory: {output_base_dir}")
@@ -489,4 +736,5 @@ def process_all_counties():
 
 # Example usage
 if __name__ == "__main__":
-    process_all_counties()
+    args = parse_args()
+    process_all_counties(args)

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 
 import { motion } from 'framer-motion';
-import { s3BaseUrl } from '../utils';
+import { buildStaticDataUrl, s3BaseUrl } from '../utils';
 
 interface ApplicationFile {
   filename: string;
@@ -24,8 +24,7 @@ function ApplicationFiles() {
     const [error, setError] = useState<string | null>(null);
 
     const { application_id } = useParams<{ application_id: string }>();
-
-    console.log(application_id,"params")
+    const cohort = new URLSearchParams(window.location.search).get('cohort');
 
 
 
@@ -36,7 +35,8 @@ function ApplicationFiles() {
   const loadApplicationFiles = async () => {
     try {
       setLoading(true);
-      const response = await fetch(`${s3BaseUrl}/static/data/data_file_inventory.json`);
+      const url = buildStaticDataUrl('data_file_inventory.json', cohort);
+      const response = await fetch(url);
       const data: ApplicationFilesData = await response.json();
 
       console.log(data,"data")

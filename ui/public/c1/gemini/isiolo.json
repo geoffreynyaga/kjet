@@ -1,0 +1,122 @@
+{
+  "report_title": "KJET Isiolo County Application Ranking and Evaluation",
+  "selection_criteria_weights": {
+    "S1_Registration_Track_Record_5%": 0.1,
+    "S2_Financial_Position_20%": 0.2,
+    "S3_Market_Demand_Competitiveness_20%": 0.2,
+    "S4_Business_Proposal_Viability_25%": 0.25,
+    "S5_Value_Chain_Alignment_10%": 0.15,
+    "S6_Inclusivity_Sustainability_20%": 0.1
+  },
+  "applications": [
+    {
+      "application_id": "Isiolo_653",
+      "applicant_name": "Kina Market Traders Association",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 1,
+      "composite_score": 80.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.0,
+          "reason": "Association, Registered since 2021 (1-3 yrs), documented leadership."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 4.0,
+          "reason": "Turnover KES 6.5M (2024), sound financial health (T 5M-<10M)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.0,
+          "reason": "Consistent monthly orders, growing local channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Strong plan for oil press upgrade, targets present."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Priority VC (Edible Oils), clear processing node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "Strong youth/women participation, one green practice (waste utilization)."
+        }
+      }
+    },
+    {
+      "application_id": "Isiolo_576",
+      "applicant_name": "BURAT EKEUNOS FARMERS MARKETING CO-OPERATIVE SOCIETY",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 2,
+      "composite_score": 79.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Cooperative, Registered since 2017 (>3 yrs), established governance (60% women)."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "Turnover KSH 810K (2024), low but positive trend, minimal financial health (T < 1M)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "Sales mostly local B2C (80%), limited B2B. Aims for regional growth."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Clear need for refining/packaging equipment, plan for contractual farming, objectives are clear."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VC (Edible Oils), critical node (processing/value addition), strong co-operative farmer linkages."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Strong inclusivity (60% women/youth), strong sustainability practices (solar, rainwater, waste reuse)."
+        }
+      }
+    },
+    {
+      "application_id": "Isiolo_715",
+      "applicant_name": "MURULEM MARKETING COPERATIVE SOCIETY LIMITED",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 3,
+      "composite_score": 68.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Cooperative, Registered since 2018 (>3 yrs), established governance."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "Turnover KES 3.2M (2024), stable records (T 1M-<5M)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "Regular local B2B/B2C sales, single channel."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Direction clear (vehicle acquisition), targets generic/budget rough."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Priority VC (Construction), key supply node, some linkages."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "Strong youth participation (60% youth), moderate green intent."
+        }
+      }
+    },
+    {
+      "application_id": "Isiolo_207",
+      "applicant_name": "KOBAWA LIVESTOCK MARKETING COOPERATIVES",
+      "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
+      "ineligibility_criterion_failed": "E3: Priority Value Chain (Pass/Fail)",
+      "reason": "The core business is split, with 50% being in **Livestock Marketing (Red Meat)**, which is not a KJET Priority or Additional value chain."
+    }
+  ]
+}

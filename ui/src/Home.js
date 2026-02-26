@@ -1,20 +1,26 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import { buildStaticDataUrl, s3BaseUrl } from './utils';
 
 import { StatisticsDashboard } from './counties';
 import { motion } from 'framer-motion';
-import { s3BaseUrl } from './utils';
 
 // Clean single Home component
 export default function Home() {
   const [nationalSummary, setNationalSummary] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [showFirstCohortMenu, setShowFirstCohortMenu] = useState(false);
+  const firstCohortMenuRef = useRef(null);
+
+  const cohort = new URLSearchParams(window.location.search).get('cohort') || 'latest';
+
+    const [geminiSummary, setGeminiSummary] = useState(null);
 
   useEffect(() => {
     (async function load() {
       try {
 
-        const r = await fetch(`${s3BaseUrl}/static/data/output-results/national_evaluation_summary.json`);
+        const r = await fetch(buildStaticDataUrl('output-results/national_evaluation_summary.json', cohort));
 
         // Check if response is ok and content-type is JSON
         if (!r.ok) {
@@ -37,6 +43,31 @@ export default function Home() {
         setLoading(false);
       }
     })();
+  }, []);
+
+  useEffect(() => {
+    (async function loadGemini() {
+      try {
+        const r = await fetch(buildStaticDataUrl('gemini_summary.json', cohort));
+        if (r.ok) {
+          const j = await r.json();
+          setGeminiSummary(j);
+        }
+      } catch (e) {
+        // ignore
+      }
+    })();
+  }, []);
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (firstCohortMenuRef.current && !firstCohortMenuRef.current.contains(event.target)) {
+        setShowFirstCohortMenu(false);
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
   if (loading) return (
@@ -300,9 +331,6 @@ export default function Home() {
           >
             Score Analysis
           </motion.a> */}
-
-
-
           <motion.a
             href="/results"
             className="px-6 py-2 font-medium text-white no-underline transition-colors duration-200 bg-green-600 rounded-lg hover:bg-green-700"
@@ -311,22 +339,67 @@ export default function Home() {
           >
             Final Analysis
           </motion.a>
-          {/* <motion.a
-            href="/comparison"
-            className="px-6 py-2 font-medium text-white no-underline transition-colors duration-200 bg-indigo-600 rounded-lg hover:bg-indigo-700"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Human vs Algorithm
-          </motion.a> */}
+
           <motion.a
             href="/firstandsecond"
-            className="px-6 py-2 font-medium text-white no-underline transition-colors duration-200 bg-indigo-600 rounded-lg hover:bg-indigo-700"
+            className="px-6 py-2 font-medium text-white no-underline transition-colors duration-200 bg-purple-600 rounded-lg hover:bg-purple-700"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             First vs Second
           </motion.a>
+
+          <motion.a
+            href="/comparisons"
+            className="flex items-center gap-2 px-4 py-2 font-medium text-white no-underline transition-colors duration-200 bg-gray-700 border rounded-full border-white/20 hover:border-white/40 ring-2 ring-white/10 hover:ring-blue-300"
+            whileHover={{ scale: 1.03 }}
+            whileTap={{ scale: 0.97 }}
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 2v4M6 6v2a6 6 0 0012 0V6M6 10v6a6 6 0 0012 0v-6" />
+            </svg>
+            <span>AI analysis</span>
+            {geminiSummary && geminiSummary.zero_count > 0 && (
+              <span className="inline-flex items-center justify-center w-3 h-3 ml-1 bg-red-500 rounded-full ring-2 ring-white" title={`${geminiSummary.zero_count} counties missing LLM data`} />
+            )}
+          </motion.a>
+
+
+          <div className="w-px h-8 bg-blue-200/40" />
+
+          <div className="relative" ref={firstCohortMenuRef}>
+            <motion.button
+              type="button"
+              onClick={() => setShowFirstCohortMenu((prev) => !prev)}
+              className="inline-flex items-center h-10 gap-2 px-1 text-base font-semibold leading-none text-gray-700 transition-colors duration-200 hover:text-blue-700"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <span>First Cohort</span>
+              <span aria-hidden="true" className="text-sm">▾</span>
+            </motion.button>
+            {showFirstCohortMenu && (
+              <motion.div
+                className="absolute right-0 z-50 w-56 mt-2 overflow-hidden bg-white rounded-lg shadow-lg"
+                initial={{ opacity: 0, y: -8 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.2 }}
+              >
+                <a
+                  href="/results?cohort=c1"
+                  className="block px-4 py-3 text-sm font-medium text-gray-700 no-underline transition-colors duration-200 hover:bg-gray-100"
+                >
+                  Final Analysis
+                </a>
+                <a
+                  href="/firstandsecond?cohort=c1"
+                  className="block px-4 py-3 text-sm font-medium text-gray-700 no-underline transition-colors duration-200 border-t border-gray-100 hover:bg-gray-100"
+                >
+                  First vs Second
+                </a>
+              </motion.div>
+            )}
+          </div>
           <motion.a
             href="/accounts/logout/"
             className="px-6 py-2 font-medium text-white no-underline transition-colors duration-200 bg-red-600 rounded-lg hover:bg-red-700"
@@ -351,7 +424,7 @@ export default function Home() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.6, duration: 0.8 }}
         >
-          KJET National Evaluation
+          KJET National Evaluation (Second Cohort)
         </motion.h1>
         <motion.p
           className="max-w-3xl mx-auto text-xl leading-relaxed text-gray-700"

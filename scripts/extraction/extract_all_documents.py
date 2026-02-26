@@ -11,6 +11,9 @@ and data parsing to maintain modularity and code organization.
 import os
 import json
 import subprocess
+import os
+import json
+import subprocess
 import sys
 import re
 from pathlib import Path
@@ -18,8 +21,7 @@ from datetime import datetime
 from tqdm import tqdm
 import threading
 import time
-
-# Import utility functions
+import argparse
 from utils import (
     extract_application_id_from_folder_name,
     clean_extracted_text,
@@ -28,7 +30,6 @@ from utils import (
     discover_counties_and_applications,
     check_dependencies
 )
-
 
 class ProgressTracker:
     """Enhanced progress tracker that shows current file and retains only errors"""
@@ -140,11 +141,18 @@ def process_application_folder(folder_path, county_name=None):
             if file_name == ".DS_Store":
                 continue
 
-            # Skip certificates of registration as they're already captured in application forms
+            # Skip certificates logic (Revised for parity)
             file_name_lower = file_name.lower()
-            if any(term in file_name_lower for term in ["registration", "certificate", "incorporation"]) and not "application_info" in file_name_lower:
-                application_data["document_summary"]["skipped_certificates"] = application_data["document_summary"].get("skipped_certificates", 0) + 1
-                continue
+            registration_keywords = ["registration", "certificate", "incorporation"]
+            is_registration = any(term in file_name_lower for term in registration_keywords)
+            is_form = "application_info" in file_name_lower or "application_kjet" in file_name_lower
+            
+            # Only skip if it's strictly a registration/cert and we are NOT in latest cohort 
+            # (In latest cohort, we want to extract text from everything for safety)
+            if is_registration and not is_form and not (county_name and "latest" in str(folder_path)):
+                 # Legacy C1 behavior: skip separate certs
+                 application_data["document_summary"]["skipped_certificates"] = application_data["document_summary"].get("skipped_certificates", 0) + 1
+                 # continue # Actually let's not skip, better to have content.
 
             # Update progress tracker
             progress_tracker.update_current_file(str(file_path))
@@ -158,7 +166,8 @@ def process_application_folder(folder_path, county_name=None):
                 application_data["document_summary"]["image_count"] += 1
 
             # Check document types
-            if "application_info" in file_name_lower:
+            # Check document types
+            if "application_info" in file_name_lower or "application_kjet" in file_name_lower:
                 application_data["document_summary"]["has_application_form"] = True
             if "registration" in file_name_lower or "certificate" in file_name_lower:
                 application_data["document_summary"]["has_registration_cert"] = True
@@ -182,43 +191,26 @@ def process_application_folder(folder_path, county_name=None):
                     content = f"UNSUPPORTED FILE TYPE: {file_extension}"
 
                 # Categorize documents with CSV file references
-                if "application_info" in file_name_lower:
-                    # For application info files, reference the CSV file instead of storing content
-                    document_entry = {
-                        "file_type": file_extension,
-                        "file_name": file_name,
-                        "csv_data_reference": f"{county_name or 'Unknown'}_kjet_forms.csv",
-                        "extraction_status": "success" if not content.startswith("ERROR:") else "error"
-                    }
+                # Categorize documents
+                document_entry = {
+                    "file_type": file_extension,
+                    "file_name": file_name,
+                    "content": content,
+                    "extraction_status": "success" if not content.startswith("ERROR:") else "error"
+                }
+
+                if "application_info" in file_name_lower or "application_kjet" in file_name_lower:
                     application_data["application_info"][file_name] = document_entry
-                    extracted_content_summary["content_by_type"]["application_form"] = f"Data available in {document_entry['csv_data_reference']}"
+                    extracted_content_summary["content_by_type"]["application_form"] = "Form content extracted"
                 elif any(term in file_name_lower for term in ["registration", "certificate", "incorporation"]):
-                    # For registration documents, create minimal entry
-                    document_entry = {
-                        "file_type": file_extension,
-                        "file_name": file_name,
-                        "extraction_status": "success" if not content.startswith("ERROR:") else "error"
-                    }
                     application_data["registration_documents"][file_name] = document_entry
-                    extracted_content_summary["content_by_type"]["registration"] = "Registration document processed"
-                elif any(term in file_name_lower for term in ["balance", "income", "financial", "cashflow", "bank", "statement"]):
-                    # For financial documents, create minimal entry
-                    document_entry = {
-                        "file_type": file_extension,
-                        "file_name": file_name,
-                        "extraction_status": "success" if not content.startswith("ERROR:") else "error"
-                    }
+                    extracted_content_summary["content_by_type"]["registration"] = "Registration document content extracted"
+                elif any(term in file_name_lower for term in ["balance", "income", "financial", "cashflow", "bank", "statement", "mpesa"]):
                     application_data["financial_documents"][file_name] = document_entry
                     if "financial" not in extracted_content_summary["content_by_type"]:
                         extracted_content_summary["content_by_type"]["financial"] = []
-                    extracted_content_summary["content_by_type"]["financial"].append("Financial document processed")
+                    extracted_content_summary["content_by_type"]["financial"].append("Financial content extracted")
                 else:
-                    # For other documents, create minimal entry
-                    document_entry = {
-                        "file_type": file_extension,
-                        "file_name": file_name,
-                        "extraction_status": "success" if not content.startswith("ERROR:") else "error"
-                    }
                     application_data["other_documents"][file_name] = document_entry
 
                 # Key information is now available in separate CSV files
@@ -286,8 +278,34 @@ def process_application_folder(folder_path, county_name=None):
     return application_data
 
 
+def parse_args():
+    parser = argparse.ArgumentParser(description="KJET Document Extraction Script CLI")
+    parser.add_argument(
+        "--data-dir",
+        help="Relative path to the data directory (defaults to repository/data/<cohort> when cohort is provided)",
+    )
+    parser.add_argument(
+        "--cohort",
+        choices=["latest", "c1", "c2"],
+        default="latest",
+        help="Optional cohort folder under data/ when --data-dir is not provided",
+    )
+    return parser.parse_args()
+
+
+def resolve_data_directory(args):
+    repo_root = Path(__file__).resolve().parent.parent.parent
+    if args.data_dir:
+        return (repo_root / args.data_dir).resolve()
+
+    candidate = repo_root / "data" / args.cohort
+    return candidate
+
+
 def main():
     """Main execution function"""
+    args = parse_args()
+
     print("KJET Document Extraction Script")
     print("=" * 40)
 
@@ -296,8 +314,8 @@ def main():
     check_dependencies()
 
     # Set up paths
-    current_dir = Path(__file__).parent.parent.parent  # Go up from scripts/extraction/ to project root
-    data_dir = current_dir / "data"
+    current_dir = Path(__file__).resolve().parent.parent.parent  # Go up from scripts/extraction/ to repository root
+    data_dir = resolve_data_directory(args)
     if not data_dir.exists():
         print(f"Error: Data directory not found: {data_dir}")
         sys.exit(1)
@@ -324,9 +342,9 @@ def main():
     print(f"Found {len(counties_data)} counties with {total_applications} total applications")
     print()
 
-    # Create output directory
-    output_dir = current_dir / "output"
-    output_dir.mkdir(exist_ok=True)
+    # Create output directory scoped to the dataset name
+    output_dir = current_dir / "output" / data_dir.name
+    output_dir.mkdir(parents=True, exist_ok=True)
     print(f"Output directory: {output_dir}")
     print()
 

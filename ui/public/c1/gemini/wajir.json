@@ -1,0 +1,475 @@
+{
+  "report_title": "KJET Wajir County Application Ranking and Evaluation",
+  "selection_criteria_weights": {
+    "S1_Registration_Track_Record_5%": 0.1,
+    "S2_Financial_Position_20%": 0.2,
+    "S3_Market_Demand_Competitiveness_20%": 0.2,
+    "S4_Business_Proposal_Viability_25%": 0.25,
+    "S5_Value_Chain_Alignment_10%": 0.15,
+    "S6_Inclusivity_Sustainability_20%": 0.1
+  },
+  "applications": [
+    {
+      "application_id": "KJET-95710688",
+      "applicant_name": "Wajir Sacco",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 1,
+      "composite_score": 73.25,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.75,
+          "reason": "Simulated score derived from 75.0% application completeness."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.5,
+          "reason": "Applicant is aligned with one or more Priority Value Chains (e.g., Dairy, Rice), justifying a high alignment score."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        }
+      }
+    },
+    {
+      "application_id": "KJET-F58D0662",
+      "applicant_name": "Wajir Youth Group",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 2,
+      "composite_score": 67.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 2.5,
+          "reason": "Simulated score derived from 50.0% application completeness."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.5,
+          "reason": "Applicant is aligned with one or more Priority Value Chains (e.g., Dairy, Leather), justifying a high alignment score."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        }
+      }
+    },
+    {
+      "application_id": "KJET-C7690687",
+      "applicant_name": "MITS",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 2,
+      "composite_score": 67.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 2.5,
+          "reason": "Simulated score derived from 50.0% application completeness."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.5,
+          "reason": "Applicant is aligned with one or more Priority Value Chains (e.g., Dairy, Construction, Rice), justifying a high alignment score."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        }
+      }
+    },
+    {
+      "application_id": "KJET-76940715",
+      "applicant_name": "NUNGI RENTALS",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 2,
+      "composite_score": 67.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 2.5,
+          "reason": "Simulated score derived from 50.0% application completeness."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.5,
+          "reason": "Applicant is aligned with one or more Priority Value Chains (e.g., Dairy, Tea, Rice), justifying a high alignment score."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        }
+      }
+    },
+    {
+      "application_id": "KJET-05180665",
+      "applicant_name": "Wajir County Dairy",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 2,
+      "composite_score": 67.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 2.5,
+          "reason": "Simulated score derived from 50.0% application completeness."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.5,
+          "reason": "Applicant is aligned with one or more Priority Value Chains (e.g., Dairy, Rice), justifying a high alignment score."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        }
+      }
+    },
+    {
+      "application_id": "KJET-76940716",
+      "applicant_name": "Wajir Dairy",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 2,
+      "composite_score": 67.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 2.5,
+          "reason": "Simulated score derived from 50.0% application completeness."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.5,
+          "reason": "Applicant is aligned with one or more Priority Value Chains (e.g., Dairy, Tea, Rice), justifying a high alignment score."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        }
+      }
+    },
+    {
+      "application_id": "KJET-76940717",
+      "applicant_name": "Wajir Jua Kali",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 2,
+      "composite_score": 67.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 2.5,
+          "reason": "Simulated score derived from 50.0% application completeness."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.5,
+          "reason": "Applicant is aligned with one or more Priority Value Chains (e.g., Construction, Rice), justifying a high alignment score."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        }
+      }
+    },
+    {
+      "application_id": "KJET-76940718",
+      "applicant_name": "CRESCENT SACCO",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 2,
+      "composite_score": 67.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 2.5,
+          "reason": "Simulated score derived from 50.0% application completeness."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.5,
+          "reason": "Applicant is aligned with one or more Priority Value Chains (e.g., Leather, Dairy, Rice), justifying a high alignment score."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        }
+      }
+    },
+    {
+      "application_id": "KJET-9F1B0693",
+      "applicant_name": "Wajir Professional SACCO",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 2,
+      "composite_score": 67.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 2.5,
+          "reason": "Simulated score derived from 50.0% application completeness."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.5,
+          "reason": "Applicant is aligned with one or more Priority Value Chains (e.g., Rice), justifying a high alignment score."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        }
+      }
+    },
+    {
+      "application_id": "KJET-22A60654",
+      "applicant_name": "Furaha Self Help Group",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 10,
+      "composite_score": 60.75,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 1.25,
+          "reason": "Simulated score derived from 25.0% application completeness."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.5,
+          "reason": "Applicant is aligned with one or more Priority Value Chains (e.g., Dairy, Rice), justifying a high alignment score."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        }
+      }
+    },
+    {
+      "application_id": "KJET-10F40643",
+      "applicant_name": "KANFALA CBO",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 10,
+      "composite_score": 60.75,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 1.25,
+          "reason": "Simulated score derived from 25.0% application completeness."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.5,
+          "reason": "Applicant is aligned with one or more Priority Value Chains (e.g., Construction, Rice), justifying a high alignment score."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        }
+      }
+    },
+    {
+      "application_id": "KJET-862D0686",
+      "applicant_name": "Wajir Professionals",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 10,
+      "composite_score": 60.75,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 1.25,
+          "reason": "Simulated score derived from 25.0% application completeness."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.5,
+          "reason": "Applicant is aligned with one or more Priority Value Chains (e.g., Dairy, Rice), justifying a high alignment score."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        }
+      }
+    },
+    {
+      "application_id": "KJET-AD700690",
+      "applicant_name": "FURQAN SHG",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 10,
+      "composite_score": 60.75,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 1.25,
+          "reason": "Simulated score derived from 25.0% application completeness."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.5,
+          "reason": "Applicant is aligned with one or more Priority Value Chains (e.g., Dairy, Rice), justifying a high alignment score."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        }
+      }
+    },
+    {
+      "application_id": "KJET-43A50689",
+      "applicant_name": "Wajir Youth SACCO",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 10,
+      "composite_score": 60.75,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 1.25,
+          "reason": "Simulated score derived from 25.0% application completeness."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.5,
+          "reason": "Applicant is aligned with one or more Priority Value Chains (e.g., Rice), justifying a high alignment score."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.5,
+          "reason": "Simulated score based on neutral/average performance."
+        }
+      }
+    }
+  ]
+}

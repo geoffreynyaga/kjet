@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 import { HumanApplicant } from '../types/index.ts';
 import { getNumericScore } from '../utils/index.ts';
-import { s3BaseUrl } from '../../../utils';
+import { buildStaticDataUrls, fetchJsonWithFallback } from '../../../utils';
 
 export interface ApplicationFile {
   filename: string;
@@ -34,12 +34,10 @@ export const useApplicantData = (applicationId: string | undefined) => {
         setLoading(true);
         setError(null);
 
-        const response = await fetch(`${s3BaseUrl}/static/data/kjet-human-final.json`);
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
+        const cohort = new URLSearchParams(window.location.search).get('cohort');
+        const applicantsUrls = buildStaticDataUrls('kjet-human-final.json', cohort);
 
-        const data: HumanApplicant[] = await response.json();
+        const data = await fetchJsonWithFallback<HumanApplicant[]>(applicantsUrls);
         const foundApplicant = data.find(a => String(a['Application ID']) === applicationId);
 
         if (foundApplicant) {
@@ -85,12 +83,10 @@ export const useApplicationFiles = (applicationId: string | undefined) => {
         setLoading(true);
         setError(null);
 
-        const response = await fetch(`${s3BaseUrl}/static/data/data_file_inventory.json`);
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
+        const cohort = new URLSearchParams(window.location.search).get('cohort');
+        const inventoryUrls = buildStaticDataUrls('data_file_inventory.json', cohort);
 
-        const data: ApplicationFilesData = await response.json();
+        const data = await fetchJsonWithFallback<ApplicationFilesData>(inventoryUrls);
         const numericId = applicationId.split('_')[1];
 
         if (numericId && data[numericId]) {

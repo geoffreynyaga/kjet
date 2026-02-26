@@ -7,6 +7,8 @@ import csv
 import json
 import os
 import sys
+import argparse
+from path_utils import resolve_csv_path
 
 # Import standardized counties list
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'utils'))
@@ -24,26 +26,41 @@ def standardize_county_names(applicants):
     """
     # Define county name mappings for common variations
     county_mappings = {
-        'Elgeyo-Marakwet': 'Elgeiyo Marakwet',
+        'Elgeyo-Marakwet': 'Elgeyo Marakwet',
         'Nairobi .': 'Nairobi',
         'kiambu': 'Kiambu',
         'kitui': 'Kitui',
         'MIGORI': 'Migori',
         'Mgori': 'Migori',
+        'Homabay': 'Homa Bay',
+        'West pokot': 'West Pokot',
         'N/A': 'Unknown',  # Assign to Unknown county instead of filtering out
         'Unknown': 'Unknown',  # Handle already assigned Unknown
     }
+
+    canonical_by_upper = {county.upper(): county for county in counties}
 
     fixed_count = 0
     problematic_applicants = []
 
     for applicant in applicants:
         original_county = applicant['county']
+        normalized_county = ' '.join(str(original_county).replace('-', ' ').strip().rstrip('.').split())
 
         if original_county in county_mappings:
             applicant['county'] = county_mappings[original_county]
             fixed_count += 1
             print(f"✅ Fixed: '{original_county}' → '{county_mappings[original_county]}' for {applicant['application_id']}")
+        elif normalized_county in county_mappings:
+            applicant['county'] = county_mappings[normalized_county]
+            fixed_count += 1
+            print(f"✅ Fixed: '{original_county}' → '{county_mappings[normalized_county]}' for {applicant['application_id']}")
+        elif normalized_county.upper() in canonical_by_upper:
+            canonical_name = canonical_by_upper[normalized_county.upper()]
+            if canonical_name != original_county:
+                applicant['county'] = canonical_name
+                fixed_count += 1
+                print(f"✅ Fixed: '{original_county}' → '{canonical_name}' for {applicant['application_id']}")
 
     if fixed_count > 0:
         print(f"\n🔧 Standardized {fixed_count} county names")
@@ -507,18 +524,48 @@ def create_baseline(output_folder, input_csv, output_json_file):
         print(f"  Lowest score: {min(scores):.1f}")
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Generate cohort-scoped baseline JSON files")
+    parser.add_argument("--cohort", default="latest", help="Cohort output folder (e.g. latest, c1)")
+    parser.add_argument("--final-csv", help="Optional path to final results CSV")
+    parser.add_argument("--first-csv", help="Optional path to first results CSV")
+    args = parser.parse_args()
+
     base_dir = os.getcwd()
 
 
-    input_first_results = os.path.join(base_dir, "scripts/human/kjet-human-first-results.csv")
-    input_final_results = os.path.join(base_dir, "scripts/human/kjet-human-final-results.csv")
+    input_first_results = resolve_csv_path(
+        base_dir,
+        args.cohort,
+        args.first_csv,
+        [
+            "scripts/human/kjet-human-latest-first.csv",
+        ],
+        "scripts/human-kjet-human-final-results-latest.csv"
+    )
+    input_final_results = resolve_csv_path(
+        base_dir,
+        args.cohort,
+        args.final_csv,
+        [
+            "scripts/human/kjet-human-latest-final.csv",
+            "scripts/human/kjet-human-latest.csv",
+        ],
+        "scripts/human/kjet-human-final-results.csv"
+    )
 
-    output_folder = os.path.join(base_dir, "code/public")
+    output_folder = os.path.join(base_dir, "ui/public", args.cohort)
 
     output_json_first_result = os.path.join(output_folder, "baseline-first-results.json")
     output_json_final_result = os.path.join(output_folder, "baseline-final-results.json")
 
     # Extract data from CSV and save it as JSON
-    create_baseline(output_folder, input_final_results, output_json_final_result)
-    create_baseline(output_folder, input_first_results, output_json_first_result)
+    if input_final_results:
+        create_baseline(output_folder, input_final_results, output_json_final_result)
+    else:
+        print("❌ No final results CSV found. Skipping baseline-final-results.json generation.")
+
+    if input_first_results:
+        create_baseline(output_folder, input_first_results, output_json_first_result)
+    else:
+        print("⚠️  No first results CSV found. Skipping baseline-first-results.json generation.")
 

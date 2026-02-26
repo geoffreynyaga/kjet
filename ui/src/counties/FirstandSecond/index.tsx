@@ -10,10 +10,12 @@ import Pagination from './components/Pagination.tsx';
 import StatisticsGrid from './components/StatisticsGrid.tsx';
 import TableHeader from './components/TableHeader.tsx';
 import TableRow from './components/TableRow.tsx';
+import { buildStaticDataUrls, fetchJsonWithFallback } from '../../utils';
 import { useStatistics } from './hooks/useStatistics.ts';
-import { s3BaseUrl } from '../../utils';
 
 const FirstandSecond: React.FC = () => {
+  const isCohortOne = new URLSearchParams(window.location.search).get('cohort') === 'c1';
+
   const [data, setData] = useState<ComparisonData[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -32,11 +34,10 @@ const FirstandSecond: React.FC = () => {
   const fetchData = async () => {
     try {
       setLoading(true);
-      const response = await fetch(`${s3BaseUrl}/static/data/baseline-combined.json`);
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      const baselineData: BaselineData[] = await response.json();
+      const cohort = new URLSearchParams(window.location.search).get('cohort');
+      const dataUrls = buildStaticDataUrls('baseline-combined.json', cohort);
+
+      const baselineData = await fetchJsonWithFallback<BaselineData[]>(dataUrls);
 
       // Transform baseline data to match existing ComparisonData interface
       // Swapping: "ALL SCORED" now gets final_weighted_score, "ONLY PASS" gets first_weighted_score
@@ -205,6 +206,11 @@ const FirstandSecond: React.FC = () => {
         <div>
           <h1 className="mb-2 text-3xl font-bold text-gray-900">First Results vs Final Results Analysis</h1>
           <p className="text-gray-600">Comparison of first results vs final weighted scores across all evaluations</p>
+          <span className={`inline-flex items-center px-3 py-1 mt-3 text-xs font-semibold rounded-full ${
+            isCohortOne ? 'text-indigo-800 bg-indigo-100' : 'text-blue-800 bg-blue-100'
+          }`}>
+            {isCohortOne ? 'Viewing Cohort 1 Data' : 'Viewing Cohort 2 Data'}
+          </span>
         </div>
         <button
           onClick={() => window.location.href = '/'}

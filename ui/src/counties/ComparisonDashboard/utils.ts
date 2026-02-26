@@ -1,5 +1,7 @@
 import { AgreementType, CriterionComparison, HumanApplicant, LLMIneligibleApplicant, LLMRankedApplicant } from './types';
 
+import { buildStaticDataUrl } from '../../utils';
+
 // Helper function to extract numeric ID from different formats
 export const extractNumericId = (applicationId: string): string => {
   // For human format: "Applicant_158" -> "158" or "applicant 302" -> "302"
@@ -25,10 +27,26 @@ export const extractNumericId = (applicationId: string): string => {
 // Helper function to find matching application by numeric ID
 export const findMatchingApplication = (targetId: string, applications: any[], idField: string): any => {
   const targetNumericId = extractNumericId(targetId);
-  return applications.find(app => {
-    const appNumericId = extractNumericId(app[idField]);
+
+  // First try numeric ID match (existing behavior)
+  let found = applications.find(app => {
+    const appNumericId = extractNumericId(String(app[idField] || ''));
     return appNumericId === targetNumericId;
   });
+  if (found) return found;
+
+  // Fallback: match by last-4 alphanumeric characters (handles suffixes like A8YI)
+  const suffixMatch = String(targetId).match(/([A-Za-z0-9]{4})$/);
+  if (suffixMatch) {
+    const suffix = suffixMatch[1].toLowerCase();
+    found = applications.find(app => {
+      const val = String(app[idField] || '').toLowerCase();
+      return val.endsWith(suffix) || val.includes(`-${suffix}`) || val.includes(`_${suffix}`) || val.includes(` ${suffix}`);
+    });
+    if (found) return found;
+  }
+
+  return undefined;
 };
 
 // Helper function to create detailed criterion comparisons
@@ -201,9 +219,9 @@ export const filterHumanDataByCounty = (humanData: HumanApplicant[], county: str
 export const loadLLMDataForCounty = async (county: string): Promise<any | null> => {
   try {
     // Convert county name to filename format - normalize apostrophes and remove them for filename
-    const filename = normalizeCountyName(county).replace(/['`'']/g, '');
+    const filename = normalizeCountyName(county).replace(/['`'']/g, '').toLowerCase();
     console.log(filename, 'normalized filename for', county);
-    const response = await fetch(`/static/data/gemini/${filename}.json`);
+    const response = await fetch(buildStaticDataUrl(`gemini/${filename}.json`));
     if (response.ok) {
       return await response.json();
     }

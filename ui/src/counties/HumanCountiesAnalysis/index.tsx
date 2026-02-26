@@ -13,6 +13,8 @@ import TopRankedCandidates from './components/TopRankedCandidates.tsx';
 import { motion } from 'framer-motion';
 
 function HumanCountiesAnalysis() {
+  const isCohortOne = new URLSearchParams(window.location.search).get('cohort') === 'c1';
+
   // Custom hooks for data management
   const { groups, loading, error } = useHumanData();
   const { selectedCounty, setSelectedCounty, expandedRanks, setExpandedRanks, toggleExpand } = useCountySelection(groups);
@@ -51,6 +53,11 @@ function HumanCountiesAnalysis() {
             <div className="flex-1">
               <h1 className="mb-2 text-4xl font-bold text-gray-900">Final Evaluations Dashboard</h1>
               <p className="text-xl text-gray-600">Final-scored applicant results grouped by county</p>
+              <span className={`inline-flex items-center px-3 py-1 mt-3 text-xs font-semibold rounded-full ${
+                isCohortOne ? 'text-indigo-800 bg-indigo-100' : 'text-blue-800 bg-blue-100'
+              }`}>
+                {isCohortOne ? 'Viewing Cohort 1 Data' : 'Viewing Cohort 2 Data'}
+              </span>
             </div>
             <div className="flex-shrink-0">
               <a

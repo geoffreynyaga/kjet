@@ -1,0 +1,5562 @@
+[
+  {
+    "application_id": "Applicant_158",
+    "county": "Busia",
+    "first_weighted_score": 151.0,
+    "first_ranking": null,
+    "first_county_rank": 9,
+    "final_weighted_score": 41.0,
+    "final_ranking": 474,
+    "final_county_rank": 13
+  },
+  {
+    "application_id": "Applicant_159",
+    "county": "Kisumu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 52.0,
+    "final_ranking": 366,
+    "final_county_rank": 8
+  },
+  {
+    "application_id": "Applicant_160",
+    "county": "Taita Taveta",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 60.0,
+    "final_ranking": 280,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_161",
+    "county": "Tana River",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 69.0,
+    "final_ranking": 180,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_162",
+    "county": "Uasin Gishu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 20.0,
+    "final_ranking": 544,
+    "final_county_rank": 19
+  },
+  {
+    "application_id": "Applicant_163",
+    "county": "Busia",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 50.0,
+    "final_ranking": 393,
+    "final_county_rank": 9
+  },
+  {
+    "application_id": "Applicant_164",
+    "county": "Makueni",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 43.0,
+    "final_ranking": 458,
+    "final_county_rank": 15
+  },
+  {
+    "application_id": "Applicant_165",
+    "county": "Bungoma",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 47.0,
+    "final_ranking": 422,
+    "final_county_rank": 11
+  },
+  {
+    "application_id": "Applicant_166",
+    "county": "Nandi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 39.0,
+    "final_ranking": 489,
+    "final_county_rank": 7
+  },
+  {
+    "application_id": "Applicant_167",
+    "county": "Kisumu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 62.0,
+    "final_ranking": 254,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_170",
+    "county": "Bungoma",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 57.0,
+    "final_ranking": 312,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_171",
+    "county": "Nandi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 28.0,
+    "final_ranking": 531,
+    "final_county_rank": 9
+  },
+  {
+    "application_id": "Applicant_172",
+    "county": "Nairobi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 77.0,
+    "final_ranking": 114,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_173",
+    "county": "Kisii",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 41.0,
+    "final_ranking": 474,
+    "final_county_rank": 21
+  },
+  {
+    "application_id": "Applicant_174",
+    "county": "Bungoma",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 66.0,
+    "final_ranking": 209,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_176",
+    "county": "Nairobi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 69.0,
+    "final_ranking": 180,
+    "final_county_rank": 7
+  },
+  {
+    "application_id": "Applicant_177",
+    "county": "Murang'a",
+    "first_weighted_score": 35.0,
+    "first_ranking": null,
+    "first_county_rank": 9,
+    "final_weighted_score": 88.0,
+    "final_ranking": 40,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_178",
+    "county": "Bungoma",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 7,
+    "final_weighted_score": 61.0,
+    "final_ranking": 264,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_179",
+    "county": "Nairobi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 85.0,
+    "final_ranking": 55,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_180",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 9,
+    "final_weighted_score": 59.0,
+    "final_ranking": 286,
+    "final_county_rank": 29
+  },
+  {
+    "application_id": "Applicant_181",
+    "county": "Kisumu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 23.0,
+    "final_ranking": 540,
+    "final_county_rank": 13
+  },
+  {
+    "application_id": "Applicant_182",
+    "county": "Turkana",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 51.0,
+    "final_ranking": 380,
+    "final_county_rank": 8
+  },
+  {
+    "application_id": "Applicant_183",
+    "county": "Nyandarua",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 32.0,
+    "final_ranking": 515,
+    "final_county_rank": 11
+  },
+  {
+    "application_id": "Applicant_184",
+    "county": "Nyandarua",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 54.0,
+    "final_ranking": 346,
+    "final_county_rank": 9
+  },
+  {
+    "application_id": "Applicant_185",
+    "county": "Nakuru",
+    "first_weighted_score": 10.0,
+    "first_ranking": null,
+    "first_county_rank": 9,
+    "final_weighted_score": 95.0,
+    "final_ranking": 9,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_186",
+    "county": "Tharaka Nithi",
+    "first_weighted_score": 58.0,
+    "first_ranking": null,
+    "first_county_rank": 7,
+    "final_weighted_score": 83.0,
+    "final_ranking": 69,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_187",
+    "county": "Taita Taveta",
+    "first_weighted_score": 226.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 36.0,
+    "final_ranking": 506,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_190",
+    "county": "Migori",
+    "first_weighted_score": 81.0,
+    "first_ranking": null,
+    "first_county_rank": 10,
+    "final_weighted_score": 79.0,
+    "final_ranking": 96,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_191",
+    "county": "Nairobi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 7,
+    "final_weighted_score": 61.0,
+    "final_ranking": 264,
+    "final_county_rank": 11
+  },
+  {
+    "application_id": "Applicant_193",
+    "county": "Uasin Gishu",
+    "first_weighted_score": 20.0,
+    "first_ranking": null,
+    "first_county_rank": 19,
+    "final_weighted_score": 92.0,
+    "final_ranking": 20,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_194",
+    "county": "Uasin Gishu",
+    "first_weighted_score": 81.0,
+    "first_ranking": null,
+    "first_county_rank": 15,
+    "final_weighted_score": 79.0,
+    "final_ranking": 96,
+    "final_county_rank": 7
+  },
+  {
+    "application_id": "Applicant_195",
+    "county": "Nyandarua",
+    "first_weighted_score": 58.0,
+    "first_ranking": null,
+    "first_county_rank": 9,
+    "final_weighted_score": 83.0,
+    "final_ranking": 69,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_196",
+    "county": "Kericho",
+    "first_weighted_score": 5.0,
+    "first_ranking": null,
+    "first_county_rank": 18,
+    "final_weighted_score": 98.0,
+    "final_ranking": 5,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_197",
+    "county": "Kiambu",
+    "first_weighted_score": 1.0,
+    "first_ranking": null,
+    "first_county_rank": 21,
+    "final_weighted_score": 100.0,
+    "final_ranking": 1,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_198",
+    "county": "West Pokot",
+    "first_weighted_score": 120.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 72.0,
+    "final_ranking": 153,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_199",
+    "county": "Nairobi",
+    "first_weighted_score": 200.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 51.0,
+    "final_ranking": 380,
+    "final_county_rank": 19
+  },
+  {
+    "application_id": "Applicant_200",
+    "county": "Nakuru",
+    "first_weighted_score": 222.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 41.0,
+    "final_ranking": 474,
+    "final_county_rank": 7
+  },
+  {
+    "application_id": "Applicant_201",
+    "county": "Kitui",
+    "first_weighted_score": 123.0,
+    "first_ranking": null,
+    "first_county_rank": 11,
+    "final_weighted_score": 71.0,
+    "final_ranking": 158,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_202",
+    "county": "Nyandarua",
+    "first_weighted_score": 1.0,
+    "first_ranking": null,
+    "first_county_rank": 11,
+    "final_weighted_score": 100.0,
+    "final_ranking": 1,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_203",
+    "county": "Trans Nzoia",
+    "first_weighted_score": 120.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 72.0,
+    "final_ranking": 153,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_204",
+    "county": "Makueni",
+    "first_weighted_score": 228.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 27.0,
+    "final_ranking": 535,
+    "final_county_rank": 17
+  },
+  {
+    "application_id": "Applicant_205",
+    "county": "Lamu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 67.0,
+    "final_ranking": 198,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_206",
+    "county": "Uasin Gishu",
+    "first_weighted_score": 62.0,
+    "first_ranking": null,
+    "first_county_rank": 16,
+    "final_weighted_score": 82.0,
+    "final_ranking": 73,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_207",
+    "county": "Isiolo",
+    "first_weighted_score": 209.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 47.0,
+    "final_ranking": 422,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_208",
+    "county": "Laikipia",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 62.0,
+    "final_ranking": 254,
+    "final_county_rank": 10
+  },
+  {
+    "application_id": "Applicant_209",
+    "county": "Meru",
+    "first_weighted_score": 48.0,
+    "first_ranking": null,
+    "first_county_rank": 16,
+    "final_weighted_score": 91.0,
+    "final_ranking": 23,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_210",
+    "county": "Meru",
+    "first_weighted_score": 22.0,
+    "first_ranking": null,
+    "first_county_rank": 19,
+    "final_weighted_score": 91.0,
+    "final_ranking": 23,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_211",
+    "county": "Nyandarua",
+    "first_weighted_score": 89.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 78.0,
+    "final_ranking": 105,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_212",
+    "county": "Nandi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 45.0,
+    "final_ranking": 442,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_213",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 10,
+    "final_weighted_score": 47.0,
+    "final_ranking": 422,
+    "final_county_rank": 55
+  },
+  {
+    "application_id": "Applicant_214",
+    "county": "Meru",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 48.0,
+    "final_ranking": 410,
+    "final_county_rank": 22
+  },
+  {
+    "application_id": "Applicant_215",
+    "county": "Kajiado",
+    "first_weighted_score": 48.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 85.0,
+    "final_ranking": 55,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_216",
+    "county": "Uasin Gishu",
+    "first_weighted_score": 96.0,
+    "first_ranking": null,
+    "first_county_rank": 14,
+    "final_weighted_score": 77.0,
+    "final_ranking": 114,
+    "final_county_rank": 8
+  },
+  {
+    "application_id": "Applicant_217",
+    "county": "Uasin Gishu",
+    "first_weighted_score": 156.0,
+    "first_ranking": null,
+    "first_county_rank": 11,
+    "final_weighted_score": 64.0,
+    "final_ranking": 230,
+    "final_county_rank": 12
+  },
+  {
+    "application_id": "Applicant_218",
+    "county": "Kericho",
+    "first_weighted_score": 53.0,
+    "first_ranking": null,
+    "first_county_rank": 16,
+    "final_weighted_score": 84.0,
+    "final_ranking": 63,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_219",
+    "county": "Turkana",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 69.0,
+    "final_ranking": 180,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_220",
+    "county": "Baringo",
+    "first_weighted_score": 160.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 63.0,
+    "final_ranking": 242,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_221",
+    "county": "Kericho",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 40.0,
+    "final_ranking": 483,
+    "final_county_rank": 17
+  },
+  {
+    "application_id": "Applicant_222",
+    "county": "Laikipia",
+    "first_weighted_score": 151.0,
+    "first_ranking": null,
+    "first_county_rank": 11,
+    "final_weighted_score": 65.0,
+    "final_ranking": 216,
+    "final_county_rank": 8
+  },
+  {
+    "application_id": "Applicant_223",
+    "county": "Kiambu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 50.0,
+    "final_ranking": 393,
+    "final_county_rank": 17
+  },
+  {
+    "application_id": "Applicant_224",
+    "county": "Nyandarua",
+    "first_weighted_score": 81.0,
+    "first_ranking": null,
+    "first_county_rank": 8,
+    "final_weighted_score": 79.0,
+    "final_ranking": 96,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_225",
+    "county": "Kitui",
+    "first_weighted_score": 35.0,
+    "first_ranking": null,
+    "first_county_rank": 12,
+    "final_weighted_score": 88.0,
+    "final_ranking": 40,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_226",
+    "county": "Murang'a",
+    "first_weighted_score": 142.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 67.0,
+    "final_ranking": 198,
+    "final_county_rank": 9
+  },
+  {
+    "application_id": "Applicant_227",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 11,
+    "final_weighted_score": 50.0,
+    "final_ranking": 393,
+    "final_county_rank": 50
+  },
+  {
+    "application_id": "Applicant_228",
+    "county": "Kericho",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 58.0,
+    "final_ranking": 298,
+    "final_county_rank": 11
+  },
+  {
+    "application_id": "Applicant_229",
+    "county": "Turkana",
+    "first_weighted_score": 151.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 65.0,
+    "final_ranking": 216,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_230",
+    "county": "Kericho",
+    "first_weighted_score": 160.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 63.0,
+    "final_ranking": 242,
+    "final_county_rank": 9
+  },
+  {
+    "application_id": "Applicant_231",
+    "county": "Meru",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 52.0,
+    "final_ranking": 366,
+    "final_county_rank": 20
+  },
+  {
+    "application_id": "Applicant_232",
+    "county": "Mombasa",
+    "first_weighted_score": 89.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 78.0,
+    "final_ranking": 105,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_233",
+    "county": "Nakuru",
+    "first_weighted_score": 70.0,
+    "first_ranking": null,
+    "first_county_rank": 8,
+    "final_weighted_score": 81.0,
+    "final_ranking": 81,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_234",
+    "county": "Samburu",
+    "first_weighted_score": 35.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 88.0,
+    "final_ranking": 40,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_235",
+    "county": "Nyandarua",
+    "first_weighted_score": 30.0,
+    "first_ranking": null,
+    "first_county_rank": 10,
+    "final_weighted_score": 89.0,
+    "final_ranking": 35,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_236",
+    "county": "Siaya",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 29.0,
+    "final_ranking": 526,
+    "final_county_rank": 9
+  },
+  {
+    "application_id": "Applicant_237",
+    "county": "Siaya",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 58.0,
+    "final_ranking": 298,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_238",
+    "county": "Mandera",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 40.0,
+    "final_ranking": 483,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_239",
+    "county": "Murang'a",
+    "first_weighted_score": 89.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 78.0,
+    "final_ranking": 105,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_240",
+    "county": "Busia",
+    "first_weighted_score": 151.0,
+    "first_ranking": null,
+    "first_county_rank": 10,
+    "final_weighted_score": 65.0,
+    "final_ranking": 216,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_241",
+    "county": "Laikipia",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 52.0,
+    "final_ranking": 366,
+    "final_county_rank": 14
+  },
+  {
+    "application_id": "Applicant_242",
+    "county": "Kitui",
+    "first_weighted_score": 165.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 62.0,
+    "final_ranking": 254,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_243",
+    "county": "Kakamega",
+    "first_weighted_score": 222.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 41.0,
+    "final_ranking": 474,
+    "final_county_rank": 63
+  },
+  {
+    "application_id": "Applicant_244",
+    "county": "Nyandarua",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 41.0,
+    "final_ranking": 474,
+    "final_county_rank": 10
+  },
+  {
+    "application_id": "Applicant_245",
+    "county": "Kericho",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 38.0,
+    "final_ranking": 498,
+    "final_county_rank": 18
+  },
+  {
+    "application_id": "Applicant_246",
+    "county": "Laikipia",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 62.0,
+    "final_ranking": 254,
+    "final_county_rank": 11
+  },
+  {
+    "application_id": "Applicant_247",
+    "county": "Murang'a",
+    "first_weighted_score": 70.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 81.0,
+    "final_ranking": 81,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_248",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 12,
+    "final_weighted_score": 30.0,
+    "final_ranking": 522,
+    "final_county_rank": 72
+  },
+  {
+    "application_id": "Applicant_249",
+    "county": "Kakamega",
+    "first_weighted_score": 53.0,
+    "first_ranking": null,
+    "first_county_rank": 74,
+    "final_weighted_score": 84.0,
+    "final_ranking": 63,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_250",
+    "county": "Machakos",
+    "first_weighted_score": 222.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 41.0,
+    "final_ranking": 474,
+    "final_county_rank": 8
+  },
+  {
+    "application_id": "Applicant_251",
+    "county": "Laikipia",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 72.0,
+    "final_ranking": 153,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_252",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 13,
+    "final_weighted_score": 55.0,
+    "final_ranking": 337,
+    "final_county_rank": 39
+  },
+  {
+    "application_id": "Applicant_253",
+    "county": "Laikipia",
+    "first_weighted_score": 178.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 58.0,
+    "final_ranking": 298,
+    "final_county_rank": 13
+  },
+  {
+    "application_id": "Applicant_254",
+    "county": "Embu",
+    "first_weighted_score": 62.0,
+    "first_ranking": null,
+    "first_county_rank": 10,
+    "final_weighted_score": 82.0,
+    "final_ranking": 73,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_255",
+    "county": "Migori",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 71.0,
+    "final_ranking": 158,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_256",
+    "county": "Embu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 45.0,
+    "final_ranking": 442,
+    "final_county_rank": 7
+  },
+  {
+    "application_id": "Applicant_257",
+    "county": "Baringo",
+    "first_weighted_score": 89.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 78.0,
+    "final_ranking": 105,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_258",
+    "county": "Embu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 42.0,
+    "final_ranking": 468,
+    "final_county_rank": 10
+  },
+  {
+    "application_id": "Applicant_259",
+    "county": "Machakos",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 76.0,
+    "final_ranking": 122,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_260",
+    "county": "Laikipia",
+    "first_weighted_score": 205.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 48.0,
+    "final_ranking": 410,
+    "final_county_rank": 15
+  },
+  {
+    "application_id": "Applicant_261",
+    "county": "Nyandarua",
+    "first_weighted_score": 89.0,
+    "first_ranking": null,
+    "first_county_rank": 7,
+    "final_weighted_score": 78.0,
+    "final_ranking": 105,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_262",
+    "county": "Marsabit",
+    "first_weighted_score": 113.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 73.0,
+    "final_ranking": 140,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_263",
+    "county": "Mombasa",
+    "first_weighted_score": 103.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 76.0,
+    "final_ranking": 122,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_264",
+    "county": "Uasin Gishu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 65.0,
+    "final_ranking": 216,
+    "final_county_rank": 11
+  },
+  {
+    "application_id": "Applicant_265",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 14,
+    "final_weighted_score": 42.0,
+    "final_ranking": 468,
+    "final_county_rank": 60
+  },
+  {
+    "application_id": "Applicant_266",
+    "county": "Machakos",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 70.0,
+    "final_ranking": 172,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_267",
+    "county": "Embu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 57.0,
+    "final_ranking": 312,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_268",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 15,
+    "final_weighted_score": 41.0,
+    "final_ranking": 474,
+    "final_county_rank": 64
+  },
+  {
+    "application_id": "Applicant_269",
+    "county": "Kajiado",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 15.0,
+    "final_ranking": 548,
+    "final_county_rank": 7
+  },
+  {
+    "application_id": "Applicant_270",
+    "county": "Kericho",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 7,
+    "final_weighted_score": 48.0,
+    "final_ranking": 410,
+    "final_county_rank": 14
+  },
+  {
+    "application_id": "Applicant_271",
+    "county": "Laikipia",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 7,
+    "final_weighted_score": 69.0,
+    "final_ranking": 180,
+    "final_county_rank": 7
+  },
+  {
+    "application_id": "Applicant_272",
+    "county": "Kiambu",
+    "first_weighted_score": 5.0,
+    "first_ranking": null,
+    "first_county_rank": 20,
+    "final_weighted_score": 90.0,
+    "final_ranking": 31,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_273",
+    "county": "Murang'a",
+    "first_weighted_score": 132.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 70.0,
+    "final_ranking": 172,
+    "final_county_rank": 8
+  },
+  {
+    "application_id": "Applicant_274",
+    "county": "Kiambu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 50.0,
+    "final_ranking": 393,
+    "final_county_rank": 18
+  },
+  {
+    "application_id": "Applicant_275",
+    "county": "Machakos",
+    "first_weighted_score": 77.0,
+    "first_ranking": null,
+    "first_county_rank": 8,
+    "final_weighted_score": 80.0,
+    "final_ranking": 90,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_276",
+    "county": "Migori",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 64.0,
+    "final_ranking": 230,
+    "final_county_rank": 11
+  },
+  {
+    "application_id": "Applicant_277",
+    "county": "Kirinyaga",
+    "first_weighted_score": 205.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 48.0,
+    "final_ranking": 410,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_278",
+    "county": "Tharaka Nithi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 45.0,
+    "final_ranking": 442,
+    "final_county_rank": 9
+  },
+  {
+    "application_id": "Applicant_279",
+    "county": "Marsabit",
+    "first_weighted_score": 209.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 47.0,
+    "final_ranking": 422,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_280",
+    "county": "Kilifi",
+    "first_weighted_score": 200.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 51.0,
+    "final_ranking": 380,
+    "final_county_rank": 7
+  },
+  {
+    "application_id": "Applicant_281",
+    "county": "Kirinyaga",
+    "first_weighted_score": 108.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 74.0,
+    "final_ranking": 133,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_282",
+    "county": "Laikipia",
+    "first_weighted_score": 123.0,
+    "first_ranking": null,
+    "first_county_rank": 12,
+    "final_weighted_score": 71.0,
+    "final_ranking": 158,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_283",
+    "county": "Laikipia",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 8,
+    "final_weighted_score": 86.0,
+    "final_ranking": 47,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_284",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 16,
+    "final_weighted_score": 65.0,
+    "final_ranking": 216,
+    "final_county_rank": 17
+  },
+  {
+    "application_id": "Applicant_285",
+    "county": "Embu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 30.0,
+    "final_ranking": 522,
+    "final_county_rank": 12
+  },
+  {
+    "application_id": "Applicant_286",
+    "county": "Embu",
+    "first_weighted_score": 62.0,
+    "first_ranking": null,
+    "first_county_rank": 11,
+    "final_weighted_score": 82.0,
+    "final_ranking": 73,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_287",
+    "county": "Turkana",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 43.0,
+    "final_ranking": 458,
+    "final_county_rank": 9
+  },
+  {
+    "application_id": "Applicant_288",
+    "county": "Nairobi",
+    "first_weighted_score": 146.0,
+    "first_ranking": null,
+    "first_county_rank": 22,
+    "final_weighted_score": 66.0,
+    "final_ranking": 209,
+    "final_county_rank": 8
+  },
+  {
+    "application_id": "Applicant_289",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 17,
+    "final_weighted_score": 61.0,
+    "final_ranking": 264,
+    "final_county_rank": 24
+  },
+  {
+    "application_id": "Applicant_290",
+    "county": "Makueni",
+    "first_weighted_score": 196.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 52.0,
+    "final_ranking": 366,
+    "final_county_rank": 13
+  },
+  {
+    "application_id": "Applicant_291",
+    "county": "Kisii",
+    "first_weighted_score": 160.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 63.0,
+    "final_ranking": 242,
+    "final_county_rank": 10
+  },
+  {
+    "application_id": "Applicant_292",
+    "county": "Meru",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 75.0,
+    "final_ranking": 128,
+    "final_county_rank": 14
+  },
+  {
+    "application_id": "Applicant_293",
+    "county": "Migori",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 59.0,
+    "final_ranking": 286,
+    "final_county_rank": 12
+  },
+  {
+    "application_id": "Applicant_294",
+    "county": "Kisii",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 85.0,
+    "final_ranking": 55,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_295",
+    "county": "Kericho",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 8,
+    "final_weighted_score": 46.0,
+    "final_ranking": 434,
+    "final_county_rank": 15
+  },
+  {
+    "application_id": "Applicant_296",
+    "county": "Kwale",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 46.0,
+    "final_ranking": 434,
+    "final_county_rank": 11
+  },
+  {
+    "application_id": "Applicant_297",
+    "county": "Baringo",
+    "first_weighted_score": 16.0,
+    "first_ranking": null,
+    "first_county_rank": 7,
+    "final_weighted_score": 93.0,
+    "final_ranking": 16,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_298",
+    "county": "Kisii",
+    "first_weighted_score": 204.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 49.0,
+    "final_ranking": 404,
+    "final_county_rank": 19
+  },
+  {
+    "application_id": "Applicant_299",
+    "county": "Kiambu",
+    "first_weighted_score": 58.0,
+    "first_ranking": null,
+    "first_county_rank": 19,
+    "final_weighted_score": 95.0,
+    "final_ranking": 9,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_300",
+    "county": "Kitui",
+    "first_weighted_score": 192.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 53.0,
+    "final_ranking": 352,
+    "final_county_rank": 7
+  },
+  {
+    "application_id": "Applicant_301",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 18,
+    "final_weighted_score": 62.0,
+    "final_ranking": 254,
+    "final_county_rank": 23
+  },
+  {
+    "application_id": "Applicant_302",
+    "county": "Baringo",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 54.0,
+    "final_ranking": 346,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_303",
+    "county": "Kwale",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 28.0,
+    "final_ranking": 531,
+    "final_county_rank": 16
+  },
+  {
+    "application_id": "Applicant_304",
+    "county": "Machakos",
+    "first_weighted_score": 132.0,
+    "first_ranking": null,
+    "first_county_rank": 7,
+    "final_weighted_score": 70.0,
+    "final_ranking": 172,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_305",
+    "county": "Nairobi",
+    "first_weighted_score": 81.0,
+    "first_ranking": null,
+    "first_county_rank": 24,
+    "final_weighted_score": 79.0,
+    "final_ranking": 96,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_306",
+    "county": "Kakamega",
+    "first_weighted_score": 151.0,
+    "first_ranking": null,
+    "first_county_rank": 60,
+    "final_weighted_score": 65.0,
+    "final_ranking": 216,
+    "final_county_rank": 18
+  },
+  {
+    "application_id": "Applicant_307",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 19,
+    "final_weighted_score": 61.0,
+    "final_ranking": 264,
+    "final_county_rank": 25
+  },
+  {
+    "application_id": "Applicant_308",
+    "county": "Nakuru",
+    "first_weighted_score": 89.0,
+    "first_ranking": null,
+    "first_county_rank": 7,
+    "final_weighted_score": 78.0,
+    "final_ranking": 105,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_309",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 20,
+    "final_weighted_score": 34.0,
+    "final_ranking": 510,
+    "final_county_rank": 70
+  },
+  {
+    "application_id": "Applicant_310",
+    "county": "Embu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 38.0,
+    "final_ranking": 498,
+    "final_county_rank": 11
+  },
+  {
+    "application_id": "Applicant_311",
+    "county": "Embu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 7,
+    "final_weighted_score": 45.0,
+    "final_ranking": 442,
+    "final_county_rank": 8
+  },
+  {
+    "application_id": "Applicant_312",
+    "county": "Kajiado",
+    "first_weighted_score": 62.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 82.0,
+    "final_ranking": 73,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_313",
+    "county": "Nandi",
+    "first_weighted_score": 30.0,
+    "first_ranking": null,
+    "first_county_rank": 8,
+    "final_weighted_score": 89.0,
+    "final_ranking": 35,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_314",
+    "county": "Murang'a",
+    "first_weighted_score": 41.0,
+    "first_ranking": null,
+    "first_county_rank": 8,
+    "final_weighted_score": 86.0,
+    "final_ranking": 47,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_315",
+    "county": "Nandi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 48.0,
+    "final_ranking": 410,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_316",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 21,
+    "final_weighted_score": 39.0,
+    "final_ranking": 489,
+    "final_county_rank": 67
+  },
+  {
+    "application_id": "Applicant_317",
+    "county": "Makueni",
+    "first_weighted_score": 168.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 61.0,
+    "final_ranking": 264,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_318",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 22,
+    "final_weighted_score": 57.0,
+    "final_ranking": 312,
+    "final_county_rank": 34
+  },
+  {
+    "application_id": "Applicant_319",
+    "county": "Kisii",
+    "first_weighted_score": 123.0,
+    "first_ranking": null,
+    "first_county_rank": 19,
+    "final_weighted_score": 71.0,
+    "final_ranking": 158,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_320",
+    "county": "Elgeiyo Marakwet",
+    "first_weighted_score": 22.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 91.0,
+    "final_ranking": 23,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_321",
+    "county": "Tharaka Nithi",
+    "first_weighted_score": 178.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 58.0,
+    "final_ranking": 298,
+    "final_county_rank": 8
+  },
+  {
+    "application_id": "Applicant_322",
+    "county": "Kakamega",
+    "first_weighted_score": 123.0,
+    "first_ranking": null,
+    "first_county_rank": 66,
+    "final_weighted_score": 71.0,
+    "final_ranking": 158,
+    "final_county_rank": 11
+  },
+  {
+    "application_id": "Applicant_323",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 23,
+    "final_weighted_score": 56.0,
+    "final_ranking": 319,
+    "final_county_rank": 36
+  },
+  {
+    "application_id": "Applicant_324",
+    "county": "Uasin Gishu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 16.0,
+    "final_ranking": 547,
+    "final_county_rank": 21
+  },
+  {
+    "application_id": "Applicant_325",
+    "county": "Murang'a",
+    "first_weighted_score": 70.0,
+    "first_ranking": null,
+    "first_county_rank": 7,
+    "final_weighted_score": 81.0,
+    "final_ranking": 81,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_326",
+    "county": "Kisii",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 71.0,
+    "final_ranking": 158,
+    "final_county_rank": 7
+  },
+  {
+    "application_id": "Applicant_327",
+    "county": "Meru",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 64.0,
+    "final_ranking": 230,
+    "final_county_rank": 17
+  },
+  {
+    "application_id": "Applicant_328",
+    "county": "Nyeri",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 34.0,
+    "final_ranking": 510,
+    "final_county_rank": 12
+  },
+  {
+    "application_id": "Applicant_329",
+    "county": "Makueni",
+    "first_weighted_score": 192.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 53.0,
+    "final_ranking": 352,
+    "final_county_rank": 12
+  },
+  {
+    "application_id": "Applicant_330",
+    "county": "Kericho",
+    "first_weighted_score": 81.0,
+    "first_ranking": null,
+    "first_county_rank": 15,
+    "final_weighted_score": 79.0,
+    "final_ranking": 96,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_331",
+    "county": "Laikipia",
+    "first_weighted_score": 39.0,
+    "first_ranking": null,
+    "first_county_rank": 15,
+    "final_weighted_score": 87.0,
+    "final_ranking": 44,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_332",
+    "county": "Nairobi",
+    "first_weighted_score": 77.0,
+    "first_ranking": null,
+    "first_county_rank": 25,
+    "final_weighted_score": 80.0,
+    "final_ranking": 90,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_333",
+    "county": "Garissa",
+    "first_weighted_score": 77.0,
+    "first_ranking": null,
+    "first_county_rank": 8,
+    "final_weighted_score": 80.0,
+    "final_ranking": 90,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_334",
+    "county": "Uasin Gishu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 48.0,
+    "final_ranking": 410,
+    "final_county_rank": 16
+  },
+  {
+    "application_id": "Applicant_335",
+    "county": "Kericho",
+    "first_weighted_score": 103.0,
+    "first_ranking": null,
+    "first_county_rank": 13,
+    "final_weighted_score": 76.0,
+    "final_ranking": 122,
+    "final_county_rank": 7
+  },
+  {
+    "application_id": "Applicant_336",
+    "county": "Garissa",
+    "first_weighted_score": 113.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 73.0,
+    "final_ranking": 140,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_337",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 24,
+    "final_weighted_score": 40.0,
+    "final_ranking": 483,
+    "final_county_rank": 66
+  },
+  {
+    "application_id": "Applicant_338",
+    "county": "Baringo",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 30.0,
+    "final_ranking": 522,
+    "final_county_rank": 8
+  },
+  {
+    "application_id": "Applicant_339",
+    "county": "Busia",
+    "first_weighted_score": 209.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 47.0,
+    "final_ranking": 422,
+    "final_county_rank": 11
+  },
+  {
+    "application_id": "Applicant_340",
+    "county": "Busia",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 65.0,
+    "final_ranking": 216,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_341",
+    "county": "Uasin Gishu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 7,
+    "final_weighted_score": 85.0,
+    "final_ranking": 55,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_342",
+    "county": "Meru",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 52.0,
+    "final_ranking": 366,
+    "final_county_rank": 21
+  },
+  {
+    "application_id": "Applicant_343",
+    "county": "Kisii",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 63.0,
+    "final_ranking": 242,
+    "final_county_rank": 11
+  },
+  {
+    "application_id": "Applicant_344",
+    "county": "Kakamega",
+    "first_weighted_score": 81.0,
+    "first_ranking": null,
+    "first_county_rank": 72,
+    "final_weighted_score": 79.0,
+    "final_ranking": 96,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_345",
+    "county": "Turkana",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 58.0,
+    "final_ranking": 298,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_346",
+    "county": "Kakamega",
+    "first_weighted_score": 113.0,
+    "first_ranking": null,
+    "first_county_rank": 68,
+    "final_weighted_score": 73.0,
+    "final_ranking": 140,
+    "final_county_rank": 7
+  },
+  {
+    "application_id": "Applicant_347",
+    "county": "Homa Bay",
+    "first_weighted_score": 96.0,
+    "first_ranking": null,
+    "first_county_rank": 11,
+    "final_weighted_score": 77.0,
+    "final_ranking": 114,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_348",
+    "county": "Meru",
+    "first_weighted_score": 48.0,
+    "first_ranking": null,
+    "first_county_rank": 17,
+    "final_weighted_score": 85.0,
+    "final_ranking": 55,
+    "final_county_rank": 8
+  },
+  {
+    "application_id": "Applicant_349",
+    "county": "Wajir",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 64.0,
+    "final_ranking": 230,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_350",
+    "county": "Wajir",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 25.0,
+    "final_ranking": 537,
+    "final_county_rank": 11
+  },
+  {
+    "application_id": "Applicant_351",
+    "county": "Mombasa",
+    "first_weighted_score": 62.0,
+    "first_ranking": null,
+    "first_county_rank": 7,
+    "final_weighted_score": 82.0,
+    "final_ranking": 73,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_352",
+    "county": "Bomet",
+    "first_weighted_score": 20.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 92.0,
+    "final_ranking": 20,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_353",
+    "county": "Homa Bay",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 39.0,
+    "final_ranking": 489,
+    "final_county_rank": 11
+  },
+  {
+    "application_id": "Applicant_354",
+    "county": "Tharaka Nithi",
+    "first_weighted_score": 81.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 79.0,
+    "final_ranking": 96,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_355",
+    "county": "Wajir",
+    "first_weighted_score": 30.0,
+    "first_ranking": null,
+    "first_county_rank": 14,
+    "final_weighted_score": 89.0,
+    "final_ranking": 35,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_356",
+    "county": "Garissa",
+    "first_weighted_score": 113.0,
+    "first_ranking": null,
+    "first_county_rank": 7,
+    "final_weighted_score": 73.0,
+    "final_ranking": 140,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_357",
+    "county": "Kisii",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 7,
+    "final_weighted_score": 61.0,
+    "final_ranking": 264,
+    "final_county_rank": 12
+  },
+  {
+    "application_id": "Applicant_358",
+    "county": "Wajir",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 27.0,
+    "final_ranking": 535,
+    "final_county_rank": 10
+  },
+  {
+    "application_id": "Applicant_359",
+    "county": "Kisii",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 8,
+    "final_weighted_score": 73.0,
+    "final_ranking": 140,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_360",
+    "county": "Kisii",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 9,
+    "final_weighted_score": 52.0,
+    "final_ranking": 366,
+    "final_county_rank": 16
+  },
+  {
+    "application_id": "Applicant_361",
+    "county": "Kisii",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 10,
+    "final_weighted_score": 54.0,
+    "final_ranking": 346,
+    "final_county_rank": 14
+  },
+  {
+    "application_id": "Applicant_362",
+    "county": "Kakamega",
+    "first_weighted_score": 192.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 53.0,
+    "final_ranking": 352,
+    "final_county_rank": 44
+  },
+  {
+    "application_id": "Applicant_363",
+    "county": "Narok",
+    "first_weighted_score": 70.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 81.0,
+    "final_ranking": 81,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_364",
+    "county": "Nyamira",
+    "first_weighted_score": 29.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 90.0,
+    "final_ranking": 31,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_365",
+    "county": "Makueni",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 56.0,
+    "final_ranking": 319,
+    "final_county_rank": 9
+  },
+  {
+    "application_id": "Applicant_366",
+    "county": "Wajir",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 29.0,
+    "final_ranking": 526,
+    "final_county_rank": 8
+  },
+  {
+    "application_id": "Applicant_367",
+    "county": "Lamu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 44.0,
+    "final_ranking": 451,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_368",
+    "county": "Kitui",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 29.0,
+    "final_ranking": 526,
+    "final_county_rank": 9
+  },
+  {
+    "application_id": "Applicant_369",
+    "county": "Nyeri",
+    "first_weighted_score": 8.0,
+    "first_ranking": null,
+    "first_county_rank": 13,
+    "final_weighted_score": 96.0,
+    "final_ranking": 7,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_370",
+    "county": "Uasin Gishu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 8,
+    "final_weighted_score": 46.0,
+    "final_ranking": 434,
+    "final_county_rank": 17
+  },
+  {
+    "application_id": "Applicant_371",
+    "county": "Baringo",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 43.0,
+    "final_ranking": 458,
+    "final_county_rank": 7
+  },
+  {
+    "application_id": "Applicant_372",
+    "county": "Uasin Gishu",
+    "first_weighted_score": 48.0,
+    "first_ranking": null,
+    "first_county_rank": 17,
+    "final_weighted_score": 85.0,
+    "final_ranking": 55,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_373",
+    "county": "Migori",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 67.0,
+    "final_ranking": 198,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_374",
+    "county": "Taita Taveta",
+    "first_weighted_score": 89.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 78.0,
+    "final_ranking": 105,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_375",
+    "county": "Wajir",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 38.0,
+    "final_ranking": 498,
+    "final_county_rank": 7
+  },
+  {
+    "application_id": "Applicant_376",
+    "county": "Kisii",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 11,
+    "final_weighted_score": 48.0,
+    "final_ranking": 410,
+    "final_county_rank": 20
+  },
+  {
+    "application_id": "Applicant_377",
+    "county": "Uasin Gishu",
+    "first_weighted_score": 39.0,
+    "first_ranking": null,
+    "first_county_rank": 18,
+    "final_weighted_score": 87.0,
+    "final_ranking": 44,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_378",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 25,
+    "final_weighted_score": 12.0,
+    "final_ranking": 551,
+    "final_county_rank": 74
+  },
+  {
+    "application_id": "Applicant_379",
+    "county": "Siaya",
+    "first_weighted_score": 22.0,
+    "first_ranking": null,
+    "first_county_rank": 7,
+    "final_weighted_score": 91.0,
+    "final_ranking": 23,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_380",
+    "county": "Samburu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 45.0,
+    "final_ranking": 442,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_381",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 26,
+    "final_weighted_score": 53.0,
+    "final_ranking": 352,
+    "final_county_rank": 45
+  },
+  {
+    "application_id": "Applicant_382",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 27,
+    "final_weighted_score": 37.0,
+    "final_ranking": 505,
+    "final_county_rank": 69
+  },
+  {
+    "application_id": "Applicant_383",
+    "county": "Kakamega",
+    "first_weighted_score": 77.0,
+    "first_ranking": null,
+    "first_county_rank": 73,
+    "final_weighted_score": 80.0,
+    "final_ranking": 90,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_384",
+    "county": "Wajir",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 7,
+    "final_weighted_score": 67.0,
+    "final_ranking": 198,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_385",
+    "county": "Bungoma",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 8,
+    "final_weighted_score": 78.0,
+    "final_ranking": 105,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_386",
+    "county": "Marsabit",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 39.0,
+    "final_ranking": 489,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_387",
+    "county": "Tharaka Nithi",
+    "first_weighted_score": 172.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 60.0,
+    "final_ranking": 280,
+    "final_county_rank": 7
+  },
+  {
+    "application_id": "Applicant_388",
+    "county": "Kiambu",
+    "first_weighted_score": 113.0,
+    "first_ranking": null,
+    "first_county_rank": 16,
+    "final_weighted_score": 71.0,
+    "final_ranking": 158,
+    "final_county_rank": 7
+  },
+  {
+    "application_id": "Applicant_389",
+    "county": "Nakuru",
+    "first_weighted_score": 132.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 70.0,
+    "final_ranking": 172,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_390",
+    "county": "Uasin Gishu",
+    "first_weighted_score": 172.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 60.0,
+    "final_ranking": 280,
+    "final_county_rank": 14
+  },
+  {
+    "application_id": "Applicant_391",
+    "county": "Busia",
+    "first_weighted_score": 139.0,
+    "first_ranking": null,
+    "first_county_rank": 11,
+    "final_weighted_score": 68.0,
+    "final_ranking": 193,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_392",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 28,
+    "final_weighted_score": 29.0,
+    "final_ranking": 526,
+    "final_county_rank": 73
+  },
+  {
+    "application_id": "Applicant_393",
+    "county": "Kisii",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 12,
+    "final_weighted_score": 80.0,
+    "final_ranking": 90,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_394",
+    "county": "Kakamega",
+    "first_weighted_score": 139.0,
+    "first_ranking": null,
+    "first_county_rank": 64,
+    "final_weighted_score": 68.0,
+    "final_ranking": 193,
+    "final_county_rank": 15
+  },
+  {
+    "application_id": "Applicant_395",
+    "county": "Kiambu",
+    "first_weighted_score": 142.0,
+    "first_ranking": null,
+    "first_county_rank": 15,
+    "final_weighted_score": 67.0,
+    "final_ranking": 198,
+    "final_county_rank": 8
+  },
+  {
+    "application_id": "Applicant_396",
+    "county": "Nyeri",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 51.0,
+    "final_ranking": 380,
+    "final_county_rank": 9
+  },
+  {
+    "application_id": "Applicant_397",
+    "county": "Kiambu",
+    "first_weighted_score": 96.0,
+    "first_ranking": null,
+    "first_county_rank": 17,
+    "final_weighted_score": 77.0,
+    "final_ranking": 114,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_398",
+    "county": "Busia",
+    "first_weighted_score": 123.0,
+    "first_ranking": null,
+    "first_county_rank": 12,
+    "final_weighted_score": 75.0,
+    "final_ranking": 128,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_399",
+    "county": "Migori",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 78.0,
+    "final_ranking": 105,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_400",
+    "county": "Kisii",
+    "first_weighted_score": 149.0,
+    "first_ranking": null,
+    "first_county_rank": 17,
+    "final_weighted_score": 52.0,
+    "final_ranking": 366,
+    "final_county_rank": 17
+  },
+  {
+    "application_id": "Applicant_401",
+    "county": "Nairobi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 8,
+    "final_weighted_score": 73.0,
+    "final_ranking": 140,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_402",
+    "county": "Tana River",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 58.0,
+    "final_ranking": 298,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_403",
+    "county": "Kitui",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 11.0,
+    "final_ranking": 552,
+    "final_county_rank": 11
+  },
+  {
+    "application_id": "Applicant_404",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 29,
+    "final_weighted_score": 56.0,
+    "final_ranking": 319,
+    "final_county_rank": 37
+  },
+  {
+    "application_id": "Applicant_405",
+    "county": "Nyeri",
+    "first_weighted_score": 62.0,
+    "first_ranking": null,
+    "first_county_rank": 10,
+    "final_weighted_score": 82.0,
+    "final_ranking": 73,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_406",
+    "county": "Makueni",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 7,
+    "final_weighted_score": 38.0,
+    "final_ranking": 498,
+    "final_county_rank": 16
+  },
+  {
+    "application_id": "Applicant_407",
+    "county": "Makueni",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 8,
+    "final_weighted_score": 44.0,
+    "final_ranking": 451,
+    "final_county_rank": 14
+  },
+  {
+    "application_id": "Applicant_408",
+    "county": "Nairobi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 9,
+    "final_weighted_score": 63.0,
+    "final_ranking": 242,
+    "final_county_rank": 10
+  },
+  {
+    "application_id": "Applicant_409",
+    "county": "Nyeri",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 29.0,
+    "final_ranking": 526,
+    "final_county_rank": 14
+  },
+  {
+    "application_id": "Applicant_410",
+    "county": "Homa Bay",
+    "first_weighted_score": 22.0,
+    "first_ranking": null,
+    "first_county_rank": 13,
+    "final_weighted_score": 91.0,
+    "final_ranking": 23,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_411",
+    "county": "Nairobi",
+    "first_weighted_score": 108.0,
+    "first_ranking": null,
+    "first_county_rank": 23,
+    "final_weighted_score": 74.0,
+    "final_ranking": 133,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_412",
+    "county": "Kisii",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 13,
+    "final_weighted_score": 54.0,
+    "final_ranking": 346,
+    "final_county_rank": 15
+  },
+  {
+    "application_id": "Applicant_413",
+    "county": "Nyeri",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 32.0,
+    "final_ranking": 515,
+    "final_county_rank": 13
+  },
+  {
+    "application_id": "Applicant_414",
+    "county": "Kisii",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 14,
+    "final_weighted_score": 56.0,
+    "final_ranking": 319,
+    "final_county_rank": 13
+  },
+  {
+    "application_id": "Applicant_415",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 30,
+    "final_weighted_score": 51.0,
+    "final_ranking": 380,
+    "final_county_rank": 47
+  },
+  {
+    "application_id": "Applicant_416",
+    "county": "Mombasa",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 71.0,
+    "final_ranking": 158,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_417",
+    "county": "Kisii",
+    "first_weighted_score": 81.0,
+    "first_ranking": null,
+    "first_county_rank": 20,
+    "final_weighted_score": 79.0,
+    "final_ranking": 96,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_418",
+    "county": "Makueni",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 9,
+    "final_weighted_score": 55.0,
+    "final_ranking": 337,
+    "final_county_rank": 11
+  },
+  {
+    "application_id": "Applicant_419",
+    "county": "Nyeri",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 7,
+    "final_weighted_score": 43.0,
+    "final_ranking": 458,
+    "final_county_rank": 10
+  },
+  {
+    "application_id": "Applicant_420",
+    "county": "Makueni",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 10,
+    "final_weighted_score": 67.0,
+    "final_ranking": 198,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_421",
+    "county": "Embu",
+    "first_weighted_score": 30.0,
+    "first_ranking": null,
+    "first_county_rank": 12,
+    "final_weighted_score": 89.0,
+    "final_ranking": 35,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_422",
+    "county": "Mandera",
+    "first_weighted_score": 108.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 74.0,
+    "final_ranking": 133,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_423",
+    "county": "Nyamira",
+    "first_weighted_score": 58.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 83.0,
+    "final_ranking": 69,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_424",
+    "county": "Bomet",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 70.0,
+    "final_ranking": 172,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_425",
+    "county": "Makueni",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 11,
+    "final_weighted_score": 61.0,
+    "final_ranking": 264,
+    "final_county_rank": 7
+  },
+  {
+    "application_id": "Applicant_426",
+    "county": "Baringo",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 48.0,
+    "final_ranking": 410,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_427",
+    "county": "Meru",
+    "first_weighted_score": 232.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 90.0,
+    "final_ranking": 31,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_428",
+    "county": "Nyeri",
+    "first_weighted_score": 41.0,
+    "first_ranking": null,
+    "first_county_rank": 11,
+    "final_weighted_score": 86.0,
+    "final_ranking": 47,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_429",
+    "county": "Siaya",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 45.0,
+    "final_ranking": 442,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_430",
+    "county": "Kericho",
+    "first_weighted_score": 200.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 51.0,
+    "final_ranking": 380,
+    "final_county_rank": 13
+  },
+  {
+    "application_id": "Applicant_431",
+    "county": "Tana River",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 51.0,
+    "final_ranking": 380,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_432",
+    "county": "Murang'a",
+    "first_weighted_score": 96.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 77.0,
+    "final_ranking": 114,
+    "final_county_rank": 7
+  },
+  {
+    "application_id": "Applicant_433",
+    "county": "Kakamega",
+    "first_weighted_score": 106.0,
+    "first_ranking": null,
+    "first_county_rank": 70,
+    "final_weighted_score": 75.0,
+    "final_ranking": 128,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_434",
+    "county": "Migori",
+    "first_weighted_score": 35.0,
+    "first_ranking": null,
+    "first_county_rank": 12,
+    "final_weighted_score": 88.0,
+    "final_ranking": 40,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_435",
+    "county": "Kericho",
+    "first_weighted_score": 1.0,
+    "first_ranking": null,
+    "first_county_rank": 19,
+    "final_weighted_score": 100.0,
+    "final_ranking": 1,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_436",
+    "county": "Machakos",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 65.0,
+    "final_ranking": 216,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_437",
+    "county": "Marsabit",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 56.0,
+    "final_ranking": 319,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_438",
+    "county": "Meru",
+    "first_weighted_score": 62.0,
+    "first_ranking": null,
+    "first_county_rank": 15,
+    "final_weighted_score": 82.0,
+    "final_ranking": 73,
+    "final_county_rank": 9
+  },
+  {
+    "application_id": "Applicant_439",
+    "county": "Nyeri",
+    "first_weighted_score": 5.0,
+    "first_ranking": null,
+    "first_county_rank": 14,
+    "final_weighted_score": 98.0,
+    "final_ranking": 5,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_440",
+    "county": "Kisii",
+    "first_weighted_score": 142.0,
+    "first_ranking": null,
+    "first_county_rank": 18,
+    "final_weighted_score": 67.0,
+    "final_ranking": 198,
+    "final_county_rank": 8
+  },
+  {
+    "application_id": "Applicant_441",
+    "county": "Kitui",
+    "first_weighted_score": 165.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 62.0,
+    "final_ranking": 254,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_442",
+    "county": "Bomet",
+    "first_weighted_score": 48.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 85.0,
+    "final_ranking": 55,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_443",
+    "county": "Kwale",
+    "first_weighted_score": 232.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 65.0,
+    "final_ranking": 216,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_444",
+    "county": "Murang'a",
+    "first_weighted_score": 232.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 87.0,
+    "final_ranking": 44,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_445",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 31,
+    "final_weighted_score": 51.0,
+    "final_ranking": 380,
+    "final_county_rank": 48
+  },
+  {
+    "application_id": "Applicant_446",
+    "county": "Migori",
+    "first_weighted_score": 232.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 67.0,
+    "final_ranking": 198,
+    "final_county_rank": 7
+  },
+  {
+    "application_id": "Applicant_447",
+    "county": "Garissa",
+    "first_weighted_score": 62.0,
+    "first_ranking": null,
+    "first_county_rank": 9,
+    "final_weighted_score": 82.0,
+    "final_ranking": 73,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_448",
+    "county": "Migori",
+    "first_weighted_score": 41.0,
+    "first_ranking": null,
+    "first_county_rank": 11,
+    "final_weighted_score": 86.0,
+    "final_ranking": 47,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_449",
+    "county": "Meru",
+    "first_weighted_score": 41.0,
+    "first_ranking": null,
+    "first_county_rank": 18,
+    "final_weighted_score": 86.0,
+    "final_ranking": 47,
+    "final_county_rank": 7
+  },
+  {
+    "application_id": "Applicant_450",
+    "county": "Kisumu",
+    "first_weighted_score": 53.0,
+    "first_ranking": null,
+    "first_county_rank": 13,
+    "final_weighted_score": 84.0,
+    "final_ranking": 63,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_451",
+    "county": "Kirinyaga",
+    "first_weighted_score": 11.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 94.0,
+    "final_ranking": 11,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_452",
+    "county": "Meru",
+    "first_weighted_score": 70.0,
+    "first_ranking": null,
+    "first_county_rank": 14,
+    "final_weighted_score": 81.0,
+    "final_ranking": 81,
+    "final_county_rank": 10
+  },
+  {
+    "application_id": "Applicant_453",
+    "county": "Homa Bay",
+    "first_weighted_score": 156.0,
+    "first_ranking": null,
+    "first_county_rank": 10,
+    "final_weighted_score": 64.0,
+    "final_ranking": 230,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_454",
+    "county": "Trans Nzoia",
+    "first_weighted_score": 146.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 66.0,
+    "final_ranking": 209,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_455",
+    "county": "Wajir",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 8,
+    "final_weighted_score": 59.0,
+    "final_ranking": 286,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_456",
+    "county": "Homa Bay",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 63.0,
+    "final_ranking": 242,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_457",
+    "county": "Kericho",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 9,
+    "final_weighted_score": 42.0,
+    "final_ranking": 468,
+    "final_county_rank": 16
+  },
+  {
+    "application_id": "Applicant_458",
+    "county": "Makueni",
+    "first_weighted_score": 136.0,
+    "first_ranking": null,
+    "first_county_rank": 17,
+    "final_weighted_score": 69.0,
+    "final_ranking": 180,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_459",
+    "county": "Vihiga",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 32.0,
+    "final_ranking": 515,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_460",
+    "county": "Meru",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 7,
+    "final_weighted_score": 81.0,
+    "final_ranking": 81,
+    "final_county_rank": 11
+  },
+  {
+    "application_id": "Applicant_461",
+    "county": "Nakuru",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 32.0,
+    "final_ranking": 515,
+    "final_county_rank": 9
+  },
+  {
+    "application_id": "Applicant_462",
+    "county": "Kiambu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 0.0,
+    "final_ranking": 554,
+    "final_county_rank": 22
+  },
+  {
+    "application_id": "Applicant_463",
+    "county": "Kakamega",
+    "first_weighted_score": 103.0,
+    "first_ranking": null,
+    "first_county_rank": 71,
+    "final_weighted_score": 76.0,
+    "final_ranking": 122,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_464",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 32,
+    "final_weighted_score": 64.0,
+    "final_ranking": 230,
+    "final_county_rank": 19
+  },
+  {
+    "application_id": "Applicant_465",
+    "county": "Nyeri",
+    "first_weighted_score": 174.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 59.0,
+    "final_ranking": 286,
+    "final_county_rank": 8
+  },
+  {
+    "application_id": "Applicant_466",
+    "county": "Nyeri",
+    "first_weighted_score": 174.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 90.0,
+    "final_ranking": 31,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_467",
+    "county": "Embu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 8,
+    "final_weighted_score": 44.0,
+    "final_ranking": 451,
+    "final_county_rank": 9
+  },
+  {
+    "application_id": "Applicant_468",
+    "county": "Busia",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 49.0,
+    "final_ranking": 404,
+    "final_county_rank": 10
+  },
+  {
+    "application_id": "Applicant_469",
+    "county": "Wajir",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 9,
+    "final_weighted_score": 28.0,
+    "final_ranking": 531,
+    "final_county_rank": 9
+  },
+  {
+    "application_id": "Applicant_470",
+    "county": "Nairobi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 10,
+    "final_weighted_score": 53.0,
+    "final_ranking": 352,
+    "final_county_rank": 15
+  },
+  {
+    "application_id": "Applicant_471",
+    "county": "Meru",
+    "first_weighted_score": 22.0,
+    "first_ranking": null,
+    "first_county_rank": 20,
+    "final_weighted_score": 91.0,
+    "final_ranking": 23,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_472",
+    "county": "Embu",
+    "first_weighted_score": 160.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 63.0,
+    "final_ranking": 242,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_473",
+    "county": "Kericho",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 10,
+    "final_weighted_score": 61.0,
+    "final_ranking": 264,
+    "final_county_rank": 10
+  },
+  {
+    "application_id": "Applicant_474",
+    "county": "Meru",
+    "first_weighted_score": 11.0,
+    "first_ranking": null,
+    "first_county_rank": 22,
+    "final_weighted_score": 94.0,
+    "final_ranking": 11,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_475",
+    "county": "Lamu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 73.0,
+    "final_ranking": 140,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_476",
+    "county": "Wajir",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 10,
+    "final_weighted_score": 15.0,
+    "final_ranking": 548,
+    "final_county_rank": 12
+  },
+  {
+    "application_id": "Applicant_477",
+    "county": "Kakamega",
+    "first_weighted_score": 221.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 43.0,
+    "final_ranking": 458,
+    "final_county_rank": 59
+  },
+  {
+    "application_id": "Applicant_478",
+    "county": "Meru",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 8,
+    "final_weighted_score": 54.0,
+    "final_ranking": 346,
+    "final_county_rank": 19
+  },
+  {
+    "application_id": "Applicant_479",
+    "county": "Homa Bay",
+    "first_weighted_score": 53.0,
+    "first_ranking": null,
+    "first_county_rank": 12,
+    "final_weighted_score": 84.0,
+    "final_ranking": 63,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_480",
+    "county": "Kiambu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 51.0,
+    "final_ranking": 380,
+    "final_county_rank": 16
+  },
+  {
+    "application_id": "Applicant_481",
+    "county": "Meru",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 9,
+    "final_weighted_score": 76.0,
+    "final_ranking": 122,
+    "final_county_rank": 13
+  },
+  {
+    "application_id": "Applicant_482",
+    "county": "Nairobi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 11,
+    "final_weighted_score": 61.0,
+    "final_ranking": 264,
+    "final_county_rank": 12
+  },
+  {
+    "application_id": "Applicant_483",
+    "county": "Nairobi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 12,
+    "final_weighted_score": 59.0,
+    "final_ranking": 286,
+    "final_county_rank": 13
+  },
+  {
+    "application_id": "Applicant_484",
+    "county": "Kakamega",
+    "first_weighted_score": 190.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 55.0,
+    "final_ranking": 337,
+    "final_county_rank": 40
+  },
+  {
+    "application_id": "Applicant_485",
+    "county": "Nakuru",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 65.0,
+    "final_ranking": 216,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_486",
+    "county": "Kisumu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 66.0,
+    "final_ranking": 209,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_487",
+    "county": "Kisumu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 50.0,
+    "final_ranking": 393,
+    "final_county_rank": 9
+  },
+  {
+    "application_id": "Applicant_488",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 33,
+    "final_weighted_score": 73.0,
+    "final_ranking": 140,
+    "final_county_rank": 8
+  },
+  {
+    "application_id": "Applicant_489",
+    "county": "Kakamega",
+    "first_weighted_score": 178.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 58.0,
+    "final_ranking": 298,
+    "final_county_rank": 31
+  },
+  {
+    "application_id": "Applicant_490",
+    "county": "Makueni",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 12,
+    "final_weighted_score": 56.0,
+    "final_ranking": 319,
+    "final_county_rank": 10
+  },
+  {
+    "application_id": "Applicant_491",
+    "county": "Kericho",
+    "first_weighted_score": 108.0,
+    "first_ranking": null,
+    "first_county_rank": 12,
+    "final_weighted_score": 74.0,
+    "final_ranking": 133,
+    "final_county_rank": 8
+  },
+  {
+    "application_id": "Applicant_492",
+    "county": "Kirinyaga",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 64.0,
+    "final_ranking": 230,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_493",
+    "county": "Nairobi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 13,
+    "final_weighted_score": 53.0,
+    "final_ranking": 352,
+    "final_county_rank": 16
+  },
+  {
+    "application_id": "Applicant_494",
+    "county": "Kisumu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 7,
+    "final_weighted_score": 58.0,
+    "final_ranking": 298,
+    "final_county_rank": 7
+  },
+  {
+    "application_id": "Applicant_495",
+    "county": "Laikipia",
+    "first_weighted_score": 96.0,
+    "first_ranking": null,
+    "first_county_rank": 13,
+    "final_weighted_score": 77.0,
+    "final_ranking": 114,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_496",
+    "county": "Nyeri",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 8,
+    "final_weighted_score": 39.0,
+    "final_ranking": 489,
+    "final_county_rank": 11
+  },
+  {
+    "application_id": "Applicant_497",
+    "county": "Nairobi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 14,
+    "final_weighted_score": 45.0,
+    "final_ranking": 442,
+    "final_county_rank": 21
+  },
+  {
+    "application_id": "Applicant_498",
+    "county": "Machakos",
+    "first_weighted_score": 0.0,
+    "first_ranking": null,
+    "first_county_rank": 9,
+    "final_weighted_score": 58.0,
+    "final_ranking": 298,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_499",
+    "county": "Bungoma",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 9,
+    "final_weighted_score": 50.0,
+    "final_ranking": 393,
+    "final_county_rank": 10
+  },
+  {
+    "application_id": "Applicant_500",
+    "county": "Mombasa",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 70.0,
+    "final_ranking": 172,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_501",
+    "county": "Taita Taveta",
+    "first_weighted_score": 209.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 47.0,
+    "final_ranking": 422,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_502",
+    "county": "Laikipia",
+    "first_weighted_score": 156.0,
+    "first_ranking": null,
+    "first_county_rank": 10,
+    "final_weighted_score": 64.0,
+    "final_ranking": 230,
+    "final_county_rank": 9
+  },
+  {
+    "application_id": "Applicant_503",
+    "county": "Kajiado",
+    "first_weighted_score": 0.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 59.0,
+    "final_ranking": 286,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_504",
+    "county": "Kajiado",
+    "first_weighted_score": 0.0,
+    "first_ranking": null,
+    "first_county_rank": 7,
+    "final_weighted_score": 53.0,
+    "final_ranking": 352,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_505",
+    "county": "Makueni",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 13,
+    "final_weighted_score": 64.0,
+    "final_ranking": 230,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_506",
+    "county": "Homa Bay",
+    "first_weighted_score": 209.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 47.0,
+    "final_ranking": 422,
+    "final_county_rank": 8
+  },
+  {
+    "application_id": "Applicant_507",
+    "county": "Mombasa",
+    "first_weighted_score": 178.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 58.0,
+    "final_ranking": 298,
+    "final_county_rank": 7
+  },
+  {
+    "application_id": "Applicant_508",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 34,
+    "final_weighted_score": 50.0,
+    "final_ranking": 393,
+    "final_county_rank": 51
+  },
+  {
+    "application_id": "Applicant_509",
+    "county": "Homa Bay",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 69.0,
+    "final_ranking": 180,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_510",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 35,
+    "final_weighted_score": 39.0,
+    "final_ranking": 489,
+    "final_county_rank": 68
+  },
+  {
+    "application_id": "Applicant_511",
+    "county": "Kisumu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 8,
+    "final_weighted_score": 47.0,
+    "final_ranking": 422,
+    "final_county_rank": 10
+  },
+  {
+    "application_id": "Applicant_512",
+    "county": "Wajir",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 11,
+    "final_weighted_score": 15.0,
+    "final_ranking": 548,
+    "final_county_rank": 13
+  },
+  {
+    "application_id": "Applicant_513",
+    "county": "Busia",
+    "first_weighted_score": 182.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 57.0,
+    "final_ranking": 312,
+    "final_county_rank": 8
+  },
+  {
+    "application_id": "Applicant_514",
+    "county": "Nandi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 51.0,
+    "final_ranking": 380,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_515",
+    "county": "Busia",
+    "first_weighted_score": 174.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 59.0,
+    "final_ranking": 286,
+    "final_county_rank": 7
+  },
+  {
+    "application_id": "Applicant_516",
+    "county": "Turkana",
+    "first_weighted_score": 0.0,
+    "first_ranking": null,
+    "first_county_rank": 8,
+    "final_weighted_score": 56.0,
+    "final_ranking": 319,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_517",
+    "county": "Kakamega",
+    "first_weighted_score": 227.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 33.0,
+    "final_ranking": 514,
+    "final_county_rank": 71
+  },
+  {
+    "application_id": "Applicant_518",
+    "county": "Kajiado",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 79.0,
+    "final_ranking": 96,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_519",
+    "county": "Kakamega",
+    "first_weighted_score": 149.0,
+    "first_ranking": null,
+    "first_county_rank": 61,
+    "final_weighted_score": 41.0,
+    "final_ranking": 474,
+    "final_county_rank": 65
+  },
+  {
+    "application_id": "Applicant_520",
+    "county": "Kakamega",
+    "first_weighted_score": 144.0,
+    "first_ranking": null,
+    "first_county_rank": 63,
+    "final_weighted_score": 48.0,
+    "final_ranking": 410,
+    "final_county_rank": 53
+  },
+  {
+    "application_id": "Applicant_521",
+    "county": "Uasin Gishu",
+    "first_weighted_score": 120.0,
+    "first_ranking": null,
+    "first_county_rank": 13,
+    "final_weighted_score": 72.0,
+    "final_ranking": 153,
+    "final_county_rank": 9
+  },
+  {
+    "application_id": "Applicant_522",
+    "county": "Kakamega",
+    "first_weighted_score": 0.0,
+    "first_ranking": null,
+    "first_county_rank": 75,
+    "final_weighted_score": 44.0,
+    "final_ranking": 451,
+    "final_county_rank": 57
+  },
+  {
+    "application_id": "Applicant_523",
+    "county": "Kakamega",
+    "first_weighted_score": 149.0,
+    "first_ranking": null,
+    "first_county_rank": 62,
+    "final_weighted_score": 46.0,
+    "final_ranking": 434,
+    "final_county_rank": 56
+  },
+  {
+    "application_id": "Applicant_524",
+    "county": "Kiambu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 56.0,
+    "final_ranking": 319,
+    "final_county_rank": 12
+  },
+  {
+    "application_id": "Applicant_525",
+    "county": "Kisumu",
+    "first_weighted_score": 214.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 46.0,
+    "final_ranking": 434,
+    "final_county_rank": 12
+  },
+  {
+    "application_id": "Applicant_526",
+    "county": "Makueni",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 14,
+    "final_weighted_score": 63.0,
+    "final_ranking": 242,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_527",
+    "county": "Kiambu",
+    "first_weighted_score": 182.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 57.0,
+    "final_ranking": 312,
+    "final_county_rank": 11
+  },
+  {
+    "application_id": "Applicant_528",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 36,
+    "final_weighted_score": 55.0,
+    "final_ranking": 337,
+    "final_county_rank": 41
+  },
+  {
+    "application_id": "Applicant_529",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 37,
+    "final_weighted_score": 42.0,
+    "final_ranking": 468,
+    "final_county_rank": 61
+  },
+  {
+    "application_id": "Applicant_530",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 38,
+    "final_weighted_score": 64.0,
+    "final_ranking": 230,
+    "final_county_rank": 20
+  },
+  {
+    "application_id": "Applicant_531",
+    "county": "Makueni",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 15,
+    "final_weighted_score": 58.0,
+    "final_ranking": 298,
+    "final_county_rank": 8
+  },
+  {
+    "application_id": "Applicant_532",
+    "county": "Kiambu",
+    "first_weighted_score": 70.0,
+    "first_ranking": null,
+    "first_county_rank": 18,
+    "final_weighted_score": 81.0,
+    "final_ranking": 81,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_533",
+    "county": "Kiambu",
+    "first_weighted_score": 146.0,
+    "first_ranking": null,
+    "first_county_rank": 14,
+    "final_weighted_score": 66.0,
+    "final_ranking": 209,
+    "final_county_rank": 9
+  },
+  {
+    "application_id": "Applicant_534",
+    "county": "Bomet",
+    "first_weighted_score": 132.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 70.0,
+    "final_ranking": 172,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_535",
+    "county": "Tharaka Nithi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 76.0,
+    "final_ranking": 122,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_536",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 39,
+    "final_weighted_score": 60.0,
+    "final_ranking": 280,
+    "final_county_rank": 28
+  },
+  {
+    "application_id": "Applicant_537",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 40,
+    "final_weighted_score": 44.0,
+    "final_ranking": 451,
+    "final_county_rank": 58
+  },
+  {
+    "application_id": "Applicant_538",
+    "county": "Busia",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 7,
+    "final_weighted_score": 43.0,
+    "final_ranking": 458,
+    "final_county_rank": 12
+  },
+  {
+    "application_id": "Applicant_539",
+    "county": "Makueni",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 16,
+    "final_weighted_score": 68.0,
+    "final_ranking": 193,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_540",
+    "county": "West Pokot",
+    "first_weighted_score": 123.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 71.0,
+    "final_ranking": 158,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_541",
+    "county": "Nairobi",
+    "first_weighted_score": 203.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 50.0,
+    "final_ranking": 393,
+    "final_county_rank": 20
+  },
+  {
+    "application_id": "Applicant_542",
+    "county": "Bungoma",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 10,
+    "final_weighted_score": 60.0,
+    "final_ranking": 280,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_543",
+    "county": "Bungoma",
+    "first_weighted_score": 196.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 52.0,
+    "final_ranking": 366,
+    "final_county_rank": 8
+  },
+  {
+    "application_id": "Applicant_544",
+    "county": "Bungoma",
+    "first_weighted_score": 218.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 44.0,
+    "final_ranking": 451,
+    "final_county_rank": 12
+  },
+  {
+    "application_id": "Applicant_545",
+    "county": "Bungoma",
+    "first_weighted_score": 218.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 44.0,
+    "final_ranking": 451,
+    "final_county_rank": 13
+  },
+  {
+    "application_id": "Applicant_546",
+    "county": "Nairobi",
+    "first_weighted_score": 196.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 52.0,
+    "final_ranking": 366,
+    "final_county_rank": 18
+  },
+  {
+    "application_id": "Applicant_547",
+    "county": "Kirinyaga",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 69.0,
+    "final_ranking": 180,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_548",
+    "county": "Mombasa",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 62.0,
+    "final_ranking": 254,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_549",
+    "county": "Kilifi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 71.0,
+    "final_ranking": 158,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_550",
+    "county": "Nairobi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 15,
+    "final_weighted_score": 38.0,
+    "final_ranking": 498,
+    "final_county_rank": 23
+  },
+  {
+    "application_id": "Applicant_551",
+    "county": "Uasin Gishu",
+    "first_weighted_score": 0.0,
+    "first_ranking": null,
+    "first_county_rank": 21,
+    "final_weighted_score": 50.0,
+    "final_ranking": 393,
+    "final_county_rank": 15
+  },
+  {
+    "application_id": "Applicant_552",
+    "county": "Kilifi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 69.0,
+    "final_ranking": 180,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_553",
+    "county": "Laikipia",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 9,
+    "final_weighted_score": 59.0,
+    "final_ranking": 286,
+    "final_county_rank": 12
+  },
+  {
+    "application_id": "Applicant_554",
+    "county": "Homa Bay",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 32.0,
+    "final_ranking": 515,
+    "final_county_rank": 12
+  },
+  {
+    "application_id": "Applicant_555",
+    "county": "Trans Nzoia",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 52.0,
+    "final_ranking": 366,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_556",
+    "county": "Kiambu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 7,
+    "final_weighted_score": 53.0,
+    "final_ranking": 352,
+    "final_county_rank": 14
+  },
+  {
+    "application_id": "Applicant_557",
+    "county": "Narok",
+    "first_weighted_score": 53.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 84.0,
+    "final_ranking": 63,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_558",
+    "county": "Kilifi",
+    "first_weighted_score": 151.0,
+    "first_ranking": null,
+    "first_county_rank": 9,
+    "final_weighted_score": 65.0,
+    "final_ranking": 216,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_559",
+    "county": "Kwale",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 30.0,
+    "final_ranking": 522,
+    "final_county_rank": 15
+  },
+  {
+    "application_id": "Applicant_560",
+    "county": "Kakamega",
+    "first_weighted_score": 136.0,
+    "first_ranking": null,
+    "first_county_rank": 65,
+    "final_weighted_score": 69.0,
+    "final_ranking": 180,
+    "final_county_rank": 13
+  },
+  {
+    "application_id": "Applicant_561",
+    "county": "Homa Bay",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 19.0,
+    "final_ranking": 546,
+    "final_county_rank": 13
+  },
+  {
+    "application_id": "Applicant_562",
+    "county": "Vihiga",
+    "first_weighted_score": 113.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 73.0,
+    "final_ranking": 140,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_563",
+    "county": "Garissa",
+    "first_weighted_score": 139.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 68.0,
+    "final_ranking": 193,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_564",
+    "county": "Kilifi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 73.0,
+    "final_ranking": 140,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_565",
+    "county": "Nairobi",
+    "first_weighted_score": 41.0,
+    "first_ranking": null,
+    "first_county_rank": 26,
+    "final_weighted_score": 86.0,
+    "final_ranking": 47,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_566",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 41,
+    "final_weighted_score": 0.0,
+    "final_ranking": 554,
+    "final_county_rank": 75
+  },
+  {
+    "application_id": "Applicant_567",
+    "county": "Embu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 9,
+    "final_weighted_score": 62.0,
+    "final_ranking": 254,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_568",
+    "county": "Kisumu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 9,
+    "final_weighted_score": 47.0,
+    "final_ranking": 422,
+    "final_county_rank": 11
+  },
+  {
+    "application_id": "Applicant_569",
+    "county": "Nairobi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 16,
+    "final_weighted_score": 59.0,
+    "final_ranking": 286,
+    "final_county_rank": 14
+  },
+  {
+    "application_id": "Applicant_570",
+    "county": "Baringo",
+    "first_weighted_score": 16.0,
+    "first_ranking": null,
+    "first_county_rank": 8,
+    "final_weighted_score": 93.0,
+    "final_ranking": 16,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_571",
+    "county": "West Pokot",
+    "first_weighted_score": 123.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 71.0,
+    "final_ranking": 158,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_572",
+    "county": "Kisumu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 10,
+    "final_weighted_score": 69.0,
+    "final_ranking": 180,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_573",
+    "county": "Kakamega",
+    "first_weighted_score": 113.0,
+    "first_ranking": null,
+    "first_county_rank": 69,
+    "final_weighted_score": 73.0,
+    "final_ranking": 140,
+    "final_county_rank": 9
+  },
+  {
+    "application_id": "Applicant_574",
+    "county": "West Pokot",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 80.0,
+    "final_ranking": 90,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_575",
+    "county": "Kiambu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 8,
+    "final_weighted_score": 53.0,
+    "final_ranking": 352,
+    "final_county_rank": 15
+  },
+  {
+    "application_id": "Applicant_576",
+    "county": "Isiolo",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 53.0,
+    "final_ranking": 352,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_577",
+    "county": "Kilifi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 35.0,
+    "final_ranking": 508,
+    "final_county_rank": 9
+  },
+  {
+    "application_id": "Applicant_578",
+    "county": "Kiambu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 9,
+    "final_weighted_score": 54.0,
+    "final_ranking": 346,
+    "final_county_rank": 13
+  },
+  {
+    "application_id": "Applicant_579",
+    "county": "Migori",
+    "first_weighted_score": 146.0,
+    "first_ranking": null,
+    "first_county_rank": 9,
+    "final_weighted_score": 66.0,
+    "final_ranking": 209,
+    "final_county_rank": 8
+  },
+  {
+    "application_id": "Applicant_580",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 42,
+    "final_weighted_score": 51.0,
+    "final_ranking": 380,
+    "final_county_rank": 49
+  },
+  {
+    "application_id": "Applicant_581",
+    "county": "Migori",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 7,
+    "final_weighted_score": 65.0,
+    "final_ranking": 216,
+    "final_county_rank": 9
+  },
+  {
+    "application_id": "Applicant_582",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 43,
+    "final_weighted_score": 74.0,
+    "final_ranking": 133,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_583",
+    "county": "Homa Bay",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 7,
+    "final_weighted_score": 50.0,
+    "final_ranking": 393,
+    "final_county_rank": 7
+  },
+  {
+    "application_id": "Applicant_584",
+    "county": "Siaya",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 43.0,
+    "final_ranking": 458,
+    "final_county_rank": 7
+  },
+  {
+    "application_id": "Applicant_585",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 44,
+    "final_weighted_score": 59.0,
+    "final_ranking": 286,
+    "final_county_rank": 30
+  },
+  {
+    "application_id": "Applicant_586",
+    "county": "Kisumu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 11,
+    "final_weighted_score": 61.0,
+    "final_ranking": 264,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_587",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 45,
+    "final_weighted_score": 48.0,
+    "final_ranking": 410,
+    "final_county_rank": 54
+  },
+  {
+    "application_id": "Applicant_588",
+    "county": "Nairobi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 17,
+    "final_weighted_score": 45.0,
+    "final_ranking": 442,
+    "final_county_rank": 22
+  },
+  {
+    "application_id": "Applicant_589",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 46,
+    "final_weighted_score": 69.0,
+    "final_ranking": 180,
+    "final_county_rank": 14
+  },
+  {
+    "application_id": "Applicant_590",
+    "county": "West Pokot",
+    "first_weighted_score": 185.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 56.0,
+    "final_ranking": 319,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_591",
+    "county": "Kitui",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 7,
+    "final_weighted_score": 52.0,
+    "final_ranking": 366,
+    "final_county_rank": 8
+  },
+  {
+    "application_id": "Applicant_592",
+    "county": "Kisii",
+    "first_weighted_score": 8.0,
+    "first_ranking": null,
+    "first_county_rank": 21,
+    "final_weighted_score": 96.0,
+    "final_ranking": 7,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_593",
+    "county": "Kitui",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 8,
+    "final_weighted_score": 65.0,
+    "final_ranking": 216,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_594",
+    "county": "Homa Bay",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 8,
+    "final_weighted_score": 43.0,
+    "final_ranking": 458,
+    "final_county_rank": 10
+  },
+  {
+    "application_id": "Applicant_595",
+    "county": "Kitui",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 9,
+    "final_weighted_score": 25.0,
+    "final_ranking": 537,
+    "final_county_rank": 10
+  },
+  {
+    "application_id": "Applicant_596",
+    "county": "Nandi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 39.0,
+    "final_ranking": 489,
+    "final_county_rank": 8
+  },
+  {
+    "application_id": "Applicant_597",
+    "county": "Kisii",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 15,
+    "final_weighted_score": 52.0,
+    "final_ranking": 366,
+    "final_county_rank": 18
+  },
+  {
+    "application_id": "Applicant_598",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 47,
+    "final_weighted_score": 56.0,
+    "final_ranking": 319,
+    "final_county_rank": 38
+  },
+  {
+    "application_id": "Applicant_599",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 48,
+    "final_weighted_score": 53.0,
+    "final_ranking": 352,
+    "final_county_rank": 46
+  },
+  {
+    "application_id": "Applicant_600",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 49,
+    "final_weighted_score": 58.0,
+    "final_ranking": 298,
+    "final_county_rank": 32
+  },
+  {
+    "application_id": "Applicant_601",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 50,
+    "final_weighted_score": 61.0,
+    "final_ranking": 264,
+    "final_county_rank": 26
+  },
+  {
+    "application_id": "Applicant_602",
+    "county": "Kilifi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 56.0,
+    "final_ranking": 319,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_603",
+    "county": "Kwale",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 7,
+    "final_weighted_score": 84.0,
+    "final_ranking": 63,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_604",
+    "county": "Kilifi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 7,
+    "final_weighted_score": 49.0,
+    "final_ranking": 404,
+    "final_county_rank": 8
+  },
+  {
+    "application_id": "Applicant_605",
+    "county": "Kilifi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 8,
+    "final_weighted_score": 62.0,
+    "final_ranking": 254,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_606",
+    "county": "Nyandarua",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 56.0,
+    "final_ranking": 319,
+    "final_county_rank": 8
+  },
+  {
+    "application_id": "Applicant_607",
+    "county": "Kwale",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 8,
+    "final_weighted_score": 61.0,
+    "final_ranking": 264,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_608",
+    "county": "Samburu",
+    "first_weighted_score": 185.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 56.0,
+    "final_ranking": 319,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_609",
+    "county": "Wajir",
+    "first_weighted_score": 168.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 61.0,
+    "final_ranking": 264,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_610",
+    "county": "Meru",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 10,
+    "final_weighted_score": 56.0,
+    "final_ranking": 319,
+    "final_county_rank": 18
+  },
+  {
+    "application_id": "Applicant_611",
+    "county": "Kwale",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 9,
+    "final_weighted_score": 40.0,
+    "final_ranking": 483,
+    "final_county_rank": 14
+  },
+  {
+    "application_id": "Applicant_612",
+    "county": "Elgeiyo Marakwet",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 22.0,
+    "final_ranking": 542,
+    "final_county_rank": 7
+  },
+  {
+    "application_id": "Applicant_613",
+    "county": "Tharaka Nithi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 70.0,
+    "final_ranking": 172,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_614",
+    "county": "Kwale",
+    "first_weighted_score": 16.0,
+    "first_ranking": null,
+    "first_county_rank": 16,
+    "final_weighted_score": 93.0,
+    "final_ranking": 16,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_615",
+    "county": "Tharaka Nithi",
+    "first_weighted_score": 30.0,
+    "first_ranking": null,
+    "first_county_rank": 8,
+    "final_weighted_score": 89.0,
+    "final_ranking": 35,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_616",
+    "county": "Siaya",
+    "first_weighted_score": 136.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 69.0,
+    "final_ranking": 180,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_617",
+    "county": "Vihiga",
+    "first_weighted_score": 108.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 74.0,
+    "final_ranking": 133,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_618",
+    "county": "Mandera",
+    "first_weighted_score": 182.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 57.0,
+    "final_ranking": 312,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_619",
+    "county": "Narok",
+    "first_weighted_score": 41.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 86.0,
+    "final_ranking": 47,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_620",
+    "county": "Turkana",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 68.0,
+    "final_ranking": 193,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_621",
+    "county": "Nairobi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 18,
+    "final_weighted_score": 32.0,
+    "final_ranking": 515,
+    "final_county_rank": 25
+  },
+  {
+    "application_id": "Applicant_622",
+    "county": "Vihiga",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 49.0,
+    "final_ranking": 404,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_623",
+    "county": "Tharaka Nithi",
+    "first_weighted_score": 11.0,
+    "first_ranking": null,
+    "first_county_rank": 9,
+    "final_weighted_score": 94.0,
+    "final_ranking": 11,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_624",
+    "county": "Kirinyaga",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 43.0,
+    "final_ranking": 458,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_625",
+    "county": "Nairobi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 19,
+    "final_weighted_score": 64.0,
+    "final_ranking": 230,
+    "final_county_rank": 9
+  },
+  {
+    "application_id": "Applicant_626",
+    "county": "Bungoma",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 11,
+    "final_weighted_score": 60.0,
+    "final_ranking": 280,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_627",
+    "county": "Kwale",
+    "first_weighted_score": 165.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 62.0,
+    "final_ranking": 254,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_628",
+    "county": "Wajir",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 12,
+    "final_weighted_score": 11.0,
+    "final_ranking": 552,
+    "final_county_rank": 14
+  },
+  {
+    "application_id": "Applicant_629",
+    "county": "Kitui",
+    "first_weighted_score": 174.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 59.0,
+    "final_ranking": 286,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_630",
+    "county": "Nyeri",
+    "first_weighted_score": 22.0,
+    "first_ranking": null,
+    "first_county_rank": 12,
+    "final_weighted_score": 91.0,
+    "final_ranking": 23,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_631",
+    "county": "Garissa",
+    "first_weighted_score": 144.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 48.0,
+    "final_ranking": 410,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_632",
+    "county": "Taita Taveta",
+    "first_weighted_score": 196.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 52.0,
+    "final_ranking": 366,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_633",
+    "county": "Bungoma",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 12,
+    "final_weighted_score": 55.0,
+    "final_ranking": 337,
+    "final_county_rank": 7
+  },
+  {
+    "application_id": "Applicant_634",
+    "county": "Laikipia",
+    "first_weighted_score": 41.0,
+    "first_ranking": null,
+    "first_county_rank": 14,
+    "final_weighted_score": 86.0,
+    "final_ranking": 47,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_635",
+    "county": "Kakamega",
+    "first_weighted_score": 160.0,
+    "first_ranking": null,
+    "first_county_rank": 8,
+    "final_weighted_score": 63.0,
+    "final_ranking": 242,
+    "final_county_rank": 21
+  },
+  {
+    "application_id": "Applicant_636",
+    "county": "Kitui",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 10,
+    "final_weighted_score": 0.0,
+    "final_ranking": 554,
+    "final_county_rank": 12
+  },
+  {
+    "application_id": "Applicant_637",
+    "county": "Nyandarua",
+    "first_weighted_score": 146.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 66.0,
+    "final_ranking": 209,
+    "final_county_rank": 7
+  },
+  {
+    "application_id": "Applicant_638",
+    "county": "Kericho",
+    "first_weighted_score": 22.0,
+    "first_ranking": null,
+    "first_county_rank": 17,
+    "final_weighted_score": 91.0,
+    "final_ranking": 23,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_639",
+    "county": "Nandi",
+    "first_weighted_score": 11.0,
+    "first_ranking": null,
+    "first_county_rank": 9,
+    "final_weighted_score": 94.0,
+    "final_ranking": 11,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_640",
+    "county": "Kwale",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 10,
+    "final_weighted_score": 53.0,
+    "final_ranking": 352,
+    "final_county_rank": 9
+  },
+  {
+    "application_id": "Applicant_641",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 51,
+    "final_weighted_score": 57.0,
+    "final_ranking": 312,
+    "final_county_rank": 35
+  },
+  {
+    "application_id": "Applicant_642",
+    "county": "Kwale",
+    "first_weighted_score": 185.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 56.0,
+    "final_ranking": 319,
+    "final_county_rank": 8
+  },
+  {
+    "application_id": "Applicant_643",
+    "county": "Nakuru",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 59.0,
+    "final_ranking": 286,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_644",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 52,
+    "final_weighted_score": 50.0,
+    "final_ranking": 393,
+    "final_county_rank": 52
+  },
+  {
+    "application_id": "Applicant_645",
+    "county": "Trans Nzoia",
+    "first_weighted_score": 1.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 100.0,
+    "final_ranking": 1,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_646",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 53,
+    "final_weighted_score": 55.0,
+    "final_ranking": 337,
+    "final_county_rank": 42
+  },
+  {
+    "application_id": "Applicant_647",
+    "county": "Kwale",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 11,
+    "final_weighted_score": 63.0,
+    "final_ranking": 242,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_648",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 54,
+    "final_weighted_score": 58.0,
+    "final_ranking": 298,
+    "final_county_rank": 33
+  },
+  {
+    "application_id": "Applicant_649",
+    "county": "Nyamira",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 46.0,
+    "final_ranking": 434,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_650",
+    "county": "Nairobi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 20,
+    "final_weighted_score": 35.0,
+    "final_ranking": 508,
+    "final_county_rank": 24
+  },
+  {
+    "application_id": "Applicant_651",
+    "county": "Kwale",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 12,
+    "final_weighted_score": 42.0,
+    "final_ranking": 468,
+    "final_county_rank": 13
+  },
+  {
+    "application_id": "Applicant_652",
+    "county": "Turkana",
+    "first_weighted_score": 16.0,
+    "first_ranking": null,
+    "first_county_rank": 7,
+    "final_weighted_score": 93.0,
+    "final_ranking": 16,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_653",
+    "county": "Isiolo",
+    "first_weighted_score": 70.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 81.0,
+    "final_ranking": 81,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_654",
+    "county": "Garissa",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 40.0,
+    "final_ranking": 483,
+    "final_county_rank": 8
+  },
+  {
+    "application_id": "Applicant_655",
+    "county": "Vihiga",
+    "first_weighted_score": 106.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 75.0,
+    "final_ranking": 128,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_656",
+    "county": "Migori",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 8,
+    "final_weighted_score": 65.0,
+    "final_ranking": 216,
+    "final_county_rank": 10
+  },
+  {
+    "application_id": "Applicant_657",
+    "county": "Kiambu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 10,
+    "final_weighted_score": 83.0,
+    "final_ranking": 69,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_658",
+    "county": "Meru",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 11,
+    "final_weighted_score": 74.0,
+    "final_ranking": 133,
+    "final_county_rank": 15
+  },
+  {
+    "application_id": "Applicant_659",
+    "county": "Meru",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 12,
+    "final_weighted_score": 81.0,
+    "final_ranking": 81,
+    "final_county_rank": 12
+  },
+  {
+    "application_id": "Applicant_660",
+    "county": "Busia",
+    "first_weighted_score": 96.0,
+    "first_ranking": null,
+    "first_county_rank": 13,
+    "final_weighted_score": 77.0,
+    "final_ranking": 114,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_661",
+    "county": "Uasin Gishu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 9,
+    "final_weighted_score": 20.0,
+    "final_ranking": 544,
+    "final_county_rank": 20
+  },
+  {
+    "application_id": "Applicant_662",
+    "county": "Siaya",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 41.0,
+    "final_ranking": 474,
+    "final_county_rank": 8
+  },
+  {
+    "application_id": "Applicant_663",
+    "county": "Machakos",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 51.0,
+    "final_ranking": 380,
+    "final_county_rank": 7
+  },
+  {
+    "application_id": "Applicant_664",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 55,
+    "final_weighted_score": 67.0,
+    "final_ranking": 198,
+    "final_county_rank": 16
+  },
+  {
+    "application_id": "Applicant_665",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 56,
+    "final_weighted_score": 73.0,
+    "final_ranking": 140,
+    "final_county_rank": 10
+  },
+  {
+    "application_id": "Applicant_666",
+    "county": "Kericho",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 11,
+    "final_weighted_score": 38.0,
+    "final_ranking": 498,
+    "final_county_rank": 19
+  },
+  {
+    "application_id": "Applicant_667",
+    "county": "Kiambu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 11,
+    "final_weighted_score": 47.0,
+    "final_ranking": 422,
+    "final_county_rank": 20
+  },
+  {
+    "application_id": "Applicant_668",
+    "county": "Uasin Gishu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 10,
+    "final_weighted_score": 32.0,
+    "final_ranking": 515,
+    "final_county_rank": 18
+  },
+  {
+    "application_id": "Applicant_669",
+    "county": "Garissa",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 34.0,
+    "final_ranking": 510,
+    "final_county_rank": 9
+  },
+  {
+    "application_id": "Applicant_670",
+    "county": "Kwale",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 13,
+    "final_weighted_score": 43.0,
+    "final_ranking": 458,
+    "final_county_rank": 12
+  },
+  {
+    "application_id": "Applicant_671",
+    "county": "Kiambu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 12,
+    "final_weighted_score": 63.0,
+    "final_ranking": 242,
+    "final_county_rank": 10
+  },
+  {
+    "application_id": "Applicant_672",
+    "county": "Machakos",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 6,
+    "final_weighted_score": 38.0,
+    "final_ranking": 498,
+    "final_county_rank": 9
+  },
+  {
+    "application_id": "Applicant_673",
+    "county": "Lamu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 56.0,
+    "final_ranking": 319,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_674",
+    "county": "Turkana",
+    "first_weighted_score": 0.0,
+    "first_ranking": null,
+    "first_county_rank": 9,
+    "final_weighted_score": 56.0,
+    "final_ranking": 319,
+    "final_county_rank": 7
+  },
+  {
+    "application_id": "Applicant_675",
+    "county": "Mandera",
+    "first_weighted_score": 0.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 23.0,
+    "final_ranking": 540,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_676",
+    "county": "Siaya",
+    "first_weighted_score": 11.0,
+    "first_ranking": null,
+    "first_county_rank": 8,
+    "final_weighted_score": 94.0,
+    "final_ranking": 11,
+    "final_county_rank": 1
+  },
+  {
+    "application_id": "Applicant_677",
+    "county": "Samburu",
+    "first_weighted_score": 192.0,
+    "first_ranking": null,
+    "first_county_rank": 1,
+    "final_weighted_score": 53.0,
+    "final_ranking": 352,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_678",
+    "county": "Meru",
+    "first_weighted_score": 0.0,
+    "first_ranking": null,
+    "first_county_rank": 23,
+    "final_weighted_score": 24.0,
+    "final_ranking": 539,
+    "final_county_rank": 23
+  },
+  {
+    "application_id": "Applicant_679",
+    "county": "Elgeiyo Marakwet",
+    "first_weighted_score": 156.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 64.0,
+    "final_ranking": 230,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_680",
+    "county": "Elgeiyo Marakwet",
+    "first_weighted_score": 0.0,
+    "first_ranking": null,
+    "first_county_rank": 7,
+    "final_weighted_score": 22.0,
+    "final_ranking": 542,
+    "final_county_rank": 8
+  },
+  {
+    "application_id": "Applicant_681",
+    "county": "Siaya",
+    "first_weighted_score": 0.0,
+    "first_ranking": null,
+    "first_county_rank": 9,
+    "final_weighted_score": 46.0,
+    "final_ranking": 434,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_682",
+    "county": "Samburu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 39.0,
+    "final_ranking": 489,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_683",
+    "county": "Elgeiyo Marakwet",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 49.0,
+    "final_ranking": 404,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_684",
+    "county": "Homa Bay",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 9,
+    "final_weighted_score": 45.0,
+    "final_ranking": 442,
+    "final_county_rank": 9
+  },
+  {
+    "application_id": "Applicant_685",
+    "county": "Samburu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 34.0,
+    "final_ranking": 510,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_686",
+    "county": "Elgeiyo Marakwet",
+    "first_weighted_score": 0.0,
+    "first_ranking": null,
+    "first_county_rank": 8,
+    "final_weighted_score": 56.0,
+    "final_ranking": 319,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_687",
+    "county": "Kericho",
+    "first_weighted_score": 96.0,
+    "first_ranking": null,
+    "first_county_rank": 14,
+    "final_weighted_score": 77.0,
+    "final_ranking": 114,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_688",
+    "county": "Kakamega",
+    "first_weighted_score": 168.0,
+    "first_ranking": null,
+    "first_county_rank": 7,
+    "final_weighted_score": 61.0,
+    "final_ranking": 264,
+    "final_county_rank": 27
+  },
+  {
+    "application_id": "Applicant_689",
+    "county": "Kwale",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 14,
+    "final_weighted_score": 61.0,
+    "final_ranking": 264,
+    "final_county_rank": 7
+  },
+  {
+    "application_id": "Applicant_690",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 57,
+    "final_weighted_score": 63.0,
+    "final_ranking": 242,
+    "final_county_rank": 22
+  },
+  {
+    "application_id": "Applicant_691",
+    "county": "Mandera",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 47.0,
+    "final_ranking": 422,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_692",
+    "county": "Kericho",
+    "first_weighted_score": 190.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 55.0,
+    "final_ranking": 337,
+    "final_county_rank": 12
+  },
+  {
+    "application_id": "Applicant_693",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 58,
+    "final_weighted_score": 55.0,
+    "final_ranking": 337,
+    "final_county_rank": 43
+  },
+  {
+    "application_id": "Applicant_694",
+    "county": "Uasin Gishu",
+    "first_weighted_score": 168.0,
+    "first_ranking": null,
+    "first_county_rank": 2,
+    "final_weighted_score": 61.0,
+    "final_ranking": 264,
+    "final_county_rank": 13
+  },
+  {
+    "application_id": "Applicant_695",
+    "county": "Nandi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 7,
+    "final_weighted_score": 55.0,
+    "final_ranking": 337,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_696",
+    "county": "Wajir",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 13,
+    "final_weighted_score": 58.0,
+    "final_ranking": 298,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_697",
+    "county": "Taita Taveta",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 51.0,
+    "final_ranking": 380,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_698",
+    "county": "Kakamega",
+    "first_weighted_score": 123.0,
+    "first_ranking": null,
+    "first_county_rank": 67,
+    "final_weighted_score": 71.0,
+    "final_ranking": 158,
+    "final_county_rank": 12
+  },
+  {
+    "application_id": "Applicant_699",
+    "county": "Kiambu",
+    "first_weighted_score": 0.0,
+    "first_ranking": null,
+    "first_county_rank": 22,
+    "final_weighted_score": 48.0,
+    "final_ranking": 410,
+    "final_county_rank": 19
+  },
+  {
+    "application_id": "Applicant_700",
+    "county": "Bungoma",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 13,
+    "final_weighted_score": 52.0,
+    "final_ranking": 366,
+    "final_county_rank": 9
+  },
+  {
+    "application_id": "Applicant_701",
+    "county": "Garissa",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 46.0,
+    "final_ranking": 434,
+    "final_county_rank": 7
+  },
+  {
+    "application_id": "Applicant_702",
+    "county": "Kisii",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 16,
+    "final_weighted_score": 67.0,
+    "final_ranking": 198,
+    "final_county_rank": 9
+  },
+  {
+    "application_id": "Applicant_704",
+    "county": "Nakuru",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 5,
+    "final_weighted_score": 40.0,
+    "final_ranking": 483,
+    "final_county_rank": 8
+  },
+  {
+    "application_id": "Applicant_705",
+    "county": "Kakamega",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 59,
+    "final_weighted_score": 42.0,
+    "final_ranking": 468,
+    "final_county_rank": 62
+  },
+  {
+    "application_id": "Applicant_706",
+    "county": "Kajiado",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 72.0,
+    "final_ranking": 153,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_707",
+    "county": "Elgeiyo Marakwet",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 36.0,
+    "final_ranking": 506,
+    "final_county_rank": 6
+  },
+  {
+    "application_id": "Applicant_708",
+    "county": "West Pokot",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 68.0,
+    "final_ranking": 193,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_709",
+    "county": "Uasin Gishu",
+    "first_weighted_score": 142.0,
+    "first_ranking": null,
+    "first_county_rank": 12,
+    "final_weighted_score": 67.0,
+    "final_ranking": 198,
+    "final_county_rank": 10
+  },
+  {
+    "application_id": "Applicant_710",
+    "county": "Nyeri",
+    "first_weighted_score": 123.0,
+    "first_ranking": null,
+    "first_county_rank": 9,
+    "final_weighted_score": 71.0,
+    "final_ranking": 158,
+    "final_county_rank": 7
+  },
+  {
+    "application_id": "Applicant_711",
+    "county": "Kwale",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 15,
+    "final_weighted_score": 49.0,
+    "final_ranking": 404,
+    "final_county_rank": 10
+  },
+  {
+    "application_id": "Applicant_712",
+    "county": "Kiambu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 13,
+    "final_weighted_score": 28.0,
+    "final_ranking": 531,
+    "final_county_rank": 21
+  },
+  {
+    "application_id": "Applicant_713",
+    "county": "Busia",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 8,
+    "final_weighted_score": 69.0,
+    "final_ranking": 180,
+    "final_county_rank": 3
+  },
+  {
+    "application_id": "Applicant_714",
+    "county": "Kisumu",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 12,
+    "final_weighted_score": 71.0,
+    "final_ranking": 158,
+    "final_county_rank": 2
+  },
+  {
+    "application_id": "Applicant_715",
+    "county": "Isiolo",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 3,
+    "final_weighted_score": 39.0,
+    "final_ranking": 489,
+    "final_county_rank": 4
+  },
+  {
+    "application_id": "Applicant_716",
+    "county": "Elgeiyo Marakwet",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 4,
+    "final_weighted_score": 47.0,
+    "final_ranking": 422,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_717",
+    "county": "Nairobi",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 21,
+    "final_weighted_score": 53.0,
+    "final_ranking": 352,
+    "final_county_rank": 17
+  },
+  {
+    "application_id": "Applicant_718",
+    "county": "Meru",
+    "first_weighted_score": 157.0,
+    "first_ranking": null,
+    "first_county_rank": 13,
+    "final_weighted_score": 73.0,
+    "final_ranking": 140,
+    "final_county_rank": 16
+  },
+  {
+    "application_id": "Applicant_719",
+    "county": "Uasin Gishu",
+    "first_weighted_score": 1.0,
+    "first_ranking": null,
+    "first_county_rank": 20,
+    "final_weighted_score": 85.0,
+    "final_ranking": 55,
+    "final_county_rank": 5
+  },
+  {
+    "application_id": "Applicant_721",
+    "county": "Meru",
+    "first_weighted_score": 20.0,
+    "first_ranking": null,
+    "first_county_rank": 21,
+    "final_weighted_score": 92.0,
+    "final_ranking": 20,
+    "final_county_rank": 2
+  }
+]

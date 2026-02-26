@@ -1,0 +1,2367 @@
+{
+  "evaluation_metadata": {
+    "county": "Kakamega",
+    "total_applications": 25,
+    "evaluation_date": "2026-02-26T04:08:58.175231",
+    "evaluator_version": "1.0",
+    "rules_version": "rules.md - Annex A & B"
+  },
+  "data_enrichment": {
+    "applications_with_business_name": 0,
+    "applications_with_standardized_business_name": 0,
+    "applications_with_woman_owned_flag": 25,
+    "applications_with_woman_owned_proof": 0
+  },
+  "eligibility_summary": {
+    "total_applications": 25,
+    "eligible_applications": 25,
+    "ineligible_applications": 0,
+    "eligibility_rate": 100.0,
+    "criteria_failure_breakdown": {
+      "E1_registration_legality": 0,
+      "E2_county_mapping": 0,
+      "E3_priority_value_chain": 0,
+      "E4_financial_evidence": 0,
+      "E5_consent_contactability": 0
+    }
+  },
+  "scoring_summary": {
+    "total_scored": 25,
+    "average_score": 79.84,
+    "highest_score": 90.0,
+    "lowest_score": 71.0,
+    "score_distribution": {
+      "excellent_80_100": 12,
+      "good_70_79": 13,
+      "fair_60_69": 0,
+      "poor_below_60": 0
+    }
+  },
+  "application_evaluations": {
+    "Kakamega_OBXD": {
+      "application_id": "Kakamega_OBXD",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 4
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 4,
+            "rubric_explanation": "Registered 1–3 yrs; documented leadership"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.05,
+            "weighted_score": 4.0
+          }
+        },
+        "composite_score": 89.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Kakamega_00AH": {
+      "application_id": "Kakamega_00AH",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 4,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 4
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan; targets present"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 4,
+            "rubric_explanation": "Registered 1–3 yrs; documented leadership"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.05,
+            "weighted_score": 4.0
+          }
+        },
+        "composite_score": 84.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Kakamega_1QH8": {
+      "application_id": "Kakamega_1QH8",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 3,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 4
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 3,
+            "rubric_explanation": "Direction clear; targets generic"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 4,
+            "rubric_explanation": "Registered 1–3 yrs; documented leadership"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.05,
+            "weighted_score": 4.0
+          }
+        },
+        "composite_score": 71.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Kakamega_XL1H": {
+      "application_id": "Kakamega_XL1H",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 4
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 4,
+            "rubric_explanation": "Registered 1–3 yrs; documented leadership"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.05,
+            "weighted_score": 4.0
+          }
+        },
+        "composite_score": 89.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Kakamega_673K": {
+      "application_id": "Kakamega_673K",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 4,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 4
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan; targets present"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 4,
+            "rubric_explanation": "Registered 1–3 yrs; documented leadership"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.05,
+            "weighted_score": 4.0
+          }
+        },
+        "composite_score": 76.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Kakamega_JDED": {
+      "application_id": "Kakamega_JDED",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 3,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 4
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 3,
+            "rubric_explanation": "Direction clear; targets generic"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 4,
+            "rubric_explanation": "Registered 1–3 yrs; documented leadership"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.05,
+            "weighted_score": 4.0
+          }
+        },
+        "composite_score": 71.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Kakamega_SX6G": {
+      "application_id": "Kakamega_SX6G",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 3,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 4
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 3,
+            "rubric_explanation": "Direction clear; targets generic"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 4,
+            "rubric_explanation": "Registered 1–3 yrs; documented leadership"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.05,
+            "weighted_score": 4.0
+          }
+        },
+        "composite_score": 71.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Kakamega_VAE9": {
+      "application_id": "Kakamega_VAE9",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 4,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 4
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan; targets present"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 4,
+            "rubric_explanation": "Registered 1–3 yrs; documented leadership"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.05,
+            "weighted_score": 4.0
+          }
+        },
+        "composite_score": 76.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Kakamega_6XKV": {
+      "application_id": "Kakamega_6XKV",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 4,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 4
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan; targets present"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 4,
+            "rubric_explanation": "Registered 1–3 yrs; documented leadership"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.05,
+            "weighted_score": 4.0
+          }
+        },
+        "composite_score": 84.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Kakamega_V64S": {
+      "application_id": "Kakamega_V64S",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 3,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 4
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 3,
+            "rubric_explanation": "Direction clear; targets generic"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 4,
+            "rubric_explanation": "Registered 1–3 yrs; documented leadership"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.05,
+            "weighted_score": 4.0
+          }
+        },
+        "composite_score": 71.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Kakamega_XRTF": {
+      "application_id": "Kakamega_XRTF",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 4,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 4
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan; targets present"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 4,
+            "rubric_explanation": "Registered 1–3 yrs; documented leadership"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.05,
+            "weighted_score": 4.0
+          }
+        },
+        "composite_score": 84.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Kakamega_WSXT": {
+      "application_id": "Kakamega_WSXT",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 90.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Kakamega_S6WQ": {
+      "application_id": "Kakamega_S6WQ",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 4,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan; targets present"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 77.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Kakamega_JGS5": {
+      "application_id": "Kakamega_JGS5",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 4
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 4,
+            "rubric_explanation": "Registered 1–3 yrs; documented leadership"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.05,
+            "weighted_score": 4.0
+          }
+        },
+        "composite_score": 89.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Kakamega_AHTN": {
+      "application_id": "Kakamega_AHTN",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 3,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 4
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 3,
+            "rubric_explanation": "Direction clear; targets generic"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 4,
+            "rubric_explanation": "Registered 1–3 yrs; documented leadership"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.05,
+            "weighted_score": 4.0
+          }
+        },
+        "composite_score": 79.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Kakamega_BJON": {
+      "application_id": "Kakamega_BJON",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 3,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 4
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 3,
+            "rubric_explanation": "Direction clear; targets generic"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 4,
+            "rubric_explanation": "Registered 1–3 yrs; documented leadership"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.05,
+            "weighted_score": 4.0
+          }
+        },
+        "composite_score": 71.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Kakamega_REG3": {
+      "application_id": "Kakamega_REG3",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 3,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 4
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 3,
+            "rubric_explanation": "Direction clear; targets generic"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 4,
+            "rubric_explanation": "Registered 1–3 yrs; documented leadership"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.05,
+            "weighted_score": 4.0
+          }
+        },
+        "composite_score": 79.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Kakamega_PXNH": {
+      "application_id": "Kakamega_PXNH",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 90.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Kakamega_X96D": {
+      "application_id": "Kakamega_X96D",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 4,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 4
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan; targets present"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 4,
+            "rubric_explanation": "Registered 1–3 yrs; documented leadership"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.05,
+            "weighted_score": 4.0
+          }
+        },
+        "composite_score": 84.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Kakamega_Q0TJ": {
+      "application_id": "Kakamega_Q0TJ",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 3,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 3,
+            "rubric_explanation": "Direction clear; targets generic"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 72.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Kakamega_D7ZJ": {
+      "application_id": "Kakamega_D7ZJ",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 4,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan; targets present"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 85.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Kakamega_F3KE": {
+      "application_id": "Kakamega_F3KE",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 4,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan; targets present"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 77.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Kakamega_II9Z": {
+      "application_id": "Kakamega_II9Z",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 4,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 4
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan; targets present"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 4,
+            "rubric_explanation": "Registered 1–3 yrs; documented leadership"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.05,
+            "weighted_score": 4.0
+          }
+        },
+        "composite_score": 84.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Kakamega_HGXO": {
+      "application_id": "Kakamega_HGXO",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 82.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Kakamega_TFBO": {
+      "application_id": "Kakamega_TFBO",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 3,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 4
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 3,
+            "rubric_explanation": "Direction clear; targets generic"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 4,
+            "rubric_explanation": "Registered 1–3 yrs; documented leadership"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.05,
+            "weighted_score": 4.0
+          }
+        },
+        "composite_score": 71.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    }
+  }
+}

@@ -4,7 +4,7 @@ import { formatScore, getNumericScore } from '../utils/index.ts';
 import { ArrowLeft } from 'lucide-react';
 import { HumanApplicant } from '../types/index.ts';
 import { motion } from 'framer-motion';
-import { s3BaseUrl } from '../../../utils';
+import { buildStaticDataUrl, s3BaseUrl } from '../../../utils';
 
 // Simple county ranking calculation (same as parent components)
 const getCountyRank = (applicant: HumanApplicant, allCountyApplicants: HumanApplicant[]): number => {
@@ -12,12 +12,13 @@ const getCountyRank = (applicant: HumanApplicant, allCountyApplicants: HumanAppl
 };
 
 // Function to fetch applicant name from gemini data
-const fetchApplicantName = async (applicationId: string, county: string): Promise<string | null> => {
+const fetchApplicantName = async (applicationId: string, county: string, cohort?: string | null): Promise<string | null> => {
   try {
     // Normalize county name to match file naming convention
     const normalizedCounty = county.toLowerCase().replace(/'/g, '');
     // console.log(normalizedCounty,"normalized county")
-    const response = await fetch(`${s3BaseUrl}/static/data/gemini/${normalizedCounty}.json`);
+    const url = buildStaticDataUrl(`gemini/${normalizedCounty}.json`, cohort);
+    const response = await fetch(url);
 
     if (!response.ok) {
       console.warn(`Failed to fetch data for county: ${county}`);
@@ -55,6 +56,7 @@ export const ApplicantHeader: React.FC<HeaderProps> = ({ applicant, countyApplic
   const countyRank = getCountyRank(applicant, countyApplicants);
   const [applicantName, setApplicantName] = useState<string | null>(null);
   const [nameLoading, setNameLoading] = useState(true);
+  const cohort = new URLSearchParams(window.location.search).get('cohort');
 
   // Fetch applicant name from gemini data
   useEffect(() => {
@@ -62,7 +64,8 @@ export const ApplicantHeader: React.FC<HeaderProps> = ({ applicant, countyApplic
       setNameLoading(true);
       const name = await fetchApplicantName(
         applicant['Application ID'],
-        applicant['E2. County Mapping']
+        applicant['E2. County Mapping'],
+        cohort
       );
 
     //   console.log(name,"name")
@@ -71,7 +74,7 @@ export const ApplicantHeader: React.FC<HeaderProps> = ({ applicant, countyApplic
     };
 
     loadApplicantName();
-  }, [applicant['Application ID'], applicant['E2. County Mapping']]);
+  }, [applicant['Application ID'], applicant['E2. County Mapping'], cohort]);
 
 //   console.log(countyRank,"countyRank")
 

@@ -16,5 +16,13 @@ PyMuPDF
 PyPDF2
 pytesseract
 python-decouple
+
 requests
 tqdm
+
+pytest
+pytest-cov
+pytest-sugar
+mixer
+hypothesis
+pytest-django

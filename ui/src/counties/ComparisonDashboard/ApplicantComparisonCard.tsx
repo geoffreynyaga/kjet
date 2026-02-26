@@ -16,7 +16,7 @@ const ApplicantComparisonCard: React.FC<ApplicantComparisonCardProps> = ({ compa
   const [expandedCriterion, setExpandedCriterion] = useState<Set<string>>(new Set());
 
 
-  // console.log(comparison,"comparison in ApplicantComparisonCard")
+  console.log(comparison,"comparison in ApplicantComparisonCard")
 
   // Check if this is a matched comparison (has LLM data) or a mismatched application
   const isMatched = comparison.llmStatus && comparison.llmStatus !== 'County Not Found' && comparison.llmStatus !== 'Not Found in LLM' && comparison.llmStatus !== 'No Analysis';

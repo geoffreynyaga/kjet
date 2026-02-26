@@ -8,6 +8,16 @@ import re
 import subprocess
 from pathlib import Path
 
+APPLICATION_FOLDER_PATTERNS = [
+    re.compile(r'^application_\d+_bundle(?: \(\d+\))?$'),
+    re.compile(r'^application_KJET-[A-Z0-9-]+(?:_with_attachments(?:_\d{4}-\d{2}-\d{2}_\d{2}-\d{2}-\d{2})?)?$', re.IGNORECASE)
+]
+
+
+def is_application_folder_name(name: str) -> bool:
+    """Determine whether a folder name matches any of the known application bundle patterns."""
+    return any(pattern.match(name) for pattern in APPLICATION_FOLDER_PATTERNS)
+
 
 def extract_application_id_from_folder_name(folder_name):
     """
@@ -15,12 +25,26 @@ def extract_application_id_from_folder_name(folder_name):
     - application_387_bundle
     - application_387_bundle (1)
     - application_387_bundle (2)
+    - application_KJET-20251231112405-OPXW_with_attachments_2026-01-13_17-18-22 (use full folder name)
     """
     # Use regex to extract the numeric ID from folder names like application_XXX_bundle or application_XXX_bundle (N)
     pattern = r'application_(\d+)_bundle'
     match = re.search(pattern, folder_name)
     if match:
         return match.group(1)
+
+    # Special case: folders that embed the full KJET identifier
+    if folder_name.startswith("application_KJET-"):
+        # The true ID is the last 4 characters before any suffixes like _with_attachments
+        base = folder_name
+        if "_with_attachments" in base:
+            base = base.split("_with_attachments", 1)[0]
+        
+        # Extract the last 4 characters of the application number
+        # Example: application_KJET-20251224134753-G9QK -> G9QK
+        if len(base) >= 4:
+            return base[-4:]
+        return base
 
     # Fallback: try to extract any numbers from the folder name
     numbers = re.findall(r'\d+', folder_name)
@@ -419,10 +443,10 @@ def discover_counties_and_applications(data_dir):
 
     # Look for application folders directly in data_dir (legacy structure)
     # Use regex to handle folders like application_387_bundle (1)
-    direct_applications = [item for item in items if item.is_dir() and re.match(r'application_\d+_bundle', item.name)]
+    direct_applications = [item for item in items if item.is_dir() and is_application_folder_name(item.name)]
 
     # Look for county subfolders
-    county_folders = [item for item in items if item.is_dir() and not re.match(r'application_\d+_bundle', item.name) and not item.name.startswith(".")]
+    county_folders = [item for item in items if item.is_dir() and not is_application_folder_name(item.name) and not item.name.startswith(".")]
 
     if direct_applications and not county_folders:
         # Legacy structure: applications directly in data folder
@@ -435,7 +459,7 @@ def discover_counties_and_applications(data_dir):
             if item.is_dir() and not item.name.startswith("."):
                 # Check if this folder contains application folders (handle folders with (1) suffix)
                 sub_applications = [sub for sub in item.iterdir()
-                                 if sub.is_dir() and re.match(r'application_\d+_bundle', sub.name)]
+                                 if sub.is_dir() and is_application_folder_name(sub.name)]
                 county_name = item.name
                 counties_data[county_name] = sub_applications
                 if sub_applications:

@@ -9,6 +9,8 @@ interface BusinessTypeDistributionProps {
 export const BusinessTypeDistribution: React.FC<BusinessTypeDistributionProps> = ({ nationalStats }) => {
   const maxValue = Math.max(...nationalStats.businessTypeDistribution.map(d => d.value));
 
+  console.log('BusinessTypeDistribution render with data:', nationalStats);
+
   // Simple solid colors for each bar
   const barColors = [
     '#3B82F6', // blue
