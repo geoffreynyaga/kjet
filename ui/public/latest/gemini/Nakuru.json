@@ -1,0 +1,363 @@
+{
+  "report_title": "KJET Nakuru County Application Ranking and Evaluation",
+  "selection_criteria_weights": {
+    "S1_Registration_Track_Record_5%": 0.05,
+    "S2_Financial_Position_20%": 0.2,
+    "S3_Market_Demand_Competitiveness_20%": 0.2,
+    "S4_Business_Proposal_Viability_25%": 0.25,
+    "S5_Value_Chain_Alignment_10%": 0.1,
+    "S6_Inclusivity_Sustainability_20%": 0.2
+  },
+  "applications": [
+    {
+      "application_id": "Nakuru_PL26",
+      "applicant_name": "Waranna AO Enterprises Limited",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 1,
+      "composite_score": 88.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Established in 2004 (21 years); Private Company status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "2024 Revenue: KES 20,000,000.00; Accounting system: Zoho Books."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "B2B Sales: 60.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Aligned with Construction priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Woman-owned enterprise"
+        }
+      }
+    },
+    {
+      "application_id": "Nakuru_XYVX",
+      "applicant_name": "VUNALOT FARM2FORK LIMITED",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 2,
+      "composite_score": 86.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.0,
+          "reason": "Established in 2022 (3 years); Private Company status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "2024 Revenue: KES 3,654,700.00; Accounting system: QuickBooks."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "B2B Sales: 60.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Aligned with other priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Woman-owned enterprise"
+        }
+      }
+    },
+    {
+      "application_id": "Nakuru_W2VR",
+      "applicant_name": "wikurie coffee growers co-operative society limited",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 3,
+      "composite_score": 84.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Established in 1980 (45 years); Cooperative status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 4.0,
+          "reason": "2024 Revenue: KES 750,000.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "B2B Sales: 100.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Aligned with Coffee priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Woman-owned enterprise"
+        }
+      }
+    },
+    {
+      "application_id": "Nakuru_ZVA2",
+      "applicant_name": "ENSURE VENTURES",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 4,
+      "composite_score": 82.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.0,
+          "reason": "Established in 2022 (3 years); Other status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "2024 Revenue: KES 3,000,000.00; Accounting system: QuickBooks."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.0,
+          "reason": "B2B Sales: 30.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Aligned with Construction priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Woman-owned enterprise"
+        }
+      }
+    },
+    {
+      "application_id": "Nakuru_MH5U",
+      "applicant_name": "Association of Insect Food and Feed Industry Professionals (AIFIP)",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 5,
+      "composite_score": 78.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.0,
+          "reason": "Established in 2023 (2 years); Private Company status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "2024 Revenue: KES 732,500.00; Accounting system: Other."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "B2B Sales: 20.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Aligned with Blue Economy priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Woman-owned enterprise"
+        }
+      }
+    },
+    {
+      "application_id": "Nakuru_Z9O9",
+      "applicant_name": "KIREMBA FCS",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 6,
+      "composite_score": 76.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Established in 2006 (19 years); Cooperative status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "2024 Revenue: KES 40,000,000.00; Accounting system: QuickBooks."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 2.0,
+          "reason": "B2B Sales: 0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Aligned with Coffee priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Woman-owned enterprise"
+        }
+      }
+    },
+    {
+      "application_id": "Nakuru_YC9M",
+      "applicant_name": "SEASONSPRING FRESH SUPPLIERS LTD.",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 7,
+      "composite_score": 70.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.0,
+          "reason": "Established in 2022 (3 years); Private Company status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "2024 Revenue: KES 1,924,554.00; Accounting system: Other."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "B2B Sales: 60.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Aligned with Dairy priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 1.0,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Nakuru_X343",
+      "applicant_name": "NOVAIN LIMITED",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 8,
+      "composite_score": 67.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.0,
+          "reason": "Established in 2020 (5 years); Private Company status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "2024 Revenue: KES 2,500,000.00; Accounting system: QuickBooks."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.0,
+          "reason": "B2B Sales: 30.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Aligned with Construction priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 1.0,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Nakuru_5N6P",
+      "applicant_name": "Dapdapoi Enterprises",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 9,
+      "composite_score": 66.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.0,
+          "reason": "Established in 2023 (2 years); MSME Association status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2.0,
+          "reason": "2024 Revenue: KES 100,000.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "B2B Sales: 1.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Aligned with Dairy priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Woman-owned enterprise"
+        }
+      }
+    },
+    {
+      "application_id": "Nakuru_V7JB",
+      "applicant_name": "Youth",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 10,
+      "composite_score": 59.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.0,
+          "reason": "Established in 2019 (6 years); Private Company status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "2024 Revenue: KES 90,000.00; Accounting system: Other."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.0,
+          "reason": "B2B Sales: 23.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Aligned with other priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 1.0,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Nakuru_CWHO",
+      "applicant_name": "ENDAO SOLAI FARMERS CO-OPERATIVE SOCIETY LIMITED",
+      "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
+      "ineligibility_criterion_failed": "E4",
+      "reason": "No financial evidence (Bank/Mpesa) attached."
+    },
+    {
+      "application_id": "Nakuru_DCFM",
+      "applicant_name": "Farm Links Veterinary and Consultancy services",
+      "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
+      "ineligibility_criterion_failed": "E4",
+      "reason": "No financial evidence (Bank/Mpesa) attached."
+    }
+  ]
+}

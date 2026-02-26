@@ -1,0 +1,119 @@
+const path = require('path');
+const { defineConfig } = require('@rspack/cli');
+const { rspack } = require('@rspack/core');
+const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
+// Load environment variables from .env file
+require('dotenv').config();
+
+module.exports = defineConfig({
+  entry: './src/index.tsx',
+
+  output: {
+    path: path.resolve(__dirname, process.env.NODE_ENV === 'production' ? './static/ui' : './static/ui'),
+    filename: '[name].[contenthash].js',
+    clean: true // Built-in clean functionality
+  },
+
+  resolve: {
+    extensions: ['.js', '.jsx', '.json', '.ts', '.tsx']
+  },
+
+  module: {
+    rules: [
+      {
+        test: /\.js|\.jsx$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'builtin:swc-loader',
+          options: {
+            jsc: {
+              parser: {
+                syntax: 'ecmascript',
+                jsx: true
+              },
+              transform: {
+                react: {
+                  runtime: 'automatic'
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        test: /\.(ts|tsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'builtin:swc-loader',
+          options: {
+            jsc: {
+              parser: {
+                syntax: 'typescript',
+                tsx: true
+              },
+              transform: {
+                react: {
+                  runtime: 'automatic'
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'postcss-loader'
+        ]
+      }
+    ]
+  },
+
+  optimization: {
+    minimize: true
+  },
+
+  plugins: [
+    new rspack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development'),
+      'process.env.REACT_APP_S3_ENDPOINT_URL': JSON.stringify(process.env.REACT_APP_S3_ENDPOINT_URL || '')
+    }),
+
+    new WebpackManifestPlugin({
+      fileName: 'manifest.json',
+      publicPath: '/'
+    }),
+
+    // Environment variables
+    new rspack.EnvironmentPlugin({
+      NODE_ENV: 'development'
+    }),
+
+    new CleanWebpackPlugin()
+  ],
+
+  // Development server configuration
+  devServer: {
+    port: 3000,
+    hot: true,
+    historyApiFallback: true,
+    devMiddleware: {
+      writeToDisk: (filePath) => {
+        return /static\/ui/.test(filePath);
+      }
+    },
+    static: {
+      directory: path.resolve(__dirname, './static/ui'),
+      watch: true
+    }
+  },
+
+  // Enable source maps for development
+  // Production: 'hidden-source-map' = generates .map files but doesn't link them in JS (keep locally, don't deploy)
+  // Development: 'eval-cheap-module-source-map' = fast rebuilds with line numbers
+  devtool: process.env.NODE_ENV === 'production' ? 'hidden-source-map' : 'eval-cheap-module-source-map'
+});

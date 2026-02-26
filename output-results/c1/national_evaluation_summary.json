@@ -1,0 +1,63 @@
+{
+  "summary_metadata": {
+    "generation_date": "2026-02-26T02:06:38.784078",
+    "total_counties": 47,
+    "evaluation_period": "KJET Program Applications",
+    "rules_version": "rules.md - Annex A & B"
+  },
+  "national_summary": {
+    "total_applications": 4,
+    "total_eligible": 0,
+    "total_ineligible": 4,
+    "national_eligibility_rate": 0.0,
+    "total_scored": 0,
+    "national_average_score": 0.0,
+    "highest_county_score": 0.0,
+    "lowest_county_score": 100.0
+  },
+  "eligibility_breakdown": {
+    "E1_registration_legality_failures": 4,
+    "E2_county_mapping_failures": 4,
+    "E3_priority_value_chain_failures": 4,
+    "E4_financial_evidence_failures": 2,
+    "E5_consent_contactability_failures": 4
+  },
+  "county_summaries": {
+    "Nyandarua": {
+      "county": "Nyandarua",
+      "total_applications": 2,
+      "eligible_applications": 0,
+      "ineligible_applications": 2,
+      "eligibility_rate": 0.0,
+      "scored_applications": 0,
+      "average_score": 0.0,
+      "highest_score": 0.0,
+      "lowest_score": 0.0,
+      "score_distribution": {
+        "excellent_80_100": 0,
+        "good_70_79": 0,
+        "fair_60_69": 0,
+        "poor_below_60": 0
+      }
+    },
+    "Bungoma": {
+      "county": "Bungoma",
+      "total_applications": 2,
+      "eligible_applications": 0,
+      "ineligible_applications": 2,
+      "eligibility_rate": 0.0,
+      "scored_applications": 0,
+      "average_score": 0.0,
+      "highest_score": 0.0,
+      "lowest_score": 0.0,
+      "score_distribution": {
+        "excellent_80_100": 0,
+        "good_70_79": 0,
+        "fair_60_69": 0,
+        "poor_below_60": 0
+      }
+    }
+  },
+  "top_performing_counties": [],
+  "counties_needing_attention": []
+}

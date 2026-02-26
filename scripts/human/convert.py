@@ -2,6 +2,8 @@ import pandas as pd
 import json
 import os
 import numpy as np
+import argparse
+from path_utils import resolve_csv_path
 
 def sanitize_value(v):
     # Convert pandas/Numpy types and NaN/Inf to JSON-serializable Python types
@@ -123,16 +125,46 @@ def extract_csv_to_json(file_path, output_path):
 
 # --- EXECUTION ---
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Convert human CSV results to cohort-scoped JSON files")
+    parser.add_argument("--cohort", default="latest", help="Cohort output folder (e.g. latest, c1)")
+    parser.add_argument("--final-csv", help="Optional path to final results CSV")
+    parser.add_argument("--first-csv", help="Optional path to first results CSV")
+    args = parser.parse_args()
+
     # Define the input CSV file and output JSON file paths relative to the base directory
     base_dir = os.getcwd()
-    input_csv_final_result = os.path.join(base_dir, "scripts/human/kjet-human-final-results.csv")
-    input_csv_first_result = os.path.join(base_dir, "scripts/human/kjet-human-first-results.csv")
-    output_json_first_result = os.path.join(base_dir, "code/public/kjet-human-first-result.json")
+    input_csv_final_result = resolve_csv_path(
+        base_dir,
+        args.cohort,
+        args.final_csv,
+        [
+            "scripts/human/kjet-human-latest-final.csv",
+            "scripts/human/kjet-human-latest.csv",
+        ],
+        "scripts/human/kjet-human-final-results-latest.csv"
+    )
+    input_csv_first_result = resolve_csv_path(
+        base_dir,
+        args.cohort,
+        args.first_csv,
+        [
+            "scripts/human/kjet-human-latest-first.csv",
+        ],
+        "scripts/human/kjet-human-final-results-latest.csv"
+    )
+    output_folder = os.path.join(base_dir, "ui/public", args.cohort)
 
-    output_json_fin = os.path.join(base_dir, "code/public/kjet-human-final.json")
-    output_json_first = os.path.join(base_dir, "code/public/kjet-human-first.json")
+    output_json_fin = os.path.join(output_folder, "kjet-human-final.json")
+    output_json_first = os.path.join(output_folder, "kjet-human-first.json")
 
     # Extract data from CSV and save it as JSON
-    extract_csv_to_json(input_csv_final_result, output_json_fin)
-    extract_csv_to_json(input_csv_first_result, output_json_first)
+    if input_csv_final_result:
+        extract_csv_to_json(input_csv_final_result, output_json_fin)
+    else:
+        print("❌ No final results CSV found. Skipping kjet-human-final.json generation.")
+
+    if input_csv_first_result:
+        extract_csv_to_json(input_csv_first_result, output_json_first)
+    else:
+        print("⚠️  No first results CSV found. Skipping kjet-human-first.json generation.")
 

@@ -1,0 +1,353 @@
+{
+  "report_title": "KJET Homa Bay County Application Ranking and Evaluation",
+  "selection_criteria_weights": {
+    "S1_Registration_Track_Record_5%": 0.1,
+    "S2_Financial_Position_20%": 0.2,
+    "S3_Market_Demand_Competitiveness_20%": 0.2,
+    "S4_Business_Proposal_Viability_25%": 0.25,
+    "S5_Value_Chain_Alignment_10%": 0.15,
+    "S6_Inclusivity_Sustainability_20%": 0.1
+  },
+  "applications": [
+    {
+      "application_id": "Homa Bay_456",
+      "applicant_name": "NDHIWA SUB COUNTY DAIRY FARMERS COOPERATIVE SOCIETY LIMITED",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 1,
+      "composite_score": 100.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Coop, Registered since 2003 (>3 yrs), established governance."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "Turnover KES 15M (2024), positive 2-yr trend, strong financial health (T>10M)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "Active contracts (schools, hospitals), consistent multi-channel sales, good reputation."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5.0,
+          "reason": "Detailed plan for solar-powered milk coolers and AI services, quantified targets (spoilage reduction, volume increase)."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VC (Dairy), critical node (aggregation/chilling), strong farmer linkages."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "45% women/55% youth participation, solar coolers, biogas digesters, AI for breeding."
+        }
+      }
+    },
+    {
+      "application_id": "Homa Bay_479",
+      "applicant_name": "DOM BUSINESS CONCEPTS LIMITED",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 2,
+      "composite_score": 96.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "PLC, Registered since 2014 (>3 yrs), strong track record."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "Turnover KES 25.5M (2024), positive 2-yr trend, strong financial health (T>10M)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "Active tenders and subcontracts with major firms (B2B 80%), strong market position."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5.0,
+          "reason": "Detailed plan for BIM software and specialized equipment, quantified targets (20% efficiency, new market penetration)."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VC (Construction), critical node (green building/specialized services)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "Moderate inclusion (30% women/youth), adopted Green Building and Construction practices."
+        }
+      }
+    },
+    {
+      "application_id": "Homa Bay_453",
+      "applicant_name": "NYAKWERA GROUNDNUT CLUSTER",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 3,
+      "composite_score": 92.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "MSME, Registered since 2021 (>3 yrs), established."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 4.0,
+          "reason": "Turnover KES 7.5M (2024), sound financial health (T>5M)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.0,
+          "reason": "Consistent retail sales, online presence, contract evidence (20% sales)."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 5.0,
+          "reason": "Clear plan for dedicated Oil Pressing Unit, quantified targets (50% oil production increase), detailed execution plan."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VC (Edible Oils), critical processing node (peanut butter/oil), strong farmer linkages."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Woman-owned (70% ownership), planning solar/energy-efficient systems, local sourcing."
+        }
+      }
+    },
+    {
+      "application_id": "Homa Bay_410",
+      "applicant_name": "RANGWE DAIRY FARMERS COOPERATIVE SOCIETY LIMITED",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 4,
+      "composite_score": 83.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Coop, Registered since 2007 (>3 yrs), functioning governance."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 4.0,
+          "reason": "Turnover KES 45M (2024), sound financial health (T>10M)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.0,
+          "reason": "Bulk sales to processors (80%), consistent B2B."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Clear plan for Solar Chilling Tank, quantified targets (reduce spoilage by 15%), addressing power issues."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VC (Dairy), critical node (aggregation/chilling), strong linkages."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "30% women in leadership, smart agriculture practices, resistant trees/fodder species."
+        }
+      }
+    },
+    {
+      "application_id": "Homa Bay_594",
+      "applicant_name": "RANGWE NEWSTART CARPENTER WORKSHOP",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 5,
+      "composite_score": 81.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "MSME, Registered since 2016 (>3 yrs), established."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 4.0,
+          "reason": "Turnover KES 6.2M (2024), sound financial health (T>5M)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.0,
+          "reason": "Consistent local B2C/B2B (70%/30%) sales, good market share."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Clear plan for CNC Router and specialized joinery tools, targets (40% capacity increase, 20% waste reduction)."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Priority VC (Construction - furniture/woodwork), clear manufacturing node."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "Moderate inclusion (30% women), sustainable sourcing (certified wood), waste recycling (sawdust)."
+        }
+      }
+    },
+    {
+      "application_id": "Homa Bay_353",
+      "applicant_name": "Homabay Smart Tailors Association",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 6,
+      "composite_score": 79.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.0,
+          "reason": "MSME Association, Registered in 2023 (<1 yr), basic structure."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "Turnover KSH 3.2M (2024), stable records (T>1M)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.0,
+          "reason": "Sales to schools/hospitals/government (B2B 70%), consistent orders."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Clear need for modern equipment (Embroidery, Knitting, etc.), targets (50% output increase)."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Priority VC (Textiles), clear manufacturing node (garment manufacturing)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Woman-owned (85% membership), eco-friendly fabrics, solar panel workshops, local sourcing."
+        }
+      }
+    },
+    {
+      "application_id": "Homa Bay_561",
+      "applicant_name": "MADHA MILLERS LIMITED",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 7,
+      "composite_score": 76.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.0,
+          "reason": "PLC, Registered since 2022 (1-3 yrs), documented leadership."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "Turnover KES 4.5M (2024), stable records (T>1M)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.0,
+          "reason": "Consistent retail sales, local contracts (B2B 20%), growing channels."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Clear plan for Oil Pressing Unit and advanced milling machinery, targets (40% capacity increase, 30% revenue)."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Priority VC (Edible Oils), clear processing node, some linkages."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "Strong youth participation (55% youth), waste use/reuse (bran to feed), climate-smart agriculture."
+        }
+      }
+    },
+    {
+      "application_id": "Homa Bay_347",
+      "applicant_name": "DOMASA CONSTRUCTION LTD",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 8,
+      "composite_score": 74.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "PLC, Registered since 2015 (>3 yrs), strong track record."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "Turnover KES 1.3M (2024), stable/recovering records (T>1M)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.0,
+          "reason": "Multi-channel sales (B2B, B2C, Export), consistent sales."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Plan to expand facility, acquire key construction equipment (Cranes, Mixer, etc.), targets generic."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VC (Construction), key node (cabros, culverts, bridge, columns)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "Woman-owned (2 women in leadership), tree/grass planting, water irrigation installation."
+        }
+      }
+    },
+    {
+      "application_id": "Homa Bay_684",
+      "applicant_name": "East Kasipul Farmers Association",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 9,
+      "composite_score": 72.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.0,
+          "reason": "MSME Association, Registered in 2023 (<1 yr), basic structure."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "Turnover KES 2.5M (2024), stable records (T>1M)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "Regular local sales, one main channel (retailers)."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Clear need for a modern huller and parboiling unit, targets generic."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Additional VC (Rice), critical processing node (milling), strong farmer linkages."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Woman-owned (75% membership), organic fertilizers, tree planting, no herbicides."
+        }
+      }
+    },
+    {
+      "application_id": "Homa Bay_506",
+      "applicant_name": "KASIPUL FISHERMEN COOPERATIVE SOCIETY",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 10,
+      "composite_score": 68.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.0,
+          "reason": "Coop, Registered in 2023 (<1 yr), basic structure."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "Turnover KES 2.1M (2024), stable records (T>1M)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "Regular local sales, one main channel (some B2B for feed)."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Clear plan for raised drying racks, packaging equipment, targets generic."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Additional VC (Blue Economy), critical processing node (drying/value addition)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "Moderate inclusion (40% women/youth), eco-friendly drying racks, waste minimization (spoiled omena to feed)."
+        }
+      }
+    },
+    {
+      "application_id": "Homa Bay_583",
+      "applicant_name": "ERIDELY FARM",
+      "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
+      "ineligibility_criterion_failed": "E3: Priority Value Chain (Pass/Fail)",
+      "reason": "The primary economic activity is **Livestock/Dairy Farming (Goat Farming/Breeding)**, which is explicitly excluded from the KJET Priority Dairy Value Chain."
+    }
+  ]
+}

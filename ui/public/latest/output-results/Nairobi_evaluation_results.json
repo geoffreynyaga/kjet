@@ -1,0 +1,3054 @@
+{
+  "evaluation_metadata": {
+    "county": "Nairobi",
+    "total_applications": 34,
+    "evaluation_date": "2026-02-26T04:08:58.200133",
+    "evaluator_version": "1.0",
+    "rules_version": "rules.md - Annex A & B"
+  },
+  "data_enrichment": {
+    "applications_with_business_name": 0,
+    "applications_with_standardized_business_name": 0,
+    "applications_with_woman_owned_flag": 34,
+    "applications_with_woman_owned_proof": 0
+  },
+  "eligibility_summary": {
+    "total_applications": 34,
+    "eligible_applications": 32,
+    "ineligible_applications": 2,
+    "eligibility_rate": 94.12,
+    "criteria_failure_breakdown": {
+      "E1_registration_legality": 0,
+      "E2_county_mapping": 0,
+      "E3_priority_value_chain": 0,
+      "E4_financial_evidence": 2,
+      "E5_consent_contactability": 0
+    }
+  },
+  "scoring_summary": {
+    "total_scored": 32,
+    "average_score": 86.22,
+    "highest_score": 90.0,
+    "lowest_score": 76.0,
+    "score_distribution": {
+      "excellent_80_100": 29,
+      "good_70_79": 3,
+      "fair_60_69": 0,
+      "poor_below_60": 0
+    }
+  },
+  "application_evaluations": {
+    "Nairobi_UVHU": {
+      "application_id": "Nairobi_UVHU",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 0,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 0,
+            "rubric_explanation": "No financial evidence"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 0,
+            "normalized_score": 0,
+            "weight": 0.2,
+            "weighted_score": 0.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 78.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Nairobi_17AB": {
+      "application_id": "Nairobi_17AB",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 4
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 4,
+            "rubric_explanation": "Registered 1–3 yrs; documented leadership"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.05,
+            "weighted_score": 4.0
+          }
+        },
+        "composite_score": 81.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Nairobi_TAGT": {
+      "application_id": "Nairobi_TAGT",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 90.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Nairobi_IUDP": {
+      "application_id": "Nairobi_IUDP",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 90.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Nairobi_M4YZ": {
+      "application_id": "Nairobi_M4YZ",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 4,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan; targets present"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 77.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Nairobi_1JDH": {
+      "application_id": "Nairobi_1JDH",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 4
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 4,
+            "rubric_explanation": "Registered 1–3 yrs; documented leadership"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.05,
+            "weighted_score": 4.0
+          }
+        },
+        "composite_score": 89.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Nairobi_NFJ3": {
+      "application_id": "Nairobi_NFJ3",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 4
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 4,
+            "rubric_explanation": "Registered 1–3 yrs; documented leadership"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.05,
+            "weighted_score": 4.0
+          }
+        },
+        "composite_score": 89.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Nairobi_KEVV": {
+      "application_id": "Nairobi_KEVV",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 4
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 4,
+            "rubric_explanation": "Registered 1–3 yrs; documented leadership"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.05,
+            "weighted_score": 4.0
+          }
+        },
+        "composite_score": 81.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Nairobi_EG7T": {
+      "application_id": "Nairobi_EG7T",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 3,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 3,
+            "rubric_explanation": "Direction clear; targets generic"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 80.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Nairobi_T8JC": {
+      "application_id": "Nairobi_T8JC",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 90.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Nairobi_DEWI": {
+      "application_id": "Nairobi_DEWI",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 90.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Nairobi_SQPO": {
+      "application_id": "Nairobi_SQPO",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 82.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Nairobi_PQXR": {
+      "application_id": "Nairobi_PQXR",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 90.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Nairobi_KMOJ": {
+      "application_id": "Nairobi_KMOJ",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 4,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 4
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan; targets present"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 4,
+            "rubric_explanation": "Registered 1–3 yrs; documented leadership"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.05,
+            "weighted_score": 4.0
+          }
+        },
+        "composite_score": 84.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Nairobi_LNBR": {
+      "application_id": "Nairobi_LNBR",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 82.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Nairobi_LFNL": {
+      "application_id": "Nairobi_LFNL",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 4,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 4
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan; targets present"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 4,
+            "rubric_explanation": "Registered 1–3 yrs; documented leadership"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.05,
+            "weighted_score": 4.0
+          }
+        },
+        "composite_score": 76.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Nairobi_XCVP": {
+      "application_id": "Nairobi_XCVP",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 82.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Nairobi_X0WP": {
+      "application_id": "Nairobi_X0WP",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 90.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Nairobi_60AJ": {
+      "application_id": "Nairobi_60AJ",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 90.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Nairobi_T2UY": {
+      "application_id": "Nairobi_T2UY",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 90.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Nairobi_4ZG1": {
+      "application_id": "Nairobi_4ZG1",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 90.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Nairobi_PQUT": {
+      "application_id": "Nairobi_PQUT",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 4,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan; targets present"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 85.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Nairobi_TRZ5": {
+      "application_id": "Nairobi_TRZ5",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 90.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Nairobi_D8ES": {
+      "application_id": "Nairobi_D8ES",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": false,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": [
+          "E4: Insufficient financial evidence"
+        ]
+      }
+    },
+    "Nairobi_NKA5": {
+      "application_id": "Nairobi_NKA5",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": false,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": [
+          "E4: Insufficient financial evidence"
+        ]
+      }
+    },
+    "Nairobi_WUY9": {
+      "application_id": "Nairobi_WUY9",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 4,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan; targets present"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 85.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Nairobi_ULLH": {
+      "application_id": "Nairobi_ULLH",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 4
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 4,
+            "rubric_explanation": "Registered 1–3 yrs; documented leadership"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.05,
+            "weighted_score": 4.0
+          }
+        },
+        "composite_score": 81.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Nairobi_TCK6": {
+      "application_id": "Nairobi_TCK6",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 90.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Nairobi_JB0Y": {
+      "application_id": "Nairobi_JB0Y",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 4
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 4,
+            "rubric_explanation": "Registered 1–3 yrs; documented leadership"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.05,
+            "weighted_score": 4.0
+          }
+        },
+        "composite_score": 89.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Nairobi_NUJX": {
+      "application_id": "Nairobi_NUJX",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 90.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Nairobi_9OZ1": {
+      "application_id": "Nairobi_9OZ1",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 4
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 4,
+            "rubric_explanation": "Registered 1–3 yrs; documented leadership"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.05,
+            "weighted_score": 4.0
+          }
+        },
+        "composite_score": 89.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Nairobi_OAUP": {
+      "application_id": "Nairobi_OAUP",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 90.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Nairobi_IXUS": {
+      "application_id": "Nairobi_IXUS",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 90.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Nairobi_V1Y8": {
+      "application_id": "Nairobi_V1Y8",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 4
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 4,
+            "rubric_explanation": "Registered 1–3 yrs; documented leadership"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.05,
+            "weighted_score": 4.0
+          }
+        },
+        "composite_score": 89.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    }
+  }
+}

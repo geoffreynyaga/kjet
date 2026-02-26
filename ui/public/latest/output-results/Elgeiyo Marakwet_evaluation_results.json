@@ -1,0 +1,1734 @@
+{
+  "evaluation_metadata": {
+    "county": "Elgeyo Marakwet",
+    "total_applications": 19,
+    "evaluation_date": "2026-02-26T01:29:06.406525",
+    "evaluator_version": "1.0",
+    "rules_version": "rules.md - Annex A & B"
+  },
+  "data_enrichment": {
+    "applications_with_business_name": 0,
+    "applications_with_standardized_business_name": 0,
+    "applications_with_woman_owned_flag": 19,
+    "applications_with_woman_owned_proof": 0
+  },
+  "eligibility_summary": {
+    "total_applications": 19,
+    "eligible_applications": 18,
+    "ineligible_applications": 1,
+    "eligibility_rate": 94.74,
+    "criteria_failure_breakdown": {
+      "E1_registration_legality": 0,
+      "E2_county_mapping": 0,
+      "E3_priority_value_chain": 0,
+      "E4_financial_evidence": 1,
+      "E5_consent_contactability": 0
+    }
+  },
+  "scoring_summary": {
+    "total_scored": 18,
+    "average_score": 81.11,
+    "highest_score": 90.0,
+    "lowest_score": 72.0,
+    "score_distribution": {
+      "excellent_80_100": 12,
+      "good_70_79": 6,
+      "fair_60_69": 0,
+      "poor_below_60": 0
+    }
+  },
+  "application_evaluations": {
+    "Elgeyo Marakwet_HEGJ": {
+      "application_id": "Elgeyo Marakwet_HEGJ",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 4,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan; targets present"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 77.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Elgeyo Marakwet_FIJX": {
+      "application_id": "Elgeyo Marakwet_FIJX",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 4,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan; targets present"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 77.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Elgeyo Marakwet_B1WD": {
+      "application_id": "Elgeyo Marakwet_B1WD",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 3,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 3,
+            "rubric_explanation": "Direction clear; targets generic"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.25,
+            "weighted_score": 15.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 72.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Elgeyo Marakwet_XTHH": {
+      "application_id": "Elgeyo Marakwet_XTHH",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": false,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": false,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": [
+          "E4: Insufficient financial evidence"
+        ]
+      }
+    },
+    "Elgeyo Marakwet_PJUE": {
+      "application_id": "Elgeyo Marakwet_PJUE",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 82.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Elgeyo Marakwet_G3V6": {
+      "application_id": "Elgeyo Marakwet_G3V6",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 4,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan; targets present"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 77.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Elgeyo Marakwet_MBPJ": {
+      "application_id": "Elgeyo Marakwet_MBPJ",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 4,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan; targets present"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 77.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    },
+    "Elgeyo Marakwet_M1X3": {
+      "application_id": "Elgeyo Marakwet_M1X3",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 90.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Elgeyo Marakwet_ZPDF": {
+      "application_id": "Elgeyo Marakwet_ZPDF",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 82.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Elgeyo Marakwet_3HXO": {
+      "application_id": "Elgeyo Marakwet_3HXO",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 4,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan; targets present"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 85.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Elgeyo Marakwet_4WCP": {
+      "application_id": "Elgeyo Marakwet_4WCP",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 82.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Elgeyo Marakwet_MYUG": {
+      "application_id": "Elgeyo Marakwet_MYUG",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 5,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 5,
+            "rubric_explanation": "Strong inclusion (women/youth/PWD); 2+ green practices"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 90.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Elgeyo Marakwet_BXYJ": {
+      "application_id": "Elgeyo Marakwet_BXYJ",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 82.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Elgeyo Marakwet_COYL": {
+      "application_id": "Elgeyo Marakwet_COYL",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 82.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Elgeyo Marakwet_K2GI": {
+      "application_id": "Elgeyo Marakwet_K2GI",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 82.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Elgeyo Marakwet_4ORQ": {
+      "application_id": "Elgeyo Marakwet_4ORQ",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 82.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Elgeyo Marakwet_QSYQ": {
+      "application_id": "Elgeyo Marakwet_QSYQ",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 82.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Elgeyo Marakwet_VWIK": {
+      "application_id": "Elgeyo Marakwet_VWIK",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 5,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 5,
+            "rubric_explanation": "Clear plan; quantified targets; detailed execution"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.25,
+            "weighted_score": 25.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 82.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Excellent"
+      }
+    },
+    "Elgeyo Marakwet_T1ID": {
+      "application_id": "Elgeyo Marakwet_T1ID",
+      "business_type": "unknown",
+      "woman_owned": false,
+      "eligibility": {
+        "eligible": true,
+        "criteria_results": {
+          "E1_registration_legality": true,
+          "E2_county_mapping": true,
+          "E3_priority_value_chain": true,
+          "E4_financial_evidence": true,
+          "E5_consent_contactability": true
+        },
+        "failure_reasons": []
+      },
+      "scoring": {
+        "criteria_scores": {
+          "business_proposal_viability": 4,
+          "financial_position": 3,
+          "market_demand_competitiveness": 5,
+          "inclusivity_sustainability": 3,
+          "value_chain_alignment": 4,
+          "registration_track_record": 5
+        },
+        "criteria_explanations": {
+          "business_proposal_viability": {
+            "score": 4,
+            "rubric_explanation": "Strong plan; targets present"
+          },
+          "financial_position": {
+            "score": 3,
+            "rubric_explanation": "Turnover 1–5M"
+          },
+          "market_demand_competitiveness": {
+            "score": 5,
+            "rubric_explanation": "Active offtake/buyer contracts; multi-channel"
+          },
+          "inclusivity_sustainability": {
+            "score": 3,
+            "rubric_explanation": "Moderate inclusion; some sustainability"
+          },
+          "value_chain_alignment": {
+            "score": 4,
+            "rubric_explanation": "Priority VC; clear node; some linkages"
+          },
+          "registration_track_record": {
+            "score": 5,
+            "rubric_explanation": "Registered ≥3 yrs; functioning governance"
+          }
+        },
+        "weighted_scores": {
+          "business_proposal_viability": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.25,
+            "weighted_score": 20.0
+          },
+          "financial_position": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "market_demand_competitiveness": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.2,
+            "weighted_score": 20.0
+          },
+          "inclusivity_sustainability": {
+            "raw_score": 3,
+            "normalized_score": 60,
+            "weight": 0.2,
+            "weighted_score": 12.0
+          },
+          "value_chain_alignment": {
+            "raw_score": 4,
+            "normalized_score": 80,
+            "weight": 0.1,
+            "weighted_score": 8.0
+          },
+          "registration_track_record": {
+            "raw_score": 5,
+            "normalized_score": 100,
+            "weight": 0.05,
+            "weighted_score": 5.0
+          }
+        },
+        "composite_score": 77.0,
+        "scoring_scale": "0-100 (weighted average)",
+        "grade": "Good"
+      }
+    }
+  }
+}

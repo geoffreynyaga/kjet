@@ -1,0 +1,363 @@
+{
+  "report_title": "KJET Kisumu County Application Ranking and Evaluation",
+  "selection_criteria_weights": {
+    "S1_Registration_Track_Record_5%": 0.1,
+    "S2_Financial_Position_20%": 0.2,
+    "S3_Market_Demand_Competitiveness_20%": 0.2,
+    "S4_Business_Proposal_Viability_25%": 0.25,
+    "S5_Value_Chain_Alignment_10%": 0.15,
+    "S6_Inclusivity_Sustainability_20%": 0.1
+  },
+  "applications": [
+    {
+      "application_id": "Kisumu_525",
+      "applicant_name": "Kisumu Central Tea Factory Outgrowers SACCO",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 1,
+      "composite_score": 91.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "SACCO registered >3 yrs (since 2005) with clear governance (Score 5)."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "Turnover >KES 10M (KES 12.4M in 2024); positive 2-yr trend (Score 5)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "Active off-take contract with factory; stable B2B demand (Score 5)."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Clear plan for transport/handling efficiency; quantified targets/timelines present (Score 4)."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Additional VC (Tea); fills critical aggregation/logistics node (Score 5)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "Strong inclusion (50% women, 30% youth); 1-2 green practices (sustainable farming advisory) (Score 4)."
+        }
+      }
+    },
+    {
+      "application_id": "Kisumu_167",
+      "applicant_name": "Miya Ywech Association",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 2,
+      "composite_score": 82.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.0,
+          "reason": "MSME Association, rapid growth, inferred 1-3 years of documented leadership/operations (Score 4)."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "Turnover 1–<5M (KES 2.58M in 2024); positive trend (Score 3)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.0,
+          "reason": "Consistent sales to recyclers (B2B); growing channels (Score 4)."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Strong plan (paletizing unit/recycling plant); major investment goals (Score 4)."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Additional VC (Blue Economy - waste management); fills critical processing/value addition node (Score 5)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "High women/youth participation (51%+ W, 50%+ Y); implied green practice (waste recovery) (Score 5)."
+        }
+      }
+    },
+    {
+      "application_id": "Kisumu_450",
+      "applicant_name": "OTIENO OKELO JUA KALI ASSOCIATION",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 3,
+      "composite_score": 79.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Association registered >3 yrs (since 2015) with functioning governance (Score 5)."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 4.0,
+          "reason": "Turnover 5–<10M (KES 5.5M in 2024); stable/growing trend (Score 4)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.0,
+          "reason": "Consistent monthly B2B and B2C orders; growing channels (incl. digital) (Score 4)."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Plan to upgrade equipment; clear objective; targets present (Score 4)."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VC (Construction - metal works); fills critical fabrication/supplies node (Score 5)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.0,
+          "reason": "Low women participation; some intent on sustainability (waste scrap recycling) (Score 3)."
+        }
+      }
+    },
+    {
+      "application_id": "Kisumu_494",
+      "applicant_name": "Nyakach Central Rice Farmers Co-operative Society Ltd",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 4,
+      "composite_score": 79.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Cooperative registered >3 yrs (since 2017) (Score 5)."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 4.0,
+          "reason": "Turnover 5–<10M (KES 8.2M in 2024); stable/growing trend (Score 4)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.0,
+          "reason": "Consistent B2B sales to wholesalers/millers (Score 4)."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Clear problem (storage capacity); quantified targets/timelines present (Score 4)."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Additional VC (Rice); fills critical aggregation/storage node (Score 5)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.0,
+          "reason": "Moderate inclusion (40% women); some intent on sustainability (irrigation efficiency) (Score 3)."
+        }
+      }
+    },
+    {
+      "application_id": "Kisumu_487",
+      "applicant_name": "KISUMU YOUTH IN TEXTILE AND DESIGN",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 5,
+      "composite_score": 74.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.0,
+          "reason": "Association registered 1-3 yrs (since 2022); documented leadership (Score 4)."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "Turnover 1–<5M (KES 1.1M in 2024); stable/recovering trend (Score 3)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "Regular local sales (B2C & local B2B); one channel (Score 3)."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 4.0,
+          "reason": "Plan to acquire modern machines; clear objective; targets present (Score 4)."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VC (Textiles); fills critical manufacturing/value addition node (Score 5)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 4.0,
+          "reason": "Very high youth/women participation (90% Y, 60% W); some intent on sustainability (material sourcing/waste reduction) (Score 4)."
+        }
+      }
+    },
+    {
+      "application_id": "Kisumu_181",
+      "applicant_name": "NYATI RICE FARMERS CO-OPERATIVE SOCIETY LIMITED",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 6,
+      "composite_score": 66.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Cooperative registered >3 yrs (since 2012) (Score 5)."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "Turnover 1–<5M (KES 1.5M in 2024); stable/recovering trend (Score 3)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "Primary sales is B2C and local firms; consistent local sales (Score 3)."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Plan to acquire milling/drying equipment; targets generic (Score 3)."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Additional VC (Rice); fills critical processing/value addition node (milling/drying) (Score 5)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.0,
+          "reason": "40% women members; intent on sustainability (using husk/biomass waste) (Score 3)."
+        }
+      }
+    },
+    {
+      "application_id": "Kisumu_486",
+      "applicant_name": "KISUMU EAST FISHING AND AQUACULTURE ASSOCIATION",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 7,
+      "composite_score": 66.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Association registered >3 yrs (since 2018) (Score 5)."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "Turnover 1–<5M (KES 3.2M in 2024); stable/recovering trend (Score 3)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "B2C (60%) and local hotels/retail (40%); regular local sales (Score 3)."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Plan to acquire cold storage/processing; targets generic (Score 3)."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Additional VC (Blue Economy); fills critical preservation/value addition node (Score 5)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.0,
+          "reason": "Strong youth/women participation (40% W, 60% Y); intent on sustainable fishing practices (Score 3)."
+        }
+      }
+    },
+    {
+      "application_id": "Kisumu_586",
+      "applicant_name": "Nyakach East Rice Millers Limited",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 8,
+      "composite_score": 65.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.0,
+          "reason": "Private Company registered 1-3 yrs (since 2021) (Score 4)."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "Turnover 1–<5M (KES 4.5M in 2024); stable trend (Score 3)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "Consistent B2C and B2B sales; one channel (Score 3)."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Plan to upgrade milling capacity; targets/timelines present (Score 3)."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Additional VC (Rice); fills critical processing/value addition node (Milling) (Score 5)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.0,
+          "reason": "Moderate inclusion (35% women); intent on sustainability (husk/biomass recycling) (Score 3)."
+        }
+      }
+    },
+    {
+      "application_id": "Kisumu_568",
+      "applicant_name": "DREAMS BUILDERS CONSTRUCTION LIMITED",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 9,
+      "composite_score": 64.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.0,
+          "reason": "Private Company registered <1 yr (since 2023) (Score 3)."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "Turnover 1–<5M (KES 1.8M in 2024); recovering trend (Score 3)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "Regular local sales/contracts (Score 3)."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Plan for acquiring tools/equipment; targets generic (Score 3)."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VC (Construction); fills critical supplies/services node (Score 5)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.0,
+          "reason": "Moderate inclusion (40% youth); intent on sustainability (waste management plan) (Score 3)."
+        }
+      }
+    },
+    {
+      "application_id": "Kisumu_572",
+      "applicant_name": "NYAKACH HANDICRAFT AND WEAVING CO-OPERATIVE",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 10,
+      "composite_score": 62.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Cooperative registered >3 yrs (since 2018) (Score 5)."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2.0,
+          "reason": "Turnover <1M (KES 0.9M in 2024); sporadic records (Score 2)."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "Regular local sales (B2C, tourist shops); one channel (Score 3)."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Plan to expand product lines; targets generic (Score 3)."
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Priority VC (Textiles/related); fills critical manufacturing/value addition node (Score 5)."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.0,
+          "reason": "Very high women participation (95% W); no green practices mentioned (Score 3)."
+        }
+      }
+    },
+    {
+      "application_id": "Kisumu_159",
+      "applicant_name": "Benedicts Media Solutions",
+      "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
+      "ineligibility_criterion_failed": "E3",
+      "reason": "E4"
+    },
+    {
+      "application_id": "Kisumu_714",
+      "applicant_name": "Lake National Savings and Credit Cooperative Society Ltd",
+      "eligibility_status": "INELIGIBLE",
+      "rank": null,
+      "composite_score": null,
+      "score_breakdown": null,
+      "ineligibility_criterion_failed": "E3",
+      "reason": "Value Chain (Financial Services/SACCO) is not a designated Priority/Additional VC (E3)."
+    }
+  ]
+}

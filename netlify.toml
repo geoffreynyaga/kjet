@@ -1,12 +1,20 @@
 [build]
   # Base directory for the build
   base = "code/"
-  
+
   # Directory where the build artifacts are located (relative to base)
   publish = "build/"
-  
+
   # Build command to run
   command = "npm run build"
+
+# Domain redirects - redirect all traffic to custom domain
+[[redirects]]
+  from = "https://*.netlify.app/*"
+  to = "https://kjet.leadedgeconsults.com/:splat"
+  status = 301
+  force = true
+
 
 # Redirect all routes to index.html for React Router (SPA)
 # Note: _redirects file in public/ folder is the preferred method

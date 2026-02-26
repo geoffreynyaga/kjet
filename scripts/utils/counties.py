@@ -3,7 +3,7 @@ counties = [
     "Bomet",
     "Bungoma",
     "Busia",
-    "Elgeiyo Marakwet",
+    "Elgeyo Marakwet",
     "Embu",
     "Garissa",
     "Homa Bay",

@@ -9,6 +9,7 @@ first and final results data.
 
 import json
 import os
+import argparse
 from collections import defaultdict
 
 def load_json_file(filepath):
@@ -23,13 +24,13 @@ def load_json_file(filepath):
         print(f"Error: Invalid JSON in {filepath}: {e}")
         return []
 
-def combine_baseline_files():
+def combine_baseline_files(cohort: str = 'latest'):
     """Combine first and final results into a single file."""
 
     # Define file paths
     script_dir = os.path.dirname(os.path.abspath(__file__))
     project_root = os.path.dirname(os.path.dirname(script_dir))
-    output_dir = os.path.join(project_root, 'code', 'public')
+    output_dir = os.path.join(project_root, 'ui', 'public', cohort)
 
     first_results_path = os.path.join(output_dir, 'baseline-first-results.json')
     final_results_path = os.path.join(output_dir, 'baseline-final-results.json')
@@ -130,4 +131,7 @@ def combine_baseline_files():
     #     print(f"  {county}: {count} applicants")
 
 if __name__ == "__main__":
-    combine_baseline_files()
+    parser = argparse.ArgumentParser(description='Combine baseline first/final results into cohort-scoped output')
+    parser.add_argument('--cohort', default='latest', help='Cohort output folder (e.g. latest, c1)')
+    args = parser.parse_args()
+    combine_baseline_files(cohort=args.cohort)
