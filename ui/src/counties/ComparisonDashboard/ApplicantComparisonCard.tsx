@@ -119,12 +119,14 @@ const ApplicantComparisonCard: React.FC<ApplicantComparisonCardProps> = ({ compa
           <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
             comparison.humanStatus?.toLowerCase() === 'pass' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
           }`}>
-            {comparison.humanRank || 'N/A'}
+            {comparison.humanRank !== null && comparison.humanRank !== undefined ? comparison.humanRank : 'N/A'}
           </span>
         </td>
         <td className="px-4 py-4 text-center">
           <span className="text-sm font-medium">
-            {comparison.humanScore ? comparison.humanScore.toFixed(1) : '-'}
+            {comparison.humanScore !== null && comparison.humanScore !== undefined
+              ? Number(comparison.humanScore).toFixed(1)
+              : '-'}
           </span>
         </td>
         <td className="px-4 py-4 text-center">

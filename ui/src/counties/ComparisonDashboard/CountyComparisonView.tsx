@@ -8,7 +8,8 @@ import {
   filterHumanDataByCounty,
   findMatchingApplication,
   getHumanRank,
-  getLLMReason,
+  getHumanScore,
+  getHumanStatus,
   loadLLMDataForCounty
 } from './utils.ts';
 
@@ -81,19 +82,31 @@ const CountyComparisonView: React.FC<CountyComparisonViewProps> = ({ county, hum
     const mismatchedApplications: ComparisonRow[] = [];
 
     // Process each human application
-    humanCountyData.forEach(humanApp => {
+    humanCountyData.forEach((humanApp, index) => {
       const humanId = humanApp['Application ID'];
       const numericId = extractNumericId(humanId);
       const humanRank = getHumanRank(humanApp, humanCountyData);
-      const humanScore = Number(humanApp['Sum of weighted scores - Penalty(if any)']) || 0;
-      const humanStatus = humanApp['PASS/FAIL'] || 'Unknown';
+      const humanScore = getHumanScore(humanApp);
+      const humanStatus = getHumanStatus(humanApp);
+
+      if (process.env.NODE_ENV !== 'production' && index < 3) {
+        console.log('Human normalization sample', {
+          applicationId: humanId,
+          rawScore: humanApp['Sum of weighted scores - Penalty(if any)'],
+          rawRank: humanApp['Ranking from composite score'],
+          rawPassFail: humanApp['PASS/FAIL'],
+          normalizedScore: humanScore,
+          normalizedRank: humanRank,
+          normalizedStatus: humanStatus
+        });
+      }
 
       if (!llmData) {
         // No LLM data available for this county - add to mismatched
         const penaltyInfo = checkPenalties(humanApp);
         mismatchedApplications.push({
           applicationId: humanId || numericId,
-          applicantName: humanApp['E1. Applicant Name'] || 'Unknown',
+          applicantName: humanApp['E1. Applicant Name'] || humanApp['E1. Registration & Legality'] || 'Unknown',
           county: countyName,
           humanRank,
           llmRank: null,
@@ -121,7 +134,7 @@ const CountyComparisonView: React.FC<CountyComparisonViewProps> = ({ county, hum
         const penaltyInfo = checkPenalties(humanApp);
         mismatchedApplications.push({
           applicationId: humanId || numericId,
-          applicantName: humanApp['E1. Applicant Name'] || 'Unknown',
+          applicantName: humanApp['E1. Applicant Name'] || humanApp['E1. Registration & Legality'] || 'Unknown',
           county: countyName,
           humanRank,
           llmRank: null,
@@ -147,8 +160,8 @@ const CountyComparisonView: React.FC<CountyComparisonViewProps> = ({ county, hum
       const llmScore = isEligible ? llmApp.composite_score : null;
       const llmStatus = isEligible ? 'Ranked' : 'Fail';
 
-      const rankDifference = humanRank && llmRank ? llmRank - humanRank : null;
-      const scoreDifference = humanScore && llmScore ? llmScore - (humanScore / 20) : null; // Normalize human score to 5-point scale
+      const rankDifference = humanRank !== null && llmRank !== null ? llmRank - humanRank : null;
+      const scoreDifference = humanScore !== null && llmScore !== null ? llmScore - (humanScore / 20) : null; // Normalize human score to 5-point scale
 
       // Custom agreement logic for pass/fail scenarios
       const humanPassed = humanStatus?.toLowerCase() === 'pass';
@@ -160,7 +173,7 @@ const CountyComparisonView: React.FC<CountyComparisonViewProps> = ({ county, hum
 
       comparisonRows.push({
         applicationId: humanId || numericId,
-        applicantName: llmApp?.applicant_name || humanApp['E1. Applicant Name'] || 'Unknown',
+        applicantName: llmApp?.applicant_name || humanApp['E1. Applicant Name'] || humanApp['E1. Registration & Legality'] || 'Unknown',
         county: countyName,
         humanRank,
         llmRank,
