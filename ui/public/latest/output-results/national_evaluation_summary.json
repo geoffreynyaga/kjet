@@ -1,57 +1,57 @@
 {
   "summary_metadata": {
-    "generation_date": "2026-02-26T04:08:58.660711",
+    "generation_date": "2026-02-28T23:15:17.999458",
     "total_counties": 47,
     "evaluation_period": "KJET Program Applications",
     "rules_version": "rules.md - Annex A & B"
   },
   "national_summary": {
-    "total_applications": 673,
-    "total_eligible": 622,
-    "total_ineligible": 51,
-    "national_eligibility_rate": 92.42,
-    "total_scored": 622,
-    "national_average_score": 84.76,
+    "total_applications": 705,
+    "total_eligible": 656,
+    "total_ineligible": 49,
+    "national_eligibility_rate": 93.05,
+    "total_scored": 656,
+    "national_average_score": 84.77,
     "highest_county_score": 89.5,
     "lowest_county_score": 78.78
   },
   "eligibility_breakdown": {
-    "E1_registration_legality_failures": 4,
+    "E1_registration_legality_failures": 2,
     "E2_county_mapping_failures": 0,
-    "E3_priority_value_chain_failures": 7,
-    "E4_financial_evidence_failures": 47,
+    "E3_priority_value_chain_failures": 10,
+    "E4_financial_evidence_failures": 41,
     "E5_consent_contactability_failures": 0
   },
   "county_summaries": {
     "Kirinyaga": {
       "county": "Kirinyaga",
-      "total_applications": 14,
-      "eligible_applications": 13,
+      "total_applications": 15,
+      "eligible_applications": 14,
       "ineligible_applications": 1,
-      "eligibility_rate": 92.86,
-      "scored_applications": 13,
-      "average_score": 84.69,
+      "eligibility_rate": 93.33,
+      "scored_applications": 14,
+      "average_score": 84.07,
       "highest_score": 90.0,
       "lowest_score": 71.0,
       "score_distribution": {
         "excellent_80_100": 10,
-        "good_70_79": 3,
+        "good_70_79": 4,
         "fair_60_69": 0,
         "poor_below_60": 0
       }
     },
     "Laikipia": {
       "county": "Laikipia",
-      "total_applications": 7,
-      "eligible_applications": 7,
+      "total_applications": 8,
+      "eligible_applications": 8,
       "ineligible_applications": 0,
       "eligibility_rate": 100.0,
-      "scored_applications": 7,
-      "average_score": 83.0,
+      "scored_applications": 8,
+      "average_score": 83.88,
       "highest_score": 90.0,
       "lowest_score": 76.0,
       "score_distribution": {
-        "excellent_80_100": 6,
+        "excellent_80_100": 7,
         "good_70_79": 1,
         "fair_60_69": 0,
         "poor_below_60": 0
@@ -59,33 +59,33 @@
     },
     "Murang a": {
       "county": "Murang a",
-      "total_applications": 15,
-      "eligible_applications": 13,
-      "ineligible_applications": 2,
-      "eligibility_rate": 86.67,
-      "scored_applications": 13,
-      "average_score": 83.46,
+      "total_applications": 18,
+      "eligible_applications": 14,
+      "ineligible_applications": 4,
+      "eligibility_rate": 77.78,
+      "scored_applications": 14,
+      "average_score": 82.86,
       "highest_score": 90.0,
-      "lowest_score": 77.0,
+      "lowest_score": 76.0,
       "score_distribution": {
         "excellent_80_100": 10,
-        "good_70_79": 3,
+        "good_70_79": 4,
         "fair_60_69": 0,
         "poor_below_60": 0
       }
     },
     "Machakos": {
       "county": "Machakos",
-      "total_applications": 17,
-      "eligible_applications": 16,
+      "total_applications": 18,
+      "eligible_applications": 17,
       "ineligible_applications": 1,
-      "eligibility_rate": 94.12,
-      "scored_applications": 16,
-      "average_score": 84.69,
+      "eligibility_rate": 94.44,
+      "scored_applications": 17,
+      "average_score": 84.71,
       "highest_score": 90.0,
       "lowest_score": 72.0,
       "score_distribution": {
-        "excellent_80_100": 13,
+        "excellent_80_100": 14,
         "good_70_79": 3,
         "fair_60_69": 0,
         "poor_below_60": 0
@@ -166,12 +166,12 @@
       "ineligible_applications": 2,
       "eligibility_rate": 81.82,
       "scored_applications": 9,
-      "average_score": 87.78,
+      "average_score": 86.44,
       "highest_score": 90.0,
-      "lowest_score": 84.0,
+      "lowest_score": 72.0,
       "score_distribution": {
-        "excellent_80_100": 9,
-        "good_70_79": 0,
+        "excellent_80_100": 8,
+        "good_70_79": 1,
         "fair_60_69": 0,
         "poor_below_60": 0
       }
@@ -196,15 +196,15 @@
     "Isiolo": {
       "county": "Isiolo",
       "total_applications": 7,
-      "eligible_applications": 6,
-      "ineligible_applications": 1,
-      "eligibility_rate": 85.71,
-      "scored_applications": 6,
-      "average_score": 87.67,
+      "eligible_applications": 7,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 7,
+      "average_score": 88.0,
       "highest_score": 90.0,
       "lowest_score": 84.0,
       "score_distribution": {
-        "excellent_80_100": 6,
+        "excellent_80_100": 7,
         "good_70_79": 0,
         "fair_60_69": 0,
         "poor_below_60": 0
@@ -212,16 +212,16 @@
     },
     "Turkana": {
       "county": "Turkana",
-      "total_applications": 11,
-      "eligible_applications": 10,
+      "total_applications": 14,
+      "eligible_applications": 13,
       "ineligible_applications": 1,
-      "eligibility_rate": 90.91,
-      "scored_applications": 10,
-      "average_score": 84.0,
+      "eligibility_rate": 92.86,
+      "scored_applications": 13,
+      "average_score": 84.62,
       "highest_score": 90.0,
       "lowest_score": 71.0,
       "score_distribution": {
-        "excellent_80_100": 8,
+        "excellent_80_100": 11,
         "good_70_79": 2,
         "fair_60_69": 0,
         "poor_below_60": 0
@@ -263,16 +263,16 @@
     },
     "Kiambu": {
       "county": "Kiambu",
-      "total_applications": 27,
-      "eligible_applications": 25,
+      "total_applications": 28,
+      "eligible_applications": 26,
       "ineligible_applications": 2,
-      "eligibility_rate": 92.59,
-      "scored_applications": 25,
-      "average_score": 86.28,
+      "eligibility_rate": 92.86,
+      "scored_applications": 26,
+      "average_score": 86.42,
       "highest_score": 90.0,
       "lowest_score": 77.0,
       "score_distribution": {
-        "excellent_80_100": 24,
+        "excellent_80_100": 25,
         "good_70_79": 1,
         "fair_60_69": 0,
         "poor_below_60": 0
@@ -298,15 +298,15 @@
     "Busia": {
       "county": "Busia",
       "total_applications": 13,
-      "eligible_applications": 12,
-      "ineligible_applications": 1,
-      "eligibility_rate": 92.31,
-      "scored_applications": 12,
-      "average_score": 86.42,
+      "eligible_applications": 13,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 13,
+      "average_score": 86.69,
       "highest_score": 90.0,
       "lowest_score": 79.0,
       "score_distribution": {
-        "excellent_80_100": 11,
+        "excellent_80_100": 12,
         "good_70_79": 1,
         "fair_60_69": 0,
         "poor_below_60": 0
@@ -314,34 +314,34 @@
     },
     "Bomet": {
       "county": "Bomet",
-      "total_applications": 16,
-      "eligible_applications": 16,
+      "total_applications": 17,
+      "eligible_applications": 17,
       "ineligible_applications": 0,
       "eligibility_rate": 100.0,
-      "scored_applications": 16,
-      "average_score": 83.12,
+      "scored_applications": 17,
+      "average_score": 82.41,
       "highest_score": 90.0,
-      "lowest_score": 72.0,
+      "lowest_score": 71.0,
       "score_distribution": {
         "excellent_80_100": 10,
-        "good_70_79": 6,
+        "good_70_79": 7,
         "fair_60_69": 0,
         "poor_below_60": 0
       }
     },
     "Garissa": {
       "county": "Garissa",
-      "total_applications": 17,
-      "eligible_applications": 16,
+      "total_applications": 18,
+      "eligible_applications": 17,
       "ineligible_applications": 1,
-      "eligibility_rate": 94.12,
-      "scored_applications": 16,
-      "average_score": 86.31,
+      "eligibility_rate": 94.44,
+      "scored_applications": 17,
+      "average_score": 85.76,
       "highest_score": 90.0,
       "lowest_score": 72.0,
       "score_distribution": {
         "excellent_80_100": 14,
-        "good_70_79": 2,
+        "good_70_79": 3,
         "fair_60_69": 0,
         "poor_below_60": 0
       }
@@ -349,16 +349,16 @@
     "Kajiado": {
       "county": "Kajiado",
       "total_applications": 14,
-      "eligible_applications": 13,
-      "ineligible_applications": 1,
-      "eligibility_rate": 92.86,
-      "scored_applications": 13,
-      "average_score": 85.62,
+      "eligible_applications": 14,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 14,
+      "average_score": 85.0,
       "highest_score": 90.0,
       "lowest_score": 71.0,
       "score_distribution": {
         "excellent_80_100": 11,
-        "good_70_79": 2,
+        "good_70_79": 3,
         "fair_60_69": 0,
         "poor_below_60": 0
       }
@@ -399,16 +399,16 @@
     },
     "Trans Nzoia": {
       "county": "Trans Nzoia",
-      "total_applications": 10,
-      "eligible_applications": 9,
+      "total_applications": 11,
+      "eligible_applications": 10,
       "ineligible_applications": 1,
-      "eligibility_rate": 90.0,
-      "scored_applications": 9,
-      "average_score": 86.11,
+      "eligibility_rate": 90.91,
+      "scored_applications": 10,
+      "average_score": 86.0,
       "highest_score": 90.0,
       "lowest_score": 82.0,
       "score_distribution": {
-        "excellent_80_100": 9,
+        "excellent_80_100": 10,
         "good_70_79": 0,
         "fair_60_69": 0,
         "poor_below_60": 0
@@ -416,33 +416,33 @@
     },
     "Uasin Gishu": {
       "county": "Uasin Gishu",
-      "total_applications": 22,
-      "eligible_applications": 21,
-      "ineligible_applications": 1,
-      "eligibility_rate": 95.45,
-      "scored_applications": 21,
-      "average_score": 83.43,
+      "total_applications": 25,
+      "eligible_applications": 23,
+      "ineligible_applications": 2,
+      "eligibility_rate": 92.0,
+      "scored_applications": 23,
+      "average_score": 83.74,
       "highest_score": 90.0,
       "lowest_score": 72.0,
       "score_distribution": {
-        "excellent_80_100": 18,
-        "good_70_79": 3,
+        "excellent_80_100": 19,
+        "good_70_79": 4,
         "fair_60_69": 0,
         "poor_below_60": 0
       }
     },
     "Meru": {
       "county": "Meru",
-      "total_applications": 22,
-      "eligible_applications": 20,
-      "ineligible_applications": 2,
-      "eligibility_rate": 90.91,
-      "scored_applications": 20,
+      "total_applications": 24,
+      "eligible_applications": 23,
+      "ineligible_applications": 1,
+      "eligibility_rate": 95.83,
+      "scored_applications": 23,
       "average_score": 86.65,
       "highest_score": 90.0,
       "lowest_score": 72.0,
       "score_distribution": {
-        "excellent_80_100": 18,
+        "excellent_80_100": 21,
         "good_70_79": 2,
         "fair_60_69": 0,
         "poor_below_60": 0
@@ -467,33 +467,33 @@
     },
     "Mombasa": {
       "county": "Mombasa",
-      "total_applications": 20,
-      "eligible_applications": 19,
+      "total_applications": 23,
+      "eligible_applications": 22,
       "ineligible_applications": 1,
-      "eligibility_rate": 95.0,
-      "scored_applications": 19,
-      "average_score": 86.32,
+      "eligibility_rate": 95.65,
+      "scored_applications": 22,
+      "average_score": 86.05,
       "highest_score": 90.0,
       "lowest_score": 71.0,
       "score_distribution": {
-        "excellent_80_100": 16,
-        "good_70_79": 3,
+        "excellent_80_100": 18,
+        "good_70_79": 4,
         "fair_60_69": 0,
         "poor_below_60": 0
       }
     },
     "Taita Taveta": {
       "county": "Taita Taveta",
-      "total_applications": 12,
-      "eligible_applications": 11,
+      "total_applications": 14,
+      "eligible_applications": 13,
       "ineligible_applications": 1,
-      "eligibility_rate": 91.67,
-      "scored_applications": 11,
-      "average_score": 84.09,
+      "eligibility_rate": 92.86,
+      "scored_applications": 13,
+      "average_score": 84.38,
       "highest_score": 90.0,
-      "lowest_score": 76.0,
+      "lowest_score": 71.0,
       "score_distribution": {
-        "excellent_80_100": 8,
+        "excellent_80_100": 10,
         "good_70_79": 3,
         "fair_60_69": 0,
         "poor_below_60": 0
@@ -518,17 +518,17 @@
     },
     "Marsabit": {
       "county": "Marsabit",
-      "total_applications": 15,
-      "eligible_applications": 13,
-      "ineligible_applications": 2,
-      "eligibility_rate": 86.67,
-      "scored_applications": 13,
-      "average_score": 85.54,
+      "total_applications": 20,
+      "eligible_applications": 17,
+      "ineligible_applications": 3,
+      "eligibility_rate": 85.0,
+      "scored_applications": 17,
+      "average_score": 87.0,
       "highest_score": 90.0,
-      "lowest_score": 73.0,
+      "lowest_score": 81.0,
       "score_distribution": {
-        "excellent_80_100": 12,
-        "good_70_79": 1,
+        "excellent_80_100": 17,
+        "good_70_79": 0,
         "fair_60_69": 0,
         "poor_below_60": 0
       }
@@ -569,17 +569,17 @@
     },
     "Nyandarua": {
       "county": "Nyandarua",
-      "total_applications": 8,
+      "total_applications": 9,
       "eligible_applications": 8,
-      "ineligible_applications": 0,
-      "eligibility_rate": 100.0,
+      "ineligible_applications": 1,
+      "eligibility_rate": 88.89,
       "scored_applications": 8,
-      "average_score": 84.88,
+      "average_score": 87.25,
       "highest_score": 90.0,
       "lowest_score": 78.0,
       "score_distribution": {
-        "excellent_80_100": 5,
-        "good_70_79": 3,
+        "excellent_80_100": 7,
+        "good_70_79": 1,
         "fair_60_69": 0,
         "poor_below_60": 0
       }
@@ -637,16 +637,16 @@
     },
     "Makueni": {
       "county": "Makueni",
-      "total_applications": 14,
-      "eligible_applications": 12,
-      "ineligible_applications": 2,
-      "eligibility_rate": 85.71,
-      "scored_applications": 12,
-      "average_score": 84.67,
+      "total_applications": 15,
+      "eligible_applications": 11,
+      "ineligible_applications": 4,
+      "eligibility_rate": 73.33,
+      "scored_applications": 11,
+      "average_score": 84.18,
       "highest_score": 90.0,
       "lowest_score": 77.0,
       "score_distribution": {
-        "excellent_80_100": 9,
+        "excellent_80_100": 8,
         "good_70_79": 3,
         "fair_60_69": 0,
         "poor_below_60": 0
@@ -672,50 +672,50 @@
     "Mandera": {
       "county": "Mandera",
       "total_applications": 14,
-      "eligible_applications": 9,
-      "ineligible_applications": 5,
-      "eligibility_rate": 64.29,
-      "scored_applications": 9,
-      "average_score": 84.0,
+      "eligible_applications": 11,
+      "ineligible_applications": 3,
+      "eligibility_rate": 78.57,
+      "scored_applications": 11,
+      "average_score": 81.91,
       "highest_score": 90.0,
       "lowest_score": 69.0,
       "score_distribution": {
         "excellent_80_100": 8,
-        "good_70_79": 0,
-        "fair_60_69": 1,
+        "good_70_79": 1,
+        "fair_60_69": 2,
         "poor_below_60": 0
       }
     },
     "Lamu": {
       "county": "Lamu",
-      "total_applications": 7,
-      "eligible_applications": 6,
-      "ineligible_applications": 1,
-      "eligibility_rate": 85.71,
-      "scored_applications": 6,
-      "average_score": 81.83,
+      "total_applications": 8,
+      "eligible_applications": 8,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 8,
+      "average_score": 84.25,
       "highest_score": 90.0,
-      "lowest_score": 60.0,
+      "lowest_score": 72.0,
       "score_distribution": {
-        "excellent_80_100": 5,
-        "good_70_79": 0,
-        "fair_60_69": 1,
+        "excellent_80_100": 7,
+        "good_70_79": 1,
+        "fair_60_69": 0,
         "poor_below_60": 0
       }
     },
     "Kwale": {
       "county": "Kwale",
       "total_applications": 14,
-      "eligible_applications": 13,
-      "ineligible_applications": 1,
-      "eligibility_rate": 92.86,
-      "scored_applications": 13,
-      "average_score": 86.92,
+      "eligible_applications": 14,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 14,
+      "average_score": 86.14,
       "highest_score": 90.0,
-      "lowest_score": 81.0,
+      "lowest_score": 76.0,
       "score_distribution": {
         "excellent_80_100": 13,
-        "good_70_79": 0,
+        "good_70_79": 1,
         "fair_60_69": 0,
         "poor_below_60": 0
       }
@@ -723,15 +723,15 @@
     "Samburu": {
       "county": "Samburu",
       "total_applications": 10,
-      "eligible_applications": 9,
-      "ineligible_applications": 1,
-      "eligibility_rate": 90.0,
-      "scored_applications": 9,
-      "average_score": 83.0,
+      "eligible_applications": 10,
+      "ineligible_applications": 0,
+      "eligibility_rate": 100.0,
+      "scored_applications": 10,
+      "average_score": 83.7,
       "highest_score": 90.0,
       "lowest_score": 72.0,
       "score_distribution": {
-        "excellent_80_100": 5,
+        "excellent_80_100": 6,
         "good_70_79": 4,
         "fair_60_69": 0,
         "poor_below_60": 0
@@ -744,12 +744,12 @@
       "ineligible_applications": 0,
       "eligibility_rate": 100.0,
       "scored_applications": 11,
-      "average_score": 82.18,
+      "average_score": 83.27,
       "highest_score": 90.0,
-      "lowest_score": 70.0,
+      "lowest_score": 71.0,
       "score_distribution": {
-        "excellent_80_100": 8,
-        "good_70_79": 3,
+        "excellent_80_100": 9,
+        "good_70_79": 2,
         "fair_60_69": 0,
         "poor_below_60": 0
       }
@@ -757,15 +757,15 @@
     "Nyamira": {
       "county": "Nyamira",
       "total_applications": 10,
-      "eligible_applications": 10,
-      "ineligible_applications": 0,
-      "eligibility_rate": 100.0,
-      "scored_applications": 10,
-      "average_score": 84.9,
+      "eligible_applications": 9,
+      "ineligible_applications": 1,
+      "eligibility_rate": 90.0,
+      "scored_applications": 9,
+      "average_score": 84.33,
       "highest_score": 90.0,
       "lowest_score": 72.0,
       "score_distribution": {
-        "excellent_80_100": 7,
+        "excellent_80_100": 6,
         "good_70_79": 3,
         "fair_60_69": 0,
         "poor_below_60": 0
@@ -773,16 +773,16 @@
     },
     "Nairobi": {
       "county": "Nairobi",
-      "total_applications": 34,
-      "eligible_applications": 32,
+      "total_applications": 35,
+      "eligible_applications": 33,
       "ineligible_applications": 2,
-      "eligibility_rate": 94.12,
-      "scored_applications": 32,
-      "average_score": 86.22,
+      "eligibility_rate": 94.29,
+      "scored_applications": 33,
+      "average_score": 86.18,
       "highest_score": 90.0,
       "lowest_score": 76.0,
       "score_distribution": {
-        "excellent_80_100": 29,
+        "excellent_80_100": 30,
         "good_70_79": 3,
         "fair_60_69": 0,
         "poor_below_60": 0
@@ -808,16 +808,16 @@
     "Kisii": {
       "county": "Kisii",
       "total_applications": 22,
-      "eligible_applications": 20,
-      "ineligible_applications": 2,
-      "eligibility_rate": 90.91,
-      "scored_applications": 20,
-      "average_score": 84.7,
+      "eligible_applications": 21,
+      "ineligible_applications": 1,
+      "eligibility_rate": 95.45,
+      "scored_applications": 21,
+      "average_score": 84.33,
       "highest_score": 90.0,
       "lowest_score": 71.0,
       "score_distribution": {
         "excellent_80_100": 17,
-        "good_70_79": 3,
+        "good_70_79": 4,
         "fair_60_69": 0,
         "poor_below_60": 0
       }
@@ -831,22 +831,22 @@
       "total_applications": 6
     },
     {
-      "county": "Embu",
-      "average_score": 87.78,
-      "eligibility_rate": 81.82,
-      "total_applications": 11
-    },
-    {
       "county": "Isiolo",
-      "average_score": 87.67,
-      "eligibility_rate": 85.71,
+      "average_score": 88.0,
+      "eligibility_rate": 100.0,
       "total_applications": 7
     },
     {
-      "county": "Kwale",
-      "average_score": 86.92,
-      "eligibility_rate": 92.86,
-      "total_applications": 14
+      "county": "Nyandarua",
+      "average_score": 87.25,
+      "eligibility_rate": 88.89,
+      "total_applications": 9
+    },
+    {
+      "county": "Marsabit",
+      "average_score": 87.0,
+      "eligibility_rate": 85.0,
+      "total_applications": 20
     },
     {
       "county": "Baringo",
@@ -855,10 +855,16 @@
       "total_applications": 20
     },
     {
+      "county": "Busia",
+      "average_score": 86.69,
+      "eligibility_rate": 100.0,
+      "total_applications": 13
+    },
+    {
       "county": "Meru",
       "average_score": 86.65,
-      "eligibility_rate": 90.91,
-      "total_applications": 22
+      "eligibility_rate": 95.83,
+      "total_applications": 24
     },
     {
       "county": "Migori",
@@ -873,16 +879,10 @@
       "total_applications": 19
     },
     {
-      "county": "Busia",
-      "average_score": 86.42,
-      "eligibility_rate": 92.31,
-      "total_applications": 13
-    },
-    {
-      "county": "Mombasa",
-      "average_score": 86.32,
-      "eligibility_rate": 95.0,
-      "total_applications": 20
+      "county": "Embu",
+      "average_score": 86.44,
+      "eligibility_rate": 81.82,
+      "total_applications": 11
     }
   ],
   "counties_needing_attention": []

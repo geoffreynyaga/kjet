@@ -10,43 +10,10 @@
   },
   "applications": [
     {
-      "application_id": "Meru_JVBP",
-      "applicant_name": "Megatech Limited",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 1,
-      "composite_score": 88.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 5.0,
-          "reason": "Established in 1962 (63 years); Cooperative status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 5.0,
-          "reason": "2024 Revenue: KES 412,580,039.00; Accounting system: Other."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 5.0,
-          "reason": "B2B Sales: 100.0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with Dairy priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
       "application_id": "Meru_L4J8",
       "applicant_name": "MERU NORTH DAIRY FARMERS COOPERATIVE SOCIETY LTD",
       "eligibility_status": "ELIGIBLE",
-      "rank": 2,
+      "rank": 1,
       "composite_score": 88.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -79,7 +46,7 @@
       "application_id": "Meru_Q6HO",
       "applicant_name": "HAPPI FOODS FARMS LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 3,
+      "rank": 2,
       "composite_score": 87.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -112,7 +79,7 @@
       "application_id": "Meru_ZSUV",
       "applicant_name": "Mwees Farm Enterprises Limited",
       "eligibility_status": "ELIGIBLE",
-      "rank": 4,
+      "rank": 3,
       "composite_score": 87.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -145,7 +112,7 @@
       "application_id": "Meru_KVPF",
       "applicant_name": "NTIMA DAIRY FARMERS CO-OPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 5,
+      "rank": 4,
       "composite_score": 87.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -178,7 +145,7 @@
       "application_id": "Meru_XEBV",
       "applicant_name": "DOZIKI CONCRETE BUILDERS LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 6,
+      "rank": 5,
       "composite_score": 84.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -211,7 +178,7 @@
       "application_id": "Meru_SVB4",
       "applicant_name": "IMENTI COMMUNITY BASED ORGANISATION (ICOBO) HEALTH FOODS",
       "eligibility_status": "ELIGIBLE",
-      "rank": 7,
+      "rank": 6,
       "composite_score": 84.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -244,7 +211,7 @@
       "application_id": "Meru_VYGS",
       "applicant_name": "NAARI FARMERS CO-OPERATIVE SOCIEY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 8,
+      "rank": 7,
       "composite_score": 80.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -266,6 +233,39 @@
         "S5_Value_Chain_Alignment_10%": {
           "score": 4.0,
           "reason": "Aligned with Dairy priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Woman-owned enterprise"
+        }
+      }
+    },
+    {
+      "application_id": "Meru_BTQI",
+      "applicant_name": "Amundi limited(construction materials production)",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 8,
+      "composite_score": 80.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Established in 2012 (13 years); Private Company status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "2024 Revenue: KES 10,000,000.00; Accounting system: QuickBooks."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "B2B Sales: 15.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Aligned with Construction priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
           "score": 5.0,
@@ -307,10 +307,43 @@
       }
     },
     {
+      "application_id": "Meru_JUGG",
+      "applicant_name": "NINETEEN'S ABO MERCHANTS SHG",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 10,
+      "composite_score": 78.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.0,
+          "reason": "Established in 2022 (3 years); Other status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "2024 Revenue: KES 900,000.00; Accounting system: QuickBooks."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "B2B Sales: 10.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Aligned with Dairy priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Woman-owned enterprise"
+        }
+      }
+    },
+    {
       "application_id": "Meru_6FRG",
       "applicant_name": "KATHERI COFFEE GROWERS CO-OPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 10,
+      "rank": 11,
       "composite_score": 76.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -343,7 +376,7 @@
       "application_id": "Meru_ODUE",
       "applicant_name": "Miitine Farmers Co-operative Society ltd",
       "eligibility_status": "ELIGIBLE",
-      "rank": 11,
+      "rank": 12,
       "composite_score": 76.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -376,7 +409,7 @@
       "application_id": "Meru_LIHS",
       "applicant_name": "Kathera Youth/Women in Coffee",
       "eligibility_status": "ELIGIBLE",
-      "rank": 12,
+      "rank": 13,
       "composite_score": 76.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -409,7 +442,7 @@
       "application_id": "Meru_FBS2",
       "applicant_name": "Kathera Farmers CO-operative Society Limited",
       "eligibility_status": "ELIGIBLE",
-      "rank": 13,
+      "rank": 14,
       "composite_score": 76.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -439,10 +472,43 @@
       }
     },
     {
+      "application_id": "Meru_4WM8",
+      "applicant_name": "STAWI FOODS AND FRUITS LIMITED",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 15,
+      "composite_score": 72.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Established in 2012 (13 years); Private Company status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "2024 Revenue: KES 65,000,000.00; Accounting system: Zoho Books."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "B2B Sales: 100.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Aligned with Edible Oils priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 1.0,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
       "application_id": "Meru_KG2X",
       "applicant_name": "BRICKVILLE VENTURES LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 14,
+      "rank": 16,
       "composite_score": 70.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -472,10 +538,43 @@
       }
     },
     {
+      "application_id": "Meru_ZMIW",
+      "applicant_name": "The Larger Mitarune Community Based Organization",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 17,
+      "composite_score": 64.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 1.0,
+          "reason": "Established in 2025 (0 years); Other status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 1.0,
+          "reason": "2024 Revenue: KES 0.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.0,
+          "reason": "B2B Sales: 50.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Aligned with other priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Woman-owned enterprise"
+        }
+      }
+    },
+    {
       "application_id": "Meru_RSTF",
       "applicant_name": "NUTRI NUTS & FRUITS LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 15,
+      "rank": 18,
       "composite_score": 63.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -508,7 +607,7 @@
       "application_id": "Meru_QQY1",
       "applicant_name": "Rakton Contractors Ltd",
       "eligibility_status": "ELIGIBLE",
-      "rank": 16,
+      "rank": 19,
       "composite_score": 63.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -541,7 +640,7 @@
       "application_id": "Meru_PZZC",
       "applicant_name": "Joma Herbal Enterprise Ltd",
       "eligibility_status": "ELIGIBLE",
-      "rank": 17,
+      "rank": 20,
       "composite_score": 62.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -574,7 +673,7 @@
       "application_id": "Meru_QO7I",
       "applicant_name": "SIMATI ME ENTERPRISE",
       "eligibility_status": "ELIGIBLE",
-      "rank": 18,
+      "rank": 21,
       "composite_score": 58.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -607,7 +706,7 @@
       "application_id": "Meru_YAHC",
       "applicant_name": "TIGANIA NORTH FCS LTD",
       "eligibility_status": "ELIGIBLE",
-      "rank": 19,
+      "rank": 22,
       "composite_score": 44.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {

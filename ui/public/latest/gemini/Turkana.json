@@ -76,10 +76,76 @@
       }
     },
     {
+      "application_id": "Turkana_T8CC",
+      "applicant_name": "Diversity of Nanam Empowerment Youth Group",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 3,
+      "composite_score": 83.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.0,
+          "reason": "Established in 2020 (5 years); Other status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 4.0,
+          "reason": "2024 Revenue: KES 154,900.00; Accounting system: QuickBooks."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "B2B Sales: 70.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Aligned with other priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Woman-owned enterprise"
+        }
+      }
+    },
+    {
+      "application_id": "Turkana_TG09",
+      "applicant_name": "MTOTO FUND AFRICA COMMUNITY BASED ORGANISATION",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 4,
+      "composite_score": 80.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Established in 2015 (10 years); MSME Association status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "2024 Revenue: KES 2,300,000.00; Accounting system: Zoho Books."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "B2B Sales: 20.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Aligned with Blue Economy priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Woman-owned enterprise"
+        }
+      }
+    },
+    {
       "application_id": "Turkana_MYIO",
       "applicant_name": "Naruko Kerio delta Fresh fish self help group",
       "eligibility_status": "ELIGIBLE",
-      "rank": 3,
+      "rank": 5,
       "composite_score": 80.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -112,7 +178,7 @@
       "application_id": "Turkana_W9ZP",
       "applicant_name": "Lodwar Fish Mongers",
       "eligibility_status": "ELIGIBLE",
-      "rank": 4,
+      "rank": 6,
       "composite_score": 79.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -145,7 +211,7 @@
       "application_id": "Turkana_7BUU",
       "applicant_name": "Turkana county Association of Miners_TCAM",
       "eligibility_status": "ELIGIBLE",
-      "rank": 5,
+      "rank": 7,
       "composite_score": 75.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -178,7 +244,7 @@
       "application_id": "Turkana_JDC6",
       "applicant_name": "LOKORI WARD CDDC SAVINGS AND CREDIT CO-OPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 6,
+      "rank": 8,
       "composite_score": 74.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -211,7 +277,7 @@
       "application_id": "Turkana_K7F0",
       "applicant_name": "Pastoralists Poverty Eradication Initiative (OPPEI)",
       "eligibility_status": "ELIGIBLE",
-      "rank": 7,
+      "rank": 9,
       "composite_score": 70.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -244,7 +310,7 @@
       "application_id": "Turkana_XANC",
       "applicant_name": "NADOME HOUSING CO-OPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 8,
+      "rank": 10,
       "composite_score": 66.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -274,10 +340,43 @@
       }
     },
     {
+      "application_id": "Turkana_ER5L",
+      "applicant_name": "KAKUMA LIVESTOCK SAVINGS AND CREDIT CO-OPERATIVE LIMITED",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 11,
+      "composite_score": 66.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.0,
+          "reason": "Established in 2021 (4 years); Cooperative status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "2024 Revenue: KES 2,200,000.00; Accounting system: Zoho Books."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.0,
+          "reason": "B2B Sales: 27.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Aligned with Leather priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 1.0,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
       "application_id": "Turkana_2FO1",
       "applicant_name": "Kapedo CDDC savings and credit co-operative society limited",
       "eligibility_status": "ELIGIBLE",
-      "rank": 9,
+      "rank": 12,
       "composite_score": 62.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -310,7 +409,7 @@
       "application_id": "Turkana_IDJK",
       "applicant_name": "LOKICHOGGIO LIVESTOCK MARKETING ASSOCIATION",
       "eligibility_status": "ELIGIBLE",
-      "rank": 10,
+      "rank": 13,
       "composite_score": 60.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {

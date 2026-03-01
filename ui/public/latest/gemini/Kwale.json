@@ -406,10 +406,43 @@
       }
     },
     {
+      "application_id": "Kwale_NCLY",
+      "applicant_name": "BIDII JUAKALI",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 13,
+      "composite_score": 52.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 1.0,
+          "reason": "Established in 2024 (1 years); MSME Association status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "2024 Revenue: KES 150,000.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "B2B Sales: 5.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Aligned with Construction priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 1.0,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
       "application_id": "Kwale_IEWC",
       "applicant_name": "Farm Lift Agriventures Ltd",
       "eligibility_status": "ELIGIBLE",
-      "rank": 13,
+      "rank": 14,
       "composite_score": 44.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {

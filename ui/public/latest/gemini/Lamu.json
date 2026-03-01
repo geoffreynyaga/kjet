@@ -10,10 +10,43 @@
   },
   "applications": [
     {
+      "application_id": "Lamu_PORC",
+      "applicant_name": "Hindi livestock marketing cooperative society limited",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 1,
+      "composite_score": 86.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.0,
+          "reason": "Established in 2023 (2 years); Cooperative status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "2024 Revenue: KES 1,850,000.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "B2B Sales: 70.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Aligned with Leather priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Woman-owned enterprise"
+        }
+      }
+    },
+    {
       "application_id": "Lamu_TTTK",
       "applicant_name": "Lamu Women Empowerment Network",
       "eligibility_status": "ELIGIBLE",
-      "rank": 1,
+      "rank": 2,
       "composite_score": 78.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -46,7 +79,7 @@
       "application_id": "Lamu_HRTF",
       "applicant_name": "LAKE AMU AGRICULTURAL GROWERS SELF HELP GROUP",
       "eligibility_status": "ELIGIBLE",
-      "rank": 2,
+      "rank": 3,
       "composite_score": 78.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -79,7 +112,7 @@
       "application_id": "Lamu_ZAIA",
       "applicant_name": "Lamu-West Cashewnuts Processers Farmers Co-operative Society LTD",
       "eligibility_status": "ELIGIBLE",
-      "rank": 3,
+      "rank": 4,
       "composite_score": 66.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -112,7 +145,7 @@
       "application_id": "Lamu_KPQ2",
       "applicant_name": "witu town Jua kali Mixed Association",
       "eligibility_status": "ELIGIBLE",
-      "rank": 4,
+      "rank": 5,
       "composite_score": 66.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -145,7 +178,7 @@
       "application_id": "Lamu_6PPJ",
       "applicant_name": "Kitangani Beach Restaurants",
       "eligibility_status": "ELIGIBLE",
-      "rank": 5,
+      "rank": 6,
       "composite_score": 58.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -175,14 +208,37 @@
       }
     },
     {
-      "application_id": "Lamu_C22O",
-      "applicant_name": "Lake Kenyatta Farmers' Co-operative Society",
-      "eligibility_status": "INELIGIBLE",
-      "rank": null,
-      "composite_score": null,
-      "score_breakdown": null,
-      "ineligibility_criterion_failed": "E4",
-      "reason": "No financial evidence (Bank/Mpesa) attached."
+      "application_id": "Lamu_LM1V",
+      "applicant_name": "DIDWARIDE MWAMKO ORGANIZATION",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 7,
+      "composite_score": 52.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Established in 2013 (12 years); Other status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "2024 Revenue: KES 125,000.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 2.0,
+          "reason": "B2B Sales: 0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Aligned with Dairy priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 1.0,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
     }
   ]
 }

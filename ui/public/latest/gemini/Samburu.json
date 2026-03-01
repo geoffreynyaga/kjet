@@ -175,10 +175,43 @@
       }
     },
     {
+      "application_id": "Samburu_HACC",
+      "applicant_name": "Marmar Suguta Honey",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 6,
+      "composite_score": 68.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 1.0,
+          "reason": "Established in 2024 (1 years); Private Company status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2.0,
+          "reason": "2024 Revenue: KES 50,000.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.0,
+          "reason": "B2B Sales: 30.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Aligned with other priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Woman-owned enterprise"
+        }
+      }
+    },
+    {
       "application_id": "Samburu_PRNO",
       "applicant_name": "ntarasi association",
       "eligibility_status": "ELIGIBLE",
-      "rank": 6,
+      "rank": 7,
       "composite_score": 66.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -211,7 +244,7 @@
       "application_id": "Samburu_V9KT",
       "applicant_name": "WARDAN AGENCIES",
       "eligibility_status": "ELIGIBLE",
-      "rank": 7,
+      "rank": 8,
       "composite_score": 66.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -244,7 +277,7 @@
       "application_id": "Samburu_PFPM",
       "applicant_name": "NARAMAT NTANASI GROUP",
       "eligibility_status": "ELIGIBLE",
-      "rank": 8,
+      "rank": 9,
       "composite_score": 60.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {

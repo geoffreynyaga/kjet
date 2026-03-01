@@ -472,10 +472,43 @@
       }
     },
     {
+      "application_id": "Kisii_ECWO",
+      "applicant_name": "KENYORO FARMERS COOPERATIVE SOCIETY LTD",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 15,
+      "composite_score": 72.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Established in 1953 (72 years); Cooperative status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "2024 Revenue: KES 4,120,808.00; Accounting system: QuickBooks."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "B2B Sales: 100.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Aligned with Coffee priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 1.0,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
       "application_id": "Kisii_9PJU",
       "applicant_name": "NYAGUTA FARMERS CO-OPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 15,
+      "rank": 16,
       "composite_score": 72.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -508,7 +541,7 @@
       "application_id": "Kisii_HKO1",
       "applicant_name": "CEJO ENTERPRISE",
       "eligibility_status": "ELIGIBLE",
-      "rank": 16,
+      "rank": 17,
       "composite_score": 71.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -541,7 +574,7 @@
       "application_id": "Kisii_WGWM",
       "applicant_name": "Company",
       "eligibility_status": "ELIGIBLE",
-      "rank": 17,
+      "rank": 18,
       "composite_score": 70.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -574,7 +607,7 @@
       "application_id": "Kisii_AD4Z",
       "applicant_name": "TABAKA SOAPSTONE JUA KALI ASSOCIATION",
       "eligibility_status": "ELIGIBLE",
-      "rank": 18,
+      "rank": 19,
       "composite_score": 64.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -607,7 +640,7 @@
       "application_id": "Kisii_WBSG",
       "applicant_name": "NYAMARAMBE SAFE MILK HANDLING COOPERATIVE SOCIETY",
       "eligibility_status": "ELIGIBLE",
-      "rank": 19,
+      "rank": 20,
       "composite_score": 58.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -640,7 +673,7 @@
       "application_id": "Kisii_X56G",
       "applicant_name": "kisii south dairy farmers cooperatve society ltd",
       "eligibility_status": "ELIGIBLE",
-      "rank": 20,
+      "rank": 21,
       "composite_score": 56.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {

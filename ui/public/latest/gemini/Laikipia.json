@@ -10,10 +10,43 @@
   },
   "applications": [
     {
+      "application_id": "Laikipia_3TTF",
+      "applicant_name": "MULATHA DAIRY FARMERS CO-OPERATIVE SOCIETY LIMITED",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 1,
+      "composite_score": 88.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Established in 2011 (14 years); Cooperative status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "2024 Revenue: KES 1,260,000.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "B2B Sales: 80.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Aligned with Dairy priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Woman-owned enterprise"
+        }
+      }
+    },
+    {
       "application_id": "Laikipia_HRIY",
       "applicant_name": "Marmanet Farmers cooperative society",
       "eligibility_status": "ELIGIBLE",
-      "rank": 1,
+      "rank": 2,
       "composite_score": 88.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -46,7 +79,7 @@
       "application_id": "Laikipia_DNGF",
       "applicant_name": "Kirima Cereals and Produce cooperative Marketing Co-operative Society limited",
       "eligibility_status": "ELIGIBLE",
-      "rank": 2,
+      "rank": 3,
       "composite_score": 82.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -79,7 +112,7 @@
       "application_id": "Laikipia_4CPK",
       "applicant_name": "SAMBURU YOUTH NETWORK",
       "eligibility_status": "ELIGIBLE",
-      "rank": 3,
+      "rank": 4,
       "composite_score": 78.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -112,7 +145,7 @@
       "application_id": "Laikipia_Q6KC",
       "applicant_name": "Faith ruai",
       "eligibility_status": "ELIGIBLE",
-      "rank": 4,
+      "rank": 5,
       "composite_score": 62.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -145,7 +178,7 @@
       "application_id": "Laikipia_N4VF",
       "applicant_name": "GREVILLEA SUPPLIES",
       "eligibility_status": "ELIGIBLE",
-      "rank": 5,
+      "rank": 6,
       "composite_score": 59.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -178,7 +211,7 @@
       "application_id": "Laikipia_7FK8",
       "applicant_name": "CIMATE DISASTER RESILIENCE (C'DRA)LAIKIPIA",
       "eligibility_status": "ELIGIBLE",
-      "rank": 6,
+      "rank": 7,
       "composite_score": 54.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -211,7 +244,7 @@
       "application_id": "Laikipia_JSWV",
       "applicant_name": "Glory steel, aluminium fabricators and glassmart",
       "eligibility_status": "ELIGIBLE",
-      "rank": 7,
+      "rank": 8,
       "composite_score": 52.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {

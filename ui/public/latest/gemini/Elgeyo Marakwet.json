@@ -10,43 +10,10 @@
   },
   "applications": [
     {
-      "application_id": "Elgeyo Marakwet_M1X3",
-      "applicant_name": "Kerio CarePlus+",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 1,
-      "composite_score": 82.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
-          "reason": "Established in 2021 (4 years); Private Company status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 5.0,
-          "reason": "2024 Revenue: KES 41,342,633.00; Accounting system: QuickBooks."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 4.0,
-          "reason": "B2B Sales: 42.0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with Textiles priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
       "application_id": "Elgeyo Marakwet_PJUE",
       "applicant_name": "Tumeiyo Farmers Co-operative society limited",
       "eligibility_status": "ELIGIBLE",
-      "rank": 2,
+      "rank": 1,
       "composite_score": 72.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -79,7 +46,7 @@
       "application_id": "Elgeyo Marakwet_3HXO",
       "applicant_name": "KAPSOWAR MOUNTAIN DAIRY CO-OPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 3,
+      "rank": 2,
       "composite_score": 71.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -112,7 +79,7 @@
       "application_id": "Elgeyo Marakwet_QSYQ",
       "applicant_name": "KAMET DAIRY CO-OPERATIVE UNION LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 4,
+      "rank": 3,
       "composite_score": 71.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -145,7 +112,7 @@
       "application_id": "Elgeyo Marakwet_FIJX",
       "applicant_name": "KAPCHELOS FARMERS CO-OPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 5,
+      "rank": 4,
       "composite_score": 70.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -178,7 +145,7 @@
       "application_id": "Elgeyo Marakwet_T1ID",
       "applicant_name": "KAPKITONY FARMERS COOPERATIVE SOCIETY",
       "eligibility_status": "ELIGIBLE",
-      "rank": 6,
+      "rank": 5,
       "composite_score": 68.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -211,7 +178,7 @@
       "application_id": "Elgeyo Marakwet_HEGJ",
       "applicant_name": "KAPCHEMUTWA FARMERS COOPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 7,
+      "rank": 6,
       "composite_score": 67.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -244,7 +211,7 @@
       "application_id": "Elgeyo Marakwet_G3V6",
       "applicant_name": "KAPTICH FARMERS CO-OPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 8,
+      "rank": 7,
       "composite_score": 64.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -277,7 +244,7 @@
       "application_id": "Elgeyo Marakwet_MYUG",
       "applicant_name": "Metkei farmers cooperative society limited",
       "eligibility_status": "ELIGIBLE",
-      "rank": 9,
+      "rank": 8,
       "composite_score": 64.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -310,7 +277,7 @@
       "application_id": "Elgeyo Marakwet_MBPJ",
       "applicant_name": "KOIBARAK COFFEE FARMERS CO-OPERATIVE SOCIETY",
       "eligibility_status": "ELIGIBLE",
-      "rank": 10,
+      "rank": 9,
       "composite_score": 60.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -343,7 +310,7 @@
       "application_id": "Elgeyo Marakwet_4WCP",
       "applicant_name": "KAPTICH FARMERS CO-OPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 11,
+      "rank": 10,
       "composite_score": 56.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -376,7 +343,7 @@
       "application_id": "Elgeyo Marakwet_K2GI",
       "applicant_name": "KAPSAIT FARMERS CO-OPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 12,
+      "rank": 11,
       "composite_score": 56.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -409,7 +376,7 @@
       "application_id": "Elgeyo Marakwet_ZPDF",
       "applicant_name": "CHESUBET FARMERS CO-OPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 13,
+      "rank": 12,
       "composite_score": 55.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -442,7 +409,7 @@
       "application_id": "Elgeyo Marakwet_BXYJ",
       "applicant_name": "SAMBIRIR FARMERS CO-OPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 14,
+      "rank": 13,
       "composite_score": 55.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -475,7 +442,7 @@
       "application_id": "Elgeyo Marakwet_COYL",
       "applicant_name": "KAMSIWET FARMERS CO-OPERATIVE SOCIETY",
       "eligibility_status": "ELIGIBLE",
-      "rank": 15,
+      "rank": 14,
       "composite_score": 55.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -508,7 +475,7 @@
       "application_id": "Elgeyo Marakwet_4ORQ",
       "applicant_name": "CHERANGANY FARMERS CO-OPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 16,
+      "rank": 15,
       "composite_score": 55.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -541,7 +508,7 @@
       "application_id": "Elgeyo Marakwet_VWIK",
       "applicant_name": "KABOBON/KAPKAMAK FARMERS MARKETING CO-OPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 17,
+      "rank": 16,
       "composite_score": 55.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -574,7 +541,7 @@
       "application_id": "Elgeyo Marakwet_B1WD",
       "applicant_name": "MOIBEN FARMERS COOPERATIVE",
       "eligibility_status": "ELIGIBLE",
-      "rank": 18,
+      "rank": 17,
       "composite_score": 52.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {

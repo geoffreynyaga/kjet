@@ -338,16 +338,6 @@
           "reason": "Limited evidence of inclusivity profile."
         }
       }
-    },
-    {
-      "application_id": "Bungoma_KPIF",
-      "applicant_name": "WAYSIDE SUNFLOWER OIL PRESS",
-      "eligibility_status": "INELIGIBLE",
-      "rank": null,
-      "composite_score": null,
-      "score_breakdown": null,
-      "ineligibility_criterion_failed": "E4",
-      "reason": "No financial evidence (Bank/Mpesa) attached."
     }
   ]
 }

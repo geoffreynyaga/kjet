@@ -175,10 +175,43 @@
       }
     },
     {
+      "application_id": "Garissa_UD4V",
+      "applicant_name": "BULA ABAQ",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 6,
+      "composite_score": 80.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 1.0,
+          "reason": "Established in 2024 (1 years); MSME Association status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "2024 Revenue: KES 4,700,000.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.0,
+          "reason": "B2B Sales: 40.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Aligned with Textiles priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Woman-owned enterprise"
+        }
+      }
+    },
+    {
       "application_id": "Garissa_YHTD",
       "applicant_name": "DADAAB ENVIRONMENTAL CONCERN",
       "eligibility_status": "ELIGIBLE",
-      "rank": 6,
+      "rank": 7,
       "composite_score": 79.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -211,7 +244,7 @@
       "application_id": "Garissa_HNEE",
       "applicant_name": "Dadaab Mercy Savings And Credit Cooperative Society Limited",
       "eligibility_status": "ELIGIBLE",
-      "rank": 7,
+      "rank": 8,
       "composite_score": 78.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -244,7 +277,7 @@
       "application_id": "Garissa_KP7C",
       "applicant_name": "ijara saving and gredit co-operative society limited",
       "eligibility_status": "ELIGIBLE",
-      "rank": 8,
+      "rank": 9,
       "composite_score": 78.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -277,7 +310,7 @@
       "application_id": "Garissa_NBSD",
       "applicant_name": "GARAS GURAT SELF HELP GROUP",
       "eligibility_status": "ELIGIBLE",
-      "rank": 9,
+      "rank": 10,
       "composite_score": 78.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -310,7 +343,7 @@
       "application_id": "Garissa_HJQK",
       "applicant_name": "KAHA INVESTMENT LTD",
       "eligibility_status": "ELIGIBLE",
-      "rank": 10,
+      "rank": 11,
       "composite_score": 75.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -343,7 +376,7 @@
       "application_id": "Garissa_GRP6",
       "applicant_name": "hanadhassan youth group",
       "eligibility_status": "ELIGIBLE",
-      "rank": 11,
+      "rank": 12,
       "composite_score": 74.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -376,7 +409,7 @@
       "application_id": "Garissa_IS0U",
       "applicant_name": "Hashash Weavers Center For youth Girlchild and women empowerement",
       "eligibility_status": "ELIGIBLE",
-      "rank": 12,
+      "rank": 13,
       "composite_score": 72.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -409,7 +442,7 @@
       "application_id": "Garissa_RWXI",
       "applicant_name": "IJARAMASA SAVINGS AND CREDIT CO-PERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 13,
+      "rank": 14,
       "composite_score": 70.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -442,7 +475,7 @@
       "application_id": "Garissa_W38X",
       "applicant_name": "Safi women milk cooperative society",
       "eligibility_status": "ELIGIBLE",
-      "rank": 14,
+      "rank": 15,
       "composite_score": 70.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -475,7 +508,7 @@
       "application_id": "Garissa_LOB9",
       "applicant_name": "HUDUMA JUAKALI ASSOCIATION",
       "eligibility_status": "ELIGIBLE",
-      "rank": 15,
+      "rank": 16,
       "composite_score": 66.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -508,7 +541,7 @@
       "application_id": "Garissa_DY7O",
       "applicant_name": "Garissa Farmers Network Co-operative Society Limited",
       "eligibility_status": "ELIGIBLE",
-      "rank": 16,
+      "rank": 17,
       "composite_score": 66.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {

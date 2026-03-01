@@ -43,43 +43,10 @@
       }
     },
     {
-      "application_id": "Murang_a_FVXE",
-      "applicant_name": "Forthall CBO",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 2,
-      "composite_score": 87.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 4.0,
-          "reason": "Established in 2020 (5 years); Other status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 5.0,
-          "reason": "2024 Revenue: KES 2,500,000.00; Accounting system: QuickBooks."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 5.0,
-          "reason": "B2B Sales: 70.0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with Dairy priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
       "application_id": "Murang_a_MQCY",
       "applicant_name": "Nduti Tea Factory",
       "eligibility_status": "ELIGIBLE",
-      "rank": 3,
+      "rank": 2,
       "composite_score": 80.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -112,7 +79,7 @@
       "application_id": "Murang_a_CVA8",
       "applicant_name": "KANGIRI FARMERS COOPERATIVE SOCIETY LTD",
       "eligibility_status": "ELIGIBLE",
-      "rank": 4,
+      "rank": 3,
       "composite_score": 76.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -145,7 +112,7 @@
       "application_id": "Murang_a_IT0C",
       "applicant_name": "KIAWANDUMA",
       "eligibility_status": "ELIGIBLE",
-      "rank": 5,
+      "rank": 4,
       "composite_score": 76.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -178,7 +145,7 @@
       "application_id": "Murang_a_XWKM",
       "applicant_name": "MURANGA AVOCADO FARMERS COOPERATIVE UNION LTD",
       "eligibility_status": "ELIGIBLE",
-      "rank": 6,
+      "rank": 5,
       "composite_score": 75.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -211,7 +178,7 @@
       "application_id": "Murang_a_XADX",
       "applicant_name": "New Nginda Dairy Cooperative society Ltd",
       "eligibility_status": "ELIGIBLE",
-      "rank": 7,
+      "rank": 6,
       "composite_score": 72.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -244,7 +211,7 @@
       "application_id": "Murang_a_SDEH",
       "applicant_name": "Kiharu avocado Growers Cooperative Society",
       "eligibility_status": "ELIGIBLE",
-      "rank": 8,
+      "rank": 7,
       "composite_score": 68.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -277,7 +244,7 @@
       "application_id": "Murang_a_DASF",
       "applicant_name": "PEASANT COFFEE FARMERS ASSOCIATION OF KENYA",
       "eligibility_status": "ELIGIBLE",
-      "rank": 9,
+      "rank": 8,
       "composite_score": 63.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -310,7 +277,7 @@
       "application_id": "Murang_a_4JGB",
       "applicant_name": "KAMACHARIA FARMERS CO-OPERATICE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 10,
+      "rank": 9,
       "composite_score": 60.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -320,6 +287,39 @@
         "S2_Financial_Position_20%": {
           "score": 5.0,
           "reason": "2024 Revenue: KES 340,167,101.96; Accounting system: Other."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 2.0,
+          "reason": "B2B Sales: 0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Aligned with Coffee priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 1.0,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Murang_a_FXPP",
+      "applicant_name": "Mungathi Farmers Cooperative Society",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 10,
+      "composite_score": 60.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Established in 2014 (11 years); Cooperative status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "2024 Revenue: KES 4,200,000.00; Accounting system: None."
         },
         "S3_Market_Demand_Competitiveness_20%": {
           "score": 2.0,
@@ -373,8 +373,74 @@
       }
     },
     {
-      "application_id": "Murang_a_L5WF",
-      "applicant_name": "IYEGO FARMERS COOPERATIVE SOCIETY LTD",
+      "application_id": "Murang_a_VQT0",
+      "applicant_name": "NDIARA-INI AVOCADO FARMERS COOPERATIVE SOCIAETY LIMITED",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 12,
+      "composite_score": 58.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.0,
+          "reason": "Established in 2021 (4 years); Cooperative status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "2024 Revenue: KES 2,267,200.00; Accounting system: QuickBooks."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 2.0,
+          "reason": "B2B Sales: 0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Aligned with Edible Oils priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 1.0,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Murang_a_P1BU",
+      "applicant_name": "Maryland Farmers Self-help group",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 13,
+      "composite_score": 58.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.0,
+          "reason": "Established in 2021 (4 years); MSME Association status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "2024 Revenue: KES 10,683,709.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 2.0,
+          "reason": "B2B Sales: 0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Aligned with Coffee priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 1.0,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Murang_a_MDAH",
+      "applicant_name": "KIROGO MWIHANGIRI WOMEN GROUP",
       "eligibility_status": "INELIGIBLE",
       "rank": null,
       "composite_score": null,

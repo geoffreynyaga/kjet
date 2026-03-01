@@ -373,10 +373,43 @@
       }
     },
     {
+      "application_id": "Bomet_QKZM",
+      "applicant_name": "BOMET JUAKALI ASSOCIATION",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 12,
+      "composite_score": 60.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Established in 2013 (12 years); MSME Association status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "2024 Revenue: KES 105,000.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.0,
+          "reason": "B2B Sales: 50.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Aligned with Construction priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 1.0,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
       "application_id": "Bomet_G9QK",
       "applicant_name": "KIPSONOI DAIRY PRODUCT COOPERATIVE SOCIETY LTD",
       "eligibility_status": "ELIGIBLE",
-      "rank": 12,
+      "rank": 13,
       "composite_score": 59.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -409,7 +442,7 @@
       "application_id": "Bomet_MQKO",
       "applicant_name": "Almacoat prime paints ltd",
       "eligibility_status": "ELIGIBLE",
-      "rank": 13,
+      "rank": 14,
       "composite_score": 51.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -442,7 +475,7 @@
       "application_id": "Bomet_NBZP",
       "applicant_name": "TILILBEI GROUP",
       "eligibility_status": "ELIGIBLE",
-      "rank": 14,
+      "rank": 15,
       "composite_score": 48.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -475,7 +508,7 @@
       "application_id": "Bomet_NQ9M",
       "applicant_name": "RIFT SELF HELP GROUP",
       "eligibility_status": "ELIGIBLE",
-      "rank": 15,
+      "rank": 16,
       "composite_score": 48.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -508,7 +541,7 @@
       "application_id": "Bomet_BWBB",
       "applicant_name": "TENWEK GARDEN DAIRIES ENTERPRISES",
       "eligibility_status": "ELIGIBLE",
-      "rank": 16,
+      "rank": 17,
       "composite_score": 44.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {

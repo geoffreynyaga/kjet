@@ -439,10 +439,43 @@
       }
     },
     {
+      "application_id": "Uasin Gishu_KZOZ",
+      "applicant_name": "Kapsaos farmers cooperative society",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 14,
+      "composite_score": 71.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.0,
+          "reason": "Established in 2016 (9 years); Cooperative status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.0,
+          "reason": "2024 Revenue: KES 67,800.00; Accounting system: QuickBooks."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.0,
+          "reason": "B2B Sales: 15.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Aligned with Dairy priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Woman-owned enterprise"
+        }
+      }
+    },
+    {
       "application_id": "Uasin Gishu_ELD4",
       "applicant_name": "OLENDU ELDERS COOPERATIVE SOCIETY",
       "eligibility_status": "ELIGIBLE",
-      "rank": 14,
+      "rank": 15,
       "composite_score": 71.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -475,7 +508,7 @@
       "application_id": "Uasin Gishu_WTP9",
       "applicant_name": "METAMETA MABATI",
       "eligibility_status": "ELIGIBLE",
-      "rank": 15,
+      "rank": 16,
       "composite_score": 71.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -497,39 +530,6 @@
         "S5_Value_Chain_Alignment_10%": {
           "score": 4.0,
           "reason": "Aligned with Construction priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 1.0,
-          "reason": "Limited evidence of inclusivity profile."
-        }
-      }
-    },
-    {
-      "application_id": "Uasin Gishu_GX8L",
-      "applicant_name": "ECHOING SAVANNAH MORSELS",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 16,
-      "composite_score": 70.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
-          "reason": "Established in 2023 (2 years); Private Company status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 5.0,
-          "reason": "2024 Revenue: KES 2,500,000.00; Accounting system: Other."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 5.0,
-          "reason": "B2B Sales: 95.0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with other priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
           "score": 1.0,
@@ -670,10 +670,43 @@
       }
     },
     {
+      "application_id": "Uasin Gishu_OJMK",
+      "applicant_name": "Sirikwa Coffee farmers Co-operative society Limited",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 21,
+      "composite_score": 59.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.0,
+          "reason": "Established in 2019 (6 years); Cooperative status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "2024 Revenue: KES 22,000,000.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 2.0,
+          "reason": "B2B Sales: 0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Aligned with Coffee priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 1.0,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
       "application_id": "Uasin Gishu_QCWL",
       "applicant_name": "GREENWELL DAIRY FARMERS CO-OPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 21,
+      "rank": 22,
       "composite_score": 59.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -699,6 +732,39 @@
         "S6_Inclusivity_Sustainability_20%": {
           "score": 1.0,
           "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Uasin Gishu_OCFZ",
+      "applicant_name": "Champions 027 association",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 23,
+      "composite_score": 56.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 1.0,
+          "reason": "Established in 2025 (0 years); MSME Association status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 1.0,
+          "reason": "2024 Revenue: KES 0.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 2.0,
+          "reason": "B2B Sales: 0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Aligned with Construction priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Woman-owned enterprise"
         }
       }
     },

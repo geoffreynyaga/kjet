@@ -109,43 +109,10 @@
       }
     },
     {
-      "application_id": "Nyamira_FB0W",
-      "applicant_name": "Nyamira Rural Women Farmers Cooperative Society",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 4,
-      "composite_score": 82.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
-          "reason": "Established in 2021 (4 years); Cooperative status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 5.0,
-          "reason": "2024 Revenue: KES 4,918,363.00; Accounting system: QuickBooks."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 4.0,
-          "reason": "B2B Sales: 50.0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with Textiles priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
       "application_id": "Nyamira_H5ZJ",
       "applicant_name": "Nyangorora Banana Processors Limited Company",
       "eligibility_status": "ELIGIBLE",
-      "rank": 5,
+      "rank": 4,
       "composite_score": 80.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -178,7 +145,7 @@
       "application_id": "Nyamira_4RV3",
       "applicant_name": "EAKA FARMERS CO-OPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 6,
+      "rank": 5,
       "composite_score": 72.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -211,7 +178,7 @@
       "application_id": "Nyamira_SB78",
       "applicant_name": "Keera Kiendege FCS",
       "eligibility_status": "ELIGIBLE",
-      "rank": 7,
+      "rank": 6,
       "composite_score": 72.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -244,7 +211,7 @@
       "application_id": "Nyamira_Y5R5",
       "applicant_name": "MKULIMA SAWA YOUTH GROUP",
       "eligibility_status": "ELIGIBLE",
-      "rank": 8,
+      "rank": 7,
       "composite_score": 71.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -277,7 +244,7 @@
       "application_id": "Nyamira_LUYO",
       "applicant_name": "GACHUBA COMMUNITY SACCO",
       "eligibility_status": "ELIGIBLE",
-      "rank": 9,
+      "rank": 8,
       "composite_score": 70.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -310,7 +277,7 @@
       "application_id": "Nyamira_CWO9",
       "applicant_name": "MAGWAGWA FCS LTD",
       "eligibility_status": "ELIGIBLE",
-      "rank": 10,
+      "rank": 9,
       "composite_score": 64.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {

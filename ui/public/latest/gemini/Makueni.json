@@ -10,43 +10,10 @@
   },
   "applications": [
     {
-      "application_id": "Makueni_AJMS",
-      "applicant_name": "KITHANGATHINI FARMERS COOPERATIVE SOCIETY",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 1,
-      "composite_score": 88.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 5.0,
-          "reason": "Established in 1957 (68 years); Cooperative status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 5.0,
-          "reason": "2024 Revenue: KES 5,176,648.00; Accounting system: QuickBooks."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 5.0,
-          "reason": "B2B Sales: 80.0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with Coffee priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
       "application_id": "Makueni_XL1M",
       "applicant_name": "MAKIOU DAIRY FARMERS COOPERATIVE SOCIETY",
       "eligibility_status": "ELIGIBLE",
-      "rank": 2,
+      "rank": 1,
       "composite_score": 84.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -79,7 +46,7 @@
       "application_id": "Makueni_I2M6",
       "applicant_name": "PEKATI GENERAL SUPPLIES",
       "eligibility_status": "ELIGIBLE",
-      "rank": 3,
+      "rank": 2,
       "composite_score": 82.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -112,7 +79,7 @@
       "application_id": "Makueni_FCZJ",
       "applicant_name": "MAKUENI DAIRY FARMERS COOPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 4,
+      "rank": 3,
       "composite_score": 80.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -145,7 +112,7 @@
       "application_id": "Makueni_FRRU",
       "applicant_name": "Trueways Enterprises Ltd",
       "eligibility_status": "ELIGIBLE",
-      "rank": 5,
+      "rank": 4,
       "composite_score": 80.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -178,7 +145,7 @@
       "application_id": "Makueni_JXMY",
       "applicant_name": "MBOONI RANCHING & DAIRY CO-OPERATIVE SOCIETY LTD",
       "eligibility_status": "ELIGIBLE",
-      "rank": 6,
+      "rank": 5,
       "composite_score": 76.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -208,19 +175,19 @@
       }
     },
     {
-      "application_id": "Makueni_AGSV",
-      "applicant_name": "KATHONZWENI DAIRY FARMERS COOPERATIVE SOCIETY LIMITED",
+      "application_id": "Makueni_47FT",
+      "applicant_name": "Kikima farmers cooperative society limited",
       "eligibility_status": "ELIGIBLE",
-      "rank": 7,
+      "rank": 6,
       "composite_score": 76.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
           "score": 5.0,
-          "reason": "Established in 2015 (10 years); Cooperative status."
+          "reason": "Established in 1958 (67 years); Cooperative status."
         },
         "S2_Financial_Position_20%": {
           "score": 5.0,
-          "reason": "2024 Revenue: KES 28,902,861.90; Accounting system: None."
+          "reason": "2024 Revenue: KES 49,050,698.00; Accounting system: None."
         },
         "S3_Market_Demand_Competitiveness_20%": {
           "score": 2.0,
@@ -232,7 +199,7 @@
         },
         "S5_Value_Chain_Alignment_10%": {
           "score": 4.0,
-          "reason": "Aligned with Dairy priority value chain."
+          "reason": "Aligned with Coffee priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
           "score": 5.0,
@@ -244,7 +211,7 @@
       "application_id": "Makueni_HMIX",
       "applicant_name": "KIKIMA DAIRY CO-OPERATIVE SOCIETY",
       "eligibility_status": "ELIGIBLE",
-      "rank": 8,
+      "rank": 7,
       "composite_score": 72.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -277,7 +244,7 @@
       "application_id": "Makueni_KU5A",
       "applicant_name": "KALAWA FARMERS SAVINGS AND CREDIT SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 9,
+      "rank": 8,
       "composite_score": 70.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -310,7 +277,7 @@
       "application_id": "Makueni_UYK6",
       "applicant_name": "ITITU P.I.W.D SELF HELP GROUP",
       "eligibility_status": "ELIGIBLE",
-      "rank": 10,
+      "rank": 9,
       "composite_score": 62.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -343,7 +310,7 @@
       "application_id": "Makueni_OFHH",
       "applicant_name": "NGUU/MASUMBA DAIRY FARMERS CO-OPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 11,
+      "rank": 10,
       "composite_score": 59.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -376,7 +343,7 @@
       "application_id": "Makueni_PNAL",
       "applicant_name": "KALAWA DAIRY FARMERS CO-OPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 12,
+      "rank": 11,
       "composite_score": 52.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {

@@ -10,10 +10,43 @@
   },
   "applications": [
     {
+      "application_id": "Trans Nzoia_UT1M",
+      "applicant_name": "cherangany dairy group plc",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 1,
+      "composite_score": 88.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Established in 2013 (12 years); Private Company status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "2024 Revenue: KES 172,252,513.00; Accounting system: Other."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "B2B Sales: 80.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Aligned with Dairy priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Woman-owned enterprise"
+        }
+      }
+    },
+    {
       "application_id": "Trans Nzoia_NBI3",
       "applicant_name": "JACBEN COMPANY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 1,
+      "rank": 2,
       "composite_score": 87.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -46,7 +79,7 @@
       "application_id": "Trans Nzoia_VVQP",
       "applicant_name": "NURU WOMEN CBO",
       "eligibility_status": "ELIGIBLE",
-      "rank": 2,
+      "rank": 3,
       "composite_score": 86.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -79,7 +112,7 @@
       "application_id": "Trans Nzoia_YYYA",
       "applicant_name": "ELGONFINE ENTERPRISES LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 3,
+      "rank": 4,
       "composite_score": 84.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -112,7 +145,7 @@
       "application_id": "Trans Nzoia_RUN5",
       "applicant_name": "UMAK COTTAGE TEXTILE INDUSTRY",
       "eligibility_status": "ELIGIBLE",
-      "rank": 4,
+      "rank": 5,
       "composite_score": 84.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -145,7 +178,7 @@
       "application_id": "Trans Nzoia_ALVB",
       "applicant_name": "TRANS QUEENS AND KINGS POULTRY FARMERS CO-OPERATIVE SOCIETY LTD",
       "eligibility_status": "ELIGIBLE",
-      "rank": 5,
+      "rank": 6,
       "composite_score": 83.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -178,7 +211,7 @@
       "application_id": "Trans Nzoia_FKAS",
       "applicant_name": "UJIRANI MWEMA NA AMANI ASSOCIATION",
       "eligibility_status": "ELIGIBLE",
-      "rank": 6,
+      "rank": 7,
       "composite_score": 83.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -211,7 +244,7 @@
       "application_id": "Trans Nzoia_LBVE",
       "applicant_name": "GREEN WAY SOLUTIONS LTD",
       "eligibility_status": "ELIGIBLE",
-      "rank": 7,
+      "rank": 8,
       "composite_score": 66.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -244,7 +277,7 @@
       "application_id": "Trans Nzoia_C9XX",
       "applicant_name": "ISROMBO SERVICES",
       "eligibility_status": "ELIGIBLE",
-      "rank": 8,
+      "rank": 9,
       "composite_score": 64.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -277,7 +310,7 @@
       "application_id": "Trans Nzoia_RX7F",
       "applicant_name": "TRANS-COUNTIES SACCO SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 9,
+      "rank": 10,
       "composite_score": 60.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {

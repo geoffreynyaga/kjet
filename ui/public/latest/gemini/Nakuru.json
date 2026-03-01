@@ -274,43 +274,10 @@
       }
     },
     {
-      "application_id": "Nakuru_5N6P",
-      "applicant_name": "Dapdapoi Enterprises",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 9,
-      "composite_score": 66.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
-          "reason": "Established in 2023 (2 years); MSME Association status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 2.0,
-          "reason": "2024 Revenue: KES 100,000.00; Accounting system: None."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 3.0,
-          "reason": "B2B Sales: 1.0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with Dairy priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
       "application_id": "Nakuru_V7JB",
       "applicant_name": "Youth",
       "eligibility_status": "ELIGIBLE",
-      "rank": 10,
+      "rank": 9,
       "composite_score": 59.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {

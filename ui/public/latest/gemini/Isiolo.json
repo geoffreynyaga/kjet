@@ -206,16 +206,6 @@
           "reason": "Woman-owned enterprise"
         }
       }
-    },
-    {
-      "application_id": "Isiolo_JNWK",
-      "applicant_name": "WALQABANA DAIRY CAMEL MARKETING COPERATIVE SOCIETY LIMITED",
-      "eligibility_status": "INELIGIBLE",
-      "rank": null,
-      "composite_score": null,
-      "score_breakdown": null,
-      "ineligibility_criterion_failed": "E4",
-      "reason": "No financial evidence (Bank/Mpesa) attached."
     }
   ]
 }

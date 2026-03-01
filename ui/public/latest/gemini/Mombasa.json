@@ -76,8 +76,8 @@
       }
     },
     {
-      "application_id": "Mombasa_GJC8",
-      "applicant_name": "CESHA INVESTMENT LTD",
+      "application_id": "Mombasa_HL2N",
+      "applicant_name": "KADZO GENERAL SUPPLIES",
       "eligibility_status": "ELIGIBLE",
       "rank": 3,
       "composite_score": 86.0,
@@ -88,11 +88,11 @@
         },
         "S2_Financial_Position_20%": {
           "score": 5.0,
-          "reason": "2024 Revenue: KES 528,000.00; Accounting system: Zoho Books."
+          "reason": "2024 Revenue: KES 2,400,000.00; Accounting system: Other."
         },
         "S3_Market_Demand_Competitiveness_20%": {
           "score": 5.0,
-          "reason": "B2B Sales: 65.0%; Market strategy reported."
+          "reason": "B2B Sales: 90.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
           "score": 3.0,
@@ -100,7 +100,7 @@
         },
         "S5_Value_Chain_Alignment_10%": {
           "score": 4.0,
-          "reason": "Aligned with other priority value chain."
+          "reason": "Aligned with Blue Economy priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
           "score": 5.0,
@@ -175,10 +175,76 @@
       }
     },
     {
+      "application_id": "Mombasa_0HM6",
+      "applicant_name": "ROYAL WORLD MENSTRUAL WASTE",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 6,
+      "composite_score": 82.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.0,
+          "reason": "Established in 2023 (2 years); Private Company status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "2024 Revenue: KES 1,700,000.00; Accounting system: Other."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.0,
+          "reason": "B2B Sales: 50.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Aligned with Blue Economy priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Woman-owned enterprise"
+        }
+      }
+    },
+    {
+      "application_id": "Mombasa_JYEN",
+      "applicant_name": "HAWIMOR ENTERPRISE LTD",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 7,
+      "composite_score": 82.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.0,
+          "reason": "Established in 2023 (2 years); Private Company status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "2024 Revenue: KES 1,500,000.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.0,
+          "reason": "B2B Sales: 30.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.0,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 4.0,
+          "reason": "Aligned with Construction priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 5.0,
+          "reason": "Woman-owned enterprise"
+        }
+      }
+    },
+    {
       "application_id": "Mombasa_VQWR",
       "applicant_name": "Mrima Community Health Unit",
       "eligibility_status": "ELIGIBLE",
-      "rank": 6,
+      "rank": 8,
       "composite_score": 79.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -211,7 +277,7 @@
       "application_id": "Mombasa_OJA3",
       "applicant_name": "M-PAWA C.B.O",
       "eligibility_status": "ELIGIBLE",
-      "rank": 7,
+      "rank": 9,
       "composite_score": 75.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -244,7 +310,7 @@
       "application_id": "Mombasa_BSOF",
       "applicant_name": "global champions",
       "eligibility_status": "ELIGIBLE",
-      "rank": 8,
+      "rank": 10,
       "composite_score": 74.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -277,7 +343,7 @@
       "application_id": "Mombasa_JNSB",
       "applicant_name": "COAST DEVELOPMENT LOBBY SELF HELP GROUP",
       "eligibility_status": "ELIGIBLE",
-      "rank": 9,
+      "rank": 11,
       "composite_score": 74.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -310,7 +376,7 @@
       "application_id": "Mombasa_FASC",
       "applicant_name": "Clean Flow expert Waste management and Recycling Company",
       "eligibility_status": "ELIGIBLE",
-      "rank": 10,
+      "rank": 12,
       "composite_score": 72.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -343,7 +409,7 @@
       "application_id": "Mombasa_FMJQ",
       "applicant_name": "JEMINE",
       "eligibility_status": "ELIGIBLE",
-      "rank": 11,
+      "rank": 13,
       "composite_score": 71.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -376,7 +442,7 @@
       "application_id": "Mombasa_QG42",
       "applicant_name": "Mac supremacy enterprise Ltd",
       "eligibility_status": "ELIGIBLE",
-      "rank": 12,
+      "rank": 14,
       "composite_score": 70.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -409,7 +475,7 @@
       "application_id": "Mombasa_Q3KR",
       "applicant_name": "Skaytake Enterprise",
       "eligibility_status": "ELIGIBLE",
-      "rank": 13,
+      "rank": 15,
       "composite_score": 70.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -442,7 +508,7 @@
       "application_id": "Mombasa_KZRG",
       "applicant_name": "SKAYTAKE ENTERPRISES",
       "eligibility_status": "ELIGIBLE",
-      "rank": 14,
+      "rank": 16,
       "composite_score": 70.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -475,7 +541,7 @@
       "application_id": "Mombasa_UOXY",
       "applicant_name": "ZAKHARASMA WELFARE GROUP",
       "eligibility_status": "ELIGIBLE",
-      "rank": 15,
+      "rank": 17,
       "composite_score": 68.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -508,7 +574,7 @@
       "application_id": "Mombasa_EZRC",
       "applicant_name": "JOMVU WOMEN IN FISHERIES AND CULTURAL SELF HELP GROUP",
       "eligibility_status": "ELIGIBLE",
-      "rank": 16,
+      "rank": 18,
       "composite_score": 66.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -541,7 +607,7 @@
       "application_id": "Mombasa_EHUQ",
       "applicant_name": "Majengo Muslim Women Group",
       "eligibility_status": "ELIGIBLE",
-      "rank": 17,
+      "rank": 19,
       "composite_score": 64.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -574,7 +640,7 @@
       "application_id": "Mombasa_TLGX",
       "applicant_name": "AKAMBA HANDICRAFT INDUSTRY CO-OPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 18,
+      "rank": 20,
       "composite_score": 60.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
@@ -607,7 +673,7 @@
       "application_id": "Mombasa_GYBY",
       "applicant_name": "Keyop",
       "eligibility_status": "ELIGIBLE",
-      "rank": 19,
+      "rank": 21,
       "composite_score": 47.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
