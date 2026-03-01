@@ -38,16 +38,18 @@ class CohortStrategy(ABC):
 
 class Cohort1Strategy(CohortStrategy):
     def get_priority_value_chains(self):
+        """Return the C1 priority value chains used for eligibility checks."""
         return ["Dairy", "Textiles", "Construction", "Leather"]
 
     def get_scoring_weights(self):
+        """Return C1 scoring weights based on the B1 scoring matrix (0-100 composite)."""
         return {
-            "registration_track_record": 0.05,
+            "registration_track_record": 0.10,
             "financial_position": 0.20,
             "market_demand_competitiveness": 0.20,
             "business_proposal_viability": 0.25,
-            "value_chain_alignment": 0.10,
-            "inclusivity_sustainability": 0.20
+            "value_chain_alignment": 0.15,
+            "inclusivity_sustainability": 0.10
         }
 
     def check_eligibility(self, application, content):
@@ -272,41 +274,57 @@ class KJETAnalyzer:
         self.analysis_results["metadata"]["total_counties"] = len(self.counties_data)
 
     def load_cohort1_alternates(self):
-        """Load Rank 3 & 4 from Cohort 1 human results"""
+        """Load Rank 3 & 4 from Cohort 1 human results (County level)"""
         c1_path = self.ui_public_dir / "c1" / "kjet-human-final.json"
-        alternates = defaultdict(list)
+        all_alternates = defaultdict(list)
         if not c1_path.exists():
             print(f"Warning: Cohort 1 Alternates file not found at {c1_path}")
-            return alternates
+            return all_alternates
 
         try:
             with open(c1_path, 'r', encoding='utf-8') as f:
                 c1_data = json.load(f)
+                
+                # Group by county
+                county_groups = defaultdict(list)
                 for app in c1_data:
-                    rank = app.get("Ranking from composite score")
-                    if rank in [3, 4]:
-                        county = app.get("E2. County Mapping", "Unknown").title()
-                        alternates[county].append({
-                            "application_id": f"C1_{app.get('Application ID')}",
-                            "applicant_name": f"Cohort 1 Alternate ({app.get('Application ID')})",
-                            "county": county,
-                            "composite_score": app.get("TOTAL", 0),
-                            "weighted_score": app.get("TOTAL", 0), # Normalized to 100-point scale
-                            "is_c1_alternate": True,
-                            "scores": {
-                                "registration_track_record": app.get("A3.1", 0) / 20.0, # Rough mapping back to 5pt
-                                "financial_position": app.get("A3.2", 0) / 20.0,
-                                "market_demand_competitiveness": app.get("A3.3", 0) / 20.0,
-                                "business_proposal_viability": app.get("A3.4", 0) / 20.0,
-                                "value_chain_alignment": app.get("A3.5", 0) / 20.0,
-                                "inclusivity_sustainability": app.get("A3.6", 0) / 20.0,
-                                "composite_score": app.get("TOTAL", 0)
-                            }
-                        })
+                    county = app.get("E2. County Mapping", "Unknown").title()
+                    county_groups[county].append(app)
+                
+                # For each county, sort by TOTAL and pick rank 3 & 4 (index 2 & 3)
+                for county, apps in county_groups.items():
+                    # Sort descending by TOTAL
+                    sorted_apps = sorted(apps, key=lambda x: x.get("TOTAL", 0), reverse=True)
+                    
+                    # Pick 3rd and 4th if they exist
+                    for i in [2, 3]:
+                        if i < len(sorted_apps):
+                            app = sorted_apps[i]
+                            all_alternates[county].append({
+                                "application_id": app.get("Application ID"),
+                                "applicant_name": f"Cohort 1 Alternate ({app.get('Application ID')})",
+                                "county": county,
+                                "composite_score": app.get("TOTAL", 0),
+                                "weighted_score": app.get("TOTAL", 0),
+                                "is_c1_alternate": True,
+                                "scores": {
+                                    "registration_track_record": app.get("A3.1.1", app.get("A3.1", 0) / 20.0),
+                                    "financial_position": app.get("A3.2.1", app.get("A3.2", 0) / 20.0),
+                                    "market_demand_competitiveness": app.get("A3.3.1", app.get("A3.3", 0) / 20.0),
+                                    "business_proposal_viability": app.get("A3.4.1", app.get("A3.4", 0) / 20.0),
+                                    "value_chain_alignment": app.get("A3.5.1", app.get("A3.5", 0) / 20.0),
+                                    "inclusivity_sustainability": app.get("A3.6.1", app.get("A3.6", 0) / 20.0),
+                                    "composite_score": app.get("TOTAL", 0),
+                                    "Sum of weighted scores - Penalty(if any)": app.get("TOTAL", 0)
+                                },
+                                "Sum of weighted scores - Penalty(if any)": app.get("TOTAL", 0)
+                            })
         except Exception as e:
             print(f"Error loading C1 alternates: {e}")
+            import traceback
+            traceback.print_exc()
         
-        return alternates
+        return all_alternates
 
     def get_tier(self, scores):
         return self.strategy.get_tier_logic(scores)

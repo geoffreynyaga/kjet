@@ -1,8 +1,7 @@
 import { ApplicantCategories, CountyGroup, HumanApplicant } from '../types/index.ts';
+import { buildStaticDataUrls, fetchJsonWithFallback } from '../../../utils';
 import { getNumericScore, getPassFailStatus, processCountyName } from '../utils/index.ts';
 import { useEffect, useState } from 'react';
-
-import { buildStaticDataUrls, fetchJsonWithFallback } from '../../../utils';
 
 export function useHumanData() {
   const [groups, setGroups] = useState<CountyGroup[]>([]);
@@ -57,7 +56,7 @@ export function useHumanData() {
   return { groups, loading, error };
 }
 
-export function useCountySelection(groups: CountyGroup[]) {
+export function useCountySelection(groups: CountyGroup[], defaultExpandedRanks: number[] = [1, 2]) {
   const [selectedCounty, setSelectedCounty] = useState<string | null>(null);
   const [expandedRanks, setExpandedRanks] = useState<Set<number>>(new Set());
 
@@ -101,14 +100,14 @@ export function useCountySelection(groups: CountyGroup[]) {
       if (validHashCounty) {
         // Use county from hash if valid
         setSelectedCounty(validHashCounty.county);
-        setExpandedRanks(new Set([1, 2]));
+        setExpandedRanks(new Set(defaultExpandedRanks));
       } else {
         // Default to first known county
         const known = groups.filter(g => g.county !== 'UNKNOWN');
         const unknown = groups.find(g => g.county === 'UNKNOWN');
         const defaultCounty = known.length ? known[0].county : (unknown ? unknown.county : null);
         updateSelectedCounty(defaultCounty);
-        setExpandedRanks(new Set([1, 2]));
+        setExpandedRanks(new Set(defaultExpandedRanks));
       }
     }
   }, [groups]);
@@ -123,14 +122,14 @@ export function useCountySelection(groups: CountyGroup[]) {
         );
         if (validHashCounty && validHashCounty.county !== selectedCounty) {
           setSelectedCounty(validHashCounty.county);
-          setExpandedRanks(new Set([1, 2]));
+          setExpandedRanks(new Set(defaultExpandedRanks));
         }
       }
     };
 
     window.addEventListener('hashchange', handleHashChange);
     return () => window.removeEventListener('hashchange', handleHashChange);
-  }, [groups, selectedCounty]);
+  }, [groups, selectedCounty, defaultExpandedRanks]);
 
   const toggleExpand = (rank: number) => {
     const s = new Set(expandedRanks);
@@ -147,16 +146,16 @@ export function useCountySelection(groups: CountyGroup[]) {
   };
 }
 
-export function useApplicantCategories(currentGroup: CountyGroup | null): ApplicantCategories {
+export function useApplicantCategories(currentGroup: CountyGroup | null, topCandidateCount: number = 2): ApplicantCategories {
   return currentGroup ? (() => {
     // All applicants with positive scores (above zero)
     const positiveScored = currentGroup.applicants.filter(a => getNumericScore(a) > 0);
 
-    // Top two candidates (first two from the already sorted list)
-    const topTwo = positiveScored.slice(0, 2);
+    // Top ranked candidates (first N from the already sorted list)
+    const topTwo = positiveScored.slice(0, topCandidateCount);
 
-    // Other ranked candidates (exclude top two)
-    const otherRanked = positiveScored.slice(2);
+    // Other ranked candidates (exclude top ranked selection)
+    const otherRanked = positiveScored.slice(topCandidateCount);
 
     // Failed candidates (zero score or DQ status)
     const failed = currentGroup.applicants.filter(a =>

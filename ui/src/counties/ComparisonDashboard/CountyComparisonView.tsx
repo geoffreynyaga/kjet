@@ -2,6 +2,7 @@ import { ComparisonRow, CountyComparison, HumanApplicant, SortDirection, SortFie
 import React, { useEffect, useState } from 'react';
 import {
   checkPenalties,
+  getComparableHumanScore,
   createCriterionComparisons,
   determineAgreement,
   extractNumericId,
@@ -28,6 +29,9 @@ const CountyComparisonView: React.FC<CountyComparisonViewProps> = ({ county, hum
   const [error, setError] = useState<string | null>(null);
   const [sortField, setSortField] = useState<SortField>('humanRank');
   const [sortDirection, setSortDirection] = useState<SortDirection>('asc');
+  const cohort = typeof window !== 'undefined'
+    ? (new URLSearchParams(window.location.search).get('cohort') || 'latest').toLowerCase()
+    : 'latest';
 
   useEffect(() => {
     loadCountyComparison();
@@ -35,7 +39,7 @@ const CountyComparisonView: React.FC<CountyComparisonViewProps> = ({ county, hum
 
   console.log(county,"county at CountyComparisonView")
 
-//   console.log(humanData,"humanData at CountyComparisonView")
+  // console.log(JSON.stringify(humanData),"humanData at CountyComparisonView")
 
   const loadCountyComparison = async () => {
     try {
@@ -44,6 +48,10 @@ const CountyComparisonView: React.FC<CountyComparisonViewProps> = ({ county, hum
 
       // Filter human data for this specific county
       const humanCountyData = filterHumanDataByCounty(humanData, county);
+
+        console.log(JSON.stringify(humanCountyData.slice(0, 3)),'Sample human county values foirst three');
+
+
 
       console.log(`County filtering: "${county}" -> ${humanCountyData.length} human applications found`);
       if (humanCountyData.length > 0) {
@@ -86,7 +94,7 @@ const CountyComparisonView: React.FC<CountyComparisonViewProps> = ({ county, hum
       const humanId = humanApp['Application ID'];
       const numericId = extractNumericId(humanId);
       const humanRank = getHumanRank(humanApp, humanCountyData);
-      const humanScore = getHumanScore(humanApp);
+      const humanScore = getComparableHumanScore(humanApp, cohort);
       const humanStatus = getHumanStatus(humanApp);
 
       if (process.env.NODE_ENV !== 'production' && index < 3) {
@@ -161,13 +169,8 @@ const CountyComparisonView: React.FC<CountyComparisonViewProps> = ({ county, hum
       const llmStatus = isEligible ? 'Ranked' : 'Fail';
 
       const rankDifference = humanRank !== null && llmRank !== null ? llmRank - humanRank : null;
-      const scoreDifference = humanScore !== null && llmScore !== null ? llmScore - (humanScore / 20) : null; // Normalize human score to 5-point scale
-
-      // Custom agreement logic for pass/fail scenarios
-      const humanPassed = humanStatus?.toLowerCase() === 'pass';
-      const llmPassed = llmStatus === 'Ranked';
-
-      const agreement = (humanPassed === llmPassed) ? 'full' : 'disagreement';
+      const scoreDifference = humanScore !== null && llmScore !== null ? llmScore - humanScore : null;
+      const agreement = determineAgreement(humanStatus, llmStatus, rankDifference, scoreDifference);
       const penaltyInfo = checkPenalties(humanApp);
       const criterionComparisons = createCriterionComparisons(humanApp, isEligible ? llmApp : undefined);
 
@@ -203,7 +206,7 @@ const CountyComparisonView: React.FC<CountyComparisonViewProps> = ({ county, hum
     // Calculate statistics
     const totalApplications = humanCountyData.length;
     const humanEvaluated = humanCountyData.length;
-    const llmEvaluated = comparisonRows.filter(row => row.llmRank !== null || row.llmStatus === 'Ineligible').length;
+    const llmEvaluated = comparisonRows.length;
     const perfectMatches = comparisonRows.filter(row => row.agreement === 'full').length;
     const partialMatches = comparisonRows.filter(row => row.agreement === 'partial').length;
     const disagreements = comparisonRows.filter(row => row.agreement === 'disagreement').length;
@@ -371,9 +374,9 @@ const CountyComparisonView: React.FC<CountyComparisonViewProps> = ({ county, hum
                 <th className="px-4 py-3 text-xs font-medium tracking-wider text-center text-green-500 uppercase">Human Score</th>
                 <th className="px-4 py-3 text-xs font-medium tracking-wider text-center text-green-500 uppercase">Human Status</th>
                 <th className="px-4 py-3 text-xs font-medium tracking-wider text-center text-orange-500 uppercase">Algorithm Rank</th>
+                <th className="px-4 py-3 text-xs font-medium tracking-wider text-center text-orange-500 uppercase">Algorithm Score</th>
                 <th className="px-4 py-3 text-xs font-medium tracking-wider text-center text-orange-500 uppercase">Algorithm Status</th>
                 <th className="px-4 py-3 text-xs font-medium tracking-wider text-center text-gray-500 uppercase">Agreement</th>
-                <th className="px-4 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase">Actions</th>
               </tr>
             </thead>
             <tbody className="bg-white divide-y divide-gray-200">

@@ -6,6 +6,7 @@ Contains reusable functions for text processing, PDF extraction, and data parsin
 
 import re
 import subprocess
+import warnings
 from pathlib import Path
 
 APPLICATION_FOLDER_PATTERNS = [
@@ -79,7 +80,9 @@ def extract_with_pypdf2_lenient(pdf_path):
     import PyPDF2
     try:
         with open(pdf_path, 'rb') as file:
-            reader = PyPDF2.PdfReader(file, strict=False)
+            with warnings.catch_warnings():
+                warnings.filterwarnings("ignore", category=UserWarning, message=r".*Advanced encoding /90ms-RKSJ-[HV].*")
+                reader = PyPDF2.PdfReader(file, strict=False)
             text = ""
             for page in reader.pages:
                 try:
@@ -103,7 +106,9 @@ def extract_with_pypdf2_strict(pdf_path):
     import PyPDF2
     try:
         with open(pdf_path, 'rb') as file:
-            reader = PyPDF2.PdfReader(file)
+            with warnings.catch_warnings():
+                warnings.filterwarnings("ignore", category=UserWarning, message=r".*Advanced encoding /90ms-RKSJ-[HV].*")
+                reader = PyPDF2.PdfReader(file)
             text = ""
             for page in reader.pages:
                 page_text = page.extract_text()
@@ -119,7 +124,31 @@ def extract_with_pdftotext(pdf_path):
     try:
         result = subprocess.run(['pdftotext', str(pdf_path), '-'],
                               capture_output=True, text=True, timeout=30)
-        return result.stdout if result.returncode == 0 else None
+        if result.returncode == 0:
+            return result.stdout
+
+        stderr = (result.stderr or "").strip()
+        if stderr:
+            print(f"pdftotext warning for {pdf_path}: {stderr[:300]}")
+        return None
+    except (subprocess.TimeoutExpired, FileNotFoundError):
+        return None
+
+
+def repair_pdf(pdf_path):
+    """Try to repair a corrupted PDF using mutool."""
+    try:
+        # Check if mutool is available
+        import shutil
+        if not shutil.which('mutool'):
+            return None
+            
+        output_path = str(pdf_path).replace(".pdf", "_repaired.pdf")
+        result = subprocess.run(['mutool', 'clean', str(pdf_path), output_path],
+                              capture_output=True, text=True, timeout=30)
+        if result.returncode == 0 and Path(output_path).exists():
+            return Path(output_path)
+        return None
     except (subprocess.TimeoutExpired, FileNotFoundError):
         return None
 

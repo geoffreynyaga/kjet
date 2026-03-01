@@ -104,7 +104,7 @@ function ComparisonDashboard() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <div className="mx-auto max-w-7xl">
+        <div className="w-full">
           <div className="flex items-center justify-between">
             <div>
               <h1 className="mb-2 text-4xl font-bold text-gray-900">Human vs Algorithm Comparison</h1>
@@ -121,7 +121,7 @@ function ComparisonDashboard() {
         </div>
       </motion.header>
 
-      <div className="flex mx-auto max-w-7xl">
+      <div className="flex w-full">
         {/* County Sidebar */}
         <motion.div
           className="sticky top-0 h-screen overflow-y-auto bg-white shadow-lg w-80"

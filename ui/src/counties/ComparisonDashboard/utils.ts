@@ -2,8 +2,18 @@ import { AgreementType, CriterionComparison, HumanApplicant, LLMIneligibleApplic
 
 import { buildStaticDataUrl } from '../../utils';
 
-const HUMAN_SCORE_FIELD = 'Sum of weighted scores - Penalty(if any)';
-const HUMAN_RANK_FIELD = 'Ranking from composite score';
+const HUMAN_SCORE_FIELDS = ['Human Score', 'Sum of weighted scores - Penalty(if any)', 'TOTAL'];
+const HUMAN_RANK_FIELDS = ['Human Rank', 'Ranking from composite score'];
+const HUMAN_STATUS_FIELDS = ['PASS/FAIL', 'Status'];
+
+const LATEST_COMPARISON_WEIGHTS: Array<{ fields: string[]; weight: number }> = [
+  { fields: ['A3.1 Registration & Track Record', 'A3.1 Registration & Track Record '], weight: 0.10 },
+  { fields: ['A3.2 Financial Position', 'A3.2 Financial Position '], weight: 0.20 },
+  { fields: ['A3.3 Market Demand & Competitiveness', 'A3.3 Market Demand & Competitiveness '], weight: 0.20 },
+  { fields: ['A3.4 Business Proposal / Growth Viability', 'A3.4 Business Proposal / Growth Viability '], weight: 0.25 },
+  { fields: ['A3.5 Value Chain Alignment & Role', 'A3.5 Value Chain Alignment & Role '], weight: 0.15 },
+  { fields: ['A3.6 Inclusivity & Sustainability', 'A3.6 Inclusivity & Sustainability '], weight: 0.10 },
+];
 
 const parseNumericValue = (value: unknown): number | null => {
   if (value === null || value === undefined) return null;
@@ -12,30 +22,74 @@ const parseNumericValue = (value: unknown): number | null => {
   const normalized = String(value).trim().replace(/,/g, '');
   if (!normalized) return null;
 
+  if (normalized.toLowerCase() === 'dq' || normalized.toLowerCase() === 'fail') return null;
+
   const parsed = Number(normalized);
   return Number.isFinite(parsed) ? parsed : null;
 };
 
 export const getHumanScore = (humanApp: HumanApplicant): number | null => {
-  return parseNumericValue(humanApp[HUMAN_SCORE_FIELD]);
+  for (const field of HUMAN_SCORE_FIELDS) {
+    const val = parseNumericValue(humanApp[field]);
+    if (val !== null) return val;
+  }
+  return null;
+};
+
+export const getComparableHumanScore = (humanApp: HumanApplicant, cohort: string): number | null => {
+  const rawHumanScore = getHumanScore(humanApp);
+  if (cohort !== 'latest') {
+    return rawHumanScore;
+  }
+
+  let weightedTotal = 0;
+  for (const criterion of LATEST_COMPARISON_WEIGHTS) {
+    const criterionValue = criterion.fields
+      .map((field) => humanApp[field])
+      .find((value) => value !== undefined && value !== null && String(value).trim() !== '');
+    const criterionScore = parseNumericValue(criterionValue);
+    if (criterionScore === null) {
+      return rawHumanScore;
+    }
+
+    weightedTotal += (criterionScore / 5) * 100 * criterion.weight;
+  }
+
+  return Number(weightedTotal.toFixed(2));
 };
 
 const getHumanCompositeRank = (humanApp: HumanApplicant): number | null => {
-  return parseNumericValue(humanApp[HUMAN_RANK_FIELD]);
+  for (const field of HUMAN_RANK_FIELDS) {
+    const val = parseNumericValue(humanApp[field]);
+    if (val !== null) return val;
+  }
+  return null;
 };
 
 export const getHumanStatus = (humanApp: HumanApplicant): string => {
-  const explicitStatus = String(humanApp['PASS/FAIL'] || '').trim();
-  if (explicitStatus) {
-    return explicitStatus;
+  let explicitStatus = '';
+  for (const field of HUMAN_STATUS_FIELDS) {
+    const s = String(humanApp[field] || '').trim();
+    if (s && s.toLowerCase() !== 'unknown') {
+      explicitStatus = s;
+      break;
+    }
   }
 
-  const rankRaw = String(humanApp[HUMAN_RANK_FIELD] || '').toLowerCase();
-  if (rankRaw.includes('dq') || rankRaw.includes('fail') || rankRaw.includes('ineligible')) {
+  if (explicitStatus) {
+    return explicitStatus.charAt(0).toUpperCase() + explicitStatus.slice(1).toLowerCase();
+  }
+
+  const rankRaw = HUMAN_RANK_FIELDS
+    .map(field => String(humanApp[field] || '').toLowerCase())
+    .find(val => val.includes('dq') || val.includes('fail') || val.includes('ineligible'));
+  
+  if (rankRaw) {
     return 'Fail';
   }
 
-  if (getHumanCompositeRank(humanApp) !== null) {
+  const rank = getHumanCompositeRank(humanApp);
+  if (rank !== null && rank > 0) {
     return 'Pass';
   }
 
@@ -101,44 +155,75 @@ export const createCriterionComparisons = (
 ): CriterionComparison[] => {
   const comparisons: CriterionComparison[] = [];
 
+  const getHumanValue = (candidateFields: string[]): unknown => {
+    for (const field of candidateFields) {
+      if (Object.prototype.hasOwnProperty.call(humanApp, field) && humanApp[field] !== undefined && humanApp[field] !== null && String(humanApp[field]).trim() !== '') {
+        return humanApp[field];
+      }
+    }
+    return null;
+  };
+
   // Define the mapping between human and LLM criteria
-  // Note: Field names must match exactly (including trailing spaces!)
+  // Supports known column-name variations from human CSV conversions.
   const criteriaMapping = [
     {
-      human: { scoreField: 'A3.1 Registration & Track Record ', reasonField: 'Logic' },
+      human: {
+        scoreFields: ['A3.1 Registration & Track Record', 'A3.1 Registration & Track Record '],
+        reasonFields: ['Logic', 'Logic.0']
+      },
       llm: 'S1_Registration_Track_Record_5%',
       name: 'Registration & Track Record'
     },
     {
-      human: { scoreField: 'A3.2 Financial Position ', reasonField: 'Logic.1' },
+      human: {
+        scoreFields: ['A3.2 Financial Position', 'A3.2 Financial Position '],
+        reasonFields: ['Logic.1', 'Logic']
+      },
       llm: 'S2_Financial_Position_20%',
       name: 'Financial Position'
     },
     {
-      human: { scoreField: 'A3.3 Market Demand & Competitiveness', reasonField: 'Logic.2' },
+      human: {
+        scoreFields: ['A3.3 Market Demand & Competitiveness', 'A3.3 Market Demand & Competitiveness '],
+        reasonFields: ['Logic.2', 'Logic.1']
+      },
       llm: 'S3_Market_Demand_Competitiveness_20%',
       name: 'Market Demand & Competitiveness'
     },
     {
-      human: { scoreField: 'A3.4 Business Proposal / Growth Viability', reasonField: 'Logic.3' },
+      human: {
+        scoreFields: ['A3.4 Business Proposal / Growth Viability'],
+        reasonFields: [
+          'Logic.3',
+          'vague plans, no detailed targets, unclear sourcing',
+          'Logic.2'
+        ]
+      },
       llm: 'S4_Business_Proposal_Viability_25%',
       name: 'Business Proposal / Growth Viability'
     },
     {
-      human: { scoreField: 'A3.5 Value Chain Alignment & Role', reasonField: 'Logic.4' },
+      human: {
+        scoreFields: ['A3.5 Value Chain Alignment & Role'],
+        reasonFields: ['Logic.3', 'Logic.2']
+      },
       llm: 'S5_Value_Chain_Alignment_10%',
       name: 'Value Chain Alignment & Role'
     },
     {
-      human: { scoreField: 'A3.6 Inclusivity & Sustainability ', reasonField: 'Logic.5' },
+      human: {
+        scoreFields: ['A3.6 Inclusivity & Sustainability ', 'A3.6 Inclusivity & Sustainability'],
+        reasonFields: ['Logic.5', 'Logic.4']
+      },
       llm: 'S6_Inclusivity_Sustainability_20%',
       name: 'Inclusivity & Sustainability'
     }
   ];
 
   criteriaMapping.forEach(criteria => {
-    const humanScore = Number(humanApp[criteria.human.scoreField]) || null;
-    const humanReason = humanApp[criteria.human.reasonField] || 'No reason provided';
+    const humanScore = parseNumericValue(getHumanValue(criteria.human.scoreFields));
+    const humanReason = String(getHumanValue(criteria.human.reasonFields) || 'No reason provided');
 
     const llmBreakdown = llmRankedApp?.score_breakdown?.[criteria.llm];
     const llmScore = llmBreakdown?.score || null;
@@ -237,9 +322,9 @@ export const determineAgreement = (
 
   if (humanPassed && llmPassed) {
     // Both passed - check rank and score differences
-    if (rankDiff !== null && Math.abs(rankDiff) <= 2 && scoreDiff !== null && Math.abs(scoreDiff) <= 0.5) {
+    if (rankDiff !== null && Math.abs(rankDiff) <= 2 && scoreDiff !== null && Math.abs(scoreDiff) <= 10) {
       return 'full';
-    } else if (rankDiff !== null && Math.abs(rankDiff) <= 5) {
+    } else if ((rankDiff !== null && Math.abs(rankDiff) <= 5) || (scoreDiff !== null && Math.abs(scoreDiff) <= 20)) {
       return 'partial';
     } else {
       return 'disagreement';

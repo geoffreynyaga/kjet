@@ -14,7 +14,7 @@
       "applicant_name": "MAKIOU DAIRY FARMERS COOPERATIVE SOCIETY",
       "eligibility_status": "ELIGIBLE",
       "rank": 1,
-      "composite_score": 84.0,
+      "composite_score": 82.4,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
           "score": 5.0,
@@ -25,53 +25,20 @@
           "reason": "2024 Revenue: KES 50,000,000.00; Accounting system: QuickBooks."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 4.0,
+          "score": 4.4,
           "reason": "B2B Sales: 30.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.4,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Aligned with Dairy priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
-      "application_id": "Makueni_I2M6",
-      "applicant_name": "PEKATI GENERAL SUPPLIES",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 2,
-      "composite_score": 82.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
-          "reason": "Established in 2023 (2 years); Private Company status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 4.0,
-          "reason": "2024 Revenue: KES 800,000.00; Accounting system: None."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 5.0,
-          "reason": "B2B Sales: 62.0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with Textiles priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
+          "score": 3.2,
+          "reason": "Limited evidence of inclusivity profile."
         }
       }
     },
@@ -79,8 +46,8 @@
       "application_id": "Makueni_FCZJ",
       "applicant_name": "MAKUENI DAIRY FARMERS COOPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 3,
-      "composite_score": 80.0,
+      "rank": 2,
+      "composite_score": 80.4,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
           "score": 5.0,
@@ -91,20 +58,20 @@
           "reason": "2024 Revenue: KES 25,568,788.00; Accounting system: None."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 3.0,
+          "score": 3.9,
           "reason": "B2B Sales: 20.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.4,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Aligned with Dairy priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
+          "score": 3.2,
+          "reason": "Limited evidence of inclusivity profile."
         }
       }
     },
@@ -112,65 +79,98 @@
       "application_id": "Makueni_FRRU",
       "applicant_name": "Trueways Enterprises Ltd",
       "eligibility_status": "ELIGIBLE",
-      "rank": 4,
-      "composite_score": 80.0,
+      "rank": 3,
+      "composite_score": 76.8,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
           "score": 5.0,
           "reason": "Established in 2008 (17 years); Private Company status."
         },
         "S2_Financial_Position_20%": {
-          "score": 4.0,
+          "score": 2.7,
           "reason": "2024 Revenue: KES 470,000.00; Accounting system: QuickBooks."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "B2B Sales: 50.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.4,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Aligned with Edible Oils priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
+          "score": 3.5,
+          "reason": "Limited evidence of inclusivity profile."
         }
       }
     },
     {
-      "application_id": "Makueni_JXMY",
-      "applicant_name": "MBOONI RANCHING & DAIRY CO-OPERATIVE SOCIETY LTD",
+      "application_id": "Makueni_HMIX",
+      "applicant_name": "KIKIMA DAIRY CO-OPERATIVE SOCIETY",
       "eligibility_status": "ELIGIBLE",
-      "rank": 5,
-      "composite_score": 76.0,
+      "rank": 4,
+      "composite_score": 75.6,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
           "score": 5.0,
-          "reason": "Established in 1964 (61 years); Cooperative status."
+          "reason": "Established in 2014 (11 years); Cooperative status."
         },
         "S2_Financial_Position_20%": {
-          "score": 5.0,
-          "reason": "2024 Revenue: KES 9,446,748.00; Accounting system: None."
+          "score": 4.2,
+          "reason": "2024 Revenue: KES 3,012,239.00; Accounting system: QuickBooks."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 2.0,
-          "reason": "B2B Sales: 0%; Market strategy reported."
+          "score": 5.0,
+          "reason": "B2B Sales: 60.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.4,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with other priority value chain."
+          "score": 5.0,
+          "reason": "Aligned with Dairy priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
+          "score": 1.7,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Makueni_I2M6",
+      "applicant_name": "PEKATI GENERAL SUPPLIES",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 5,
+      "composite_score": 74.6,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.6,
+          "reason": "Established in 2023 (2 years); Private Company status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2.8,
+          "reason": "2024 Revenue: KES 800,000.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
           "score": 5.0,
-          "reason": "Woman-owned enterprise"
+          "reason": "B2B Sales: 62.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.4,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Aligned with Textiles priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.2,
+          "reason": "Limited evidence of inclusivity profile."
         }
       }
     },
@@ -179,7 +179,7 @@
       "applicant_name": "Kikima farmers cooperative society limited",
       "eligibility_status": "ELIGIBLE",
       "rank": 6,
-      "composite_score": 76.0,
+      "composite_score": 72.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
           "score": 5.0,
@@ -190,52 +190,85 @@
           "reason": "2024 Revenue: KES 49,050,698.00; Accounting system: None."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 2.0,
-          "reason": "B2B Sales: 0%; Market strategy reported."
+          "score": 2.4,
+          "reason": "B2B Sales: 0.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.4,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 3.8,
           "reason": "Aligned with Coffee priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
+          "score": 3.2,
+          "reason": "Limited evidence of inclusivity profile."
         }
       }
     },
     {
-      "application_id": "Makueni_HMIX",
-      "applicant_name": "KIKIMA DAIRY CO-OPERATIVE SOCIETY",
+      "application_id": "Makueni_JXMY",
+      "applicant_name": "MBOONI RANCHING & DAIRY CO-OPERATIVE SOCIETY LTD",
       "eligibility_status": "ELIGIBLE",
       "rank": 7,
-      "composite_score": 72.0,
+      "composite_score": 71.7,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
           "score": 5.0,
-          "reason": "Established in 2014 (11 years); Cooperative status."
+          "reason": "Established in 1964 (61 years); Cooperative status."
         },
         "S2_Financial_Position_20%": {
-          "score": 5.0,
-          "reason": "2024 Revenue: KES 3,012,239.00; Accounting system: QuickBooks."
+          "score": 4.8,
+          "reason": "2024 Revenue: KES 9,446,748.00; Accounting system: None."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 5.0,
-          "reason": "B2B Sales: 60.0%; Market strategy reported."
+          "score": 2.4,
+          "reason": "B2B Sales: 0.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.5,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 3.8,
+          "reason": "Aligned with other priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.2,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Makueni_OFHH",
+      "applicant_name": "NGUU/MASUMBA DAIRY FARMERS CO-OPERATIVE SOCIETY LIMITED",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 8,
+      "composite_score": 68.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.6,
+          "reason": "Established in 2019 (6 years); Cooperative status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "2024 Revenue: KES 13,032,927.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 2.4,
+          "reason": "B2B Sales: 0.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.4,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
           "reason": "Aligned with Dairy priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 1.0,
+          "score": 1.7,
           "reason": "Limited evidence of inclusivity profile."
         }
       }
@@ -244,32 +277,32 @@
       "application_id": "Makueni_KU5A",
       "applicant_name": "KALAWA FARMERS SAVINGS AND CREDIT SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 8,
-      "composite_score": 70.0,
+      "rank": 9,
+      "composite_score": 64.3,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
+          "score": 3.7,
           "reason": "Established in 2023 (2 years); Cooperative status."
         },
         "S2_Financial_Position_20%": {
-          "score": 4.0,
+          "score": 2.8,
           "reason": "2024 Revenue: KES 748,000.00; Accounting system: None."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 2.0,
-          "reason": "B2B Sales: 0%; Market strategy reported."
+          "score": 2.4,
+          "reason": "B2B Sales: 0.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.4,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Aligned with Dairy priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
+          "score": 3.2,
+          "reason": "Limited evidence of inclusivity profile."
         }
       }
     },
@@ -277,64 +310,31 @@
       "application_id": "Makueni_UYK6",
       "applicant_name": "ITITU P.I.W.D SELF HELP GROUP",
       "eligibility_status": "ELIGIBLE",
-      "rank": 9,
-      "composite_score": 62.0,
+      "rank": 10,
+      "composite_score": 62.6,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
+          "score": 3.6,
           "reason": "Established in 2023 (2 years); Cooperative status."
         },
         "S2_Financial_Position_20%": {
-          "score": 2.0,
+          "score": 2.3,
           "reason": "2024 Revenue: KES 10,000.00; Accounting system: None."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 2.0,
-          "reason": "B2B Sales: 0%; Market strategy reported."
+          "score": 2.4,
+          "reason": "B2B Sales: 0.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.4,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Aligned with Leather priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
-      "application_id": "Makueni_OFHH",
-      "applicant_name": "NGUU/MASUMBA DAIRY FARMERS CO-OPERATIVE SOCIETY LIMITED",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 10,
-      "composite_score": 59.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 4.0,
-          "reason": "Established in 2019 (6 years); Cooperative status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 5.0,
-          "reason": "2024 Revenue: KES 13,032,927.00; Accounting system: None."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 2.0,
-          "reason": "B2B Sales: 0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with Dairy priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 1.0,
+          "score": 3.3,
           "reason": "Limited evidence of inclusivity profile."
         }
       }
@@ -344,30 +344,30 @@
       "applicant_name": "KALAWA DAIRY FARMERS CO-OPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
       "rank": 11,
-      "composite_score": 52.0,
+      "composite_score": 60.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
           "score": 5.0,
           "reason": "Established in 2004 (21 years); Cooperative status."
         },
         "S2_Financial_Position_20%": {
-          "score": 3.0,
+          "score": 2.7,
           "reason": "2024 Revenue: KES 67.00; Accounting system: Zoho Books."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 2.0,
-          "reason": "B2B Sales: 0%; Market strategy reported."
+          "score": 2.6,
+          "reason": "B2B Sales: 0.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.4,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Aligned with Dairy priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 1.0,
+          "score": 1.7,
           "reason": "Limited evidence of inclusivity profile."
         }
       }

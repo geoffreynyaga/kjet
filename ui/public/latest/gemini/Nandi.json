@@ -14,7 +14,7 @@
       "applicant_name": "CHEBARUS MARKETING COOPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
       "rank": 1,
-      "composite_score": 88.0,
+      "composite_score": 86.5,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
           "score": 5.0,
@@ -29,16 +29,16 @@
           "reason": "B2B Sales: 100.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.5,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Aligned with Dairy priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
+          "score": 3.5,
+          "reason": "Limited evidence of inclusivity profile."
         }
       }
     },
@@ -47,7 +47,7 @@
       "applicant_name": "TANYKINA DARIRY PLANT LIMITED",
       "eligibility_status": "ELIGIBLE",
       "rank": 2,
-      "composite_score": 88.0,
+      "composite_score": 85.2,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
           "score": 5.0,
@@ -62,313 +62,16 @@
           "reason": "B2B Sales: 95.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.4,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Aligned with Dairy priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
-      "application_id": "Nandi_YUHN",
-      "applicant_name": "CHESTENA TECHNOLOGY ENTERPRISES",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 3,
-      "composite_score": 84.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 5.0,
-          "reason": "Established in 2012 (13 years); MSME Association status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 5.0,
-          "reason": "2024 Revenue: KES 1,000,000.00; Accounting system: Other."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 4.0,
-          "reason": "B2B Sales: 25.0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with other priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
-      "application_id": "Nandi_NB32",
-      "applicant_name": "GEOSHA BUILDING AND CONSTRUCTION",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 4,
-      "composite_score": 78.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
-          "reason": "Established in 2022 (3 years); MSME Association status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 3.0,
-          "reason": "2024 Revenue: KES 279,000.00; Accounting system: None."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 5.0,
-          "reason": "B2B Sales: 55.0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with Construction priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
-      "application_id": "Nandi_3MFT",
-      "applicant_name": "Kelvin",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 5,
-      "composite_score": 76.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 1.0,
-          "reason": "Established in 2025 (0 years); Private Company status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 4.0,
-          "reason": "2024 Revenue: KES 250,000.00; Accounting system: Wave."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 4.0,
-          "reason": "B2B Sales: 25.0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with other priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
-      "application_id": "Nandi_E5HD",
-      "applicant_name": "SIGILAI COFFEE FARMERS COOPERATIVE SOCIETY",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 6,
-      "composite_score": 76.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 5.0,
-          "reason": "Established in 2015 (10 years); Cooperative status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 5.0,
-          "reason": "2024 Revenue: KES 960,000.00; Accounting system: QuickBooks."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 2.0,
-          "reason": "B2B Sales: 0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with Coffee priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
-      "application_id": "Nandi_G258",
-      "applicant_name": "KOIMET FARMERS COOPERATIVE SOCIETY LTD",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 7,
-      "composite_score": 76.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 5.0,
-          "reason": "Established in 2011 (14 years); Cooperative status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 5.0,
-          "reason": "2024 Revenue: KES 41,928,371.00; Accounting system: None."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 2.0,
-          "reason": "B2B Sales: 0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with Coffee priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
-      "application_id": "Nandi_DSH5",
-      "applicant_name": "CHEBOKAPTICH SAVINGS AND CREDIT CO-OPERATIVE SOCIETY LIMITED",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 8,
-      "composite_score": 76.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 5.0,
-          "reason": "Established in 2015 (10 years); Cooperative status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 5.0,
-          "reason": "2024 Revenue: KES 2,688,435.00; Accounting system: Other."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 2.0,
-          "reason": "B2B Sales: 0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with Tea priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
-      "application_id": "Nandi_NJAG",
-      "applicant_name": "KIPSIELE FARMERS CO-OPERATIVE SOCIETY LIMITED",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 9,
-      "composite_score": 74.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
-          "reason": "Established in 2022 (3 years); Cooperative status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 5.0,
-          "reason": "2024 Revenue: KES 154,133,799.00; Accounting system: QuickBooks."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 2.0,
-          "reason": "B2B Sales: 0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with Coffee priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
-      "application_id": "Nandi_ZGVY",
-      "applicant_name": "KIPSANGUI DAIRY FARMERS CO-OPERATIVE SOCIETY LIMITED",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 10,
-      "composite_score": 71.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 4.0,
-          "reason": "Established in 2019 (6 years); Cooperative status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 5.0,
-          "reason": "2024 Revenue: KES 18,000,000.00; Accounting system: None."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 5.0,
-          "reason": "B2B Sales: 95.0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with Dairy priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 1.0,
+          "score": 3.3,
           "reason": "Limited evidence of inclusivity profile."
-        }
-      }
-    },
-    {
-      "application_id": "Nandi_4D1B",
-      "applicant_name": "TERIK TRADERS SAVINGS AND CREDIT CO-OPERATIVE SOCIETY LIMITED",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 11,
-      "composite_score": 70.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
-          "reason": "Established in 2023 (2 years); Cooperative status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 3.0,
-          "reason": "2024 Revenue: KES 210,000.00; Accounting system: None."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 3.0,
-          "reason": "B2B Sales: 10.0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with Dairy priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
         }
       }
     },
@@ -376,11 +79,11 @@
       "application_id": "Nandi_TO4U",
       "applicant_name": "KAPLAMAI TEA FARMERS CO-OPERATIVE SOCIETY LTD",
       "eligibility_status": "ELIGIBLE",
-      "rank": 12,
-      "composite_score": 70.0,
+      "rank": 3,
+      "composite_score": 79.3,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
+          "score": 4.2,
           "reason": "Established in 2022 (3 years); Cooperative status."
         },
         "S2_Financial_Position_20%": {
@@ -392,15 +95,180 @@
           "reason": "B2B Sales: 100.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.5,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Aligned with Tea priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 1.0,
+          "score": 1.9,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Nandi_ZGVY",
+      "applicant_name": "KIPSANGUI DAIRY FARMERS CO-OPERATIVE SOCIETY LIMITED",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 4,
+      "composite_score": 78.8,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.6,
+          "reason": "Established in 2019 (6 years); Cooperative status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "2024 Revenue: KES 18,000,000.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "B2B Sales: 95.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.4,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Aligned with Dairy priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 1.8,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Nandi_YUHN",
+      "applicant_name": "CHESTENA TECHNOLOGY ENTERPRISES",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 5,
+      "composite_score": 75.2,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Established in 2012 (13 years); MSME Association status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.7,
+          "reason": "2024 Revenue: KES 1,000,000.00; Accounting system: Other."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.4,
+          "reason": "B2B Sales: 25.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.4,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 3.8,
+          "reason": "Aligned with other priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.3,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Nandi_G258",
+      "applicant_name": "KOIMET FARMERS COOPERATIVE SOCIETY LTD",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 6,
+      "composite_score": 73.2,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Established in 2011 (14 years); Cooperative status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "2024 Revenue: KES 41,928,371.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 2.4,
+          "reason": "B2B Sales: 0.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.4,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 3.8,
+          "reason": "Aligned with Coffee priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.5,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Nandi_NJAG",
+      "applicant_name": "KIPSIELE FARMERS CO-OPERATIVE SOCIETY LIMITED",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 7,
+      "composite_score": 72.8,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.2,
+          "reason": "Established in 2022 (3 years); Cooperative status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 5.0,
+          "reason": "2024 Revenue: KES 154,133,799.00; Accounting system: QuickBooks."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 2.5,
+          "reason": "B2B Sales: 0.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.4,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 3.8,
+          "reason": "Aligned with Coffee priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.5,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Nandi_NB32",
+      "applicant_name": "GEOSHA BUILDING AND CONSTRUCTION",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 8,
+      "composite_score": 72.4,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.8,
+          "reason": "Established in 2022 (3 years); MSME Association status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2.3,
+          "reason": "2024 Revenue: KES 279,000.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.9,
+          "reason": "B2B Sales: 55.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.4,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Aligned with Construction priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.2,
           "reason": "Limited evidence of inclusivity profile."
         }
       }
@@ -409,31 +277,64 @@
       "application_id": "Nandi_4MZ6",
       "applicant_name": "KOLONGEI VISION YOUTH GROUP",
       "eligibility_status": "ELIGIBLE",
-      "rank": 13,
-      "composite_score": 68.0,
+      "rank": 9,
+      "composite_score": 71.3,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
           "score": 5.0,
           "reason": "Established in 2015 (10 years); Other status."
         },
         "S2_Financial_Position_20%": {
-          "score": 5.0,
+          "score": 3.2,
           "reason": "2024 Revenue: KES 575,000.00; Accounting system: QuickBooks."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 4.0,
+          "score": 4.5,
           "reason": "B2B Sales: 30.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.5,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Aligned with Dairy priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 1.0,
+          "score": 2.0,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Nandi_DSH5",
+      "applicant_name": "CHEBOKAPTICH SAVINGS AND CREDIT CO-OPERATIVE SOCIETY LIMITED",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 10,
+      "composite_score": 71.2,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Established in 2015 (10 years); Cooperative status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 4.2,
+          "reason": "2024 Revenue: KES 2,688,435.00; Accounting system: Other."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 2.4,
+          "reason": "B2B Sales: 0.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.4,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Aligned with Tea priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.2,
           "reason": "Limited evidence of inclusivity profile."
         }
       }
@@ -442,31 +343,130 @@
       "application_id": "Nandi_R0UD",
       "applicant_name": "TEIGUT COMPANY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 14,
-      "composite_score": 63.0,
+      "rank": 11,
+      "composite_score": 70.8,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
-          "score": 4.0,
+          "score": 4.6,
           "reason": "Established in 2020 (5 years); Private Company status."
         },
         "S2_Financial_Position_20%": {
-          "score": 5.0,
+          "score": 4.2,
           "reason": "2024 Revenue: KES 4,000,000.00; Accounting system: QuickBooks."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 3.0,
+          "score": 3.9,
           "reason": "B2B Sales: 20.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.4,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Aligned with Construction priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 1.0,
+          "score": 1.7,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Nandi_4D1B",
+      "applicant_name": "TERIK TRADERS SAVINGS AND CREDIT CO-OPERATIVE SOCIETY LIMITED",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 12,
+      "composite_score": 69.1,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.6,
+          "reason": "Established in 2023 (2 years); Cooperative status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2.3,
+          "reason": "2024 Revenue: KES 210,000.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.9,
+          "reason": "B2B Sales: 10.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.5,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Aligned with Dairy priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.3,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Nandi_3MFT",
+      "applicant_name": "Kelvin",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 13,
+      "composite_score": 67.9,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 2.1,
+          "reason": "Established in 2025 (0 years); Private Company status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2.7,
+          "reason": "2024 Revenue: KES 250,000.00; Accounting system: Wave."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.4,
+          "reason": "B2B Sales: 25.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.4,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 3.8,
+          "reason": "Aligned with other priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.2,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Nandi_E5HD",
+      "applicant_name": "SIGILAI COFFEE FARMERS COOPERATIVE SOCIETY",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 14,
+      "composite_score": 67.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Established in 2015 (10 years); Cooperative status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.2,
+          "reason": "2024 Revenue: KES 960,000.00; Accounting system: QuickBooks."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 2.5,
+          "reason": "B2B Sales: 0.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.6,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 3.8,
+          "reason": "Aligned with Coffee priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.4,
           "reason": "Limited evidence of inclusivity profile."
         }
       }
@@ -476,7 +476,7 @@
       "applicant_name": "Kapkiyai Multi-purpose Co-oprative Society ltd",
       "eligibility_status": "ELIGIBLE",
       "rank": 15,
-      "composite_score": 60.0,
+      "composite_score": 66.4,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
           "score": 5.0,
@@ -487,52 +487,19 @@
           "reason": "2024 Revenue: KES 39,518,045.00; Accounting system: None."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 2.0,
-          "reason": "B2B Sales: 0%; Market strategy reported."
+          "score": 2.5,
+          "reason": "B2B Sales: 0.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.4,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 3.8,
           "reason": "Aligned with Coffee priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 1.0,
-          "reason": "Limited evidence of inclusivity profile."
-        }
-      }
-    },
-    {
-      "application_id": "Nandi_NRBB",
-      "applicant_name": "EWAAT FARMERS CO-0PERATIVE SOCIETY",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 16,
-      "composite_score": 59.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 4.0,
-          "reason": "Established in 2019 (6 years); Cooperative status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 4.0,
-          "reason": "2024 Revenue: KES 618,250.00; Accounting system: None."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 3.0,
-          "reason": "B2B Sales: 15.0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with Coffee priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 1.0,
+          "score": 1.7,
           "reason": "Limited evidence of inclusivity profile."
         }
       }
@@ -541,31 +508,64 @@
       "application_id": "Nandi_ICSK",
       "applicant_name": "ROTUMO ENTERPRISE LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 17,
-      "composite_score": 52.0,
+      "rank": 16,
+      "composite_score": 64.2,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
-          "score": 1.0,
+          "score": 2.2,
           "reason": "Established in 2025 (0 years); Private Company status."
         },
         "S2_Financial_Position_20%": {
-          "score": 2.0,
+          "score": 1.7,
           "reason": "2024 Revenue: KES 0.00; Accounting system: QuickBooks."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "B2B Sales: 45.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.6,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Aligned with Construction priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 1.0,
+          "score": 1.8,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Nandi_NRBB",
+      "applicant_name": "EWAAT FARMERS CO-0PERATIVE SOCIETY",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 17,
+      "composite_score": 64.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.6,
+          "reason": "Established in 2019 (6 years); Cooperative status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2.8,
+          "reason": "2024 Revenue: KES 618,250.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.9,
+          "reason": "B2B Sales: 15.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.4,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 3.8,
+          "reason": "Aligned with Coffee priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 2.0,
           "reason": "Limited evidence of inclusivity profile."
         }
       }
@@ -575,30 +575,30 @@
       "applicant_name": "TRANS-SAHARA CAMEL LIMITED",
       "eligibility_status": "ELIGIBLE",
       "rank": 18,
-      "composite_score": 40.0,
+      "composite_score": 50.7,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
-          "score": 1.0,
+          "score": 2.1,
           "reason": "Established in 2025 (0 years); Private Company status."
         },
         "S2_Financial_Position_20%": {
-          "score": 1.0,
+          "score": 1.3,
           "reason": "2024 Revenue: KES 0.00; Accounting system: None."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 2.0,
-          "reason": "B2B Sales: 0%; Market strategy reported."
+          "score": 2.4,
+          "reason": "B2B Sales: 0.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.4,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Aligned with Construction priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 1.0,
+          "score": 1.7,
           "reason": "Limited evidence of inclusivity profile."
         }
       }

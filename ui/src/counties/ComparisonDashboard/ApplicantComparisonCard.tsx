@@ -78,22 +78,6 @@ const ApplicantComparisonCard: React.FC<ApplicantComparisonCardProps> = ({ compa
       <tr className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
         <td className="px-4 py-4">
           <div className="flex items-center space-x-2">
-            {hasDetailedComparison && (
-              <button
-                onClick={toggleCriterionSection}
-                className="text-gray-400 transition-colors hover:text-gray-600"
-              >
-                {isCriterionExpanded ?
-                  <ChevronDown size={16} /> :
-                  <ChevronRight size={16} />
-                }
-              </button>
-            )}
-            {!hasDetailedComparison && (
-              <div className="flex items-center justify-center w-4 h-4">
-                <div className="w-2 h-2 bg-gray-300 rounded-full"></div>
-              </div>
-            )}
             <div>
               <div className="font-medium text-gray-900">{comparison.applicantName || `Application ${comparison.applicationId}`}</div>
               <div className="text-sm text-gray-500">ID: {comparison.applicationId}</div>
@@ -150,6 +134,13 @@ const ApplicantComparisonCard: React.FC<ApplicantComparisonCardProps> = ({ compa
           )}
         </td>
         <td className="px-4 py-4 text-center">
+          <span className="text-sm font-medium">
+            {isMatched && comparison.llmScore !== null && comparison.llmScore !== undefined
+              ? Number(comparison.llmScore).toFixed(1)
+              : '-'}
+          </span>
+        </td>
+        <td className="px-4 py-4 text-center">
           {isMatched ? (
             <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
               comparison.llmStatus === 'Ranked' ? 'bg-blue-100 text-blue-800' : 'bg-red-100 text-red-800'
@@ -175,31 +166,65 @@ const ApplicantComparisonCard: React.FC<ApplicantComparisonCardProps> = ({ compa
             </span>
           )}
         </td>
-        <td className="px-4 py-4">
-          <button
-            onClick={() => setIsReasonsExpanded(!isReasonsExpanded)}
-            className={`text-sm cursor-pointer ${hasPassFailDisagreement ? 'text-red-600 hover:text-red-800' : bothFailed ? 'text-green-600 hover:text-green-800' : 'text-blue-600 hover:text-blue-800'}`}
-          >
-            {hasPassFailDisagreement ? (
-              <span className="flex items-center gap-1 font-medium">
-                <AlertTriangle size={14} className="text-red-500" />
-                {disagreementType === 'human-failed-llm-passed'
-                  ? 'Human failed but LLM disagreed. Click to see details.'
-                  : 'LLM failed but human disagreed. Click to see details.'
-                }
-              </span>
-            ) : bothFailed ? (
-              <span className="flex items-center gap-1 font-medium">
-                <CheckCircle size={14} className="text-green-500" />
-                Both evaluations agree: Failed. Click to see details.
-              </span>
-            ) : (
-              <span className="flex items-center gap-1">
-                {isReasonsExpanded ? <ChevronDown size={14} /> : <ChevronRight size={14} />}
-                View evaluation reasons
-              </span>
+      </tr>
+
+      {/* Bottom action row — View reasons + criterion toggle */}
+      <tr className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+        <td colSpan={8} className="pt-1 pb-3 text-center">
+          <div className="flex items-center justify-center gap-3">
+            {/* View evaluation reasons */}
+            <motion.button
+              onClick={() => setIsReasonsExpanded(!isReasonsExpanded)}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className={`inline-flex items-center gap-1.5 px-4 py-1.5 text-xs font-medium rounded-full border transition-colors ${
+                hasPassFailDisagreement
+                  ? 'border-red-300 text-red-600 bg-red-50 hover:bg-red-100'
+                  : bothFailed
+                  ? 'border-green-300 text-green-600 bg-green-50 hover:bg-green-100'
+                  : 'border-blue-200 text-blue-600 bg-blue-50 hover:bg-blue-100'
+              }`}
+            >
+              {hasPassFailDisagreement ? (
+                <AlertTriangle size={13} />
+              ) : bothFailed ? (
+                <CheckCircle size={13} />
+              ) : (
+                <motion.span
+                  animate={{ rotate: isReasonsExpanded ? 180 : 0 }}
+                  transition={{ duration: 0.3, ease: 'easeInOut' }}
+                  className="flex items-center"
+                >
+                  <ChevronDown size={13} />
+                </motion.span>
+              )}
+              {hasPassFailDisagreement
+                ? (disagreementType === 'human-failed-llm-passed' ? 'Human/LLM disagreement' : 'LLM/Human disagreement')
+                : bothFailed
+                ? 'Both failed — view details'
+                : 'View evaluation reasons'
+              }
+            </motion.button>
+
+            {/* Criterion analysis toggle */}
+            {hasDetailedComparison && (
+              <motion.button
+                onClick={toggleCriterionSection}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="inline-flex items-center gap-1.5 px-4 py-1.5 text-xs font-medium text-violet-600 bg-violet-50 border border-violet-200 rounded-full hover:bg-violet-100 transition-colors"
+              >
+                <motion.span
+                  animate={{ rotate: isCriterionExpanded ? 180 : 0 }}
+                  transition={{ duration: 0.3, ease: 'easeInOut' }}
+                  className="flex items-center"
+                >
+                  <ChevronDown size={13} />
+                </motion.span>
+                {isCriterionExpanded ? 'Hide criterion analysis' : 'Show criterion analysis'}
+              </motion.button>
             )}
-          </button>
+          </div>
         </td>
       </tr>
 

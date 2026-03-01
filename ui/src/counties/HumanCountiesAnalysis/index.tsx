@@ -14,19 +14,22 @@ import { motion } from 'framer-motion';
 
 function HumanCountiesAnalysis() {
   const isCohortOne = new URLSearchParams(window.location.search).get('cohort') === 'c1';
+  const topCandidateCount = isCohortOne ? 2 : 6;
+  const defaultExpandedRanks = isCohortOne ? [1, 2] : [];
 
   // Custom hooks for data management
   const { groups, loading, error } = useHumanData();
-  const { selectedCounty, setSelectedCounty, expandedRanks, setExpandedRanks, toggleExpand } = useCountySelection(groups);
+  const { selectedCounty, setSelectedCounty, expandedRanks, setExpandedRanks, toggleExpand } = useCountySelection(groups, defaultExpandedRanks);
 
   // Find current group and categorize applicants
   const currentGroup = groups.find((g) => g.county === selectedCounty) || null;
-  const { topTwo, pending, failed, otherRanked } = useApplicantCategories(currentGroup);
+  const { topTwo, pending, failed, otherRanked } = useApplicantCategories(currentGroup, topCandidateCount);
+  console.log(currentGroup,"currentGroup");
 
   // Handle county selection
   const handleCountySelect = (county: string) => {
     setSelectedCounty(county);
-    setExpandedRanks(new Set([1, 2]));
+    setExpandedRanks(new Set(defaultExpandedRanks));
   };
 
   // Loading state

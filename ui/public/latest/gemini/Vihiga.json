@@ -10,51 +10,18 @@
   },
   "applications": [
     {
-      "application_id": "Vihiga_9VLT",
-      "applicant_name": "SABATIA MICRO AND SMALL ENTERPRISE ASSOCIATION",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 1,
-      "composite_score": 88.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 5.0,
-          "reason": "Established in 2015 (10 years); MSME Association status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 5.0,
-          "reason": "2024 Revenue: KES 2,300,000.00; Accounting system: None."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 5.0,
-          "reason": "B2B Sales: 80.0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with minerals priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
       "application_id": "Vihiga_BPBK",
       "applicant_name": "SABATIA MULEMBE WOMEN CONGRESS",
       "eligibility_status": "ELIGIBLE",
-      "rank": 2,
-      "composite_score": 84.0,
+      "rank": 1,
+      "composite_score": 78.8,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
-          "score": 1.0,
+          "score": 2.2,
           "reason": "Established in 2024 (1 years); Private Company status."
         },
         "S2_Financial_Position_20%": {
-          "score": 5.0,
+          "score": 4.2,
           "reason": "2024 Revenue: KES 2,500,000.00; Accounting system: Other."
         },
         "S3_Market_Demand_Competitiveness_20%": {
@@ -62,16 +29,49 @@
           "reason": "B2B Sales: 70.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.4,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Aligned with Edible Oils priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.2,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Vihiga_9VLT",
+      "applicant_name": "SABATIA MICRO AND SMALL ENTERPRISE ASSOCIATION",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 2,
+      "composite_score": 78.5,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
           "score": 5.0,
-          "reason": "Woman-owned enterprise"
+          "reason": "Established in 2015 (10 years); MSME Association status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.3,
+          "reason": "2024 Revenue: KES 2,300,000.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "B2B Sales: 80.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.5,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Aligned with minerals priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.2,
+          "reason": "Limited evidence of inclusivity profile."
         }
       }
     },
@@ -80,97 +80,31 @@
       "applicant_name": "Maragrow",
       "eligibility_status": "ELIGIBLE",
       "rank": 3,
-      "composite_score": 83.0,
+      "composite_score": 75.6,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
-          "score": 4.0,
+          "score": 4.6,
           "reason": "Established in 2019 (6 years); Private Company status."
         },
         "S2_Financial_Position_20%": {
-          "score": 5.0,
+          "score": 3.2,
           "reason": "2024 Revenue: KES 875,000.00; Accounting system: QuickBooks."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 4.0,
+          "score": 4.4,
           "reason": "B2B Sales: 30.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.4,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Aligned with Blue Economy priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
-      "application_id": "Vihiga_OB8O",
-      "applicant_name": "SACODEF",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 4,
-      "composite_score": 78.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
-          "reason": "Established in 2022 (3 years); MSME Association status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 4.0,
-          "reason": "2024 Revenue: KES 480,000.00; Accounting system: QuickBooks."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 4.0,
-          "reason": "B2B Sales: 30.0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with other priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
-      "application_id": "Vihiga_GGSD",
-      "applicant_name": "Mungoma hospital",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 5,
-      "composite_score": 76.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 5.0,
-          "reason": "Established in 2014 (11 years); Private Company status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 5.0,
-          "reason": "2024 Revenue: KES 2,000,000.00; Accounting system: Sage."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 2.0,
-          "reason": "B2B Sales: 0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with other priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
+          "score": 3.4,
+          "reason": "Limited evidence of inclusivity profile."
         }
       }
     },
@@ -178,65 +112,131 @@
       "application_id": "Vihiga_37OM",
       "applicant_name": "Emuhaya united youth",
       "eligibility_status": "ELIGIBLE",
-      "rank": 6,
-      "composite_score": 74.0,
+      "rank": 4,
+      "composite_score": 74.3,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
+          "score": 3.7,
           "reason": "Established in 2023 (2 years); Cooperative status."
         },
         "S2_Financial_Position_20%": {
-          "score": 3.0,
+          "score": 2.7,
           "reason": "2024 Revenue: KES 70,000.00; Accounting system: Other."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 4.0,
+          "score": 4.9,
           "reason": "B2B Sales: 40.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.4,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Aligned with Dairy priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
+          "score": 3.3,
+          "reason": "Limited evidence of inclusivity profile."
         }
       }
     },
     {
-      "application_id": "Vihiga_GW6R",
-      "applicant_name": "Progress PYG038 Group Limited",
+      "application_id": "Vihiga_OB8O",
+      "applicant_name": "SACODEF",
       "eligibility_status": "ELIGIBLE",
-      "rank": 7,
-      "composite_score": 66.0,
+      "rank": 5,
+      "composite_score": 72.6,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
-          "reason": "Established in 2023 (2 years); Private Company status."
+          "score": 3.8,
+          "reason": "Established in 2022 (3 years); MSME Association status."
         },
         "S2_Financial_Position_20%": {
-          "score": 3.0,
-          "reason": "2024 Revenue: KES 21,160.00; Accounting system: Wave."
+          "score": 2.7,
+          "reason": "2024 Revenue: KES 480,000.00; Accounting system: QuickBooks."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 2.0,
-          "reason": "B2B Sales: 0%; Market strategy reported."
+          "score": 4.6,
+          "reason": "B2B Sales: 30.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.6,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with Construction priority value chain."
+          "score": 3.8,
+          "reason": "Aligned with other priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.5,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Vihiga_LHUO",
+      "applicant_name": "Vihiga County Boda Boda Savings and credit cooperative society ltd",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 6,
+      "composite_score": 68.7,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.1,
+          "reason": "Established in 2021 (4 years); Cooperative status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2.8,
+          "reason": "2024 Revenue: KES 900,000.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.9,
+          "reason": "B2B Sales: 40.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.4,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
           "score": 5.0,
-          "reason": "Woman-owned enterprise"
+          "reason": "Aligned with Dairy priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 1.7,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Vihiga_GGSD",
+      "applicant_name": "Mungoma hospital",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 7,
+      "composite_score": 68.1,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Established in 2014 (11 years); Private Company status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.7,
+          "reason": "2024 Revenue: KES 2,000,000.00; Accounting system: Sage."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 2.4,
+          "reason": "B2B Sales: 0.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.5,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 3.8,
+          "reason": "Aligned with other priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.4,
+          "reason": "Limited evidence of inclusivity profile."
         }
       }
     },
@@ -245,97 +245,64 @@
       "applicant_name": "Progress PYG038 Group Limited",
       "eligibility_status": "ELIGIBLE",
       "rank": 8,
-      "composite_score": 66.0,
+      "composite_score": 66.9,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
+          "score": 3.7,
           "reason": "Established in 2023 (2 years); Private Company status."
         },
         "S2_Financial_Position_20%": {
-          "score": 3.0,
+          "score": 2.7,
           "reason": "2024 Revenue: KES 21,160.00; Accounting system: Wave."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 2.0,
-          "reason": "B2B Sales: 0%; Market strategy reported."
+          "score": 2.6,
+          "reason": "B2B Sales: 0.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.6,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Aligned with Construction priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
-      "application_id": "Vihiga_LHUO",
-      "applicant_name": "Vihiga County Boda Boda Savings and credit cooperative society ltd",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 9,
-      "composite_score": 62.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
-          "reason": "Established in 2021 (4 years); Cooperative status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 4.0,
-          "reason": "2024 Revenue: KES 900,000.00; Accounting system: None."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 4.0,
-          "reason": "B2B Sales: 40.0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with Dairy priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 1.0,
+          "score": 3.5,
           "reason": "Limited evidence of inclusivity profile."
         }
       }
     },
     {
-      "application_id": "Vihiga_VZVN",
-      "applicant_name": "Lyimarose Agencies Limited",
+      "application_id": "Vihiga_GW6R",
+      "applicant_name": "Progress PYG038 Group Limited",
       "eligibility_status": "ELIGIBLE",
-      "rank": 10,
-      "composite_score": 60.0,
+      "rank": 9,
+      "composite_score": 66.9,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
-          "score": 1.0,
-          "reason": "Established in 2024 (1 years); Private Company status."
+          "score": 3.7,
+          "reason": "Established in 2023 (2 years); Private Company status."
         },
         "S2_Financial_Position_20%": {
-          "score": 2.0,
-          "reason": "2024 Revenue: KES 0.00; Accounting system: QuickBooks."
+          "score": 2.7,
+          "reason": "2024 Revenue: KES 21,160.00; Accounting system: Wave."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 2.0,
-          "reason": "B2B Sales: 0%; Market strategy reported."
+          "score": 2.6,
+          "reason": "B2B Sales: 0.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.6,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with other priority value chain."
+          "score": 5.0,
+          "reason": "Aligned with Construction priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
+          "score": 3.5,
+          "reason": "Limited evidence of inclusivity profile."
         }
       }
     },
@@ -343,31 +310,31 @@
       "application_id": "Vihiga_EBYL",
       "applicant_name": "Manyatta Agro Processing",
       "eligibility_status": "ELIGIBLE",
-      "rank": 11,
-      "composite_score": 58.0,
+      "rank": 10,
+      "composite_score": 64.4,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
+          "score": 3.8,
           "reason": "Established in 2021 (4 years); MSME Association status."
         },
         "S2_Financial_Position_20%": {
-          "score": 3.0,
+          "score": 2.3,
           "reason": "2024 Revenue: KES 200,000.00; Accounting system: None."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 4.0,
+          "score": 4.4,
           "reason": "B2B Sales: 30.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.4,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Aligned with Edible Oils priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 1.0,
+          "score": 1.7,
           "reason": "Limited evidence of inclusivity profile."
         }
       }
@@ -376,31 +343,64 @@
       "application_id": "Vihiga_PXJ8",
       "applicant_name": "Bunyore Social Welfare Organization",
       "eligibility_status": "ELIGIBLE",
-      "rank": 12,
-      "composite_score": 58.0,
+      "rank": 11,
+      "composite_score": 61.3,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
+          "score": 3.8,
           "reason": "Established in 2022 (3 years); MSME Association status."
         },
         "S2_Financial_Position_20%": {
-          "score": 5.0,
+          "score": 3.2,
           "reason": "2024 Revenue: KES 540,000.00; Accounting system: QuickBooks."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 2.0,
-          "reason": "B2B Sales: 0%; Market strategy reported."
+          "score": 2.5,
+          "reason": "B2B Sales: 0.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.5,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Aligned with Edible Oils priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 1.0,
+          "score": 1.8,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Vihiga_VZVN",
+      "applicant_name": "Lyimarose Agencies Limited",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 12,
+      "composite_score": 55.9,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 2.1,
+          "reason": "Established in 2024 (1 years); Private Company status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 1.7,
+          "reason": "2024 Revenue: KES 0.00; Accounting system: QuickBooks."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 2.4,
+          "reason": "B2B Sales: 0.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.4,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 3.8,
+          "reason": "Aligned with other priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.2,
           "reason": "Limited evidence of inclusivity profile."
         }
       }

@@ -10,84 +10,18 @@
   },
   "applications": [
     {
-      "application_id": "Mombasa_PYKL",
-      "applicant_name": "WAKILISHA LOGISTICS & GENERAL",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 1,
-      "composite_score": 87.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 4.0,
-          "reason": "Established in 2020 (5 years); Private Company status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 5.0,
-          "reason": "2024 Revenue: KES 2,000,000.00; Accounting system: QuickBooks."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 5.0,
-          "reason": "B2B Sales: 60.0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with Blue Economy priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
-      "application_id": "Mombasa_DRDT",
-      "applicant_name": "gemini flour mills",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 2,
-      "composite_score": 87.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 4.0,
-          "reason": "Established in 2019 (6 years); Private Company status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 5.0,
-          "reason": "2024 Revenue: KES 1,400,000.00; Accounting system: Other."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 5.0,
-          "reason": "B2B Sales: 75.0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with other priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
       "application_id": "Mombasa_HL2N",
       "applicant_name": "KADZO GENERAL SUPPLIES",
       "eligibility_status": "ELIGIBLE",
-      "rank": 3,
-      "composite_score": 86.0,
+      "rank": 1,
+      "composite_score": 80.5,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
+          "score": 4.2,
           "reason": "Established in 2021 (4 years); Private Company status."
         },
         "S2_Financial_Position_20%": {
-          "score": 5.0,
+          "score": 3.7,
           "reason": "2024 Revenue: KES 2,400,000.00; Accounting system: Other."
         },
         "S3_Market_Demand_Competitiveness_20%": {
@@ -95,346 +29,49 @@
           "reason": "B2B Sales: 90.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.5,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Aligned with Blue Economy priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
+          "score": 3.5,
+          "reason": "Limited evidence of inclusivity profile."
         }
       }
     },
     {
-      "application_id": "Mombasa_RA8R",
-      "applicant_name": "UMOJA CLEANERS YOUTH GROUP",
+      "application_id": "Mombasa_PYKL",
+      "applicant_name": "WAKILISHA LOGISTICS & GENERAL",
       "eligibility_status": "ELIGIBLE",
-      "rank": 4,
-      "composite_score": 83.0,
+      "rank": 2,
+      "composite_score": 79.6,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
-          "score": 4.0,
+          "score": 4.6,
           "reason": "Established in 2020 (5 years); Private Company status."
         },
         "S2_Financial_Position_20%": {
-          "score": 4.0,
-          "reason": "2024 Revenue: KES 200,750.00; Accounting system: Other."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 5.0,
-          "reason": "B2B Sales: 75.0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with Blue Economy priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
-      "application_id": "Mombasa_DLRJ",
-      "applicant_name": "Mtopanga river C.B.O",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 5,
-      "composite_score": 83.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 4.0,
-          "reason": "Established in 2019 (6 years); MSME Association status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 5.0,
-          "reason": "2024 Revenue: KES 2,076,000.00; Accounting system: Other."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 4.0,
-          "reason": "B2B Sales: 35.0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with Blue Economy priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
-      "application_id": "Mombasa_0HM6",
-      "applicant_name": "ROYAL WORLD MENSTRUAL WASTE",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 6,
-      "composite_score": 82.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
-          "reason": "Established in 2023 (2 years); Private Company status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 5.0,
-          "reason": "2024 Revenue: KES 1,700,000.00; Accounting system: Other."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 4.0,
-          "reason": "B2B Sales: 50.0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with Blue Economy priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
-      "application_id": "Mombasa_JYEN",
-      "applicant_name": "HAWIMOR ENTERPRISE LTD",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 7,
-      "composite_score": 82.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
-          "reason": "Established in 2023 (2 years); Private Company status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 5.0,
-          "reason": "2024 Revenue: KES 1,500,000.00; Accounting system: None."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 4.0,
-          "reason": "B2B Sales: 30.0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with Construction priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
-      "application_id": "Mombasa_VQWR",
-      "applicant_name": "Mrima Community Health Unit",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 8,
-      "composite_score": 79.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 4.0,
-          "reason": "Established in 2019 (6 years); Private Company status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 5.0,
-          "reason": "2024 Revenue: KES 950,000.00; Accounting system: Other."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 3.0,
-          "reason": "B2B Sales: 20.0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with Blue Economy priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
-      "application_id": "Mombasa_OJA3",
-      "applicant_name": "M-PAWA C.B.O",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 9,
-      "composite_score": 75.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 4.0,
-          "reason": "Established in 2016 (9 years); Other status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 3.0,
-          "reason": "2024 Revenue: KES 200,000.00; Accounting system: None."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 4.0,
-          "reason": "B2B Sales: 50.0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with Blue Economy priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
-      "application_id": "Mombasa_BSOF",
-      "applicant_name": "global champions",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 10,
-      "composite_score": 74.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
-          "reason": "Established in 2023 (2 years); Other status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 3.0,
-          "reason": "2024 Revenue: KES 5.00; Accounting system: Zoho Books."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 4.0,
-          "reason": "B2B Sales: 44.0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with Blue Economy priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
-      "application_id": "Mombasa_JNSB",
-      "applicant_name": "COAST DEVELOPMENT LOBBY SELF HELP GROUP",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 11,
-      "composite_score": 74.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
-          "reason": "Established in 2022 (3 years); Other status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 2.0,
-          "reason": "2024 Revenue: KES 50,000.00; Accounting system: None."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 5.0,
-          "reason": "B2B Sales: 100.0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with Blue Economy priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
-      "application_id": "Mombasa_FASC",
-      "applicant_name": "Clean Flow expert Waste management and Recycling Company",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 12,
-      "composite_score": 72.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 1.0,
-          "reason": "Established in 2025 (0 years); Private Company status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 2.0,
-          "reason": "2024 Revenue: KES 0.00; Accounting system: Other."
+          "score": 3.7,
+          "reason": "2024 Revenue: KES 2,000,000.00; Accounting system: QuickBooks."
         },
         "S3_Market_Demand_Competitiveness_20%": {
           "score": 5.0,
           "reason": "B2B Sales: 60.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.4,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Aligned with Blue Economy priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
-      "application_id": "Mombasa_FMJQ",
-      "applicant_name": "JEMINE",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 13,
-      "composite_score": 71.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 4.0,
-          "reason": "Established in 2020 (5 years); Other status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 4.0,
-          "reason": "2024 Revenue: KES 620,000.00; Accounting system: None."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 2.0,
-          "reason": "B2B Sales: 0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with Construction priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
+          "score": 3.3,
+          "reason": "Limited evidence of inclusivity profile."
         }
       }
     },
@@ -442,15 +79,15 @@
       "application_id": "Mombasa_QG42",
       "applicant_name": "Mac supremacy enterprise Ltd",
       "eligibility_status": "ELIGIBLE",
-      "rank": 14,
-      "composite_score": 70.0,
+      "rank": 3,
+      "composite_score": 78.8,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
+          "score": 3.6,
           "reason": "Established in 2023 (2 years); Private Company status."
         },
         "S2_Financial_Position_20%": {
-          "score": 5.0,
+          "score": 4.8,
           "reason": "2024 Revenue: KES 7,680,000.00; Accounting system: None."
         },
         "S3_Market_Demand_Competitiveness_20%": {
@@ -458,15 +95,345 @@
           "reason": "B2B Sales: 100.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.6,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Aligned with Blue Economy priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 1.0,
+          "score": 2.0,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Mombasa_DLRJ",
+      "applicant_name": "Mtopanga river C.B.O",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 4,
+      "composite_score": 78.7,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.4,
+          "reason": "Established in 2019 (6 years); MSME Association status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.7,
+          "reason": "2024 Revenue: KES 2,076,000.00; Accounting system: Other."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.5,
+          "reason": "B2B Sales: 35.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.5,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Aligned with Blue Economy priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.5,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Mombasa_0HM6",
+      "applicant_name": "ROYAL WORLD MENSTRUAL WASTE",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 5,
+      "composite_score": 78.6,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.6,
+          "reason": "Established in 2023 (2 years); Private Company status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.7,
+          "reason": "2024 Revenue: KES 1,700,000.00; Accounting system: Other."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.9,
+          "reason": "B2B Sales: 50.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.4,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Aligned with Blue Economy priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.4,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Mombasa_DRDT",
+      "applicant_name": "gemini flour mills",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 6,
+      "composite_score": 78.0,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.6,
+          "reason": "Established in 2019 (6 years); Private Company status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.7,
+          "reason": "2024 Revenue: KES 1,400,000.00; Accounting system: Other."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "B2B Sales: 75.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.4,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 3.8,
+          "reason": "Aligned with other priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.5,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Mombasa_RA8R",
+      "applicant_name": "UMOJA CLEANERS YOUTH GROUP",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 7,
+      "composite_score": 76.5,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.6,
+          "reason": "Established in 2020 (5 years); Private Company status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2.7,
+          "reason": "2024 Revenue: KES 200,750.00; Accounting system: Other."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "B2B Sales: 75.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.5,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Aligned with Blue Economy priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.4,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Mombasa_JYEN",
+      "applicant_name": "HAWIMOR ENTERPRISE LTD",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 8,
+      "composite_score": 76.4,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.7,
+          "reason": "Established in 2023 (2 years); Private Company status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.3,
+          "reason": "2024 Revenue: KES 1,500,000.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.5,
+          "reason": "B2B Sales: 30.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.5,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Aligned with Construction priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.5,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Mombasa_VQWR",
+      "applicant_name": "Mrima Community Health Unit",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 9,
+      "composite_score": 74.5,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.6,
+          "reason": "Established in 2019 (6 years); Private Company status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.2,
+          "reason": "2024 Revenue: KES 950,000.00; Accounting system: Other."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 3.9,
+          "reason": "B2B Sales: 20.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.5,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Aligned with Blue Economy priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.5,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Mombasa_JNSB",
+      "applicant_name": "COAST DEVELOPMENT LOBBY SELF HELP GROUP",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 10,
+      "composite_score": 74.1,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.9,
+          "reason": "Established in 2022 (3 years); Other status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2.3,
+          "reason": "2024 Revenue: KES 50,000.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "B2B Sales: 100.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.4,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Aligned with Blue Economy priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.5,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Mombasa_BSOF",
+      "applicant_name": "global champions",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 11,
+      "composite_score": 73.9,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.3,
+          "reason": "Established in 2023 (2 years); Other status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2.7,
+          "reason": "2024 Revenue: KES 5.00; Accounting system: Zoho Books."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 5.0,
+          "reason": "B2B Sales: 44.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.4,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Aligned with Blue Economy priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.2,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Mombasa_OJA3",
+      "applicant_name": "M-PAWA C.B.O",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 12,
+      "composite_score": 73.8,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.8,
+          "reason": "Established in 2016 (9 years); Other status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2.3,
+          "reason": "2024 Revenue: KES 200,000.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.9,
+          "reason": "B2B Sales: 50.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.4,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Aligned with Blue Economy priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.3,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Mombasa_KZRG",
+      "applicant_name": "SKAYTAKE ENTERPRISES",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 13,
+      "composite_score": 71.5,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.3,
+          "reason": "Established in 2023 (2 years); Other status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2.3,
+          "reason": "2024 Revenue: KES 100,000.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.6,
+          "reason": "B2B Sales: 30.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.4,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Aligned with Blue Economy priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.4,
           "reason": "Limited evidence of inclusivity profile."
         }
       }
@@ -475,65 +442,65 @@
       "application_id": "Mombasa_Q3KR",
       "applicant_name": "Skaytake Enterprise",
       "eligibility_status": "ELIGIBLE",
-      "rank": 15,
-      "composite_score": 70.0,
+      "rank": 14,
+      "composite_score": 70.7,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
+          "score": 3.3,
           "reason": "Established in 2023 (2 years); Other status."
         },
         "S2_Financial_Position_20%": {
-          "score": 2.0,
+          "score": 2.3,
           "reason": "2024 Revenue: KES 100,000.00; Accounting system: None."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 4.0,
+          "score": 4.5,
           "reason": "B2B Sales: 30.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.4,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Aligned with Blue Economy priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
+          "score": 3.3,
+          "reason": "Limited evidence of inclusivity profile."
         }
       }
     },
     {
-      "application_id": "Mombasa_KZRG",
-      "applicant_name": "SKAYTAKE ENTERPRISES",
+      "application_id": "Mombasa_FASC",
+      "applicant_name": "Clean Flow expert Waste management and Recycling Company",
       "eligibility_status": "ELIGIBLE",
-      "rank": 16,
-      "composite_score": 70.0,
+      "rank": 15,
+      "composite_score": 70.4,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
-          "reason": "Established in 2023 (2 years); Other status."
+          "score": 2.1,
+          "reason": "Established in 2025 (0 years); Private Company status."
         },
         "S2_Financial_Position_20%": {
-          "score": 2.0,
-          "reason": "2024 Revenue: KES 100,000.00; Accounting system: None."
+          "score": 1.7,
+          "reason": "2024 Revenue: KES 0.00; Accounting system: Other."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 4.0,
-          "reason": "B2B Sales: 30.0%; Market strategy reported."
+          "score": 5.0,
+          "reason": "B2B Sales: 60.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.5,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Aligned with Blue Economy priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
+          "score": 3.5,
+          "reason": "Limited evidence of inclusivity profile."
         }
       }
     },
@@ -541,98 +508,65 @@
       "application_id": "Mombasa_UOXY",
       "applicant_name": "ZAKHARASMA WELFARE GROUP",
       "eligibility_status": "ELIGIBLE",
-      "rank": 17,
-      "composite_score": 68.0,
+      "rank": 16,
+      "composite_score": 67.3,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
           "score": 5.0,
           "reason": "Established in 2015 (10 years); Other status."
         },
         "S2_Financial_Position_20%": {
-          "score": 3.0,
+          "score": 2.7,
           "reason": "2024 Revenue: KES 5,000.00; Accounting system: QuickBooks."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 2.0,
-          "reason": "B2B Sales: 0%; Market strategy reported."
+          "score": 2.5,
+          "reason": "B2B Sales: 0.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.5,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Aligned with Edible Oils priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
+          "score": 3.5,
+          "reason": "Limited evidence of inclusivity profile."
         }
       }
     },
     {
-      "application_id": "Mombasa_EZRC",
-      "applicant_name": "JOMVU WOMEN IN FISHERIES AND CULTURAL SELF HELP GROUP",
+      "application_id": "Mombasa_FMJQ",
+      "applicant_name": "JEMINE",
       "eligibility_status": "ELIGIBLE",
-      "rank": 18,
-      "composite_score": 66.0,
+      "rank": 17,
+      "composite_score": 67.2,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
-          "reason": "Established in 2021 (4 years); Other status."
+          "score": 4.3,
+          "reason": "Established in 2020 (5 years); Other status."
         },
         "S2_Financial_Position_20%": {
-          "score": 3.0,
-          "reason": "2024 Revenue: KES 24,813.00; Accounting system: Other."
+          "score": 2.8,
+          "reason": "2024 Revenue: KES 620,000.00; Accounting system: None."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 2.0,
-          "reason": "B2B Sales: 0%; Market strategy reported."
+          "score": 2.4,
+          "reason": "B2B Sales: 0.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.7,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with Blue Economy priority value chain."
+          "score": 5.0,
+          "reason": "Aligned with Construction priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
-      "application_id": "Mombasa_EHUQ",
-      "applicant_name": "Majengo Muslim Women Group",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 19,
-      "composite_score": 64.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 5.0,
-          "reason": "Established in 2007 (18 years); Other status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 2.0,
-          "reason": "2024 Revenue: KES 84,000.00; Accounting system: None."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 2.0,
-          "reason": "B2B Sales: 0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with Edible Oils priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
+          "score": 3.4,
+          "reason": "Limited evidence of inclusivity profile."
         }
       }
     },
@@ -640,8 +574,8 @@
       "application_id": "Mombasa_TLGX",
       "applicant_name": "AKAMBA HANDICRAFT INDUSTRY CO-OPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 20,
-      "composite_score": 60.0,
+      "rank": 18,
+      "composite_score": 66.4,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
           "score": 5.0,
@@ -652,19 +586,85 @@
           "reason": "2024 Revenue: KES 15,139,426.00; Accounting system: None."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 2.0,
-          "reason": "B2B Sales: 0%; Market strategy reported."
+          "score": 2.4,
+          "reason": "B2B Sales: 0.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.4,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 3.8,
           "reason": "Aligned with other priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 1.0,
+          "score": 1.8,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Mombasa_EZRC",
+      "applicant_name": "JOMVU WOMEN IN FISHERIES AND CULTURAL SELF HELP GROUP",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 19,
+      "composite_score": 65.3,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.9,
+          "reason": "Established in 2021 (4 years); Other status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2.7,
+          "reason": "2024 Revenue: KES 24,813.00; Accounting system: Other."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 2.4,
+          "reason": "B2B Sales: 0.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.4,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Aligned with Blue Economy priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.5,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Mombasa_EHUQ",
+      "applicant_name": "Majengo Muslim Women Group",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 20,
+      "composite_score": 63.6,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Established in 2007 (18 years); Other status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2.3,
+          "reason": "2024 Revenue: KES 84,000.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 2.4,
+          "reason": "B2B Sales: 0.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.4,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Aligned with Edible Oils priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.2,
           "reason": "Limited evidence of inclusivity profile."
         }
       }
@@ -674,30 +674,30 @@
       "applicant_name": "Keyop",
       "eligibility_status": "ELIGIBLE",
       "rank": 21,
-      "composite_score": 47.0,
+      "composite_score": 55.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
-          "score": 4.0,
+          "score": 4.8,
           "reason": "Established in 2018 (7 years); MSME Association status."
         },
         "S2_Financial_Position_20%": {
-          "score": 2.0,
+          "score": 2.3,
           "reason": "2024 Revenue: KES 50,000.00; Accounting system: None."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 2.0,
-          "reason": "B2B Sales: 0%; Market strategy reported."
+          "score": 2.4,
+          "reason": "B2B Sales: 0.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.4,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 3.8,
           "reason": "Aligned with other priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 1.0,
+          "score": 1.7,
           "reason": "Limited evidence of inclusivity profile."
         }
       }

@@ -28,8 +28,10 @@ from utils import (
     extract_pdf_text,
     extract_image_text,
     discover_counties_and_applications,
-    check_dependencies
+    check_dependencies,
+    repair_pdf
 )
+from utils_financial import extract_pdf_with_ocr
 
 class ProgressTracker:
     """Enhanced progress tracker that shows current file and retains only errors"""
@@ -92,7 +94,7 @@ progress_tracker = ProgressTracker()
 
 
 def process_application_folder(folder_path, county_name=None):
-    """Process all documents in an application folder"""
+    """Process all documents in one application folder and return structured extraction output."""
     application_data = {
         "application_id": "",
         "county": county_name or "Unknown",
@@ -105,6 +107,7 @@ def process_application_folder(folder_path, county_name=None):
             "total_documents": 0,
             "pdf_count": 0,
             "image_count": 0,
+            "ocr_fallback_used": 0,
             "has_application_form": False,
             "has_registration_cert": False,
             "has_financial_statements": False,
@@ -112,6 +115,20 @@ def process_application_folder(folder_path, county_name=None):
         },
         "processing_errors": []
     }
+
+    def is_extraction_error(content_text):
+        """Return True when extraction content indicates a failed read."""
+        if not isinstance(content_text, str):
+            return True
+
+        lowered = content_text.lower()
+        return (
+            lowered.startswith("error:")
+            or "no extractable text found" in lowered
+            or "ocr extraction failed" in lowered
+            or "no text found via ocr" in lowered
+            or "ocr not available" in lowered
+        )
 
     # Extract application ID from folder name (handles cases like application_387_bundle (1))
     if folder_path.name.startswith("application_"):
@@ -181,6 +198,23 @@ def process_application_folder(folder_path, county_name=None):
                 content = ""
                 if file_extension == '.pdf':
                     content = extract_pdf_text(file_path)
+                    if "no extractable text found" in str(content).lower() or "error:" in str(content).lower():
+                        # Try to repair PDF if it's a known structural issue
+                        repaired_path = repair_pdf(file_path)
+                        if repaired_path:
+                            content = extract_pdf_text(repaired_path)
+                            if "error:" in str(content).lower():
+                                # Fallback to OCR if repair also fails
+                                ocr_content = extract_pdf_with_ocr(file_path, first_last_only=True, num_last_pages=2)
+                                if not is_extraction_error(ocr_content):
+                                    content = clean_extracted_text(ocr_content)
+                                    application_data["document_summary"]["ocr_fallback_used"] += 1
+                        else:
+                            # Fallback to OCR direct
+                            ocr_content = extract_pdf_with_ocr(file_path, first_last_only=True, num_last_pages=2)
+                            if not is_extraction_error(ocr_content):
+                                content = clean_extracted_text(ocr_content)
+                                application_data["document_summary"]["ocr_fallback_used"] += 1
                 elif file_extension in ['.png', '.jpg', '.jpeg', '.tiff', '.bmp']:
                     content = extract_image_text(file_path)
                 elif file_extension in ['.txt', '.md']:
@@ -196,7 +230,7 @@ def process_application_folder(folder_path, county_name=None):
                     "file_type": file_extension,
                     "file_name": file_name,
                     "content": content,
-                    "extraction_status": "success" if not content.startswith("ERROR:") else "error"
+                    "extraction_status": "error" if is_extraction_error(content) else "success"
                 }
 
                 if "application_info" in file_name_lower or "application_kjet" in file_name_lower:

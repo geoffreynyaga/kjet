@@ -10,134 +10,68 @@
   },
   "applications": [
     {
+      "application_id": "Marsabit_WICV",
+      "applicant_name": "Falem Savings and Credit Co-operative society Limited",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 1,
+      "composite_score": 74.8,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.2,
+          "reason": "Established in 2022 (3 years); Cooperative status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2.7,
+          "reason": "2024 Revenue: KES 444,000.00; Accounting system: QuickBooks."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.9,
+          "reason": "B2B Sales: 50.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.4,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Aligned with Blue Economy priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.3,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
       "application_id": "Marsabit_GAPS",
       "applicant_name": "KHANDERE FARMERS AND PRODUCE MARKETING CO-OPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 1,
-      "composite_score": 80.0,
+      "rank": 2,
+      "composite_score": 74.0,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
           "score": 5.0,
           "reason": "Established in 2015 (10 years); Cooperative status."
         },
         "S2_Financial_Position_20%": {
-          "score": 5.0,
+          "score": 3.3,
           "reason": "2024 Revenue: KES 1,200,000.00; Accounting system: None."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 3.0,
+          "score": 4.0,
           "reason": "B2B Sales: 10.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.4,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Aligned with Blue Economy priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
-      "application_id": "Marsabit_WICV",
-      "applicant_name": "Falem Savings and Credit Co-operative society Limited",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 2,
-      "composite_score": 78.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
-          "reason": "Established in 2022 (3 years); Cooperative status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 4.0,
-          "reason": "2024 Revenue: KES 444,000.00; Accounting system: QuickBooks."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 4.0,
-          "reason": "B2B Sales: 50.0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with Blue Economy priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
-      "application_id": "Marsabit_SZNM",
-      "applicant_name": "Bilitu Savings and Co-operative Society Limited",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 3,
-      "composite_score": 78.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
-          "reason": "Established in 2023 (2 years); Cooperative status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 5.0,
-          "reason": "2024 Revenue: KES 1,920,000.00; Accounting system: None."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 3.0,
-          "reason": "B2B Sales: 20.0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with other priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
-      "application_id": "Marsabit_5IZT",
-      "applicant_name": "TUJIAJIRI MISA FARMERS SELF HELP GROUP",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 4,
-      "composite_score": 78.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
-          "reason": "Established in 2023 (2 years); Other status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 3.0,
-          "reason": "2024 Revenue: KES 350,000.00; Accounting system: None."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 5.0,
-          "reason": "B2B Sales: 70.0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with other priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
+          "score": 3.2,
+          "reason": "Limited evidence of inclusivity profile."
         }
       }
     },
@@ -145,65 +79,131 @@
       "application_id": "Marsabit_DLKF",
       "applicant_name": "GARGAR SELF HELP GROUP",
       "eligibility_status": "ELIGIBLE",
-      "rank": 5,
-      "composite_score": 78.0,
+      "rank": 3,
+      "composite_score": 73.3,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
+          "score": 3.4,
           "reason": "Established in 2023 (2 years); Other status."
         },
         "S2_Financial_Position_20%": {
-          "score": 4.0,
+          "score": 2.8,
           "reason": "2024 Revenue: KES 900,000.00; Accounting system: None."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "B2B Sales: 40.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.5,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 3.8,
           "reason": "Aligned with other priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
+          "score": 3.4,
+          "reason": "Limited evidence of inclusivity profile."
         }
       }
     },
     {
-      "application_id": "Marsabit_RFWZ",
-      "applicant_name": "YANAGO GUMS AND RESINS GROUPS",
+      "application_id": "Marsabit_9P4G",
+      "applicant_name": "MOYALE BODA BODA PEACE SAVING AND CREDIT CO-OPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 6,
-      "composite_score": 76.0,
+      "rank": 4,
+      "composite_score": 72.6,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
           "score": 5.0,
-          "reason": "Established in 2012 (13 years); Other status."
+          "reason": "Established in 2015 (10 years); Cooperative status."
         },
         "S2_Financial_Position_20%": {
-          "score": 5.0,
-          "reason": "2024 Revenue: KES 2,112,000.00; Accounting system: None."
+          "score": 3.8,
+          "reason": "2024 Revenue: KES 3,100,000.00; Accounting system: None."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 2.0,
-          "reason": "B2B Sales: 0%; Market strategy reported."
+          "score": 4.1,
+          "reason": "B2B Sales: 15.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.6,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
+          "reason": "Aligned with Edible Oils priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 2.0,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Marsabit_SZNM",
+      "applicant_name": "Bilitu Savings and Co-operative Society Limited",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 5,
+      "composite_score": 72.3,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.6,
+          "reason": "Established in 2023 (2 years); Cooperative status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 3.3,
+          "reason": "2024 Revenue: KES 1,920,000.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.1,
+          "reason": "B2B Sales: 20.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.5,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 3.8,
           "reason": "Aligned with other priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.5,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Marsabit_5IZT",
+      "applicant_name": "TUJIAJIRI MISA FARMERS SELF HELP GROUP",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 6,
+      "composite_score": 71.7,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.3,
+          "reason": "Established in 2023 (2 years); Other status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2.3,
+          "reason": "2024 Revenue: KES 350,000.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
           "score": 5.0,
-          "reason": "Woman-owned enterprise"
+          "reason": "B2B Sales: 70.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.6,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 3.8,
+          "reason": "Aligned with other priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.4,
+          "reason": "Limited evidence of inclusivity profile."
         }
       }
     },
@@ -212,31 +212,31 @@
       "applicant_name": "NANA BEEKEEPING FARMERS GROUP",
       "eligibility_status": "ELIGIBLE",
       "rank": 7,
-      "composite_score": 74.0,
+      "composite_score": 70.8,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
+          "score": 4.0,
           "reason": "Established in 2021 (4 years); Other status."
         },
         "S2_Financial_Position_20%": {
-          "score": 4.0,
+          "score": 2.8,
           "reason": "2024 Revenue: KES 876,493.00; Accounting system: None."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 3.0,
+          "score": 4.0,
           "reason": "B2B Sales: 14.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.6,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 3.8,
           "reason": "Aligned with other priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
+          "score": 3.5,
+          "reason": "Limited evidence of inclusivity profile."
         }
       }
     },
@@ -245,14 +245,14 @@
       "applicant_name": "SARIMO MULTIPURPOSE CO-OPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
       "rank": 8,
-      "composite_score": 72.0,
+      "composite_score": 70.8,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
           "score": 5.0,
           "reason": "Established in 1991 (34 years); Cooperative status."
         },
         "S2_Financial_Position_20%": {
-          "score": 5.0,
+          "score": 3.3,
           "reason": "2024 Revenue: KES 2,100,000.00; Accounting system: None."
         },
         "S3_Market_Demand_Competitiveness_20%": {
@@ -260,180 +260,48 @@
           "reason": "B2B Sales: 75.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.4,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 3.8,
           "reason": "Aligned with other priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 1.0,
+          "score": 2.0,
           "reason": "Limited evidence of inclusivity profile."
         }
       }
     },
     {
-      "application_id": "Marsabit_FNQI",
-      "applicant_name": "KINISA FARMERS CO-OPERATIVE SOCIETY LIMITED",
+      "application_id": "Marsabit_RFWZ",
+      "applicant_name": "YANAGO GUMS AND RESINS GROUPS",
       "eligibility_status": "ELIGIBLE",
       "rank": 9,
-      "composite_score": 71.0,
+      "composite_score": 67.4,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
-          "score": 4.0,
-          "reason": "Established in 2019 (6 years); Cooperative status."
+          "score": 5.0,
+          "reason": "Established in 2012 (13 years); Other status."
         },
         "S2_Financial_Position_20%": {
-          "score": 4.0,
-          "reason": "2024 Revenue: KES 840,000.00; Accounting system: None."
+          "score": 3.3,
+          "reason": "2024 Revenue: KES 2,112,000.00; Accounting system: None."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 2.0,
-          "reason": "B2B Sales: 0%; Market strategy reported."
+          "score": 2.6,
+          "reason": "B2B Sales: 0.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.6,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 3.8,
           "reason": "Aligned with other priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
-      "application_id": "Marsabit_RYND",
-      "applicant_name": "LAMI UNITED YOUTH GROUP",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 10,
-      "composite_score": 68.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 5.0,
-          "reason": "Established in 2011 (14 years); Cooperative status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 3.0,
-          "reason": "2024 Revenue: KES 450,000.00; Accounting system: None."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 2.0,
-          "reason": "B2B Sales: 0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with other priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
-      "application_id": "Marsabit_9P4G",
-      "applicant_name": "MOYALE BODA BODA PEACE SAVING AND CREDIT CO-OPERATIVE SOCIETY LIMITED",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 11,
-      "composite_score": 64.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 5.0,
-          "reason": "Established in 2015 (10 years); Cooperative status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 5.0,
-          "reason": "2024 Revenue: KES 3,100,000.00; Accounting system: None."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 3.0,
-          "reason": "B2B Sales: 15.0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with Edible Oils priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 1.0,
-          "reason": "Limited evidence of inclusivity profile."
-        }
-      }
-    },
-    {
-      "application_id": "Marsabit_3UUW",
-      "applicant_name": "Turbi milk cooparative supplies Group",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 12,
-      "composite_score": 63.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 4.0,
-          "reason": "Established in 2016 (9 years); Cooperative status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 2.0,
-          "reason": "2024 Revenue: KES 53,000.00; Accounting system: None."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 2.0,
-          "reason": "B2B Sales: 0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with Dairy priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
-      "application_id": "Marsabit_YTNT",
-      "applicant_name": "NORTH HORR LIVESTOCK TRADERS GROUP",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 13,
-      "composite_score": 62.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
-          "reason": "Established in 2022 (3 years); MSME Association status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 4.0,
-          "reason": "2024 Revenue: KES 740,000.00; Accounting system: None."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 4.0,
-          "reason": "B2B Sales: 25.0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with other priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 1.0,
+          "score": 3.3,
           "reason": "Limited evidence of inclusivity profile."
         }
       }
@@ -442,31 +310,97 @@
       "application_id": "Marsabit_EL8O",
       "applicant_name": "YADHKI MULTIPURPOSE CO-OPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 14,
-      "composite_score": 60.0,
+      "rank": 10,
+      "composite_score": 66.5,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
           "score": 5.0,
           "reason": "Established in 2011 (14 years); Cooperative status."
         },
         "S2_Financial_Position_20%": {
-          "score": 4.0,
+          "score": 2.8,
           "reason": "2024 Revenue: KES 600,000.00; Accounting system: None."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 3.0,
+          "score": 4.0,
           "reason": "B2B Sales: 10.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.5,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Aligned with Construction priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 1.0,
+          "score": 1.7,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Marsabit_YTNT",
+      "applicant_name": "NORTH HORR LIVESTOCK TRADERS GROUP",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 11,
+      "composite_score": 65.8,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 3.9,
+          "reason": "Established in 2022 (3 years); MSME Association status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2.8,
+          "reason": "2024 Revenue: KES 740,000.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 4.4,
+          "reason": "B2B Sales: 25.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.5,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 3.8,
+          "reason": "Aligned with other priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 2.0,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Marsabit_FNQI",
+      "applicant_name": "KINISA FARMERS CO-OPERATIVE SOCIETY LIMITED",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 12,
+      "composite_score": 64.9,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.6,
+          "reason": "Established in 2019 (6 years); Cooperative status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2.8,
+          "reason": "2024 Revenue: KES 840,000.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 2.6,
+          "reason": "B2B Sales: 0.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.5,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 3.8,
+          "reason": "Aligned with other priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.4,
           "reason": "Limited evidence of inclusivity profile."
         }
       }
@@ -475,31 +409,97 @@
       "application_id": "Marsabit_NHKL",
       "applicant_name": "MOYALE GOLD AND GEMSTONE MINING CO-OPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 15,
-      "composite_score": 58.0,
+      "rank": 13,
+      "composite_score": 64.4,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
+          "score": 3.7,
           "reason": "Established in 2023 (2 years); Cooperative status."
         },
         "S2_Financial_Position_20%": {
-          "score": 5.0,
+          "score": 3.8,
           "reason": "2024 Revenue: KES 2,900,000.00; Accounting system: None."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 2.0,
-          "reason": "B2B Sales: 0%; Market strategy reported."
+          "score": 2.5,
+          "reason": "B2B Sales: 0.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.5,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Aligned with minerals priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 1.0,
+          "score": 2.0,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Marsabit_3UUW",
+      "applicant_name": "Turbi milk cooparative supplies Group",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 14,
+      "composite_score": 63.6,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Established in 2016 (9 years); Cooperative status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2.3,
+          "reason": "2024 Revenue: KES 53,000.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 2.4,
+          "reason": "B2B Sales: 0.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.4,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 5.0,
+          "reason": "Aligned with Dairy priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.2,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Marsabit_RYND",
+      "applicant_name": "LAMI UNITED YOUTH GROUP",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 15,
+      "composite_score": 62.4,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 5.0,
+          "reason": "Established in 2011 (14 years); Cooperative status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2.3,
+          "reason": "2024 Revenue: KES 450,000.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
+          "score": 2.5,
+          "reason": "B2B Sales: 0.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.4,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 3.8,
+          "reason": "Aligned with other priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.4,
           "reason": "Limited evidence of inclusivity profile."
         }
       }

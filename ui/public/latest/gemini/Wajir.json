@@ -14,64 +14,31 @@
       "applicant_name": "Showli women group",
       "eligibility_status": "ELIGIBLE",
       "rank": 1,
-      "composite_score": 79.0,
+      "composite_score": 75.3,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Established in 2017 (8 years); Cooperative status."
         },
         "S2_Financial_Position_20%": {
-          "score": 4.0,
+          "score": 2.8,
           "reason": "2024 Revenue: KES 600,000.00; Accounting system: None."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 4.0,
+          "score": 4.4,
           "reason": "B2B Sales: 30.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.5,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Aligned with Dairy priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
-        }
-      }
-    },
-    {
-      "application_id": "Wajir_XMXT",
-      "applicant_name": "BARWAKO WEAVES",
-      "eligibility_status": "ELIGIBLE",
-      "rank": 2,
-      "composite_score": 79.0,
-      "score_breakdown": {
-        "S1_Registration_Track_Record_5%": {
-          "score": 4.0,
-          "reason": "Established in 2020 (5 years); MSME Association status."
-        },
-        "S2_Financial_Position_20%": {
-          "score": 3.0,
-          "reason": "2024 Revenue: KES 175,000.00; Accounting system: None."
-        },
-        "S3_Market_Demand_Competitiveness_20%": {
-          "score": 5.0,
-          "reason": "B2B Sales: 65.0%; Market strategy reported."
-        },
-        "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
-          "reason": "Structured expansion plans provided"
-        },
-        "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
-          "reason": "Aligned with other priority value chain."
-        },
-        "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
+          "score": 3.5,
+          "reason": "Limited evidence of inclusivity profile."
         }
       }
     },
@@ -79,15 +46,15 @@
       "application_id": "Wajir_1GCL",
       "applicant_name": "GRIFTU KULMIYE MILK MARKETING CO-OPERATIVE SOCIETY LIMITED",
       "eligibility_status": "ELIGIBLE",
-      "rank": 3,
-      "composite_score": 78.0,
+      "rank": 2,
+      "composite_score": 73.8,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
+          "score": 3.8,
           "reason": "Established in 2023 (2 years); Cooperative status."
         },
         "S2_Financial_Position_20%": {
-          "score": 3.0,
+          "score": 2.3,
           "reason": "2024 Revenue: KES 484,000.00; Accounting system: None."
         },
         "S3_Market_Demand_Competitiveness_20%": {
@@ -95,16 +62,49 @@
           "reason": "B2B Sales: 70.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.6,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Aligned with Dairy priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.2,
+          "reason": "Limited evidence of inclusivity profile."
+        }
+      }
+    },
+    {
+      "application_id": "Wajir_XMXT",
+      "applicant_name": "BARWAKO WEAVES",
+      "eligibility_status": "ELIGIBLE",
+      "rank": 3,
+      "composite_score": 73.1,
+      "score_breakdown": {
+        "S1_Registration_Track_Record_5%": {
+          "score": 4.3,
+          "reason": "Established in 2020 (5 years); MSME Association status."
+        },
+        "S2_Financial_Position_20%": {
+          "score": 2.3,
+          "reason": "2024 Revenue: KES 175,000.00; Accounting system: None."
+        },
+        "S3_Market_Demand_Competitiveness_20%": {
           "score": 5.0,
-          "reason": "Woman-owned enterprise"
+          "reason": "B2B Sales: 65.0%; Market strategy reported."
+        },
+        "S4_Business_Proposal_Viability_25%": {
+          "score": 3.6,
+          "reason": "Structured expansion plans provided"
+        },
+        "S5_Value_Chain_Alignment_10%": {
+          "score": 3.8,
+          "reason": "Aligned with other priority value chain."
+        },
+        "S6_Inclusivity_Sustainability_20%": {
+          "score": 3.5,
+          "reason": "Limited evidence of inclusivity profile."
         }
       }
     },
@@ -113,14 +113,14 @@
       "applicant_name": "Tailoring and clothing production",
       "eligibility_status": "ELIGIBLE",
       "rank": 4,
-      "composite_score": 74.0,
+      "composite_score": 72.8,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
+          "score": 3.8,
           "reason": "Established in 2022 (3 years); MSME Association status."
         },
         "S2_Financial_Position_20%": {
-          "score": 2.0,
+          "score": 2.3,
           "reason": "2024 Revenue: KES 13,000.00; Accounting system: None."
         },
         "S3_Market_Demand_Competitiveness_20%": {
@@ -128,16 +128,16 @@
           "reason": "B2B Sales: 60.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.4,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Aligned with Textiles priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
+          "score": 3.2,
+          "reason": "Limited evidence of inclusivity profile."
         }
       }
     },
@@ -146,14 +146,14 @@
       "applicant_name": "AL HIDAYA YOUTH GROUP",
       "eligibility_status": "ELIGIBLE",
       "rank": 5,
-      "composite_score": 74.0,
+      "composite_score": 72.8,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
+          "score": 3.8,
           "reason": "Established in 2021 (4 years); MSME Association status."
         },
         "S2_Financial_Position_20%": {
-          "score": 2.0,
+          "score": 2.3,
           "reason": "2024 Revenue: KES 80,000.00; Accounting system: None."
         },
         "S3_Market_Demand_Competitiveness_20%": {
@@ -161,16 +161,16 @@
           "reason": "B2B Sales: 70.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.4,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Aligned with Rice priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
+          "score": 3.2,
+          "reason": "Limited evidence of inclusivity profile."
         }
       }
     },
@@ -179,31 +179,31 @@
       "applicant_name": "YOUNG TECHNOLOGY YOUTH SELF HELP GROUP",
       "eligibility_status": "ELIGIBLE",
       "rank": 6,
-      "composite_score": 72.0,
+      "composite_score": 72.8,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
           "score": 5.0,
           "reason": "Established in 2015 (10 years); Other status."
         },
         "S2_Financial_Position_20%": {
-          "score": 3.0,
+          "score": 2.7,
           "reason": "2024 Revenue: KES 100,000.00; Accounting system: Other."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 3.0,
+          "score": 4.0,
           "reason": "B2B Sales: 15.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.4,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Aligned with Construction priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
+          "score": 3.5,
+          "reason": "Limited evidence of inclusivity profile."
         }
       }
     },
@@ -212,31 +212,31 @@
       "applicant_name": "Bute tailoring",
       "eligibility_status": "ELIGIBLE",
       "rank": 7,
-      "composite_score": 70.0,
+      "composite_score": 71.1,
       "score_breakdown": {
         "S1_Registration_Track_Record_5%": {
-          "score": 3.0,
+          "score": 3.6,
           "reason": "Established in 2023 (2 years); Cooperative status."
         },
         "S2_Financial_Position_20%": {
-          "score": 3.0,
+          "score": 2.8,
           "reason": "2024 Revenue: KES 500,000.00; Accounting system: None."
         },
         "S3_Market_Demand_Competitiveness_20%": {
-          "score": 3.0,
+          "score": 4.0,
           "reason": "B2B Sales: 20.0%; Market strategy reported."
         },
         "S4_Business_Proposal_Viability_25%": {
-          "score": 3.0,
+          "score": 3.5,
           "reason": "Structured expansion plans provided"
         },
         "S5_Value_Chain_Alignment_10%": {
-          "score": 4.0,
+          "score": 5.0,
           "reason": "Aligned with Textiles priority value chain."
         },
         "S6_Inclusivity_Sustainability_20%": {
-          "score": 5.0,
-          "reason": "Woman-owned enterprise"
+          "score": 3.2,
+          "reason": "Limited evidence of inclusivity profile."
         }
       }
     },

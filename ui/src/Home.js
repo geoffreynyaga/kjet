@@ -340,14 +340,6 @@ export default function Home() {
             Final Analysis
           </motion.a>
 
-          <motion.a
-            href="/firstandsecond"
-            className="px-6 py-2 font-medium text-white no-underline transition-colors duration-200 bg-purple-600 rounded-lg hover:bg-purple-700"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            First vs Second
-          </motion.a>
 
           <motion.a
             href="/comparisons"
@@ -363,7 +355,6 @@ export default function Home() {
               <span className="inline-flex items-center justify-center w-3 h-3 ml-1 bg-red-500 rounded-full ring-2 ring-white" title={`${geminiSummary.zero_count} counties missing LLM data`} />
             )}
           </motion.a>
-
 
           <div className="w-px h-8 bg-blue-200/40" />
 
@@ -418,14 +409,21 @@ export default function Home() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4, duration: 0.8 }}
       >
-        <motion.h1
-          className="mb-6 text-5xl font-bold text-gray-900 gradient-text"
-          initial={{ opacity: 0, scale: 0.9 }}
+        <motion.div
+          className="mb-6"
+          initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.6, duration: 0.8 }}
         >
-          KJET National Evaluation (Second Cohort)
-        </motion.h1>
+          <h1 className="text-5xl font-bold tracking-tight text-gray-900 md:text-6xl">
+            KJET National Evaluation
+          </h1>
+          <div className="flex justify-center mt-4">
+            <span className="inline-flex items-center px-4 py-1.5 text-sm font-semibold tracking-wide text-blue-800 uppercase bg-blue-100 border border-blue-200 rounded-full">
+              Second Cohort
+            </span>
+          </div>
+        </motion.div>
         <motion.p
           className="max-w-3xl mx-auto text-xl leading-relaxed text-gray-700"
           initial={{ opacity: 0, y: 20 }}
