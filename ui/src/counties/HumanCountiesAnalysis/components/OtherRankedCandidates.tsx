@@ -1,5 +1,5 @@
 import { CountyGroup, HumanApplicant } from '../types/index.ts';
-import { formatScore, getNumericScore } from '../utils/index.ts';
+import { formatScore, getNumericScore, isCohortOneApplicant } from '../utils/index.ts';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 import { ExternalLink } from 'lucide-react';
@@ -40,7 +40,14 @@ export default function OtherRankedCandidates({ otherRanked, currentGroup }: Oth
               whileHover={{ scale: 1.01 }}
             >
               <div className="flex-1">
-                <div className="mb-1 font-semibold text-yellow-900">#{globalRank} {app['Application ID']}</div>
+                <div className="flex items-center gap-2 mb-1 font-semibold text-yellow-900">
+                  <span>#{globalRank} {app['Application ID']}</span>
+                  {isCohortOneApplicant(app['Application ID']) && (
+                    <span className="px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider bg-amber-100 text-amber-700 border border-amber-200 rounded-full">
+                      Cohort 1
+                    </span>
+                  )}
+                </div>
                 <div className="text-sm leading-relaxed text-yellow-700">{app['REASON(Evaluators Comments)'] || 'No comments available'}</div>
               </div>
               <div className="flex items-center gap-4">

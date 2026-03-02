@@ -24,7 +24,7 @@ function HumanCountiesAnalysis() {
   // Find current group and categorize applicants
   const currentGroup = groups.find((g) => g.county === selectedCounty) || null;
   const { topTwo, pending, failed, otherRanked } = useApplicantCategories(currentGroup, topCandidateCount);
-  console.log(currentGroup,"currentGroup");
+  console.log(JSON.stringify(currentGroup),"currentGroup");
 
   // Handle county selection
   const handleCountySelect = (county: string) => {

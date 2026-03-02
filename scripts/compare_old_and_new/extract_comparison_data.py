@@ -35,16 +35,29 @@ def canonicalize_county(name):
     return mapping.get(name, name)
 
 def load_c1_scores(workspace_root):
-    """Load Cohort 1 human scores for lookup."""
-    c1_path = workspace_root / "ui" / "public" / "c1" / "kjet-human-final.json"
-    if not c1_path.exists():
-        return {}
-    try:
-        with open(c1_path, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-            return {app.get("Application ID"): app for app in data}
-    except Exception:
-        return {}
+    """Load Cohort 1 human scores for lookup from multiple possible sources."""
+    sources = [
+        workspace_root / "ui" / "public" / "c1" / "kjet-human-final.json",
+        workspace_root / "ui" / "public" / "c1" / "baseline-final-results.json"
+    ]
+    scores = {}
+    for path in sources:
+        if not path.exists(): continue
+        try:
+            with open(path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                for app in data:
+                    app_id_raw = app.get("Application ID") or app.get("application_id")
+                    if app_id_raw:
+                        app_id = extract_applicant_id(str(app_id_raw))
+                        # Merge if already exists to keep as much data as possible
+                        if app_id in scores:
+                            scores[app_id].update(app)
+                        else:
+                            scores[app_id] = app
+        except Exception as e:
+            print(f"Warning: Error loading {path}: {e}")
+    return scores
 
 def extract_comparison_data(cohort="latest"):
     """Extract data from human results CSV and convert to JSON format."""
@@ -109,59 +122,82 @@ def extract_comparison_data(cohort="latest"):
                 if not county: county = current_county
 
                 # Scores and Rank
-                total_score = row[idx_final].strip() if len(row) > idx_final else ""
-                if not total_score:
-                    total_score = row[idx_total].strip() if len(row) > idx_total else ""
+                raw_score = row[idx_final].strip() if len(row) > idx_final else ""
+                if not raw_score:
+                    raw_score = row[idx_total].strip() if len(row) > idx_total else ""
                 
                 rank = row[idx_rank].strip() if len(row) > idx_rank else ""
 
-                # Special Case for Cohort 1 alternates in Latest CSV
-                if (not total_score or total_score in ["0", "0.0"]) and app_id in c1_scores:
+                # Special Case for Cohort 1 alternates in Latest CSV (if score is 0 or non-numeric)
+                needs_injection = not raw_score or raw_score in ["0", "0.0", "#N/A", "#VALUE!"]
+                if needs_injection and app_id in c1_scores:
                     c1_app = c1_scores[app_id]
-                    total_score = str(c1_app.get("Sum of weighted scores - Penalty(if any)", c1_app.get("TOTAL", "0")))
-                    rank = str(c1_app.get("Ranking from composite score", ""))
+                    # Score lookup logic
+                    score_val = (c1_app.get("Sum of weighted scores - Penalty(if any)") or 
+                                c1_app.get("TOTAL") or 
+                                c1_app.get("weighted_score") or "0")
+                    rank_val = (c1_app.get("Ranking from composite score") or 
+                               c1_app.get("Human Rank") or 
+                               c1_app.get("ranking") or 
+                               c1_app.get("county_rank") or "")
+                    
+                    total_score_val = float(score_val) if str(score_val).replace('.','',1).isdigit() else 0
+                    
                     entry = {
                         "Application ID": app_id,
                         "County": county,
-                        "Human Score": total_score,
-                        "Human Rank": rank,
-                        "A3.1 Registration & Track Record": c1_app.get("A3.1", 0),
-                        "Logic": c1_app.get("Logic", ""),
-                        "A3.2 Financial Position": c1_app.get("A3.2", 0),
-                        "Logic.1": c1_app.get("Logic.1", ""),
-                        "A3.3 Market Demand & Competitiveness": c1_app.get("A3.3", 0),
-                        "Logic.2": c1_app.get("Logic.2", ""),
-                        "A3.4 Business Proposal / Growth Viability": c1_app.get("A3.4", 0),
-                        "Logic.3": c1_app.get("Logic.3", ""),
-                        "A3.5 Value Chain Alignment & Role": c1_app.get("A3.5", 0),
-                        "Logic.4": c1_app.get("Logic.4", ""),
-                        "A3.6 Inclusivity & Sustainability": c1_app.get("A3.6", 0),
-                        "Logic.5": c1_app.get("Logic.5", ""),
+                        "E2. County Mapping": county,
+                        "Human Score": total_score_val,
+                        "Human Rank": str(rank_val),
+                        "TOTAL": total_score_val,
+                        "Sum of weighted scores - Penalty(if any)": total_score_val,
+                        "Ranking from composite score": str(rank_val),
                         "PASS/FAIL": "Pass",
-                        "Sum of weighted scores - Penalty(if any)": total_score,
-                        "REASON(Evaluators Comments)": "Cohort 1 alternate data injected"
+                        "REASON(Evaluators Comments)": c1_app.get("REASON(Evaluators Comments)", "Cohort 1 data injected"),
+                        # Detailed criteria keys with EXACT expected trailing spaces
+                        "A3.1 Registration & Track Record ": float(c1_app.get("A3.1 Registration & Track Record ") or c1_app.get("A3.1", 0)),
+                        "Logic": c1_app.get("Logic", ""),
+                        "A3.2 Financial Position ": float(c1_app.get("A3.2 Financial Position ") or c1_app.get("A3.2", 0)),
+                        "Logic.1": c1_app.get("Logic.1", ""),
+                        "A3.3 Market Demand & Competitiveness": float(c1_app.get("A3.3 Market Demand & Competitiveness") or c1_app.get("A3.3", 0)),
+                        "Logic.2": c1_app.get("Logic.2", ""),
+                        "A3.4 Business Proposal / Growth Viability": float(c1_app.get("A3.4 Business Proposal / Growth Viability") or c1_app.get("A3.4", 0)),
+                        "Logic.3": c1_app.get("Logic.3", ""),
+                        "A3.5 Value Chain Alignment & Role": float(c1_app.get("A3.5 Value Chain Alignment & Role") or c1_app.get("A3.5", 0)),
+                        "Logic.4": c1_app.get("Logic.4", ""),
+                        "A3.6 Inclusivity & Sustainability ": float(c1_app.get("A3.6 Inclusivity & Sustainability ") or c1_app.get("A3.6", 0)),
+                        "Logic.5": c1_app.get("Logic.5", "")
                     }
                 else:
+                    try:
+                        total_score_val = float(raw_score) if raw_score and raw_score.replace('.','',1).isdigit() else 0
+                    except:
+                        total_score_val = 0
+
                     entry = {
                         "Application ID": app_id,
                         "County": county,
-                        "Human Score": total_score,
+                        "E2. County Mapping": county,
+                        "Human Score": total_score_val,
                         "Human Rank": rank,
-                        "A3.1 Registration & Track Record": row[9] if len(row) > 9 else "",
-                        "Logic": row[10] if len(row) > 10 else "",
-                        "A3.2 Financial Position": row[11] if len(row) > 11 else "",
-                        "Logic.1": row[12] if len(row) > 12 else "",
-                        "A3.3 Market Demand & Competitiveness": row[13] if len(row) > 13 else "",
-                        "Logic.2": row[14] if len(row) > 14 else "",
-                        "A3.4 Business Proposal / Growth Viability": row[15] if len(row) > 15 else "",
-                        "Logic.3": row[16] if len(row) > 16 else "",
-                        "A3.5 Value Chain Alignment & Role": row[17] if len(row) > 17 else "",
-                        "Logic.4": row[18] if len(row) > 18 else "",
-                        "A3.6 Inclusivity & Sustainability": row[19] if len(row) > 19 else "",
-                        "Logic.5": row[20] if len(row) > 20 else "",
-                        "REASON(Evaluators Comments)": row[8] if len(row) > 8 else "",
+                        "TOTAL": total_score_val,
+                        "Sum of weighted scores - Penalty(if any)": total_score_val,
+                        "Ranking from composite score": rank,
                         "PASS/FAIL": "Pass" if rank and rank.isdigit() and int(rank) > 0 else "Fail",
-                        "Sum of weighted scores - Penalty(if any)": total_score
+                        "REASON(Evaluators Comments)": row[8] if len(row) > 8 else "",
+                        # Criteria with spaces
+                        "A3.1 Registration & Track Record ": float(row[9]) if len(row) > 9 and row[9].replace('.','',1).isdigit() else 0,
+                        "Logic": row[10] if len(row) > 10 else "",
+                        "A3.2 Financial Position ": float(row[11]) if len(row) > 11 and row[11].replace('.','',1).isdigit() else 0,
+                        "Logic.1": row[12] if len(row) > 12 else "",
+                        "A3.3 Market Demand & Competitiveness": float(row[13]) if len(row) > 13 and row[13].replace('.','',1).isdigit() else 0,
+                        "Logic.2": row[14] if len(row) > 14 else "",
+                        "A3.4 Business Proposal / Growth Viability": float(row[15]) if len(row) > 15 and row[15].replace('.','',1).isdigit() else 0,
+                        "Logic.3": row[16] if len(row) > 16 else "",
+                        "A3.5 Value Chain Alignment & Role": float(row[17]) if len(row) > 17 and row[17].replace('.','',1).isdigit() else 0,
+                        "Logic.4": row[18] if len(row) > 18 else "",
+                        "A3.6 Inclusivity & Sustainability ": float(row[19]) if len(row) > 19 and row[19].replace('.','',1).isdigit() else 0,
+                        "Logic.5": row[20] if len(row) > 20 else ""
                     }
                 data.append(entry)
 

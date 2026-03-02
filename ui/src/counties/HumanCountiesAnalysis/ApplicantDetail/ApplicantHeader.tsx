@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { formatScore, getNumericScore } from '../utils/index.ts';
+import { formatScore, getNumericScore, isCohortOneApplicant } from '../utils/index.ts';
 
 import { ArrowLeft } from 'lucide-react';
 import { HumanApplicant } from '../types/index.ts';
@@ -98,8 +98,13 @@ export const ApplicantHeader: React.FC<HeaderProps> = ({ applicant, countyApplic
             </motion.button>
             <div className="w-px h-8 bg-gray-300" />
             <div>
-              <h1 className="text-2xl font-bold text-gray-900">
+              <h1 className="flex items-center gap-3 text-2xl font-bold text-gray-900">
                 {applicant['Application ID']}
+                {isCohortOneApplicant(applicant['Application ID']) && (
+                  <span className="px-2 py-0.5 text-xs font-bold uppercase tracking-wider bg-amber-100 text-amber-700 border border-amber-200 rounded-full shadow-sm">
+                    Cohort 1
+                  </span>
+                )}
                 {applicantName && (
                   <motion.span
                     className="ml-3 font-medium text-gray-700"

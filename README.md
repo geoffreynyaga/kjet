@@ -6,6 +6,10 @@ This project automates the extraction, analysis, and evaluation of KJET applicat
 
 KJET (Kenya Jobs and Economic Transformation) processes thousands of applications from various counties. This pipeline takes raw PDF applications and transforms them into structured data, scores them based on predefined rules, and prepares them for display on a dashboard.
 
+## Pipeline Data Contracts
+
+For detailed input/output structure between each pipeline step (including type definitions), see [PIPELINE.md](PIPELINE.md).
+
 ## System Architecture
 
 ```text
@@ -34,6 +38,11 @@ KJET (Kenya Jobs and Economic Transformation) processes thousands of application
 ### 5. Conversion (`make convert-csv`)
 *   **Purpose**: To format the final analysis tables into JSON for optimized frontend consumption.
 *   **Output**: Final dashboard data files in `ui/public/`.
+
+### 6. Comparison Dashboard Support
+*   **Purpose**: Merges human-evaluated baselines with machine scoring to provide a side-by-side comparison of results.
+*   **Cross-Cohort Integration**: For the latest cohort, the pipeline automatically pulls in Rank 3 & 4 alternates from Cohort 1 (normalized to current weights) to provide a complete candidate pool for counties like Baringo.
+*   **Output**: `comparison_data.json` and synchronized human baseline JSONs in `ui/public/`.
 
 ## Quick Start
 

@@ -1,6 +1,6 @@
 import { ChevronDown, ChevronRight, ExternalLink } from 'lucide-react';
 import { CountyGroup, HumanApplicant } from '../types/index.ts';
-import { formatScore, getNumericScore } from '../utils/index.ts';
+import { formatScore, getNumericScore, isCohortOneApplicant } from '../utils/index.ts';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 import ScoringBreakdown from './ScoringBreakdown.tsx';
@@ -54,7 +54,14 @@ export default function TopRankedCandidates({
                     #{globalRank}
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h4 className="font-semibold text-gray-900 truncate">{app['Application ID']}</h4>
+                    <div className="flex items-center gap-2">
+                       <h4 className="font-semibold text-gray-900 truncate">{app['Application ID']}</h4>
+                       {isCohortOneApplicant(app['Application ID']) && (
+                         <span className="px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider bg-amber-100 text-amber-700 border border-amber-200 rounded-full">
+                           Cohort 1
+                         </span>
+                       )}
+                    </div>
                   </div>
                   <div className="flex items-center gap-3">
 

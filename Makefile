@@ -7,7 +7,7 @@ DATA_DIR ?= data/$(COHORT)
 HUMAN_FIRST_CSV ?= scripts/human/kjet-human-$(COHORT)-first.csv
 HUMAN_FINAL_CSV ?= scripts/human/kjet-human-$(COHORT)-final.csv
 
-.PHONY: all venv install extraction financials evaluation summary stats src convert-csv run build clean help
+.PHONY: all venv install extraction financials analysis evaluation summary gemini stats src collectstatic human convert-csv comparison run build clean help
 
 # Display help information about available commands
 help:
@@ -107,7 +107,6 @@ run: install
 		$(MAKE) extraction; \
 	fi
 	@echo "Running analysis and evaluation steps..."
-	$(MAKE) extraction COHORT=$(COHORT) DATA_DIR=$(DATA_DIR)
 	$(MAKE) analysis
 	$(MAKE) evaluation
 	$(MAKE) stats

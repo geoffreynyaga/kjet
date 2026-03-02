@@ -21,3 +21,13 @@ export function processCountyName(countyRaw: string): string {
   }
   return county;
 }
+
+export function isCohortOneApplicant(applicationId: string): boolean {
+  if (!applicationId) return false;
+  // Cohort 1 IDs look like "Applicant_123" or "Applicant_1"
+  // Latest cohort IDs look like "Applicant_KJET-..."
+  const parts = applicationId.split('_');
+  if (parts.length !== 2) return false;
+  const idPart = parts[1];
+  return /^\d+$/.test(idPart);
+}

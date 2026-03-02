@@ -11,10 +11,47 @@ export function useHumanData() {
   const loadHumanData = async () => {
     try {
       setLoading(true);
-      const cohort = new URLSearchParams(window.location.search).get('cohort');
+      const cohort = new URLSearchParams(window.location.search).get('cohort') || 'latest';
       const dataUrls = buildStaticDataUrls('kjet-human-final.json', cohort);
 
       const data = await fetchJsonWithFallback<HumanApplicant[]>(dataUrls);
+
+      // --- NEW: Secondary Fallback for Cohort 1 Alternates ---
+      // If we are in the latest cohort, also load C1 baseline data to fill any gaps
+      if (cohort === 'latest') {
+        try {
+          const c1BaselineUrl = buildStaticDataUrls('baseline-final-results.json', 'c1');
+          const c1Data = await fetchJsonWithFallback<any[]>(c1BaselineUrl);
+          
+          // Create a lookup map for C1 data
+          const c1Map = new Map();
+          c1Data.forEach(app => {
+            const id = app.application_id || app['Application ID'];
+            if (id) {
+              const canonId = String(id).startsWith('Applicant_') ? id : `Applicant_${id}`;
+              c1Map.set(canonId, app);
+            }
+          });
+
+          // Merge C1 scores into main data if score is 0 or missing
+          data.forEach(app => {
+            const score = getNumericScore(app);
+            const appId = String(app['Application ID'] || '');
+            if ((score <= 0 || isNaN(score)) && c1Map.has(appId)) {
+              const c1Info = c1Map.get(appId);
+              app['Sum of weighted scores - Penalty(if any)'] = Number(c1Info.weighted_score || c1Info.TOTAL || 0);
+              if (c1Info.ranking) {
+                app['Ranking from composite score'] = String(c1Info.ranking);
+              }
+              // Add a tag to show it's injected data
+              app['REASON(Evaluators Comments)'] = app['REASON(Evaluators Comments)'] || 'Data merged from Cohort 1 results';
+            }
+          });
+        } catch (c1Err) {
+          console.warn("Could not load C1 fallback data:", c1Err);
+        }
+      }
+      // --- END NEW ---
 
       // Group by county (E2. County Mapping)
       const map = new Map<string, HumanApplicant[]>();
