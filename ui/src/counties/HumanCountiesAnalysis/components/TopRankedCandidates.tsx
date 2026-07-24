@@ -27,8 +27,8 @@ export default function TopRankedCandidates({
   return (
     <div className="mb-8 overflow-hidden bg-white border border-gray-200 rounded-lg shadow-sm">
       <div className="px-4 py-3 border-b border-green-200 bg-gradient-to-r from-[#2cb978] to-[#83e85a]">
-        <h3 className="flex items-center gap-2 text-lg font-semibold text-green-900">
-          <div className="w-2 h-2 bg-green-500 rounded-full" />Top Ranked Candidates
+        <h3 className="text-lg font-semibold text-green-900">
+          Top Ranked Candidates
         </h3>
       </div>
       <div className="divide-y divide-gray-100">

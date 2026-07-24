@@ -93,6 +93,7 @@ def extract_comparison_data(cohort="latest"):
             try:
                 idx_id = header.index("Application ID")
                 idx_county = header.index("E2. County Mapping")
+                idx_e3 = header.index("E3. Priority Value Chain")
                 idx_total = header.index("TOTAL")
                 idx_final = header.index("Sum of weighted scores - Penalty(if any)")
                 idx_rank = header.index("Ranking from composite score")
@@ -100,6 +101,7 @@ def extract_comparison_data(cohort="latest"):
                 # Fallback to confirmed indices from diagnostic
                 idx_id = 1
                 idx_county = 3
+                idx_e3 = 4
                 idx_total = 35
                 idx_final = 37
                 idx_rank = 38
@@ -120,6 +122,7 @@ def extract_comparison_data(cohort="latest"):
                 app_id = extract_applicant_id(app_id_raw)
                 county = canonicalize_county(row[idx_county]) if len(row) > idx_county else current_county
                 if not county: county = current_county
+                e3_pvc = row[idx_e3].strip() if len(row) > idx_e3 else ""
 
                 # Scores and Rank
                 raw_score = row[idx_final].strip() if len(row) > idx_final else ""
@@ -147,6 +150,7 @@ def extract_comparison_data(cohort="latest"):
                         "Application ID": app_id,
                         "County": county,
                         "E2. County Mapping": county,
+                        "E3. Priority Value Chain": c1_app.get("E3. Priority Value Chain", e3_pvc),
                         "Human Score": total_score_val,
                         "Human Rank": str(rank_val),
                         "TOTAL": total_score_val,
@@ -178,6 +182,7 @@ def extract_comparison_data(cohort="latest"):
                         "Application ID": app_id,
                         "County": county,
                         "E2. County Mapping": county,
+                        "E3. Priority Value Chain": e3_pvc,
                         "Human Score": total_score_val,
                         "Human Rank": rank,
                         "TOTAL": total_score_val,

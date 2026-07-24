@@ -138,7 +138,6 @@ export default function CountyList({ groups, selectedCounty, onCountySelect }: C
                   transition={{ delay: i * 0.05 + 0.15 }}
                 >
                   <div className="flex items-center gap-1">
-                    <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
                     <span className="text-gray-500">Avg Score</span>
                     <motion.span
                       className="font-semibold text-blue-600"
@@ -154,7 +153,6 @@ export default function CountyList({ groups, selectedCounty, onCountySelect }: C
                     </motion.span>
                   </div>
                   <div className="flex items-center gap-1">
-                    <div className="w-2 h-2 rounded-full bg-amber-500"></div>
                     <span className="text-gray-500">Top Score</span>
                     <motion.span
                       className="font-semibold text-amber-600"

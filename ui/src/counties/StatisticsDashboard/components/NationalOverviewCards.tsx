@@ -25,7 +25,7 @@ export const NationalOverviewCards: React.FC<NationalOverviewCardsProps> = ({ na
         </div>
       </div>
 
-      <div className="p-6 bg-white rounded-lg shadow-sm">
+      {(nationalStats.tierDistribution.tier1 > 0 || nationalStats.tierDistribution.tier2 > 0) && <div className="p-6 bg-white rounded-lg shadow-sm">
         <div className="flex items-center justify-between">
           <div className="flex-1">
             <p className="mb-3 text-sm font-medium text-gray-600">Business Tiers</p>
@@ -47,7 +47,7 @@ export const NationalOverviewCards: React.FC<NationalOverviewCardsProps> = ({ na
             </div>
           </div>
         </div>
-      </div>
+      </div>}
 
       <div className="p-6 bg-white rounded-lg shadow-sm">
         <div className="flex items-center justify-between">

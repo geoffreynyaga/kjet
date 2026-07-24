@@ -11,8 +11,8 @@ export default function PendingReview({ pending }: PendingReviewProps) {
   return (
     <div className="mb-8 overflow-hidden border border-yellow-200 rounded-lg shadow-sm bg-yellow-50">
       <div className="px-4 py-3 border-b border-yellow-200 bg-gradient-to-r from-yellow-50 to-yellow-100">
-        <h3 className="flex items-center gap-2 text-lg font-semibold text-yellow-900">
-          <div className="w-2 h-2 bg-yellow-500 rounded-full" />Pending Review
+        <h3 className="text-lg font-semibold text-yellow-900">
+          Pending Review
         </h3>
       </div>
       <div className="p-4 divide-y divide-yellow-100">
