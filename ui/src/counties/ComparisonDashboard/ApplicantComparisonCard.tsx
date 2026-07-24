@@ -1,4 +1,4 @@
-import { AlertTriangle, ArrowDown, ArrowUp, CheckCircle, ChevronDown, ChevronRight, Minus, XCircle } from 'lucide-react';
+import { AlertTriangle, CheckCircle, ChevronDown } from 'lucide-react';
 import React, { useState } from 'react';
 
 import { ComparisonRow } from './types.ts';
@@ -11,12 +11,8 @@ interface ApplicantComparisonCardProps {
 }
 
 const ApplicantComparisonCard: React.FC<ApplicantComparisonCardProps> = ({ comparison, index }) => {
-  const [isReasonsExpanded, setIsReasonsExpanded] = useState(false);
-  const [isCriterionExpanded, setIsCriterionExpanded] = useState(false);
+  const [isDetailsExpanded, setIsDetailsExpanded] = useState(false);
   const [expandedCriterion, setExpandedCriterion] = useState<Set<string>>(new Set());
-
-
-  console.log(comparison,"comparison in ApplicantComparisonCard")
 
   // Check if this is a matched comparison (has LLM data) or a mismatched application
   const isMatched = comparison.llmStatus && comparison.llmStatus !== 'County Not Found' && comparison.llmStatus !== 'Not Found in LLM' && comparison.llmStatus !== 'No Analysis';
@@ -30,12 +26,6 @@ const ApplicantComparisonCard: React.FC<ApplicantComparisonCardProps> = ({ compa
   const disagreementType = hasPassFailDisagreement
     ? (humanPassed ? 'llm-failed-human-passed' : 'human-failed-llm-passed')
     : null;
-
-  const toggleCriterionSection = () => {
-    if (hasDetailedComparison) {
-      setIsCriterionExpanded(!isCriterionExpanded);
-    }
-  };
 
   const toggleSpecificCriterion = (criterion: string) => {
     setExpandedCriterion(prev => {
@@ -56,21 +46,6 @@ const ApplicantComparisonCard: React.FC<ApplicantComparisonCardProps> = ({ compa
       case 'disagreement': return 'text-red-600 bg-red-50';
       default: return 'text-gray-600 bg-gray-50';
     }
-  };
-
-  const getAgreementIcon = (agreement: string) => {
-    switch (agreement) {
-      case 'full': return <CheckCircle size={16} />;
-      case 'partial': return <Minus size={16} />;
-      case 'disagreement': return <XCircle size={16} />;
-      default: return <AlertTriangle size={16} />;
-    }
-  };
-
-  const getRankChangeIcon = (difference: number | null) => {
-    if (difference === null || difference === 0) return <Minus className="text-gray-400" size={16} />;
-    if (difference > 0) return <ArrowDown className="text-red-500" size={16} />;
-    return <ArrowUp className="text-green-500" size={16} />;
   };
 
   return (
@@ -155,26 +130,25 @@ const ApplicantComparisonCard: React.FC<ApplicantComparisonCardProps> = ({ compa
         </td>
         <td className="px-4 py-4 text-center">
           {isMatched && comparison.agreement ? (
-            <span className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium ${getAgreementColor(comparison.agreement)}`}>
-              {getAgreementIcon(comparison.agreement)}
+            <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${getAgreementColor(comparison.agreement)}`}>
               {comparison.agreement}
             </span>
           ) : (
-            <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
-              <AlertTriangle size={16} />
+            <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
               No Comparison
             </span>
           )}
         </td>
       </tr>
 
-      {/* Bottom action row — View reasons + criterion toggle */}
+      {/* One control reveals the complete human/LLM evaluation detail. */}
       <tr className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
         <td colSpan={8} className="pt-1 pb-3 text-center">
-          <div className="flex items-center justify-center gap-3">
-            {/* View evaluation reasons */}
+          <div className="flex items-center justify-center">
             <motion.button
-              onClick={() => setIsReasonsExpanded(!isReasonsExpanded)}
+              type="button"
+              aria-expanded={isDetailsExpanded}
+              onClick={() => setIsDetailsExpanded(!isDetailsExpanded)}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className={`inline-flex items-center gap-1.5 px-4 py-1.5 text-xs font-medium rounded-full border transition-colors ${
@@ -185,51 +159,21 @@ const ApplicantComparisonCard: React.FC<ApplicantComparisonCardProps> = ({ compa
                   : 'border-blue-200 text-blue-600 bg-blue-50 hover:bg-blue-100'
               }`}
             >
-              {hasPassFailDisagreement ? (
-                <AlertTriangle size={13} />
-              ) : bothFailed ? (
-                <CheckCircle size={13} />
-              ) : (
-                <motion.span
-                  animate={{ rotate: isReasonsExpanded ? 180 : 0 }}
-                  transition={{ duration: 0.3, ease: 'easeInOut' }}
-                  className="flex items-center"
-                >
-                  <ChevronDown size={13} />
-                </motion.span>
-              )}
-              {hasPassFailDisagreement
-                ? (disagreementType === 'human-failed-llm-passed' ? 'Human/LLM disagreement' : 'LLM/Human disagreement')
-                : bothFailed
-                ? 'Both failed — view details'
-                : 'View evaluation reasons'
-              }
-            </motion.button>
-
-            {/* Criterion analysis toggle */}
-            {hasDetailedComparison && (
-              <motion.button
-                onClick={toggleCriterionSection}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center gap-1.5 px-4 py-1.5 text-xs font-medium text-violet-600 bg-violet-50 border border-violet-200 rounded-full hover:bg-violet-100 transition-colors"
+              <motion.span
+                animate={{ rotate: isDetailsExpanded ? 180 : 0 }}
+                transition={{ duration: 0.2, ease: 'easeInOut' }}
+                className="flex items-center"
               >
-                <motion.span
-                  animate={{ rotate: isCriterionExpanded ? 180 : 0 }}
-                  transition={{ duration: 0.3, ease: 'easeInOut' }}
-                  className="flex items-center"
-                >
-                  <ChevronDown size={13} />
-                </motion.span>
-                {isCriterionExpanded ? 'Hide criterion analysis' : 'Show criterion analysis'}
-              </motion.button>
-            )}
+                <ChevronDown size={15} />
+              </motion.span>
+              {isDetailsExpanded ? 'Hide evaluation details' : 'View evaluation details'}
+            </motion.button>
           </div>
         </td>
       </tr>
 
       {/* Expanded reasons row */}
-      {isReasonsExpanded && (
+      {isDetailsExpanded && (
         <tr className={index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
           <td colSpan={8} className="px-4 py-4 border-t border-gray-200">
             <motion.div
@@ -267,8 +211,7 @@ const ApplicantComparisonCard: React.FC<ApplicantComparisonCardProps> = ({ compa
               <div className="grid gap-4 md:grid-cols-2">
                 {/* Human Reason */}
                 <div className="p-4 bg-white border border-gray-200 rounded-lg">
-                  <div className="flex items-center gap-2 mb-3">
-                    <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
+                  <div className="mb-3">
                     <h4 className="font-medium text-gray-900">Human Evaluator Reason</h4>
                   </div>
                   <p className="text-sm leading-relaxed text-gray-700 whitespace-pre-wrap">
@@ -279,8 +222,7 @@ const ApplicantComparisonCard: React.FC<ApplicantComparisonCardProps> = ({ compa
                 {/* LLM Reason */}
                 {isMatched ? (
                   <div className="p-4 bg-white border border-gray-200 rounded-lg">
-                    <div className="flex items-center gap-2 mb-3">
-                      <div className="w-3 h-3 bg-purple-500 rounded-full"></div>
+                    <div className="mb-3">
                       <h4 className="font-medium text-gray-900">LLM Analysis Reason</h4>
                     </div>
                     <p className="text-sm leading-relaxed text-gray-700 whitespace-pre-wrap">
@@ -305,7 +247,7 @@ const ApplicantComparisonCard: React.FC<ApplicantComparisonCardProps> = ({ compa
       )}
 
       {/* Expanded detailed criterion comparison row */}
-      {isCriterionExpanded && hasDetailedComparison && (
+      {isDetailsExpanded && hasDetailedComparison && (
         <tr className={index % 2 === 0 ? 'bg-blue-50' : 'bg-blue-25'}>
           <td colSpan={8} className="px-4 py-6">
             <motion.div
