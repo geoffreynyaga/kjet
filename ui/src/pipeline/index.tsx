@@ -27,7 +27,22 @@ export default function PipelinePanel() {
   const [error, setError] = useState('');
   const [problems, setProblems] = useState<StructureProblem[]>([]);
   const [sheetUrl, setSheetUrl] = useState('');
+  const [file, setFile] = useState<File | null>(null);
+  const [dragging, setDragging] = useState(false);
   const fileInput = useRef<HTMLInputElement>(null);
+
+  const isSheetUrl = /\/spreadsheets\/d\/[a-zA-Z0-9-_]+/.test(sheetUrl);
+
+  function chooseFile(candidate?: File | null) {
+    if (!candidate) return;
+    if (!candidate.name.toLowerCase().endsWith('.csv')) {
+      setError(`${candidate.name} is not a .csv file.`);
+      return;
+    }
+    setError('');
+    setProblems([]);
+    setFile(candidate);
+  }
 
   const refreshVersions = useCallback(() => {
     listVersions(cohort).then(setVersions).catch(() => undefined);
@@ -104,52 +119,120 @@ export default function PipelinePanel() {
         </p>
       </header>
 
-      <section className="p-5 space-y-4 border border-gray-200 rounded-lg">
-        <div className="flex flex-wrap items-center gap-3">
-          <input ref={fileInput} type="file" accept=".csv,text/csv" className="text-sm" />
-          <button
-            type="button"
-            disabled={busy}
-            className="px-4 py-2 text-white bg-blue-600 rounded disabled:opacity-40"
-            onClick={() => {
-              const file = fileInput.current?.files?.[0];
-              if (!file) {
-                setError('Choose a CSV file first.');
-                return;
-              }
-              start(() => submitFile(file, cohort));
+      <section className="p-5 space-y-6 border border-gray-200 rounded-lg">
+        <div>
+          <h2 className="text-sm font-semibold tracking-wide text-gray-500 uppercase">
+            Upload a CSV
+          </h2>
+
+          <div
+            role="button"
+            tabIndex={0}
+            onClick={() => fileInput.current?.click()}
+            onKeyDown={(event) => {
+              if (event.key === 'Enter' || event.key === ' ') fileInput.current?.click();
             }}
+            onDragOver={(event) => {
+              event.preventDefault();
+              setDragging(true);
+            }}
+            onDragLeave={() => setDragging(false)}
+            onDrop={(event) => {
+              event.preventDefault();
+              setDragging(false);
+              chooseFile(event.dataTransfer.files?.[0]);
+            }}
+            className={`mt-2 cursor-pointer rounded-lg border-2 border-dashed px-6 py-8 text-center transition-colors ${
+              dragging
+                ? 'border-blue-500 bg-blue-50'
+                : 'border-gray-300 bg-gray-50 hover:border-blue-400 hover:bg-blue-50/40'
+            }`}
           >
-            Upload and build
-          </button>
+            {file ? (
+              <div>
+                <div className="font-medium text-gray-900">{file.name}</div>
+                <div className="mt-1 text-sm text-gray-500">
+                  {(file.size / 1024).toFixed(0)} KB · click to choose a different file
+                </div>
+              </div>
+            ) : (
+              <div>
+                <div className="font-medium text-gray-800">
+                  Drop the results CSV here, or click to browse
+                </div>
+                <div className="mt-1 text-sm text-gray-500">
+                  .csv only — this replaces the published human results
+                </div>
+              </div>
+            )}
+          </div>
+
+          <input
+            ref={fileInput}
+            type="file"
+            accept=".csv,text/csv"
+            className="hidden"
+            onChange={(event) => chooseFile(event.target.files?.[0])}
+          />
+
+          <div className="flex items-center gap-3 mt-3">
+            <button
+              type="button"
+              disabled={busy || !file}
+              className="px-4 py-2 text-white bg-blue-600 rounded disabled:cursor-not-allowed disabled:opacity-40"
+              onClick={() => file && start(() => submitFile(file, cohort))}
+            >
+              Upload and build
+            </button>
+            {file && (
+              <button
+                type="button"
+                className="text-sm text-gray-600 underline"
+                onClick={() => {
+                  setFile(null);
+                  if (fileInput.current) fileInput.current.value = '';
+                }}
+              >
+                Clear
+              </button>
+            )}
+          </div>
         </div>
 
-        <div className="flex flex-wrap items-center gap-3">
-          <input
-            type="url"
-            value={sheetUrl}
-            placeholder="https://docs.google.com/spreadsheets/d/…"
-            onChange={(event) => setSheetUrl(event.target.value)}
-            className="flex-1 min-w-[280px] rounded border border-gray-300 px-3 py-2 text-sm"
-          />
-          <button
-            type="button"
-            disabled={busy}
-            className="px-4 py-2 text-white bg-gray-700 rounded disabled:opacity-40"
-            onClick={() => start(() => submitSheet(sheetUrl, cohort))}
-          >
-            Fetch and build
-          </button>
+        <div className="pt-5 border-t border-gray-100">
+          <h2 className="text-sm font-semibold tracking-wide text-gray-500 uppercase">
+            Or fetch from Google Sheets
+          </h2>
+          <div className="flex flex-wrap items-center gap-3 mt-2">
+            <input
+              type="url"
+              value={sheetUrl}
+              placeholder="https://docs.google.com/spreadsheets/d/…"
+              onChange={(event) => setSheetUrl(event.target.value)}
+              className="flex-1 min-w-[280px] rounded border border-gray-300 px-3 py-2 text-sm"
+            />
+            <button
+              type="button"
+              disabled={busy || !isSheetUrl}
+              className="px-4 py-2 text-white bg-gray-700 rounded disabled:cursor-not-allowed disabled:opacity-40"
+              onClick={() => start(() => submitSheet(sheetUrl, cohort))}
+            >
+              Fetch and build
+            </button>
+          </div>
+          <p className="mt-2 text-xs text-gray-500">
+            The sheet must be shared with anyone holding the link.
+          </p>
+          {lastSheetUrl && lastSheetUrl !== sheetUrl && (
+            <button
+              type="button"
+              className="mt-1 text-xs text-blue-700 underline"
+              onClick={() => setSheetUrl(lastSheetUrl)}
+            >
+              Use last fetched sheet
+            </button>
+          )}
         </div>
-        {lastSheetUrl && lastSheetUrl !== sheetUrl && (
-          <button
-            type="button"
-            className="text-xs text-blue-700 underline"
-            onClick={() => setSheetUrl(lastSheetUrl)}
-          >
-            Use last fetched sheet
-          </button>
-        )}
       </section>
 
       {error && (
