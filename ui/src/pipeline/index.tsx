@@ -353,6 +353,13 @@ export default function PipelinePanel() {
             </div>
           )}
 
+          {run.status === 'BUILT' && (run.changed_outputs || []).length === 0 && (
+            <div className="p-3 text-sm border rounded border-amber-300 bg-amber-50 text-amber-900">
+              This CSV rebuilds to exactly the files already published — nothing to
+              upload. That usually means it is the same data as the live version.
+            </div>
+          )}
+
           {(run.changed_outputs || []).length > 0 && (
             <div className="text-sm">
               <div className="font-medium text-gray-800">Output files that changed</div>
