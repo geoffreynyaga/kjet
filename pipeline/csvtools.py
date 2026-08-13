@@ -28,6 +28,30 @@ COUNTY_COLUMN = "E2. County Mapping"
 # because a change here moves a published score.
 SCORE_COLUMN_RANGE = range(8, 21)
 
+# Columns that script resolves by name. Each must keep its index, because the
+# scores around them are read positionally.
+NAMED_COLUMNS = [
+    APP_ID_COLUMN,
+    COUNTY_COLUMN,
+    "E3. Priority Value Chain",
+    "TOTAL",
+    "Sum of weighted scores - Penalty(if any)",
+    "Ranking from composite score",
+]
+
+# Anchors inside the positional read window: the evaluator comment and the six
+# A3 score columns. The Logic columns between them are deliberately excluded --
+# their headers carry stray prose in some sheets, and any column inserted next
+# to one shifts the following anchor, so they stay protected either way.
+SCORE_ANCHOR_INDICES = [8, 9, 11, 13, 15, 17, 19]
+
+
+def normalise_header(value):
+    """Headers differ cosmetically between sheets; compare them insensitively."""
+    if value is None:
+        return None
+    return " ".join(str(value).split()).casefold()
+
 
 class CsvStructureError(Exception):
     """The CSV cannot be parsed into the expected two-level header shape."""
@@ -78,19 +102,15 @@ def fingerprint(records):
 
 
 def compare_fingerprints(expected, actual):
-    """Return a list of human-readable structural differences (empty if identical)."""
-    problems = []
+    """Structural differences that would change which column a value is read from.
 
-    if expected.get("column_count") != actual.get("column_count"):
-        problems.append(
-            {
-                "kind": "column_count",
-                "message": (
-                    f"Column count changed from {expected.get('column_count')} "
-                    f"to {actual.get('column_count')}."
-                ),
-            }
-        )
+    Only load-bearing structure is compared. Cosmetic edits -- a trailing space
+    in a heading, prose typed over an unused Logic header, a column appended
+    past the last one anyone reads -- are not failures. Anything that moves a
+    value the pipeline reads is, because those reads are positional and would
+    otherwise produce wrong numbers with no error.
+    """
+    problems = []
 
     if expected.get("header_line_span") != actual.get("header_line_span"):
         problems.append(
@@ -105,25 +125,64 @@ def compare_fingerprints(expected, actual):
             }
         )
 
-    for key, label in (("header", "Column"), ("banner", "Banner cell")):
-        old = expected.get(key) or []
-        new = actual.get(key) or []
-        for index in range(max(len(old), len(new))):
-            old_value = old[index] if index < len(old) else None
-            new_value = new[index] if index < len(new) else None
-            if old_value != new_value:
-                problems.append(
-                    {
-                        "kind": key,
-                        "index": index,
-                        "old": old_value,
-                        "new": new_value,
-                        "scored": key == "header" and index in SCORE_COLUMN_RANGE,
-                        "message": (
-                            f"{label} {index} changed from {old_value!r} to {new_value!r}."
-                        ),
-                    }
-                )
+    old_header = expected.get("header") or []
+    new_header = actual.get("header") or []
+    old_lookup = [normalise_header(cell) for cell in old_header]
+    new_lookup = [normalise_header(cell) for cell in new_header]
+
+    # Named columns must keep the index they had, since the positional reads
+    # around them assume that layout.
+    for name in NAMED_COLUMNS:
+        key = normalise_header(name)
+        old_index = old_lookup.index(key) if key in old_lookup else None
+        new_index = new_lookup.index(key) if key in new_lookup else None
+
+        if new_index is None:
+            problems.append(
+                {
+                    "kind": "missing_column",
+                    "index": old_index,
+                    "old": name,
+                    "new": None,
+                    "scored": True,
+                    "message": f"Column {name!r} is missing.",
+                }
+            )
+        elif old_index is not None and old_index != new_index:
+            problems.append(
+                {
+                    "kind": "moved_column",
+                    "index": new_index,
+                    "old": f"index {old_index}",
+                    "new": f"index {new_index}",
+                    "scored": True,
+                    "message": (
+                        f"Column {name!r} moved from index {old_index} to {new_index}."
+                    ),
+                }
+            )
+
+    # Score anchors must still sit at the same positions.
+    for index in SCORE_ANCHOR_INDICES:
+        old_value = old_lookup[index] if index < len(old_lookup) else None
+        new_value = new_lookup[index] if index < len(new_lookup) else None
+        if old_value != new_value:
+            problems.append(
+                {
+                    "kind": "header",
+                    "index": index,
+                    "old": old_header[index] if index < len(old_header) else None,
+                    "new": new_header[index] if index < len(new_header) else None,
+                    "scored": True,
+                    "message": (
+                        f"Position {index} now holds "
+                        f"{(new_header[index] if index < len(new_header) else None)!r} "
+                        f"instead of "
+                        f"{(old_header[index] if index < len(old_header) else None)!r}. "
+                        f"Scores are read from fixed positions, so this shifts them."
+                    ),
+                }
+            )
 
     return problems
 
