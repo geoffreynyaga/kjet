@@ -376,27 +376,39 @@ export default function PipelinePanel() {
             <div className="flex gap-3 pt-2 border-t border-gray-100">
               <button
                 type="button"
-                disabled={!canPublish}
-                className="px-4 py-2 text-white bg-green-600 rounded disabled:opacity-40"
-                onClick={() =>
+                disabled={!canPublish || busy}
+                className="px-4 py-2 text-white bg-green-600 rounded disabled:cursor-not-allowed disabled:opacity-40"
+                onClick={() => {
+                  setBusy(true);
+                  setError('');
                   publishRun(run.id)
-                    .then(setRun)
+                    .then((next) => {
+                      setRun(next);
+                      // Polling refreshes history when a run leaves IN_FLIGHT, but
+                      // a fast publish can already be finished by the time this
+                      // response lands.
+                      if (!IN_FLIGHT.includes(next.status)) refreshVersions();
+                    })
                     .catch((err) => setError(err.message))
-                }
+                    .finally(() => setBusy(false));
+                }}
               >
-                Upload to server
+                {busy ? 'Uploading…' : 'Upload to server'}
               </button>
               <button
                 type="button"
-                className="px-4 py-2 text-gray-700 border border-gray-300 rounded"
-                onClick={() =>
+                disabled={busy}
+                className="px-4 py-2 text-gray-700 border border-gray-300 rounded disabled:opacity-40"
+                onClick={() => {
+                  setBusy(true);
                   discardRun(run.id)
                     .then((next) => {
                       setRun(next);
                       refreshVersions();
                     })
                     .catch((err) => setError(err.message))
-                }
+                    .finally(() => setBusy(false));
+                }}
               >
                 Discard
               </button>

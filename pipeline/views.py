@@ -199,9 +199,17 @@ class RunPublishView(StaffApiView):
                 status=status.HTTP_400_BAD_REQUEST,
             )
 
+        # Move out of BUILT before dispatching so the response can never report a
+        # still-publishable run, which would leave the publish button live and
+        # invite a second click.
+        run.status = PipelineRun.Status.PUBLISHING
+        run.save(update_fields=["status"])
+
         async_result = tasks.publish_run.delay(run.pk)
         run.celery_task_id = async_result.id
         run.save(update_fields=["celery_task_id"])
+
+        run.refresh_from_db()
         return Response(PipelineRunSerializer(run).data, status=status.HTTP_202_ACCEPTED)
 
 
