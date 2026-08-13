@@ -11,8 +11,19 @@ AWS_FILE_EXPIRE = 200
 AWS_PRELOAD_METADATA = True
 AWS_QUERYSTRING_AUTH = config("AWS_QUERYSTRING_AUTH")
 
-DEFAULT_FILE_STORAGE = "KJET.aws.utils.MediaRootS3BotoStorage"
-STATICFILES_STORAGE = "KJET.aws.utils.StaticRootS3BotoStorage"
+# Django 5.1 removed DEFAULT_FILE_STORAGE and STATICFILES_STORAGE; they are
+# ignored rather than raising, which silently drops both back to filesystem
+# storage. STORAGES is the only form honoured now.
+STORAGES = {
+    "default": {
+        "BACKEND": "storages.backends.s3boto3.S3Boto3Storage",
+        "OPTIONS": {"location": "media"},
+    },
+    "staticfiles": {
+        "BACKEND": "storages.backends.s3boto3.S3Boto3Storage",
+        "OPTIONS": {"location": "static"},
+    },
+}
 
 S3DIRECT_REGION = config("S3_REGION_NAME")
 # AWS_S3_SIGNATURE_VERSION = "s3v4"
