@@ -2,11 +2,13 @@ import React, { useCallback, useEffect, useRef, useState } from 'react';
 
 import DiffTable from './DiffTable';
 import {
+  Cohort,
   CsvVersion,
   PipelineRun,
   StructureProblem,
   discardRun,
   getRun,
+  listCohorts,
   listVersions,
   publishRun,
   rerunVersion,
@@ -19,7 +21,8 @@ const POLL_INTERVAL_MS = 1500;
 const IN_FLIGHT = ['PENDING', 'RUNNING', 'PUBLISHING'];
 
 export default function PipelinePanel() {
-  const [cohort] = useState('latest');
+  const [cohorts, setCohorts] = useState<Cohort[]>([]);
+  const [cohort, setCohort] = useState('');
   const [staff, setStaff] = useState<boolean | null>(null);
   const [run, setRun] = useState<PipelineRun | null>(null);
   const [versions, setVersions] = useState<CsvVersion[]>([]);
@@ -45,6 +48,7 @@ export default function PipelinePanel() {
   }
 
   const refreshVersions = useCallback(() => {
+    if (!cohort) return;
     listVersions(cohort).then(setVersions).catch(() => undefined);
   }, [cohort]);
 
@@ -53,6 +57,17 @@ export default function PipelinePanel() {
       .then((me) => setStaff(me.is_staff))
       .catch(() => setStaff(false));
   }, []);
+
+  useEffect(() => {
+    if (!staff) return;
+    listCohorts()
+      .then((available) => {
+        setCohorts(available);
+        const preferred = available.find((entry) => entry.is_current) || available[0];
+        if (preferred) setCohort(preferred.slug);
+      })
+      .catch(() => undefined);
+  }, [staff]);
 
   useEffect(() => {
     if (staff) refreshVersions();
@@ -120,6 +135,36 @@ export default function PipelinePanel() {
       </header>
 
       <section className="p-5 space-y-6 border border-gray-200 rounded-lg">
+        <div className="pb-5 border-b border-gray-100">
+          <label
+            htmlFor="cohort-select"
+            className="text-sm font-semibold tracking-wide text-gray-500 uppercase"
+          >
+            Cohort
+          </label>
+          <select
+            id="cohort-select"
+            value={cohort}
+            onChange={(event) => {
+              setCohort(event.target.value);
+              setRun(null);
+              setError('');
+              setProblems([]);
+            }}
+            className="block px-3 py-2 mt-2 text-sm border border-gray-300 rounded"
+          >
+            {cohorts.map((entry) => (
+              <option key={entry.slug} value={entry.slug}>
+                {entry.label}
+              </option>
+            ))}
+          </select>
+          <p className="mt-2 text-xs text-gray-500">
+            The CSV is compared against, and replaces, the published version of this
+            cohort only.
+          </p>
+        </div>
+
         <div>
           <h2 className="text-sm font-semibold tracking-wide text-gray-500 uppercase">
             Upload a CSV
@@ -182,7 +227,7 @@ export default function PipelinePanel() {
               className="px-4 py-2 text-white bg-blue-600 rounded disabled:cursor-not-allowed disabled:opacity-40"
               onClick={() => file && start(() => submitFile(file, cohort))}
             >
-              Upload and build
+              Upload and compare
             </button>
             {file && (
               <button
@@ -217,7 +262,7 @@ export default function PipelinePanel() {
               className="px-4 py-2 text-white bg-gray-700 rounded disabled:cursor-not-allowed disabled:opacity-40"
               onClick={() => start(() => submitSheet(sheetUrl, cohort))}
             >
-              Fetch and build
+              Fetch and compare
             </button>
           </div>
           <p className="mt-2 text-xs text-gray-500">
@@ -339,7 +384,7 @@ export default function PipelinePanel() {
                     .catch((err) => setError(err.message))
                 }
               >
-                Publish to S3
+                Upload to server
               </button>
               <button
                 type="button"
@@ -380,7 +425,9 @@ export default function PipelinePanel() {
                 <tr key={version.id} className="border-t border-gray-100">
                   <td className="px-3 py-2">{version.id}</td>
                   <td className="px-3 py-2">{version.status}</td>
-                  <td className="px-3 py-2">{version.source}</td>
+                  <td className="px-3 py-2" title={version.original_filename}>
+                    {version.source}
+                  </td>
                   <td className="px-3 py-2">{version.row_count}</td>
                   <td className="px-3 py-2">
                     {new Date(version.created_at).toLocaleString()}

@@ -1,10 +1,17 @@
 from rest_framework import serializers
 
-from pipeline.models import HumanResultsCsv, PipelineRun
+from pipeline.models import Cohort, HumanResultsCsv, PipelineRun
+
+
+class CohortSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Cohort
+        fields = ["id", "slug", "label", "is_current"]
 
 
 class HumanResultsCsvSerializer(serializers.ModelSerializer):
     uploaded_by = serializers.StringRelatedField()
+    cohort = CohortSerializer(read_only=True)
 
     class Meta:
         model = HumanResultsCsv

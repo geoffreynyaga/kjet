@@ -9,7 +9,7 @@ interface Props {
 }
 
 export default function DiffTable({ diff }: Props) {
-  const [scoredOnly, setScoredOnly] = useState(false);
+  const [scoredOnly, setScoredOnly] = useState(true);
   const [page, setPage] = useState(0);
 
   const changed = useMemo(() => {

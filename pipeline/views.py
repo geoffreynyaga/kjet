@@ -7,14 +7,27 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from pipeline import csvtools, runner, sheets, tasks
-from pipeline.models import HumanResultsCsv, PipelineRun
+from pipeline.models import Cohort, HumanResultsCsv, PipelineRun
 from pipeline.serializers import (
+    CohortSerializer,
     HumanResultsCsvSerializer,
     PipelineRunDetailSerializer,
     PipelineRunSerializer,
 )
 
-DEFAULT_COHORT = "latest"
+
+def resolve_cohort(slug):
+    """Look up a cohort by slug, falling back to the current one."""
+    if slug:
+        cohort = Cohort.objects.filter(slug=slug).first()
+        if not cohort:
+            raise ValueError(f"Unknown cohort '{slug}'.")
+        return cohort
+
+    cohort = Cohort.current()
+    if not cohort:
+        raise ValueError("No cohorts are configured.")
+    return cohort
 
 
 class StaffApiView(APIView):
@@ -60,9 +73,8 @@ class SubmitCsvView(StaffApiView):
     """
 
     def post(self, request):
-        cohort = request.data.get("cohort") or DEFAULT_COHORT
-
         try:
+            cohort = resolve_cohort(request.data.get("cohort"))
             raw, source, source_url, filename = _load_csv_bytes(request)
         except (ValueError, sheets.SheetFetchError) as exc:
             return Response({"detail": str(exc)}, status=status.HTTP_400_BAD_REQUEST)
@@ -218,9 +230,19 @@ class VersionListView(StaffApiView):
     """Version history, newest first."""
 
     def get(self, request):
-        cohort = request.query_params.get("cohort") or DEFAULT_COHORT
+        try:
+            cohort = resolve_cohort(request.query_params.get("cohort"))
+        except ValueError as exc:
+            return Response({"detail": str(exc)}, status=status.HTTP_400_BAD_REQUEST)
         versions = HumanResultsCsv.objects.filter(cohort=cohort)[:50]
         return Response(HumanResultsCsvSerializer(versions, many=True).data)
+
+
+class CohortListView(StaffApiView):
+    """Cohorts available for upload; the current one is pre-selected."""
+
+    def get(self, request):
+        return Response(CohortSerializer(Cohort.objects.all(), many=True).data)
 
 
 class VersionRerunView(StaffApiView):

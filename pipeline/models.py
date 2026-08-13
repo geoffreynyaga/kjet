@@ -2,6 +2,31 @@ from django.conf import settings
 from django.db import models
 
 
+class Cohort(models.Model):
+    """An application cohort.
+
+    The slug is not cosmetic: it names the data directories the pipeline reads
+    and writes (ui/public/<slug>, scripts/human/kjet-human-final-results-<slug>.csv)
+    and is passed straight to make as COHORT=<slug>.
+    """
+
+    slug = models.SlugField(max_length=32, unique=True)
+    label = models.CharField(max_length=64)
+    is_current = models.BooleanField(
+        default=False, help_text="Pre-selected when uploading a new CSV."
+    )
+
+    class Meta:
+        ordering = ["-is_current", "slug"]
+
+    def __str__(self):
+        return self.label or self.slug
+
+    @classmethod
+    def current(cls):
+        return cls.objects.filter(is_current=True).first() or cls.objects.first()
+
+
 class HumanResultsCsv(models.Model):
     """One uploaded or fetched version of the human results CSV.
 
@@ -21,7 +46,9 @@ class HumanResultsCsv(models.Model):
         SHEET = "SHEET", "Google Sheet"
         SEED = "SEED", "Seeded from repository"
 
-    cohort = models.CharField(max_length=32, default="latest")
+    cohort = models.ForeignKey(
+        Cohort, on_delete=models.PROTECT, related_name="csv_versions"
+    )
     file = models.FileField(upload_to="human-csv/%Y/%m/")
     original_filename = models.CharField(max_length=255, blank=True)
     source = models.CharField(max_length=16, choices=Source.choices)
@@ -51,8 +78,12 @@ class HumanResultsCsv(models.Model):
         return f"{self.cohort} #{self.pk} ({self.status})"
 
     @classmethod
-    def current(cls, cohort="latest"):
-        """The version currently live on S3, or None before the first publish."""
+    def current(cls, cohort):
+        """The version live for this cohort, or None before its first publish.
+
+        Scoped by cohort so a version can only ever be compared against, and
+        superseded by, another version of the same cohort.
+        """
         return (
             cls.objects.filter(cohort=cohort, status=cls.Status.PUBLISHED)
             .order_by("-published_at", "-created_at")

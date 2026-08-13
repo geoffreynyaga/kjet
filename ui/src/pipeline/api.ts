@@ -64,9 +64,16 @@ export interface PipelineRun {
   };
 }
 
+export interface Cohort {
+  id: number;
+  slug: string;
+  label: string;
+  is_current: boolean;
+}
+
 export interface CsvVersion {
   id: number;
-  cohort: string;
+  cohort: Cohort;
   original_filename: string;
   source: string;
   source_url: string;
@@ -111,6 +118,10 @@ async function request<T>(path: string, init: RequestInit = {}): Promise<T> {
 
 export function whoAmI() {
   return request<{ username: string; is_staff: boolean }>('/me/');
+}
+
+export function listCohorts() {
+  return request<Cohort[]>('/cohorts/');
 }
 
 export function submitFile(file: File, cohort: string) {

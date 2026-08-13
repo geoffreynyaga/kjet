@@ -23,7 +23,7 @@ def build_run(self, run_id):
     run.steps_total = len(BUILD_STEPS)
     run.save(update_fields=["status", "celery_task_id", "steps_total"])
 
-    cohort = run.csv.cohort
+    cohort = run.csv.cohort.slug
     sandbox = None
 
     try:
@@ -79,7 +79,7 @@ def publish_run(self, run_id):
     run.celery_task_id = self.request.id or ""
     run.save(update_fields=["status", "celery_task_id"])
 
-    cohort = run.csv.cohort
+    cohort = run.csv.cohort.slug
     names = [entry["name"] for entry in run.changed_outputs]
 
     try:
@@ -88,7 +88,7 @@ def publish_run(self, run_id):
 
         with transaction.atomic():
             HumanResultsCsv.objects.filter(
-                cohort=cohort, status=HumanResultsCsv.Status.PUBLISHED
+                cohort=run.csv.cohort, status=HumanResultsCsv.Status.PUBLISHED
             ).exclude(pk=run.csv_id).update(status=HumanResultsCsv.Status.SUPERSEDED)
             run.csv.status = HumanResultsCsv.Status.PUBLISHED
             run.csv.published_at = timezone.now()

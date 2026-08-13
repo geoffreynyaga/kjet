@@ -5,7 +5,7 @@ from django.core.management.base import BaseCommand, CommandError
 from django.utils import timezone
 
 from pipeline import csvtools
-from pipeline.models import HumanResultsCsv
+from pipeline.models import Cohort, HumanResultsCsv
 
 
 class Command(BaseCommand):
@@ -24,13 +24,20 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         from django.conf import settings
 
-        cohort = options["cohort"]
+        slug = options["cohort"]
+        cohort = Cohort.objects.filter(slug=slug).first()
+        if not cohort:
+            raise CommandError(
+                f"No cohort with slug '{slug}'. Known: "
+                f"{', '.join(Cohort.objects.values_list('slug', flat=True)) or 'none'}."
+            )
+
         path = Path(
             options["path"]
             or Path(settings.BASE_DIR)
             / "scripts"
             / "human"
-            / f"kjet-human-final-results-{cohort}.csv"
+            / f"kjet-human-final-results-{slug}.csv"
         )
 
         if not path.exists():
@@ -39,7 +46,7 @@ class Command(BaseCommand):
         existing = HumanResultsCsv.current(cohort)
         if existing:
             raise CommandError(
-                f"Cohort '{cohort}' already has a published version (#{existing.pk}). "
+                f"Cohort '{slug}' already has a published version (#{existing.pk}). "
                 f"Nothing to seed."
             )
 
@@ -61,7 +68,7 @@ class Command(BaseCommand):
 
         self.stdout.write(
             self.style.SUCCESS(
-                f"Seeded version #{version.pk} for cohort '{cohort}': "
+                f"Seeded version #{version.pk} for cohort '{slug}': "
                 f"{summary['row_count']} rows, {summary['column_count']} columns."
             )
         )

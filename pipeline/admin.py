@@ -1,6 +1,12 @@
 from django.contrib import admin
 
-from pipeline.models import HumanResultsCsv, PipelineRun
+from pipeline.models import Cohort, HumanResultsCsv, PipelineRun
+
+
+@admin.register(Cohort)
+class CohortAdmin(admin.ModelAdmin):
+    list_display = ("slug", "label", "is_current")
+    list_editable = ("is_current",)
 
 
 @admin.register(HumanResultsCsv)
