@@ -1,13 +1,17 @@
 # --- Environment Setup ---
 VENV_DIR := $(CURDIR)/venv
-PY := $(VENV_DIR)/bin/python3
-PIP := $(VENV_DIR)/bin/pip
+PY ?= $(VENV_DIR)/bin/python3
+PIP ?= $(VENV_DIR)/bin/pip
+VENV_STAMP := $(VENV_DIR)/.install-stamp
 COHORT ?= latest
 DATA_DIR ?= data/$(COHORT)
-HUMAN_FIRST_CSV ?= scripts/human/kjet-human-$(COHORT)-first.csv
-HUMAN_FINAL_CSV ?= scripts/human/kjet-human-$(COHORT)-final.csv
+HUMAN_FIRST_CSV ?= scripts/human/kjet-human-first-results-$(COHORT).csv
+HUMAN_FINAL_CSV ?= scripts/human/kjet-human-final-results-$(COHORT).csv
+# Set WORKSPACE to build into a sandbox instead of the repo (used by server-side runs).
+WORKSPACE ?=
+WORKSPACE_ARG := $(if $(WORKSPACE),--workspace-root $(WORKSPACE),)
 
-.PHONY: all venv install extraction financials analysis evaluation summary gemini stats src collectstatic human convert-csv comparison run build clean help
+.PHONY: all venv install extraction financials analysis evaluation summary gemini gemini-csv stats src collectstatic human convert-csv comparison run build clean help
 
 # Display help information about available commands
 help:
@@ -18,7 +22,8 @@ help:
 	@echo "  make financials   -> extract financial documents to TXT files"
 	@echo "  make analysis     -> run analysis scripts (scoring and ranking)"
 	@echo "  make evaluation   -> run county evaluator and national summary"
-	@echo "  make gemini       -> generate agentic CSV results for the UI"
+	@echo "  make gemini       -> generate agentic CSV results and refresh dashboard JSON"
+	@echo "  make gemini-csv   -> generate agentic CSV results for the UI only"
 	@echo "  make stats        -> run aggregate statistics generator"
 	@echo "  make convert-csv  -> convert analysis results to dashboard JSON"
 	@echo "  make comparison   -> generate comparison data for the dashboard"
@@ -30,10 +35,15 @@ venv:
 	if [ ! -d "$(VENV_DIR)" ]; then python3 -m venv "$(VENV_DIR)"; fi
 
 # STEP 1: Install all necessary library dependencies
-install: venv
+# The stamp file makes this a no-op unless requirements.txt actually changed, so
+# targets can keep depending on `install` without paying for a pip resolve each run.
+install: $(VENV_STAMP)
+
+$(VENV_STAMP): requirements.txt | venv
 	@echo "Installing Python packages into venv..."
 	$(PIP) install --upgrade pip
 	$(PIP) install -r requirements.txt
+	@touch $@
 
 # STEP 2: Extraction - Converts raw PDFs into structured JSON and CSV tables
 extraction: install
@@ -55,9 +65,13 @@ evaluation: install
 	$(MAKE) gemini
 
 # STEP 4.5: Gemini - Generates agentic analysis CSVs for the UI
-gemini: install
+gemini-csv: install
 	@echo "Running agentic CSV generator for cohort $(COHORT)..."
 	$(PY) scripts/evaluation/agentic_csv_generator.py --cohort $(COHORT)
+
+gemini: gemini-csv
+	@echo "Refreshing dashboard JSON derived from gemini CSVs for cohort $(COHORT)..."
+	$(MAKE) convert-csv COHORT=$(COHORT)
 
 # STEP 5: Stats - Generates high-level statistical reports
 stats: install
@@ -72,7 +86,7 @@ convert-csv:
 # STEP 7: Comparison - Generates data comparing different evaluation runs
 comparison: install
 	@echo "Generating comparison data..."
-	$(PY) scripts/compare_old_and_new/extract_comparison_data.py
+	$(PY) scripts/compare_old_and_new/extract_comparison_data.py --cohort $(COHORT) $(WORKSPACE_ARG)
 
 # Support: Sync results to UI folder for frontend development
 src:
@@ -91,11 +105,13 @@ collectstatic:
 # Support: Process human baseline data for comparison
 human: install
 	@echo "Running human data extraction and JSON conversion..."
-	$(PY) scripts/human/convert.py --cohort $(COHORT) --first-csv $(HUMAN_FIRST_CSV) --final-csv $(HUMAN_FINAL_CSV)
-	${PY} scripts/human/baseline.py --cohort $(COHORT) --first-csv $(HUMAN_FIRST_CSV) --final-csv $(HUMAN_FINAL_CSV)
-	${PY} scripts/human/combine_baseline.py --cohort $(COHORT)
+	$(PY) scripts/human/convert.py --cohort $(COHORT) --first-csv $(HUMAN_FIRST_CSV) --final-csv $(HUMAN_FINAL_CSV) $(WORKSPACE_ARG)
+	${PY} scripts/human/baseline.py --cohort $(COHORT) --first-csv $(HUMAN_FIRST_CSV) --final-csv $(HUMAN_FINAL_CSV) $(WORKSPACE_ARG)
+	${PY} scripts/human/combine_baseline.py --cohort $(COHORT) $(WORKSPACE_ARG)
+ifeq ($(WORKSPACE),)
 	@mkdir -p staticfiles/data/$(COHORT)
 	@cp -rv ui/public/$(COHORT)/* staticfiles/data/$(COHORT)/ || true
+endif
 
 # THE MASTER COMMAND: Executes the entire pipeline sequentially
 run: install
@@ -127,4 +143,3 @@ build:
 clean:
 	@echo "Cleaning generated artifacts (output/ output-results/  venv/)"
 	@rm -rf output output-results venv
-

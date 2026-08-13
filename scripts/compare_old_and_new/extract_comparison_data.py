@@ -59,11 +59,14 @@ def load_c1_scores(workspace_root):
             print(f"Warning: Error loading {path}: {e}")
     return scores
 
-def extract_comparison_data(cohort="latest"):
+def extract_comparison_data(cohort="latest", workspace_root=None):
     """Extract data from human results CSV and convert to JSON format."""
     script_dir = Path(__file__).parent
-    workspace_root = script_dir.parent.parent
-    
+    repo_root = script_dir.parent.parent
+    # Inputs/outputs may be redirected to a sandbox; C1 reference scores always
+    # come from the repo, so a sandboxed run produces identical output.
+    workspace_root = Path(workspace_root) if workspace_root else repo_root
+
     # Use the correct human results CSV
     csv_file = workspace_root / "scripts" / "human" / f"kjet-human-final-results-{cohort}.csv"
     if cohort == "latest" and not csv_file.exists():
@@ -78,7 +81,7 @@ def extract_comparison_data(cohort="latest"):
         print(f"Error: {csv_file} not found!")
         return
 
-    c1_scores = load_c1_scores(workspace_root) if cohort == "latest" else {}
+    c1_scores = load_c1_scores(repo_root) if cohort == "latest" else {}
 
     data = []
     current_county = ""
@@ -223,5 +226,6 @@ if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument("--cohort", default="latest")
+    parser.add_argument("--workspace-root", help="Root to resolve inputs/outputs against (defaults to the repo)")
     args = parser.parse_args()
-    extract_comparison_data(cohort=args.cohort)
+    extract_comparison_data(cohort=args.cohort, workspace_root=args.workspace_root)
