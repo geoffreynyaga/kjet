@@ -43,7 +43,7 @@ THIRD_PARTY_APPS = [
     "storages"
 ]
 
-MY_APPS = ["accounts","ui"]
+MY_APPS = ["accounts","ui","pipeline"]
 
 INSTALLED_APPS = DEFAULT_APPS + THIRD_PARTY_APPS + MY_APPS
 
@@ -137,6 +137,24 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
 CORS_ALLOWED_ORIGINS = config("CORS_ALLOWED_ORIGINS", cast=Csv())
+
+
+# Dashboard data lives in staticfiles/data and is collected into static storage.
+# Declared here rather than only in local.py so production collectstatic sees it.
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "staticfiles"),
+]
+
+
+# Celery: broker is Redis, bound to localhost on the app server. Run state is
+# kept on the PipelineRun row and polled over HTTP, so no result backend is
+# configured -- nothing ever reads a task's return value.
+CELERY_BROKER_URL = config("CELERY_BROKER_URL", default="redis://127.0.0.1:6379/0")
+CELERY_TASK_IGNORE_RESULT = True
+CELERY_TASK_TIME_LIMIT = 30 * 60
+
+# Ceiling for a single pipeline step (make human / make comparison).
+PIPELINE_STEP_TIMEOUT = config("PIPELINE_STEP_TIMEOUT", default=900, cast=int)
 
 
 FILE_UPLOAD_HANDLERS = [

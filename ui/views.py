@@ -6,6 +6,7 @@ from django.shortcuts import render
 import requests
 from decouple import config
 from django.contrib.auth.decorators import login_required
+from django.views.decorators.csrf import ensure_csrf_cookie
 
 BASE_DIR = os.path.dirname((os.path.dirname(os.path.abspath(__file__))))
 
@@ -32,6 +33,7 @@ def get_js_bundle():
 
     return manifest["main.js"]
 
+@ensure_csrf_cookie
 @login_required
 def react_view(request):
     js_bundle = get_js_bundle()

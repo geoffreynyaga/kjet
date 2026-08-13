@@ -15,6 +15,14 @@ export default function Home() {
   const cohort = new URLSearchParams(window.location.search).get('cohort') || 'latest';
 
     const [geminiSummary, setGeminiSummary] = useState(null);
+    const [isStaff, setIsStaff] = useState(false);
+
+  useEffect(() => {
+    fetch('/api/pipeline/me/', { credentials: 'same-origin' })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((me) => setIsStaff(Boolean(me && me.is_staff)))
+      .catch(() => setIsStaff(false));
+  }, []);
 
   useEffect(() => {
     (async function load() {
@@ -347,14 +355,22 @@ export default function Home() {
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
           >
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 2v4M6 6v2a6 6 0 0012 0V6M6 10v6a6 6 0 0012 0v-6" />
-            </svg>
             <span>AI analysis</span>
             {geminiSummary && geminiSummary.zero_count > 0 && (
               <span className="inline-flex items-center justify-center w-3 h-3 ml-1 bg-red-500 rounded-full ring-2 ring-white" title={`${geminiSummary.zero_count} counties missing LLM data`} />
             )}
           </motion.a>
+
+          {isStaff && (
+            <motion.a
+              href="/pipeline"
+              className="px-6 py-2 font-medium text-white no-underline transition-colors duration-200 bg-blue-600 rounded-lg hover:bg-blue-700"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Update Results
+            </motion.a>
+          )}
 
           <div className="w-px h-8 bg-blue-200/40" />
 

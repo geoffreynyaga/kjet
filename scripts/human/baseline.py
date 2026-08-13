@@ -528,9 +528,10 @@ if __name__ == "__main__":
     parser.add_argument("--cohort", default="latest", help="Cohort output folder (e.g. latest, c1)")
     parser.add_argument("--final-csv", help="Optional path to final results CSV")
     parser.add_argument("--first-csv", help="Optional path to first results CSV")
+    parser.add_argument("--workspace-root", help="Root to resolve inputs/outputs against (defaults to cwd)")
     args = parser.parse_args()
 
-    base_dir = os.getcwd()
+    base_dir = args.workspace_root or os.getcwd()
 
 
     input_first_results = resolve_csv_path(
@@ -540,7 +541,7 @@ if __name__ == "__main__":
         [
             "scripts/human/kjet-human-latest-first.csv",
         ],
-        "scripts/human-kjet-human-final-results-latest.csv"
+        f"scripts/human/kjet-human-first-results-{args.cohort}.csv"
     )
     input_final_results = resolve_csv_path(
         base_dir,
@@ -550,7 +551,7 @@ if __name__ == "__main__":
             "scripts/human/kjet-human-latest-final.csv",
             "scripts/human/kjet-human-latest.csv",
         ],
-        "scripts/human/kjet-human-final-results.csv"
+        f"scripts/human/kjet-human-final-results-{args.cohort}.csv"
     )
 
     output_folder = os.path.join(base_dir, "ui/public", args.cohort)

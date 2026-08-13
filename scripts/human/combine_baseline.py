@@ -24,12 +24,15 @@ def load_json_file(filepath):
         print(f"Error: Invalid JSON in {filepath}: {e}")
         return []
 
-def combine_baseline_files(cohort: str = 'latest'):
+def combine_baseline_files(cohort: str = 'latest', workspace_root: str | None = None):
     """Combine first and final results into a single file."""
 
     # Define file paths
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    project_root = os.path.dirname(os.path.dirname(script_dir))
+    if workspace_root:
+        project_root = workspace_root
+    else:
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        project_root = os.path.dirname(os.path.dirname(script_dir))
     output_dir = os.path.join(project_root, 'ui', 'public', cohort)
 
     first_results_path = os.path.join(output_dir, 'baseline-first-results.json')
@@ -133,5 +136,6 @@ def combine_baseline_files(cohort: str = 'latest'):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Combine baseline first/final results into cohort-scoped output')
     parser.add_argument('--cohort', default='latest', help='Cohort output folder (e.g. latest, c1)')
+    parser.add_argument('--workspace-root', help='Root to resolve inputs/outputs against (defaults to the repo)')
     args = parser.parse_args()
-    combine_baseline_files(cohort=args.cohort)
+    combine_baseline_files(cohort=args.cohort, workspace_root=args.workspace_root)
