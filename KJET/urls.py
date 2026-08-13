@@ -25,6 +25,7 @@ from django.urls import include, path, re_path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("accounts/", include("accounts.urls")),
+    path("api/pipeline/", include("pipeline.urls")),
 
     # re_path(r"ui/.*", react_view, name="react"),
     re_path(r"", react_view, name="react"),

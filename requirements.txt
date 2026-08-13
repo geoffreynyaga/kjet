@@ -1,4 +1,5 @@
 boto3
+celery
 django
 django-cors-headers
 django-leaflet
@@ -16,6 +17,7 @@ PyMuPDF
 PyPDF2
 pytesseract
 python-decouple
+redis
 
 requests
 tqdm
