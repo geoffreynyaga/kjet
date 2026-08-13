@@ -100,7 +100,6 @@ export const useStatisticsData = () => {
   };
 
   const calculateNationalStats = (data: StatisticsApplicant[], womenOwnedData: { [key: string]: string } = {}): NationalStats => {
-    console.log('Calculating national stats with data:', data);
     const totalApplications = data.length;
     // Include all applicants with scores greater than zero
     const passedApps = data.filter(app => {

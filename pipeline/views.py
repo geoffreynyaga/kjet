@@ -2,7 +2,7 @@ from django.core.files.base import ContentFile
 from django.utils import timezone
 from rest_framework import status
 from rest_framework.authentication import SessionAuthentication
-from rest_framework.permissions import IsAdminUser
+from rest_framework.permissions import IsAdminUser, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
@@ -20,6 +20,22 @@ DEFAULT_COHORT = "latest"
 class StaffApiView(APIView):
     authentication_classes = [SessionAuthentication]
     permission_classes = [IsAdminUser]
+
+
+class WhoAmIView(APIView):
+    """Lets the dashboard decide whether to show the pipeline entry point.
+
+    Authenticated rather than staff-only, so a non-staff user gets
+    is_staff=false instead of a 403 the UI would have to special-case.
+    """
+
+    authentication_classes = [SessionAuthentication]
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        return Response(
+            {"username": request.user.get_username(), "is_staff": request.user.is_staff}
+        )
 
 
 def _load_csv_bytes(request):

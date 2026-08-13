@@ -5,6 +5,7 @@ from pipeline import views
 app_name = "pipeline"
 
 urlpatterns = [
+    path("me/", views.WhoAmIView.as_view(), name="me"),
     path("submit/", views.SubmitCsvView.as_view(), name="submit"),
     path("runs/<int:pk>/", views.RunDetailView.as_view(), name="run-detail"),
     path("runs/<int:pk>/publish/", views.RunPublishView.as_view(), name="run-publish"),
