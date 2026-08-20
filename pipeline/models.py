@@ -60,8 +60,8 @@ class HumanResultsCsv(models.Model):
     )
     # Shown in the version history; not used for validation.
     row_count = models.PositiveIntegerField(default=0)
-    # Structural fingerprint: column count, banner row, leaf header names in
-    # order, and the physical-line span of the header record.
+    # Structural fingerprint: discovered header record, leaf names in order,
+    # column count, and diagnostic physical-line/header-position metadata.
     fingerprint = models.JSONField(default=dict, blank=True)
     uploaded_by = models.ForeignKey(
         settings.AUTH_USER_MODEL, null=True, blank=True, on_delete=models.SET_NULL

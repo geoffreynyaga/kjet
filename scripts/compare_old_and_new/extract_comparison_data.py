@@ -2,8 +2,13 @@ import csv
 import json
 import os
 import re
+import sys
 from pathlib import Path
 from argparse import Namespace
+
+HUMAN_SCRIPT_DIR = Path(__file__).resolve().parents[1] / "human"
+sys.path.append(str(HUMAN_SCRIPT_DIR))
+from csv_schema import cell, column_index, find_header_index
 
 def extract_applicant_id(bundle_link):
     """Extract applicant ID from bundle link or string."""
@@ -33,6 +38,16 @@ def canonicalize_county(name):
         "ELGEIYO MARAKWET": "ELGEYO MARAKWET"
     }
     return mapping.get(name, name)
+
+
+def numeric_value(value, default=0.0):
+    try:
+        text = str(value or "").strip()
+        if not text or text.startswith("#") or text.upper() == "DQ":
+            return default
+        return float(text)
+    except (TypeError, ValueError):
+        return default
 
 def load_c1_scores(workspace_root):
     """Load Cohort 1 human scores for lookup from multiple possible sources."""
@@ -87,29 +102,34 @@ def extract_comparison_data(cohort="latest", workspace_root=None):
     current_county = ""
 
     try:
-        with open(csv_file, 'r', encoding='utf-8') as file:
-            # Skip metadata (7 rows)
-            for _ in range(7): next(file)
-            reader = csv.reader(file)
-            header = next(reader)
-            # Find indices dynamically if possible, or use defaults
-            try:
-                idx_id = header.index("Application ID")
-                idx_county = header.index("E2. County Mapping")
-                idx_e3 = header.index("E3. Priority Value Chain")
-                idx_total = header.index("TOTAL")
-                idx_final = header.index("Sum of weighted scores - Penalty(if any)")
-                idx_rank = header.index("Ranking from composite score")
-            except ValueError:
-                # Fallback to confirmed indices from diagnostic
-                idx_id = 1
-                idx_county = 3
-                idx_e3 = 4
-                idx_total = 35
-                idx_final = 37
-                idx_rank = 38
+        with open(csv_file, 'r', encoding='utf-8-sig') as file:
+            records = list(csv.reader(file))
+            header_index = find_header_index(records)
+            header = records[header_index]
+            idx_id = column_index(header, "Application ID")
+            idx_county = column_index(header, "E2. County Mapping")
+            idx_e3 = column_index(header, "E3. Priority Value Chain")
+            idx_reason = column_index(header, "REASON(Evaluators Comments)")
+            idx_a31 = column_index(header, "A3.1 Registration & Track Record")
+            idx_a32 = column_index(header, "A3.2 Financial Position")
+            idx_a33 = column_index(
+                header, "A3.3 Market Demand & Competitiveness"
+            )
+            idx_a34 = column_index(
+                header, "A3.4 Business Proposal / Growth Viability"
+            )
+            idx_a35 = column_index(header, "A3.5 Value Chain Alignment & Role")
+            idx_a36 = column_index(
+                header, "A3.6 Inclusivity & Sustainability"
+            )
+            idx_total = column_index(header, "TOTAL")
+            idx_equity = column_index(header, "Equity Points", required=False)
+            idx_final = column_index(
+                header, "Sum of weighted scores - Penalty(if any)"
+            )
+            idx_rank = column_index(header, "Ranking from composite score")
 
-            for row in reader:
+            for row in records[header_index + 1:]:
                 if not row or len(row) < 10: continue
                 
                 # County header row check
@@ -131,6 +151,7 @@ def extract_comparison_data(cohort="latest", workspace_root=None):
                 raw_score = row[idx_final].strip() if len(row) > idx_final else ""
                 if not raw_score:
                     raw_score = row[idx_total].strip() if len(row) > idx_total else ""
+                equity_points = numeric_value(cell(row, idx_equity))
                 
                 rank = row[idx_rank].strip() if len(row) > idx_rank else ""
 
@@ -147,7 +168,8 @@ def extract_comparison_data(cohort="latest", workspace_root=None):
                                c1_app.get("ranking") or 
                                c1_app.get("county_rank") or "")
                     
-                    total_score_val = float(score_val) if str(score_val).replace('.','',1).isdigit() else 0
+                    total_score_val = numeric_value(score_val)
+                    equity_points = numeric_value(c1_app.get("Equity Points"))
                     
                     entry = {
                         "Application ID": app_id,
@@ -157,6 +179,7 @@ def extract_comparison_data(cohort="latest", workspace_root=None):
                         "Human Score": total_score_val,
                         "Human Rank": str(rank_val),
                         "TOTAL": total_score_val,
+                        "Equity Points": equity_points,
                         "Sum of weighted scores - Penalty(if any)": total_score_val,
                         "Ranking from composite score": str(rank_val),
                         "PASS/FAIL": "Pass",
@@ -177,7 +200,7 @@ def extract_comparison_data(cohort="latest", workspace_root=None):
                     }
                 else:
                     try:
-                        total_score_val = float(raw_score) if raw_score and raw_score.replace('.','',1).isdigit() else 0
+                        total_score_val = numeric_value(raw_score)
                     except:
                         total_score_val = 0
 
@@ -189,23 +212,24 @@ def extract_comparison_data(cohort="latest", workspace_root=None):
                         "Human Score": total_score_val,
                         "Human Rank": rank,
                         "TOTAL": total_score_val,
+                        "Equity Points": equity_points,
                         "Sum of weighted scores - Penalty(if any)": total_score_val,
                         "Ranking from composite score": rank,
                         "PASS/FAIL": "Pass" if rank and rank.isdigit() and int(rank) > 0 else "Fail",
-                        "REASON(Evaluators Comments)": row[8] if len(row) > 8 else "",
+                        "REASON(Evaluators Comments)": cell(row, idx_reason),
                         # Criteria with spaces
-                        "A3.1 Registration & Track Record ": float(row[9]) if len(row) > 9 and row[9].replace('.','',1).isdigit() else 0,
-                        "Logic": row[10] if len(row) > 10 else "",
-                        "A3.2 Financial Position ": float(row[11]) if len(row) > 11 and row[11].replace('.','',1).isdigit() else 0,
-                        "Logic.1": row[12] if len(row) > 12 else "",
-                        "A3.3 Market Demand & Competitiveness": float(row[13]) if len(row) > 13 and row[13].replace('.','',1).isdigit() else 0,
-                        "Logic.2": row[14] if len(row) > 14 else "",
-                        "A3.4 Business Proposal / Growth Viability": float(row[15]) if len(row) > 15 and row[15].replace('.','',1).isdigit() else 0,
-                        "Logic.3": row[16] if len(row) > 16 else "",
-                        "A3.5 Value Chain Alignment & Role": float(row[17]) if len(row) > 17 and row[17].replace('.','',1).isdigit() else 0,
-                        "Logic.4": row[18] if len(row) > 18 else "",
-                        "A3.6 Inclusivity & Sustainability ": float(row[19]) if len(row) > 19 and row[19].replace('.','',1).isdigit() else 0,
-                        "Logic.5": row[20] if len(row) > 20 else ""
+                        "A3.1 Registration & Track Record ": numeric_value(cell(row, idx_a31)),
+                        "Logic": cell(row, idx_a31 + 1),
+                        "A3.2 Financial Position ": numeric_value(cell(row, idx_a32)),
+                        "Logic.1": cell(row, idx_a32 + 1),
+                        "A3.3 Market Demand & Competitiveness": numeric_value(cell(row, idx_a33)),
+                        "Logic.2": cell(row, idx_a33 + 1),
+                        "A3.4 Business Proposal / Growth Viability": numeric_value(cell(row, idx_a34)),
+                        "Logic.3": cell(row, idx_a34 + 1),
+                        "A3.5 Value Chain Alignment & Role": numeric_value(cell(row, idx_a35)),
+                        "Logic.4": cell(row, idx_a35 + 1),
+                        "A3.6 Inclusivity & Sustainability ": numeric_value(cell(row, idx_a36)),
+                        "Logic.5": cell(row, idx_a36 + 1)
                     }
                 data.append(entry)
 

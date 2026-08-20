@@ -1,49 +1,38 @@
-"""Parsing, structural fingerprinting and row diffing of the human results CSV.
+"""Parsing, validation, structural fingerprinting, and row diffing for human CSVs.
 
-The file has a two-level header: record 0 is a banner row of merged group
-headings, record 1 holds the leaf column names, and data starts at record 2.
-Both rows contain cells with embedded newlines, so it must always be read with a
-real CSV parser rather than by splitting on lines.
-
-Leaf names are not unique -- "Logic" appears five times, "A3.1".."A3.6" appear
-three times each, and one heading was overwritten with rubric prose. Downstream,
-scripts/compare_old_and_new/extract_comparison_data.py therefore reads scores by
-fixed position (row[8]..row[20]) and skips the header by counting seven physical
-lines. A column inserted upstream keeps every name resolvable while silently
-shifting those positions, so the fingerprint below compares names *by index* and
-pins the header's physical-line span.
+Human-results exports exist in two layouts: older files have a banner record
+before the leaf headers, while newer exports start directly with the leaf
+headers. Column positions also change as fields such as ``Equity Points`` are
+added. Everything in this module therefore discovers the header record and
+matches meaningful columns by normalized name.
 """
 
 import csv
 import hashlib
 import io
+from collections import Counter
 
-HEADER_RECORD_INDEX = 1
-DATA_START_INDEX = 2
 
 APP_ID_COLUMN = "Application ID"
 COUNTY_COLUMN = "E2. County Mapping"
 
-# Columns extract_comparison_data.py reads positionally. Highlighted in the diff
-# because a change here moves a published score.
-SCORE_COLUMN_RANGE = range(8, 21)
-
-# Columns that script resolves by name. Each must keep its index, because the
-# scores around them are read positionally.
-NAMED_COLUMNS = [
+REQUIRED_COLUMNS = [
+    "Link to application bundle",
     APP_ID_COLUMN,
     COUNTY_COLUMN,
     "E3. Priority Value Chain",
+    "REASON(Evaluators Comments)",
+    "A3.1 Registration & Track Record",
+    "A3.2 Financial Position",
+    "A3.3 Market Demand & Competitiveness",
+    "A3.4 Business Proposal / Growth Viability",
+    "A3.5 Value Chain Alignment & Role",
+    "A3.6 Inclusivity & Sustainability",
     "TOTAL",
+    "Penalty Points",
     "Sum of weighted scores - Penalty(if any)",
     "Ranking from composite score",
 ]
-
-# Anchors inside the positional read window: the evaluator comment and the six
-# A3 score columns. The Logic columns between them are deliberately excluded --
-# their headers carry stray prose in some sheets, and any column inserted next
-# to one shifts the following anchor, so they stay protected either way.
-SCORE_ANCHOR_INDICES = [8, 9, 11, 13, 15, 17, 19]
 
 
 def normalise_header(value):
@@ -54,35 +43,59 @@ def normalise_header(value):
 
 
 class CsvStructureError(Exception):
-    """The CSV cannot be parsed into the expected two-level header shape."""
+    """The CSV cannot be parsed into a supported human-results shape."""
 
 
 def decode(raw):
-    """Decode uploaded bytes, tolerating the odd non-UTF8 byte."""
+    """Decode uploaded bytes, tolerating the odd non-UTF8 byte and a BOM."""
     if isinstance(raw, str):
-        return raw
-    return raw.decode("utf-8", errors="replace")
+        return raw.lstrip("\ufeff")
+    return raw.decode("utf-8-sig", errors="replace")
+
+
+def find_header_index(records):
+    """Return the CSV-record index containing the leaf column headings."""
+    app_id = normalise_header(APP_ID_COLUMN)
+    county = normalise_header(COUNTY_COLUMN)
+    for index, row in enumerate(records):
+        normalized = {normalise_header(cell) for cell in row if cell}
+        if app_id in normalized and county in normalized:
+            return index
+    raise CsvStructureError(
+        "Could not find a header record containing 'Application ID' and "
+        "'E2. County Mapping'."
+    )
 
 
 def read_records(raw):
-    """Parse into CSV records (not physical lines)."""
-    text = decode(raw)
-    records = list(csv.reader(io.StringIO(text)))
-    if len(records) <= DATA_START_INDEX:
+    """Parse into CSV records (not physical lines) and verify a data row exists."""
+    records = list(csv.reader(io.StringIO(decode(raw))))
+    header_index = find_header_index(records)
+    if len(records) <= header_index + 1:
         raise CsvStructureError(
-            f"Expected a banner row, a header row and at least one data row; "
-            f"found {len(records)} record(s)."
+            "Expected at least one data record after the human-results header."
         )
     return records
 
 
-def header_line_span(records):
-    """Physical lines occupied by the banner record.
+def header_and_data_start(records):
+    """Return ``(header, first_data_record_index)`` for either CSV layout."""
+    header_index = find_header_index(records)
+    return records[header_index], header_index + 1
 
-    extract_comparison_data.py advances the file by exactly this many lines
-    before reading the header, so a change here breaks it silently.
+
+def header_line_span(records):
+    """Return the physical line number on which the leaf header ends.
+
+    Retained in fingerprints for diagnostics and compatibility with fingerprints
+    already stored in the database. Pipeline readers no longer depend on this
+    value.
     """
-    return 1 + sum(cell.count("\n") for cell in records[0])
+    header_index = find_header_index(records)
+    return sum(
+        1 + sum(cell.count("\n") for cell in row)
+        for row in records[: header_index + 1]
+    )
 
 
 def sha256(raw):
@@ -92,129 +105,135 @@ def sha256(raw):
 
 
 def fingerprint(records):
-    """Structural signature compared against the last published version."""
+    """Store enough structure to validate and diff this version later."""
+    header_index = find_header_index(records)
+    header = records[header_index]
     return {
-        "column_count": len(records[HEADER_RECORD_INDEX]),
-        "banner": list(records[0]),
-        "header": list(records[HEADER_RECORD_INDEX]),
+        "schema_version": 2,
+        "column_count": len(header),
+        "header_record_index": header_index,
+        "header": list(header),
         "header_line_span": header_line_span(records),
     }
 
 
-def compare_fingerprints(expected, actual):
-    """Structural differences that would change which column a value is read from.
+def _fingerprint_header(value):
+    return list((value or {}).get("header") or [])
 
-    Only load-bearing structure is compared. Cosmetic edits -- a trailing space
-    in a heading, prose typed over an unused Logic header, a column appended
-    past the last one anyone reads -- are not failures. Anything that moves a
-    value the pipeline reads is, because those reads are positional and would
-    otherwise produce wrong numbers with no error.
+
+def compare_fingerprints(expected, actual):
+    """Return incompatible structural changes in ``actual``.
+
+    A banner being removed or a named column moving is safe now that every
+    consumer resolves fields by name. Missing or duplicated load-bearing
+    columns remain blocking errors. ``Equity Points`` is optional so Cohort 1's
+    established schema continues to work.
     """
+    del expected  # Kept in the signature for callers and stored-version checks.
+    header = _fingerprint_header(actual)
+    normalized = [normalise_header(cell) for cell in header]
+    counts = Counter(normalized)
     problems = []
 
-    if expected.get("header_line_span") != actual.get("header_line_span"):
-        problems.append(
-            {
-                "kind": "header_line_span",
-                "message": (
-                    f"The header block now spans {actual.get('header_line_span')} "
-                    f"physical lines instead of {expected.get('header_line_span')}. "
-                    f"extract_comparison_data.py skips a fixed number of lines, so it "
-                    f"would read the wrong row."
-                ),
-            }
-        )
-
-    old_header = expected.get("header") or []
-    new_header = actual.get("header") or []
-    old_lookup = [normalise_header(cell) for cell in old_header]
-    new_lookup = [normalise_header(cell) for cell in new_header]
-
-    # Named columns must keep the index they had, since the positional reads
-    # around them assume that layout.
-    for name in NAMED_COLUMNS:
+    for name in REQUIRED_COLUMNS:
         key = normalise_header(name)
-        old_index = old_lookup.index(key) if key in old_lookup else None
-        new_index = new_lookup.index(key) if key in new_lookup else None
-
-        if new_index is None:
+        count = counts[key]
+        if count == 0:
             problems.append(
                 {
                     "kind": "missing_column",
-                    "index": old_index,
                     "old": name,
                     "new": None,
                     "scored": True,
                     "message": f"Column {name!r} is missing.",
                 }
             )
-        elif old_index is not None and old_index != new_index:
+        elif count > 1:
             problems.append(
                 {
-                    "kind": "moved_column",
-                    "index": new_index,
-                    "old": f"index {old_index}",
-                    "new": f"index {new_index}",
+                    "kind": "duplicate_column",
+                    "old": name,
+                    "new": name,
                     "scored": True,
-                    "message": (
-                        f"Column {name!r} moved from index {old_index} to {new_index}."
-                    ),
-                }
-            )
-
-    # Score anchors must still sit at the same positions.
-    for index in SCORE_ANCHOR_INDICES:
-        old_value = old_lookup[index] if index < len(old_lookup) else None
-        new_value = new_lookup[index] if index < len(new_lookup) else None
-        if old_value != new_value:
-            problems.append(
-                {
-                    "kind": "header",
-                    "index": index,
-                    "old": old_header[index] if index < len(old_header) else None,
-                    "new": new_header[index] if index < len(new_header) else None,
-                    "scored": True,
-                    "message": (
-                        f"Position {index} now holds "
-                        f"{(new_header[index] if index < len(new_header) else None)!r} "
-                        f"instead of "
-                        f"{(old_header[index] if index < len(old_header) else None)!r}. "
-                        f"Scores are read from fixed positions, so this shifts them."
-                    ),
+                    "message": f"Column {name!r} appears {count} times.",
                 }
             )
 
     return problems
 
 
-def _column_index(header, name, default):
-    try:
-        return header.index(name)
-    except ValueError:
-        return default
+def _column_index(header, name, default=None):
+    key = normalise_header(name)
+    for index, value in enumerate(header):
+        if normalise_header(value) == key:
+            return index
+    return default
 
 
 def summarise(records):
-    header = records[HEADER_RECORD_INDEX]
+    header, data_start = header_and_data_start(records)
+    id_index = _column_index(header, APP_ID_COLUMN, 1)
     return {
         "column_count": len(header),
-        "row_count": max(len(records) - DATA_START_INDEX, 0),
+        "row_count": sum(
+            1
+            for row in records[data_start:]
+            if len(row) > id_index and (row[id_index] or "").strip()
+        ),
     }
 
 
+def _column_keys(header):
+    """Give duplicate headings stable occurrence keys (Logic #1, Logic #2...)."""
+    occurrences = Counter()
+    keys = []
+    for value in header:
+        normalized = normalise_header(value)
+        if not normalized:
+            keys.append(None)
+            continue
+        occurrences[normalized] += 1
+        keys.append((normalized, occurrences[normalized]))
+    return keys
+
+
+def _is_scored_column(label):
+    normalized = normalise_header(label) or ""
+    return (
+        normalized.startswith("a3.")
+        or normalized == "logic"
+        or normalized
+        in {
+            normalise_header("REASON(Evaluators Comments)"),
+            normalise_header("TOTAL"),
+            normalise_header("Equity Points"),
+            normalise_header("Penalty Points"),
+            normalise_header("Sum of weighted scores - Penalty(if any)"),
+            normalise_header("Ranking from composite score"),
+        }
+    )
+
+
 def diff_rows(old_records, new_records):
-    """Row-level diff keyed on Application ID.
+    """Return a semantic row diff keyed on Application ID.
 
-    Assumes both sides share a structure (callers block on a fingerprint
-    mismatch first), so column indices are taken from the new header.
+    Each CSV uses its own discovered header and column map. Consequently an
+    inserted column is reported only for rows where that new field has a value;
+    it does not make every following cell look changed.
     """
-    header = new_records[HEADER_RECORD_INDEX]
-    id_index = _column_index(header, APP_ID_COLUMN, 1)
-    county_index = _column_index(header, COUNTY_COLUMN, 3)
+    new_header, new_data_start = header_and_data_start(new_records)
+    old_header, old_data_start = (
+        header_and_data_start(old_records) if old_records else ([], 0)
+    )
 
-    def index_rows(records):
+    new_id_index = _column_index(new_header, APP_ID_COLUMN, 1)
+    new_county_index = _column_index(new_header, COUNTY_COLUMN, 3)
+    old_id_index = _column_index(old_header, APP_ID_COLUMN, 1)
+    old_county_index = _column_index(old_header, COUNTY_COLUMN, 3)
+
+    def index_rows(records, data_start, id_index):
         rows = {}
-        for row in records[DATA_START_INDEX:]:
+        for row in records[data_start:]:
             if len(row) <= id_index:
                 continue
             key = (row[id_index] or "").strip()
@@ -222,22 +241,31 @@ def diff_rows(old_records, new_records):
                 rows[key] = row
         return rows
 
-    old_rows = index_rows(old_records) if old_records else {}
-    new_rows = index_rows(new_records)
+    old_rows = (
+        index_rows(old_records, old_data_start, old_id_index) if old_records else {}
+    )
+    new_rows = index_rows(new_records, new_data_start, new_id_index)
 
-    def county_of(row):
-        return (row[county_index] or "").strip() if len(row) > county_index else ""
+    def county_of(row, index):
+        return (row[index] or "").strip() if len(row) > index else ""
 
     added = [
-        {"application_id": key, "county": county_of(row)}
+        {"application_id": key, "county": county_of(row, new_county_index)}
         for key, row in new_rows.items()
         if key not in old_rows
     ]
     removed = [
-        {"application_id": key, "county": county_of(row)}
+        {"application_id": key, "county": county_of(row, old_county_index)}
         for key, row in old_rows.items()
         if key not in new_rows
     ]
+
+    old_keys = _column_keys(old_header)
+    new_keys = _column_keys(new_header)
+    old_index_by_key = {key: index for index, key in enumerate(old_keys) if key}
+    new_index_by_key = {key: index for index, key in enumerate(new_keys) if key}
+    ordered_keys = [key for key in new_keys if key]
+    ordered_keys.extend(key for key in old_keys if key and key not in new_index_by_key)
 
     changed = []
     unchanged = 0
@@ -246,24 +274,41 @@ def diff_rows(old_records, new_records):
         if old_row is None:
             continue
         cells = []
-        for index in range(max(len(old_row), len(new_row))):
-            old_value = old_row[index] if index < len(old_row) else ""
-            new_value = new_row[index] if index < len(new_row) else ""
-            if old_value != new_value:
-                cells.append(
-                    {
-                        "index": index,
-                        "column": header[index] if index < len(header) else f"col{index}",
-                        "old": old_value,
-                        "new": new_value,
-                        "scored": index in SCORE_COLUMN_RANGE,
-                    }
-                )
+        for column_key in ordered_keys:
+            old_index = old_index_by_key.get(column_key)
+            new_index = new_index_by_key.get(column_key)
+            old_value = (
+                old_row[old_index]
+                if old_index is not None and old_index < len(old_row)
+                else ""
+            )
+            new_value = (
+                new_row[new_index]
+                if new_index is not None and new_index < len(new_row)
+                else ""
+            )
+            if old_value == new_value:
+                continue
+            index = new_index if new_index is not None else old_index
+            label = (
+                new_header[new_index]
+                if new_index is not None
+                else old_header[old_index]
+            )
+            cells.append(
+                {
+                    "index": index,
+                    "column": label,
+                    "old": old_value,
+                    "new": new_value,
+                    "scored": _is_scored_column(label),
+                }
+            )
         if cells:
             changed.append(
                 {
                     "application_id": key,
-                    "county": county_of(new_row),
+                    "county": county_of(new_row, new_county_index),
                     "cells": cells,
                 }
             )
@@ -273,8 +318,12 @@ def diff_rows(old_records, new_records):
     changed.sort(key=lambda entry: (entry["county"], entry["application_id"]))
 
     return {
-        "added": sorted(added, key=lambda e: (e["county"], e["application_id"])),
-        "removed": sorted(removed, key=lambda e: (e["county"], e["application_id"])),
+        "added": sorted(
+            added, key=lambda entry: (entry["county"], entry["application_id"])
+        ),
+        "removed": sorted(
+            removed, key=lambda entry: (entry["county"], entry["application_id"])
+        ),
         "changed": changed,
         "unchanged_count": unchanged,
         "totals": {

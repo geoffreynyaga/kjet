@@ -8,11 +8,45 @@ import json
 import os
 import sys
 import argparse
-from path_utils import resolve_csv_path
+
+try:
+    from .csv_schema import cell, column_index, find_header_index
+    from .path_utils import resolve_csv_path
+except ImportError:  # Direct execution: python scripts/human/baseline.py
+    from csv_schema import cell, column_index, find_header_index
+    from path_utils import resolve_csv_path
 
 # Import standardized counties list
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'utils'))
 from counties import counties
+
+
+def parse_number(value, default=0.0):
+    try:
+        text = str(value or "").strip()
+        if not text or text.startswith("#") or text.upper() == "DQ":
+            return default
+        return float(text)
+    except (TypeError, ValueError):
+        return default
+
+
+def parse_rank(value):
+    number = parse_number(value, default=None)
+    return int(number) if number is not None else None
+
+
+def score_columns(header):
+    """Resolve summary fields without depending on columns at the row's end."""
+    return {
+        "total": column_index(header, "TOTAL"),
+        "equity": column_index(header, "Equity Points", required=False),
+        "penalty": column_index(header, "Penalty Points"),
+        "weighted": column_index(
+            header, "Sum of weighted scores - Penalty(if any)"
+        ),
+        "ranking": column_index(header, "Ranking from composite score"),
+    }
 
 def standardize_county_names(applicants):
     """
@@ -26,16 +60,17 @@ def standardize_county_names(applicants):
     """
     # Define county name mappings for common variations
     county_mappings = {
-        'Elgeyo-Marakwet': 'Elgeyo Marakwet',
-        'Nairobi .': 'Nairobi',
-        'kiambu': 'Kiambu',
-        'kitui': 'Kitui',
+        'ELGEYO MARAKWET': 'Elgeyo Marakwet',
+        'ELGEIYO MARAKWET': 'Elgeyo Marakwet',
+        'NAIROBI': 'Nairobi',
+        'KIAMBU': 'Kiambu',
+        'KITUI': 'Kitui',
         'MIGORI': 'Migori',
-        'Mgori': 'Migori',
-        'Homabay': 'Homa Bay',
-        'West pokot': 'West Pokot',
+        'MGORI': 'Migori',
+        'HOMABAY': 'Homa Bay',
+        'WEST POKOT': 'West Pokot',
         'N/A': 'Unknown',  # Assign to Unknown county instead of filtering out
-        'Unknown': 'Unknown',  # Handle already assigned Unknown
+        'UNKNOWN': 'Unknown',  # Handle already assigned Unknown
     }
 
     canonical_by_upper = {county.upper(): county for county in counties}
@@ -47,14 +82,11 @@ def standardize_county_names(applicants):
         original_county = applicant['county']
         normalized_county = ' '.join(str(original_county).replace('-', ' ').strip().rstrip('.').split())
 
-        if original_county in county_mappings:
-            applicant['county'] = county_mappings[original_county]
+        alias = county_mappings.get(normalized_county.upper())
+        if alias:
+            applicant['county'] = alias
             fixed_count += 1
-            print(f"✅ Fixed: '{original_county}' → '{county_mappings[original_county]}' for {applicant['application_id']}")
-        elif normalized_county in county_mappings:
-            applicant['county'] = county_mappings[normalized_county]
-            fixed_count += 1
-            print(f"✅ Fixed: '{original_county}' → '{county_mappings[normalized_county]}' for {applicant['application_id']}")
+            print(f"✅ Fixed: '{original_county}' → '{alias}' for {applicant['application_id']}")
         elif normalized_county.upper() in canonical_by_upper:
             canonical_name = canonical_by_upper[normalized_county.upper()]
             if canonical_name != original_county:
@@ -223,6 +255,9 @@ def extract_applicants_data(csv_file_path):
             rows = list(reader)
             print(f"Read {len(rows)} total rows from CSV")
 
+        header_index = find_header_index(rows)
+        columns = score_columns(rows[header_index])
+
         # Find data start row (look for first row with application_ pattern)
         data_start_row = None
         for i, row in enumerate(rows):
@@ -264,35 +299,17 @@ def extract_applicants_data(csv_file_path):
             if not county or county in ['N/A', '']:
                 county = 'Unknown'
 
-            # Based on the actual CSV structure:
-            # ..., TOTAL, Penalty Points, Sum of weighted scores - Penalty(if any), Ranking from composite score, Evaluator's Name, (empty)
-            # Example: [..., 46, 5, 41, 474, , ]
-            # So: weighted_score is at row[-4] and ranking is at row[-3]
-
-            weighted_score = 0.0
-            ranking = None
-
-            # Get the columns from the end
-            if len(row) >= 6:  # Need at least 6 columns to have the scoring data
-                try:
-                    # Sum of weighted scores is 4th from the end (row[-4])
-                    weighted_score_str = row[-4].strip() if len(row) >= 4 and row[-4] else ""
-                    weighted_score = float(weighted_score_str) if weighted_score_str and weighted_score_str != '#N/A' else 0.0
-                except:
-                    weighted_score = 0.0
-
-                try:
-                    # Ranking is 3rd from the end (row[-3])
-                    ranking_str = row[-3].strip() if len(row) >= 3 and row[-3] else ""
-                    ranking = int(ranking_str) if ranking_str and ranking_str != '#N/A' else None
-                except:
-                    ranking = None
+            weighted_score = parse_number(cell(row, columns["weighted"]))
+            ranking = parse_rank(cell(row, columns["ranking"]))
 
             applicant_data = {
                 "application_id": application_id,
                 "county": county,
                 "weighted_score": weighted_score,
-                "ranking": ranking
+                "ranking": ranking,
+                "total_score": parse_number(cell(row, columns["total"])),
+                "equity_points": parse_number(cell(row, columns["equity"])),
+                "penalty_points": parse_number(cell(row, columns["penalty"])),
             }
 
             applicants.append(applicant_data)
@@ -352,6 +369,9 @@ def extract_first_results_data(csv_file_path):
             rows = list(reader)
             print(f"Read {len(rows)} total rows from CSV")
 
+        header_index = find_header_index(rows)
+        columns = score_columns(rows[header_index])
+
         # Find data start row (look for first row with application_ pattern)
         data_start_row = None
         for i, row in enumerate(rows):
@@ -393,35 +413,17 @@ def extract_first_results_data(csv_file_path):
             if not county or county in ['N/A', '']:
                 county = 'Unknown'
 
-            # For first results, the structure is different
-            # Looking at the sample: [...,46,5,41,151]
-            # Where: 46 = TOTAL, 5 = Penalty Points, 41 = Sum of weighted scores, 151 = Ranking
-            # So the last 4 columns are: TOTAL, Penalty Points, Sum of weighted scores, Ranking
-
-            weighted_score = 0.0
-            ranking = None
-
-            # Get the last 4 columns for the scoring data
-            if len(row) >= 4:
-                try:
-                    # Sum of weighted scores is 2nd to last column
-                    weighted_score_str = row[-2].strip() if len(row) >= 2 and row[-2] else ""
-                    weighted_score = float(weighted_score_str) if weighted_score_str and weighted_score_str != '#N/A' else 0.0
-                except:
-                    weighted_score = 0.0
-
-                try:
-                    # Ranking is last column
-                    ranking_str = row[-1].strip() if len(row) >= 1 and row[-1] else ""
-                    ranking = int(ranking_str) if ranking_str and ranking_str != '#N/A' else None
-                except:
-                    ranking = None
+            weighted_score = parse_number(cell(row, columns["weighted"]))
+            ranking = parse_rank(cell(row, columns["ranking"]))
 
             applicant_data = {
                 "application_id": application_id,
                 "county": county,
                 "weighted_score": weighted_score,
-                "ranking": ranking
+                "ranking": ranking,
+                "total_score": parse_number(cell(row, columns["total"])),
+                "equity_points": parse_number(cell(row, columns["equity"])),
+                "penalty_points": parse_number(cell(row, columns["penalty"])),
             }
 
             applicants.append(applicant_data)
@@ -569,4 +571,3 @@ if __name__ == "__main__":
         create_baseline(output_folder, input_first_results, output_json_first_result)
     else:
         print("⚠️  No first results CSV found. Skipping baseline-first-results.json generation.")
-

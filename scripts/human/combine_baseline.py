@@ -61,9 +61,15 @@ def combine_baseline_files(cohort: str = 'latest', workspace_root: str | None = 
             'first_weighted_score': record['weighted_score'],
             'first_ranking': record['ranking'],
             'first_county_rank': record.get('county_rank', None),
+            'first_total_score': record.get('total_score'),
+            'first_equity_points': record.get('equity_points', 0),
+            'first_penalty_points': record.get('penalty_points', 0),
             'final_weighted_score': None,
             'final_ranking': None,
-            'final_county_rank': None
+            'final_county_rank': None,
+            'final_total_score': None,
+            'final_equity_points': None,
+            'final_penalty_points': None,
         }
 
     # Add final results data (merge with existing or create new)
@@ -74,6 +80,9 @@ def combine_baseline_files(cohort: str = 'latest', workspace_root: str | None = 
             combined_data[app_id]['final_weighted_score'] = record['weighted_score']
             combined_data[app_id]['final_ranking'] = record['ranking']
             combined_data[app_id]['final_county_rank'] = record.get('county_rank', None)
+            combined_data[app_id]['final_total_score'] = record.get('total_score')
+            combined_data[app_id]['final_equity_points'] = record.get('equity_points', 0)
+            combined_data[app_id]['final_penalty_points'] = record.get('penalty_points', 0)
         else:
             # Create new record for applicants only in final results
             combined_data[app_id] = {
@@ -82,9 +91,15 @@ def combine_baseline_files(cohort: str = 'latest', workspace_root: str | None = 
                 'first_weighted_score': None,
                 'first_ranking': None,
                 'first_county_rank': None,
+                'first_total_score': None,
+                'first_equity_points': None,
+                'first_penalty_points': None,
                 'final_weighted_score': record['weighted_score'],
                 'final_ranking': record['ranking'],
-                'final_county_rank': record.get('county_rank', None)
+                'final_county_rank': record.get('county_rank', None),
+                'final_total_score': record.get('total_score'),
+                'final_equity_points': record.get('equity_points', 0),
+                'final_penalty_points': record.get('penalty_points', 0),
             }
 
     # Convert to list and sort by application_id for consistency

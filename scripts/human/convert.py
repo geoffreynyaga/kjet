@@ -3,7 +3,13 @@ import json
 import os
 import numpy as np
 import argparse
-from path_utils import resolve_csv_path
+
+try:
+    from .csv_schema import read_records
+    from .path_utils import resolve_csv_path
+except ImportError:  # Direct execution: python scripts/human/convert.py
+    from csv_schema import read_records
+    from path_utils import resolve_csv_path
 
 def sanitize_value(v):
     # Convert pandas/Numpy types and NaN/Inf to JSON-serializable Python types
@@ -27,18 +33,26 @@ def sanitize_value(v):
 
 def extract_csv_to_json(file_path, output_path):
     """
-    Reads a CSV file, drops the first row and the last column, and converts its data into a JSON file.
+    Reads either supported human-results CSV layout and converts it to JSON.
 
     Args:
         file_path (str): Path to the input CSV file.
         output_path (str): Path to the output JSON file.
     """
     try:
-        # Read the CSV file, skipping the first row
-        df = pd.read_csv(file_path, encoding='utf-8', on_bad_lines='skip', encoding_errors='replace', skiprows=1)
+        _, header_index = read_records(file_path)
+        df = pd.read_csv(
+            file_path,
+            encoding='utf-8-sig',
+            on_bad_lines='skip',
+            encoding_errors='replace',
+            header=header_index,
+        )
 
-        # Drop the last column
-        df = df.iloc[:, :-1]
+        # Sheets exports include one intentionally unnamed trailing helper
+        # column. Do not blindly remove the last real field when that changes.
+        if len(df.columns) and str(df.columns[-1]).startswith('Unnamed:'):
+            df = df.iloc[:, :-1]
 
         # --- normalize mapping/ county names ---
         def normalize_county_name(x):
@@ -168,4 +182,3 @@ if __name__ == "__main__":
         extract_csv_to_json(input_csv_first_result, output_json_first)
     else:
         print("⚠️  No first results CSV found. Skipping kjet-human-first.json generation.")
-

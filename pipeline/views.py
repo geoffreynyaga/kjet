@@ -68,8 +68,8 @@ def _load_csv_bytes(request):
 class SubmitCsvView(StaffApiView):
     """Validate a new CSV, diff it against the live version, and start a build.
 
-    A structural change is refused outright: scores are read positionally
-    downstream, so a shifted column produces wrong numbers with no error.
+    Structural changes are accepted when all load-bearing named columns remain
+    available. Downstream readers do not depend on their positions.
     """
 
     def post(self, request):
@@ -90,23 +90,22 @@ class SubmitCsvView(StaffApiView):
 
         baseline = HumanResultsCsv.current(cohort)
 
-        if baseline:
-            problems = csvtools.compare_fingerprints(
-                baseline.fingerprint, new_fingerprint
+        problems = csvtools.compare_fingerprints(
+            baseline.fingerprint if baseline else {}, new_fingerprint
+        )
+        if problems:
+            return Response(
+                {
+                    "detail": (
+                        "The CSV is missing or duplicates columns required by the "
+                        "human-results pipeline."
+                    ),
+                    "structure_problems": problems,
+                },
+                status=status.HTTP_409_CONFLICT,
             )
-            if problems:
-                return Response(
-                    {
-                        "detail": (
-                            "The CSV structure differs from the published version. "
-                            "Scores are read by column position downstream, so this "
-                            "run is blocked."
-                        ),
-                        "structure_problems": problems,
-                    },
-                    status=status.HTTP_409_CONFLICT,
-                )
 
+        if baseline:
             if baseline.sha256 == digest:
                 return Response(
                     {
