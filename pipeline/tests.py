@@ -8,6 +8,7 @@ from unittest import mock
 
 from django.contrib.auth import get_user_model
 from django.core.files.base import ContentFile
+from django.core.files.storage import FileSystemStorage
 from django.core.files.uploadedfile import SimpleUploadedFile
 from django.test import SimpleTestCase, TestCase, override_settings
 
@@ -99,14 +100,14 @@ def human_row(header, *, equity="5", score="79", rank="2"):
     return row
 
 
-def csv_bytes(*, include_banner=False, include_equity=True):
+def csv_bytes(*, include_banner=False, include_equity=True, equity="5"):
     header = human_header(include_equity=include_equity)
     output = io.StringIO(newline="")
     writer = csv.writer(output)
     if include_banner:
         writer.writerow(["Applicant Details", ""] + [""] * (len(header) - 2))
     writer.writerow(header)
-    writer.writerow(human_row(header, equity="5" if include_equity else ""))
+    writer.writerow(human_row(header, equity=equity if include_equity else ""))
     return output.getvalue().encode()
 
 
@@ -206,6 +207,20 @@ class HumanScriptTests(SimpleTestCase):
         self.assertEqual(records[0]["A3.1 Registration & Track Record "], 4.0)
 
 
+class OverwritingStorage(FileSystemStorage):
+    """Stands in for S3Boto3Storage's default file_overwrite=True behaviour.
+
+    FileSystemStorage uniquifies a repeated name, which is why a constant upload
+    filename misbehaves only in production. This backend keeps the name it is
+    given, so a collision overwrites in place the way the S3 backend does.
+    """
+
+    def get_available_name(self, name, max_length=None):
+        if self.exists(name):
+            self.delete(name)
+        return name
+
+
 class SubmitCsvTests(TestCase):
     def setUp(self):
         self.tempdir = tempfile.TemporaryDirectory()
@@ -213,8 +228,9 @@ class SubmitCsvTests(TestCase):
         self.settings_override = override_settings(MEDIA_ROOT=self.tempdir.name)
         self.settings_override.enable()
         self.addCleanup(self.settings_override.disable)
-        self.cohort = Cohort.objects.create(
-            slug="latest", label="Latest", is_current=True
+        # Migration 0002 already seeds this cohort; do not recreate it.
+        self.cohort, _ = Cohort.objects.get_or_create(
+            slug="latest", defaults={"label": "Latest", "is_current": True}
         )
         self.user = get_user_model().objects.create_user(
             username="staff", password="password", is_staff=True
@@ -290,3 +306,77 @@ class SubmitCsvTests(TestCase):
         self.assertEqual(response.status_code, 409)
         self.assertIn("has no stored CSV", response.json()["detail"])
         delay.assert_not_called()
+
+    @mock.patch("pipeline.views.tasks.build_run.delay")
+    def test_baseline_whose_stored_bytes_were_overwritten_returns_a_conflict(
+        self, delay
+    ):
+        # A storage backend that overwrites a repeated filename replaces an
+        # already-published version's object with a later upload. Diffing against
+        # it would compare the new file to itself and report no changes.
+        published_raw = csv_bytes(include_equity=False)
+        baseline = HumanResultsCsv.objects.create(
+            cohort=self.cohort,
+            source=HumanResultsCsv.Source.SEED,
+            sha256=csvtools.sha256(published_raw),
+            status=HumanResultsCsv.Status.PUBLISHED,
+            row_count=1,
+            fingerprint=csvtools.fingerprint(csvtools.read_records(published_raw)),
+        )
+        baseline.file.save(
+            "kjet-human-final-results-latest.csv",
+            ContentFile(csv_bytes(equity="9")),
+            save=True,
+        )
+
+        upload = SimpleUploadedFile(
+            "kjet-human-final-results-latest.csv",
+            csv_bytes(equity="9"),
+            content_type="text/csv",
+        )
+        response = self.client.post(
+            "/api/pipeline/submit/", {"cohort": "latest", "file": upload}
+        )
+
+        self.assertEqual(response.status_code, 409, response.content)
+        self.assertIn("recorded checksum", response.json()["detail"])
+        delay.assert_not_called()
+
+    @override_settings(
+        STORAGES={
+            "default": {"BACKEND": "pipeline.tests.OverwritingStorage"},
+            "staticfiles": {
+                "BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage"
+            },
+        }
+    )
+    @mock.patch("pipeline.views.tasks.build_run.delay")
+    def test_each_distinct_upload_claims_its_own_storage_key(self, delay):
+        delay.return_value = SimpleNamespace(id="task-3")
+
+        first = csv_bytes(equity="5")
+        second = csv_bytes(equity="9")
+        for raw in (first, second):
+            response = self.client.post(
+                "/api/pipeline/submit/",
+                {
+                    "cohort": "latest",
+                    "file": SimpleUploadedFile(
+                        "kjet-human-final-results-latest.csv",
+                        raw,
+                        content_type="text/csv",
+                    ),
+                },
+            )
+            self.assertEqual(response.status_code, 201, response.content)
+
+        versions = list(HumanResultsCsv.objects.order_by("pk"))
+        self.assertEqual(len(versions), 2)
+        self.assertNotEqual(versions[0].file.name, versions[1].file.name)
+
+        # The earlier version's bytes are still its own, not the later upload's.
+        for version, raw in zip(versions, (first, second)):
+            with version.file.open("rb") as handle:
+                stored = handle.read()
+            self.assertEqual(csvtools.sha256(stored), version.sha256)
+            self.assertEqual(stored, raw)

@@ -24,11 +24,19 @@ class BaselineCsvUnavailable(Exception):
 
 
 def load_baseline_records(baseline):
-    """Read a baseline from storage, with a checksum-verified repo fallback."""
+    """Read a baseline from storage, with a checksum-verified repo fallback.
+
+    Stored bytes are checked against the checksum recorded when the version was
+    created. A storage backend that overwrites rather than uniquifies a repeated
+    filename silently replaces an older version's object with a newer upload's
+    content, which would make the review diff compare a file against itself.
+    """
     if baseline.file:
         try:
             with baseline.file.open("rb") as handle:
-                return csvtools.read_records(handle.read())
+                raw = handle.read()
+            if csvtools.sha256(raw) == baseline.sha256:
+                return csvtools.read_records(raw)
         except (FileNotFoundError, OSError, ValueError):
             pass
 
@@ -171,8 +179,14 @@ class SubmitCsvView(StaffApiView):
             fingerprint=new_fingerprint,
             uploaded_by=request.user,
         )
+        # Content-addressed so every distinct upload claims its own key. A
+        # constant name is overwritten in place by storage backends that do not
+        # uniquify (S3Boto3Storage with its default file_overwrite=True), which
+        # would replace an already-published version's bytes with a later upload.
         version.file.save(
-            f"kjet-human-final-results-{cohort}.csv", ContentFile(raw), save=True
+            f"kjet-human-final-results-{cohort.slug}-{digest[:12]}.csv",
+            ContentFile(raw),
+            save=True,
         )
 
         run = PipelineRun.objects.create(
@@ -302,8 +316,12 @@ class VersionRerunView(StaffApiView):
         baseline = HumanResultsCsv.current(version.cohort)
         diff = {}
         if baseline and baseline.pk != version.pk:
-            with baseline.file.open("rb") as handle:
-                old_records = csvtools.read_records(handle.read())
+            try:
+                old_records = load_baseline_records(baseline)
+            except BaselineCsvUnavailable as exc:
+                return Response(
+                    {"detail": str(exc)}, status=status.HTTP_409_CONFLICT
+                )
             with version.file.open("rb") as handle:
                 new_records = csvtools.read_records(handle.read())
             diff = csvtools.diff_rows(old_records, new_records)
