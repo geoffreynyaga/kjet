@@ -31,6 +31,22 @@ def count_keywords(text, keywords):
     lower = (text or "").lower()
     return sum(1 for keyword in keywords if keyword in lower)
 
+
+def format_status_label(value):
+    """Normalize a status string for readable reason text."""
+    value = (value or "").strip()
+    if not value:
+        return "unknown"
+    return value.lower()
+
+
+def format_accounting_system(value):
+    """Normalize accounting-system text for readable reason text."""
+    value = (value or "").strip()
+    if not value or value in {"None", "N/A", "n"}:
+        return "not reported"
+    return value
+
 def evaluate_county(county_name, json_path, output_path, cohort="latest"):
     """Evaluate one county and write ranked machine-evaluation CSV output."""
     if not os.path.exists(json_path):
@@ -200,7 +216,7 @@ def evaluate_county(county_name, json_path, output_path, cohort="latest"):
         governance_hits = count_keywords(free_text_evidence, ["board", "committee", "minutes", "governance", "officials"])
         registration_quality += min(0.3, governance_hits * 0.1)
         s1_score = clamp_score(s1_score + registration_quality)
-        s1_reason = f"Established in {est_year_str} ({age} years); {registration_status} status."
+        s1_reason = f"Registered in {est_year_str}, giving {age} years of track record; {format_status_label(registration_status)} status."
 
         # S2: Financial Position (0-5)
         rev_2024_val = to_float(rev_2024)
@@ -227,7 +243,7 @@ def evaluate_county(county_name, json_path, output_path, cohort="latest"):
             s2_score += 0.3
         s2_score = clamp_score(s2_score)
 
-        s2_reason = f"2024 Revenue: KES {rev_2024_val:,.2f}; Accounting system: {acc_sys}."
+        s2_reason = f"Reported 2024 revenue of KES {rev_2024_val:,.2f}; accounting system: {format_accounting_system(acc_sys)}."
 
         # S3: Market Demand & Competitiveness (0-5)
         b2b_val = to_float(b2b)
@@ -249,7 +265,7 @@ def evaluate_county(county_name, json_path, output_path, cohort="latest"):
         ])
         s3_score = clamp_score(s3_score + min(0.6, market_hits * 0.1))
 
-        s3_reason = f"B2B Sales: {b2b_val}%; Market strategy reported."
+        s3_reason = f"B2B sales account for {b2b_val}%; a market strategy is described."
 
         # S4: Business Proposal / Growth Viability (0-5)
         strategy_text = (strategy or "").strip()
@@ -274,7 +290,11 @@ def evaluate_county(county_name, json_path, output_path, cohort="latest"):
         ])
         s4_score = clamp_score(s4_score + min(0.8, plan_hits * 0.1))
 
-        s4_reason = "Structured expansion plans provided" if s4_score > 2 else "Limited evidence for proposal."
+        s4_reason = (
+            "Includes a structured growth plan with specific expansion actions."
+            if s4_score > 2
+            else "Proposal evidence is thin; growth planning is limited."
+        )
 
         # S5: Value Chain Alignment & Role (0-5)
         vc_lower = (value_chain or "").lower()
@@ -287,7 +307,7 @@ def evaluate_county(county_name, json_path, output_path, cohort="latest"):
         if any(keyword in free_text_evidence.lower() for keyword in ["green", "recycling", "sustainable", "climate", "solar"]):
             s5_score += 0.5
         s5_score = clamp_score(s5_score)
-        s5_reason = f"Aligned with {value_chain} priority value chain."
+        s5_reason = f"Activity aligns with the {value_chain} priority value chain."
 
         # S6: Inclusivity & Sustainability (0-5)
         s6_score = 1.5
@@ -307,7 +327,11 @@ def evaluate_county(county_name, json_path, output_path, cohort="latest"):
         s6_score += min(0.5, sustainability_hits * 0.1)
         s6_score = clamp_score(s6_score)
 
-        s6_reason = "Woman-owned enterprise" if s6_score == 5 else "Limited evidence of inclusivity profile."
+        s6_reason = (
+            "Women-owned enterprise with supportive inclusivity evidence."
+            if s6_score == 5
+            else "Inclusivity evidence is limited or not strongly differentiated."
+        )
 
         # Composite Calculation
         c_score = (

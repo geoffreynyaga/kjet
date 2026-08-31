@@ -268,3 +268,25 @@ class SubmitCsvTests(TestCase):
         self.assertEqual(
             run.diff["changed"][0]["cells"][0]["column"], "Equity Points"
         )
+
+    @mock.patch("pipeline.views.tasks.build_run.delay")
+    def test_missing_published_baseline_file_returns_a_conflict(self, delay):
+        HumanResultsCsv.objects.create(
+            cohort=self.cohort,
+            source=HumanResultsCsv.Source.SEED,
+            sha256="0" * 64,
+            status=HumanResultsCsv.Status.PUBLISHED,
+            row_count=1,
+            fingerprint=csvtools.fingerprint(csvtools.read_records(csv_bytes())),
+        )
+        upload = SimpleUploadedFile(
+            "kjet-human-final-results-latest.csv", csv_bytes(), content_type="text/csv"
+        )
+
+        response = self.client.post(
+            "/api/pipeline/submit/", {"cohort": "latest", "file": upload}
+        )
+
+        self.assertEqual(response.status_code, 409)
+        self.assertIn("has no stored CSV", response.json()["detail"])
+        delay.assert_not_called()

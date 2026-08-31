@@ -1,3 +1,6 @@
+from pathlib import Path
+
+from django.conf import settings
 from django.core.files.base import ContentFile
 from django.utils import timezone
 from rest_framework import status
@@ -14,6 +17,37 @@ from pipeline.serializers import (
     PipelineRunDetailSerializer,
     PipelineRunSerializer,
 )
+
+
+class BaselineCsvUnavailable(Exception):
+    """The published version cannot supply a trustworthy CSV for diffing."""
+
+
+def load_baseline_records(baseline):
+    """Read a baseline from storage, with a checksum-verified repo fallback."""
+    if baseline.file:
+        try:
+            with baseline.file.open("rb") as handle:
+                return csvtools.read_records(handle.read())
+        except (FileNotFoundError, OSError, ValueError):
+            pass
+
+    repository_path = (
+        Path(settings.BASE_DIR)
+        / "scripts"
+        / "human"
+        / f"kjet-human-final-results-{baseline.cohort.slug}.csv"
+    )
+    if repository_path.is_file():
+        raw = repository_path.read_bytes()
+        if csvtools.sha256(raw) == baseline.sha256:
+            return csvtools.read_records(raw)
+
+    raise BaselineCsvUnavailable(
+        f"Published baseline #{baseline.pk} has no stored CSV that matches its "
+        "recorded checksum. Restore that baseline file before uploading a new "
+        "version so the review diff remains trustworthy."
+    )
 
 
 def resolve_cohort(slug):
@@ -116,6 +150,16 @@ class SubmitCsvView(StaffApiView):
                     status=status.HTTP_400_BAD_REQUEST,
                 )
 
+        diff = {}
+        if baseline:
+            try:
+                old_records = load_baseline_records(baseline)
+            except BaselineCsvUnavailable as exc:
+                return Response(
+                    {"detail": str(exc)}, status=status.HTTP_409_CONFLICT
+                )
+            diff = csvtools.diff_rows(old_records, records)
+
         version = HumanResultsCsv.objects.create(
             cohort=cohort,
             source=source,
@@ -130,12 +174,6 @@ class SubmitCsvView(StaffApiView):
         version.file.save(
             f"kjet-human-final-results-{cohort}.csv", ContentFile(raw), save=True
         )
-
-        diff = {}
-        if baseline:
-            with baseline.file.open("rb") as handle:
-                old_records = csvtools.read_records(handle.read())
-            diff = csvtools.diff_rows(old_records, records)
 
         run = PipelineRun.objects.create(
             csv=version,
