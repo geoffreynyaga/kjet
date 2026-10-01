@@ -1,103 +1,111 @@
 #!/usr/bin/env python3
-"""
-Create a JSON inventory of all files in the data/ directory,
-keyed by application_id extracted from folder names.
-"""
+"""Build the per-cohort document inventory consumed by the dashboard."""
 
-import os
+import argparse
 import json
-import re
-import urllib.parse
-import shutil
+from pathlib import Path
+from urllib.parse import quote, urlencode
+
 
 def extract_application_id(folder_name):
-    """Extract application ID from folder names like 'application_396_bundle' or 'application_369_bundle (1)'"""
-    match = re.search(r'application_(\d+)', folder_name)
-    return match.group(1) if match else folder_name
+    """Return the applicant ID encoded in an application directory name."""
+    prefix = "application_"
+    if not folder_name.casefold().startswith(prefix):
+        return None
 
-def build_file_tree():
-    """Build a tree structure of all files in the data directory"""
-    tree = {}
+    application_id = folder_name[len(prefix) :]
+    folded = application_id.casefold()
+    marker_positions = [
+        folded.find(marker)
+        for marker in ("_with_attachments", "_bundle")
+        if marker in folded
+    ]
+    if marker_positions:
+        application_id = application_id[: min(marker_positions)]
+    return application_id or None
 
-    for root, dirs, files in os.walk('data'):
-        # Skip .DS_Store and other hidden files
-        files = [f for f in files if not f.startswith('.')]
 
-        if files:  # Only include directories that have files
-            # Get the relative path from data/
-            rel_path = os.path.relpath(root, 'data')
+def document_url(application_id, document_path, cohort):
+    encoded_application = quote(f"Applicant_{application_id}", safe="")
+    encoded_path = quote(document_path.as_posix(), safe="/")
+    query = urlencode({"cohort": cohort})
+    return (
+        f"/api/pipeline/applications/{encoded_application}/documents/"
+        f"{encoded_path}/?{query}"
+    )
 
-            # Extract county and application info
-            path_parts = rel_path.split(os.sep)
-            if len(path_parts) >= 2:
-                county = path_parts[0]
-                application_folder = path_parts[1]
-                application_id = extract_application_id(application_folder)
 
-                if application_id not in tree:
-                    tree[application_id] = {
-                        'files': []
+def build_file_tree(data_dir, cohort):
+    """Build an inventory from one cohort directory."""
+    data_dir = Path(data_dir)
+    if not data_dir.is_dir():
+        raise FileNotFoundError(f"Cohort data directory does not exist: {data_dir}")
+
+    inventory = {}
+    for county_dir in sorted(data_dir.iterdir()):
+        if not county_dir.is_dir() or county_dir.name.startswith("."):
+            continue
+
+        for application_dir in sorted(county_dir.iterdir()):
+            if not application_dir.is_dir() or application_dir.name.startswith("."):
+                continue
+
+            application_id = extract_application_id(application_dir.name)
+            if not application_id:
+                continue
+
+            files = []
+            for file_path in sorted(application_dir.rglob("*")):
+                relative_to_application = file_path.relative_to(application_dir)
+                if not file_path.is_file() or any(
+                    part.startswith(".") for part in relative_to_application.parts
+                ):
+                    continue
+
+                document_path = file_path.relative_to(data_dir)
+                files.append(
+                    {
+                        "filename": relative_to_application.as_posix(),
+                        "absolute_path": "",
+                        "s3_url": document_url(application_id, document_path, cohort),
                     }
+                )
 
-                for file in files:
-                    file_path = os.path.join(root, file)
-                    
-                    # Generate S3 URL
-                    s3_base = "https://swift-ag-platform.s3.eu-west-1.amazonaws.com/media/kjet"
-                    s3_path = rel_path + os.sep + file
-                    s3_url = s3_base + "/" + urllib.parse.quote_plus(s3_path).replace('%2F', '/')
+            if files:
+                inventory.setdefault(application_id, {"files": []})["files"].extend(files)
 
-                    file_info = {
-                        'filename': file,
-                        'absolute_path': file_path,
-                        's3_url': s3_url
-                    }
-                    tree[application_id]['files'].append(file_info)
+    return dict(sorted(inventory.items(), key=lambda item: item[0].casefold()))
 
-    return tree
+
+def parse_args():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--cohort", default="latest")
+    parser.add_argument("--data-dir", type=Path)
+    parser.add_argument("--output", type=Path)
+    return parser.parse_args()
+
 
 def main():
-    print("Building file inventory from data/ directory...")
+    args = parse_args()
+    data_dir = args.data_dir or Path("data") / args.cohort
+    output = (
+        args.output
+        or Path("ui") / "public" / args.cohort / "data_file_inventory.json"
+    )
 
-    # Build the tree
-    file_tree = build_file_tree()
+    inventory = build_file_tree(data_dir, args.cohort)
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(
+        json.dumps(inventory, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
 
-    # Sort by application_id (numeric sort for IDs that are numbers)
-    def sort_key(item):
-        app_id = item[0]
-        try:
-            return int(app_id)
-        except ValueError:
-            return 0
+    total_files = sum(len(entry["files"]) for entry in inventory.values())
+    print(
+        f"Created {output} with {len(inventory)} applications "
+        f"and {total_files} files."
+    )
 
-    sorted_tree = dict(sorted(file_tree.items(), key=sort_key))
-
-    # Save to JSON
-    output_file = 'data_file_inventory.json'
-    with open(output_file, 'w', encoding='utf-8') as f:
-        json.dump(sorted_tree, f, indent=2, ensure_ascii=False)
-
-    # Copy to code/public folder
-    public_dir = 'code/public'
-    os.makedirs(public_dir, exist_ok=True)
-    public_file = os.path.join(public_dir, 'data_file_inventory.json')
-    shutil.copy2(output_file, public_file)
-
-    print(f"✅ Created {output_file} with {len(sorted_tree)} applications")
-    print(f"📋 Also copied to {public_file}")
-
-    # Print summary
-    total_files = sum(len(data['files']) for data in sorted_tree.values())
-    print(f"📁 Total applications: {len(sorted_tree)}")
-    print(f"📄 Total files: {total_files}")
-
-    # Show sample
-    print("\n📋 Sample entries:")
-    for i, (app_id, data) in enumerate(sorted_tree.items()):
-        if i < 5:  # Show first 5
-            print(f"  {app_id}: {len(data['files'])} files")
-        elif i == 5:
-            print("  ...")
 
 if __name__ == "__main__":
     main()

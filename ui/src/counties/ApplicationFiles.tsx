@@ -1,20 +1,15 @@
-import { ArrowLeft, Download, ExternalLink, Eye, FileText } from 'lucide-react';
+import { ArrowLeft, Download, Eye, FileText } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 
+import { fetchApplicationFiles } from './applicationFilesApi';
 import { motion } from 'framer-motion';
-import { buildStaticDataUrl, s3BaseUrl } from '../utils';
+import { buildStaticDataUrl } from '../utils';
 
 interface ApplicationFile {
   filename: string;
   absolute_path: string;
   s3_url: string;
-}
-
-interface ApplicationFilesData {
-  [applicationId: string]: {
-    files: ApplicationFile[];
-  };
 }
 
 function ApplicationFiles() {
@@ -33,33 +28,30 @@ function ApplicationFiles() {
   }, [application_id]);
 
   const loadApplicationFiles = async () => {
+    if (!application_id) {
+      setFiles([]);
+      setError('No application ID was provided.');
+      setLoading(false);
+      return;
+    }
+
     try {
       setLoading(true);
-      const url = buildStaticDataUrl('data_file_inventory.json', cohort);
-      const response = await fetch(url);
-      const data: ApplicationFilesData = await response.json();
-
-      console.log(data,"data")
-
-      let new_id = application_id?.split('_')[1];
-
-      if (new_id === "undefined") {
-        console.log("new id is undefined")
-      } else{
-          console.log(new_id,"new id")
-
-          if (application_id && data[new_id]) {
-            console.log(data[new_id],"what is this");
-            setFiles(data[new_id].files);
-          } else {
-            setError(`No files found for application ${application_id}`);
-          }
-      }
-
-      setLoading(false);
+      setError(null);
+      const applicationFiles = await fetchApplicationFiles(
+        application_id,
+        cohort || 'latest',
+        fetch,
+        buildStaticDataUrl,
+      );
+      setFiles(applicationFiles as ApplicationFile[]);
     } catch (err) {
       console.error('Error loading application files:', err);
-      setError('Failed to load application files');
+      setFiles([]);
+      setError(
+        'The application documents could not be loaded. Please try again or return to the county list.',
+      );
+    } finally {
       setLoading(false);
     }
   };

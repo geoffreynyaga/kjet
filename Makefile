@@ -11,7 +11,7 @@ HUMAN_FINAL_CSV ?= scripts/human/kjet-human-final-results-$(COHORT).csv
 WORKSPACE ?=
 WORKSPACE_ARG := $(if $(WORKSPACE),--workspace-root $(WORKSPACE),)
 
-.PHONY: all venv install extraction financials analysis evaluation summary gemini gemini-csv stats src collectstatic human convert-csv comparison run build clean help
+.PHONY: all venv install extraction financials analysis evaluation summary gemini gemini-csv stats src inventory collectstatic human convert-csv comparison run build clean help
 
 # Display help information about available commands
 help:
@@ -25,6 +25,7 @@ help:
 	@echo "  make gemini       -> generate agentic CSV results and refresh dashboard JSON"
 	@echo "  make gemini-csv   -> generate agentic CSV results for the UI only"
 	@echo "  make stats        -> run aggregate statistics generator"
+	@echo "  make inventory    -> generate the cohort document inventory"
 	@echo "  make convert-csv  -> convert analysis results to dashboard JSON"
 	@echo "  make comparison   -> generate comparison data for the dashboard"
 	@echo "  make run          -> run the full data pipeline from start to finish"
@@ -94,8 +95,13 @@ src:
 	@mkdir -p ui/public/$(COHORT)/output-results
 	@cp -rv output-results/$(COHORT)/* ui/public/$(COHORT)/output-results/ || true
 
+# Support: Generate the document inventory in the cohort's public data folder
+inventory:
+	@echo "Generating document inventory for cohort $(COHORT)"
+	$(PY) scripts/conversion/create_data_inventory.py --cohort $(COHORT) --data-dir $(DATA_DIR)
+
 # Support: Sync results to static folder for production deployment
-collectstatic:
+collectstatic: inventory
 	@echo "Copying UI public data to staticfiles/data folder"
 	@mkdir -p staticfiles/data
 	@cp -rv ui/public/* staticfiles/data/ || true
@@ -136,8 +142,8 @@ run: install
 
 # Build the React frontend production bundle
 build:
-	@echo "Building React app (inside src/)"
-	@cd src && pnpm build
+	@echo "Building React app (inside ui/)"
+	@cd ui && pnpm build
 
 # Reset the project by removing all generated files
 clean:
