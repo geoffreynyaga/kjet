@@ -19,19 +19,6 @@ export const useStatisticsData = () => {
     try {
       setLoading(true);
 
-      // fetch national summary for this cohort if available
-      let summaryData: any = null;
-      try {
-        const summaryUrl = buildStaticDataUrl('output-results/national_evaluation_summary.json', cohort);
-        console.log(summaryUrl,"summaryURL");
-        const summaryResp = await fetch(summaryUrl);
-        if (summaryResp.ok) {
-          summaryData = await summaryResp.json();
-        }
-      } catch (err) {
-        console.warn('Could not load national summary for cohort', cohort, err);
-      }
-
       const url = buildStaticDataUrl('kjet-human-final.json', cohort);
       const resp = await fetch(url);
       const data: StatisticsApplicant[] = await resp.json();
@@ -43,12 +30,6 @@ export const useStatisticsData = () => {
 
       // Calculate national statistics with women-owned data
       let nationalStats = calculateNationalStats(data, womenOwnedData);
-
-      // if summary data exists, override total count for accuracy (AI summary may have a different count)
-      if (summaryData && summaryData.national_summary) {
-        nationalStats.totalApplications = summaryData.national_summary.total_applications || nationalStats.totalApplications;
-        // averageScore is intentionally calculated from human scores, not overridden from AI summary
-      }
 
       setNationalStats(nationalStats);
 

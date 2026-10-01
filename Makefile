@@ -127,10 +127,10 @@ run: install
 	$(MAKE) evaluation
 	$(MAKE) stats
 	$(MAKE) src
-	$(MAKE) collectstatic
 	$(MAKE) human
 	$(MAKE) convert-csv
 	$(MAKE) comparison
+	$(MAKE) collectstatic
 
 	@echo "Full pipeline complete."
 

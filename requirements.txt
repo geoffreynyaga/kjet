@@ -1,6 +1,6 @@
 boto3
 celery
-django
+Django==5.2.17
 django-cors-headers
 django-leaflet
 django-storages

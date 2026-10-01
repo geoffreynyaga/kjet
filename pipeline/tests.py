@@ -206,6 +206,24 @@ class HumanScriptTests(SimpleTestCase):
         self.assertEqual(records[0]["Equity Points"], 5.0)
         self.assertEqual(records[0]["A3.1 Registration & Track Record "], 4.0)
 
+    def test_comparison_export_preserves_dashboard_human_results(self):
+        workspace = Path(self.tempdir.name) / "workspace"
+        input_dir = workspace / "scripts" / "human"
+        dashboard_dir = workspace / "ui" / "public" / "latest"
+        input_dir.mkdir(parents=True)
+        dashboard_dir.mkdir(parents=True)
+        (input_dir / "kjet-human-final-results-latest.csv").write_bytes(csv_bytes())
+        dashboard_file = dashboard_dir / "kjet-human-final.json"
+        dashboard_file.write_text(json.dumps([{"Application ID": "Applicant_EXAMPLE", "TIERS": "Tier 1"}]))
+
+        extract_comparison_data("latest", workspace)
+
+        self.assertEqual(
+            json.loads(dashboard_file.read_text()),
+            [{"Application ID": "Applicant_EXAMPLE", "TIERS": "Tier 1"}],
+        )
+        self.assertTrue((dashboard_dir / "comparison_data.json").exists())
+
 
 class OverwritingStorage(FileSystemStorage):
     """Stands in for S3Boto3Storage's default file_overwrite=True behaviour.

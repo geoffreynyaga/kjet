@@ -90,7 +90,6 @@ def extract_comparison_data(cohort="latest", workspace_root=None):
     output_dir = workspace_root / "ui" / "public" / cohort
     output_dir.mkdir(parents=True, exist_ok=True)
     output_file = output_dir / "comparison_data.json"
-    final_human_file = output_dir / "kjet-human-final.json"
 
     if not csv_file.exists():
         print(f"Error: {csv_file} not found!")
@@ -233,9 +232,8 @@ def extract_comparison_data(cohort="latest", workspace_root=None):
                     }
                 data.append(entry)
 
-        for target in [output_file, final_human_file]:
-            with open(target, 'w', encoding='utf-8') as json_file:
-                json.dump(data, json_file, indent=2, ensure_ascii=True)
+        with open(output_file, 'w', encoding='utf-8') as json_file:
+            json.dump(data, json_file, indent=2, ensure_ascii=True)
 
         print(f"Successfully extracted {len(data)} records for cohort {cohort}")
         return data

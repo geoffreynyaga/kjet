@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { buildStaticDataUrl, s3BaseUrl } from './utils';
 
 import { StatisticsDashboard } from './counties';
@@ -9,12 +9,9 @@ export default function Home() {
   const [nationalSummary, setNationalSummary] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [showFirstCohortMenu, setShowFirstCohortMenu] = useState(false);
-  const firstCohortMenuRef = useRef(null);
 
   const cohort = new URLSearchParams(window.location.search).get('cohort') || 'latest';
 
-    const [geminiSummary, setGeminiSummary] = useState(null);
     const [isStaff, setIsStaff] = useState(false);
 
   useEffect(() => {
@@ -51,31 +48,6 @@ export default function Home() {
         setLoading(false);
       }
     })();
-  }, []);
-
-  useEffect(() => {
-    (async function loadGemini() {
-      try {
-        const r = await fetch(buildStaticDataUrl('gemini_summary.json', cohort));
-        if (r.ok) {
-          const j = await r.json();
-          setGeminiSummary(j);
-        }
-      } catch (e) {
-        // ignore
-      }
-    })();
-  }, []);
-
-  useEffect(() => {
-    function handleClickOutside(event) {
-      if (firstCohortMenuRef.current && !firstCohortMenuRef.current.contains(event.target)) {
-        setShowFirstCohortMenu(false);
-      }
-    }
-
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
   if (loading) return (
@@ -348,19 +320,6 @@ export default function Home() {
             Final Analysis
           </motion.a>
 
-
-          <motion.a
-            href="/comparisons"
-            className="flex items-center gap-2 px-4 py-2 font-medium text-white no-underline transition-colors duration-200 bg-gray-700 border rounded-full border-white/20 hover:border-white/40 ring-2 ring-white/10 hover:ring-blue-300"
-            whileHover={{ scale: 1.03 }}
-            whileTap={{ scale: 0.97 }}
-          >
-            <span>AI analysis</span>
-            {geminiSummary && geminiSummary.zero_count > 0 && (
-              <span className="inline-flex items-center justify-center w-3 h-3 ml-1 bg-red-500 rounded-full ring-2 ring-white" title={`${geminiSummary.zero_count} counties missing LLM data`} />
-            )}
-          </motion.a>
-
           {isStaff && (
             <motion.a
               href="/pipeline"
@@ -374,39 +333,9 @@ export default function Home() {
 
           <div className="w-px h-8 bg-blue-200/40" />
 
-          <div className="relative" ref={firstCohortMenuRef}>
-            <motion.button
-              type="button"
-              onClick={() => setShowFirstCohortMenu((prev) => !prev)}
-              className="inline-flex items-center h-10 gap-2 px-1 text-base font-semibold leading-none text-gray-700 transition-colors duration-200 hover:text-blue-700"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <span>First Cohort</span>
-              <span aria-hidden="true" className="text-sm">▾</span>
-            </motion.button>
-            {showFirstCohortMenu && (
-              <motion.div
-                className="absolute right-0 z-50 w-56 mt-2 overflow-hidden bg-white rounded-lg shadow-lg"
-                initial={{ opacity: 0, y: -8 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.2 }}
-              >
-                <a
-                  href="/results?cohort=c1"
-                  className="block px-4 py-3 text-sm font-medium text-gray-700 no-underline transition-colors duration-200 hover:bg-gray-100"
-                >
-                  Final Analysis
-                </a>
-                <a
-                  href="/firstandsecond?cohort=c1"
-                  className="block px-4 py-3 text-sm font-medium text-gray-700 no-underline transition-colors duration-200 border-t border-gray-100 hover:bg-gray-100"
-                >
-                  First vs Second
-                </a>
-              </motion.div>
-            )}
-          </div>
+          <span className="inline-flex items-center h-10 px-1 text-base font-semibold leading-none text-gray-700">
+            First Cohort
+          </span>
           <motion.a
             href="/accounts/logout/"
             className="px-6 py-2 font-medium text-white no-underline transition-colors duration-200 bg-red-600 rounded-lg hover:bg-red-700"
