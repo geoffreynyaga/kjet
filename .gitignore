@@ -25,3 +25,5 @@ server_setup.md
 .django_tailwind_cli/
 
 .django_tailwind_cli/tailwindcss-macos-arm64-4.1.12
+
+logs/
