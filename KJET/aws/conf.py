@@ -10,6 +10,10 @@ AWS_SECRET_ACCESS_KEY = config("S3_SECRET_ACCESS_KEY")
 AWS_FILE_EXPIRE = 200
 AWS_PRELOAD_METADATA = True
 AWS_QUERYSTRING_AUTH = config("AWS_QUERYSTRING_AUTH")
+# S3Boto3Storage defaults to overwriting same-named keys instead of the unique
+# suffix FileSystemStorage would generate; a versioned model whose files must
+# never alias onto each other needs this off.
+AWS_S3_FILE_OVERWRITE = False
 
 # Django 5.1 removed DEFAULT_FILE_STORAGE and STATICFILES_STORAGE; they are
 # ignored rather than raising, which silently drops both back to filesystem

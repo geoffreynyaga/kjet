@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 
-{% load tailwind_cli %}
 {% load static %}
 
 <html lang="en">
@@ -49,7 +48,7 @@
         <link rel="stylesheet" href="https://unpkg.com/leaflet-draw/dist/leaflet.draw.css" />
         -->
 
-        {% tailwind_css %}
+        <link rel="stylesheet" href="{% static 'css/tailwind.css' %}">
     </head>
     <body class="w-full font-sans bg-gray-100">
         {% block body %}
