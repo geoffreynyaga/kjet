@@ -1960,16 +1960,6 @@
     "county_rank": 12
   },
   {
-    "application_id": "Applicant_KJET-20251220184400-EZ1F",
-    "county": "Kericho",
-    "weighted_score": 2.0,
-    "ranking": 13,
-    "total_score": 7.0,
-    "equity_points": 0.0,
-    "penalty_points": 5.0,
-    "county_rank": 13
-  },
-  {
     "application_id": "Applicant_KJET-20251230192019-NFYG",
     "county": "Kiambu",
     "weighted_score": 82.0,
@@ -2573,11 +2563,11 @@
     "application_id": "Applicant_KJET-20251229125355-GASS",
     "county": "Kisii",
     "weighted_score": 64.0,
-    "ranking": 16,
+    "ranking": 15,
     "total_score": 67.0,
     "equity_points": 0.0,
     "penalty_points": 3.0,
-    "county_rank": 16
+    "county_rank": 15
   },
   {
     "application_id": "Applicant_KJET-20251229130910-VOR8",
@@ -2633,11 +2623,11 @@
     "application_id": "Applicant_KJET-20251231094434-ECWO",
     "county": "Kisii",
     "weighted_score": 65.0,
-    "ranking": 15,
+    "ranking": 14,
     "total_score": 65.0,
     "equity_points": 0.0,
     "penalty_points": 0.0,
-    "county_rank": 15
+    "county_rank": 14
   },
   {
     "application_id": "Applicant_KJET-20251231142039-9PJU",
@@ -2653,61 +2643,61 @@
     "application_id": "Applicant_KJET-20260104114436-BUWR",
     "county": "Kisii",
     "weighted_score": 63.0,
-    "ranking": 17,
+    "ranking": 16,
     "total_score": 63.0,
     "equity_points": 0.0,
     "penalty_points": 0.0,
-    "county_rank": 17
+    "county_rank": 16
   },
   {
     "application_id": "Applicant_KJET-20251223111322-CARO",
     "county": "Kisii",
     "weighted_score": 56.0,
-    "ranking": 22,
-    "total_score": 56.0,
-    "equity_points": 0.0,
-    "penalty_points": 0.0,
-    "county_rank": 22
-  },
-  {
-    "application_id": "Applicant_KJET-20251229112538-PGB5",
-    "county": "Kisii",
-    "weighted_score": 57.0,
     "ranking": 21,
-    "total_score": 57.0,
+    "total_score": 56.0,
     "equity_points": 0.0,
     "penalty_points": 0.0,
     "county_rank": 21
   },
   {
+    "application_id": "Applicant_KJET-20251229112538-PGB5",
+    "county": "Kisii",
+    "weighted_score": 57.0,
+    "ranking": 20,
+    "total_score": 57.0,
+    "equity_points": 0.0,
+    "penalty_points": 0.0,
+    "county_rank": 20
+  },
+  {
     "application_id": "Applicant_KJET-20251229182203-Q0PZ",
     "county": "Kisii",
     "weighted_score": 50.0,
-    "ranking": 23,
+    "ranking": 22,
     "total_score": 53.0,
     "equity_points": 0.0,
     "penalty_points": 3.0,
-    "county_rank": 23
+    "county_rank": 22
   },
   {
     "application_id": "Applicant_KJET-20251229223326-WBSG",
     "county": "Kisii",
     "weighted_score": 59.0,
-    "ranking": 20,
+    "ranking": 19,
     "total_score": 64.0,
     "equity_points": 0.0,
     "penalty_points": 5.0,
-    "county_rank": 20
+    "county_rank": 19
   },
   {
     "application_id": "Applicant_KJET-20251230211726-X56G",
     "county": "Kisii",
     "weighted_score": 66.0,
-    "ranking": 13,
+    "ranking": 12,
     "total_score": 66.0,
     "equity_points": 0.0,
     "penalty_points": 0.0,
-    "county_rank": 13
+    "county_rank": 12
   },
   {
     "application_id": "Applicant_KJET-20251230231359-HYRJ",
@@ -2733,81 +2723,81 @@
     "application_id": "Applicant_319",
     "county": "Kisii",
     "weighted_score": 71.0,
-    "ranking": 10,
+    "ranking": 9,
     "total_score": 71.0,
     "equity_points": 0.0,
     "penalty_points": 0.0,
-    "county_rank": 10
+    "county_rank": 9
   },
   {
     "application_id": "Applicant_KJET-20251229171416-WGWM",
     "county": "Kisii",
     "weighted_score": 68.0,
-    "ranking": 11,
+    "ranking": 10,
     "total_score": 68.0,
     "equity_points": 0.0,
     "penalty_points": 0.0,
-    "county_rank": 11
+    "county_rank": 10
   },
   {
     "application_id": "Applicant_KJET-20251223102724-O1HA",
     "county": "Kisii",
     "weighted_score": 60.0,
-    "ranking": 19,
-    "total_score": 60.0,
-    "equity_points": 0.0,
-    "penalty_points": 0.0,
-    "county_rank": 19
-  },
-  {
-    "application_id": "Applicant_KJET-20251228232737-LTWU",
-    "county": "Kisii",
-    "weighted_score": 62.0,
     "ranking": 18,
-    "total_score": 62.0,
+    "total_score": 60.0,
     "equity_points": 0.0,
     "penalty_points": 0.0,
     "county_rank": 18
   },
   {
+    "application_id": "Applicant_KJET-20251228232737-LTWU",
+    "county": "Kisii",
+    "weighted_score": 62.0,
+    "ranking": 17,
+    "total_score": 62.0,
+    "equity_points": 0.0,
+    "penalty_points": 0.0,
+    "county_rank": 17
+  },
+  {
     "application_id": "Applicant_KJET-20251229130513-AD4Z",
     "county": "Kisii",
     "weighted_score": 47.0,
-    "ranking": 24,
+    "ranking": 23,
     "total_score": 50.0,
     "equity_points": 0.0,
     "penalty_points": 3.0,
-    "county_rank": 24
+    "county_rank": 23
   },
   {
     "application_id": "Applicant_KJET-20251224074631-CN3U",
     "county": "Kisii",
-    "weighted_score": 73.0,
-    "ranking": 9,
-    "total_score": 73.0,
+    "weighted_score": 0.0,
+    "ranking": 24,
+    "total_score": -5.0,
     "equity_points": -5.0,
     "penalty_points": 0.0,
-    "county_rank": 9
+    "county_rank": 24
   },
   {
     "application_id": "Applicant_KJET-20251230103907-NTBO",
     "county": "Kisii",
     "weighted_score": 66.0,
-    "ranking": 13,
+    "ranking": 12,
     "total_score": 66.0,
     "equity_points": 0.0,
     "penalty_points": 0.0,
-    "county_rank": 14
+    "county_rank": 13
   },
   {
     "application_id": "Applicant_KJET-20251231181004-HKO1",
     "county": "Kisii",
     "weighted_score": 68.0,
-    "ranking": 11,
+    "ranking": 10,
     "total_score": 68.0,
     "equity_points": 0.0,
     "penalty_points": 0.0,
-    "county_rank": 12
+    "county_rank": 11
   },
   {
     "application_id": "Applicant_KJET-20251209193751-M1VV",
@@ -3443,21 +3433,21 @@
     "application_id": "Applicant_KJET-20251229190414-ZAIA",
     "county": "Lamu",
     "weighted_score": 36.0,
-    "ranking": 9,
+    "ranking": 8,
     "total_score": 41.0,
     "equity_points": 0.0,
     "penalty_points": 5.0,
-    "county_rank": 9
+    "county_rank": 8
   },
   {
     "application_id": "Applicant_KJET-20251231112607-TTTK",
     "county": "Lamu",
     "weighted_score": 29.0,
-    "ranking": 10,
+    "ranking": 9,
     "total_score": 34.0,
     "equity_points": 0.0,
     "penalty_points": 5.0,
-    "county_rank": 10
+    "county_rank": 9
   },
   {
     "application_id": "Applicant_KJET-20251231120829-PORC",
@@ -3473,11 +3463,11 @@
     "application_id": "Applicant_367",
     "county": "Lamu",
     "weighted_score": 39.0,
-    "ranking": 8,
+    "ranking": 7,
     "total_score": 39.0,
     "equity_points": -5.0,
     "penalty_points": 0.0,
-    "county_rank": 8
+    "county_rank": 7
   },
   {
     "application_id": "Applicant_KJET-20251231123047-C22O",
@@ -3502,12 +3492,12 @@
   {
     "application_id": "Applicant_KJET-20251230211739-ZUTI",
     "county": "Lamu",
-    "weighted_score": 40.0,
-    "ranking": 7,
-    "total_score": 40.0,
+    "weighted_score": 0.0,
+    "ranking": 10,
+    "total_score": 0.0,
     "equity_points": 0.0,
     "penalty_points": 0.0,
-    "county_rank": 7
+    "county_rank": 10
   },
   {
     "application_id": "Applicant_KJET-20251229152420-ETOH",
@@ -4233,111 +4223,101 @@
     "application_id": "Applicant_KJET-20251227150156-ODUE",
     "county": "Meru",
     "weighted_score": 79.0,
-    "ranking": 19,
+    "ranking": 18,
     "total_score": 79.0,
     "equity_points": 0.0,
     "penalty_points": 0.0,
-    "county_rank": 19
+    "county_rank": 18
   },
   {
     "application_id": "Applicant_KJET-20251229120810-LIHS",
     "county": "Meru",
     "weighted_score": 75.0,
-    "ranking": 22,
+    "ranking": 21,
     "total_score": 75.0,
     "equity_points": 0.0,
     "penalty_points": 0.0,
-    "county_rank": 22
+    "county_rank": 21
   },
   {
     "application_id": "Applicant_KJET-20251229171047-HF3K",
     "county": "Meru",
     "weighted_score": 76.0,
-    "ranking": 21,
+    "ranking": 20,
     "total_score": 81.0,
     "equity_points": 0.0,
     "penalty_points": 5.0,
-    "county_rank": 21
+    "county_rank": 20
   },
   {
     "application_id": "Applicant_KJET-20251231111044-YAHC",
     "county": "Meru",
     "weighted_score": 74.0,
-    "ranking": 23,
+    "ranking": 22,
     "total_score": 74.0,
     "equity_points": 0.0,
     "penalty_points": 0.0,
-    "county_rank": 23
-  },
-  {
-    "application_id": "Applicant_KJET-20251231161224-FBS2",
-    "county": "Meru",
-    "weighted_score": 85.0,
-    "ranking": 13,
-    "total_score": 85.0,
-    "equity_points": 0.0,
-    "penalty_points": 0.0,
-    "county_rank": 13
+    "county_rank": 22
   },
   {
     "application_id": "Applicant_KJET-20251216153409-XEBV",
     "county": "Meru",
     "weighted_score": 89.0,
-    "ranking": 8,
+    "ranking": 7,
+    "total_score": 89.0,
+    "equity_points": 0.0,
+    "penalty_points": 0.0,
+    "county_rank": 7
+  },
+  {
+    "application_id": "Applicant_KJET-20251218224444-KG2X",
+    "county": "Meru",
+    "weighted_score": 91.0,
+    "ranking": 5,
+    "total_score": 91.0,
+    "equity_points": 0.0,
+    "penalty_points": 0.0,
+    "county_rank": 5
+  },
+  {
+    "application_id": "Applicant_KJET-20251231110212-QQY1",
+    "county": "Meru",
+    "weighted_score": 83.0,
+    "ranking": 15,
+    "total_score": 83.0,
+    "equity_points": -5.0,
+    "penalty_points": 0.0,
+    "county_rank": 15
+  },
+  {
+    "application_id": "Applicant_KJET-20251231155358-BTQI",
+    "county": "Meru",
+    "weighted_score": 89.0,
+    "ranking": 7,
     "total_score": 89.0,
     "equity_points": 0.0,
     "penalty_points": 0.0,
     "county_rank": 8
   },
   {
-    "application_id": "Applicant_KJET-20251218224444-KG2X",
-    "county": "Meru",
-    "weighted_score": 91.0,
-    "ranking": 6,
-    "total_score": 91.0,
-    "equity_points": 0.0,
-    "penalty_points": 0.0,
-    "county_rank": 6
-  },
-  {
-    "application_id": "Applicant_KJET-20251231110212-QQY1",
-    "county": "Meru",
-    "weighted_score": 96.0,
-    "ranking": 2,
-    "total_score": 96.0,
-    "equity_points": 0.0,
-    "penalty_points": 0.0,
-    "county_rank": 2
-  },
-  {
-    "application_id": "Applicant_KJET-20251231155358-BTQI",
-    "county": "Meru",
-    "weighted_score": 89.0,
-    "ranking": 8,
-    "total_score": 89.0,
-    "equity_points": 0.0,
-    "penalty_points": 0.0,
-    "county_rank": 9
-  },
-  {
     "application_id": "Applicant_KJET-20251216171151-ZMIW",
     "county": "Meru",
-    "weighted_score": 82.0,
-    "ranking": 17,
-    "total_score": 82.0,
-    "equity_points": 0.0,
+    "weighted_score": 89.0,
+    "ranking": 7,
+    "total_score": 89.0,
+    "equity_points": 5.0,
     "penalty_points": 0.0,
-    "county_rank": 18
+    "county_rank": 9
   },
   {
     "application_id": "Applicant_KJET-20251223150553-KVPF",
     "county": "Meru",
     "weighted_score": 78.0,
-    "ranking": 20,
+    "ranking": 19,
     "total_score": 78.0,
     "equity_points": 0.0,
     "penalty_points": 0.0,
-    "county_rank": 20
+    "county_rank": 19
   },
   {
     "application_id": "Applicant_KJET-20251229113149-JVBP",
@@ -4347,7 +4327,7 @@
     "total_score": 85.0,
     "equity_points": 0.0,
     "penalty_points": 0.0,
-    "county_rank": 14
+    "county_rank": 13
   },
   {
     "application_id": "Applicant_KJET-20251231120955-L4J8",
@@ -4373,7 +4353,7 @@
     "application_id": "Applicant_KJET-20251231134210-JUGG",
     "county": "Meru",
     "weighted_score": 89.0,
-    "ranking": 8,
+    "ranking": 7,
     "total_score": 89.0,
     "equity_points": 5.0,
     "penalty_points": 0.0,
@@ -4387,7 +4367,7 @@
     "total_score": 96.0,
     "equity_points": 5.0,
     "penalty_points": 0.0,
-    "county_rank": 3
+    "county_rank": 2
   },
   {
     "application_id": "Applicant_210",
@@ -4397,7 +4377,7 @@
     "total_score": 96.0,
     "equity_points": 5.0,
     "penalty_points": 0.0,
-    "county_rank": 4
+    "county_rank": 3
   },
   {
     "application_id": "Applicant_KJET-20251215102750-Q6HO",
@@ -4413,47 +4393,47 @@
     "application_id": "Applicant_KJET-20251215152233-PZZC",
     "county": "Meru",
     "weighted_score": 84.0,
-    "ranking": 15,
+    "ranking": 14,
     "total_score": 84.0,
     "equity_points": 0.0,
     "penalty_points": 0.0,
-    "county_rank": 15
+    "county_rank": 14
   },
   {
     "application_id": "Applicant_KJET-20260101132631-4WM8",
     "county": "Meru",
     "weighted_score": 91.0,
-    "ranking": 6,
+    "ranking": 5,
     "total_score": 91.0,
     "equity_points": -5.0,
     "penalty_points": 0.0,
-    "county_rank": 7
+    "county_rank": 6
   },
   {
     "application_id": "Applicant_KJET-20251219111316-ZSUV",
     "county": "Meru",
     "weighted_score": 68.0,
-    "ranking": 24,
+    "ranking": 23,
     "total_score": 71.0,
     "equity_points": 0.0,
     "penalty_points": 3.0,
-    "county_rank": 24
+    "county_rank": 23
   },
   {
     "application_id": "Applicant_KJET-20251222114102-RSTF",
     "county": "Meru",
     "weighted_score": 93.0,
-    "ranking": 5,
+    "ranking": 4,
     "total_score": 93.0,
     "equity_points": -5.0,
     "penalty_points": 0.0,
-    "county_rank": 5
+    "county_rank": 4
   },
   {
     "application_id": "Applicant_KJET-20251222181049-SVB4",
     "county": "Meru",
     "weighted_score": 83.0,
-    "ranking": 16,
+    "ranking": 15,
     "total_score": 83.0,
     "equity_points": 0.0,
     "penalty_points": 0.0,
@@ -4463,21 +4443,21 @@
     "application_id": "Applicant_KJET-20251229173302-QO7I",
     "county": "Meru",
     "weighted_score": 47.0,
-    "ranking": 26,
+    "ranking": 25,
     "total_score": 47.0,
     "equity_points": 0.0,
     "penalty_points": 0.0,
-    "county_rank": 26
+    "county_rank": 25
   },
   {
     "application_id": "Applicant_KJET-20251222112154-B8DY",
     "county": "Meru",
     "weighted_score": 54.0,
-    "ranking": 25,
+    "ranking": 24,
     "total_score": 59.0,
     "equity_points": 0.0,
     "penalty_points": 5.0,
-    "county_rank": 25
+    "county_rank": 24
   },
   {
     "application_id": "Applicant_KJET-20251223125207-YUCF",
@@ -4783,11 +4763,11 @@
     "application_id": "Applicant_KJET-20251223151937-VQWR",
     "county": "Mombasa",
     "weighted_score": 33.0,
-    "ranking": 23,
+    "ranking": 22,
     "total_score": 33.0,
     "equity_points": 0.0,
     "penalty_points": 0.0,
-    "county_rank": 23
+    "county_rank": 22
   },
   {
     "application_id": "Applicant_KJET-20251224181820-DRDT",
@@ -4800,24 +4780,14 @@
     "county_rank": 18
   },
   {
-    "application_id": "Applicant_KJET-20251230095810-Q3KR",
-    "county": "Mombasa",
-    "weighted_score": 34.0,
-    "ranking": 22,
-    "total_score": 34.0,
-    "equity_points": 0.0,
-    "penalty_points": 0.0,
-    "county_rank": 22
-  },
-  {
     "application_id": "Applicant_KJET-20251230105655-BSOF",
     "county": "Mombasa",
     "weighted_score": 14.0,
-    "ranking": 24,
+    "ranking": 23,
     "total_score": 14.0,
     "equity_points": 0.0,
     "penalty_points": 0.0,
-    "county_rank": 24
+    "county_rank": 23
   },
   {
     "application_id": "Applicant_KJET-20251231113029-TLGX",
@@ -4853,11 +4823,11 @@
     "application_id": "Applicant_KJET-20251230150438-GYBY",
     "county": "Mombasa",
     "weighted_score": 0.0,
-    "ranking": 25,
+    "ranking": 24,
     "total_score": 0.0,
     "equity_points": 0.0,
     "penalty_points": 3.0,
-    "county_rank": 25
+    "county_rank": 24
   },
   {
     "application_id": "Applicant_KJET-20251231122558-KZRG",
@@ -5583,11 +5553,11 @@
     "application_id": "Applicant_KJET-20251228121533-NJAG",
     "county": "Nandi",
     "weighted_score": 55.0,
-    "ranking": 6,
+    "ranking": 5,
     "total_score": 55.0,
     "equity_points": 0.0,
     "penalty_points": 0.0,
-    "county_rank": 6
+    "county_rank": 5
   },
   {
     "application_id": "Applicant_KJET-20251229215554-NRBB",
@@ -5613,101 +5583,101 @@
     "application_id": "Applicant_KJET-20251224180814-NB32",
     "county": "Nandi",
     "weighted_score": 30.0,
-    "ranking": 15,
+    "ranking": 14,
     "total_score": 35.0,
     "equity_points": 0.0,
     "penalty_points": 5.0,
-    "county_rank": 15
+    "county_rank": 14
   },
   {
     "application_id": "Applicant_KJET-20251231164306-DOCR",
     "county": "Nandi",
     "weighted_score": 1.0,
-    "ranking": 19,
+    "ranking": 18,
     "total_score": 4.0,
-    "equity_points": 0.0,
-    "penalty_points": 3.0,
-    "county_rank": 19
-  },
-  {
-    "application_id": "Applicant_KJET-20251231191151-R0UD",
-    "county": "Nandi",
-    "weighted_score": 4.0,
-    "ranking": 17,
-    "total_score": 4.0,
-    "equity_points": 0.0,
-    "penalty_points": 0.0,
-    "county_rank": 17
-  },
-  {
-    "application_id": "Applicant_KJET-20251231195128-ICSK",
-    "county": "Nandi",
-    "weighted_score": 15.0,
-    "ranking": 16,
-    "total_score": 15.0,
-    "equity_points": 0.0,
-    "penalty_points": 0.0,
-    "county_rank": 16
-  },
-  {
-    "application_id": "Applicant_KJET-20251228124904-ZGVY",
-    "county": "Nandi",
-    "weighted_score": 54.0,
-    "ranking": 9,
-    "total_score": 54.0,
-    "equity_points": 5.0,
-    "penalty_points": 0.0,
-    "county_rank": 9
-  },
-  {
-    "application_id": "Applicant_KJET-20251228215425-4D1B",
-    "county": "Nandi",
-    "weighted_score": 44.0,
-    "ranking": 13,
-    "total_score": 44.0,
-    "equity_points": 0.0,
-    "penalty_points": 0.0,
-    "county_rank": 13
-  },
-  {
-    "application_id": "Applicant_KJET-20251230184749-KG3D",
-    "county": "Nandi",
-    "weighted_score": 51.0,
-    "ranking": 10,
-    "total_score": 51.0,
-    "equity_points": 0.0,
-    "penalty_points": 0.0,
-    "county_rank": 10
-  },
-  {
-    "application_id": "Applicant_KJET-20251128120522-YUHN",
-    "county": "Nandi",
-    "weighted_score": 44.0,
-    "ranking": 13,
-    "total_score": 47.0,
-    "equity_points": -5.0,
-    "penalty_points": 3.0,
-    "county_rank": 14
-  },
-  {
-    "application_id": "Applicant_KJET-20251224151157-3MFT",
-    "county": "Nandi",
-    "weighted_score": 4.0,
-    "ranking": 17,
-    "total_score": 7.0,
     "equity_points": 0.0,
     "penalty_points": 3.0,
     "county_rank": 18
   },
   {
-    "application_id": "Applicant_KJET-20251231115519-DSH5",
+    "application_id": "Applicant_KJET-20251231191151-R0UD",
+    "county": "Nandi",
+    "weighted_score": 4.0,
+    "ranking": 16,
+    "total_score": 4.0,
+    "equity_points": 0.0,
+    "penalty_points": 0.0,
+    "county_rank": 16
+  },
+  {
+    "application_id": "Applicant_KJET-20251231195128-ICSK",
+    "county": "Nandi",
+    "weighted_score": 15.0,
+    "ranking": 15,
+    "total_score": 15.0,
+    "equity_points": 0.0,
+    "penalty_points": 0.0,
+    "county_rank": 15
+  },
+  {
+    "application_id": "Applicant_KJET-20251228124904-ZGVY",
+    "county": "Nandi",
+    "weighted_score": 54.0,
+    "ranking": 8,
+    "total_score": 54.0,
+    "equity_points": 5.0,
+    "penalty_points": 0.0,
+    "county_rank": 8
+  },
+  {
+    "application_id": "Applicant_KJET-20251228215425-4D1B",
+    "county": "Nandi",
+    "weighted_score": 44.0,
+    "ranking": 12,
+    "total_score": 44.0,
+    "equity_points": 0.0,
+    "penalty_points": 0.0,
+    "county_rank": 12
+  },
+  {
+    "application_id": "Applicant_KJET-20251230184749-KG3D",
     "county": "Nandi",
     "weighted_score": 51.0,
-    "ranking": 10,
+    "ranking": 9,
     "total_score": 51.0,
     "equity_points": 0.0,
     "penalty_points": 0.0,
-    "county_rank": 11
+    "county_rank": 9
+  },
+  {
+    "application_id": "Applicant_KJET-20251128120522-YUHN",
+    "county": "Nandi",
+    "weighted_score": 44.0,
+    "ranking": 12,
+    "total_score": 47.0,
+    "equity_points": -5.0,
+    "penalty_points": 3.0,
+    "county_rank": 13
+  },
+  {
+    "application_id": "Applicant_KJET-20251224151157-3MFT",
+    "county": "Nandi",
+    "weighted_score": 4.0,
+    "ranking": 16,
+    "total_score": 7.0,
+    "equity_points": 0.0,
+    "penalty_points": 3.0,
+    "county_rank": 17
+  },
+  {
+    "application_id": "Applicant_KJET-20251231115519-DSH5",
+    "county": "Nandi",
+    "weighted_score": 51.0,
+    "ranking": 9,
+    "total_score": 51.0,
+    "equity_points": 0.0,
+    "penalty_points": 0.0,
+    "county_rank": 10
   },
   {
     "application_id": "Applicant_KJET-20251231130837-TO4U",
@@ -5717,17 +5687,17 @@
     "total_score": 36.0,
     "equity_points": 0.0,
     "penalty_points": 0.0,
-    "county_rank": 20
+    "county_rank": 19
   },
   {
     "application_id": "Applicant_KJET-20251231153342-4MZ6",
     "county": "Nandi",
     "weighted_score": 55.0,
-    "ranking": 6,
+    "ranking": 5,
     "total_score": 55.0,
     "equity_points": 0.0,
     "penalty_points": 0.0,
-    "county_rank": 7
+    "county_rank": 6
   },
   {
     "application_id": "Applicant_KJET-20251229204502-E5HD",
@@ -5743,31 +5713,31 @@
     "application_id": "Applicant_695",
     "county": "Nandi",
     "weighted_score": 55.0,
-    "ranking": 6,
+    "ranking": 5,
     "total_score": 55.0,
     "equity_points": 0.0,
     "penalty_points": 0.0,
-    "county_rank": 8
+    "county_rank": 7
   },
   {
     "application_id": "Applicant_514",
     "county": "Nandi",
     "weighted_score": 51.0,
-    "ranking": 10,
+    "ranking": 9,
     "total_score": 51.0,
     "equity_points": 0.0,
     "penalty_points": 0.0,
-    "county_rank": 12
+    "county_rank": 11
   },
   {
     "application_id": "Applicant_KJET-20251230132726-HBDN",
     "county": "Nandi",
-    "weighted_score": 57.0,
-    "ranking": 5,
-    "total_score": 57.0,
+    "weighted_score": 0.0,
+    "ranking": 19,
+    "total_score": -5.0,
     "equity_points": -5.0,
     "penalty_points": 0.0,
-    "county_rank": 5
+    "county_rank": 20
   },
   {
     "application_id": "Applicant_KJET-20251224212045-B7TH",
