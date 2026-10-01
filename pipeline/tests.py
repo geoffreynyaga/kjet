@@ -225,6 +225,70 @@ class HumanScriptTests(SimpleTestCase):
         self.assertTrue((dashboard_dir / "comparison_data.json").exists())
 
 
+class ApplicationDocumentTests(TestCase):
+    def setUp(self):
+        self.tempdir = tempfile.TemporaryDirectory()
+        self.addCleanup(self.tempdir.cleanup)
+        self.settings_override = override_settings(BASE_DIR=Path(self.tempdir.name))
+        self.settings_override.enable()
+        self.addCleanup(self.settings_override.disable)
+
+        self.application_id = "Applicant_KJET-20251229171110-PYGB"
+        self.application_dir = (
+            Path(self.tempdir.name)
+            / "data"
+            / "latest"
+            / "Baringo"
+            / "application_KJET-20251229171110-PYGB_with_attachments_2026-01-13"
+        )
+        self.application_dir.mkdir(parents=True)
+        (self.application_dir / "application.pdf").write_bytes(b"application")
+        supporting = self.application_dir / "supporting"
+        supporting.mkdir()
+        (supporting / "registration certificate.jpg").write_bytes(b"certificate")
+
+        self.user = get_user_model().objects.create_user(
+            username="viewer", password="password"
+        )
+        self.client.force_login(self.user)
+
+    def test_lists_and_serves_application_documents(self):
+        response = self.client.get(
+            f"/api/pipeline/applications/{self.application_id}/documents/",
+            {"cohort": "latest"},
+        )
+
+        self.assertEqual(response.status_code, 200, response.content)
+        files = response.json()["files"]
+        self.assertEqual(
+            [item["filename"] for item in files],
+            ["application.pdf", "supporting/registration certificate.jpg"],
+        )
+
+        file_response = self.client.get(files[0]["s3_url"])
+        self.assertEqual(file_response.status_code, 200)
+        self.assertEqual(b"".join(file_response.streaming_content), b"application")
+
+    def test_rejects_a_document_from_another_application(self):
+        other_dir = (
+            Path(self.tempdir.name)
+            / "data"
+            / "latest"
+            / "Baringo"
+            / "application_KJET-20251230123456-OTHER_with_attachments"
+        )
+        other_dir.mkdir()
+        (other_dir / "private.pdf").write_bytes(b"private")
+
+        response = self.client.get(
+            f"/api/pipeline/applications/{self.application_id}/documents/"
+            "Baringo/application_KJET-20251230123456-OTHER_with_attachments/private.pdf/",
+            {"cohort": "latest"},
+        )
+
+        self.assertEqual(response.status_code, 404)
+
+
 class OverwritingStorage(FileSystemStorage):
     """Stands in for S3Boto3Storage's default file_overwrite=True behaviour.
 

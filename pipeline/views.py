@@ -1,7 +1,12 @@
+import mimetypes
+import re
 from pathlib import Path
+from urllib.parse import urlencode
 
 from django.conf import settings
 from django.core.files.base import ContentFile
+from django.http import FileResponse, Http404
+from django.urls import reverse
 from django.utils import timezone
 from rest_framework import status
 from rest_framework.authentication import SessionAuthentication
@@ -75,6 +80,92 @@ def resolve_cohort(slug):
 class StaffApiView(APIView):
     authentication_classes = [SessionAuthentication]
     permission_classes = [IsAdminUser]
+
+
+class AuthenticatedApiView(APIView):
+    authentication_classes = [SessionAuthentication]
+    permission_classes = [IsAuthenticated]
+
+
+def _application_directories(cohort, application_id):
+    if not re.fullmatch(r"[A-Za-z0-9_-]+", cohort or ""):
+        return []
+
+    match = re.fullmatch(r"Applicant_([A-Za-z0-9_-]+)", application_id or "", re.I)
+    if not match:
+        return []
+
+    data_root = (Path(settings.BASE_DIR) / "data" / cohort).resolve()
+    if not data_root.is_dir():
+        return []
+
+    folder_prefix = f"application_{match.group(1)}".casefold()
+    application_directories = []
+    for county_directory in sorted(data_root.iterdir()):
+        if not county_directory.is_dir():
+            continue
+        for candidate in sorted(county_directory.iterdir()):
+            candidate_name = candidate.name.casefold()
+            if candidate.is_dir() and (
+                candidate_name == folder_prefix
+                or candidate_name.startswith(f"{folder_prefix}_")
+            ):
+                application_directories.append(candidate.resolve())
+    return application_directories
+
+
+class ApplicationDocumentListView(AuthenticatedApiView):
+    def get(self, request, application_id):
+        cohort = (request.query_params.get("cohort") or "latest").lower()
+        data_root = (Path(settings.BASE_DIR) / "data" / cohort).resolve()
+        files = []
+
+        for application_directory in _application_directories(cohort, application_id):
+            for file_path in sorted(application_directory.rglob("*")):
+                if not file_path.is_file() or any(
+                    part.startswith(".") for part in file_path.relative_to(application_directory).parts
+                ):
+                    continue
+
+                display_name = file_path.relative_to(application_directory).as_posix()
+                document_path = file_path.resolve().relative_to(data_root).as_posix()
+                url = reverse(
+                    "pipeline:application-document",
+                    kwargs={
+                        "application_id": application_id,
+                        "document_path": document_path,
+                    },
+                )
+                files.append(
+                    {
+                        "filename": display_name,
+                        "absolute_path": "",
+                        "s3_url": f"{url}?{urlencode({'cohort': cohort})}",
+                    }
+                )
+
+        return Response({"files": files})
+
+
+class ApplicationDocumentView(AuthenticatedApiView):
+    def get(self, request, application_id, document_path):
+        cohort = (request.query_params.get("cohort") or "latest").lower()
+        data_root = (Path(settings.BASE_DIR) / "data" / cohort).resolve()
+        target = (data_root / document_path).resolve()
+        application_directories = _application_directories(cohort, application_id)
+
+        if not target.is_file() or not any(
+            target.is_relative_to(application_directory)
+            for application_directory in application_directories
+        ):
+            raise Http404
+
+        content_type, _ = mimetypes.guess_type(target.name)
+        return FileResponse(
+            target.open("rb"),
+            content_type=content_type or "application/octet-stream",
+            filename=target.name,
+        )
 
 
 class WhoAmIView(APIView):

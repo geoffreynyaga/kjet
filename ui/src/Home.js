@@ -331,11 +331,13 @@ export default function Home() {
             </motion.a>
           )}
 
+          {/*
           <div className="w-px h-8 bg-blue-200/40" />
 
           <span className="inline-flex items-center h-10 px-1 text-base font-semibold leading-none text-gray-700">
             First Cohort
           </span>
+          */}
           <motion.a
             href="/accounts/logout/"
             className="px-6 py-2 font-medium text-white no-underline transition-colors duration-200 bg-red-600 rounded-lg hover:bg-red-700"

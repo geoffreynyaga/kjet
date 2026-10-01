@@ -83,16 +83,37 @@ export const useApplicationFiles = (applicationId: string | undefined) => {
         setLoading(true);
         setError(null);
 
-        const cohort = new URLSearchParams(window.location.search).get('cohort');
+        const cohort = new URLSearchParams(window.location.search).get('cohort') || 'latest';
+        try {
+          const documentsResponse = await fetch(
+            `/api/pipeline/applications/${encodeURIComponent(applicationId)}/documents/?cohort=${encodeURIComponent(cohort)}`,
+            { credentials: 'same-origin' }
+          );
+
+          if (
+            documentsResponse.ok &&
+            documentsResponse.headers.get('content-type')?.includes('application/json')
+          ) {
+            const documentsData = await documentsResponse.json() as { files: ApplicationFile[] };
+            if (documentsData.files?.length > 0) {
+              setFiles(documentsData.files);
+              return;
+            }
+          }
+        } catch (documentsError) {
+          console.warn('Live application documents are unavailable; using the static inventory.', documentsError);
+        }
+
         const inventoryUrls = buildStaticDataUrls('data_file_inventory.json', cohort);
 
         const data = await fetchJsonWithFallback<ApplicationFilesData>(inventoryUrls);
-        const numericId = applicationId.split('_')[1];
+        const applicationKey = applicationId.replace(/^Applicant_/i, '');
+        const inventoryEntry = data[applicationId] || data[applicationKey];
 
-        if (numericId && data[numericId]) {
-          setFiles(data[numericId].files);
+        if (inventoryEntry) {
+          setFiles(inventoryEntry.files);
         } else {
-          console.warn(`No files found for application ${applicationId} (ID: ${numericId})`);
+          console.warn(`No files found for application ${applicationId}`);
           setFiles([]);
         }
       } catch (err) {
