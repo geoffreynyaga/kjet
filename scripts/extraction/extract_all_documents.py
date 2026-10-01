@@ -16,6 +16,7 @@ import json
 import subprocess
 import sys
 import re
+import hashlib
 from pathlib import Path
 from datetime import datetime
 from tqdm import tqdm
@@ -93,8 +94,23 @@ class ProgressTracker:
 progress_tracker = ProgressTracker()
 
 
-def process_application_folder(folder_path, county_name=None):
+def _pdf_content_digest(pdf_path):
+    """Return a stable cache key for a PDF without loading it all into memory."""
+    digest = hashlib.sha256()
+    try:
+        with open(pdf_path, "rb") as pdf_file:
+            for chunk in iter(lambda: pdf_file.read(1024 * 1024), b""):
+                digest.update(chunk)
+    except OSError:
+        return None
+    return digest.hexdigest()
+
+
+def process_application_folder(folder_path, county_name=None, pdf_extraction_cache=None):
     """Process all documents in one application folder and return structured extraction output."""
+    if pdf_extraction_cache is None:
+        pdf_extraction_cache = {}
+
     application_data = {
         "application_id": "",
         "county": county_name or "Unknown",
@@ -197,24 +213,39 @@ def process_application_folder(folder_path, county_name=None):
                 # Extract content based on file type
                 content = ""
                 if file_extension == '.pdf':
-                    content = extract_pdf_text(file_path)
-                    if "no extractable text found" in str(content).lower() or "error:" in str(content).lower():
-                        # Try to repair PDF if it's a known structural issue
-                        repaired_path = repair_pdf(file_path)
-                        if repaired_path:
-                            content = extract_pdf_text(repaired_path)
-                            if "error:" in str(content).lower():
-                                # Fallback to OCR if repair also fails
+                    cache_key = _pdf_content_digest(file_path)
+                    cached_extraction = (
+                        pdf_extraction_cache.get(cache_key) if cache_key else None
+                    )
+
+                    if cached_extraction is not None:
+                        content, used_ocr = cached_extraction
+                    else:
+                        used_ocr = False
+                        content = extract_pdf_text(file_path)
+                        if "no extractable text found" in str(content).lower() or "error:" in str(content).lower():
+                            # Try to repair PDF if it's a known structural issue
+                            repaired_path = repair_pdf(file_path)
+                            if repaired_path:
+                                content = extract_pdf_text(repaired_path)
+                                if "error:" in str(content).lower():
+                                    # Fallback to OCR if repair also fails
+                                    ocr_content = extract_pdf_with_ocr(file_path, first_last_only=True, num_last_pages=2)
+                                    if not is_extraction_error(ocr_content):
+                                        content = clean_extracted_text(ocr_content)
+                                        used_ocr = True
+                            else:
+                                # Fallback to OCR direct
                                 ocr_content = extract_pdf_with_ocr(file_path, first_last_only=True, num_last_pages=2)
                                 if not is_extraction_error(ocr_content):
                                     content = clean_extracted_text(ocr_content)
-                                    application_data["document_summary"]["ocr_fallback_used"] += 1
-                        else:
-                            # Fallback to OCR direct
-                            ocr_content = extract_pdf_with_ocr(file_path, first_last_only=True, num_last_pages=2)
-                            if not is_extraction_error(ocr_content):
-                                content = clean_extracted_text(ocr_content)
-                                application_data["document_summary"]["ocr_fallback_used"] += 1
+                                    used_ocr = True
+
+                        if cache_key:
+                            pdf_extraction_cache[cache_key] = (content, used_ocr)
+
+                    if used_ocr:
+                        application_data["document_summary"]["ocr_fallback_used"] += 1
                 elif file_extension in ['.png', '.jpg', '.jpeg', '.tiff', '.bmp']:
                     content = extract_image_text(file_path)
                 elif file_extension in ['.txt', '.md']:
@@ -384,6 +415,7 @@ def main():
 
     # Initialize structure for summary reporting
     generated_files = []
+    pdf_extraction_cache = {}
 
     # Process each county and its applications with enhanced progress bar
     county_pbar = tqdm(counties_data.items(), desc="Processing counties")
@@ -402,10 +434,11 @@ def main():
             progress_tracker.set_progress_bar(app_pbar)
 
             for folder in app_pbar:
-                app_data = process_application_folder(folder, county_name)
+                app_data = process_application_folder(
+                    folder, county_name, pdf_extraction_cache
+                )
                 county_apps.append(app_data)
                 all_data["applications"].append(app_data)
-                app_pbar.update(1)
 
         # Store county-level summary
         all_data["counties"][county_name] = {
@@ -449,8 +482,6 @@ def main():
             tqdm.write(f"  ⚠️  {county_name}: {len(county_apps)} apps, {len(county_errors)} errors ({file_size:,} bytes)")
         else:
             tqdm.write(f"  ✅ {county_name}: {len(county_apps)} apps, no errors ({file_size:,} bytes)")
-
-        county_pbar.update(1)
 
     # Close progress bars
     county_pbar.close()

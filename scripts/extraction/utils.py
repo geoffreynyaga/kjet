@@ -7,12 +7,32 @@ Contains reusable functions for text processing, PDF extraction, and data parsin
 import re
 import subprocess
 import warnings
+import logging
+from contextlib import contextmanager
 from pathlib import Path
 
 APPLICATION_FOLDER_PATTERNS = [
     re.compile(r'^application_\d+_bundle(?: \(\d+\))?$'),
     re.compile(r'^application_KJET-[A-Z0-9-]+(?:_with_attachments(?:_\d{4}-\d{2}-\d{2}_\d{2}-\d{2}-\d{2})?)?$', re.IGNORECASE)
 ]
+
+
+class _DuplicatePdfDictionaryFilter(logging.Filter):
+    """Hide recoverable duplicate-key noise emitted by malformed PDFs."""
+
+    def filter(self, record):
+        return not record.getMessage().startswith("Multiple definitions in dictionary")
+
+
+@contextmanager
+def suppress_duplicate_pdf_dictionary_warnings():
+    logger = logging.getLogger("PyPDF2.generic._data_structures")
+    warning_filter = _DuplicatePdfDictionaryFilter()
+    logger.addFilter(warning_filter)
+    try:
+        yield
+    finally:
+        logger.removeFilter(warning_filter)
 
 
 def is_application_folder_name(name: str) -> bool:
@@ -82,7 +102,8 @@ def extract_with_pypdf2_lenient(pdf_path):
         with open(pdf_path, 'rb') as file:
             with warnings.catch_warnings():
                 warnings.filterwarnings("ignore", category=UserWarning, message=r".*Advanced encoding /90ms-RKSJ-[HV].*")
-                reader = PyPDF2.PdfReader(file, strict=False)
+                with suppress_duplicate_pdf_dictionary_warnings():
+                    reader = PyPDF2.PdfReader(file, strict=False)
             text = ""
             for page in reader.pages:
                 try:
@@ -108,7 +129,8 @@ def extract_with_pypdf2_strict(pdf_path):
         with open(pdf_path, 'rb') as file:
             with warnings.catch_warnings():
                 warnings.filterwarnings("ignore", category=UserWarning, message=r".*Advanced encoding /90ms-RKSJ-[HV].*")
-                reader = PyPDF2.PdfReader(file)
+                with suppress_duplicate_pdf_dictionary_warnings():
+                    reader = PyPDF2.PdfReader(file, strict=True)
             text = ""
             for page in reader.pages:
                 page_text = page.extract_text()
@@ -158,14 +180,6 @@ def extract_pdf_text(pdf_path):
     # Try PyPDF2 lenient first (handles most PDFs gracefully)
     try:
         text = extract_with_pypdf2_lenient(pdf_path)
-        if text and text.strip():
-            return clean_extracted_text(text)
-    except Exception as e:
-        pass
-
-    # Try PyPDF2 strict
-    try:
-        text = extract_with_pypdf2_strict(pdf_path)
         if text and text.strip():
             return clean_extracted_text(text)
     except Exception as e:
